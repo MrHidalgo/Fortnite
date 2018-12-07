@@ -3,5 +3,61 @@
 header#header.header
   .c-grid
     .header__wrapper
+      .header__col.header__col-0
+
+        // logotype
+        +logotypePicture('header', '', false, '', 'object-fit--coverCenter', 'img-logo', 'png')
+
+      .header__col.header__col-1
+
+        // header navigation
+        .header__nav
+
+          // header navigation button
+          .header__nav-left
+            a.header__nav-btn(href="#" class="" title="")
+              span
+                i.icon-font.icon-all
+              p!= "All"
+            a.header__nav-btn(href="#" class="" title="")
+              span
+                i.icon-font.icon-sets
+              p!= "Sets"
+            a.header__nav-btn(href="#" class="" title="")
+              span
+                i.icon-font.icon-preview
+              p!= "Leaked"
+            a.header__nav-btn(href="#" class="" title="")
+              span
+                i.icon-font.icon-shop
+              p!= "Shop"
+
+          // header navigation link with dropdown
+          .header__nav-right
+            a.header__nav-link(href="#" class!= (pageClassName === 'p-home') ? 'is-active': '' title="")!= "Home"
+            a.header__nav-link(href="#" class="" title="")!= "Emotes"
+            a.header__nav-link(href="#" class="" title="")!= "Outfits"
+            a.header__nav-link(href="#" class="" title="")!= "Pickaxes"
+            a.header__nav-link(href="#" class="" title="")!= "Gliders"
+            .header__nav-link--wrapper
+              a.header__nav-link(
+                href="#" class="" title=""
+                id="dropdownHeaderLink"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              )
+                span!= "Tools"
+                i
+
+              .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownHeaderLink')
+                a(href="#" class="" title="")!= "Action"
+                a(href="#" class="" title="")!= "Another action"
+                a(href="#" class="" title="")!= "Something else here"
+
+      .header__col.header__col-2
+
+        // header search button
+        .header__search
+          a.header__search-btn(href="#" class="" title="")
+            i.icon-font.icon-search
 
 // HEADER :: END

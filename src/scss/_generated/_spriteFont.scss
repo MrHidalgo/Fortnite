@@ -1,0 +1,79 @@
+@font-face {
+	font-family: "iconFont";
+	src: url('../fonts/iconFont.eot');
+	src: url('../fonts/iconFont.eot?#iefix') format('eot'),
+		url('../fonts/iconFont.woff2') format('woff2'),
+		url('../fonts/iconFont.woff') format('woff'),
+		url('../fonts/iconFont.ttf') format('truetype'),
+		url('../fonts/iconFont.svg#iconFont') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "iconFont", sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == all {
+		$char: "\E001";
+	}
+	@if $filename == preview {
+		$char: "\E002";
+	}
+	@if $filename == search {
+		$char: "\E003";
+	}
+	@if $filename == sets {
+		$char: "\E004";
+	}
+	@if $filename == shop {
+		$char: "\E005";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-all {
+	@include icon(all);
+
+}
+.icon-preview {
+	@include icon(preview);
+
+}
+.icon-search {
+	@include icon(search);
+
+}
+.icon-sets {
+	@include icon(sets);
+
+}
+.icon-shop {
+	@include icon(shop);
+
+}

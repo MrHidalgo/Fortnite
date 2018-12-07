@@ -5,8 +5,8 @@
 * - bower-webfontloader;
 * - svg4everybody;
 * - jquery;
-* - bootstrap;
 * - popper.js;
+* - bootstrap;
 * - object fit image;
 * - jquery-validation;
 *

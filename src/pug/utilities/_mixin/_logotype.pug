@@ -10,6 +10,7 @@
 
     @example
       +logotype('header', '', 'imgName', 'png')
+      +logotypePicture('header', '', false, '', '', "jpg", "imgName")
       +logotypeSVG('header', '', 'svgIconName')
       +logotypeImgText('header', '', 'imgName', 'png', 'logoSomeText')
       +logotypeText('header', '', 'logoSomeText')
@@ -28,6 +29,14 @@ mixin logotype(classMod, hrefVal, imgName, imgExt)
         srcset!= imgSrcSet
         alt="" title=""
        )
+
+mixin logotypePicture(classMod, hrefVal, ieSupport, classModPicture, classModImage, imgName, imgExt)
+  .logo(class!= "logo--" + classMod)
+    a(
+      href!= (hrefVal) ? hrefVal : "/"
+      title="" class="logo__link"
+    )
+      +pictureTag(ieSupport, classModPicture, classModImage, imgExt, imgName)
 
 mixin logotypeSVG(classMod, hrefVal, svgName)
   .logo(class!= "logo--" + classMod)

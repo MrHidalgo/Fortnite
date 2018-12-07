@@ -32,6 +32,7 @@ gulp.task('vendorScript', function() {
       .pipe(plumber(configOption.pipeBreaking.err))
       .pipe(order([
         'jquery.js',
+        'popper.js',
         '*'
       ]))
       .pipe(concat('vendor.js'))

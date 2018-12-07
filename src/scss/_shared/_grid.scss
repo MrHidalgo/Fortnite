@@ -1,7 +1,7 @@
 ///
 /// ADDITIONALLY
 /// ===============
-$maxWidth: null;
+$maxWidth: 1200px;
 $paddingLeft: 15px;
 $paddingRight: $paddingLeft;
 
@@ -22,7 +22,6 @@ $paddingRight: $paddingLeft;
   @if($maxWidth) {
     max-width: $maxWidth;
   }
-
 
   &-fluid {
     @extend %grid;
