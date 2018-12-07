@@ -1,0 +1,74 @@
+@import "function";
+
+////
+/// @group  Variable
+////
+
+///
+/// @name   object
+///
+$object: (
+  colors : (
+    white                 : #fff,
+    black                 : #000,
+
+    primary               : #4285f4,
+
+    success               : #00c851,
+    info                  : #33b5e5,
+    warning               : #ff8800,
+    danger                : #cc0000
+  ),
+  media-queries : (
+    extra-small           : 'extra-small',
+    small                 : 'small',
+    max-small             : 'max-small',
+    medium                : 'medium',
+    max-medium            : 'max-medium',
+    large                 : 'large',
+    max-large             : 'max-large',
+    extra-large           : 'extra-large',
+    max-extra-large       : 'max-extra-large',
+    wide-small            : 'wide-small',
+    max-wide-small        : 'max-wide-small',
+    wide-medium           : 'wide-medium',
+    max-wide-medium       : 'max-wide-medium',
+    wide-large            : 'wide-large',
+    max-wide-large        : 'max-wide-large',
+    hd                    : 'hd',
+  )
+);
+
+///
+/// MAIN PALLET
+/// ===============
+$c-white                  : return-value(colors, white);
+$c-black                  : return-value(colors, black);
+
+$c-primary                : return-value(colors, primary);
+
+$c-success                : return-value(colors, success);
+$c-info                   : return-value(colors, info);
+$c-warning                : return-value(colors, warning);
+$c-danger                 : return-value(colors, danger);
+
+$mq-extra-small           : return-value(media-queries, extra-small);
+$mq-small                 : return-value(media-queries, small);
+$mq-max-small             : return-value(media-queries, max-small);
+$mq-medium                : return-value(media-queries, medium);
+$mq-max-medium            : return-value(media-queries, max-medium);
+$mq-large                 : return-value(media-queries, large);
+$mq-max-large             : return-value(media-queries, max-large);
+$mq-extra-large           : return-value(media-queries, extra-large);
+$mq-max-extra-large       : return-value(media-queries, max-extra-large);
+$mq-wide-small            : return-value(media-queries, wide-small);
+$mq-max-wide-small        : return-value(media-queries, max-wide-small);
+$mq-wide-medium           : return-value(media-queries, wide-medium);
+$mq-max-wide-medium       : return-value(media-queries, max-wide-medium);
+$mq-wide-large            : return-value(media-queries, wide-large);
+$mq-max-wide-large        : return-value(media-queries, max-wide-large);
+$mq-hd                    : return-value(media-queries, hd);
+
+///
+/// ADDITIONAL PALLET
+/// ===============

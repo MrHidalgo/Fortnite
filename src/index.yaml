@@ -1,0 +1,45 @@
+ProjectTitle: Fortnite
+
+PageList:
+- file: index.html
+  titleName: Home
+  ready: 1
+- file: 404.html
+  titleName: 404
+  ready: 0
+- file: list.html
+  titleName: List of all skins
+  ready: 0
+- file: rewards.html
+  titleName: Battle pass rewards
+  ready: 0
+- file: history.html
+  titleName: History
+  ready: 0
+- file: leaked.html
+  titleName: Leaked
+  ready: 0
+- file: leaked-sub.html
+  titleName: Leaked sub
+  ready: 0
+- file: privacy-policy.html
+  titleName: Privacy Policy
+  ready: 0
+- file: search.html
+  titleName: Search
+  ready: 0
+- file: sets.html
+  titleName: Sets
+  ready: 0
+- file: shop-rotation.html
+  titleName: Shop rotation
+  ready: 0
+- file: shop.html
+  titleName: Shop
+  ready: 0
+- file: skin.html
+  titleName: Skin
+  ready: 0
+- file: emotes.html
+  titleName: Emotes
+  ready: 0
