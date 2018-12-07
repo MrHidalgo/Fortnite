@@ -30,17 +30,41 @@
 	@if $filename == all {
 		$char: "\E001";
 	}
-	@if $filename == preview {
+	@if $filename == facebook {
 		$char: "\E002";
 	}
-	@if $filename == search {
+	@if $filename == google-plus {
 		$char: "\E003";
 	}
-	@if $filename == sets {
+	@if $filename == instagram {
 		$char: "\E004";
 	}
-	@if $filename == shop {
+	@if $filename == pinterest {
 		$char: "\E005";
+	}
+	@if $filename == preview {
+		$char: "\E006";
+	}
+	@if $filename == rss {
+		$char: "\E007";
+	}
+	@if $filename == search {
+		$char: "\E008";
+	}
+	@if $filename == send {
+		$char: "\E009";
+	}
+	@if $filename == sets {
+		$char: "\E00A";
+	}
+	@if $filename == shop {
+		$char: "\E00B";
+	}
+	@if $filename == triangle-rotate {
+		$char: "\E00C";
+	}
+	@if $filename == twitter {
+		$char: "\E00D";
 	}
 
 	@return $char;
@@ -61,12 +85,36 @@
 	@include icon(all);
 
 }
+.icon-facebook {
+	@include icon(facebook);
+
+}
+.icon-google-plus {
+	@include icon(google-plus);
+
+}
+.icon-instagram {
+	@include icon(instagram);
+
+}
+.icon-pinterest {
+	@include icon(pinterest);
+
+}
 .icon-preview {
 	@include icon(preview);
 
 }
+.icon-rss {
+	@include icon(rss);
+
+}
 .icon-search {
 	@include icon(search);
+
+}
+.icon-send {
+	@include icon(send);
 
 }
 .icon-sets {
@@ -75,5 +123,13 @@
 }
 .icon-shop {
 	@include icon(shop);
+
+}
+.icon-triangle-rotate {
+	@include icon(triangle-rotate);
+
+}
+.icon-twitter {
+	@include icon(twitter);
 
 }

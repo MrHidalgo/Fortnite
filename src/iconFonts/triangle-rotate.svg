@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffd600;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="triangle-rotate" class="cls-1" d="M168,4056l9,4.5-8.25,4.5Z" transform="translate(-168 -4056)"/>
+</svg>

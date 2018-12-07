@@ -1,5 +1,174 @@
 // FOOTER :: START
 
-.footer {}
+.footer {
+  overflow: hidden;
+  position: relative;
+
+
+  &__wrapper {
+    position: relative;
+    min-height: 448px;
+
+    &-top {
+      padding-top: 45px;
+      background-color: #070c17;
+
+      .c-grid {
+        position: relative;
+      }
+    }
+
+    &-bottom {
+      background-color: #090e1a;
+      padding-bottom: 35px;
+    }
+  }
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: -30px;
+    right: 15px;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &__triangle {
+    z-index: 0;
+    position: absolute;
+
+    &-0 {
+      right: 6px;
+      bottom: 134px;
+    }
+
+    &-1 {
+      top: 0;
+      right: 40%;
+    }
+  }
+
+  &__row {
+    display: flex;
+
+    &-0 {
+      .footer__col {
+        width: 100%;
+
+        &-0,
+        &-1 {
+          max-width: 270px;
+        }
+
+        &-2 {
+          max-width: calc(100% - ((270px * 2) + 400px));
+        }
+
+        &-3 {
+          max-width: 400px;
+        }
+      }
+    }
+
+    &-1 {
+      align-items: center;
+      padding-top: 54px;
+
+      .footer__col {
+        width: 50%;
+
+        &-1 {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  &__col {
+    z-index: 1;
+    position: relative;
+  }
+
+  // title
+  &__title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    color: #ffd600;
+    text-transform: uppercase;
+    font-size: 24px;
+
+    span {
+      padding-bottom: 21px;
+    }
+
+    i {
+      width: 42px;
+      height: 5px;
+      background-color: #ffd600;
+    }
+  }
+
+  // navigation
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    &-wrapper {
+      display: flex;
+
+      > div {
+        width: 50%;
+      }
+    }
+
+    &-link {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+
+      &:hover {
+        i {
+          color: $c-white;
+          @include transition(color);
+        }
+
+        p {
+          color: $c-white;
+          @include transition(color);
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      span {
+        width: 20px;
+      }
+
+      i {
+        color: #ffd600;
+        font-size: 9px;
+        @include transition(color);
+      }
+
+      p {
+        width: 100%;
+        max-width: calc(100% - 20px);
+        color: #657782;
+        font-size: 14px;
+        font-weight: 300;
+        font-family: 'Ubuntu', sans-serif;
+        @include transition(color);
+      }
+    }
+  }
+}
 
 // FOOTER :: END
