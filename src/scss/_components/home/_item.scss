@@ -1,0 +1,40 @@
+// SECTION item :: START
+
+.item {
+  overflow: hidden;
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 66px;
+  min-height: 497px;
+
+  &:before,
+  &:after {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+
+  &:before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient( 90deg, rgb(227,171,65) 0%, rgb(221,149,47) 99%);
+  }
+
+  &:after {
+    bottom: -23px;
+    height: 50px;
+    background-color: $c-white;
+    transform: skewY(1deg);
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+    //height: 350px;
+    //background-color: red;
+  }
+}
+
+// SECTION item :: END

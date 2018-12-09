@@ -1,0 +1,72 @@
+// SECTION banner :: START
+
+.banner {
+  &--main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 144px;
+
+    .banner__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      p {
+        color: #bfbfbf;
+        font-size: 24px;
+        font-family: 'Ubuntu', sans-serif;
+      }
+      
+      &-wrapper {
+        width: 100%;
+        max-width: 728px;
+        height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &--section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 290px;
+
+    .banner__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        color: #bfbfbf;
+        font-size: 24px;
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      &-wrapper {
+        width: 100%;
+        max-width: 300px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__box {
+    height: 100%;
+    border: 1px solid #d8d8d8;
+    text-align: center;
+
+    &__wrapper {
+      cursor: pointer;
+      position: relative;
+    }
+  }
+}
+
+// SECTION banner :: END

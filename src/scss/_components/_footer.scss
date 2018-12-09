@@ -31,11 +31,17 @@
     right: 15px;
     object-fit: contain;
     object-position: center;
+    @include adaptive(1199) {
+      display: none;
+    }
   }
 
   &__triangle {
     z-index: 0;
     position: absolute;
+    @include adaptive(1199) {
+      display: none;
+    }
 
     &-0 {
       right: 6px;
@@ -52,20 +58,64 @@
     display: flex;
 
     &-0 {
+      @include adaptive(1199) {
+        flex-wrap: wrap;
+      }
+
       .footer__col {
         width: 100%;
 
         &-0,
         &-1 {
           max-width: 270px;
+          @include adaptive(1199) {
+            max-width: calc(100% / 3);
+          }
+          @include adaptive(767) {
+            max-width: 50%;
+          }
+          @include adaptive(575) {
+            max-width: 100%;
+            padding-bottom: 24px;
+          }
+        }
+
+        &-0 {
+          @include adaptive(1199) {
+            order: 2;
+          }
+        }
+
+        &-1 {
+          @include adaptive(1199) {
+            order: 3;
+          }
         }
 
         &-2 {
           max-width: calc(100% - ((270px * 2) + 400px));
+          @include adaptive(1199) {
+            order: 4;
+            max-width: calc(100% / 3);
+          }
+          @include adaptive(767) {
+            max-width: 100%;
+          }
         }
 
         &-3 {
           max-width: 400px;
+          @include adaptive(1199) {
+            order: 1;
+            max-width: 100%;
+
+            .footer__title {
+              width: 100%;
+              max-width: 400px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
         }
       }
     }
@@ -73,14 +123,24 @@
     &-1 {
       align-items: center;
       padding-top: 54px;
+      @include adaptive(767) {
+        flex-direction: column;
+        justify-content: center;
+      }
 
       .footer__col {
         width: 50%;
+        @include adaptive(767) {
+          width: 100%;
+        }
 
         &-1 {
           display: flex;
           align-items: center;
           justify-content: flex-end;
+          @include adaptive(767) {
+            justify-content: center;
+          }
         }
       }
     }
@@ -99,7 +159,7 @@
     padding-bottom: 30px;
     color: #ffd600;
     text-transform: uppercase;
-    font-size: 24px;
+    @include fluid(font-size, 320px, 768px, 21px, 24px);
 
     span {
       padding-bottom: 21px;

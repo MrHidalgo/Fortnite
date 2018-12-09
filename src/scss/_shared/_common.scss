@@ -1,13 +1,53 @@
 // COMMON :: START
 
+// section
+.section {
+  &__wrapper {
+    display: flex;
+    //align-items: flex-start;
+
+    &-left {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      //max-width: calc((948px * 100%) / 2);
+      //max-width: 63.2%;
+      background-color: gray;
+
+      > div {
+        width: 100%;
+        //max-width: calc(100% - 370px);
+        background-color: green;
+      }
+    }
+
+    &-right {
+      width: 100%;
+      //max-width: 36.8%;
+
+      > div {
+        //width: 370px;
+      }
+    }
+  }
+}
+// section :: end
+
 // copyright
 .copyright {
   display: flex;
+  @include adaptive(767) {
+    justify-content: center;
+    padding-bottom: 24px;
+  }
 
   p {
     color: $c-white;
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
+    @include adaptive(767) {
+      text-align: center;
+    }
 
     span {
       font-weight: bold;
@@ -18,6 +58,14 @@
 
 // newsletter
 .newsletter {
+  width: 100%;
+  max-width: 400px;
+  @include adaptive(1199) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+  }
+
   &__text {
     padding-bottom: 25px;
     color: #657782;
@@ -30,7 +78,8 @@
   &__form {
     &-cover {
       display: flex;
-      width: 372px;
+      width: 100%;
+      max-width: 372px;
       height: 56px;
       background-image: url('../img/newsletter-form-bg.svg');
       background-repeat: no-repeat;
