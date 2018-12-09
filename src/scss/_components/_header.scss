@@ -7,17 +7,36 @@
     display: flex;
     align-items: center;
     min-height: 90px;
+    @include adaptive(767) {
+      min-height: 67px;
+    }
   }
 
   &__col {
     &-0 {
       width: 100%;
       max-width: 270px;
+      @include adaptive(1199) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+      }
+    }
+
+    &-mobile {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: calc(100% - 270px);
+      @include adaptive(1199) {
+        display: none;
+      }
     }
 
     &-1 {
       width: 100%;
-      max-width: calc(100% - (270px + 70px));
+      max-width: calc(100% - 70px);
     }
 
     &-2 {

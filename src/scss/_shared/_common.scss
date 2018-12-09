@@ -58,12 +58,14 @@
 
 // newsletter
 .newsletter {
-  width: 100%;
-  max-width: 400px;
   @include adaptive(1199) {
+    margin-bottom: 54px;
+  }
+  @include adaptive(767) {
+    width: 100%;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 24px;
   }
 
   &__text {
