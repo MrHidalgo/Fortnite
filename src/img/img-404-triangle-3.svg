@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="138" height="112" viewBox="0 0 138 112">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #09ade8;
+        stroke: #060a14;
+        stroke-linejoin: round;
+        stroke-width: 9px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="img-404-triangle-3" class="cls-1" d="M1301,813l68.58,103L1430,893.111Z" transform="translate(-1296.5 -808.5)"/>
+</svg>
