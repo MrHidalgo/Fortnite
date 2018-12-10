@@ -16,6 +16,7 @@ $hamburger-line-backgroundColor: #2a2a2a;
   background-image: url('../img/header-search-bg.svg');
   background-repeat: no-repeat;
   background-position: center;
+  @include transition(transform 0.35s);
   @include respond($whenShowHamburgerMenu) {
     display: flex;
     align-items: center;
@@ -23,6 +24,10 @@ $hamburger-line-backgroundColor: #2a2a2a;
   }
 
   &.is-active {
+    z-index: 1001;
+    position: relative;
+    @include transition(transform 0.35s);
+
     .c-hamburger__box {
       transform: rotate(-90deg);
       @include transition(transform 0.35s);
