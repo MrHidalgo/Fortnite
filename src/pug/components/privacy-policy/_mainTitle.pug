@@ -1,0 +1,19 @@
+.pp__title
+  svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x='0' y='0' width="589px" height="104px")
+    defs
+      mask(id="title-pp-mask" x="0" y="0" width="579px" height="94px")
+        rect(x="0" y="0" width="579px" height="94px")
+        text(kerning="auto" x='50%' y='50%' alignment-baseline="middle" text-anchor='middle' font-size="100px" font-family="Anton" fill="#fff")!= "PRIVACY POLICY"
+
+      filter(id="title-pp-shadow" x="0" y="0" width="579px" height="94px")
+        feOffset(result="offOut" in="SourceGraphic" dx='0' dy="3")
+        feGaussianBlur(result="blurOut" in="offOut" stdDeviation="0" flood-color="#000")
+        feBlend(in="SourceGraphic" in2="blurOut" mode="normal")
+        feComponentTransfer
+          feFuncA(type="linear" slope="0.2")
+        feMerge
+          feMergeNode
+          feMergeNode(in="SourceGraphic")
+
+    text(filter="url(#title-pp-shadow)" kerning="auto" x='50%' y='50%' alignment-baseline="middle" text-anchor='middle' font-size="100px" font-family="Anton" fill="#fff")!= "PRIVACY POLICY"
+    path(style='mask: url("#title-pp-mask");' fill="rgb(222, 235, 240)" d="M-40.000,15.000 L73.000,55.000 L172.844,50.000 L122.000,73.000 L256.000,105.000 L195.000,66.000 L273.125,55.000 L302.969,80.000 L349.000,42.000 L426.000,69.000 L496.125,66.000 L503.125,52.000 L540.000,68.000 L572.812,35.000 L589.000,94.000 L219.000,143.000 L-53.000,67.000 L-40.000,15.000 Z")

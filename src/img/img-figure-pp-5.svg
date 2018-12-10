@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="106" height="108" viewBox="0 0 106 108">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1ac2fe;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="img-figure-pp-5" class="cls-1" d="M1453,530l-60-100,98,62Z" transform="translate(-1389 -426)"/>
+</svg>

@@ -6,4 +6,8 @@ pageClassName: p-privacy-policy
 extends shared/_layout
 
 block content
-  div.body(class!= pageClassName)
+  div.body.body--start(class!= pageClassName)
+
+    include ./components/_mainBanner
+
+    include ./components/privacy-policy/_pp

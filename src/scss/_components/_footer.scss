@@ -1,9 +1,18 @@
 // FOOTER :: START
 
 .footer {
-  overflow: hidden;
   position: relative;
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 127px;
+    background-color: #070c17;
+    transform: skewY(-0.6deg);
+  }
 
   &__wrapper {
     position: relative;
@@ -49,7 +58,7 @@
     }
 
     &-1 {
-      top: 0;
+      top: 127px;
       right: 40%;
     }
   }

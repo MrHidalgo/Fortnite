@@ -60,9 +60,10 @@
   &__box {
     height: 100%;
     border: 1px solid #d8d8d8;
+    background-color: $c-white;
     text-align: center;
 
-    &__wrapper {
+    &-wrapper {
       cursor: pointer;
       position: relative;
     }
