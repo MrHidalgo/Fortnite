@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="344" height="312" viewBox="0 0 344 312">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-opacity: 0.26;
+        fill-rule: evenodd;
+        mix-blend-mode: overlay;
+      }
+    </style>
+  </defs>
+  <path id="img-guides-triangle-1" class="cls-1" d="M1549,3402l-393-102,383,312Z" transform="translate(-1156 -3300)"/>
+</svg>

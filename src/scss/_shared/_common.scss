@@ -4,30 +4,17 @@
 .section {
   &__wrapper {
     display: flex;
-    //align-items: flex-start;
 
     &-left {
       display: flex;
       justify-content: flex-end;
       width: 100%;
-      //max-width: calc((948px * 100%) / 2);
-      //max-width: 63.2%;
-      background-color: gray;
-
-      > div {
-        width: 100%;
-        //max-width: calc(100% - 370px);
-        background-color: green;
-      }
+      max-width: calc(100% - 370px);
     }
 
     &-right {
       width: 100%;
-      //max-width: 36.8%;
-
-      > div {
-        //width: 370px;
-      }
+      max-width: 370px;
     }
   }
 }
