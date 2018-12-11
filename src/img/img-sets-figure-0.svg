@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="167" height="152" viewBox="0 0 167 152">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.18;
+        mix-blend-mode: overlay;
+      }
+    </style>
+  </defs>
+  <path id="img-sets-figure-0" class="cls-1" d="M-38,494L167,646l-277-52Z" transform="translate(0 -494)"/>
+</svg>
