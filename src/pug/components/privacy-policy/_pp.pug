@@ -1,19 +1,5 @@
 // SECTION pp :: START
 
-mixin subtitle(numberVal, val)
-  svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1143 71")
-    path(fill-rule="evenodd"  fill="rgb(39, 63, 72)" d="M-0.000,7.337 L1142.992,-0.006 L1134.034,65.408 L6.485,70.294 L-0.000,7.337 Z")
-    path(fill-rule="evenodd"  fill="rgb(31, 47, 53)" d="M219.190,13.333 L219.190,48.310 L411.842,67.297 L6.485,70.294 L219.190,13.333 Z")
-    path(fill-rule="evenodd"  fill="rgb(77, 111, 123)" d="M948.203,2.340 L1142.908,0.342 L1134.061,65.298 L998.332,66.297 L978.674,32.319 L971.950,44.220 L948.203,2.340 Z")
-    text(x='25px' y='55%' alignment-baseline="middle" fill='#fff')!= numberVal + ". " + val
-
-mixin subtitleHalf(numberVal, val)
-  svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 753 71")
-    path(fill-rule="evenodd"  fill="rgb(39, 63, 72)" d="M-0.000,7.337 L752.992,-0.006 L744.034,65.408 L6.485,70.294 L-0.000,7.337 Z")
-    path(fill-rule="evenodd"  fill="rgb(31, 47, 53)" d="M219.190,13.333 L219.190,48.310 L411.842,67.297 L6.485,70.294 L219.190,13.333 Z")
-    path(fill-rule="evenodd"  fill="rgb(77, 111, 123)" d="M558.203,2.340 L752.908,0.342 L744.061,65.298 L608.332,66.297 L588.674,32.319 L581.950,44.220 L558.203,2.340 Z")
-    text(x='25px' y='55%' alignment-baseline="middle" fill='#fff')!= numberVal + ". " + val
-
 section#pp.pp
   .pp__wrapper.pp__wrapper-0
 
@@ -32,9 +18,9 @@ section#pp.pp
     .c-grid
       include ./_mainTitle
 
-  .pp__wrapper.pp__wrapper-1
+  .pp__wrapper.pp__wrapper-1.info--pp
     .c-grid
-      .pp__content
+      .pp__content.info__content
 
         .pp__content-figure
           img(src="./img/img-pp-content-figure-0.svg" alt="" title="")
@@ -42,62 +28,62 @@ section#pp.pp
           img(src="./img/img-pp-content-figure-2.svg" alt="" title="")
           img(src="./img/img-pp-content-figure-3.svg" alt="" title="")
 
-        .pp__section.pp__section-0
-          .pp__section-left
-            .pp__subtitle
-              +subtitleHalf(1, "Introduction")
+        .pp__section.info__section.info__section-0
+          .info__section-left
+            .info__subtitle
+              +subtitleHalf('1.', "Introduction")
 
-          .pp__section-right
+          .info__section-right
 
             include ../_sectionBanner
 
-        .pp__section.pp__section-1
-          .pp__subtitle
-            +subtitle(2, "Credit")
+        .pp__section.info__section.info__section-1
+          .info__subtitle
+            +subtitle('2.', "Credit")
 
-        .pp__section.pp__section-2
-          .pp__subtitle
-            +subtitle(3, "How we use your personal data")
+        .pp__section.info__section.info__section-2
+          .info__subtitle
+            +subtitle('3.', "How we use your personal data")
 
-        .pp__section.pp__section-3
-          .pp__subtitle
-            +subtitle(4, "Providing your personal data to others")
+        .pp__section.info__section.info__section-3
+          .info__subtitle
+            +subtitle('4.', "Providing your personal data to others")
 
-        .pp__section.pp__section-4
-          .pp__subtitle
-            +subtitle(5, "International transfers of your personal data")
+        .pp__section.info__section.info__section-4
+          .info__subtitle
+            +subtitle('5.', "International transfers of your personal data")
 
-        .pp__section.pp__section-5
-          .pp__subtitle
-            +subtitle(6, "Retaining and deleting personal data")
+        .pp__section.info__section.info__section-5
+          .info__subtitle
+            +subtitle('6.', "Retaining and deleting personal data")
 
-        .pp__section.pp__section-6
-          .pp__subtitle
-            +subtitle(7, "Amendments")
+        .pp__section.info__section.info__section-6
+          .info__subtitle
+            +subtitle('7.', "Amendments")
 
-        .pp__section.pp__section-7
-          .pp__subtitle
-            +subtitle(8, "Your rights")
+        .pp__section.info__section.info__section-7
+          .info__subtitle
+            +subtitle('8.', "Your rights")
 
-        .pp__section.pp__section-8
-          .pp__subtitle
-            +subtitle(9, "About cookies")
+        .pp__section.info__section.info__section-8
+          .info__subtitle
+            +subtitle('9.', "About cookies")
 
-        .pp__section.pp__section-9
-          .pp__subtitle
-            +subtitle(10, "Cookies that we use")
+        .pp__section.info__section.info__section-9
+          .info__subtitle
+            +subtitle('10.', "Cookies that we use")
 
-        .pp__section.pp__section-10
-          .pp__subtitle
-            +subtitle(11, "Cookies used by our service providers")
+        .pp__section.info__section.info__section-10
+          .info__subtitle
+            +subtitle('11.', "Cookies used by our service providers")
 
-        .pp__section.pp__section-11
-          .pp__subtitle
-            +subtitle(12, "Managing cookies")
+        .pp__section.info__section.info__section-11
+          .info__subtitle
+            +subtitle('12.', "Managing cookies")
 
-        .pp__section.pp__section-12
-          .pp__subtitle
-            +subtitle(13, "Our details")
+        .pp__section.info__section.info__section-12
+          .info__subtitle
+            +subtitle('13.', "Our details")
 
           include ../_sectionBanner
 

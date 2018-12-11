@@ -1,0 +1,142 @@
+// SECTION rewards :: START
+
+.rewards {
+  position: relative;
+  min-height: 272px;
+  margin-bottom: 35px;
+  background-color: #2a2a2a;
+  background-image: url('../img/img-rewards-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__bg {
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &-bottom {
+      position: absolute;
+      left: 0;
+      bottom: -60px;
+      width: 100%;
+      height: 100px;
+      transform: skewY(-1.5deg);
+      background-color: $c-white;
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+    padding-top: 53px;
+  }
+
+  &__title {
+    position: relative;
+    width: 100%;
+    max-width: 804px;
+    height: 139px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/img-rewards-title-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &-triangle {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        position: absolute;
+        top: -20px;
+
+        &:nth-child(1) {
+          left: 10px;
+        }
+
+        &:nth-child(2) {
+          right: 20px;
+        }
+      }
+    }
+
+    svg {
+      display: block;
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    top: -15px;
+    width: 100%;
+    max-width: 711px;
+    height: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/img-rewards-subtitle-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &-triangle {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        position: absolute;
+        bottom: -20px;
+
+        &:nth-child(1) {
+          left: 10px;
+        }
+        &:nth-child(2) {
+          left: 75px;
+        }
+        &:nth-child(3) {
+          right: 75px;
+        }
+        &:nth-child(4) {
+          right: 10px;
+        }
+      }
+    }
+
+    h1,
+    p {
+      line-height: 1.2;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      padding-top: 5px;
+      color: $c-white;
+      font-size: 50px;
+    }
+
+    p {
+      color: #7e4b0f;
+      font-size: 18px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+// SECTION rewards :: END

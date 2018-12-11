@@ -6,4 +6,29 @@ pageClassName: p-rewards
 extends shared/_layout
 
 block content
-  div.body(class!= pageClassName)
+  div.body.body--start(class!= pageClassName)
+
+    include ./components/_mainBanner
+    include ./components/rewards/_rewards
+
+    .info.info--rewards
+      .c-grid
+        .info__content
+
+          .info__section.info__section-0
+            .info__section-left
+              .info__subtitle
+                +subtitleHalf('', "What is the Battle Pass?")
+
+            .info__section-right
+
+              include ./components/_sectionBanner
+
+          .info__section.info__section-1
+            .info__subtitle
+              +subtitle('', "Challenges and Rewards")
+
+          .info__section.info__section-2
+            .info__subtitle
+              +subtitle('', "Others Grants")
+

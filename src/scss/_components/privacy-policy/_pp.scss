@@ -91,11 +91,6 @@
   }
 
   &__content {
-    position: relative;
-    top: -60px;
-    padding: 25px;
-    background-color: #edf9fd;
-
     &-figure {
       z-index: 0;
       position: absolute;
@@ -124,31 +119,6 @@
     }
   }
 
-  &__section {
-    z-index: 1;
-    position: relative;
-    padding-bottom: 31px;
-
-    &-0 {
-      display: flex;
-
-      .pp__subtitle {
-
-      }
-
-      .pp__section-left {
-        width: 100%;
-        max-width: calc(100% - 330px);
-        padding-right: 15px;
-      }
-      .pp__section-right {
-        display: flex;
-        justify-content: center;
-        width: 330px;
-      }
-    }
-  }
-
   &__title {
     display: flex;
     justify-content: center;
@@ -157,16 +127,6 @@
     padding-top: 75px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  &__subtitle {
-    margin-bottom: 31px;
-
-    svg {
-      text {
-        font-size: 36px;
-      }
-    }
   }
 }
 

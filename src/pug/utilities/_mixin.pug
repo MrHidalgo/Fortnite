@@ -13,3 +13,17 @@ include ./_mixin/_nav
 include ./_mixin/_form
 
 //- MIXIN :: END
+
+mixin subtitle(numberVal, val)
+  svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1143 71")
+    path(fill-rule="evenodd"  fill="rgb(39, 63, 72)" d="M-0.000,7.337 L1142.992,-0.006 L1134.034,65.408 L6.485,70.294 L-0.000,7.337 Z")
+    path(fill-rule="evenodd"  fill="rgb(31, 47, 53)" d="M219.190,13.333 L219.190,48.310 L411.842,67.297 L6.485,70.294 L219.190,13.333 Z")
+    path(fill-rule="evenodd"  fill="rgb(77, 111, 123)" d="M948.203,2.340 L1142.908,0.342 L1134.061,65.298 L998.332,66.297 L978.674,32.319 L971.950,44.220 L948.203,2.340 Z")
+    text(x='25px' y='55%' alignment-baseline="middle" fill='#fff')!= numberVal + " " + val
+
+mixin subtitleHalf(numberVal, val)
+  svg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 753 71")
+    path(fill-rule="evenodd"  fill="rgb(39, 63, 72)" d="M-0.000,7.337 L752.992,-0.006 L744.034,65.408 L6.485,70.294 L-0.000,7.337 Z")
+    path(fill-rule="evenodd"  fill="rgb(31, 47, 53)" d="M219.190,13.333 L219.190,48.310 L411.842,67.297 L6.485,70.294 L219.190,13.333 Z")
+    path(fill-rule="evenodd"  fill="rgb(77, 111, 123)" d="M558.203,2.340 L752.908,0.342 L744.061,65.298 L608.332,66.297 L588.674,32.319 L581.950,44.220 L558.203,2.340 Z")
+    text(x='25px' y='55%' alignment-baseline="middle" fill='#fff')!= numberVal + " " + val

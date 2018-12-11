@@ -20,6 +20,57 @@
 }
 // section :: end
 
+// info
+.info {
+  z-index: 2;
+  position: relative;
+
+  &--pp {
+    .info__content {
+      top: -60px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    top: 0;
+    padding: 25px;
+    background-color: #edf9fd;
+  }
+
+  &__section {
+    z-index: 1;
+    position: relative;
+    padding-bottom: 31px;
+
+    &-0 {
+      display: flex;
+
+      .info__section-left {
+        width: 100%;
+        max-width: calc(100% - 330px);
+        padding-right: 15px;
+      }
+      .info__section-right {
+        display: flex;
+        justify-content: center;
+        width: 330px;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 31px;
+
+    svg {
+      text {
+        font-size: 36px;
+      }
+    }
+  }
+}
+// info :: end
+
 // copyright
 .copyright {
   display: flex;
