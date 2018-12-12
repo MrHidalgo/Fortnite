@@ -2,141 +2,152 @@
 
 footer#footer.footer
 
-  svg.footer__triangle.footer__triangle-0(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99px" height="56px")
-    path(fill-rule="evenodd"  fill="rgb(6, 10, 20)" d="M98.434,21.897 L0.923,0.485 L90.008,55.477 L98.434,21.897 Z")
+  if(pageClassName === 'p-404')
+    .nfound__traiangle(parallax-404-js)
+      img.nfound__traiangle-img.nfound__traiangle-img-0(
+        src="./img/img-404-triangle-0.svg" alt="" title=""
+        data-stellar-ratio="0.965"
+      )
+      img.nfound__traiangle-img.nfound__traiangle-img-1(
+        src="./img/img-404-triangle-1.svg" alt="" title=""
+        data-stellar-ratio="0.975"
+      )
+      img.nfound__traiangle-img.nfound__traiangle-img-2(
+        src="./img/img-404-triangle-2.svg" alt="" title=""
+        data-stellar-ratio="1.035"
+      )
+      img.nfound__traiangle-img.nfound__traiangle-img-3(
+        src="./img/img-404-triangle-3.svg" alt="" title=""
+        data-stellar-ratio="0.975"
+      )
 
-  svg.footer__triangle.footer__triangle-1(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71px" height="38px")
-    path(fill-rule="evenodd"  fill="rgb(6, 10, 20)" d="M0.488,10.084 L71.000,37.999 L32.304,0.454 L0.488,10.084 Z")
+  .footer__bar
 
   .footer__wrapper
     .footer__wrapper-top
       .c-grid
+        .footer__row.footer__row-0
+          .footer__col.footer__col-0
+            p.footer__title
+              span!= "Related Websites"
+              i
 
-          svg.footer__bg(xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="416px" height="315px")
-            path(fill-rule="evenodd"  fill="rgb(9, 14, 26)" d="M-0.000,8.999 L416.000,-0.001 L410.017,314.999 L4.983,303.999 L-0.000,8.999 Z")
+            // footer navigation 1
+            .footer__nav
+              a.footer__nav-link(href="http://www.epicgames.com" target="_blank" class="" title="")
+                span
+                  i.icon-font.icon-triangle-rotate
+                p!= "epicgames.com"
+              a.footer__nav-link(href="http://www.fortnite.com" target="_blank" class="" title="")
+                span
+                  i.icon-font.icon-triangle-rotate
+                p!= "fortnite.com"
+              a.footer__nav-link(href="http://www.samplewebsite.com" target="_blank" class="" title="")
+                span
+                  i.icon-font.icon-triangle-rotate
+                p!= "samplewebsite.com"
+              a.footer__nav-link(href="http://www.websample.net" target="_blank" class="" title="")
+                span
+                  i.icon-font.icon-triangle-rotate
+                p!= "websample.net"
+              a.footer__nav-link(href="http://www.weblorem.com" target="_blank" class="" title="")
+                span
+                  i.icon-font.icon-triangle-rotate
+                p!= "weblorem.com"
 
-          .footer__row.footer__row-0
-            .footer__col.footer__col-0
-              p.footer__title
-                span!= "Related Websites"
-                i
+          .footer__col.footer__col-1
+            p.footer__title
+              span!= "Navigate Site"
+              i
 
-              // footer navigation 1
-              .footer__nav
-                a.footer__nav-link(href="http://www.epicgames.com" target="_blank" class="" title="")
-                  span
-                    i.icon-font.icon-triangle-rotate
-                  p!= "epicgames.com"
-                a.footer__nav-link(href="http://www.fortnite.com" target="_blank" class="" title="")
-                  span
-                    i.icon-font.icon-triangle-rotate
-                  p!= "fortnite.com"
-                a.footer__nav-link(href="http://www.samplewebsite.com" target="_blank" class="" title="")
-                  span
-                    i.icon-font.icon-triangle-rotate
-                  p!= "samplewebsite.com"
-                a.footer__nav-link(href="http://www.websample.net" target="_blank" class="" title="")
-                  span
-                    i.icon-font.icon-triangle-rotate
-                  p!= "websample.net"
-                a.footer__nav-link(href="http://www.weblorem.com" target="_blank" class="" title="")
-                  span
-                    i.icon-font.icon-triangle-rotate
-                  p!= "weblorem.com"
+            // footer navigation 2
+            .footer__nav
+              .footer__nav-wrapper
+                div
+                  a.footer__nav-link(href="#" target="_blank" class="" title="")
+                    span
+                      i.icon-font.icon-triangle-rotate
+                    p!= "Home"
+                  a.footer__nav-link(href="#" target="_blank" class="" title="")
+                    span
+                      i.icon-font.icon-triangle-rotate
+                    p!= "Emotes"
+                  a.footer__nav-link(href="#" target="_blank" class="" title="")
+                    span
+                      i.icon-font.icon-triangle-rotate
+                    p!= "Outfits"
+                  a.footer__nav-link(href="#" target="_blank" class="" title="")
+                    span
+                      i.icon-font.icon-triangle-rotate
+                    p!= "Pickaxes"
+                  a.footer__nav-link(href="#" target="_blank" class="" title="")
+                    span
+                      i.icon-font.icon-triangle-rotate
+                    p!= "Gliders"
+                  a.footer__nav-link(href="#" target="_blank" class="" title="")
+                    span
+                      i.icon-font.icon-triangle-rotate
+                    p!= "Guides"
 
-            .footer__col.footer__col-1
-              p.footer__title
-                span!= "Navigate Site"
-                i
+                div
+                  a.footer__nav-link(href="#" target="_blank" class="" title="")
+                    span
+                      i.icon-font.icon-triangle-rotate
+                    p!= "Terms"
+                  a.footer__nav-link(href="#" target="_blank" class="" title="")
+                    span
+                      i.icon-font.icon-triangle-rotate
+                    p!= "Support"
+                  a.footer__nav-link(href="#" target="_blank" class="" title="")
+                    span
+                      i.icon-font.icon-triangle-rotate
+                    p!= "FAQs"
 
-              // footer navigation 2
-              .footer__nav
-                .footer__nav-wrapper
-                  div
-                    a.footer__nav-link(href="#" target="_blank" class="" title="")
-                      span
-                        i.icon-font.icon-triangle-rotate
-                      p!= "Home"
-                    a.footer__nav-link(href="#" target="_blank" class="" title="")
-                      span
-                        i.icon-font.icon-triangle-rotate
-                      p!= "Emotes"
-                    a.footer__nav-link(href="#" target="_blank" class="" title="")
-                      span
-                        i.icon-font.icon-triangle-rotate
-                      p!= "Outfits"
-                    a.footer__nav-link(href="#" target="_blank" class="" title="")
-                      span
-                        i.icon-font.icon-triangle-rotate
-                      p!= "Pickaxes"
-                    a.footer__nav-link(href="#" target="_blank" class="" title="")
-                      span
-                        i.icon-font.icon-triangle-rotate
-                      p!= "Gliders"
-                    a.footer__nav-link(href="#" target="_blank" class="" title="")
-                      span
-                        i.icon-font.icon-triangle-rotate
-                      p!= "Guides"
+          .footer__col.footer__col-2
+            p.footer__title
+              span!= "Lorem Ipsum"
+              i
 
-                  div
-                    a.footer__nav-link(href="#" target="_blank" class="" title="")
-                      span
-                        i.icon-font.icon-triangle-rotate
-                      p!= "Terms"
-                    a.footer__nav-link(href="#" target="_blank" class="" title="")
-                      span
-                        i.icon-font.icon-triangle-rotate
-                      p!= "Support"
-                    a.footer__nav-link(href="#" target="_blank" class="" title="")
-                      span
-                        i.icon-font.icon-triangle-rotate
-                      p!= "FAQs"
+            // footer navigation 3
+            .footer__nav
+              a.footer__nav-link(href="#" target="_blank" class="" title="")
+                span
+                  i.icon-font.icon-triangle-rotate
+                p!= "Dolor sit"
+              a.footer__nav-link(href="#" target="_blank" class="" title="")
+                span
+                  i.icon-font.icon-triangle-rotate
+                p!= "Amet En"
+              a.footer__nav-link(href="#" target="_blank" class="" title="")
+                span
+                  i.icon-font.icon-triangle-rotate
+                p!= "Consectetuer"
+              a.footer__nav-link(href="#" target="_blank" class="" title="")
+                span
+                  i.icon-font.icon-triangle-rotate
+                p!= "Dipa Laresponsi"
+              a.footer__nav-link(href="#" target="_blank" class="" title="")
+                span
+                  i.icon-font.icon-triangle-rotate
+                p!= "Coraz timbre"
 
-            .footer__col.footer__col-2
-              p.footer__title
-                span!= "Lorem Ipsum"
-                i
+          .footer__col.footer__col-3
 
-              // footer navigation 3
-              .footer__nav
-                a.footer__nav-link(href="#" target="_blank" class="" title="")
-                  span
-                    i.icon-font.icon-triangle-rotate
-                  p!= "Dolor sit"
-                a.footer__nav-link(href="#" target="_blank" class="" title="")
-                  span
-                    i.icon-font.icon-triangle-rotate
-                  p!= "Amet En"
-                a.footer__nav-link(href="#" target="_blank" class="" title="")
-                  span
-                    i.icon-font.icon-triangle-rotate
-                  p!= "Consectetuer"
-                a.footer__nav-link(href="#" target="_blank" class="" title="")
-                  span
-                    i.icon-font.icon-triangle-rotate
-                  p!= "Dipa Laresponsi"
-                a.footer__nav-link(href="#" target="_blank" class="" title="")
-                  span
-                    i.icon-font.icon-triangle-rotate
-                  p!= "Coraz timbre"
+            p.footer__title
+              span!= "Read The Newsletter"
+              i
 
-            .footer__col.footer__col-3
+            // newsletter
+            .newsletter
+              p.newsletter__text!= "Phasellus quis dapibus lacus, quis mattis nisi. Nulla facilisi. Cras vel tellus et justo rhoncus ultricies. Integer tincidunt ac magna ut fermentum."
 
-              p.footer__title
-                span!= "Read The Newsletter"
-                i
-
-              // newsletter
-              .newsletter
-                p.newsletter__text!= "Phasellus quis dapibus lacus, quis mattis nisi. Nulla facilisi. Cras vel tellus et justo rhoncus ultricies. Integer tincidunt ac magna ut fermentum."
-
-                form.newsletter__form(action='' method='' autocomplete='off')
-                  .newsletter__form-cover
-                    .newsletter__form-input
-                      input(type="text" name="" placeholder="Email Address")
-                    .newsletter__form-btn
-                      button(type="submit")
-                        i.icon-font.icon-send
+              form.newsletter__form(action='' method='' autocomplete='off')
+                .newsletter__form-cover
+                  .newsletter__form-input
+                    input(type="text" name="" placeholder="Email Address")
+                  .newsletter__form-btn
+                    button(type="submit")
+                      i.icon-font.icon-send
 
     .footer__wrapper-bottom
       .c-grid
@@ -151,17 +162,17 @@ footer#footer.footer
 
             // social
             .social
-              a.social__link(href="#" class="" title="")
+              a.social__link.social__link--facebook(href="#" class="" title="")
                 i.icon-font.icon-facebook
-              a.social__link(href="#" class="" title="")
+              a.social__link.social__link--twitter(href="#" class="" title="")
                 i.icon-font.icon-twitter
-              a.social__link(href="#" class="" title="")
+              a.social__link.social__link--google-plus(href="#" class="" title="")
                 i.icon-font.icon-google-plus
-              a.social__link(href="#" class="" title="")
+              a.social__link.social__link--rss(href="#" class="" title="")
                 i.icon-font.icon-rss
-              a.social__link(href="#" class="" title="")
+              a.social__link.social__link--pinterest(href="#" class="" title="")
                 i.icon-font.icon-pinterest
-              a.social__link(href="#" class="" title="")
+              a.social__link.social__link--instagram(href="#" class="" title="")
                 i.icon-font.icon-instagram
 
 // FOOTER :: END

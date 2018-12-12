@@ -1,0 +1,77 @@
+// SECTION comments :: START
+
+-
+  var commentsDataArr = [
+    {
+      classMod: 'main',
+      imgName: 'img-comments-user-0',
+      name: 'Rand al’Thor',
+      time: '2 months ago',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    },
+    {
+      classMod: 'additional',
+      imgName: 'img-comments-user-1',
+      name: 'Nynaeve al’Meara',
+      time: '3 months ago',
+      text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    },
+    {
+      classMod: 'additional',
+      imgName: 'img-comments-user-2',
+      name: 'Nynaeve al’Meara',
+      time: '4 months ago',
+      text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    },
+    {
+      classMod: 'main',
+      imgName: 'img-comments-user-3',
+      name: 'Moiraine Damodred',
+      time: '5 months ago',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    }
+  ];
+
+section#comments.comments
+
+  .c-grid.c-grid-0
+    .comments__wrapper.comments__wrapper-0
+
+      // header comments - count messages
+      .comments__header
+        i.icon-font.icon-comments
+        p!= "<span>38</span> Comments"
+
+  .c-grid.c-grid-1
+    .comments__wrapper.comments__wrapper-1
+
+      // comments body - messages
+      .comments__body
+
+        each val, idx in commentsDataArr
+          .comments__messages(class!= "comments__messages-" + idx + " comments__messages--" + commentsDataArr[idx].classMod)
+
+            .comments__messages-left
+              .comments__messages-photo
+                img(src="./img/" + commentsDataArr[idx].imgName + ".png" srcset="./img/" + commentsDataArr[idx].imgName + "@2x.png 2x" alt="" title="")
+
+            .comments__messages-right
+              p.comments__messages-name!= commentsDataArr[idx].name
+              p.comments__messages-time!= commentsDataArr[idx].time
+              p.comments__messages-text!= commentsDataArr[idx].text
+
+            .comments__messages-badge
+              a.comments__btn-like(href="#" class="" title="")
+                i.icon-font.icon-like
+                span!= "525"
+              a.comments__btn-dislike(href="#" class="" title="")
+                i.icon-font.icon-dislike
+                span!= "211"
+
+  .c-grid.c-grid-2
+    .comments__wrapper.comments__wrapper-2
+
+      // splash spinner message
+      include ../common/_spinner
+
+// SECTION comments :: END

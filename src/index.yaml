@@ -6,7 +6,7 @@ PageList:
   ready: 5
 - file: 404.html
   titleName: 404
-  ready: 45
+  ready: 75
 - file: list.html
   titleName: List of all skins
   ready: 1
@@ -30,7 +30,7 @@ PageList:
   ready: 1
 - file: sets.html
   titleName: Sets
-  ready: 1
+  ready: 20
 - file: shop-rotation.html
   titleName: Shop rotation
   ready: 1

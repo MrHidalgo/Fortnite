@@ -9,5 +9,7 @@
 * - bootstrap;
 * - object fit image;
 * - jquery-validation;
+* - jquery-migrate;
+* - jquery.stellar;
 *
 * */

@@ -8,7 +8,7 @@ extends shared/_layout
 block content
   div.body(class!= pageClassName)
 
-    include ./components/_mainBanner
+    include components/common/_mainBanner
     include ./components/home/_item
 
     section.section
@@ -19,8 +19,8 @@ block content
 
           .section__wrapper-right
 
-              include ./components/_sectionBanner
-              include ./components/_sectionBanner
+              include components/common/_sectionBanner
+              include components/common/_sectionBanner
 
 
     include ./components/home/_guides

@@ -154,6 +154,21 @@
     &-btn {
       position: relative;
 
+      &:hover {
+        &:before {
+          top: 0;
+          transform: translateY(0);
+          height: 100%;
+          background-color: #070c17;
+          @include transition(top, transform, height, background-color);
+        }
+
+        i {
+          color: #070c17;
+          @include transition(color);
+        }
+      }
+
       &:before {
         content: '';
         position: absolute;
@@ -163,6 +178,7 @@
         width: 2px;
         height: 31px;
         background-color: #c8ccd5;
+        @include transition(top, transform, height, background-color);
       }
 
       button {
@@ -183,6 +199,7 @@
         i {
           color: #657782;
           font-size: 23px;
+          @include transition(color);
         }
       }
     }
@@ -206,24 +223,28 @@
 
     i {
       color: $c-white;
+      @include transition(color);
+    }
 
-      &.icon-facebook {
-        font-size: 20px;
-      }
-      &.icon-twitter {
-        font-size: 22px;
-      }
-      &.icon-google-plus {
-        font-size: 26px;
-      }
-      &.icon-rss {
-        font-size: 18px;
-      }
-      &.icon-pinterest {
-        font-size: 20px;
-      }
-      &.icon-instagram {
-        font-size: 20px;
+    @each $className, $colorVal, $fontSize in
+        ('facebook', '#3b5998', '20'),
+        ('twitter', '#00aced', '22'),
+        ('google-plus', '#dd4b39', '26'),
+        ('rss', '#f26522', '18'),
+        ('pinterest', '#cb2027', '20'),
+        ('instagram', '#bc2a8d', '20')
+    {
+      &--#{$className} {
+        i {
+          font-size: #{$fontSize}px;
+        }
+
+        &:hover {
+          i {
+            color: #{$colorVal};
+            @include transition(color);
+          }
+        }
       }
     }
   }

@@ -38,6 +38,7 @@ $(document).ready((ev) => {
     initObjectFitImages();
     initValidation();
     initHamburger();
+    initStellar();
 		// ==========================================
 
     // callback

@@ -3,23 +3,70 @@
 .footer {
   position: relative;
 
-  &:before {
-    content: '';
+  .nfound {
+    &__traiangle {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &-img {
+        position: absolute;
+        top: -50px;
+        @include adaptive(767) {
+          transform: scale(0.55);
+        }
+
+        &-0 {
+          left: 60px;
+          @include adaptive(575) {
+            left: 10px;
+          }
+        }
+        &-1 {
+          left: 33%;
+          top: -33px;
+          @include adaptive(575) {
+            display: none !important;
+          }
+        }
+        &-2 {
+          right: 30%;
+          top: -70px;
+          @include adaptive(575) {
+            display: none !important;
+          }
+        }
+        &-3 {
+          right: 40px;
+          @include adaptive(575) {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__bar {
+    z-index: 0;
     position: absolute;
-    top: -100px;
+    top: -29px;
     left: 0;
     width: 100%;
-    height: 127px;
+    height: 30px;
     background-color: #070c17;
-    transform: skewY(-0.6deg);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
   }
 
   &__wrapper {
+    //z-index: 2;
     position: relative;
     min-height: 448px;
 
     &-top {
-      padding-top: 45px;
+      padding-top: 68px;
       background-color: #070c17;
 
       .c-grid {
@@ -42,24 +89,6 @@
     object-position: center;
     @include adaptive(1199) {
       display: none;
-    }
-  }
-
-  &__triangle {
-    z-index: 0;
-    position: absolute;
-    @include adaptive(1199) {
-      display: none;
-    }
-
-    &-0 {
-      right: 6px;
-      bottom: 134px;
-    }
-
-    &-1 {
-      top: 127px;
-      right: 40%;
     }
   }
 

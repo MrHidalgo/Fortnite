@@ -25,6 +25,10 @@
         height: 90px;
         margin-left: auto;
         margin-right: auto;
+        @include adaptive(767) {
+          max-width: 300px;
+          height: 250px;
+        }
       }
     }
   }

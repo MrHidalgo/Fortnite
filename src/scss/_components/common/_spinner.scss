@@ -1,0 +1,49 @@
+// SECTION spinner :: START
+
+.spinner {
+  &-container{
+    position:relative;
+  }
+
+  &-whirlpool,
+  &-whirlpool::before,
+  &-whirlpool::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgb(204,204,204);
+    border-left-color: rgb(0,0,0);
+    border-radius: 974px;
+  }
+
+  &-whirlpool {
+    margin: -17px 0 0 -17px;
+    height: 35px;
+    width: 35px;
+    animation: spinner-rotate 1150ms linear infinite;
+
+    &::before {
+      content: "";
+      margin: -15px 0 0 -15px;
+      height: 29px;
+      width: 29px;
+      animation: spinner-rotate 1150ms linear infinite;
+    }
+
+    &::after {
+      content: "";
+      margin: -21px 0 0 -21px;
+      height: 41px;
+      width: 41px;
+      animation: spinner-rotate 2300ms linear infinite;
+    }
+  }
+
+  @keyframes spinner-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+// SECTION spinner :: END

@@ -46,7 +46,10 @@
 /// ===============
 @import "_components/header";
 @import "_components/footer";
-@import "_components/banner";
+
+@import "_components/common/banner";
+@import "_components/common/spinner";
+@import "_components/common/comments";
 
 @import "_components/home/item";
 @import "_components/home/guides";

@@ -2,44 +2,17 @@
 
 .nfound {
   position: relative;
-  min-height: 900px;
+  background-color: #1ac2fe;
   background-image: url('../img/img-404-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  &__traiangle {
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    &-img {
-      position: absolute;
-      bottom: 50px;
-
-      &-0 {
-        left: 10px;
-      }
-      &-1 {
-        left: 200px;
-      }
-      &-2 {
-        right: 200px;
-      }
-      &-3 {
-        right: 0;
-      }
-    }
-  }
-
   &__wrapper {
     z-index: 1;
     position: relative;
     padding-top: 54px;
-    padding-bottom: 10px;
+    padding-bottom: 88px;
   }
 
   p {
