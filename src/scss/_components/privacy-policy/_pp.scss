@@ -91,6 +91,10 @@
   }
 
   &__content {
+    @include adaptive(767) {
+      padding-bottom: 100px;
+    }
+
     &-figure {
       z-index: 0;
       position: absolute;
@@ -117,6 +121,12 @@
         }
       }
     }
+
+    .banner {
+      @include adaptive(767) {
+        display: none;
+      }
+    }
   }
 
   &__title {
@@ -127,6 +137,45 @@
     padding-top: 75px;
     margin-left: auto;
     margin-right: auto;
+
+    svg {
+      text {
+        @include fluid(font-size, 320px, 768px, 50px, 100px);
+      }
+    }
+  }
+
+  &__text {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #273c43;
+    font-family: "Ubuntu", sans-serif;
+    @include fluid(font-size, 320px, 768px, 14px, 16px);
+    @include adaptive(767) {
+      padding: 0;
+    }
+
+    p {
+      padding-bottom: 31px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #273c43;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+    }
+
+    ul {
+      padding-left: 20px;
+      padding-bottom: 31px;
+
+      li {
+        line-height: 1.6;
+      }
+    }
   }
 }
 

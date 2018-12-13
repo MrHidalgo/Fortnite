@@ -61,7 +61,6 @@
   }
 
   &__wrapper {
-    //z-index: 2;
     position: relative;
     min-height: 448px;
 
@@ -146,14 +145,6 @@
           @include adaptive(1199) {
             order: 1;
             max-width: 100%;
-          }
-          @include adaptive(767) {
-            .footer__title {
-              width: 100%;
-              max-width: 400px;
-              margin-left: auto;
-              margin-right: auto;
-            }
           }
         }
       }

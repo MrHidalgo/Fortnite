@@ -28,6 +28,9 @@
   &--pp {
     .info__content {
       top: -60px;
+      @include adaptive(991) {
+        top: 0;
+      }
     }
   }
 
@@ -36,36 +39,83 @@
     top: 0;
     padding: 25px;
     background-color: #edf9fd;
+    @include adaptive(767) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   &__section {
     z-index: 1;
     position: relative;
-    padding-bottom: 31px;
 
     &-0 {
       display: flex;
+      @include adaptive(767) {
+        display: block;
+      }
 
       .info__section-left {
         width: 100%;
         max-width: calc(100% - 330px);
         padding-right: 15px;
+        @include adaptive(767) {
+          max-width: 100%;
+        }
       }
+
       .info__section-right {
         display: flex;
         justify-content: center;
         width: 330px;
+        @include adaptive(767) {
+          display: none;
+        }
       }
     }
   }
 
   &__subtitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 71px;
+    padding-left: 26px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-bottom: 31px;
+    background-color: #273c43;
+    clip-path: polygon(0 6%, 100% 0, 99% 96%, 1% 100%);
 
-    svg {
-      text {
-        font-size: 36px;
-      }
+    &:after,
+    &:before {
+      content: '';
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      height: 100%;
+    }
+
+    &:before {
+      left: 0;
+      width: 406px;
+      background-color: #1f2f35;
+      clip-path: polygon(0 100%, 53% 20%, 53% 67%, 100% 100%);
+    }
+
+    &:after {
+      right: 0;
+      width: 195px;
+      background-color: #4d6f7b;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 15% 47%, 12% 64%);
+    }
+
+    p {
+      z-index: 1;
+      position: relative;
+      color: $c-white;
+      @include fluid(font-size, 320px, 1440px, 28px, 36px);
     }
   }
 }
@@ -98,12 +148,6 @@
 .newsletter {
   @include adaptive(1199) {
     margin-bottom: 54px;
-  }
-  @include adaptive(767) {
-    width: 100%;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   &__text {

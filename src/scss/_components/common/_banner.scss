@@ -1,6 +1,11 @@
 // SECTION banner :: START
 
 .banner {
+  @include adaptive(767) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   &--main {
     display: flex;
     align-items: center;
