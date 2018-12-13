@@ -24,7 +24,7 @@ PageList:
   ready: 1
 - file: privacy-policy.html
   titleName: Privacy Policy
-  ready: 30
+  ready: 75
 - file: search.html
   titleName: Search
   ready: 1

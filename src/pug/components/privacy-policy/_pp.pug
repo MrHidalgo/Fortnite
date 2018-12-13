@@ -9,11 +9,23 @@ section#pp.pp
       img.pp__bg-figure.pp__bg-figure-0(src="./img/img-figure-pp-0.svg" alt="" title="")
       img.pp__bg-figure.pp__bg-figure-1(src="./img/img-figure-pp-1.svg" alt="" title="")
 
-    .pp__figure
-      img.pp__figure-img.pp__figure-img-0(src="./img/img-figure-pp-2.svg" alt="" title="")
-      img.pp__figure-img.pp__figure-img-1(src="./img/img-figure-pp-3.svg" alt="" title="")
-      img.pp__figure-img.pp__figure-img-2(src="./img/img-figure-pp-4.svg" alt="" title="")
-      img.pp__figure-img.pp__figure-img-3(src="./img/img-figure-pp-5.svg" alt="" title="")
+    .pp__figure(parallax-pp-js)
+      img.pp__figure-img.pp__figure-img-0(
+        src="./img/img-figure-pp-2.svg" alt="" title=""
+        data-stellar-ratio="1.15"
+      )
+      img.pp__figure-img.pp__figure-img-1(
+        src="./img/img-figure-pp-3.svg" alt="" title=""
+        data-stellar-ratio="1.15"
+      )
+      img.pp__figure-img.pp__figure-img-2(
+        src="./img/img-figure-pp-4.svg" alt="" title=""
+        data-stellar-ratio="1.25"
+      )
+      img.pp__figure-img.pp__figure-img-3(
+        src="./img/img-figure-pp-5.svg" alt="" title=""
+        data-stellar-ratio="0.8"
+      )
 
     .c-grid
       include ./_mainTitle
@@ -22,11 +34,23 @@ section#pp.pp
     .c-grid
       .pp__content.info__content
 
-        .pp__content-figure
-          img(src="./img/img-pp-content-figure-0.svg" alt="" title="")
-          img(src="./img/img-pp-content-figure-1.svg" alt="" title="")
-          img(src="./img/img-pp-content-figure-2.svg" alt="" title="")
-          img(src="./img/img-pp-content-figure-3.svg" alt="" title="")
+        .pp__content-figure(parallax-pp-content-js)
+          img(
+            src="./img/img-pp-content-figure-0.svg" alt="" title=""
+            data-stellar-ratio="1.05"
+          )
+          img(
+            src="./img/img-pp-content-figure-1.svg" alt="" title=""
+            data-stellar-ratio="0.9"
+          )
+          img(
+            src="./img/img-pp-content-figure-2.svg" alt="" title=""
+            data-stellar-ratio="0.95"
+          )
+          img(
+            src="./img/img-pp-content-figure-3.svg" alt="" title=""
+            data-stellar-ratio="0.85"
+          )
 
         .pp__section.info__section.info__section-0
           .info__section-left

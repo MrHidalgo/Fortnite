@@ -11,7 +11,7 @@
  * - data-stellar-background-ratio="1"
  */
 const initStellar = () => {
-  if ($("[parallax-404-js]").length) {
+  if ($("[parallax-404-js], [parallax-pp-js], [parallax-pp-content-js]").length) {
     $(function () {
       $.stellar({
         // Set scrolling to be in either one or both directions
