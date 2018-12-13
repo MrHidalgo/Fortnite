@@ -3,6 +3,10 @@
 .spinner {
   &-container{
     position:relative;
+    height: 41px;
+    width: 41px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &-whirlpool,

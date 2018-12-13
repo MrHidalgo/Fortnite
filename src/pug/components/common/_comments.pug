@@ -51,6 +51,10 @@ section#comments.comments
         each val, idx in commentsDataArr
           .comments__messages(class!= "comments__messages-" + idx + " comments__messages--" + commentsDataArr[idx].classMod)
 
+            .comments__messages-figure
+              img(src="./img/img-comments-triangle-0.svg" alt="" title="")
+              img(src="./img/img-comments-triangle-1.svg" alt="" title="")
+
             .comments__messages-left
               .comments__messages-photo
                 img(src="./img/" + commentsDataArr[idx].imgName + ".png" srcset="./img/" + commentsDataArr[idx].imgName + "@2x.png 2x" alt="" title="")
