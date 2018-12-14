@@ -17,8 +17,11 @@
     }
 
     &-right {
+      display: flex;
+      flex-direction: column;
       width: 100%;
       max-width: 470px;
+      padding-bottom: 50px;
     }
   }
 }

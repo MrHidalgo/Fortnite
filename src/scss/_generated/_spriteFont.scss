@@ -30,56 +30,65 @@
 	@if $filename == all {
 		$char: "\E001";
 	}
-	@if $filename == comments-single {
+	@if $filename == btn-arrow {
 		$char: "\E002";
 	}
-	@if $filename == comments {
+	@if $filename == bubble {
 		$char: "\E003";
 	}
-	@if $filename == dislike {
+	@if $filename == comments-single {
 		$char: "\E004";
 	}
-	@if $filename == facebook {
+	@if $filename == comments {
 		$char: "\E005";
 	}
-	@if $filename == google-plus {
+	@if $filename == dislike {
 		$char: "\E006";
 	}
-	@if $filename == instagram {
+	@if $filename == facebook {
 		$char: "\E007";
 	}
-	@if $filename == like {
+	@if $filename == google-plus {
 		$char: "\E008";
 	}
-	@if $filename == megaphone {
+	@if $filename == instagram {
 		$char: "\E009";
 	}
-	@if $filename == pinterest {
+	@if $filename == like {
 		$char: "\E00A";
 	}
-	@if $filename == preview {
+	@if $filename == megaphone {
 		$char: "\E00B";
 	}
-	@if $filename == rss {
+	@if $filename == pinterest {
 		$char: "\E00C";
 	}
-	@if $filename == search {
+	@if $filename == preview {
 		$char: "\E00D";
 	}
-	@if $filename == send {
+	@if $filename == rss {
 		$char: "\E00E";
 	}
-	@if $filename == sets {
+	@if $filename == search {
 		$char: "\E00F";
 	}
-	@if $filename == shop {
+	@if $filename == send {
 		$char: "\E010";
 	}
-	@if $filename == triangle-rotate {
+	@if $filename == sets {
 		$char: "\E011";
 	}
-	@if $filename == twitter {
+	@if $filename == shop {
 		$char: "\E012";
+	}
+	@if $filename == star {
+		$char: "\E013";
+	}
+	@if $filename == triangle-rotate {
+		$char: "\E014";
+	}
+	@if $filename == twitter {
+		$char: "\E015";
 	}
 
 	@return $char;
@@ -98,6 +107,14 @@
 
 .icon-all {
 	@include icon(all);
+
+}
+.icon-btn-arrow {
+	@include icon(btn-arrow);
+
+}
+.icon-bubble {
+	@include icon(bubble);
 
 }
 .icon-comments-single {
@@ -158,6 +175,10 @@
 }
 .icon-shop {
 	@include icon(shop);
+
+}
+.icon-star {
+	@include icon(star);
 
 }
 .icon-triangle-rotate {

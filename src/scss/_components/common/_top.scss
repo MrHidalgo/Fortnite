@@ -78,7 +78,7 @@
         (1, 'radial-gradient(#c359ff,#4b2483)'),
         (2, 'radial-gradient(#2cc1ff,#143977)'),
         (3, 'radial-gradient(#69bb1e,#175117)'),
-        (4  , 'radial-gradient(#bebebe,#646464)')
+        (4, 'radial-gradient(#bebebe,#646464)')
     {
       &-#{$className} {
         .top__block-photo {
@@ -96,7 +96,6 @@
     &-wrapper {
       display: flex;
       flex-direction: column;
-
     }
 
     &-photo {

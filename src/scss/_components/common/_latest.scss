@@ -1,0 +1,323 @@
+// SECTION latest :: START
+
+.latest {
+  position: relative;
+  width: 100%;
+  max-width: 397px;
+  min-height: 820px;
+  margin-top: 77px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+
+  &:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e6f3f8;
+    clip-path: polygon(0 0, 100% 1%, 98% 98%, 3% 100%);
+  }
+
+  &__figure {
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+
+      &:nth-of-type(1) {
+        top: -5px;
+        right: -10px;
+      }
+      &:nth-of-type(2) {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+    padding: 33px 0 31px;
+  }
+
+  &__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $c-white;
+
+    &:hover {
+      &:after {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        @include transition(clip-path);
+      }
+    }
+
+    &:after {
+      content: '';
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include transition(clip-path);
+    }
+
+    > div {
+      z-index: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    span {
+      padding-top: 3px;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+
+    .icon-btn-arrow {
+      z-index: 0;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      right: 0;
+      width: 26px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #fe23a9;
+      font-size: 40px;
+      transform: translateY(0);
+      @include transition(transform);
+    }
+
+    &-0 {
+      z-index: 1;
+      position: relative;
+      width: 100%;
+      max-width: 147px;
+      height: 54px;
+
+      &:hover {
+        color: $c-white;
+        @include transition(color);
+
+        .icon-btn-arrow {
+          transform: translateY(-10px);
+          @include transition(transform);
+        }
+      }
+
+      &:after {
+        background-color: #fe23a9;
+        clip-path: polygon(0 0, 100% 1%, 98% 98%, 3% 100%);
+      }
+
+      > div {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icon-star {
+        margin-right: 11px;
+        font-size: 26px;
+      }
+
+      span {
+        padding-top: 3px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 24px;
+      }
+    }
+
+    &-1 {
+      z-index: 0;
+      position: relative;
+      left: -20px;
+      top: 7px;
+      width: 100%;
+      max-width: 180px;
+      height: 54px;
+      @include transition(z-index, left, top);
+
+      &:hover {
+        z-index: 1;
+        top: 0;
+        left: 0;
+        @include transition(z-index, left, top);
+
+        .icon-btn-arrow {
+          transform: translateY(-10px);
+          @include transition(transform);
+        }
+      }
+
+      &:after {
+        background-color: #edf9fd;
+        clip-path: polygon(7% 3%, 100% 0, 97% 97%, 0 100%);
+      }
+
+      .icon-bubble {
+        margin-right: 11px;
+        color: #1ac2fe;
+        font-size: 19px;
+      }
+
+      .icon-btn-arrow {
+        transform: translateY(-20px);
+        @include transition(transform);
+        color: #edf9fd;
+      }
+      
+      span {
+        color: #1ac2fe;
+      }
+    }
+
+    &-wrapper {
+      position: absolute;
+      display: flex;
+      top: -71px;
+      left: 0;
+      width: 100%;
+      height: 77px;
+      padding: 24px 11px 0;
+    }
+  }
+
+  &__block {
+    display: flex;
+    min-height: 136px;
+    margin-bottom: 19px;
+
+    @each $className, $colorVal in
+        (0, 'radial-gradient(#ea8d23,#78371d)'),
+        (1, 'radial-gradient(#c359ff,#4b2483)'),
+        (2, 'radial-gradient(#2cc1ff,#143977)'),
+        (3, 'radial-gradient(#69bb1e,#175117)'),
+        (4, 'radial-gradient(#bebebe,#646464)')
+    {
+      &-#{$className} {
+        .latest__block-photo {
+          > div {
+            background-image: #{$colorVal};
+          }
+        }
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0 25px;
+    }
+
+    &-left {
+      width: 158px;
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 158px);
+      padding-top: 20px;
+    }
+
+    &-photo {
+      overflow: hidden;
+      z-index: 1;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 138px;
+      height: 126px;
+      background-color: $c-white;
+      clip-path: polygon(0 0, 100% 3%, 97% 95%, 5% 100%);
+      box-shadow: 0 10px 18px 0 rgba($c-black, 0.08);
+
+
+      > div {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        clip-path: polygon(0 0, 100% 3%, 97% 95%, 5% 100%);
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 12px;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 43px;
+        height: 33px;
+        background-color: #1ac2fe;
+        clip-path: polygon(0 5%, 100% 0, 97% 95%, 5% 100%);
+        color: $c-white;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+    }
+
+    &-title {
+      font-size: 24px;
+      padding-right: 5px;
+    }
+
+    &-desc,
+    &-data {
+      font-family: 'Rajdhani', sans-serif;
+    }
+
+    &-desc {
+      line-height: 1.2;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    &-data {
+      font-size: 14px;
+    }
+  }
+}
+
+// SECTION latest :: END

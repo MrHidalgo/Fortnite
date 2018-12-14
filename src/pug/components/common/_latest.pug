@@ -1,0 +1,83 @@
+// SECTION latest :: START
+
+-
+  var latestData = [
+    {
+      imgName: 'img-top-0',
+      name: 'Skull Ranger',
+      badge: '',
+      desc: 'She’s got a bone to pick.',
+      data: 'October 10, 2018'
+    },
+    {
+      imgName: 'img-top-1',
+      name: 'Dark Bag',
+      badge: '3d',
+      desc: 'Don’t forget to pack an umbrella.',
+      data: 'October 5, 2018'
+    },
+    {
+      imgName: 'img-top-2',
+      name: 'Dark Bomber',
+      badge: '3d',
+      desc: 'The future looks dark.',
+      data: 'October 10, 2018'
+    },
+    {
+      imgName: 'img-top-3',
+      name: 'Thunder Crash',
+      badge: '3d',
+      desc: 'Wield the thunder.',
+      data: 'October 10, 2018'
+    },
+    {
+      imgName: 'img-top-4',
+      name: 'Dark Glyph',
+      badge: '3d',
+      desc: 'Indecipherable.',
+      data: 'October 10, 2018'
+    }
+  ];
+
+section#latest.latest
+
+  .latest__figure
+    img(src="./img/img-latest-figure-0.svg" alt="" title="")
+    img(src="./img/img-latest-figure-1.svg" alt="" title="")
+
+  .latest__bg
+
+  .latest__btn-wrapper
+    a.latest__btn.latest__btn-0(href="#" class="" title="")
+      div
+        i.icon-font.icon-star
+        span!= "Latest"
+      i.icon-font.icon-btn-arrow
+
+    a.latest__btn.latest__btn-1(href="#" class="" title="")
+      div
+        i.icon-font.icon-bubble
+        span!= "Comments"
+      i.icon-font.icon-btn-arrow
+
+  .latest__wrapper
+
+    .latest__block-wrapper
+      each val, idx in latestData
+        .latest__block(class!= "latest__block-" + idx)
+          .latest__block-left
+            .latest__block-photo
+              div
+                img(src="./img/" + latestData[idx].imgName + ".png" srcset="./img/" + latestData[idx].imgName + "@2x.png 2x" alt="" title="")
+
+          .latest__block-right
+            .latest__block-header
+              p.latest__block-title!= latestData[idx].name
+
+              if(latestData[idx].badge)
+                span!= latestData[idx].badge
+
+            p.latest__block-desc!= latestData[idx].desc
+            span.latest__block-data!= latestData[idx].data
+
+// SECTION latest :: END

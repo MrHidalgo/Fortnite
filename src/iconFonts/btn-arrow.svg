@@ -1,0 +1,12 @@
+<svg id="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="25.44" height="39.72" viewBox="0 0 25.44 39.72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fe23a9;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1046.73,1077L1034,1089.73,1021.27,1077h25.46Z" transform="translate(-1021.28 -1050)"/>
+  <path class="cls-1" d="M1027,1050h13.98l-2.98,27h-8.02Z" transform="translate(-1021.28 -1050)"/>
+</svg>

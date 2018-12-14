@@ -15,7 +15,7 @@ PageList:
   ready: 50
 - file: history.html
   titleName: History
-  ready: 10
+  ready: 15
 - file: history-sub.html
   titleName: History sub
   ready: 20
@@ -33,7 +33,7 @@ PageList:
   ready: 75
 - file: search.html
   titleName: Search
-  ready: 10
+  ready: 15
 - file: sets.html
   titleName: Sets
   ready: 25
@@ -45,7 +45,7 @@ PageList:
   ready: 1
 - file: skin.html
   titleName: Skin
-  ready: 10
+  ready: 15
 - file: emotes.html
   titleName: Emotes
-  ready: 10
+  ready: 15
