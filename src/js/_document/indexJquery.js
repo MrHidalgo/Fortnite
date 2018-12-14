@@ -17,7 +17,14 @@ $(document).ready((ev) => {
 	* =============================================
 	* CALLBACK :: start
 	* ============================================= */
+  const initLatestTabs = () => {
+    $('.latest__btn').on('click', (ev) => {
+      const elem = $(ev.currentTarget);
 
+      $('.latest__btn').removeClass('is-active');
+      elem.addClass('is-active');
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -43,6 +50,7 @@ $(document).ready((ev) => {
 
     // callback
 		// ==========================================
+    initLatestTabs();
   };
   initJquery();
 });

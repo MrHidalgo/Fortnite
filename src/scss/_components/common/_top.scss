@@ -99,6 +99,7 @@
     }
 
     &-photo {
+      cursor: pointer;
       overflow: hidden;
       z-index: 1;
       position: absolute;
@@ -108,6 +109,13 @@
       height: 87px;
       background-color: $c-white;
       clip-path: polygon(0 0, 100% 3%, 97% 95%, 5% 100%);
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+          @include transition(transform);
+        }
+      }
 
       > div {
         content: '';

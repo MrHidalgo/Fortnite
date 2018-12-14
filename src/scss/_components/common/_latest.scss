@@ -56,12 +56,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $c-white;
+    transform: translateX(-11px) translateY(7px);
+    @include transition(transform);
 
     &:hover {
       &:after {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         @include transition(clip-path);
+      }
+
+      .icon-btn-arrow {
+        transform: translateY(-10px);
+        @include transition(transform);
       }
     }
 
@@ -73,6 +79,7 @@
       left: 0;
       width: 100%;
       height: 100%;
+      background-color: #edf9fd;
       @include transition(clip-path);
     }
 
@@ -89,6 +96,8 @@
       line-height: 1;
       text-transform: uppercase;
       font-size: 24px;
+      color: #1ac2fe;
+      @include transition(color);
     }
 
     .icon-btn-arrow {
@@ -100,23 +109,29 @@
       width: 26px;
       margin-left: auto;
       margin-right: auto;
-      color: #fe23a9;
+      color: #edf9fd;
       font-size: 40px;
-      transform: translateY(0);
+      transform: translateY(-20px);
       @include transition(transform);
     }
 
-    &-0 {
-      z-index: 1;
-      position: relative;
-      width: 100%;
-      max-width: 147px;
-      height: 54px;
+    .icon-star {
+      margin-right: 11px;
+      color: #1ac2fe;
+      font-size: 26px;
+    }
+
+    .icon-bubble {
+      margin-right: 11px;
+      color: #1ac2fe;
+      font-size: 19px;
+    }
+
+    &.is-active {
+      transform: translateX(0) translateY(0);
+      @include transition(transform);
 
       &:hover {
-        color: $c-white;
-        @include transition(color);
-
         .icon-btn-arrow {
           transform: translateY(-10px);
           @include transition(transform);
@@ -125,71 +140,44 @@
 
       &:after {
         background-color: #fe23a9;
-        clip-path: polygon(0 0, 100% 1%, 98% 98%, 3% 100%);
       }
 
-      > div {
-        z-index: 1;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      .icon-btn-arrow {
+        color: #fe23a9;
+        transform: translateY(5px);
+        @include transition(transform);
       }
 
-      .icon-star {
-        margin-right: 11px;
-        font-size: 26px;
-      }
-
+      .icon-star,
+      .icon-bubble,
       span {
-        padding-top: 3px;
-        line-height: 1;
-        text-transform: uppercase;
-        font-size: 24px;
+        color: $c-white;
+      }
+    }
+
+    &-0 {
+      z-index: 1;
+      position: relative;
+      width: 100%;
+      max-width: 147px;
+      height: 54px;
+      @include transition(z-index, left, top);
+
+      &:after {
+        clip-path: polygon(0 0, 100% 1%, 98% 98%, 3% 100%);
       }
     }
 
     &-1 {
       z-index: 0;
       position: relative;
-      left: -20px;
-      top: 7px;
       width: 100%;
       max-width: 180px;
       height: 54px;
       @include transition(z-index, left, top);
 
-      &:hover {
-        z-index: 1;
-        top: 0;
-        left: 0;
-        @include transition(z-index, left, top);
-
-        .icon-btn-arrow {
-          transform: translateY(-10px);
-          @include transition(transform);
-        }
-      }
-
       &:after {
-        background-color: #edf9fd;
         clip-path: polygon(7% 3%, 100% 0, 97% 97%, 0 100%);
-      }
-
-      .icon-bubble {
-        margin-right: 11px;
-        color: #1ac2fe;
-        font-size: 19px;
-      }
-
-      .icon-btn-arrow {
-        transform: translateY(-20px);
-        @include transition(transform);
-        color: #edf9fd;
-      }
-      
-      span {
-        color: #1ac2fe;
       }
     }
 
@@ -246,6 +234,7 @@
     }
 
     &-photo {
+      cursor: pointer;
       overflow: hidden;
       z-index: 1;
       position: relative;
@@ -257,6 +246,12 @@
       clip-path: polygon(0 0, 100% 3%, 97% 95%, 5% 100%);
       box-shadow: 0 10px 18px 0 rgba($c-black, 0.08);
 
+      &:hover {
+        img {
+          transform: scale(1.1);
+          @include transition(transform);
+        }
+      }
 
       > div {
         content: '';
@@ -276,6 +271,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        @include transition(transform);
       }
     }
 
