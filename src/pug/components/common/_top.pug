@@ -1,0 +1,77 @@
+// SECTION top :: START
+
+-
+  var topData = [
+    {
+      imgName: 'img-top-0',
+      num: '1.',
+      name: 'Skull Ranger',
+      desc: 'Lorem ipsum dolor sit ue nibh vivamus ten.'
+    },
+    {
+      imgName: 'img-top-1',
+      num: '2.',
+      name: 'Dark Bag',
+      desc: 'Lorem ipsum dolor sit ue nibh vivamus ten.'
+    },
+    {
+      imgName: 'img-top-2',
+      num: '3.',
+      name: 'Dark Bomber',
+      desc: 'Lorem ipsum dolor sit ue nibh vivamus ten.'
+    },
+    {
+      imgName: 'img-top-3',
+      num: '4.',
+      name: 'Thunder Crash',
+      desc: 'Lorem ipsum dolor sit ue nibh vivamus ten.'
+    },
+    {
+      imgName: 'img-top-4',
+      num: '5.',
+      name: 'Dark Glyph',
+      desc: 'Lorem ipsum dolor sit ue nibh vivamus ten.'
+    }
+  ];
+
+section#top.top
+
+  .top__figure
+    img(src="./img/img-top-figure-0.svg" alt="" title="")
+    img(src="./img/img-top-figure-1.svg" alt="" title="")
+
+  .top__title
+    p!= "Top 5 Skins"
+
+  .top__wrapper
+    .top__block-wrapper
+
+      each val, idx in topData
+        .top__block(class!= 'top__block-' + idx)
+          .top__block-photo
+            div
+              img(src="./img/" + topData[idx].imgName + ".png" srcset="./img/" + topData[idx].imgName + "@2x.png 2x" alt="" title="")
+
+          .top__block-content
+            div
+              .top__block-num
+                span!= topData[idx].num
+
+            div
+              .top__block-header
+                div
+                  p!= topData[idx].name
+
+                div
+                  .top__block-badge
+                    a.comments__btn-like(href="#" class="" title="")
+                      i.icon-font.icon-like
+                      span!= "525"
+                    a.comments__btn-dislike(href="#" class="" title="")
+                      i.icon-font.icon-dislike
+                      span!= "211"
+
+              .top__block-desc
+                p!= topData[idx].desc
+
+// SECTION top :: END

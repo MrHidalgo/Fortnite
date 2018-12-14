@@ -9,6 +9,19 @@ block content
   div.body(class!= pageClassName)
 
     include components/common/_mainBanner
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+
+          .section__wrapper-right
+
+            include components/common/_sectionBanner
+            include components/common/_top
+            include components/common/_sectionBanner
+            include components/common/_royal
+
     include components/common/_reply
 
     section.section

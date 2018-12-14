@@ -3,7 +3,7 @@ ProjectTitle: Fortnite
 PageList:
 - file: index.html
   titleName: Home
-  ready: 5
+  ready: 15
 - file: 404.html
   titleName: 404
   ready: 75
@@ -15,7 +15,7 @@ PageList:
   ready: 50
 - file: history.html
   titleName: History
-  ready: 1
+  ready: 10
 - file: history-sub.html
   titleName: History sub
   ready: 20
@@ -33,7 +33,7 @@ PageList:
   ready: 75
 - file: search.html
   titleName: Search
-  ready: 1
+  ready: 10
 - file: sets.html
   titleName: Sets
   ready: 25
@@ -45,7 +45,7 @@ PageList:
   ready: 1
 - file: skin.html
   titleName: Skin
-  ready: 1
+  ready: 10
 - file: emotes.html
   titleName: Emotes
-  ready: 1
+  ready: 10

@@ -4,12 +4,12 @@
 // ==================================================
 // ==================================================
 
-$bth-width: 212px;
+$bth-width: auto;
 $bth-height: 59px;
 $btn-border-width: 0;
 $btn-border-color: transparent;
 $bth-border-radius: 0;
-$bth-box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.11);
+$bth-box-shadow: 0 4px 9px 0px rgba($c-black, 0.21);
 $bth-background-color: rgba(#1ac2fe, 1);
 $bth-color: rgba(#0183b1, 1);
 $bth-font-size: 24px;
@@ -27,7 +27,7 @@ $btn-color--border: rgba(#000, 1);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: auto;
   max-width: $bth-width;
   height: $bth-height;
   border: $btn-border-width solid $btn-border-color;
@@ -39,6 +39,8 @@ $btn-color--border: rgba(#000, 1);
   font-weight: $bth-font-weight;
   font-family: "Anton", sans-serif;
   clip-path: polygon(0 0, 100% 2%, 97% 98%, 2% 100%);
+  padding-left: 25px;
+  padding-right: 30px;
   @include transition(color, clip-path);
 
   &:hover {

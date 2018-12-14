@@ -1,0 +1,183 @@
+// SECTION royal :: START
+
+.royal {
+  position: relative;
+  width: 100%;
+  max-width: 397px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
+
+  &:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f6f6;
+    clip-path: polygon(0 0, 100% 2%, 98% 98%, 3% 100%);
+  }
+
+  &__figure {
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+
+      &:nth-of-type(1) {
+        top: -5px;
+        right: 10%;
+      }
+      &:nth-of-type(2) {
+        top: 60%;
+        right: -30px;
+      }
+      &:nth-of-type(3) {
+        left: 3%;
+        bottom: -30px;
+      }
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+    padding-left: 25px;
+    padding-right: 5px;
+
+    &:after {
+      content: '';
+      z-index: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: calc(100% - 40px);
+      height: 7px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #1ac2fe;
+      clip-path: polygon(0 0, 100% 50%, 99% 100%, 1% 50%);
+    }
+
+    > div {
+      &:nth-of-type(1) {
+        width: 100%;
+        max-width: calc(100% - 85px);
+      }
+      &:nth-of-type(2) {
+        width: 85px;
+      }
+
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      color: #273c43;
+      text-transform: uppercase;
+      font-size: 28px;
+
+      i {
+        margin-right: 15px;
+      }
+    }
+
+    span {
+      color: #657782;
+      font-size: 14px;
+      font-family: 'Ubuntu', sans-serif;
+    }
+  }
+
+  &__body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__footer {
+    position: relative;
+    padding-top: 25px;
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__block {
+    display: flex;
+    margin-bottom: 16px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0 22px;
+    }
+
+    &-left {
+      width: 130px;
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 130px);
+      padding-left: 20px;
+    }
+
+    &-img {
+      position: relative;
+      width: 100%;
+      height: 83px;
+      border: 4px solid #e4e6e6;
+      box-shadow: 0 4px 9px 0 rgba($c-black, 0.14);
+
+      img {
+        @extend %imageFill;
+      }
+    }
+
+    p,
+    span {
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    p {
+      padding-bottom: 10px;
+      color: #273c43;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    span {
+      color: #657782;
+      font-size: 14px;
+    }
+  }
+}
+
+// SECTION royal :: END

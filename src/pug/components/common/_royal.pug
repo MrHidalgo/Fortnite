@@ -1,0 +1,56 @@
+// SECTION royal :: START
+
+-
+  var royalData = [
+    {
+      imgName: 'img-royal-0',
+      title: 'Quad Launcher',
+      desc: 'Lorem ipsum dolor sit amet, cetur adipiscing elit.'
+    },
+    {
+      imgName: 'img-royal-1',
+      title: 'Bone Chilling',
+      desc: 'Lorem ipsum dolor sit amet, cetur adipiscing elit.'
+    },
+    {
+      imgName: 'img-royal-2',
+      title: 'Disco Domination LTM',
+      desc: 'Lorem ipsum dolor sit amet, cetur adipiscing elit.'
+    }
+  ];
+
+
+section#royal.royal
+
+  .royal__figure
+    img(src="./img/img-royale-figure-0.svg" alt="" title="")
+    img(src="./img/img-royale-figure-1.svg" alt="" title="")
+    img(src="./img/img-royale-figure-2.svg" alt="" title="")
+
+  .royal__wrapper
+    .royal__header
+      div
+        p
+          i.icon-font.icon-megaphone
+          != "Battle Royale News"
+      div
+        span!= "21 hours Ago"
+
+    .royal__body
+
+      .royal__block-wrapper
+        each val, idx in royalData
+          .royal__block(class!= "royal__block-" + idx)
+            .royal__block-left
+              .royal__block-img
+                img(src="./img/" + royalData[idx].imgName + ".png" srcset="./img/" + royalData[idx].imgName + "@2x.png 2x" alt="" title="")
+
+            .royal__block-right
+              p!= royalData[idx].title
+              span!= royalData[idx].desc
+
+    .royal__footer
+      a.c-btn.c-btn--bg(href="#" class="" title="")!= "All News <span>></span>"
+
+
+// SECTION royal :: END

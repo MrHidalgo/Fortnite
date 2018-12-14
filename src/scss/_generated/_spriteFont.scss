@@ -51,32 +51,35 @@
 	@if $filename == like {
 		$char: "\E008";
 	}
-	@if $filename == pinterest {
+	@if $filename == megaphone {
 		$char: "\E009";
 	}
-	@if $filename == preview {
+	@if $filename == pinterest {
 		$char: "\E00A";
 	}
-	@if $filename == rss {
+	@if $filename == preview {
 		$char: "\E00B";
 	}
-	@if $filename == search {
+	@if $filename == rss {
 		$char: "\E00C";
 	}
-	@if $filename == send {
+	@if $filename == search {
 		$char: "\E00D";
 	}
-	@if $filename == sets {
+	@if $filename == send {
 		$char: "\E00E";
 	}
-	@if $filename == shop {
+	@if $filename == sets {
 		$char: "\E00F";
 	}
-	@if $filename == triangle-rotate {
+	@if $filename == shop {
 		$char: "\E010";
 	}
-	@if $filename == twitter {
+	@if $filename == triangle-rotate {
 		$char: "\E011";
+	}
+	@if $filename == twitter {
+		$char: "\E012";
 	}
 
 	@return $char;
@@ -123,6 +126,10 @@
 }
 .icon-like {
 	@include icon(like);
+
+}
+.icon-megaphone {
+	@include icon(megaphone);
 
 }
 .icon-pinterest {
