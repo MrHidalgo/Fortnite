@@ -1,0 +1,22 @@
+// SECTION breadcrumbs :: START
+
+-
+  var rewardsDataArr = ['Home', 'Battlepass', 'Season 3 Battle Pass Rewards'];
+
+section#breadcrumbs.breadcrumbs
+  .c-grid
+    .breadcrumbs__wrapper
+
+      ul.breadcrumbs__list
+
+        if(pageClassName === 'p-rewards')
+          each val, idx in rewardsDataArr
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#" class="" title="")!= val
+
+            if(idx < rewardsDataArr.length - 1)
+              li.breadcrumbs__item
+                span.breadcrumbs__icon!= ">>"
+
+
+// SECTION breadcrumbs :: END
