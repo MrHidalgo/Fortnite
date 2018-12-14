@@ -5,19 +5,19 @@
 // ==================================================
 
 // form
-$form-width: 600px;
+$form-width: 774px;
 
 // group
 $form-field-group-two-margin: 15px;
 $form-field-group-three-margin: 15px;
 
 // field
-$form-field-margin: 30px;
-$form-field-input-height: 50px;
+$form-field-margin: 23px;
+$form-field-input-height: 75px;
 $form-field-radio-height: $form-field-input-height;
 $form-field-checkbox-height: $form-field-input-height;
 $form-field-select-height: $form-field-input-height;
-$form-field-textarea-height: 150px;
+$form-field-textarea-height: 173px;
 
 // label
 $form-label-height: auto;
@@ -26,15 +26,15 @@ $form-label-font-size: 16px;
 $form-label-font-weight: normal;
 
 // input
-$form-input-border-radius: 5px;
-$form-input-border-width: 1px;
+$form-input-border-radius: 0;
+$form-input-border-width: 0;
 $form-input-border-color: gray;
 $form-input-box-shadow: none;
 $form-input-padding: 0 20px;
 $form-input-color: #000;
 $form-input-font-size: 16px;
 $form-input-font-weight: normal;
-$form-input-placeholder-color: #666;
+$form-input-placeholder-color: #bfbfbf;
 $form-input-placeholder-font-size: 16px;
 $form-input-placeholder-font-weight: normal;
 
@@ -105,6 +105,7 @@ $form-notify-font-weight: bold;
   max-width: $form-width;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Ubuntu', sans-serif;
 
   &.is-focus {}
 
@@ -359,6 +360,7 @@ $form-notify-font-weight: bold;
     &-wrapper {
       position: relative;
       display: flex;
+      clip-path: polygon(0 3%, 100% 0, 98% 100%, 0.25% 97%);
     }
   }
 

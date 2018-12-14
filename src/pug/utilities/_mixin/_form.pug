@@ -316,6 +316,6 @@ mixin formCheckbox(objValue, notifyArr=null)
 mixin formBtn(classMod, btnClassMod, btnVal)
   .c-form__field.c-form__field--btn(class!= classMod)
     button.c-form__btn(
-    type="submit"
-    class!= btnClassMod
+      type="submit"
+      class!= btnClassMod
     )!= btnVal

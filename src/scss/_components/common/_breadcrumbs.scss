@@ -1,0 +1,58 @@
+// SECTION breadcrumbs :: START
+
+.breadcrumbs {
+  padding-left: 15px;
+  padding-bottom: 50px;
+  @include adaptive(575) {
+    display: none;
+  }
+
+  &__list {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-height: 41px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f4f6f6;
+    clip-path: polygon(0 0, 100% 2%, 98% 98%, 0 100%);
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #eef0f7;
+      clip-path: polygon(0 100%, 85% 65%, 100% 0, 100% 100%);
+    }
+  }
+
+  &__item {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  &__link {
+    color: #282e42;
+    line-height: 1;
+    text-transform: uppercase;
+    @include transition(color);
+    @include fluid(font-size, 320px, 1440px, 12px, 14px);
+
+    &:hover {
+      color: #ff7236;
+      @include transition(color);
+    }
+  }
+
+  &__icon {
+    color: #ff7236;
+    font-size: 33px;
+    font-family: 'DCC - Scisor', sans-serif;
+  }
+}
+
+// SECTION breadcrumbs :: END

@@ -37,10 +37,10 @@
 //@import "_macros/nav";
 //@import "_macros/title";
 //@import "_macros/subtitle";
-//@import "_macros/btn";
+@import "_macros/btn";
 //@import "_macros/modal";
 @import "_macros/hamburger";
-//@import "_macros/form";
+@import "_macros/form";
 ///
 /// COMPONENTS
 /// ===============
@@ -49,6 +49,9 @@
 
 @import "_components/common/banner";
 @import "_components/common/spinner";
+@import "_components/common/info";
+@import "_components/common/breadcrumbs";
+@import "_components/common/reply";
 @import "_components/common/comments";
 
 @import "_components/home/item";

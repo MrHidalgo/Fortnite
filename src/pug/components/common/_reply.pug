@@ -1,0 +1,40 @@
+// SECTION reply :: START
+
+section#reply.reply
+
+  .reply__bg
+
+  .reply__figure
+    img(src="./img/img-replay-triangle-0.svg" alt="" title="")
+    img(src="./img/img-replay-triangle-1.svg" alt="" title="")
+    img(src="./img/img-replay-triangle-2.svg" alt="" title="")
+    img(src="./img/img-replay-triangle-3.svg" alt="" title="")
+    img(src="./img/img-replay-triangle-4.svg" alt="" title="")
+
+  .c-grid
+    .reply__wrapper.reply__wrapper-0
+      .reply__title
+        i.icon-font.icon-comments-single
+        p!= "Leave a Reply"
+
+    .reply__wrapper.reply__wrapper-1
+      .reply__wrapper-left
+
+        form.c-form(action='' method='' autocomplete='off')
+          +formTextarea(dataFormObj.textareaField)
+
+          .c-form__group.c-form__group--two
+            .c-form__group-col.c-form__group-col-0
+              +formInput(dataFormObj.inputName)
+
+            .c-form__group-col.c-form__group-col-1
+
+              +formInput(dataFormObj.inputEmail)
+
+          +formBtn('', 'c-btn c-btn--bg', 'Post Comment <span>></span>')
+
+      .reply__wrapper-right
+
+        include ../common/_sectionBanner
+
+// SECTION reply :: END

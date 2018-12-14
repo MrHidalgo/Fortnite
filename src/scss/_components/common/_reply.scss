@@ -1,0 +1,170 @@
+// SECTION reply :: START
+
+.reply {
+  position: relative;
+  min-height: 467px;
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 41deg, rgb(255,180,93) 0%, rgb(255,114,54) 99%);
+    clip-path: polygon(0 13%, 100% 5%, 100% 100%, 0 98%);
+
+    &:before,
+    &:after {
+      content: '';
+      z-index: -1;
+      opacity: 0.21;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: overlay;
+      background-color: #000;
+    }
+
+    &:before {
+      clip-path: polygon(0 0, 5% 0, 25% 30%, 0 40%);
+    }
+
+    &:after {
+      clip-path: polygon(0 100%, 65% 55%, 100% 10%, 100% 100%);
+    }
+  }
+
+  &__figure {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+      @include adaptive(767) {
+        transform: scale(0.75);
+      }
+
+      &:nth-of-type(1) {
+        top: -75px;
+        right: 10%;
+        @include adaptive(767) {
+          right: 0;
+        }
+      }
+      &:nth-of-type(2) {
+        bottom: -55px;
+        left: 3%;
+        @include adaptive(767) {
+          left: 0;
+        }
+      }
+      &:nth-of-type(3) {
+        left: 15%;
+        bottom: -50px;
+        @include adaptive(767) {
+          left: 20%;
+        }
+      }
+      &:nth-of-type(4) {
+        right: 15%;
+        bottom: -30px;
+      }
+      &:nth-of-type(5) {
+        right: 3%;
+        bottom: -25px;
+        @include adaptive(767) {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .c-grid {
+    max-width: 1221px;
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+
+    &-0 {
+      z-index: 2;
+      position: relative;
+    }
+
+    &-1 {
+      z-index: 1;
+      position: relative;
+      top: -10px;
+      display: flex;
+    }
+
+    &-left {
+      width: 100%;
+      max-width: calc(100% - 370px);
+      @include adaptive(767) {
+        max-width: 100%;
+      }
+
+      .c-form {
+        .c-btn {
+          margin-left: auto;
+        }
+      }
+    }
+
+    &-right {
+      width: 370px;
+      @include adaptive(767) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 495px;
+    padding-left: 30px;
+    background-color: #ffe000;
+    clip-path: polygon(0 0, 100% 3%, 97% 100%, 3% 96%);
+    @include fluid(height, 320px, 1440px, 75px, 100px);
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #e1be1c;
+      clip-path: polygon(0 100%, 75% 15%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .icon-font {
+      color: $c-white;
+      @include fluid(font-size, 320px, 1440px, 20px, 35px);
+    }
+
+    p {
+      padding-left: 10px;
+      color: $c-white;
+      line-height: 1;
+      text-transform: uppercase;
+      text-shadow: 0 10px 9px rgba($c-black, 0.017);
+      @include fluid(font-size, 320px, 1440px, 30px, 48px);
+    }
+  }
+}
+
+// SECTION reply :: END

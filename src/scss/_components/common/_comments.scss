@@ -35,7 +35,7 @@
 
     .icon-font {
       color: #273c43;
-      @include fluid(font-size, 320px, 1440px, 20px, 35px)
+      @include fluid(font-size, 320px, 1440px, 20px, 35px);
     }
 
     p {

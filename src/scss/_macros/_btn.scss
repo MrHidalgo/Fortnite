@@ -4,16 +4,16 @@
 // ==================================================
 // ==================================================
 
-$bth-width: 250px;
-$bth-height: 45px;
-$btn-border-width: 1px;
-$btn-border-color: rgba(#000, 1);
-$bth-border-radius: 5px;
-$bth-box-shadow: none;
-$bth-background-color: rgba(#000, 1);
-$bth-color: rgba(#fff, 1);
-$bth-font-size: rgba(#000, 1);
-$bth-font-weight: bold;
+$bth-width: 212px;
+$bth-height: 59px;
+$btn-border-width: 0;
+$btn-border-color: transparent;
+$bth-border-radius: 0;
+$bth-box-shadow: 0 4px 9px 0px rgba(0, 0, 0, 0.11);
+$bth-background-color: rgba(#1ac2fe, 1);
+$bth-color: rgba(#0183b1, 1);
+$bth-font-size: 24px;
+$bth-font-weight: normal;
 
 $btn-color--border: rgba(#000, 1);
 
@@ -34,8 +34,23 @@ $btn-color--border: rgba(#000, 1);
   box-shadow: $bth-box-shadow;
   border-radius: $bth-border-radius;
   color: $bth-color;
+  text-transform: uppercase;
   font-size: $bth-font-size;
   font-weight: $bth-font-weight;
+  font-family: "Anton", sans-serif;
+  clip-path: polygon(0 0, 100% 2%, 97% 98%, 2% 100%);
+  @include transition(color, clip-path);
+
+  &:hover {
+    color: $c-white;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    @include transition(color, clip-path);
+
+    span {
+      transform: translateX(10px);
+      @include transition(transform);
+    }
+  }
 
   &--border {
     background-color: transparent;
@@ -52,6 +67,13 @@ $btn-color--border: rgba(#000, 1);
 
   &__icon {
     &-wrap {}
+  }
+
+  span {
+    padding-left: 13px;
+    font-family: 'DCC-Scisor', sans-serif;
+    transform: translateX(0);
+    @include transition(transform);
   }
 }
 
