@@ -1,0 +1,20 @@
+---
+title: Fortnite - Beginner Tips
+
+pageClassName: p-berginner
+---
+extends shared/_layout
+
+block content
+  div.body(class!= pageClassName)
+
+    include components/common/_mainBanner
+    include components/common/_reply
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include components/common/_comments
+
+          .section__wrapper-right

@@ -12,13 +12,19 @@ PageList:
   ready: 1
 - file: rewards.html
   titleName: Battle pass rewards
-  ready: 20
+  ready: 50
 - file: history.html
   titleName: History
   ready: 1
+- file: history-sub.html
+  titleName: History sub
+  ready: 20
+- file: beginner.html
+  titleName: Beginner tips
+  ready: 20
 - file: leaked.html
   titleName: Leaked
-  ready: 20
+  ready: 25
 - file: leaked-sub.html
   titleName: Leaked sub
   ready: 1
@@ -30,7 +36,7 @@ PageList:
   ready: 1
 - file: sets.html
   titleName: Sets
-  ready: 20
+  ready: 25
 - file: shop-rotation.html
   titleName: Shop rotation
   ready: 1
