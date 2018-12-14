@@ -2,27 +2,31 @@
 
 section#rewards.rewards
 
-  .rewards__bg
-    .rewards__bg-bottom
+  .rewards__bg(
+    data-stellar-background-ratio="0.75"
+    parallax-rewards-bg-js
+  )
 
   .c-grid
     .rewards__wrapper
 
       .rewards__title
+        .rewards__title-wrapper
+          include ./_mainTitle
+
         .rewards__title-triangle
           img(src="./img/img-rewards-title-triangle-0.svg" alt="" title="")
           img(src="./img/img-rewards-title-triangle-1.svg" alt="" title="")
 
-          include ./_mainTitle
-
       .rewards__subtitle
+        .rewards__subtitle-wrapper
+          h1!= "Battle Pass Rewards"
+          p!= "All rewards from Fortnite: Season 3 "
+
         .rewards__subtitle-triangle
           img(src="./img/img-rewards-subtitle-triangle-0.svg" alt="" title="")
           img(src="./img/img-rewards-subtitle-triangle-1.svg" alt="" title="")
           img(src="./img/img-rewards-subtitle-triangle-2.svg" alt="" title="")
           img(src="./img/img-rewards-subtitle-triangle-3.svg" alt="" title="")
-
-        h1!= "Battle Pass Rewards"
-        p!= "All rewards from Fortnite: Season 3 "
 
 // SECTION rewards :: END

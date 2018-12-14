@@ -4,29 +4,22 @@
   position: relative;
   min-height: 272px;
   margin-bottom: 35px;
-  background-color: #2a2a2a;
-  background-image: url('../img/img-rewards-bg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
   &__bg {
     z-index: 0;
-    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
-    &-bottom {
-      position: absolute;
-      left: 0;
-      bottom: -60px;
-      width: 100%;
-      height: 100px;
-      transform: skewY(-1.5deg);
-      background-color: $c-white;
+    background-color: #2a2a2a;
+    background-image: url('../img/img-rewards-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    @include adaptive(767) {
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
   }
 
@@ -40,42 +33,59 @@
     position: relative;
     width: 100%;
     max-width: 804px;
-    height: 139px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('../img/img-rewards-title-bg.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    @include fluid(height, 320px, 1440px, 110px, 139px);
 
-    &-triangle {
-      z-index: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-
-      img {
-        position: absolute;
-        top: -20px;
-
-        &:nth-child(1) {
-          left: 10px;
-        }
-
-        &:nth-child(2) {
-          right: 20px;
-        }
+    svg {
+      text {
+        @include fluid(font-size, 320px, 1440px, 38px, 100px);
       }
     }
 
-    svg {
-      display: block;
-      margin-top: 15px;
-      margin-left: auto;
-      margin-right: auto;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background-color: #1787a5;
+      clip-path: polygon(0 0, 100% 7%, 97% 96%, 3% 100%);
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0c7793;
+        clip-path: polygon(0 100%, 85% 65%, 100% 0, 100% 100%);
+      }
     }
+
+      &-triangle {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+          position: absolute;
+          top: -20px;
+
+          &:nth-child(1) {
+            left: 10px;
+          }
+
+          &:nth-child(2) {
+            right: 20px;
+          }
+        }
+      }
   }
 
   &__subtitle {
@@ -83,13 +93,32 @@
     top: -15px;
     width: 100%;
     max-width: 711px;
-    height: 94px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('../img/img-rewards-subtitle-bg.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    @include fluid(height, 320px, 1440px, 85px, 94px);
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background-color: #ffb45d;
+      clip-path: polygon(0 0, 100% 0, 98% 98%, 2% 100%);
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #eb9f47;
+        clip-path: polygon(0 0, 100% 0, 12% 30%, 7% 70%, 0 0);
+      }
+    }
 
     &-triangle {
       z-index: 0;
@@ -98,6 +127,9 @@
       left: 0;
       width: 100%;
       height: 100%;
+      @include adaptive(575) {
+        display: none;
+      }
 
       img {
         position: absolute;
@@ -128,13 +160,13 @@
     h1 {
       padding-top: 5px;
       color: $c-white;
-      font-size: 50px;
+      @include fluid(font-size, 320px, 1440px, 28px, 50px);
     }
 
     p {
-      color: #7e4b0f;
-      font-size: 18px;
       padding-bottom: 5px;
+      color: #7e4b0f;
+      @include fluid(font-size, 320px, 1440px, 14px, 18px);
     }
   }
 }
