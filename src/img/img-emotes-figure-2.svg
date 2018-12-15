@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="364" height="362" viewBox="0 0 364 362">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.18;
+        mix-blend-mode: overlay;
+      }
+    </style>
+  </defs>
+  <path id="img-emotes-figure-2" class="cls-1" d="M1552,240L1136,544l254,58,210-28Z" transform="translate(-1136 -240)"/>
+</svg>

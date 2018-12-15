@@ -1,0 +1,112 @@
+// SECTION emotes :: START
+
+.emotes {
+  position: relative;
+
+  &:before {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 41deg, rgb(0,142,193) 0%, rgb(10,164,219) 99%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  }
+
+  &__figure,
+  &__triangle {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+    }
+  }
+
+  &__figure {
+    overflow: hidden;
+
+    img {
+      &:nth-of-type(1) {
+        top: 0;
+        left: 0;
+      }
+      &:nth-of-type(2) {
+        top: -50%;
+        right: 10%;
+      }
+      &:nth-of-type(3) {
+        bottom: 10%;
+        right: -3%;
+      }
+    }
+  }
+
+  &__triangle {
+    img {
+      @include adaptive(767) {
+        transform: scale(0.75);
+      }
+
+      &:nth-of-type(1) {
+        bottom: 0;
+        left: 0;
+        @include adaptive(767) {
+          bottom: -5%;
+        }
+      }
+      &:nth-of-type(2) {
+        bottom: -25px;
+        right: 10%;
+      }
+      &:nth-of-type(3) {
+        bottom: -10%;
+        right: 0;
+      }
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 411px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  &__title,
+  &__text {
+    color: $c-white;
+    text-align: center;
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    line-height: 1;
+    text-shadow: 0 6px 0 rgba(0, 0, 0, 0.16);
+    text-transform: uppercase;
+    @include fluid(font-size, 320px, 768px, 50px, 100px);
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 962px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-family: 'Ubuntu', sans-serif;
+    @include fluid(font-size, 320px, 768px, 16px, 20px);
+  }
+}
+
+// SECTION emotes :: END
