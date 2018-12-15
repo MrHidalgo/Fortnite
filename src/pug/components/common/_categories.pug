@@ -44,9 +44,9 @@
     }
   ];
 
-section#categories.categories
+section#categories.categories.sidebar
 
-  .categories__figure
+  .categories__figure.sidebar__figure
     img(src="./img/img-categories-figure-0.svg" alt="" title="")
     img(src="./img/img-categories-figure-1.svg" alt="" title="")
     img(src="./img/img-categories-figure-2.svg" alt="" title="")
@@ -54,7 +54,7 @@ section#categories.categories
   .categories__title
     p!= "Categories"
 
-  .categories__wrapper
+  .categories__wrapper.sidebar__wrapper
 
     .categories__block-wrapper
       each val, idx in categoriesData

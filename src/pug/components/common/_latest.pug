@@ -39,9 +39,9 @@
     }
   ];
 
-section#latest.latest
+section#latest.latest.sidebar
 
-  .latest__figure
+  .latest__figure.sidebar__figure
     img(src="./img/img-latest-figure-0.svg" alt="" title="")
     img(src="./img/img-latest-figure-1.svg" alt="" title="")
 
@@ -58,7 +58,7 @@ section#latest.latest
         span!= "Comments"
       i.icon-font.icon-btn-arrow
 
-  .latest__wrapper
+  .latest__wrapper.sidebar__wrapper
 
     .latest__block-wrapper
       each val, idx in latestData
