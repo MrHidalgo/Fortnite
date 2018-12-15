@@ -7,6 +7,11 @@
     display: none;
   }
 
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__list {
     position: relative;
     display: inline-flex;
@@ -50,6 +55,7 @@
 
   &__icon {
     color: #ff7236;
+    line-height: 1;
     font-size: 33px;
     font-family: 'DCC - Scisor', sans-serif;
   }

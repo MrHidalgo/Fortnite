@@ -1,0 +1,67 @@
+// SECTION categories :: START
+
+-
+  var categoriesData = [
+    {
+      name: 'Backpacks',
+      num: '111'
+    },
+    {
+      name: 'Consumables',
+      num: '7'
+    },
+    {
+      name: 'Emotes',
+      num: '93'
+    },
+    {
+      name: 'Gliders',
+      num: '83'
+    },
+    {
+      name: 'Guides',
+      num: '4'
+    },
+    {
+      name: 'Outfits',
+      num: '209'
+    },
+    {
+      name: 'Pickaxes',
+      num: '93'
+    },
+    {
+      name: 'Skydiving Trails',
+      num: '11'
+    },
+    {
+      name: 'Sprays',
+      num: '26'
+    },
+    {
+      name: 'Umbrellas',
+      num: '5'
+    }
+  ];
+
+section#categories.categories
+
+  .categories__figure
+    img(src="./img/img-categories-figure-0.svg" alt="" title="")
+    img(src="./img/img-categories-figure-1.svg" alt="" title="")
+    img(src="./img/img-categories-figure-2.svg" alt="" title="")
+
+  .categories__title
+    p!= "Categories"
+
+  .categories__wrapper
+
+    .categories__block-wrapper
+      each val, idx in categoriesData
+        a.categories__block(href="#" class!= "categories__block-" + idx)
+          .categories__block-left
+            p.categories__block-name!= categoriesData[idx].name
+          .categories__block-right
+            p.categories__block-num!= categoriesData[idx].num
+
+// SECTION categories :: END

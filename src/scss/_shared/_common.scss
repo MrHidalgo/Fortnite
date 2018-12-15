@@ -11,7 +11,7 @@
 
     &-left {
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
       width: 100%;
       max-width: calc(100% - 370px);
     }

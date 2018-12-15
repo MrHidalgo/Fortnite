@@ -2,14 +2,15 @@
 
 -
   var rewardsDataArr = ['Home', 'Battlepass', 'Season 3 Battle Pass Rewards'];
+  var historyDataArr = ['Home', 'Shop History', '07.26.2018'];
+  var skinDataArr = ['Home', 'Outfits', 'Red Knight'];
 
 section#breadcrumbs.breadcrumbs
   .c-grid
     .breadcrumbs__wrapper
 
-      ul.breadcrumbs__list
-
-        if(pageClassName === 'p-rewards')
+      if(pageClassName === 'p-rewards')
+        ul.breadcrumbs__list
           each val, idx in rewardsDataArr
             li.breadcrumbs__item
               a.breadcrumbs__link(href="#" class="" title="")!= val
@@ -18,5 +19,28 @@ section#breadcrumbs.breadcrumbs
               li.breadcrumbs__item
                 span.breadcrumbs__icon!= ">>"
 
+      else if(pageClassName === 'p-history')
+        ul.breadcrumbs__list
+          each val, idx in historyDataArr
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#" class="" title="")!= val
+
+            if(idx < historyDataArr.length - 1)
+              li.breadcrumbs__item
+                span.breadcrumbs__icon!= ">>"
+
+      else if(pageClassName === 'p-skin')
+        ul.breadcrumbs__list
+          each val, idx in skinDataArr
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#" class="" title="")!= val
+
+            if(idx < skinDataArr.length - 1)
+              li.breadcrumbs__item
+                span.breadcrumbs__icon!= ">>"
+
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="#" class="" title="")!= "Legendary Outfits"
 
 // SECTION breadcrumbs :: END

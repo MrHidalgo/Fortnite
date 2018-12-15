@@ -15,6 +15,8 @@ block content
         .section__wrapper
           .section__wrapper-left
 
+            include ./components/common/_breadcrumbs
+
           .section__wrapper-right
 
             include components/common/_search
@@ -23,3 +25,14 @@ block content
             include components/common/_sectionBanner
             include components/common/_top
             include components/common/_royal
+            include components/common/_categories
+
+    include components/common/_reply
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include components/common/_comments
+
+          .section__wrapper-right
