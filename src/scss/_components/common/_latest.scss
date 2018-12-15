@@ -56,8 +56,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 54px;
     transform: translateX(-11px) translateY(7px);
     @include transition(transform);
+
+    &-0 {
+      z-index: 1;
+      max-width: 147px;
+
+      &:after {
+        clip-path: polygon(0 0, 100% 1%, 98% 98%, 3% 100%);
+      }
+    }
+
+    &-1 {
+      z-index: 0;
+      max-width: 180px;
+
+      &:after {
+        clip-path: polygon(7% 3%, 100% 0, 97% 97%, 0 100%);
+      }
+    }
 
     &:hover {
       &:after {
@@ -80,7 +100,7 @@
       width: 100%;
       height: 100%;
       background-color: #edf9fd;
-      @include transition(clip-path);
+      @include transition(background-color, clip-path);
     }
 
     > div {
@@ -115,15 +135,18 @@
       @include transition(transform);
     }
 
-    .icon-star {
+    .icon-star,
+    .icon-bubble {
       margin-right: 11px;
       color: #1ac2fe;
+      @include transition(color);
+    }
+
+    .icon-star {
       font-size: 26px;
     }
 
     .icon-bubble {
-      margin-right: 11px;
-      color: #1ac2fe;
       font-size: 19px;
     }
 
@@ -140,44 +163,20 @@
 
       &:after {
         background-color: #fe23a9;
+        @include transition(background-color, clip-path);
       }
 
       .icon-btn-arrow {
         color: #fe23a9;
         transform: translateY(5px);
-        @include transition(transform);
+        @include transition(transform, color);
       }
 
       .icon-star,
       .icon-bubble,
       span {
         color: $c-white;
-      }
-    }
-
-    &-0 {
-      z-index: 1;
-      position: relative;
-      width: 100%;
-      max-width: 147px;
-      height: 54px;
-      @include transition(z-index, left, top);
-
-      &:after {
-        clip-path: polygon(0 0, 100% 1%, 98% 98%, 3% 100%);
-      }
-    }
-
-    &-1 {
-      z-index: 0;
-      position: relative;
-      width: 100%;
-      max-width: 180px;
-      height: 54px;
-      @include transition(z-index, left, top);
-
-      &:after {
-        clip-path: polygon(7% 3%, 100% 0, 97% 97%, 0 100%);
+        @include transition(color);
       }
     }
 

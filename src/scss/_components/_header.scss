@@ -330,11 +330,14 @@
     }
 
     &-btn {
+      outline: none;
+      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       width: 46px;
       height: 44px;
+      border: none;
       background-color: transparent;
       background-image: url('../img/header-search-bg.svg');
       background-repeat: no-repeat;

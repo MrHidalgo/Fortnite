@@ -1,0 +1,101 @@
+// SECTION search :: START
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 397px;
+  min-height: 154px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+
+  &:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e6f3f8;
+    clip-path: polygon(0 0, 100% 1%, 98% 100%, 2% 100%);
+  }
+
+  &__figure {
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+
+      &:nth-of-type(1) {
+        top: -30px;
+        left: 0;
+      }
+      &:nth-of-type(2) {
+        top: -30px;
+        right: 0;
+      }
+      &:nth-of-type(3) {
+        bottom: -30px;
+        left: 0;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    width: calc(100% - 30px);
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $c-white;
+    clip-path: polygon(0 2%, 100% 0, 98% 100%, 0 100%);
+
+    &-left {
+      position: relative;
+      width: 100%;
+      max-width: calc(100% - 74px);
+      height: 100%;
+
+      input {
+        outline: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 19px;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        background-color: transparent;
+        font-size: 16px;
+        font-family: 'Ubuntu', sans-serif;
+        @include inputPlaceholder {
+          color: #bfbfbf;
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 74px;
+
+      .icon-search {
+        color: $c-white;
+      }
+    }
+  }
+}
+
+// SECTION search :: END
