@@ -1,6 +1,9 @@
 // SECTION emotes skin :: START
 
 .e-skin {
+  position: relative;
+  top: -31px;
+
   &__wrapper {
     width: 100%;
     max-width: 680px;
