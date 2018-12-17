@@ -1,0 +1,523 @@
+// SECTION grants :: START
+
+.grants {
+  position: relative;
+  min-height: 762px;
+  margin-bottom: 75px;
+
+  &:before {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 48px);
+    background-color: #283450;
+    clip-path: polygon(0 0, 100% 1%, 99% 99%, 0 100%);
+  }
+
+  &__triangle {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      position: absolute;
+
+      &:nth-of-type(1) {
+        left: 0;
+        top: 20px;
+      }
+      &:nth-of-type(2) {
+        left: 15%;
+        top: 40px;
+      }
+      &:nth-of-type(3) {
+        right: 15%;
+        top: 38px;
+      }
+      &:nth-of-type(4) {
+        top: 15%;
+        right: -15px;
+      }
+      &:nth-of-type(5) {
+        left: 2%;
+        bottom: -30px;
+      }
+      &:nth-of-type(6) {
+        left: 10%;
+        bottom: -5%;
+      }
+      &:nth-of-type(7) {
+        bottom: -5%;
+        right: 15%;
+      }
+      &:nth-of-type(8) {
+        right: 15px;
+        bottom: -3%;
+      }
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 640px;
+    height: 98px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5fd5ff;
+    clip-path: polygon(0 0, 100% 7%, 97% 96%, 3% 100%);
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #48c1ec;
+      clip-path: polygon(0 100%, 85% 65%, 100% 0, 100% 100%);
+    }
+
+    p {
+      color: $c-white;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 48px;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 54px;
+    right: 0;
+    width: 100%;
+    max-width: 131px;
+    height: 72px;
+    margin-left: auto;
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #3d4965;
+      clip-path: polygon(0 0, 100% 0, 98% 100%, 0% 98%);
+    }
+
+    &-triangle {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        position: absolute;
+        bottom: -30%;
+        left: -15%;
+      }
+    }
+
+    p,
+    span {
+      z-index: 1;
+      position: relative;
+      color: $c-white;
+    }
+
+    p {
+      padding-bottom: 5px;
+      font-size: 16px;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+
+    &-left {
+      width: 100%;
+      max-width: calc(100% - 360px);
+      padding-top: 34px;
+    }
+
+    &-right {
+      width: 360px;
+      padding-top: 70px;
+    }
+  }
+
+  &__num {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 13px;
+
+    &-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 73px;
+      height: 59px;
+      margin-left: 3px;
+      margin-right: 3px;
+      background-color: #455781;
+      color: $c-white;
+      font-size: 30px;
+      @include transition(clip-path, color);
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        background-color: #435272;
+        @include transition(clip-path);
+      }
+
+      &:hover {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        color: rgba($c-white, 0.85);
+        @include transition(clip-path, color);
+
+        &:before {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          @include transition(clip-path);
+        }
+      }
+
+      &--0 {
+        clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
+        &:before {
+          clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
+        }
+      }
+      &--1 {
+        clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
+        &:before {
+          clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+      &--2 {
+        clip-path: polygon(0 0, 97% 0, 100% 100%, 3% 100%);
+        &:before {
+          clip-path: polygon(0 0, 97% 0, 100% 100%, 3% 100%);
+        }
+      }
+      &--3 {
+        clip-path: polygon(0 0, 92% 0, 100% 100%, 3% 100%);
+        &:before {
+          clip-path: polygon(0 0, 92% 0, 100% 100%, 3% 100%);
+        }
+      }
+      &--3 {
+        clip-path: polygon(0 0, 92% 0, 100% 100%, 3% 100%);
+        &:before {
+          clip-path: polygon(0 0, 92% 0, 100% 100%, 3% 100%);
+        }
+      }
+      &--4 {
+        clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
+        &:before {
+          clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+      &--5 {
+        clip-path: polygon(0 0, 100% 0, 98% 100%, 4% 100%);
+        &:before {
+          clip-path: polygon(0 0, 100% 0, 98% 100%, 4% 100%);
+        }
+      }
+      &--6 {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%);
+        &:before {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 3% 100%);
+        }
+      }
+      &--7 {
+        clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%);
+        &:before {
+          clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+    }
+  }
+
+  &__progress {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 744px;
+    min-height: 182px;
+    padding: 13px;
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(0 0, 100% 3%, 99% 100%, 1% 100%);
+    }
+
+    &--blue {
+      &:before {
+        background-color: #6a7ea3;
+      }
+
+      .grants__progress-line {
+        background-color: #7597cd;
+
+        &--0 {
+          background-color: #9ab6dd;
+        }
+      }
+    }
+
+    &--orange {
+      &:before {
+        background-color: #795d14;
+      }
+
+      .grants__progress-line {
+        background-color: #977338;
+
+        &--0 {
+          background-color: #ad8543;
+        }
+      }
+    }
+
+    &-wrapper {
+      padding-left: 23px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &-box {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &-line {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 73px;
+      min-height: 157px;
+      margin-left: 3px;
+      margin-right: 3px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+
+      &--0 {
+        justify-content: center;
+      }
+
+      a {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 4px;
+        margin-bottom: 4px;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    &-btn {
+      width: 24px;
+      height: 24px;
+      margin-left: 3px;
+      margin-right: 3px;
+      background-color: #42506e;
+      @include transition(background-color);
+
+      &:hover {
+        background-color: rgba(#9aabd3, 0.5);
+        @include transition(background-color);
+      }
+
+      &.is-active {
+        background-color: #9aabd3;
+      }
+    }
+  }
+
+  &__avatar {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: 2px solid #e95eff;
+    background: radial-gradient(ellipse at center, rgba(148,75,199,1) 0%,rgba(77,37,133,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#944bc7', endColorstr='#4d2585',GradientType=1 );
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__outfit {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    min-height: 163px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16px;
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 4px);
+      background-color: #323e5c;
+      clip-path: polygon(0 2%, 100% 0, 95% 97%, 2% 100%);
+    }
+
+    &-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 58px;
+      height: 22px;
+      margin-left: 11px;
+      background-color: #6f81ae;
+      clip-path: polygon(0 0, 100% 3%, 97% 95%, 3% 100%);
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #566998;
+        clip-path: polygon(0 100%, 85% 65%, 100% 0, 100% 100%);
+      }
+
+      p {
+        color: $c-white;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+    }
+
+    &-title {
+      padding-top: 9px;
+      padding-left: 21px;
+      padding-bottom: 14px;
+      color: $c-white;
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+
+    &-content {
+      position: relative;
+      width: 100%;
+      max-width: 245px;
+      height: 77px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #3e4b6d;
+        clip-path: polygon(0 0, 100% 2%, 98% 100%, 0% 98%);
+      }
+
+      img {
+        z-index: 0;
+        position: absolute;
+        bottom: -5px;
+        right: 10px;
+      }
+
+      p {
+        color: $c-white;
+        font-size: 16px;
+        font-family: 'Ubuntu', sans-serif;
+      }
+    }
+  }
+}
+
+// SECTION grants :: END

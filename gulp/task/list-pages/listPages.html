@@ -548,7 +548,15 @@
       </svg>
     </a>
 
-    <p class="pagelist__filename"><%= page.file %> - <%= page.ready %>%</p>
+    <p class="pagelist__filename">
+      <%= page.file %> - <%= page.ready %>%
+      <span>
+        <% if(page.ready == 0) { %> - NOT FOUND <% } %>
+        <% if(page.ready >= 75 && page.ready <= 95) { %> - AWAITING TESTING <% } %>
+        <% if(page.ready >= 1 && page.ready < 75) { %> - IN DEVELOPING <% } %>
+        <% if(page.ready > 95) { %> - PAGE FINISHED <% } %>
+      </span>
+    </p>
 
     <div class="pagelist__progress">
       <% if(!page.ready) page.ready = 0; %>

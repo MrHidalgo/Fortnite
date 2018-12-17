@@ -17,12 +17,26 @@ $(document).ready((ev) => {
 	* =============================================
 	* CALLBACK :: start
 	* ============================================= */
+  /**
+   * @name initLatestTabs
+   */
   const initLatestTabs = () => {
     $('.latest__btn').on('click', (ev) => {
       const elem = $(ev.currentTarget);
 
       $('.latest__btn').removeClass('is-active');
       elem.addClass('is-active');
+    });
+  };
+
+
+  /**
+   * @name initGrantsSquareBtn
+   */
+  const initGrantsSquareBtn = () => {
+    $('.grants__square-btn').on('click', (ev) => {
+      $('.grants__square-btn').removeClass('is-active');
+      $(ev.currentTarget).addClass('is-active');
     });
   };
 	/*
@@ -46,6 +60,7 @@ $(document).ready((ev) => {
     initValidation();
     initHamburger();
     initStellar();
+    initGrantsSquareBtn();
 		// ==========================================
 
     // callback

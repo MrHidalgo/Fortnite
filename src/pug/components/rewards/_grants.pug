@@ -1,0 +1,111 @@
+// SECTION grants :: START
+
+section#grants.grants
+
+  .grants__triangle
+    img(src="./img/img-grants-triangle-0.svg" alt="" title="")
+    img(src="./img/img-grants-triangle-1.svg" alt="" title="")
+    img(src="./img/img-grants-triangle-2.svg" alt="" title="")
+    img(src="./img/img-grants-triangle-3.svg" alt="" title="")
+    img(src="./img/img-grants-triangle-4.svg" alt="" title="")
+    img(src="./img/img-grants-triangle-5.svg" alt="" title="")
+    img(src="./img/img-grants-triangle-6.svg" alt="" title="")
+    img(src="./img/img-grants-triangle-7.svg" alt="" title="")
+
+  .grants__wrapper
+
+    .grants__header
+      p!= "Season 3 Rewards"
+
+    .grants__badge
+      .grants__badge-triangle
+        img(src="./img/img-grants-badge-triangle.svg" alt="" title="")
+
+      p!= "Season ends:"
+      span!= "192 Days"
+
+    .grants__content
+      .grants__content-left
+
+        .grants__num
+          each val, idx in [1,2,3,4,5,6,7,8]
+            a.grants__num-btn(href="#" class="grants__num-btn--" + idx title="")!= val
+
+        .grants__progress-wrapper
+          .grants__progress-box
+            .grants__progress.grants__progress--blue
+              each val, idx in [1,2,3,4,5,6,7,8,9]
+                .grants__progress-line(class!= "grants__progress-line--" + idx)
+                  if(idx === 0)
+                    a(href="#" class="" title="")
+                      img(src="./img/img-grants-progress-main-0.png" srcset="./img/img-grants-progress-main-0@2x.png 2x" alt="" title="")
+
+                  if(idx === 2)
+                    a(href="#" class="" title="")
+                      img(src="./img/img-grants-progress-book-0.png" srcset="./img/img-grants-progress-book-0@2x.png 2x" alt="" title="")
+
+                  if(idx === 6)
+                    a(href="#" class="" title="")
+                      img(src="./img/img-grants-progress-xp-0.png" srcset="./img/img-grants-progress-xp-0@2x.png 2x" alt="" title="")
+
+          .grants__progress-box
+            .grants__progress.grants__progress--orange
+              each val, idx in [1,2,3,4,5,6,7,8,9]
+                .grants__progress-line(class!= "grants__progress-line--" + idx)
+                  if(idx === 0)
+                    a(href="#" class="" title="")
+                      img(src="./img/img-grants-progress-main-1.png" srcset="./img/img-grants-progress-main-1@2x.png 2x" alt="" title="")
+
+                  if(idx === 1 || idx === 2 || idx === 3)
+                    a(href="#" class="" title="")
+                      img(src="./img/img-grants-progress-xp-0.png" srcset="./img/img-grants-progress-xp-0@2x.png 2x" alt="" title="")
+
+                    if(idx === 1)
+                      a(href="#" class="" title="")
+                        img(src="./img/img-grants-progress-xp-1.png" srcset="./img/img-grants-progress-xp-1@2x.png 2x" alt="" title="")
+                      a(href="#" class="" title="")
+                        img(src="./img/img-grants-progress-other-0.png" srcset="./img/img-grants-progress-other-0@2x.png 2x" alt="" title="")
+                      a(href="#" class="" title="")
+                        img(src="./img/img-grants-progress-book-1.png" srcset="./img/img-grants-progress-book-1@2x.png 2x" alt="" title="")
+
+                  if(idx === 4)
+                    a(href="#" class="" title="")
+                      img(src="./img/img-grants-progress-other-1.png" srcset="./img/img-grants-progress-other-1@2x.png 2x" alt="" title="")
+
+                  if(idx === 5)
+                    a(href="#" class="" title="")
+                      img(src="./img/img-grants-progress-other-2.png" srcset="./img/img-grants-progress-other-2@2x.png 2x" alt="" title="")
+
+                  if(idx === 6)
+                    a(href="#" class="" title="")
+                      img(src="./img/img-grants-progress-other-3.png" srcset="./img/img-grants-progress-other-3@2x.png 2x" alt="" title="")
+
+                  if(idx === 7)
+                    a(href="#" class="" title="")
+                      img(src="./img/img-grants-progress-other-4.png" srcset="./img/img-grants-progress-other-4@2x.png 2x" alt="" title="")
+
+                  if(idx === 8)
+                    a(href="#" class="" title="")
+                      img(src="./img/img-grants-progress-other-5.png" srcset="./img/img-grants-progress-other-5@2x.png 2x" alt="" title="")
+
+        .grants__square
+          each val, idx in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+            a.grants__square-btn(href="#" class!= (idx === 0) ? 'is-active grants__square-btn--' + idx: 'grants__square-btn--' + idx title="")
+
+      .grants__content-right
+
+        .grants__avatar
+          img(src="./img/img-grants-avatar.png" srcset="./img/img-grants-avatar@2x.png 2x" alt="" title="")
+
+        .grants__outfit
+          .grants__outfit-badge
+            p!= "outfit"
+          p.grants__outfit-title!= "Mission Specialist"
+
+          .grants__outfit-content
+            img(src="./img/img-grants-outfit-triangle.svg" alt="" title="")
+
+            p!= "All systems go."
+
+
+// SECTION grants :: END
