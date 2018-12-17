@@ -78,8 +78,16 @@
     height: 98px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 10px;
     background-color: #5fd5ff;
     clip-path: polygon(0 0, 100% 7%, 97% 96%, 3% 100%);
+    @include adaptive(991) {
+      max-width: 540px;
+      margin-left: 0;
+    }
+    @include adaptive(767) {
+      max-width: calc(100% - 131px);
+    }
 
     &:before {
       content: '';
@@ -98,7 +106,7 @@
       line-height: 1;
       text-align: center;
       text-transform: uppercase;
-      font-size: 48px;
+      @include fluid(font-size, 320px, 1200px, 30px, 48px);
     }
   }
 
@@ -151,29 +159,47 @@
 
     p {
       padding-bottom: 5px;
-      font-size: 16px;
       font-family: 'Ubuntu', sans-serif;
+      @include fluid(font-size, 320px, 768px, 14px, 16px);
     }
 
     span {
       text-transform: uppercase;
-      font-size: 24px;
+      @include fluid(font-size, 320px, 768px, 20px, 24px);
     }
   }
 
   &__content {
     display: flex;
     align-items: flex-start;
+    @include adaptive(991) {
+      flex-wrap: wrap;
+    }
 
     &-left {
       width: 100%;
       max-width: calc(100% - 360px);
       padding-top: 34px;
+      @include adaptive(991) {
+        order: 2;
+        max-width: 100%;
+        padding-bottom: 30px;
+      }
     }
 
     &-right {
       width: 360px;
       padding-top: 70px;
+      @include adaptive(991) {
+        display: flex;
+        align-items: center;
+        order: 1;
+        width: 100%;
+      }
+      @include adaptive(575) {
+        flex-direction: column;
+        justify-content: center;
+      }
     }
   }
 
@@ -181,14 +207,18 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 13px;
+    padding: 13px 13px 13px 36px;
+    @include adaptive(575) {
+      display: none;
+    }
 
     &-btn {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 73px;
+      width: 100%;
+      max-width: 73px;
       height: 59px;
       margin-left: 3px;
       margin-right: 3px;
@@ -196,6 +226,13 @@
       color: $c-white;
       font-size: 30px;
       @include transition(clip-path, color);
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
 
       &:before {
         content: '';
@@ -220,6 +257,12 @@
         }
       }
 
+      &--empty {
+        background-color: transparent;
+        &:before {
+          display: none;
+        }
+      }
       &--0 {
         clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
         &:before {
@@ -285,6 +328,9 @@
     max-width: 744px;
     min-height: 182px;
     padding: 13px;
+    @include adaptive(575) {
+      width: 576px;
+    }
 
     &:before {
       content: '';
@@ -334,6 +380,9 @@
     &-box {
       padding-top: 5px;
       padding-bottom: 5px;
+      @include adaptive(575) {
+        overflow-y: auto;
+      }
     }
 
     &-line {
@@ -345,8 +394,7 @@
       min-height: 157px;
       margin-left: 3px;
       margin-right: 3px;
-      padding-top: 12px;
-      padding-bottom: 12px;
+      padding: 12px 5px;
 
       &--0 {
         justify-content: center;
@@ -380,6 +428,9 @@
     justify-content: center;
     padding-top: 21px;
     padding-bottom: 21px;
+    @include adaptive(575) {
+      display: none;
+    }
 
     &-btn {
       width: 24px;
@@ -410,6 +461,14 @@
     border: 2px solid #e95eff;
     background: radial-gradient(ellipse at center, rgba(148,75,199,1) 0%,rgba(77,37,133,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#944bc7', endColorstr='#4d2585',GradientType=1 );
+    @include adaptive(767) {
+      width: 180px;
+      height: 180px;
+      margin-bottom: 0;
+    }
+    @include adaptive(575) {
+      margin-bottom: 30px;
+    }
 
     img {
       position: absolute;
@@ -471,6 +530,9 @@
         line-height: 1;
         text-transform: uppercase;
         font-size: 14px;
+        @include adaptive(575) {
+          font-size: 12px;
+        }
       }
     }
 
@@ -480,7 +542,7 @@
       padding-bottom: 14px;
       color: $c-white;
       text-transform: uppercase;
-      font-size: 30px;
+      @include fluid(font-size, 320px, 768px, 24px, 30px);
     }
 
     &-content {
@@ -515,6 +577,9 @@
         color: $c-white;
         font-size: 16px;
         font-family: 'Ubuntu', sans-serif;
+        @include adaptive(575) {
+          font-size: 14px;
+        }
       }
     }
   }
