@@ -249,7 +249,7 @@
     .pagelist__progress i {
       height: 5px;
       display: block;
-      background: #9e9e9e;
+      background: #41c300;
     }
 
     .pagelist__filename {
@@ -548,7 +548,7 @@
       </svg>
     </a>
 
-    <p class="pagelist__filename"><%= page.file %></p>
+    <p class="pagelist__filename"><%= page.file %> - <%= page.ready %>%</p>
 
     <div class="pagelist__progress">
       <% if(!page.ready) page.ready = 0; %>

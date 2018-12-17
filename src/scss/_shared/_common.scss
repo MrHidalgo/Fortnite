@@ -8,12 +8,23 @@
 
   &__wrapper {
     display: flex;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
 
     &-left {
       display: flex;
       flex-direction: column;
       width: 100%;
-      max-width: calc(100% - 370px);
+      max-width: calc(100% - 470px);
+      padding-right: 15px;
+      @include adaptive(1199) {
+        max-width: calc(100% - 370px);
+      }
+      @include adaptive(767) {
+        max-width: 100%;
+        padding-right: 0;
+      }
     }
 
     &-right {
@@ -22,6 +33,12 @@
       width: 100%;
       max-width: 470px;
       padding-bottom: 50px;
+      @include adaptive(1199) {
+        max-width: 370px;
+      }
+      @include adaptive(767) {
+        max-width: 100%;
+      }
     }
   }
 }

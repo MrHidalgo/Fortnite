@@ -48,4 +48,7 @@ PageList:
   ready: 20
 - file: emotes.html
   titleName: Emotes
-  ready: 45
+  ready: 75
+- file: emotes-1.html
+  titleName: Emotes no rarity and category
+  ready: 75

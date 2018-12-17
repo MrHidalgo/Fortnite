@@ -67,6 +67,11 @@
       color: #273c43;
       text-transform: uppercase;
       font-size: 28px;
+      @include fluid(font-size, 320px, 768px, 22px, 28px);
+      @include adaptive(575) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
 
       i {
         margin-right: 15px;
@@ -75,8 +80,8 @@
 
     span {
       color: #657782;
-      font-size: 14px;
       font-family: 'Ubuntu', sans-serif;
+      @include fluid(font-size, 320px, 768px, 12px, 14px);
     }
   }
 
@@ -115,12 +120,18 @@
 
     &-left {
       width: 130px;
+      @include adaptive(575) {
+        width: 110px;
+      }
     }
 
     &-right {
       width: 100%;
       max-width: calc(100% - 130px);
       padding-left: 20px;
+      @include adaptive(575) {
+        max-width: calc(100% - 110px);
+      }
     }
 
     &-img {
@@ -145,11 +156,17 @@
       color: #273c43;
       font-size: 16px;
       font-weight: 500;
+      @include adaptive(575) {
+        font-size: 14px;
+      }
     }
 
     span {
       color: #657782;
       font-size: 14px;
+      @include adaptive(575) {
+        font-size: 12px;
+      }
     }
   }
 }

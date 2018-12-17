@@ -7,6 +7,9 @@
   max-width: 707px;
   min-height: 258px;
   margin-left: auto;
+  @include adaptive(767) {
+    margin-right: auto;
+  }
 
   &:before {
     content: '';
@@ -55,6 +58,9 @@
       &:nth-of-type(1) {
         top: -10%;
         left: 0;
+        @include adaptive(991) {
+          display: none;
+        }
       }
       &:nth-of-type(2) {
         left: 15%;
@@ -63,10 +69,16 @@
       &:nth-of-type(3) {
         top: 0;
         right: 20%;
+        @include adaptive(991) {
+          display: none;
+        }
       }
       &:nth-of-type(4) {
         right: 0;
         top: -10%;
+        @include adaptive(991) {
+          display: none;
+        }
       }
       &:nth-of-type(5) {
         bottom: -10%;
@@ -102,7 +114,7 @@
     color: $c-white;
     line-height: 1;
     text-transform: uppercase;
-    font-size: 24px;
+    @include fluid(font-size, 320px, 768px, 19px, 24px);
   }
 
   &__btn {
@@ -196,15 +208,43 @@
 
       &-0 {
         justify-content: space-between;
+        @include adaptive(991) {
+          flex-wrap: wrap;
+        }
 
         .rarity__btn {
           max-width: 133px;
+          @include adaptive(991) {
+            max-width: calc((100% - 15px) / 2);
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
+          @include adaptive(767) {
+            max-width: 133px;
+          }
+          @include adaptive(575) {
+            max-width: calc((100% - 15px) / 2);
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
+          @include adaptive(364) {
+            max-width: 100%;
+          }
         }
       }
 
       &-1 {
+        @include adaptive(364) {
+          flex-wrap: wrap;
+        }
+
         .rarity__btn {
           max-width: 201px;
+          @include adaptive(364) {
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+          }
         }
       }
     }

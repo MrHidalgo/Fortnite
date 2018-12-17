@@ -1,0 +1,28 @@
+---
+title: Fortnite - Emotes
+
+pageClassName: p-emotes
+---
+extends shared/_layout
+
+block content
+  div.body(class!= pageClassName)
+
+    include components/common/_mainBanner
+    include components/emotes/_emotes
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+
+            include components/emotes/_e-skin
+            include components/common/_pagination
+
+          .section__wrapper-right
+
+            include components/common/_sectionBanner
+            include components/common/_latest
+            include components/common/_top
+            include components/common/_royal
+            include components/common/_sectionBanner

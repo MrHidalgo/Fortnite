@@ -4,6 +4,9 @@
   min-height: 820px;
   margin-top: 77px;
   margin-bottom: 12px;
+  @include adaptive(575) {
+    min-height: 0;
+  }
 
   &:after {
     background-color: #e6f3f8;
@@ -91,9 +94,9 @@
       padding-top: 3px;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 24px;
       color: #1ac2fe;
       @include transition(color);
+      @include fluid(font-size, 320px, 768px, 19px, 24px);
     }
 
     .icon-btn-arrow {
@@ -119,11 +122,11 @@
     }
 
     .icon-star {
-      font-size: 26px;
+      @include fluid(font-size, 320px, 768px, 21px, 26px);
     }
 
     .icon-bubble {
-      font-size: 19px;
+      @include fluid(font-size, 320px, 768px, 17px, 19px);
     }
 
     &.is-active {
@@ -171,6 +174,9 @@
     display: flex;
     min-height: 136px;
     margin-bottom: 19px;
+    @include adaptive(575) {
+      min-height: 0;
+    }
 
     @each $className, $colorVal in
         (0, 'radial-gradient(#ea8d23,#78371d)'),
@@ -196,16 +202,25 @@
       display: flex;
       flex-direction: column;
       padding: 0 25px;
+      @include adaptive(575) {
+        padding: 0 15px;
+      }
     }
 
     &-left {
       width: 158px;
+      @include adaptive(575) {
+        width: 128px;
+      }
     }
 
     &-right {
       width: 100%;
       max-width: calc(100% - 158px);
       padding-top: 20px;
+      @include adaptive(575) {
+        max-width: calc(100% - 128px);
+      }
     }
 
     &-photo {
@@ -220,6 +235,10 @@
       background-color: $c-white;
       clip-path: polygon(0 0, 100% 3%, 97% 95%, 5% 100%);
       box-shadow: 0 10px 18px 0 rgba($c-black, 0.08);
+      @include adaptive(575) {
+        width: 108px;
+        height: 106px;
+      }
 
       &:hover {
         img {
@@ -254,6 +273,9 @@
       display: flex;
       align-items: center;
       padding-bottom: 12px;
+      @include adaptive(575) {
+        justify-content: space-between;
+      }
 
       span {
         display: flex;
@@ -272,6 +294,11 @@
     &-title {
       font-size: 24px;
       padding-right: 5px;
+      @include fluid(font-size, 320px, 768px, 19px, 24px);
+      @include adaptive(575) {
+        width: 100%;
+        max-width: calc(100% - 43px);
+      }
     }
 
     &-desc,
@@ -281,12 +308,12 @@
 
     &-desc {
       line-height: 1.2;
-      font-size: 16px;
       font-weight: 600;
+      @include fluid(font-size, 320px, 768px, 14px, 16px);
     }
 
     &-data {
-      font-size: 14px;
+      @include fluid(font-size, 320px, 768px, 12px, 14px);
     }
   }
 }

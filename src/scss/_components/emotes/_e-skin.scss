@@ -9,6 +9,9 @@
     max-width: 680px;
     margin-left: auto;
     padding-top: 43px;
+    @include adaptive(767) {
+      margin-right: auto;
+    }
   }
 
   &__block {
@@ -17,6 +20,9 @@
     max-width: calc((100% - 20px) / 2);
     min-height: 220px;
     margin-bottom: 30px;
+    @include adaptive(1199) {
+      max-width: 100%;
+    }
 
     &--epic {
       .e-skin__block-image {
@@ -65,6 +71,10 @@
       position: relative;
       width: 100%;
       max-width: calc(100% - 162px);
+      @include adaptive(1199) {
+        display: flex;
+        align-items: center;
+      }
 
       &:before {
         content: '';
@@ -190,6 +200,10 @@
     &-content {
       z-index: 1;
       position: relative;
+      @include adaptive(575) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
     }
 
     &-name {
@@ -198,7 +212,10 @@
       color: #273c43;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 24px;
+      @include fluid(font-size, 320px, 767px, 19px, 24px);
+      @include adaptive(575) {
+        padding-top: 10px;
+      }
     }
 
     &-points {
@@ -226,6 +243,9 @@
       font-family: 'Ubuntu', sans-serif;
       padding-bottom: 7px;
       margin-bottom: 7px;
+      @include adaptive(1199) {
+        max-width: calc(100% - 15px);
+      }
     }
 
     &-date {

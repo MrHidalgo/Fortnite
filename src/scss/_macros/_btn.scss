@@ -35,13 +35,17 @@ $btn-color--border: rgba(#000, 1);
   border-radius: $bth-border-radius;
   color: $bth-color;
   text-transform: uppercase;
-  font-size: $bth-font-size;
   font-weight: $bth-font-weight;
   font-family: "Anton", sans-serif;
   clip-path: polygon(0 0, 100% 2%, 97% 98%, 2% 100%);
   padding-left: 25px;
   padding-right: 30px;
   @include transition(color, clip-path);
+  @include fluid(font-size, 320px, 768px, 19px, 24px);
+  @include adaptive(575) {
+    padding-left: 20px;
+    padding-right: 25px;
+  }
 
   &:hover {
     color: $c-white;

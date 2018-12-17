@@ -8,6 +8,9 @@
   margin-left: auto;
   padding-top: 6px;
   padding-bottom: 50px;
+  @include adaptive(767) {
+    display: none;
+  }
 
   &__wrapper {
     display: flex;
@@ -72,10 +75,16 @@
 
     &-first {
       margin-left: 0;
+      @include adaptive(991) {
+        display: none;
+      }
     }
 
     &-last {
       margin-right: 0;
+      @include adaptive(991) {
+        display: none;
+      }
     }
 
     &-empty {
