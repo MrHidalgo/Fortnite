@@ -11,3 +11,40 @@
   object-fit: cover;
   object-position: center;
 }
+
+%radialGradientOrange {
+  background-image: radial-gradient(#ea8d23,#78371d);
+}
+%radialGradientPink {
+  background-image: radial-gradient(#c359ff,#4b2483);
+}
+%radialGradientBlue {
+  background-image: radial-gradient(#2cc1ff,#143977);
+}
+%radialGradientGreen {
+  background-image: radial-gradient(#69bb1e,#175117);
+}
+%radialGradientGray {
+  background-image: radial-gradient(#bebebe,#646464);
+}
+
+%borderOrange {
+  border-style: solid;
+  border-color: #ea8d23;
+}
+%borderPink {
+  border-style: solid;
+  border-color: #c359ff;
+}
+%borderBlue {
+  border-style: solid;
+  border-color: #2cc1ff;
+}
+%borderGreen {
+  border-style: solid;
+  border-color: #69bb1e;
+}
+%borderGray {
+  border-style: solid;
+  border-color: #bebebe;
+}

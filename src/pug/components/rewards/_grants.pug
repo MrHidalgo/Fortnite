@@ -27,76 +27,71 @@ section#grants.grants
     .grants__content
       .grants__content-left
 
-        .grants__num
-          a.grants__num-btn.grants__num-btn--empty(href="#" title="")
-          each val, idx in [1,2,3,4,5,6,7,8]
-            a.grants__num-btn(href="#" class="grants__num-btn--" + idx title="")!= val
-
         .grants__progress-wrapper
+
           .grants__progress-box
             .grants__progress.grants__progress--blue
-              each val, idx in [1,2,3,4,5,6,7,8,9]
-                .grants__progress-line(class!= "grants__progress-line--" + idx)
-                  if(idx === 0)
-                    a(href="#" class="" title="")
-                      img(src="./img/img-grants-progress-main-0.png" srcset="./img/img-grants-progress-main-0@2x.png 2x" alt="" title="")
 
-                  if(idx === 2)
-                    a(href="#" class="" title="")
-                      img(src="./img/img-grants-progress-book-0.png" srcset="./img/img-grants-progress-book-0@2x.png 2x" alt="" title="")
+              .grants__progress-line.grants__progress-line--0
+                a(href="#" class="" title="")
+                  img(src="./img/img-grants-progress-main-0.png" srcset="./img/img-grants-progress-main-0@2x.png 2x" alt="" title="")
 
-                  if(idx === 6)
-                    a(href="#" class="" title="")
-                      img(src="./img/img-grants-progress-xp-0.png" srcset="./img/img-grants-progress-xp-0@2x.png 2x" alt="" title="")
+              .grants__progress-cover
+
+                mixin swiperGrantsBlueLineContent()
+                  -for(var idx = 1, countGrantsNum = 0; idx < 51; idx++, countGrantsNum++)
+                    .swiper-slide
+                      a.grants__num-btn(
+                        href="#"
+                        class!= (countGrantsNum <= 7) ? "grants__num-btn--" + (countGrantsNum): "grants__num-btn--" + (countGrantsNum = 0)
+                        title=""
+                      )!= idx
+                      .grants__progress-line(class!= "grants__progress-line--" + val)
+                        if(idx === 1)
+                          a.grants__progress-btn.grants__progress-btn--green(href="#" class="" title="")
+                          a.grants__progress-btn.grants__progress-btn--orange(href="#" class="" title="")
+                        else if(idx === 4)
+                          a.grants__progress-btn.grants__progress-btn--pink(href="#" class="" title="")
+                          a.grants__progress-btn.grants__progress-btn--blue(href="#" class="" title="")
+                        else if(idx === 8)
+                          a.grants__progress-btn.grants__progress-btn--gray(href="#" class="" title="")
+
+                +swiper('swiper-container--grantsBlueLine', 'swiperGrantsBlueLineContent', false, false, false)
 
           .grants__progress-box
             .grants__progress.grants__progress--orange
-              each val, idx in [1,2,3,4,5,6,7,8,9]
-                .grants__progress-line(class!= "grants__progress-line--" + idx)
-                  if(idx === 0)
-                    a(href="#" class="" title="")
-                      img(src="./img/img-grants-progress-main-1.png" srcset="./img/img-grants-progress-main-1@2x.png 2x" alt="" title="")
 
-                  if(idx === 1 || idx === 2 || idx === 3)
-                    a(href="#" class="" title="")
-                      img(src="./img/img-grants-progress-xp-0.png" srcset="./img/img-grants-progress-xp-0@2x.png 2x" alt="" title="")
+              .grants__progress-line.grants__progress-line--0
+                a(href="#" class="" title="")
+                  img(src="./img/img-grants-progress-main-1.png" srcset="./img/img-grants-progress-main-1@2x.png 2x" alt="" title="")
 
-                    if(idx === 1)
-                      a(href="#" class="" title="")
-                        img(src="./img/img-grants-progress-xp-1.png" srcset="./img/img-grants-progress-xp-1@2x.png 2x" alt="" title="")
-                      a(href="#" class="" title="")
-                        img(src="./img/img-grants-progress-other-0.png" srcset="./img/img-grants-progress-other-0@2x.png 2x" alt="" title="")
-                      a(href="#" class="" title="")
-                        img(src="./img/img-grants-progress-book-1.png" srcset="./img/img-grants-progress-book-1@2x.png 2x" alt="" title="")
+              .grants__progress-cover
 
-                  if(idx === 4)
-                    a(href="#" class="" title="")
-                      img(src="./img/img-grants-progress-other-1.png" srcset="./img/img-grants-progress-other-1@2x.png 2x" alt="" title="")
+                mixin swiperGrantsOrangeLineContent()
+                  -for(var idx = 1; idx < 51; idx++)
+                    .swiper-slide
+                      .grants__progress-line(class!= "grants__progress-line--" + idx)
+                        if(idx === 5)
+                          a.grants__progress-btn.grants__progress-btn--green(href="#" class="" title="")
+                          a.grants__progress-btn.grants__progress-btn--orange(href="#" class="" title="")
+                          a.grants__progress-btn.grants__progress-btn--green(href="#" class="" title="")
+                          a.grants__progress-btn.grants__progress-btn--orange(href="#" class="" title="")
+                        else if(idx === 7)
+                          a.grants__progress-btn.grants__progress-btn--pink(href="#" class="" title="")
+                          a.grants__progress-btn.grants__progress-btn--blue(href="#" class="" title="")
+                          a.grants__progress-btn.grants__progress-btn--blue(href="#" class="" title="")
+                        else if(idx === 3)
+                          a.grants__progress-btn.grants__progress-btn--gray(href="#" class="" title="")
 
-                  if(idx === 5)
-                    a(href="#" class="" title="")
-                      img(src="./img/img-grants-progress-other-2.png" srcset="./img/img-grants-progress-other-2@2x.png 2x" alt="" title="")
-
-                  if(idx === 6)
-                    a(href="#" class="" title="")
-                      img(src="./img/img-grants-progress-other-3.png" srcset="./img/img-grants-progress-other-3@2x.png 2x" alt="" title="")
-
-                  if(idx === 7)
-                    a(href="#" class="" title="")
-                      img(src="./img/img-grants-progress-other-4.png" srcset="./img/img-grants-progress-other-4@2x.png 2x" alt="" title="")
-
-                  if(idx === 8)
-                    a(href="#" class="" title="")
-                      img(src="./img/img-grants-progress-other-5.png" srcset="./img/img-grants-progress-other-5@2x.png 2x" alt="" title="")
+                +swiper('swiper-container--grantsOrangeLine', 'swiperGrantsOrangeLineContent', false, false, false)
 
         .grants__square
-          each val, idx in [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
-            a.grants__square-btn(href="#" class!= (idx === 0) ? 'is-active grants__square-btn--' + idx: 'grants__square-btn--' + idx title="")
 
       .grants__content-right
 
         .grants__avatar
-          img(src="./img/img-grants-avatar.png" srcset="./img/img-grants-avatar@2x.png 2x" alt="" title="")
+          // (un)comment test images if need
+          //img(src="./img/img-grants-avatar.png" srcset="./img/img-grants-avatar@2x.png 2x" alt="" title="")
 
         .grants__outfit
           .grants__outfit-badge

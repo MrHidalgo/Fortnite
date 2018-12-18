@@ -11,5 +11,6 @@
 * - jquery-validation;
 * - jquery-migrate;
 * - jquery.stellar;
+* - swiper;
 *
 * */

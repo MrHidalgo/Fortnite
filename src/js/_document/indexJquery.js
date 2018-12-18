@@ -28,17 +28,6 @@ $(document).ready((ev) => {
       elem.addClass('is-active');
     });
   };
-
-
-  /**
-   * @name initGrantsSquareBtn
-   */
-  const initGrantsSquareBtn = () => {
-    $('.grants__square-btn').on('click', (ev) => {
-      $('.grants__square-btn').removeClass('is-active');
-      $(ev.currentTarget).addClass('is-active');
-    });
-  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -60,7 +49,7 @@ $(document).ready((ev) => {
     initValidation();
     initHamburger();
     initStellar();
-    initGrantsSquareBtn();
+    initSwiper();
 		// ==========================================
 
     // callback
