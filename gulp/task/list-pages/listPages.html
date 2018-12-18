@@ -249,13 +249,26 @@
     .pagelist__progress i {
       height: 5px;
       display: block;
-      background: #41c300;
+      background: #2196f3;
     }
 
     .pagelist__filename {
       font-size: 14px;
       font-weight: bold;
       margin: 0;
+    }
+
+    .pagelist__filename--notfound {
+      color: #e98df5;
+    }
+    .pagelist__filename--finished {
+      color: #41c300;
+    }
+    .pagelist__filename--testing {
+      color: #ff9e22;
+    }
+    .pagelist__filename--developing {
+      color: #e54304;
     }
 
     header {
@@ -550,10 +563,16 @@
 
     <p class="pagelist__filename">
       <%= page.file %> - <%= page.ready %>%
-      <span>
+      <span class="pagelist__filename--notfound">
         <% if(page.ready == 0) { %> - NOT FOUND <% } %>
+      </span>
+      <span class="pagelist__filename--testing">
         <% if(page.ready >= 75 && page.ready <= 95) { %> - AWAITING TESTING <% } %>
+      </span>
+      <span class="pagelist__filename--developing">
         <% if(page.ready >= 1 && page.ready < 75) { %> - IN DEVELOPING <% } %>
+      </span>
+      <span class="pagelist__filename--finished">
         <% if(page.ready > 95) { %> - PAGE FINISHED <% } %>
       </span>
     </p>

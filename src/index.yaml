@@ -12,7 +12,7 @@ PageList:
   ready: 1
 - file: rewards.html
   titleName: Battle pass rewards
-  ready: 75
+  ready: 50
 - file: history.html
   titleName: History
   ready: 20
