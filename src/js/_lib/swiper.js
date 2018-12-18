@@ -47,6 +47,8 @@ const initSwiper = () => {
   let swiperGuestBlueLine = new Swiper('.swiper-container--grantsBlueLine', swiperOpt(true));
   let swiperGuestOrangeLine = new Swiper('.swiper-container--grantsOrangeLine', swiperOpt());
 
-  swiperGuestBlueLine.controller.control = [swiperGuestOrangeLine];
-  swiperGuestOrangeLine.controller.control = [swiperGuestBlueLine];
+  if($('.swiper-container--grantsBlueLine').length > 0) {
+    swiperGuestBlueLine.controller.control = [swiperGuestOrangeLine];
+    swiperGuestOrangeLine.controller.control = [swiperGuestBlueLine];
+  }
 };
