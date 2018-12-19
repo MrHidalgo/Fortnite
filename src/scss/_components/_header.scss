@@ -304,12 +304,15 @@
   &__search {
     display: flex;
     @include adaptive(1199) {
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      min-height: 44px;
-      border-top: 1px solid #4f4e4e;
-      border-bottom: 1px solid #4f4e4e;
+
+      .header & {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 44px;
+        border-top: 1px solid #4f4e4e;
+        border-bottom: 1px solid #4f4e4e;
+      }
     }
 
     span {

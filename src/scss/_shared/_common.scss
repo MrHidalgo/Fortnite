@@ -11,6 +11,10 @@
     position: absolute;
     top: 0;
     height: 100%;
+    @include adaptive(991) {
+      left: 0 !important;
+      width: 100% !important;
+    }
 
     &-bg {
       z-index: -1;
@@ -42,6 +46,12 @@
       flex-wrap: wrap;
     }
 
+    .p-beginners & {
+      @include adaptive(991) {
+        flex-wrap: wrap;
+      }
+    }
+
     &-left {
       display: flex;
       flex-direction: column;
@@ -54,6 +64,13 @@
       @include adaptive(767) {
         max-width: 100%;
         padding-right: 0;
+      }
+
+      .p-beginners & {
+        @include adaptive(991) {
+          max-width: 100%;
+          padding-right: 0;
+        }
       }
     }
 
@@ -68,6 +85,12 @@
       }
       @include adaptive(767) {
         max-width: 100%;
+      }
+
+      .p-beginners & {
+        @include adaptive(991) {
+          max-width: 100%;
+        }
       }
     }
   }

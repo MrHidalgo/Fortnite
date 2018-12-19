@@ -5,8 +5,10 @@ const initSectionBGResize = (parentNodeName) => {
     widthElem = sectionRight[0].getBoundingClientRect().left,
     leftOffset = sectionResize.closest(parentNodeName)[0].getBoundingClientRect().left;
 
-  sectionResize.css({
-    'left' : -(leftOffset),
-    'width' : widthElem,
-  });
+  if($(window).width() > 991) {
+    sectionResize.css({
+      'left' : -(leftOffset),
+      'width' : widthElem,
+    });
+  }
 };

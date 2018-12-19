@@ -6,6 +6,9 @@
   width: 100%;
   max-width: 679px;
   margin-left: auto;
+  @include adaptive(991) {
+    max-width: 100%;
+  }
 
   .breadcrumbs {
     padding-left: 0;
@@ -146,7 +149,10 @@
         color: $c-white;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 48px;
+        @include fluid(font-size, 320px, 767px, 35px, 48px);
+        @include adaptive(575) {
+          padding-left: 15px;
+        }
       }
     }
 
@@ -160,10 +166,14 @@
       max-width: 514px;
       min-height: 89px;
       padding-left: 35px;
+      background-color: #ffff00;
       color: #273c43;
       font-family: "Ubuntu", sans-serif;
-      background-color: #ffff00;
       clip-path: polygon(0 0, 100% 7%, 97% 96%, 2% 100%);
+      @include adaptive(575) {
+        padding-left: 15px;
+        font-size: 12px;
+      }
 
       &:before {
         content: '';
@@ -194,6 +204,7 @@
 
       > div {
         display: inline-flex;
+        align-items: flex-start;
         border: 7px solid #fff;
         background-color: #e8f7fc;
         box-shadow: 2px 5px 0 0 #a3be2a;
@@ -302,6 +313,9 @@
       line-height: 1.6;
       font-size: 16px;
       font-family: 'Ubuntu', sans-serif;
+      @include adaptive(575) {
+        font-size: 14px;
+      }
 
       span {
         font-weight: bold;
@@ -315,12 +329,18 @@
 
     .info__subtitle {
       p {
-        font-size: 24px;
+        @include fluid(font-size, 320px, 767, 20px, 24px);
       }
     }
 
     .beginners__notes {
       margin-bottom: 40px;
+
+      &-triangle {
+        @include adaptive(575) {
+          display: none;
+        }
+      }
 
       &-wrapper {
         display: flex;
@@ -433,12 +453,16 @@
         color: $c-white;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 30px;
+        @include fluid(font-size, 320px, 767px, 25px, 30px);
       }
     }
 
     &-body {
       padding: 25px 35px 0;
+      @include adaptive(575) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
 
       > p,
       > span {
@@ -449,6 +473,9 @@
 
       > p {
         font-size: 16px;
+        @include adaptive(575) {
+          font-size: 14px;
+        }
 
         > span {
           font-weight: bold;
@@ -459,6 +486,9 @@
         display: block;
         font-size: 18px;
         font-weight: bold;
+        @include adaptive(575) {
+          font-size: 16px;
+        }
       }
 
       > a {
@@ -476,6 +506,7 @@
 
       > div {
         display: inline-flex;
+        align-items: flex-start;
         border: 5px solid #fff;
         background-color: #e8f7fc;
         box-shadow: 4px 14px 0 0 #e8f7fc;
@@ -485,9 +516,15 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        @include adaptive(575) {
+          flex-wrap: wrap;
+        }
 
         .beginners__description-img {
           width: calc((100% - 10px) / 2);
+          @include adaptive(575) {
+            width: 100%;
+          }
         }
       }
 
@@ -555,20 +592,33 @@
         display: flex;
         align-items: center;
         width: 100%;
+        @include adaptive(575) {
+          padding-left: 15px;
+          flex-wrap: wrap;
+        }
 
         &-left,
         &-right {
           display: flex;
           align-items: center;
           width: 50%;
+          @include adaptive(575) {
+            width: 100%;
+          }
         }
 
         &-left {
           justify-content: flex-end;
           padding-right: 16px;
+          @include adaptive(575) {
+            justify-content: center;
+          }
         }
         &-right {
           padding-left: 16px;
+          @include adaptive(575) {
+            padding-left: 0;
+          }
         }
       }
 
@@ -604,6 +654,9 @@
           display: flex;
           align-items: center;
           width: 100%;
+          @include adaptive(575) {
+            justify-content: center;
+          }
         }
       }
     }
@@ -656,18 +709,32 @@
       &__wrapper {
         display: flex;
         align-items: center;
+        @include adaptive(575) {
+          flex-wrap: wrap;
+        }
 
         &-left {
           display: flex;
           justify-content: flex-end;
           width: 182px;
           padding-right: 25px;
+          @include adaptive(575) {
+            padding-top: 30px;
+            justify-content: center;
+            width: 100%;
+          }
         }
 
         &-right {
           width: 100%;
           max-width: calc(100% - 182px);
           padding-top: 28px;
+          @include adaptive(575) {
+            max-width: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+          }
         }
       }
 
