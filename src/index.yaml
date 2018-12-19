@@ -21,7 +21,7 @@ PageList:
   ready: 20
 - file: beginners.html
   titleName: Beginner tips
-  ready: 25
+  ready: 55
 - file: leaked.html
   titleName: Leaked
   ready: 25

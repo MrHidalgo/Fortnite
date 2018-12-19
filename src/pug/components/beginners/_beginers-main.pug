@@ -2,6 +2,31 @@
 
 section.beginners.beginners--main
 
+  .section-resize(section-resize-js)
+    .section-resize-bg
+    .section-resize-triangle
+      img(src="./img/img-resize-triangle-0.svg" alt="" title="")
+      img(src="./img/img-resize-triangle-1.svg" alt="" title="")
+      img(src="./img/img-resize-triangle-2.svg" alt="" title="")
+      img(src="./img/img-resize-triangle-3.svg" alt="" title="")
+      img(src="./img/img-resize-triangle-4.svg" alt="" title="")
+
   .beginners__wrapper
+
+    .beginners__main
+      .beginners__main-header
+        p!= "Beginner’s Tips"
+      .beginners__main-subheader
+        p!= "<span>October 10, 2018</span> | <span>Guides</span> |"
+        a(href="#" class="" title="")
+          i.icon-font.icon-bubble
+          span!= "35 comments"
+
+      .beginners__main-body
+
+        .beginners__main-img
+          div
+            img(src="./img/img-b-main.jpg" srcset="./img/img-b-main@2x.jpg 2x" alt="" title="")
+
 
 // SECTION beginners main :: END

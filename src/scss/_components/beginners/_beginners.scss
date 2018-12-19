@@ -61,7 +61,151 @@
   // common :: end
 
   // main
-  &--main {}
+  &--main {
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 90px;
+
+    .section-resize {
+      &-bg {
+        background-color: #aecc2c;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #bfd52d;
+        }
+
+        &:before {
+          clip-path: polygon(0 0, 30% 0, 50% 30%, 0 45%);
+        }
+
+        &:after {
+          clip-path: polygon(20% 65%, 95% 15%, 100% 0, 100% 100%, 20% 65%);
+        }
+      }
+
+      &-triangle {
+        img {
+          &:nth-child(1) {
+            top: 10%;
+            right: -10px;
+          }
+          &:nth-child(2) {
+            left: 5%;
+            bottom: -8%;
+          }
+          &:nth-child(3) {
+            left: 25%;
+            bottom: -5%;
+          }
+          &:nth-child(4) {
+            right: 20%;
+            bottom: 10px;
+          }
+          &:nth-child(5) {
+            right: 2%;
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__main {
+    &-header {
+      z-index: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 461px;
+      min-height: 96px;
+      background-color: #3f6c7c;
+      clip-path: polygon(0 0, 100% 7%, 97% 96%, 2% 100%);
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #34606f;
+        clip-path: polygon(0 100%, 85% 75%, 100% 0, 100% 100%);
+      }
+
+      p {
+        padding-left: 35px;
+        color: $c-white;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 48px;
+      }
+    }
+
+    &-subheader {
+      z-index: 0;
+      position: relative;
+      top: -30px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 514px;
+      min-height: 89px;
+      padding-left: 35px;
+      color: #273c43;
+      font-family: "Ubuntu", sans-serif;
+      background-color: #ffff00;
+      clip-path: polygon(0 0, 100% 7%, 97% 96%, 2% 100%);
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffd400;
+        clip-path: polygon(0 100%, 85% 75%, 100% 0, 100% 100%);
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        color: #273c43;
+
+        .icon-font {
+          padding-right: 5px;
+        }
+      }
+    }
+
+    &-img {
+      text-align: center;
+
+      > div {
+        display: inline-flex;
+        border: 7px solid #fff;
+        background-color: #e8f7fc;
+        box-shadow: 2px 5px 0 0 #a3be2a;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
   // main :: end
 
   // notes
