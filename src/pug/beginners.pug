@@ -1,7 +1,7 @@
 ---
-title: Fortnite - Beginner Tips
+title: Fortnite - Beginners Tips
 
-pageClassName: p-berginner
+pageClassName: p-beginners
 ---
 extends shared/_layout
 
@@ -14,6 +14,14 @@ block content
       .c-grid
         .section__wrapper
           .section__wrapper-left
+
+            section#beginners
+              include ./components/beginners/_beginers-main
+              include ./components/beginners/_beginers-notes
+              include ./components/beginners/_beginers-description
+              include ./components/beginners/_beginers-rating
+              include ./components/common/_breadcrumbs
+              include ./components/beginners/_beginners-comments
 
           .section__wrapper-right
 

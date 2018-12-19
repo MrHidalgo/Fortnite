@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="114" viewBox="0 0 128 114">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4d6f7b;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="img-beginners-triangle-5" class="cls-1" d="M835,7161l-120-74.01,76.375,106Z" transform="translate(-711 -7083)"/>
+</svg>

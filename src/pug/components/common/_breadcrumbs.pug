@@ -4,6 +4,7 @@
   var rewardsDataArr = ['Home', 'Battlepass', 'Season 3 Battle Pass Rewards'];
   var historyDataArr = ['Home', 'Shop History', '07.26.2018'];
   var skinDataArr = ['Home', 'Outfits', 'Red Knight'];
+  var berginnerDataArr = ['Home', 'Guides', 'Fortnite Battle Royale: Beginner’s Tips'];
 
 section#breadcrumbs.breadcrumbs
   .c-grid
@@ -26,6 +27,16 @@ section#breadcrumbs.breadcrumbs
               a.breadcrumbs__link(href="#" class="" title="")!= val
 
             if(idx < historyDataArr.length - 1)
+              li.breadcrumbs__item
+                span.breadcrumbs__icon!= ">>"
+
+      else if(pageClassName === 'p-beginners')
+        ul.breadcrumbs__list
+          each val, idx in berginnerDataArr
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#" class="" title="")!= val
+
+            if(idx < berginnerDataArr.length - 1)
               li.breadcrumbs__item
                 span.breadcrumbs__icon!= ">>"
 

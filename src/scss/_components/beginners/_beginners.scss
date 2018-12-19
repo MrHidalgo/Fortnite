@@ -1,0 +1,164 @@
+// SECTION beginners :: START
+
+#beginners {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 679px;
+  margin-left: auto;
+
+  .breadcrumbs {
+    margin-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.beginners {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  // main
+  &--main {}
+  // main :: end
+
+  // notes
+  &--notes {}
+  // notes :: end
+
+  // description
+  &--description {}
+  // description :: end
+
+  // ratings
+  &--ratings {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 156px;
+
+    .ratings {
+      margin-top: 10px;
+    }
+
+    .beginners {
+      &__bg,
+      &__triangle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      &__bg {
+        z-index: -1;
+        background-color: #273f48;
+        clip-path: polygon(0 5%, 100% 0, 98% 100%, 2% 98%);
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #4d6f7b;
+          clip-path: polygon(0 100%, 25% 30%, 100% 0, 80% 20%, 90% 35%, 100% 100%, 0 100%);
+        }
+      }
+
+      &__triangle {
+        z-index: 0;
+
+        img {
+          position: absolute;
+
+          &:nth-child(1) {
+            top: -30%;
+            left: 15%;
+          }
+          &:nth-child(2) {
+            top: -30%;
+            right: 5%;
+          }
+          &:nth-child(3) {
+            bottom: -20%;
+            left: 0;
+          }
+          &:nth-child(4) {
+            bottom: -15%;
+            left: 15%;
+          }
+          &:nth-child(5) {
+            bottom: -15%;
+            right: 15%;
+          }
+          &:nth-child(6) {
+            bottom: -30%;
+            right: 0;
+          }
+        }
+      }
+
+      &__wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        &-left,
+        &-right {
+          display: flex;
+          align-items: center;
+          width: 50%;
+        }
+
+        &-left {
+          justify-content: flex-end;
+          padding-right: 16px;
+        }
+        &-right {
+          padding-left: 16px;
+        }
+      }
+
+      &__statistic {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 97px;
+        height: 44px;
+        font-size: 16px;
+        background-color: #ffffff;
+        clip-path: polygon(0 0, 100% 7%, 97% 96%, 3% 100%);
+
+        &:before {
+          content: '';
+          z-index: -1;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #edf9fd;
+          clip-path: polygon(0 100%, 65% 65%, 100% 0, 100% 100%);
+        }
+
+        &-0 {
+          margin-right: 5px;
+        }
+
+        &-1 {}
+      }
+    }
+  }
+  // ratings :: end
+
+  // comments
+  &--comments {}
+  // comments :: end
+}
+
+// SECTION beginners :: END

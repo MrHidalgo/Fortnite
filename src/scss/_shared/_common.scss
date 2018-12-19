@@ -83,6 +83,24 @@
 }
 // sidebar :: end
 
+// ratings
+.ratings {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__btn {
+    @include transition(opacity);
+
+    &:hover {
+      opacity: 0.75;
+      @include transition(opacity);
+    }
+  }
+}
+// ratings :: end
+
 // copyright
 .copyright {
   display: flex;
