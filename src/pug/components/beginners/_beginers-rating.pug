@@ -1,7 +1,9 @@
 // SECTION beginners ratings :: START
 
 section.beginners.beginners--ratings
+
   .beginners__bg
+
   .beginners__triangle
     img(src="./img/img-beginners-triangle-0.svg" alt="" title="")
     img(src="./img/img-beginners-triangle-1.svg" alt="" title="")
@@ -11,7 +13,9 @@ section.beginners.beginners--ratings
     img(src="./img/img-beginners-triangle-5.svg" alt="" title="")
 
   .beginners__wrapper
+
     .beginners__wrapper-left
+
       .ratings
         a.ratings__btn(href="#" class="" title="")
           i.icon-png.star-full
@@ -25,9 +29,11 @@ section.beginners.beginners--ratings
           i.icon-png.star-half
 
     .beginners__wrapper-right
-      .beginners__statistic.beginners__statistic-0
-        p!= "4.4/5"
-      .beginners__statistic.beginners__statistic-1
-        p!= "7 Ratings"
+
+      .beginners__statistic-wrapper
+        .beginners__statistic.beginners__statistic-0
+          p!= "<span>4.4</span>/5"
+        .beginners__statistic.beginners__statistic-1
+          p!= "<span>7</span> Ratings"
 
 // SECTION beginners ratings :: END
