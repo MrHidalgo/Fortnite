@@ -18,6 +18,7 @@
   margin-bottom: 30px;
 
   // common
+  &--notes,
   &--ratings,
   &--comments {
     position: relative;
@@ -61,7 +62,106 @@
   // main :: end
 
   // notes
-  &--notes {}
+  &--notes {
+    display: flex;
+    align-items: center;
+    min-height: 257px;
+
+    .beginners {
+      &__bg {
+        background-color: #edf9fd;
+        clip-path: polygon(0 5%, 100% 0, 98% 100%, 2% 100%);
+
+        &:before {
+          display: none;
+        }
+      }
+      &__triangle {
+        img {
+          &:nth-child(1) {
+            top: -10%;
+            left: 0;
+          }
+          &:nth-child(2) {
+            top: -20%;
+            right: 0;
+          }
+          &:nth-child(3) {
+            top: 15%;
+            right: -2%;
+          }
+          &:nth-child(4) {
+            left: -5%;
+            bottom: -10%;
+          }
+        }
+      }
+
+      &__wrapper {
+        padding: 15px 25px;
+      }
+
+      &__notes {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 133px;
+        padding: 30px;
+
+        &:before {
+          z-index: -1;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #e1f1f7;
+          clip-path: polygon(0 0, 100% 2%, 99% 100%, 2% 98%);
+        }
+
+        &-triangle {
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          img {
+            position: absolute;
+
+            &:nth-child(1) {
+              left: 5%;
+              top: -7%;
+            }
+            &:nth-child(2) {
+              top: -25%;
+              right: 15%;
+            }
+            &:nth-child(3) {
+              right: 15%;
+              bottom: -5%;
+            }
+            &:nth-child(4) {
+              bottom: -10%;
+              right: 3%;
+            }
+          }
+        }
+
+        p {
+          line-height: 1.6;
+          font-size: 16px;
+          font-family: 'Ubuntu', sans-serif;
+
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
   // notes :: end
 
   // description
