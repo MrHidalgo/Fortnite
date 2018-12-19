@@ -8,8 +8,10 @@
   margin-left: auto;
 
   .breadcrumbs {
+    padding-left: 0;
+    padding-bottom: 0;
     margin-top: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -19,6 +21,7 @@
 
   // common
   &--notes,
+  &--description,
   &--ratings,
   &--comments {
     position: relative;
@@ -100,72 +103,257 @@
       &__wrapper {
         padding: 15px 25px;
       }
+    }
+  }
+  &__notes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 133px;
+    padding: 30px;
 
-      &__notes {
-        position: relative;
-        display: flex;
-        align-items: center;
-        min-height: 133px;
-        padding: 30px;
+    &:before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #e1f1f7;
+      clip-path: polygon(0 0, 100% 2%, 99% 100%, 2% 98%);
+    }
 
-        &:before {
-          z-index: -1;
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: #e1f1f7;
-          clip-path: polygon(0 0, 100% 2%, 99% 100%, 2% 98%);
+    &-triangle {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        position: absolute;
+
+        &:nth-child(1) {
+          left: 5%;
+          top: -7%;
         }
-
-        &-triangle {
-          z-index: 0;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-
-          img {
-            position: absolute;
-
-            &:nth-child(1) {
-              left: 5%;
-              top: -7%;
-            }
-            &:nth-child(2) {
-              top: -25%;
-              right: 15%;
-            }
-            &:nth-child(3) {
-              right: 15%;
-              bottom: -5%;
-            }
-            &:nth-child(4) {
-              bottom: -10%;
-              right: 3%;
-            }
-          }
+        &:nth-child(2) {
+          top: -25%;
+          right: 15%;
         }
-
-        p {
-          line-height: 1.6;
-          font-size: 16px;
-          font-family: 'Ubuntu', sans-serif;
-
-          span {
-            font-weight: bold;
-          }
+        &:nth-child(3) {
+          right: 15%;
+          bottom: -5%;
         }
+        &:nth-child(4) {
+          bottom: -10%;
+          right: 3%;
+        }
+      }
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 16px;
+      font-family: 'Ubuntu', sans-serif;
+
+      span {
+        font-weight: bold;
       }
     }
   }
   // notes :: end
 
   // description
-  &--description {}
+  &--description {
+
+    .info__subtitle {
+      p {
+        font-size: 24px;
+      }
+    }
+
+    .beginners__notes {
+      margin-bottom: 40px;
+
+      &-wrapper {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      &-left {
+        width: 30px;
+      }
+
+      &-right {
+        width: 100%;
+        max-width: calc(100% - 30px);
+      }
+    }
+
+    .beginners {
+      &__bg {
+        &:before {
+          top: 42px;
+          height: calc(100% - 42px);
+          background-color: #edf9fd;
+          clip-path: polygon(0 4%, 100% 0, 97% 97%, 2% 100%);
+        }
+      }
+
+      &__triangle {
+        img {
+          &:nth-child(1) {
+            bottom: -8%;
+            left: 4%;
+          }
+          &:nth-child(2) {
+            bottom: -1%;
+            left: 20%;
+          }
+          &:nth-child(3) {
+            bottom: -1%;
+            right: 20%;
+          }
+          &:nth-child(4) {
+            bottom: -5%;
+            right: 3%;
+          }
+        }
+      }
+
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  &__description {
+    position: relative;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+
+    @each $id, $start-color, $end-color in
+        (0, #36caff, #1ac2fe),
+        (1, #ff7236, #dc602c),
+        (2, #518da4, #45839a),
+        (3, #9fa451, #8b9a45),
+        (4, #febc6f, #ffb45d),
+        (5, #3d9e03, #007804),
+        (6, #36caff, #1ac2fe),
+    {
+      &-#{$id} {
+        .beginners__description-header {
+          background-color: $start-color;
+
+          &:before {
+            background-color: $end-color;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-header,
+    &-body {
+      z-index: 2;
+      position: relative;
+    }
+
+    &-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 90%;
+      min-height: 97px;
+      padding-left: 20px;
+      clip-path: polygon(0 0, 100% 7%, 97% 96%, 2% 100%);
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 100%, 80% 75%, 100% 0, 100% 100%);
+      }
+
+      p {
+        color: $c-white;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+    }
+
+    &-body {
+      padding: 25px 35px 0;
+
+      > p,
+      > span {
+        padding-bottom: 25px;
+        line-height: 1.6;
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      > p {
+        font-size: 16px;
+
+        > span {
+          font-weight: bold;
+        }
+      }
+
+      > span {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      > a {
+        display: block;
+        margin-bottom: 15px;
+        color: #808e92;
+        font-size: 12px;
+        font-family: 'Ubuntu', sans-serif;
+      }
+    }
+
+    &-img {
+      text-align: center;
+      margin-bottom: 25px;
+
+      > div {
+        display: inline-flex;
+        border: 5px solid #fff;
+        background-color: #e8f7fc;
+        box-shadow: 4px 14px 0 0 #e8f7fc;
+      }
+
+      &--wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .beginners__description-img {
+          width: calc((100% - 10px) / 2);
+        }
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
   // description :: end
 
   // ratings

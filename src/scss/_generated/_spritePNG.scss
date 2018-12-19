@@ -1,11 +1,20 @@
 $sprite: (
+  arrow: (
+    offset-x: 0px,
+    offset-y: -58px,
+    width: 21px,
+    height: 23px,
+    total-width: 97px,
+    total-height: 81px,
+    image: '../img/sprite.png'
+  ),
   star-full: (
     offset-x: 0px,
     offset-y: 0px,
     width: 49px,
     height: 53px,
     total-width: 97px,
-    total-height: 53px,
+    total-height: 81px,
     image: '../img/sprite.png'
   ),
   star-half: (
@@ -14,7 +23,7 @@ $sprite: (
     width: 43px,
     height: 53px,
     total-width: 97px,
-    total-height: 53px,
+    total-height: 81px,
     image: '../img/sprite.png'
   ),
 );
@@ -62,6 +71,9 @@ $sprite: (
   }
 }
 
+.arrow:before {
+  @include sprite(arrow);
+}
 .star-full:before {
   @include sprite(star-full);
 }
