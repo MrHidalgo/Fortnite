@@ -9,18 +9,20 @@ section#filter.filter
     img(src="./img/img-filter-triangle-1.svg" alt="" title="")
 
   .c-grid
-    .filter__wrapper
+    form.filter__wrapper.c-form(action='' method='' autocomplete='off')
       .filter__wrapper-left
 
         .filter__category-wrapper
+
+          // 1 col
           .filter__category.filter__category-0
             a(href="#").filter__category-title
               p!= "Select Category"
               i!= ">"
 
-            p.filter__category-subtitle!= "Rarity:"
+            .filter__category-content
+              p.filter__category-subtitle!= "Rarity:"
 
-            form.c-form(action='' method='' autocomplete='off')
               +formCheckbox(dataFormObj.checkboxFieldLegendary)(checked="checked")
               +formCheckbox(dataFormObj.checkboxFieldEpic)(checked="checked")
               +formCheckbox(dataFormObj.checkboxFieldRare)(checked="checked")
@@ -33,16 +35,16 @@ section#filter.filter
                 +formCheckbox(dataFormObj.checkboxField3)
                 +formCheckbox(dataFormObj.checkboxField4)
 
-
-
+          // 2 col
           .filter__category.filter__category-1
             a(href="#").filter__category-title
               p!= "Select Set"
               i!= ">"
 
-            p.filter__category-subtitle!= "Types:"
+            .filter__category-content
+              p.filter__category-subtitle!= "Types:"
 
-            form.c-form(action='' method='' autocomplete='off')
+
               +formCheckbox(dataFormObj.checkboxField5)
               +formCheckbox(dataFormObj.checkboxField6)
 
@@ -62,7 +64,6 @@ section#filter.filter
                   each val, idx in [1,2,3,4,5,6,7,8]
                     a(href="#" class="" title="")
                       img(src="./img/img-skin-ts.png" alt="" title="")
-
 
           .filter__category.filter__category-2
 
@@ -93,21 +94,20 @@ section#filter.filter
               +formCheckbox(dataFormObj.checkboxField20)
               +formCheckbox(dataFormObj.checkboxField21)
 
-
-        .filter__follow
-          .filter__follow-bg
-
-          p!= "Follow:"
-          .filter__follow-share
-            // add share iframe
-          .filter__follow-share
-            // add share iframe
-
       .filter__wrapper-right
 
         include ../common/_sectionBanner
 
         a.filter__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "Apply Filter <span>></span>"
+
+    .filter__follow
+      .filter__follow-bg
+
+      p!= "Follow:"
+      .filter__follow-share
+        // add share iframe
+      .filter__follow-share
+        // add share iframe
 
 
 // SECTION filter :: END

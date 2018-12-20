@@ -1,0 +1,14 @@
+---
+title: Fortnite - List of all skins - grid
+
+pageClassName: p-list
+---
+extends shared/_layout
+
+block content
+  div.body.body--start(class!= pageClassName)
+
+    include ./components/list/_list
+    include ./components/list/_filter
+    include ./components/list/_browse
+    include ./components/common/_spinner

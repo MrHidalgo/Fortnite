@@ -37,6 +37,17 @@ $(document).ready((ev) => {
       elem.addClass('is-active');
     });
   };
+
+  const initFilterCollapse = () => {
+    $('.filter__category-title').on('click', (ev) => {
+      const elem = $(ev.currentTarget),
+        collapseContent = elem.siblings('.filter__category-content');
+
+      if($(window).width() <= 575) {
+        collapseContent.slideToggle(300);
+      }
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -65,6 +76,7 @@ $(document).ready((ev) => {
 		// ==========================================
     initLatestTabs();
     listFilterSoldierBtn();
+    initFilterCollapse();
   };
   initJquery();
 });

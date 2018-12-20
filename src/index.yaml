@@ -7,9 +7,12 @@ PageList:
 - file: 404.html
   titleName: 404
   ready: 75
-- file: list.html
-  titleName: List of all skins
-  ready: 20
+- file: list-table.html
+  titleName: List of all skins - table
+  ready: 30
+- file: list-grid.html
+  titleName: List of all skins - grid
+  ready: 30
 - file: rewards.html
   titleName: Battle pass rewards
   ready: 75
