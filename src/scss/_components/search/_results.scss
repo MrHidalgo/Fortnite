@@ -1,0 +1,265 @@
+// SECTION results :: START
+
+.results {
+  width: 100%;
+  max-width: 705px;
+  margin-left: auto;
+
+  &__wrapper {
+    padding-bottom: 15px;
+  }
+
+  // title
+  &__title {
+    position: relative;
+
+    &-bg {
+      z-index: -1;
+      position: absolute;
+      top: 77px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 77px);
+      background-color: #edf9fd;
+      clip-path: polygon(0 0, 100% 6%, 98% 95%, 1% 100%);
+    }
+
+    &-triangle {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        position: absolute;
+
+        &:nth-child(1) {
+          top: 55px;
+          right: 15%;
+        }
+        &:nth-child(2) {
+          left: -3%;
+          bottom: -17%;
+        }
+        &:nth-child(3) {
+          right: 0;
+          bottom: -5%;
+        }
+      }
+    }
+
+    &-content {
+      z-index: 2;
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 411px;
+      height: 100px;
+      padding-left: 25px;
+      color: $c-white;
+      background-color: #ffe000;
+      clip-path: polygon(0 0, 100% 4%, 97% 100%, 3% 96%);
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #e1be1c;
+        clip-path: polygon(0 100%, 85% 70%, 100% 0, 100% 100%);
+      }
+
+      .icon-font {
+        font-size: 55px;
+      }
+
+      h1 {
+        padding-left: 5px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 48px;
+      }
+    }
+
+    &-name {
+      padding-top: 30px;
+      padding-bottom: 35px;
+      padding-left: 25px;
+      color: #273c43;
+      font-size: 18px;
+      font-family: 'Ubuntu', sans-serif;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+  // title :: end
+
+  // google
+  &__google {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  // google :: end
+
+  // content
+  &__content {
+    position: relative;
+    margin-bottom: 50px;
+
+    &-bg,
+    &-triangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-bg {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #edf9fd;
+        clip-path: polygon(0 0, 100% 0.5%, 99.5% 99.5%, 0.5% 100%);
+      }
+    }
+
+    &-triangle {
+      img {
+        position: absolute;
+
+        &:nth-child(1) {
+          bottom: -20px;
+          left: 0;
+        }
+        &:nth-child(2) {
+          right: 0;
+          bottom: 0;
+        }
+        &:nth-child(3) {
+          top: -10px;
+          right: 0;
+        }
+      }
+    }
+  }
+  // content :: end
+
+  // block
+  &__block {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+    min-height: 173px;
+
+    @each $className, $gradName in
+        (orange, '%radialGradientOrange'),
+        (pink, '%radialGradientPink'),
+        (blue, '%radialGradientBlue'),
+        (green, '%radialGradientGreen')
+    {
+      &--#{$className} {
+        .results__block-img {
+          @extend #{$gradName};
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-wrapper {
+      padding: 50px 10px 50px 17px;
+    }
+
+    &-left {
+      width: 190px;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: calc(100% - 190px);
+
+      > p {
+        text-transform: uppercase;
+        font-size: 24px;
+
+        span {
+          color: #ff7638;
+        }
+      }
+
+      > a {
+        padding-bottom: 18px;
+        color: #1ac2fe;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Rajdhani', sans-serif;
+      }
+
+      > span {
+        color: #657782;
+        line-height: 1.6;
+        font-family: 'Ubuntu', sans-serif;
+      }
+    }
+
+    &-img {
+      position: relative;
+      width: 173px;
+      height: 137px;
+      padding: 10px;
+      border: 5px solid #e8f2ff;
+      background-color: $c-black;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+      &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #363636;
+        clip-path: polygon(0 100%, 85% 70%, 100% 0, 100% 100%);
+      }
+
+      img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto;
+      }
+    }
+  }
+  // block :: end
+}
+
+// SECTION results :: END

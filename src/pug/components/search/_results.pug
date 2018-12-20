@@ -1,0 +1,66 @@
+// SECTION results :: START
+
+section#results.results
+
+  // title
+  .results__wrapper.results__wrapper-0
+    .results__title
+      .results__title-bg
+
+      .results__title-triangle
+        img(src="./img/img-result-title-triangle-0.svg" alt="" title="")
+        img(src="./img/img-result-title-triangle-1.svg" alt="" title="")
+        img(src="./img/img-result-title-triangle-2.svg" alt="" title="")
+
+      .results__title-content
+        i.icon-font.icon-search
+        h1!= "Search Results"
+
+      p.results__title-name!= 'You searched for <span>"outfit".</span>'
+
+  // google results
+  .results__wrapper.results__wrapper-1
+
+    // add google frame
+    .results__google
+      // del
+      p!=' Google search results - remove text add iframe'
+
+  // find results
+  .results__wrapper.results__wrapper-2
+
+    .results__content
+
+      .results__content-bg
+
+      .results__content-triangle
+        img(src="./img/img-results-content-triangle-0.svg" alt="" title="")
+        img(src="./img/img-results-content-triangle-1.svg" alt="" title="")
+        img(src="./img/img-results-content-triangle-2.svg" alt="" title="")
+
+      .results__block-wrapper
+
+        -for(var idx = 0; idx < 15; idx ++)
+          -
+            var className = (idx === 0) ? 'results__block--orange' :
+              (idx === 1) ? 'results__block--pink' :
+              (idx % 2 === 0) ? 'results__block--blue' :
+              (idx % 3 === 0) ? 'results__block--green' : '';
+
+          .results__block(
+            class!= "results__block--" + idx + " " + className
+          )
+            .results__block-left
+              .results__block-img
+                if(className !== '')
+                  img(src="./img/img-skin-ts.png" alt="" title="")
+                else
+                  img(src="./img/fortnite.png" srcset="./img/fortnite@2x.png 2x" alt="" title="")
+
+            .results__block-right
+              p!= "Fortnite Assault Trooper | <span>Outfits</span> - Fortnite Skins"
+              a(href="#" class="" title="")!= "https://fortniteskins.net/outfits"
+              span!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
+
+
+// SECTION results :: END

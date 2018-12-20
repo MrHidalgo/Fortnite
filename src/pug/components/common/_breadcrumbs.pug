@@ -7,50 +7,51 @@
   var berginnerDataArr = ['Home', 'Guides', 'Fortnite Battle Royale: Beginner’s Tips'];
 
 section#breadcrumbs.breadcrumbs
-  .breadcrumbs__wrapper
+  .c-grid
+    .breadcrumbs__wrapper
 
-    if(pageClassName === 'p-rewards')
-      ul.breadcrumbs__list
-        each val, idx in rewardsDataArr
-          li.breadcrumbs__item
-            a.breadcrumbs__link(href="#" class="" title="")!= val
-
-          if(idx < rewardsDataArr.length - 1)
+      if(pageClassName === 'p-rewards')
+        ul.breadcrumbs__list
+          each val, idx in rewardsDataArr
             li.breadcrumbs__item
-              span.breadcrumbs__icon!= ">>"
+              a.breadcrumbs__link(href="#" class="" title="")!= val
 
-    else if(pageClassName === 'p-history')
-      ul.breadcrumbs__list
-        each val, idx in historyDataArr
-          li.breadcrumbs__item
-            a.breadcrumbs__link(href="#" class="" title="")!= val
+            if(idx < rewardsDataArr.length - 1)
+              li.breadcrumbs__item
+                span.breadcrumbs__icon!= ">>"
 
-          if(idx < historyDataArr.length - 1)
+      else if(pageClassName === 'p-history')
+        ul.breadcrumbs__list
+          each val, idx in historyDataArr
             li.breadcrumbs__item
-              span.breadcrumbs__icon!= ">>"
+              a.breadcrumbs__link(href="#" class="" title="")!= val
 
-    else if(pageClassName === 'p-beginners')
-      ul.breadcrumbs__list
-        each val, idx in berginnerDataArr
-          li.breadcrumbs__item
-            a.breadcrumbs__link(href="#" class="" title="")!= val
+            if(idx < historyDataArr.length - 1)
+              li.breadcrumbs__item
+                span.breadcrumbs__icon!= ">>"
 
-          if(idx < berginnerDataArr.length - 1)
+      else if(pageClassName === 'p-beginners')
+        ul.breadcrumbs__list
+          each val, idx in berginnerDataArr
             li.breadcrumbs__item
-              span.breadcrumbs__icon!= ">>"
+              a.breadcrumbs__link(href="#" class="" title="")!= val
 
-    else if(pageClassName === 'p-skin')
-      ul.breadcrumbs__list
-        each val, idx in skinDataArr
-          li.breadcrumbs__item
-            a.breadcrumbs__link(href="#" class="" title="")!= val
+            if(idx < berginnerDataArr.length - 1)
+              li.breadcrumbs__item
+                span.breadcrumbs__icon!= ">>"
 
-          if(idx < skinDataArr.length - 1)
+      else if(pageClassName === 'p-skin')
+        ul.breadcrumbs__list
+          each val, idx in skinDataArr
             li.breadcrumbs__item
-              span.breadcrumbs__icon!= ">>"
+              a.breadcrumbs__link(href="#" class="" title="")!= val
 
-      ul.breadcrumbs__list
-        li.breadcrumbs__item
-          a.breadcrumbs__link(href="#" class="" title="")!= "Legendary Outfits"
+            if(idx < skinDataArr.length - 1)
+              li.breadcrumbs__item
+                span.breadcrumbs__icon!= ">>"
+
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="#" class="" title="")!= "Legendary Outfits"
 
 // SECTION breadcrumbs :: END

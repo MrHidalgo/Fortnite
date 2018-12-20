@@ -33,7 +33,7 @@ PageList:
   ready: 75
 - file: search.html
   titleName: Search
-  ready: 20
+  ready: 50
 - file: sets.html
   titleName: Sets
   ready: 25
