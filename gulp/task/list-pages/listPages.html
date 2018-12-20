@@ -258,9 +258,6 @@
       margin: 0;
     }
 
-    .pagelist__filename--notfound {
-      color: #e98df5;
-    }
     .pagelist__filename--finished {
       color: #41c300;
     }
@@ -563,9 +560,6 @@
 
     <p class="pagelist__filename">
       <%= page.file %> - <%= page.ready %>%
-      <span class="pagelist__filename--notfound">
-        <% if(page.ready == 0) { %> - NOT FOUND <% } %>
-      </span>
       <span class="pagelist__filename--testing">
         <% if(page.ready >= 75 && page.ready <= 95) { %> - AWAITING TESTING <% } %>
       </span>
