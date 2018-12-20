@@ -28,6 +28,15 @@ $(document).ready((ev) => {
       elem.addClass('is-active');
     });
   };
+
+  const listFilterSoldierBtn = () => {
+    $('.filter__category-soldier > a').on('click', (ev) => {
+      const elem = $(ev.currentTarget);
+
+      $('.filter__category-soldier > a').removeClass('is-active');
+      elem.addClass('is-active');
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -55,6 +64,7 @@ $(document).ready((ev) => {
     // callback
 		// ==========================================
     initLatestTabs();
+    listFilterSoldierBtn();
   };
   initJquery();
 });

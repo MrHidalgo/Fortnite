@@ -290,6 +290,11 @@
         clip-path: polygon(0 100%, 85% 70%, 100% 0, 100% 100%);
       }
 
+      .e-skin__block-view {
+        top: 0;
+        bottom: auto;
+      }
+
       img {
         position: relative;
         top: 50%;

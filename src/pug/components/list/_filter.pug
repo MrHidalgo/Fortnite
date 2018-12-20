@@ -1,0 +1,113 @@
+// SECTION filter :: START
+
+section#filter.filter
+
+  .filter__bg
+
+  .filter__trinagle
+    img(src="./img/img-filter-triangle-0.svg" alt="" title="")
+    img(src="./img/img-filter-triangle-1.svg" alt="" title="")
+
+  .c-grid
+    .filter__wrapper
+      .filter__wrapper-left
+
+        .filter__category-wrapper
+          .filter__category.filter__category-0
+            a(href="#").filter__category-title
+              p!= "Select Category"
+              i!= ">"
+
+            p.filter__category-subtitle!= "Rarity:"
+
+            form.c-form(action='' method='' autocomplete='off')
+              +formCheckbox(dataFormObj.checkboxFieldLegendary)(checked="checked")
+              +formCheckbox(dataFormObj.checkboxFieldEpic)(checked="checked")
+              +formCheckbox(dataFormObj.checkboxFieldRare)(checked="checked")
+              +formCheckbox(dataFormObj.checkboxFieldUncommon)(checked="checked")
+              +formCheckbox(dataFormObj.checkboxFieldCommon)(checked="checked")
+
+              .filter__category-checkbox
+                +formCheckbox(dataFormObj.checkboxField1)
+                +formCheckbox(dataFormObj.checkboxField2)
+                +formCheckbox(dataFormObj.checkboxField3)
+                +formCheckbox(dataFormObj.checkboxField4)
+
+
+
+          .filter__category.filter__category-1
+            a(href="#").filter__category-title
+              p!= "Select Set"
+              i!= ">"
+
+            p.filter__category-subtitle!= "Types:"
+
+            form.c-form(action='' method='' autocomplete='off')
+              +formCheckbox(dataFormObj.checkboxField5)
+              +formCheckbox(dataFormObj.checkboxField6)
+
+              .filter__category-checkbox.filter__category-checkbox--0
+                +formCheckbox(dataFormObj.checkboxField7)
+                +formCheckbox(dataFormObj.checkboxField8)
+                +formCheckbox(dataFormObj.checkboxField9)
+                +formCheckbox(dataFormObj.checkboxField10)
+                +formCheckbox(dataFormObj.checkboxField11)
+                +formCheckbox(dataFormObj.checkboxField12)
+
+              .filter__category-checkbox.filter__category-checkbox--1
+                +formCheckbox(dataFormObj.checkboxFieldSoldier)
+
+              .filter__category-checkbox.filter__category-checkbox--2
+                .filter__category-soldier
+                  each val, idx in [1,2,3,4,5,6,7,8]
+                    a(href="#" class="" title="")
+                      img(src="./img/img-skin-ts.png" alt="" title="")
+
+
+          .filter__category.filter__category-2
+
+            .filter__category-main.filter__category-main--0
+              span
+              span
+              div
+                img(src="./img/img-battle-pass-filter.png" srcset="./img/img-battle-pass-filter@2x.png 2x" alt="" title="")
+                +formCheckbox(dataFormObj.checkboxFieldBattlePass)
+
+            .filter__category-checkbox.filter__category-checkbox--0
+              +formCheckbox(dataFormObj.checkboxField13)
+              +formCheckbox(dataFormObj.checkboxField14)
+              +formCheckbox(dataFormObj.checkboxField15)
+              +formCheckbox(dataFormObj.checkboxField16)
+              +formCheckbox(dataFormObj.checkboxField17)
+
+            .filter__category-main.filter__category-main--1
+              span
+              span
+              div
+                img(src="./img/img-battle-vbucks-filter.png" srcset="./img/img-battle-vbucks-filter@2x.png 2x" alt="" title="")
+                +formCheckbox(dataFormObj.checkboxFieldVBucks)
+
+            .filter__category-checkbox.filter__category-checkbox--0
+              +formCheckbox(dataFormObj.checkboxField18)
+              +formCheckbox(dataFormObj.checkboxField19)
+              +formCheckbox(dataFormObj.checkboxField20)
+              +formCheckbox(dataFormObj.checkboxField21)
+
+
+        .filter__follow
+          .filter__follow-bg
+
+          p!= "Follow:"
+          .filter__follow-share
+            // add share iframe
+          .filter__follow-share
+            // add share iframe
+
+      .filter__wrapper-right
+
+        include ../common/_sectionBanner
+
+        a.filter__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "Apply Filter <span>></span>"
+
+
+// SECTION filter :: END

@@ -9,7 +9,7 @@ PageList:
   ready: 75
 - file: list.html
   titleName: List of all skins
-  ready: 1
+  ready: 20
 - file: rewards.html
   titleName: Battle pass rewards
   ready: 75

@@ -1,6 +1,7 @@
 // SECTION list :: START
 
 .list {
+  z-index: 1;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 
@@ -14,7 +15,7 @@
     background-color: #362f2c;
     background-image: url('../img/img-list-bg.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
   }
 
