@@ -76,14 +76,14 @@
       }
 
       .icon-font {
-        font-size: 55px;
+        @include fluid(font-size, 320px, 992px, 35px, 55px);
       }
 
       h1 {
         padding-left: 5px;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 48px;
+        @include fluid(font-size, 320px, 992px, 35px, 48px);
       }
     }
 
@@ -171,6 +171,15 @@
     display: flex;
     margin-bottom: 30px;
     min-height: 173px;
+    @include adaptive(991) {
+      flex-wrap: wrap;
+    }
+    @include adaptive(767) {
+      flex-wrap: nowrap;
+    }
+    @include adaptive(575) {
+      flex-wrap: wrap;
+    }
 
     @each $className, $gradName in
         (orange, '%radialGradientOrange'),
@@ -195,6 +204,15 @@
 
     &-left {
       width: 190px;
+      @include adaptive(991) {
+        width: 100%;
+      }
+      @include adaptive(767) {
+        width: 190px;
+      }
+      @include adaptive(575) {
+        width: 100%;
+      }
     }
 
     &-right {
@@ -202,10 +220,22 @@
       flex-direction: column;
       width: 100%;
       max-width: calc(100% - 190px);
+      @include adaptive(991) {
+        max-width: 100%;
+        text-align: center;
+      }
+      @include adaptive(767) {
+        max-width: calc(100% - 190px);
+        text-align: left;
+      }
+      @include adaptive(575) {
+        max-width: 100%;
+        text-align: center;
+      }
 
       > p {
         text-transform: uppercase;
-        font-size: 24px;
+        @include fluid(font-size, 320px, 991px, 22px, 24px);
 
         span {
           color: #ff7638;
@@ -215,9 +245,9 @@
       > a {
         padding-bottom: 18px;
         color: #1ac2fe;
-        font-size: 18px;
         font-weight: 600;
         font-family: 'Rajdhani', sans-serif;
+        @include fluid(font-size, 320px, 991px, 16px, 18px);
       }
 
       > span {
@@ -235,6 +265,18 @@
       border: 5px solid #e8f2ff;
       background-color: $c-black;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      @include adaptive(991) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include adaptive(767) {
+        margin-right: auto;
+        margin-left: 0;
+      }
+      @include adaptive(575) {
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       &:before {
         content: '';
