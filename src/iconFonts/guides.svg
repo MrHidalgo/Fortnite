@@ -1,0 +1,15 @@
+<svg id="guides" xmlns="http://www.w3.org/2000/svg" width="52" height="42" viewBox="0 0 52 42">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="open_book" data-name="open book" class="cls-1" d="M168.355,3295.36v33.39a19.862,19.862,0,0,1,21.806,0v-32.97a18.454,18.454,0,0,0-10.9-3.78A19.806,19.806,0,0,0,168.355,3295.36Zm23.484,0v33.39a19.862,19.862,0,0,1,21.806,0v-32.97a18.454,18.454,0,0,0-10.9-3.78A19.806,19.806,0,0,0,191.839,3295.36ZM165,3298.72h1.677v31.92h20.129v1.68h8.387v-1.68h20.129v-31.92H217v33.6H196.871l0.1,1.68H185.129v-1.68H165v-33.6Z" transform="translate(-165 -3292)"/>
+  <rect class="cls-2" x="24" y="3" width="4" height="34"/>
+</svg>

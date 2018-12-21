@@ -3,7 +3,7 @@ ProjectTitle: Fortnite
 PageList:
 - file: index.html
   titleName: Home
-  ready: 20
+  ready: 30
 - file: 404.html
   titleName: 404
   ready: 75
