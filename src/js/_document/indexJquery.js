@@ -48,6 +48,15 @@ $(document).ready((ev) => {
       }
     });
   };
+
+  const initItemNavBtn = () => {
+    $('.item__nav-btn').on('click', (ev) => {
+      const elem = $(ev.currentTarget);
+
+      $('.item__nav-btn').removeClass('is-active');
+      elem.addClass('is-active');
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -77,6 +86,7 @@ $(document).ready((ev) => {
     initLatestTabs();
     listFilterSoldierBtn();
     initFilterCollapse();
+    initItemNavBtn();
   };
   initJquery();
 });

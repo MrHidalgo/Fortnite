@@ -20,10 +20,213 @@ section#item.item
 
       .item__row.item__row-0
         .item__row-left
+
+          .item__title
+            i.icon-font.icon-shop
+            h1!= "Item Shop"
+
         .item__row-right
+
+          .item__nav
+            .item__nav-bg
+            .item__nav-wrapper
+
+              -
+                var itemMenuArr = [
+                  {
+                    iconName: 'outfit',
+                    indCount: '128',
+                    name: 'Outfit'
+                  },
+                  {
+                    iconName: 'backBling',
+                    indCount: '50',
+                    name: 'Back<br>Bling'
+                  },
+                  {
+                    iconName: 'harvestingTool',
+                    indCount: '78',
+                    name: 'Harvesting<br>Tool'
+                  },
+                  {
+                    iconName: 'glider',
+                    indCount: '64',
+                    name: 'Glider'
+                  },
+                  {
+                    iconName: 'skydivingTrails',
+                    indCount: '25',
+                    name: 'Skydiving<br>Trails'
+                  },
+                  {
+                    iconName: 'loadingScreen',
+                    indCount: '216',
+                    name: 'Loading<br>Screen'
+                  },
+                  {
+                    iconName: 'emote',
+                    indCount: '54',
+                    name: 'Emote'
+                  },
+                  {
+                    iconName: 'emoticon',
+                    indCount: '189',
+                    name: 'Emoticon'
+                  },
+                  {
+                    iconName: 'spray',
+                    indCount: '66',
+                    name: 'Spray'
+                  },
+                  {
+                    iconName: 'toy',
+                    indCount: '72',
+                    name: 'Toy'
+                  },
+                  {
+                    iconName: 'token',
+                    indCount: '49',
+                    name: 'Token'
+                  }
+                ];
+
+              each val, idx in itemMenuArr
+                a.item__nav-btn(href="#" class= (idx === 0) ? 'is-active':'' title="")
+                  div
+                    i.icon-png(class!= itemMenuArr[idx].iconName)
+                    span!= itemMenuArr[idx].indCount
+                  div
+                    p!= itemMenuArr[idx].name
 
       .item__row.item__row-1
         .item__row-left
+
+          .item__subtitle.item__subtitle-0
+            .item__subtitle-bg
+            i.icon-font.icon-btn-arrow
+            i.icon-font.icon-btn-arrow
+            p.item__subtitle-name!= "Featured"
+
+          .item__slider-wrapper.item__slider-wrapper-0
+            .item__slider.item__slider-0
+
+              mixin swiperFeatured1Content()
+                .swiper-slide.swiper-slide--epic
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .swiper-slide-badge
+                    .e-skin__block-badge.e-skin__block-badge--style
+                      span!= "Pick Your STyle!"
+                    .e-skin__block-badge
+                      i.icon-font.icon-diamond
+                      span!= "epic"
+
+                  .e-skin__block-view
+                    i.icon-font.icon-cube
+                    span!= "3d"
+
+                  p.swiper-slide-out!= "2 out of 3"
+
+                  .swiper-slide-info
+                    p!= "Skin Name"
+                    .e-skin__block-points
+                      img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                      span!= "1500"
+
+                .swiper-slide.swiper-slide--rare
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .swiper-slide-badge
+                    .e-skin__block-badge.e-skin__block-badge--style
+                      span!= "Pick Your STyle!"
+                    .e-skin__block-badge
+                      i.icon-font.icon-diamond
+                      span!= "rare"
+
+                  .e-skin__block-view
+                    i.icon-font.icon-cube
+                    span!= "3d"
+
+                  p.swiper-slide-out!= "2 out of 3"
+
+                  .swiper-slide-info
+                    p!= "Skin Name"
+                    .e-skin__block-points
+                      img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                      span!= "1500"
+
+                .swiper-slide.swiper-slide--legendary
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .swiper-slide-badge
+                    .e-skin__block-badge
+                      i.icon-font.icon-diamond
+                      span!= "legendary"
+
+                  .e-skin__block-view
+                    i.icon-font.icon-cube
+                    span!= "3d"
+
+                  p.swiper-slide-out!= "2 out of 3"
+
+                  .swiper-slide-info
+                    p!= "Skin Name"
+                    .e-skin__block-points
+                      img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                      span!= "1500"
+
+                .swiper-slide.swiper-slide--uncommon
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .swiper-slide-badge
+                    .e-skin__block-badge
+                      i.icon-font.icon-diamond
+                      span!= "uncommon"
+
+                  .e-skin__block-view
+                    i.icon-font.icon-cube
+                    span!= "3d"
+
+                  p.swiper-slide-out!= "2 out of 3"
+
+                  .swiper-slide-info
+                    p!= "Skin Name"
+                    .e-skin__block-points
+                      img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                      span!= "1500"
+
+
+              +swiper('swiper-container--featured swiper-container--featured-0', 'swiperFeatured1Content', false, true, false)
+
+            .item__slider.item__slider-1
+              +swiper('swiper-container--featured swiper-container--featured-1', 'swiperFeatured1Content', false, true, false)
+
+            .item__slider.item__slider-2
+              +swiper('swiper-container--featured swiper-container--featured-2', 'swiperFeatured1Content', false, true, false)
+
         .item__row-right
+
+          .item__subtitle.item__subtitle-1
+            .item__subtitle-bg
+            i.icon-font.icon-btn-arrow
+            i.icon-font.icon-btn-arrow
+            p.item__subtitle-name!= "Daily"
+
+          .item__slider-wrapper.item__slider-wrapper-1
+            .item__slider.item__slider-3
+              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+
+            .item__slider.item__slider-4
+              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+
+            .item__slider.item__slider-5
+              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+
+            .item__slider.item__slider-6
+              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+
+      .item__row.item__row-2
+        a.item__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "Item Shop <span>></span>"
+
 
 // SECTION item :: END

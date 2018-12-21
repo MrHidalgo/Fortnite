@@ -1,11 +1,92 @@
 $sprite: (
   arrow: (
-    offset-x: 0px,
-    offset-y: -58px,
+    offset-x: -34px,
+    offset-y: -96px,
     width: 21px,
     height: 23px,
-    total-width: 97px,
-    total-height: 81px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  backBling: (
+    offset-x: -72px,
+    offset-y: -58px,
+    width: 21px,
+    height: 27px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  emote: (
+    offset-x: -141px,
+    offset-y: -33px,
+    width: 25px,
+    height: 29px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  emoticon: (
+    offset-x: -102px,
+    offset-y: -68px,
+    width: 33px,
+    height: 18px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  glider: (
+    offset-x: -102px,
+    offset-y: 0px,
+    width: 34px,
+    height: 27px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  harvestingTool: (
+    offset-x: -141px,
+    offset-y: 0px,
+    width: 27px,
+    height: 28px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  loadingScreen: (
+    offset-x: -34px,
+    offset-y: -58px,
+    width: 33px,
+    height: 28px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  outfit: (
+    offset-x: 0px,
+    offset-y: -58px,
+    width: 29px,
+    height: 33px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  skydivingTrails: (
+    offset-x: -102px,
+    offset-y: -32px,
+    width: 29px,
+    height: 31px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  spray: (
+    offset-x: -141px,
+    offset-y: -67px,
+    width: 27px,
+    height: 26px,
+    total-width: 168px,
+    total-height: 123px,
     image: '../img/sprite.png'
   ),
   star-full: (
@@ -13,8 +94,8 @@ $sprite: (
     offset-y: 0px,
     width: 49px,
     height: 53px,
-    total-width: 97px,
-    total-height: 81px,
+    total-width: 168px,
+    total-height: 123px,
     image: '../img/sprite.png'
   ),
   star-half: (
@@ -22,8 +103,26 @@ $sprite: (
     offset-y: 0px,
     width: 43px,
     height: 53px,
-    total-width: 97px,
-    total-height: 81px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  token: (
+    offset-x: 0px,
+    offset-y: -96px,
+    width: 29px,
+    height: 27px,
+    total-width: 168px,
+    total-height: 123px,
+    image: '../img/sprite.png'
+  ),
+  toy: (
+    offset-x: -141px,
+    offset-y: -98px,
+    width: 27px,
+    height: 24px,
+    total-width: 168px,
+    total-height: 123px,
     image: '../img/sprite.png'
   ),
 );
@@ -74,9 +173,42 @@ $sprite: (
 .arrow:before {
   @include sprite(arrow);
 }
+.backBling:before {
+  @include sprite(backBling);
+}
+.emote:before {
+  @include sprite(emote);
+}
+.emoticon:before {
+  @include sprite(emoticon);
+}
+.glider:before {
+  @include sprite(glider);
+}
+.harvestingTool:before {
+  @include sprite(harvestingTool);
+}
+.loadingScreen:before {
+  @include sprite(loadingScreen);
+}
+.outfit:before {
+  @include sprite(outfit);
+}
+.skydivingTrails:before {
+  @include sprite(skydivingTrails);
+}
+.spray:before {
+  @include sprite(spray);
+}
 .star-full:before {
   @include sprite(star-full);
 }
 .star-half:before {
   @include sprite(star-half);
+}
+.token:before {
+  @include sprite(token);
+}
+.toy:before {
+  @include sprite(toy);
 }

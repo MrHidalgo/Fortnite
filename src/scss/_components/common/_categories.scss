@@ -54,9 +54,20 @@
     min-height: 56px;
     margin-bottom: 4px;
     clip-path: polygon(0 2%, 100% 0, 98% 98%, 2% 100%);
+    @include transition(clip-path);
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+
+    &:hover {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      @include transition(clip-path);
+
+      .categories__block-num {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        @include transition(clip-path);
+      }
     }
 
     &-wrapper {
@@ -95,6 +106,7 @@
       background-color: #1ac2fe;
       color: $c-white;
       clip-path: polygon(0 5%, 100% 0, 95% 93%, 10% 100%);
+      @include transition(clip-path);
     }
   }
 }
