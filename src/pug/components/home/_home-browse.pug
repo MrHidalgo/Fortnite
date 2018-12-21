@@ -1,0 +1,59 @@
+// SECTION home browse skins :: START
+
+mixin emotesSkinBlock(classMod, classSkinName, badgeName, imgName)
+  .e-skin__block(class!= "e-skin__block-" + classMod + ' e-skin__block--' + classSkinName)
+    .e-skin__block-left
+      .e-skin__block-image
+
+        img(src="./img/" + imgName + ".png" srcset="./img/" + imgName + "@2x.png 2x" alt="" title="")
+
+        .e-skin__block-badge
+          i.icon-font.icon-diamond
+          span!= badgeName
+
+        .e-skin__block-view
+          i.icon-font.icon-cube
+          span!= "3d"
+
+    .e-skin__block-right
+      .e-skin__block-figure
+        img(src="./img/img-skin-triangle-0.svg" alt="" title="")
+        img(src="./img/img-skin-triangle-1.svg" alt="" title="")
+        img(src="./img/img-skin-triangle-2.svg" alt="" title="")
+
+      .e-skin__block-content
+        p.e-skin__block-name!= "Skin name"
+        .e-skin__block-points
+          img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+          span!= "1500"
+
+        p.e-skin__block-desc!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem."
+        p.e-skin__block-date!= "<span>October 10, 2018</span> | <span>Emotes</span>"
+        a.e-skin__block-comments(href="#" class="" title="")
+          i.icon-font.icon-bubble
+          span!= "35 comments"
+
+section.home.home--browse
+  .c-grid
+    .home__wrapper.home__wrapper-0
+
+      .home__title
+        i.icon-font.icon-all
+        p!= "Browse Skins"
+
+    .home__wrapper.home__wrapper-1
+
+      .e-skin__block-wrapper
+
+        +emotesSkinBlock(0, 'epic', 'epic', 'img-skin-epic')
+        +emotesSkinBlock(1, 'uncommon', 'uncommon', 'img-skin-uncommon')
+        +emotesSkinBlock(2, 'rare', 'rare', 'img-skin-rare')
+        +emotesSkinBlock(3, 'epic', 'epic', 'img-skin-epic-0')
+        +emotesSkinBlock(4, 'rare', 'rare', 'img-skin-rare')
+        +emotesSkinBlock(5, 'uncommon', 'uncommon', 'img-skin-uncommon')
+
+    .home__wrapper.home__wrapper-2
+      a.item__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "View More <span>></span>"
+
+
+// SECTION home browse skins :: END
