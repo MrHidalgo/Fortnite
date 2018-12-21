@@ -1,0 +1,31 @@
+.browse__block.browse__block--grid
+  .browse__filter-wrapper
+    .browse__filter
+      p!= "Sort by:"
+      a.browse__filter-btn(href="#" class="" title="")
+        span!= "Name"
+        i!= ">"
+      a.browse__filter-link(href="#" class="" title="")
+        span!= "Rarity"
+
+  .browse__box-wrapper
+    mixin boxContent(boxClassMod)
+      .browse__box(class!= "browse__box--" + boxClassMod)
+        .e-skin__block-view
+          i.icon-font.icon-cube
+          span!= "3d"
+
+        .e-skin__block-points
+          img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+          span!= "1500"
+
+        .browse__box-name
+          p!= "Skin Name"
+
+        img(src="./img/img-skin-ts.png" alt="" title="")
+
+    each val, idx in [1,2,3,4,5,6,7,8,9,10]
+      +boxContent('epic')
+      +boxContent('rare')
+      +boxContent('uncommon')
+      +boxContent('legendary')

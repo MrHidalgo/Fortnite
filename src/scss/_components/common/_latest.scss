@@ -114,11 +114,18 @@
       @include transition(transform);
     }
 
+    .icon-grid,
+    .icon-table,
     .icon-star,
     .icon-bubble {
       margin-right: 11px;
       color: #1ac2fe;
       @include transition(color);
+    }
+
+    .icon-grid,
+    .icon-table {
+      @include fluid(font-size, 320px, 768px, 16px, 18px);
     }
 
     .icon-star {
@@ -151,6 +158,8 @@
         @include transition(transform, color);
       }
 
+      .icon-grid,
+      .icon-table,
       .icon-star,
       .icon-bubble,
       span {

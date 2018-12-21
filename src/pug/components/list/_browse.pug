@@ -1,7 +1,59 @@
 // SECTION browse :: START
 
 section#browse.browse
+
+  .browse__bg
+
+  .browse__triangle
+    img(src="./img/img-browse-triangle-0.svg" alt="" title="")
+    img(src="./img/img-browse-triangle-1.svg" alt="" title="")
+    img(src="./img/img-browse-triangle-2.svg" alt="" title="")
+
   .c-grid
     .browse__wrapper
+      .browse__header
+        .browse__header-left
+          .browse__title
+            i.icon-font.icon-browse
+            p!= "Browse All Skins"
+
+        .browse__header-middle
+
+          .search
+            form.search__wrapper.sidebar__wrapper
+              .search__wrapper-left
+                input(type='text' placeholder='Search')
+
+              .search__wrapper-right
+                .header__search
+                  button.header__search-btn(type="submit")
+                    i.icon-font.icon-search
+
+        .browse__header-right
+
+          .latest__btn-wrapper
+            a.latest__btn.latest__btn-0.is-active(href="#" class="" title="")
+              div
+                i.icon-font.icon-grid
+                span!= "Grid"
+              i.icon-font.icon-btn-arrow
+
+            a.latest__btn.latest__btn-1(href="#" class="" title="")
+              div
+                i.icon-font.icon-table
+                span!= "Table"
+              i.icon-font.icon-btn-arrow
+
+      .browse__body
+
+        // browse box style view
+        if(flagBool === true)
+          include ./_browse-grid
+        else
+          include ./_browse-table
+        // browse box style view :: end
+
+      .browse__footer
+        include ../common/_sectionBanner
 
 // SECTION browse :: END

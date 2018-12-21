@@ -1,0 +1,47 @@
+.browse__block.browse__block--table
+  .browse__filter-wrapper
+    .browse__filter
+
+  .browse__box-wrapper
+
+    .browse__table
+      .browse__table-head
+        .browse__table-tr
+          .browse__table-th.browse__table-th-0
+            a.browse__filter-btn(href="#" class="" title="")
+              span!= "Name"
+              i!= ">"
+          .browse__table-th.browse__table-th-1
+            p!= "Rarity"
+          .browse__table-th.browse__table-th-2
+            p!= "Obtained with"
+          .browse__table-th.browse__table-th-3
+            p!= "Last seen"
+
+      .browse__table-body
+        mixin browseTableContent(boxClassMod, rarityName)
+          .browse__table-tr(class!= "browse__table-tr--" + boxClassMod)
+            .browse__table-td.browse__table-td-0
+
+              .browse__box(class!= "browse__box--" + boxClassMod)
+                .e-skin__block-view
+                  i.icon-font.icon-cube
+                  span!= "3d"
+
+                img(src="./img/img-skin-ts.png" alt="" title="")
+
+              h1!= "Skin Name"
+            .browse__table-td.browse__table-td-1
+              p!= rarityName
+            .browse__table-td.browse__table-td-2
+              .e-skin__block-points
+                img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                span!= "1500"
+            .browse__table-td.browse__table-td-3
+              p!= "September <span>23</span>, 2018"
+
+        each val, idx in [1,2,3]
+          +browseTableContent('epic', 'Epic')
+          +browseTableContent('rare', 'Rare')
+          +browseTableContent('uncommon', 'Uncommon')
+          +browseTableContent('legendary', 'Legendary')

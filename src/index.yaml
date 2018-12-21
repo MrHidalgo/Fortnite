@@ -9,10 +9,10 @@ PageList:
   ready: 75
 - file: list-table.html
   titleName: List of all skins - table
-  ready: 30
+  ready: 50
 - file: list-grid.html
   titleName: List of all skins - grid
-  ready: 30
+  ready: 50
 - file: rewards.html
   titleName: Battle pass rewards
   ready: 75
