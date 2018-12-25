@@ -1,7 +1,69 @@
 // SECTION challenges :: START
 
+
+mixin challengesTitle(classMod, iconName, nameVal)
+  .challenges__title(class!= "challenges__title-" + classMod)
+    .challenges__title-bg
+      span
+      span
+    .challenges__title-left
+      .challenges__title-check
+        span!= ">"
+
+    .challenges__title-middle
+      i.icon-png(class!= iconName)
+
+    .challenges__title-right
+      p.challenges__title-name!= nameVal
+
+
+mixin challengesBlock(classMod, titleVal, nameVal, descVal, boolVal)
+  .challenges__block(class!= "challenges__block-" + classMod)
+    .challenges__block-left
+      p.challenges__block-title!= titleVal
+
+    .challenges__block-middle
+      p.challenges__block-name!= nameVal
+      p.challenges__block-desc!= descVal
+
+    .challenges__block-right
+      if(boolVal)
+        .challenges__block-xp
+          div
+            span!= "XP"
+
+          p!= "X5000"
+      else
+        .challenges__block-item
+
+
 section#challenges.challenges
-  .c-grid
-    .challenges__wrapper
+
+  .challenges__triangle
+    img(src="./img/img-challenges-triangle-0.svg" alt="" title="")
+    img(src="./img/img-challenges-triangle-1.svg" alt="" title="")
+
+  .challenges__wrapper
+
+    +challengesTitle(0, 'battle-pass-challenges', 'Battle Pass Challenges')
+
+    .challenges__block-wrapper
+      +challengesBlock('0', 'Hunting Party', 'Challenges are available!', 'This bundle contains 10 challenges.')
+      +challengesBlock('1', 'Calamity', 'Challenges are available!', 'This bundle contains 10 challenges.')
+      +challengesBlock('2', 'Dire', 'Challenges are available!', 'This bundle contains 10 challenges.')
+
+    +challengesTitle(1, 'weekly-challenges', 'Weekly Challenges')
+
+    .challenges__block-wrapper
+      +challengesBlock('3', 'Week 1', 'Challenges are available!', 'This bundle contains 10 challenges.', true)
+      +challengesBlock('4', 'Week 2', 'Challenges are available!', 'This bundle contains 10 challenges.', true)
+      +challengesBlock('5', 'Week 3', 'Challenges are available!', 'This bundle contains 10 challenges.', true)
+      +challengesBlock('6', 'Week 4', 'Challenges are available!', 'This bundle contains 10 challenges.', true)
+      +challengesBlock('7', 'Week 5', 'Challenges are available!', 'This bundle contains 10 challenges.', true)
+      +challengesBlock('8', 'Week 6', 'Challenges are available!', 'This bundle contains 10 challenges.', true)
+      +challengesBlock('9', 'Week 7', 'Challenges are available!', 'This bundle contains 10 challenges.', true)
+      +challengesBlock('10', 'Week 8', 'Challenges are available!', 'This bundle contains 10 challenges.', true)
+      +challengesBlock('11', 'Week 9', 'Challenges are available!', 'This bundle contains 10 challenges.', true)
+      +challengesBlock('12', 'Week 10', 'Challenges are available!', 'This bundle contains 10 challenges.', true)
 
 // SECTION challenges :: END

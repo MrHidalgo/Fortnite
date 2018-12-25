@@ -115,8 +115,21 @@
     color: $c-white;
     clip-path: polygon(0 0, 100% 3%, 96% 100%, 4% 100%);
 
+    &-icon {
+      position: relative;
+    }
+
     .icon-guides {
       font-size: 42px;
+    }
+
+    .icon-fortnite-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fe23a9;
+      font-size: 26px;
     }
 
     p {
