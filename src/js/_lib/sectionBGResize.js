@@ -1,3 +1,10 @@
+/**
+ * @name initSectionBGResize
+ *
+ * @param parentNodeName {String} add parent name for method, before call.
+ *
+ * @description
+ */
 const initSectionBGResize = (parentNodeName) => {
   if($('[section-resize-js]').length) {
     const sectionResize = $('[section-resize-js]');

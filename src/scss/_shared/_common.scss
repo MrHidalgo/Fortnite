@@ -154,6 +154,159 @@
 }
 // ratings :: end
 
+// skin
+.b-skin {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border: 5px solid $c-white;
+  box-shadow: 0 2px 10px 2px rgba($c-black, 0.15);
+
+  &--big {
+    width: 175px;
+    min-height: 288px;
+  }
+
+  &--small {
+    min-height: 139px;
+  }
+
+  &--epic {
+    @extend %radialGradientPink;
+
+    .e-skin__block-badge {
+      &:before {
+        background-image: linear-gradient( 90deg, rgba(#f642c9, 1) 0%, rgba(#ff00e7, 1) 100%);
+      }
+    }
+  }
+  &--rare {
+    @extend %radialGradientBlue;
+
+    .e-skin__block-badge {
+      &:before {
+        background-image: linear-gradient( 90deg, rgba(#1f59ee, 1) 0%, rgba(#4cb8ff, 1) 100%);
+      }
+    }
+  }
+  &--legendary {
+    @extend %radialGradientOrange;
+
+    .e-skin__block-badge {
+      &:before {
+        background-image: linear-gradient( 90deg, rgba(#ea8d23, 1) 0%, rgba(#EABB07, 1) 100%);
+      }
+    }
+  }
+  &--uncommon {
+    @extend %radialGradientGreen;
+
+    .e-skin__block-badge {
+      &:before {
+        background-image: linear-gradient( 90deg, rgba(#0bb000, 1) 0%, rgba(#73d102, 1) 100%);
+      }
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &__info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    background-color: rgba($c-black, 0.57);
+
+    p {
+      padding-bottom: 3px;
+      color: $c-white;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+
+    .e-skin__block-points {
+      position: relative;
+      padding-bottom: 0;
+
+      span {
+        color: $c-white;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__out {
+    position: absolute;
+    left: 5px;
+    bottom: 54px;
+    color: $c-white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Rajdhani", sans-serif;
+  }
+
+  &__badge {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .e-skin__block-badge {
+      position: relative;
+      display: inline-flex;
+
+      &--style {
+        height: 20px;
+
+        &:before {
+          background-color: #ff3636;
+          background-image: none;
+        }
+      }
+    }
+  }
+
+  &__view {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    bottom: 54px;
+    right: 5px;
+  }
+
+  &__sound {
+    display: flex;
+    color: $c-white;
+    font-size: 18px;
+
+    &:hover {
+      color: $c-white;
+    }
+  }
+
+  .e-skin__block-view {
+    position: static;
+    //bottom: 54px;
+    //right: 5px;
+  }
+}
+// skin :: end
+
 // copyright
 .copyright {
   display: flex;
