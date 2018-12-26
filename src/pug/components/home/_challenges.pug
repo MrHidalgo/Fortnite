@@ -2,7 +2,7 @@
 
 
 mixin challengesTitle(classMod, iconName, nameVal)
-  .challenges__title(class!= "challenges__title-" + classMod)
+  .challenges__title( class!= "challenges__title-" + classMod)
     .challenges__title-bg
       span
       span
@@ -18,7 +18,7 @@ mixin challengesTitle(classMod, iconName, nameVal)
 
 
 mixin challengesBlock(classMod, titleVal, nameVal, descVal, boolVal)
-  .challenges__block(class!= "challenges__block-" + classMod)
+  a.challenges__block(href="#" class!= "challenges__block-" + classMod)
     .challenges__block-left
       p.challenges__block-title!= titleVal
 

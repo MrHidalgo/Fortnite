@@ -1,0 +1,57 @@
+// SECTION history :: START
+
+section#history.history
+
+  .history__top
+
+    .history__top-bg(
+      data-stellar-background-ratio="0.85"
+      parallax-rewards-bg-js
+    )
+
+    .c-grid
+      .history__wrapper.history__wrapper-0
+
+        .history__row
+          h1.history__title!= "Item Shop History"
+          p.history__text!= "The shop uses a system that rotated the items each day, or at few days for featured items. After they left the store, the items can be re-added in future at same price and rarity."
+
+        .history__top-title
+          p!= "Check out the list of all the rotations"
+
+  .history__bottom
+
+    .history__bottom-bg
+      span
+      span
+      span
+
+    .history__bottom-triangle
+      img(src="./img/img-history-triangle-0.svg" alt="" title="")
+      img(src="./img/img-history-triangle-1.svg" alt="" title="")
+      img(src="./img/img-history-triangle-2.svg" alt="" title="")
+      img(src="./img/img-history-triangle-3.svg" alt="" title="")
+
+    .c-grid
+      .history__wrapper.history__wrapper-1
+        .history__wrapper-left
+
+          .history__content
+            .history__content-bg
+              span
+              span
+
+            .history__content-triangle
+
+            p.history__content-text.history__content-text-0!= "The Fortnite shop is reset at <span>00.00 (UTC)</span> timezone each day, the featured items can be in store for 2 or more days in a row before removed and added other items."
+            p.history__content-text.history__content-text-1!= "Below you can find the list of all the rotations that took place in Fortnite from October 2017 to up now. Also, you could see the price and rarity as is in-game."
+
+          .history__subtitle
+            p!= "To see the live shop, check out our <a href='#'>shop page!</a>"
+
+        .history__wrapper-right
+
+          include ../common/_sectionBanner
+
+
+// SECTION history :: END

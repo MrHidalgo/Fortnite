@@ -157,6 +157,14 @@
       height: 100%;
       background-color: #a83bcb;
       clip-path: polygon(0 5%, 100% 0, 99% 96%, 0 100%);
+      @include transition(clip-path);
+    }
+
+    &:hover {
+      &:before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        @include transition(clip-path);
+      }
     }
 
     &-wrapper {
