@@ -39,80 +39,86 @@
 	@if $filename == bubble {
 		$char: "\E004";
 	}
-	@if $filename == check {
+	@if $filename == calendar {
 		$char: "\E005";
 	}
-	@if $filename == comments-single {
+	@if $filename == check {
 		$char: "\E006";
 	}
-	@if $filename == comments {
+	@if $filename == comments-single {
 		$char: "\E007";
 	}
-	@if $filename == cube {
+	@if $filename == comments {
 		$char: "\E008";
 	}
-	@if $filename == diamond {
+	@if $filename == cube {
 		$char: "\E009";
 	}
-	@if $filename == dislike {
+	@if $filename == diamond {
 		$char: "\E00A";
 	}
-	@if $filename == facebook {
+	@if $filename == dislike {
 		$char: "\E00B";
 	}
-	@if $filename == google-plus {
+	@if $filename == facebook {
 		$char: "\E00C";
 	}
-	@if $filename == grid {
+	@if $filename == google-plus {
 		$char: "\E00D";
 	}
-	@if $filename == guides {
+	@if $filename == grid {
 		$char: "\E00E";
 	}
-	@if $filename == instagram {
+	@if $filename == guides {
 		$char: "\E00F";
 	}
-	@if $filename == like {
+	@if $filename == instagram {
 		$char: "\E010";
 	}
-	@if $filename == megaphone {
+	@if $filename == like {
 		$char: "\E011";
 	}
-	@if $filename == pinterest {
+	@if $filename == megaphone {
 		$char: "\E012";
 	}
-	@if $filename == preview {
+	@if $filename == pinterest {
 		$char: "\E013";
 	}
-	@if $filename == rss {
+	@if $filename == preview {
 		$char: "\E014";
 	}
-	@if $filename == search {
+	@if $filename == rss {
 		$char: "\E015";
 	}
-	@if $filename == send {
+	@if $filename == sales {
 		$char: "\E016";
 	}
-	@if $filename == sets {
+	@if $filename == search {
 		$char: "\E017";
 	}
-	@if $filename == shop {
+	@if $filename == send {
 		$char: "\E018";
 	}
-	@if $filename == sound {
+	@if $filename == sets {
 		$char: "\E019";
 	}
-	@if $filename == star {
+	@if $filename == shop {
 		$char: "\E01A";
 	}
-	@if $filename == table {
+	@if $filename == sound {
 		$char: "\E01B";
 	}
-	@if $filename == triangle-rotate {
+	@if $filename == star {
 		$char: "\E01C";
 	}
-	@if $filename == twitter {
+	@if $filename == table {
 		$char: "\E01D";
+	}
+	@if $filename == triangle-rotate {
+		$char: "\E01E";
+	}
+	@if $filename == twitter {
+		$char: "\E01F";
 	}
 
 	@return $char;
@@ -143,6 +149,10 @@
 }
 .icon-bubble {
 	@include icon(bubble);
+
+}
+.icon-calendar {
+	@include icon(calendar);
 
 }
 .icon-check {
@@ -207,6 +217,10 @@
 }
 .icon-rss {
 	@include icon(rss);
+
+}
+.icon-sales {
+	@include icon(sales);
 
 }
 .icon-search {

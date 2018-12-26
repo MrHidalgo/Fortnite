@@ -160,16 +160,16 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  width: 175px;
   border: 5px solid $c-white;
   box-shadow: 0 2px 10px 2px rgba($c-black, 0.15);
 
   &--big {
-    width: 175px;
     min-height: 288px;
   }
 
   &--small {
-    min-height: 139px;
+    height: 139px;
   }
 
   &--epic {
@@ -213,6 +213,28 @@
     display: block;
     max-width: 100%;
     max-height: 100%;
+  }
+
+  &__points {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 2px;
+    left: 5px;
+    padding-bottom: 0;
+
+    img {
+      padding-right: 5px;
+    }
+
+    span {
+      padding-top: 3px;
+      color: $c-white;
+      line-height: 1;
+      font-weight: 500;
+      font-family: 'Rajdhani', sans-serif;
+      @include fluid(font-size, 320px, 1200px, 16px, 18px);
+    }
   }
 
   &__info {

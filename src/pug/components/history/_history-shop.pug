@@ -1,0 +1,111 @@
+// SECTION history shop :: START
+
+section#h-shop.h-shop
+
+  each val, idx in [1,2,3,4]
+    .h-shop__wrapper(class!= "h-shop__wrapper-" + idx)
+
+      .h-shop__block(class!= "h-shop__block-" + idx)
+
+        .h-shop__block-bg
+
+        .h-shop__block-triangle
+          img(src="./img/img-history-shop-triangle-0.svg"  alt="" title="")
+          img(src="./img/img-history-shop-triangle-1.svg"  alt="" title="")
+          img(src="./img/img-history-shop-triangle-2.svg"  alt="" title="")
+
+        .h-shop__block-cover
+
+          .h-shop__block-header
+
+            .h-shop__block-title
+              .h-shop__block-title--bg
+
+              .h-shop__block-title--icon
+                i.icon-font.icon-calendar
+                i.icon-font.icon-calendar
+
+              .h-shop__block-title--label
+                div
+                div
+                p
+                  span!= "Item"
+                  span!= "Shop"
+
+              h1!= "August 9, 2018"
+
+            .h-shop__block-subtitle
+              div
+                i.icon-font.icon-sales
+                p!= "Sales History"
+              div
+                i.icon-font.icon-bubble
+                p!= "1 comment"
+
+
+          .h-shop__block-body
+
+            .info__subtitle.info__subtitle--featured
+              p!= "Featured"
+
+            .h-shop__block-skin
+
+              -for(var i = 0; i < 4; i++)
+                .b-skin.b-skin--small(
+                  class!= (i === 0) ? "b-skin--epic":(i === 1) ? 'b-skin--rare':(i === 2) ? 'b-skin--legendary':(i === 3) ? 'b-skin--uncommon': 'b-skin--rare'
+                )
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .b-skin__points
+                    img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                    span!= "1500"
+
+                  .b-skin__view
+                    .e-skin__block-view
+                      i.icon-font.icon-cube
+                      span!= "3d"
+
+                  .b-skin__info
+                    p!= "Skin Name"
+
+            .info__subtitle.info__subtitle--daily
+              p!= "Daily"
+
+            .h-shop__block-skin
+
+              -for(var i = 0; i < 6; i++)
+                .b-skin.b-skin--small(
+                  class!= (i === 0) ? "b-skin--epic": (i === 1) ? 'b-skin--rare': (i === 2) ? 'b-skin--legendary': (i === 3) ? 'b-skin--uncommon': 'b-skin--rare'
+                )
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .b-skin__points
+                    img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                    span!= "1500"
+
+                  .b-skin__view
+                    .e-skin__block-view
+                      i.icon-font.icon-cube
+                      span!= "3d"
+
+                  .b-skin__info
+                    p!= "Skin Name"
+
+          .h-shop__block-footer
+
+            .h-shop__block-sum
+              .h-shop__block-sum--total
+                p
+                  span!= "Total Price:"
+                  img(src="./img/img-battle-vbucks-filter.png" srcset="./img/img-battle-vbucks-filter@2x.png 2x" alt="" title="")
+                  span!= "5,100"
+
+              .h-shop__block-sum--features
+                p!= "Featured: <span>3</span>"
+
+              .h-shop__block-sum--deily
+                p!= "Daily: <span>6</span>"
+
+
+
+// SECTION history shop :: END

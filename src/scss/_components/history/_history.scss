@@ -1,5 +1,16 @@
 // SECTION history :: START
 
+#history {
+  width: 100%;
+  max-width: 711px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  @include adaptive(991) {
+    max-width: 100%;
+  }
+}
+
 .history {
   position: relative;
   min-height: 689px;
@@ -272,7 +283,21 @@
     background-color: #2a2a2a;
     clip-path: polygon(0 3%, 100% 0, 96% 97%, 3% 100%);
 
+    &:before {
+      content: '';
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #313131;
+      clip-path: polygon(0 100%, 75% 70%, 100% 0, 100% 100%, 0 100%);
+    }
+
     p {
+      z-index: 2;
+      position: relative;
       color: $c-white;
       font-size: 18px;
       font-weight: 500;

@@ -127,6 +127,35 @@
       clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 15% 47%, 12% 64%);
     }
 
+    &--featured,
+    &--daily {
+      margin-bottom: 13px;
+    }
+
+    &--featured {
+      background-color: #f66d33;
+
+      &:before {
+        background-color: #de561c;
+      }
+
+      &:after {
+        background-color: #ff814c;
+      }
+    }
+
+    &--daily {
+      background-color: #f4d180;
+
+      &:before {
+        background-color: #e3c171;
+      }
+
+      &:after {
+        background-color: #fcdb90;
+      }
+    }
+
     p {
       z-index: 1;
       position: relative;
