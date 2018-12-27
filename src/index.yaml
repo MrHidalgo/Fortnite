@@ -27,7 +27,7 @@ PageList:
   ready: 75
 - file: leaked.html
   titleName: Leaked
-  ready: 45
+  ready: 60
 - file: leaked-sub.html
   titleName: Leaked sub
   ready: 1

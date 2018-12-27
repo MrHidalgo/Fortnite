@@ -1,0 +1,55 @@
+// SECTION leak :: START
+
+mixin leakBlock(classMod, titleVal, descVal, twitterVal, textVal, linkVal, imgVal)
+  .leak__block(class!= "leak__block-" + classMod)
+
+    .leak__block-bg
+
+    .leak__block-triangle
+      img(src="./img/img-leak-triangle-0.svg" alt="" title="")
+      img(src="./img/img-leak-triangle-1.svg" alt="" title="")
+      img(src="./img/img-leak-triangle-2.svg" alt="" title="")
+
+    .leak__block-title
+      i.icon-font.icon-menology
+      p!= titleVal
+
+    .leak__block-body
+      .leak__block-header
+        div
+          .leak__block-icon
+            img(src="./img/img-leak-header-icon.png" srcset="./img/img-leak-header-icon@2x.png 2x" alt="" title="")
+        div
+          p.leak__block-desc!= descVal
+          a.leak__block-twitter(href="#" class="" title="")!= twitterVal
+
+      p.leak__block-text!= textVal + " <a href='#' class='leak__block-link'>" + linkVal + "</a>"
+
+      if(imgVal)
+        .leak__block-image
+          img(src="./img/" + imgVal + ".jpg" alt="" title="")
+
+section#leak.leak
+  .c-grid
+    .leak__wrapper
+      .leak__wrapper-left
+
+        +leakBlock('0', 'Leak out 2 hours ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', '')
+        +leakBlock('1', 'Leak out 11 hours ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', '')
+        +leakBlock('2', 'Leak out 1 day ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', 'img-leak')
+        +leakBlock('3', 'Leak out 2 hours ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', '')
+        +leakBlock('4', 'Leak out 2 hours ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', '')
+        +leakBlock('5', 'Leak out 2 hours ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', 'img-leak')
+
+      .leak__wrapper-right
+
+        +leakBlock('6', 'Leak out 2 hours ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', 'img-leak')
+        +leakBlock('7', 'Leak out 11 hours ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', '')
+        +leakBlock('8', 'Leak out 2 hours ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', '')
+        +leakBlock('9', 'Leak out 1 day ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', 'img-leak')
+        +leakBlock('10', 'Leak out 2 hours ago', 'Fortnite: Battle Royale Leaks', '@FNBRLeaks', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliq.', 'https://t.co/2155a41j15asdsd', '')
+
+        .updated--small
+          include ../common/_updated
+
+// SECTION leak :: END

@@ -1,0 +1,180 @@
+// SECTION leak :: START
+
+.leak {
+  position: relative;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &-left,
+    &-right {
+      width: 100%;
+      max-width: calc((100% - 12px) / 2);
+    }
+  }
+
+  &__block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 294px;
+    padding-bottom: 88px;
+    margin-bottom: 46px;
+
+    &-bg,
+    &-triangle {
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+
+    &-bg {
+      z-index: -1;
+      top: 21px;
+      height: calc(100% - 21px);
+      background-color: #edf9fd;
+      clip-path: polygon(2% 0, 100% 0, 98% 100%, 0 99%);
+    }
+
+    &-triangle {
+      z-index: 0;
+      top: 0;
+      height: 100%;
+
+      img {
+        position: absolute;
+
+        &:nth-of-type(1) {
+          right: 0;
+          top: 0;
+        }
+        &:nth-of-type(2) {
+          left: 10px;
+          bottom: -30px;
+        }
+        &:nth-of-type(3) {
+          right: 5%;
+          bottom: -10px;
+        }
+      }
+    }
+
+    &-title,
+    &-body {
+      z-index: 2;
+      position: relative;
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 392px;
+      min-height: 76px;
+      padding-left: 24px;
+      background-color: #ff7236;
+      clip-path: polygon(0 2%, 100% 0, 97% 96%, 3% 100%);
+      color: $c-white;
+
+      .icon-menology {
+        font-size: 39px;
+      }
+
+      p {
+        padding-left: 15px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+    }
+
+    &-body {
+      padding-top: 22px;
+      padding-left: 23px;
+      padding-right: 23px;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      padding-bottom: 18px;
+
+      > div {
+        &:nth-of-type(1) {
+          width: 55px;
+        }
+        &:nth-of-type(2) {
+          width: 100%;
+          max-width: calc(100% - 55px);
+        }
+      }
+    }
+
+    &-icon {
+      position: relative;
+      width: 46px;
+      height: 46px;
+      border: 2px solid $c-white;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &-desc {
+      color: #273c43;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+
+    &-twitter {
+      color: #bfbfbf;
+      font-size: 16px;
+      font-family: 'Ubuntu', sans-serif;
+      @include transition(color);
+
+      &:hover {
+        color: #273c43;
+        @include transition(color);
+      }
+    }
+
+    &-text,
+    &-link {
+      line-height: 1.6;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    &-text {
+      color: #363636;
+    }
+
+    &-link {
+      color: #2399c3;
+    }
+
+    &-image {
+      margin-top: 22px;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+// SECTION leak :: END
