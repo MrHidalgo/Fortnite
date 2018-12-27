@@ -27,7 +27,7 @@ PageList:
   ready: 75
 - file: leaked.html
   titleName: Leaked
-  ready: 25
+  ready: 45
 - file: leaked-sub.html
   titleName: Leaked sub
   ready: 1
@@ -42,7 +42,7 @@ PageList:
   ready: 25
 - file: shop-rotation.html
   titleName: Shop rotation
-  ready: 1
+  ready: 10
 - file: shop.html
   titleName: Shop
   ready: 1
