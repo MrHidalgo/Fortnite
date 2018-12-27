@@ -1,0 +1,230 @@
+// SECTION set :: START
+
+.set {
+  padding-top: 67px;
+  padding-bottom: 67px;
+
+  .c-grid {
+    max-width: 1260px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__block {
+    &-bg,
+    &-triangle {
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+
+    &-bg {
+      z-index: -1;
+      top: 71px;
+      height: calc(100% - 71px);
+      background-color: #edf9fd;
+      clip-path: polygon(0 0, 100% 1%, 99% 99%, 0.5% 100%);
+    }
+
+    &-triangle {
+      z-index: 0;
+      top: 0;
+      height: 100%;
+
+      img {
+        position: absolute;
+
+        &:nth-of-type(1) {
+          top: 30px;
+          left: 1%;
+        }
+        &:nth-of-type(2) {
+          top: 30px;
+          left: 15%;
+        }
+        &:nth-of-type(3) {
+          top: 50px;
+          right: 20%;
+        }
+        &:nth-of-type(4) {
+          top: 30px;
+          right: 1%;
+        }
+        &:nth-of-type(5) {
+          left: 10%;
+          bottom: -30px;
+        }
+      }
+    }
+
+    &-wrapper {
+      position: relative;
+      margin-bottom: 58px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    &-header,
+    &-body {
+      z-index: 2;
+      position: relative;
+    }
+
+    &-header {
+      min-height: 210px;
+      padding-bottom: 30px;
+    }
+
+    &-body {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 43px;
+
+      > div {
+        display: flex;
+        justify-content: center;
+        width: calc((100% - 16px) / 5);
+        margin-bottom: 30px;
+      }
+
+      .b-skin {
+        width: 211px;
+        height: 166px;
+
+        &__view {
+          bottom: auto;
+          top: 2px;
+
+          .icon-font,
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &-title {
+      z-index: 2;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 98px;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px 30px;
+      background-color: #5fd5ff;
+      clip-path: polygon(0 0, 100% 4%, 96% 96%, 3% 100%);
+
+      p {
+        color: $c-white;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 48px;
+      }
+    }
+
+    &-subtitle {
+      z-index: 1;
+      position: relative;
+      top: -15px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 668px;
+      min-height: 116px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 35px 30px 15px;
+      color: $c-white;
+
+      &-bg {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        i {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          &:nth-of-type(1) {
+            left: 10px;
+            top: 10px;
+            background-color: #5fd5ff;
+            clip-path: polygon(0 0, 100% 4%, 96% 96%, 3% 100%);
+          }
+
+          &:nth-of-type(2) {
+            background-color: #35b8e7;
+            clip-path: polygon(0 0, 100% 4%, 96% 96%, 3% 100%);
+          }
+        }
+      }
+
+      > div {
+        display: flex;
+        justify-content: center;
+
+        > p {
+          padding-bottom: 10px;
+          line-height: 1;
+          text-align: center;
+          text-transform: uppercase;
+          font-size: 30px;
+        }
+
+        > span {
+          position: relative;
+          padding-left: 14px;
+          padding-right: 14px;
+          text-align: center;
+          font-size: 18px;
+          font-weight: bold;
+          font-family: 'Ubuntu', sans-serif;
+
+          span {
+            font-weight: normal;
+          }
+
+          &:nth-of-type(2) {
+            &:before,
+            &:after {
+              content: '';
+              opacity: 0.24;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 4px;
+              height: 13px;
+              background-color: #fefdff;
+            }
+
+            &:before {
+              left: -3px;
+            }
+
+            &:after {
+              right: -3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// SECTION set :: END

@@ -39,7 +39,7 @@ PageList:
   ready: 75
 - file: sets.html
   titleName: Sets
-  ready: 40
+  ready: 60
 - file: shop-rotation.html
   titleName: Shop rotation
   ready: 10

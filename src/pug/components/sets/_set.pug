@@ -1,0 +1,57 @@
+// SECTION set :: START
+
+section#set.set
+
+  .c-grid
+    .set__wrapper
+
+      each val, idx in [1,2,3]
+        .set__block-wrapper(class!= "set__block-wrapper--" + idx)
+
+          .set__block-bg
+
+          .set__block-triangle
+            img(src="./img/img-set-triangle-0.svg" alt="" title="")
+            img(src="./img/img-set-triangle-1.svg" alt="" title="")
+            img(src="./img/img-set-triangle-2.svg" alt="" title="")
+            img(src="./img/img-set-triangle-3.svg" alt="" title="")
+            img(src="./img/img-set-triangle-4.svg" alt="" title="")
+
+          .set__block-header
+            .set__block-title
+              p!= "Advanced Forces Set"
+
+            .set__block-subtitle
+              .set__block-subtitle-bg
+                i
+                i
+
+              div
+                p!= "Total Items: <span>10</span>"
+              div
+                span!= "Shop: <span>5</span>"
+                span!= "Battle Pass: <span>3</span>"
+                span!= "Promation: <span>2</span>"
+
+          .set__block-body
+
+            -for(var i = 0; i < 10; i++)
+              div
+                .b-skin.b-skin--small(
+                  class!= (i === 0) ? "b-skin--epic": (i === 1) ? 'b-skin--rare': (i === 2) ? 'b-skin--legendary': (i === 3) ? 'b-skin--uncommon': 'b-skin--rare'
+                )
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .b-skin__points
+                    img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                    span!= "1500"
+
+                  .b-skin__view
+                    .e-skin__block-view
+                      i.icon-font.icon-cube
+                      span!= "3d"
+
+                  .b-skin__info
+                    p!= "Skin Name"
+
+// SECTION set :: END
