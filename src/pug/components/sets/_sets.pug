@@ -1,57 +1,120 @@
 // SECTION sets :: START
 
 section#sets.sets
-  .sets__bg
-    .sets__bg-top
-    .sets__bg-bottom
 
-      .sets__bg-figure
-        img(src="./img/img-sets-figure-0.svg" alt="" title="")
-        img(src="./img/img-sets-figure-1.svg" alt="" title="")
+  .sets__top
 
-      .c-grid
-        img(src="./img/img-sets-text-bg.svg" alt="" title="")
+    .sets__top-bg(
+      data-stellar-background-ratio="0.85"
+      parallax-sets-bg-js
+    )
 
-  .sets__bg-triangle
-    img(src="./img/img-sets-triangle-0.svg" alt="" title="")
-    img(src="./img/img-sets-triangle-1.svg" alt="" title="")
-    img(src="./img/img-sets-triangle-2.svg" alt="" title="")
-
-  .sets__wrapper
     .c-grid
+      .sets__wrapper.sets__wrapper-0
 
-      .sets__row.sets__row-0
+        .sets__top-row
 
-        include ./_mainTitle
+          h1.sets__top-title!= "Fortnite <span>sets</span>"
+          h1.sets__top-text!= "Here you can find all the sets from Fortnite Battle Royale."
 
-        .sets__subtitle!= "Here you can find all the sets from Fortnite Battle Royale."
-
-      .sets__row.sets__row-1
-
-        .sets__slogan
+        .sets__bottom-title
           p!= "Battle Royale All Sets"
 
+  .sets__bottom
 
-      .sets__row.sets__row-2
-        .sets__row-left
+    .sets__bottom-bg
+      span
+      
+    .sets__bottom-triangle
+      img(src="./img/img-sets-triangle-0.svg" alt="" title="")
+      img(src="./img/img-sets-triangle-1.svg" alt="" title="")
+      img(src="./img/img-sets-triangle-2.svg" alt="" title="")
 
-          p.sets__text!= "Each set has a least two items or more. All items from the same collection are similar and have a specific design that fits very well."
-          p.sets__text!= "You can get the Fortnite Sets from the Item Shop or from the Battle Pass. Also, some cosmetic items are available in some promotional sets (Twitch Prime Pack)."
-          p.sets__text!= "The rarity for each item in the set can be different, like one outfit can be legendary and pickaxe or glider can be rare or another item."
+    .c-grid
+      .sets__wrapper.sets__wrapper-1
+        .sets__wrapper-left
 
-        .sets__row-right
+          .sets__content
+            .sets__content-bg
+              span
+              span
+
+            p.sets__content-text!= "Each set has a least two items or more. All items from the same collection are similar and have a specific design that fits very well."
+            p.sets__content-text!= "You can get the Fortnite Sets from the Item Shop or from the Battle Pass. Also, some cosmetic items are available in some promotional sets (Twitch Prime Pack)."
+            p.sets__content-text!= "The rarity for each item in the set can be different, like one outfit can be legendary and pickaxe or glider can be rare or another item."
+
+        .sets__wrapper-right
 
           include ../common/_sectionBanner
 
-      .sets__row.sets__row-3
-        .sets__row-left
+      .sets__wrapper.sets__wrapper-2
+        .sets__wrapper-left
 
-          .sets__notes
-            p!= "<strong>Note:</strong> There are many more skins that are not in any of the sets. If you would like to see ALL the Fortnite Skins, please go <a href='#'>here!</a>"
+          .sets__note
+            p!= "<span>Note:</span> There are many more skins that are not in any of the sets. If you would like to see ALL the Fortnite Skins, please go <a href='#'>here!</a>"
 
-        .sets__row-right
+        .sets__wrapper-right
 
           .sets__search
+            form.sets__search-content
+              div
+                input.sets__search-input(type="text" placeholder='Search')
+              div
+                button.sets__search-btn(type='submit')
+                  i.icon-font.icon-search
+
+
+  //.sets__bg
+  //  .sets__bg-top
+  //  .sets__bg-bottom
+  //
+  //    .sets__bg-figure
+  //      img(src="./img/img-sets-figure-0.svg" alt="" title="")
+  //      img(src="./img/img-sets-figure-1.svg" alt="" title="")
+  //
+  //    .c-grid
+  //      img(src="./img/img-sets-text-bg.svg" alt="" title="")
+  //
+  //.sets__bg-triangle
+  //  img(src="./img/img-sets-triangle-0.svg" alt="" title="")
+  //  img(src="./img/img-sets-triangle-1.svg" alt="" title="")
+  //  img(src="./img/img-sets-triangle-2.svg" alt="" title="")
+  //
+  //.sets__wrapper
+  //  .c-grid
+  //
+  //    .sets__row.sets__row-0
+  //
+  //      include ./_mainTitle
+  //
+  //      .sets__subtitle!= "Here you can find all the sets from Fortnite Battle Royale."
+  //
+  //    .sets__row.sets__row-1
+  //
+  //      .sets__slogan
+  //        p!= "Battle Royale All Sets"
+  //
+  //
+  //    .sets__row.sets__row-2
+  //      .sets__row-left
+  //
+  //        p.sets__text!= "Each set has a least two items or more. All items from the same collection are similar and have a specific design that fits very well."
+  //        p.sets__text!= "You can get the Fortnite Sets from the Item Shop or from the Battle Pass. Also, some cosmetic items are available in some promotional sets (Twitch Prime Pack)."
+  //        p.sets__text!= "The rarity for each item in the set can be different, like one outfit can be legendary and pickaxe or glider can be rare or another item."
+  //
+  //      .sets__row-right
+  //
+  //        include ../common/_sectionBanner
+  //
+  //    .sets__row.sets__row-3
+  //      .sets__row-left
+  //
+  //        .sets__notes
+  //          p!= "<strong>Note:</strong> There are many more skins that are not in any of the sets. If you would like to see ALL the Fortnite Skins, please go <a href='#'>here!</a>"
+  //
+  //      .sets__row-right
+  //
+  //        .sets__search
 
 
 // SECTION sets :: END
