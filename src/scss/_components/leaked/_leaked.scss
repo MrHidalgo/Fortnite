@@ -1,0 +1,523 @@
+// SECTION leaked :: START
+
+.leaked {
+
+  // common bg & triangle
+  &__top,
+  &__middle,
+  &__bottom {
+    position: relative;
+
+    &-bg,
+    &-triangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-bg {
+      z-index: -1;
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-triangle {
+      z-index: 0;
+
+      img {
+        position: absolute;
+      }
+    }
+  }
+  // common bg & triangle :: end
+
+  // top
+  &__top {
+    z-index: 2;
+    position: relative;
+
+    &-bg {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #41315f;
+      background-image: url('../img/img-leaked-main.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+
+    &-row {
+      &-0 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &-title {
+      padding-bottom: 20px;
+      color: $c-white;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 73px;
+      text-align: center;
+
+      span {
+        color: #ffff00;
+      }
+    }
+
+    &-text {
+      color: $c-white;
+      line-height: 1.6;
+      font-size: 20px;
+      font-family: 'Ubuntu', sans-serif;
+      text-align: center;
+    }
+  }
+  // top :: end
+
+  // middle
+  &__middle {
+    z-index: 1;
+    position: relative;
+    top: -60px;
+    min-height: 404px;
+
+    &-bg {
+      background-color: #222738;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+
+      span {
+        &:nth-of-type(1) {
+          background-color: #282e42;
+          clip-path: polygon(0 10%, 15% 50%, 0 40%);
+        }
+        &:nth-of-type(2) {
+          background-color: #38405c;
+          clip-path: polygon(75% 0, 100% 0, 100% 10%, 65% 75%);
+        }
+      }
+    }
+
+    &-triangle {
+      img {
+        &:nth-of-type(1) {
+          left: 3%;
+          bottom: 5%;
+        }
+        &:nth-of-type(2) {
+          left: 25%;
+          bottom: 7%;
+        }
+        &:nth-of-type(3) {
+          right: 15%;
+          bottom: 0;
+        }
+        &:nth-of-type(4) {
+          right: 0;
+          bottom: -7%;
+        }
+      }
+    }
+
+    .c-grid {
+      max-width: 1260px;
+    }
+
+    &-row {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-title {
+      position: absolute;
+      top: calc(100% - (98px - 45px));
+      left: -15px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 524px;
+      min-height: 102px;
+      padding-left: 41px;
+      background-color: #871cea;
+      clip-path: polygon(0.5% 0.5%, 95% 0, 100% 100%, 0 98%);
+
+      &:before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #740cd5;
+        clip-path: polygon(0 100%, 65% 55%, 100% 0, 100% 100%);
+      }
+
+      p {
+        z-index: 2;
+        position: relative;
+        color: $c-white;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 48px;
+      }
+    }
+
+    &-box {
+      position: relative;
+      left: -15px;
+      min-height: 182px;
+      padding: 46px 39px 46px 74px;
+
+      &-bg {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          &:nth-of-type(1) {
+            top: 15px;
+            background-color: #0f6a8b;
+            clip-path: polygon(0 0, 100% 3%, 98% 100%, 2% 98%);
+          }
+
+          &:nth-of-type(2) {
+            left: 15px;
+            background-color: #2399c3;
+            clip-path: polygon(0 0, 100% 3%, 98% 100%, 2% 98%);
+
+            &:before {
+              content: '';
+              z-index: 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: #1887af;
+              clip-path: polygon(0 0, 25% 65%, 100% 100%, 0 100%);
+            }
+          }
+        }
+      }
+
+      p {
+        color: $c-white;
+        line-height: 1.6;
+        font-size: 18px;
+        font-family: 'Ubuntu', sans-serif;
+
+        span {
+          color: #ffff00;
+        }
+      }
+    }
+  }
+  // middle :: end
+
+  // bottom
+  &__bottom {
+    z-index: 0;
+    position: relative;
+    top: -150px;
+    min-height: 1458px;
+
+    &-bg {
+      height: calc(100% - 34px);
+      background-image: linear-gradient(10deg, rgb(227,171,65) 0%, rgb(221,149,47) 99%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 95%);
+
+      span {
+        &:nth-of-type(1) {
+          background-color: #e5ac3c;
+          clip-path: polygon(0 5%, 10% 20%, 0 15%);
+        }
+        &:nth-of-type(2) {
+          background-color: #e5ad3d;
+          clip-path: polygon(90% 30%, 100% 20%, 100% 30%);
+        }
+        &:nth-of-type(3) {
+          background-color: #e7b649;
+          clip-path: polygon(60% 80%, 100% 79%, 100% 100%, 75% 100%);
+        }
+      }
+    }
+
+    &-triangle {
+      img {
+        &:nth-of-type(1) {
+          bottom: 5%;
+          left: 4%;
+        }
+        &:nth-of-type(2) {
+          right: 20%;
+          bottom: 20px;
+        }
+        &:nth-of-type(3) {
+          right: 3%;
+          bottom: 0;
+        }
+      }
+    }
+
+    &-row {
+      &-0 {
+        padding-top: 41px;
+      }
+
+      &-1 {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &-title {
+      z-index: 5;
+      position: absolute;
+      width: auto;
+      min-height: 97px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px 36px 5px 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $c-white;
+
+      &--0 {
+        top: calc(100% - (98px - 36px));
+
+        .leaked__bottom-title-bg {
+          span {
+            &:nth-of-type(1) {
+              background-color: #ad5029;
+            }
+            &:nth-of-type(2) {
+              background-color: #ff7236;
+            }
+          }
+        }
+      }
+      &--1 {
+        top: calc(100% - (110px));
+
+        .leaked__bottom-title-bg {
+          span {
+            &:nth-of-type(1) {
+              background-color: #2399c3;
+            }
+            &:nth-of-type(2) {
+              background-color: #35b8e7;
+            }
+          }
+        }
+      }
+
+      &-bg {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          &:nth-of-type(1) {
+            top: 10px;
+            clip-path: polygon(0 0, 100% 5%, 95% 97%, 3% 100%);
+          }
+
+          &:nth-of-type(2) {
+            left: 10px;
+            clip-path: polygon(0 0, 100% 5%, 95% 97%, 3% 100%);
+          }
+        }
+      }
+
+      .icon-menology {
+        font-size: 50px;
+      }
+
+      .icon-preview {
+        font-size: 30px;
+      }
+
+      p {
+        padding-left: 17px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 48px;
+      }
+    }
+
+    &-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      > div {
+        width: calc((100% - 20px) / 3);
+        min-height: 166px;
+        margin-bottom: 13px;
+      }
+
+      .b-skin {
+        width: 190px;
+        height: 156px;
+
+        &__view {
+          top: 2px;
+          bottom: auto;
+        }
+      }
+    }
+
+    &-block {
+      display: flex;
+      align-items: flex-start;
+
+      > div {
+        &:nth-of-type(1) {
+          width: 190px;
+          padding-top: 10px;
+        }
+
+        &:nth-of-type(2) {
+          position: relative;
+          width: 100%;
+          max-width: calc(100% - 190px);
+          padding-top: 15px;
+          padding-left: 25px;
+
+          &:before {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: calc(100% + 35px);
+            height: calc(100% - 14px);
+            background-color: #d98f2a;
+            clip-path: polygon(0 3%, 100% 0, 98% 100%, 0 98%);
+          }
+        }
+      }
+
+      &-name,
+      &-src,
+      &-desc {
+        padding-bottom: 15px;
+        color: $c-white;
+        line-height: 1;
+      }
+
+      &-name {
+        text-transform: uppercase;
+        font-size: 24px;
+      }
+
+      &-src {
+        text-transform: uppercase;
+
+        span {
+          text-transform: capitalize;
+          font-family: 'Ubuntu', sans-serif;
+        }
+      }
+
+      &-desc {
+        font-style: italic;
+        font-family: 'Ubuntu', sans-serif;
+      }
+
+      &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 90px;
+        min-height: 39px;
+        background-color: #fcdb90;
+        clip-path: polygon(0 3%, 100% 0, 98% 100%, 0 98%);
+        color: #f59639;
+        line-height: 1;
+        text-transform: uppercase;
+        @include transition(color, clip-path);
+
+        &:hover {
+          color: #f59639;
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          @include transition(clip-path);
+        }
+      }
+    }
+  }
+  // bottom :: end
+
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+
+    &-0 {
+      min-height: 327px;
+      padding-top: 98px;
+      padding-bottom: 98px;
+    }
+
+    &-1 {
+      display: flex;
+      padding-top: 61px;
+      padding-bottom: 81px;
+
+      .leaked__wrapper-left {
+        width: 100%;
+        max-width: calc(100% - 370px);
+        padding-top: 35px;
+      }
+
+      .leaked__wrapper-right {
+        width: 370px;
+      }
+    }
+
+    &-2 {
+      padding-top: 126px;
+      padding-bottom: 110px;
+    }
+  }
+}
+
+// SECTION leaked :: END

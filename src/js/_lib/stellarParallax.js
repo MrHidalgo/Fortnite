@@ -11,7 +11,7 @@
  * - data-stellar-background-ratio="1"
  */
 const initStellar = () => {
-  const stellarSection = "[parallax-rewards-bg-js], [parallax-list-bg-js]";
+  const stellarSection = "[parallax-rewards-bg-js], [parallax-list-bg-js], [parallax-leaked-bg-js]";
 
   if ($(stellarSection).length) {
     $(function () {

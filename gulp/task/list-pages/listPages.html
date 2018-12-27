@@ -564,7 +564,10 @@
         <% if(page.ready >= 75 && page.ready <= 95) { %> - AWAITING TESTING <% } %>
       </span>
       <span class="pagelist__filename--developing">
-        <% if(page.ready >= 1 && page.ready < 75) { %> - IN DEVELOPING <% } %>
+        <% if(page.ready >= 1 && page.ready < 55) { %> - IN DEVELOPING - desktop <% } %>
+      </span>
+      <span class="pagelist__filename--developing">
+        <% if(page.ready >= 55 && page.ready < 75) { %> - IN DEVELOPING - mobile <% } %>
       </span>
       <span class="pagelist__filename--finished">
         <% if(page.ready > 95) { %> - PAGE FINISHED <% } %>
