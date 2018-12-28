@@ -12,7 +12,61 @@
 
   &--big {}
 
-  &--midium {}
+  &--medium {
+    .updated {
+      &__triangle {
+        img {
+          transform: scale(0.5);
+
+          &:nth-of-type(1) {
+            top: -15px;
+          }
+          &:nth-of-type(2) {
+            top: auto;
+            left: auto;
+            bottom: -25%;
+            right: -5%;
+          }
+          &:nth-of-type(3) {
+            top: -5px;
+            left: 45%;
+          }
+          &:nth-of-type(4) {
+            right: 10%;
+            top: -10%;
+          }
+        }
+      }
+
+      &__wrapper {
+        min-height: 216px;
+
+        &-left {
+          width: 330px;
+        }
+
+        &-right {
+          width: 100%;
+          max-width: calc(100% - 330px);
+        }
+      }
+
+      &__title {
+        font-size: 55px;
+      }
+
+      &__data {
+        &-0 {
+          padding-right: 20px;
+          font-size: 140px;
+        }
+
+        &-1 {
+          font-size: 63px;
+        }
+      }
+    }
+  }
 
   &--small {
     .updated {

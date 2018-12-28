@@ -27,101 +27,128 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == all {
+	@if $filename == alert {
 		$char: "\E001";
 	}
-	@if $filename == browse {
+	@if $filename == all {
 		$char: "\E002";
 	}
-	@if $filename == btn-arrow {
+	@if $filename == box-closed {
 		$char: "\E003";
 	}
-	@if $filename == bubble {
+	@if $filename == browse {
 		$char: "\E004";
 	}
-	@if $filename == calendar {
+	@if $filename == btn-arrow {
 		$char: "\E005";
 	}
-	@if $filename == check {
+	@if $filename == bubble {
 		$char: "\E006";
 	}
-	@if $filename == comments-single {
+	@if $filename == calendar {
 		$char: "\E007";
 	}
-	@if $filename == comments {
+	@if $filename == check {
 		$char: "\E008";
 	}
-	@if $filename == cube {
+	@if $filename == comments-single {
 		$char: "\E009";
 	}
-	@if $filename == diamond {
+	@if $filename == comments {
 		$char: "\E00A";
 	}
-	@if $filename == dislike {
+	@if $filename == cube {
 		$char: "\E00B";
 	}
-	@if $filename == facebook {
+	@if $filename == diamond {
 		$char: "\E00C";
 	}
-	@if $filename == google-plus {
+	@if $filename == dislike {
 		$char: "\E00D";
 	}
-	@if $filename == grid {
+	@if $filename == embed {
 		$char: "\E00E";
 	}
-	@if $filename == guides {
+	@if $filename == facebook {
 		$char: "\E00F";
 	}
-	@if $filename == instagram {
+	@if $filename == google-plus {
 		$char: "\E010";
 	}
-	@if $filename == like {
+	@if $filename == grid {
 		$char: "\E011";
 	}
-	@if $filename == megaphone {
+	@if $filename == guides {
 		$char: "\E012";
 	}
-	@if $filename == menology {
+	@if $filename == info {
 		$char: "\E013";
 	}
-	@if $filename == pinterest {
+	@if $filename == instagram {
 		$char: "\E014";
 	}
-	@if $filename == preview {
+	@if $filename == like-heart {
 		$char: "\E015";
 	}
-	@if $filename == rss {
+	@if $filename == like {
 		$char: "\E016";
 	}
-	@if $filename == sales {
+	@if $filename == megaphone {
 		$char: "\E017";
 	}
-	@if $filename == search {
+	@if $filename == menology {
 		$char: "\E018";
 	}
-	@if $filename == send {
+	@if $filename == pinterest {
 		$char: "\E019";
 	}
-	@if $filename == sets {
+	@if $filename == play-button {
 		$char: "\E01A";
 	}
-	@if $filename == shop {
+	@if $filename == polaroid {
 		$char: "\E01B";
 	}
-	@if $filename == sound {
+	@if $filename == preview {
 		$char: "\E01C";
 	}
-	@if $filename == star {
+	@if $filename == rss {
 		$char: "\E01D";
 	}
-	@if $filename == table {
+	@if $filename == sales {
 		$char: "\E01E";
 	}
-	@if $filename == triangle-rotate {
+	@if $filename == search {
 		$char: "\E01F";
 	}
-	@if $filename == twitter {
+	@if $filename == send {
 		$char: "\E020";
+	}
+	@if $filename == sets {
+		$char: "\E021";
+	}
+	@if $filename == share {
+		$char: "\E022";
+	}
+	@if $filename == shop {
+		$char: "\E023";
+	}
+	@if $filename == sound {
+		$char: "\E024";
+	}
+	@if $filename == sound2 {
+		$char: "\E025";
+	}
+	@if $filename == star {
+		$char: "\E026";
+	}
+	@if $filename == table {
+		$char: "\E027";
+	}
+	@if $filename == triangle-rotate {
+		$char: "\E028";
+	}
+	@if $filename == twitter {
+		$char: "\E029";
 	}
 
 	@return $char;
@@ -138,8 +165,16 @@
 	}
 }
 
+.icon-alert {
+	@include icon(alert);
+
+}
 .icon-all {
 	@include icon(all);
+
+}
+.icon-box-closed {
+	@include icon(box-closed);
 
 }
 .icon-browse {
@@ -182,6 +217,10 @@
 	@include icon(dislike);
 
 }
+.icon-embed {
+	@include icon(embed);
+
+}
 .icon-facebook {
 	@include icon(facebook);
 
@@ -198,8 +237,16 @@
 	@include icon(guides);
 
 }
+.icon-info {
+	@include icon(info);
+
+}
 .icon-instagram {
 	@include icon(instagram);
+
+}
+.icon-like-heart {
+	@include icon(like-heart);
 
 }
 .icon-like {
@@ -216,6 +263,14 @@
 }
 .icon-pinterest {
 	@include icon(pinterest);
+
+}
+.icon-play-button {
+	@include icon(play-button);
+
+}
+.icon-polaroid {
+	@include icon(polaroid);
 
 }
 .icon-preview {
@@ -242,12 +297,20 @@
 	@include icon(sets);
 
 }
+.icon-share {
+	@include icon(share);
+
+}
 .icon-shop {
 	@include icon(shop);
 
 }
 .icon-sound {
 	@include icon(sound);
+
+}
+.icon-sound2 {
+	@include icon(sound2);
 
 }
 .icon-star {

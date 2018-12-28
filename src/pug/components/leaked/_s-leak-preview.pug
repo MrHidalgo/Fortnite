@@ -1,0 +1,39 @@
+.s-leak__preview
+
+  .s-leak__preview-bg
+
+  .s-leak__preview-triangle
+    img(src="./img/img-sleak-triangle-ipa-0.svg" alt="" title="")
+    img(src="./img/img-sleak-triangle-ipa-1.svg" alt="" title="")
+    img(src="./img/img-sleak-triangle-ipa-2.svg" alt="" title="")
+
+  .s-leak__preview-wrapper
+
+    .s-leak__preview-head
+
+      .s-leak__title
+        i.icon-font.icon-box-closed
+        p!= "3D Preview"
+
+    .s-leak__preview-body
+
+      .s-leak__preview-video
+        video#video(poster='./img/img-guides-0.png')
+          source(src="./media/video.mp4" type="video/mp4")
+
+        a.s-leak__preview-play(href="#" class="" title="" play-video-js)
+          i.icon-font.icon-play-button
+
+        a.s-leak__preview-name(href="#" class="" title="")
+          div
+            img(src="./img/fortnite.png" srcset="./img/fortnite@2x.png 2x" alt="" title="")
+          div
+            p!= "Arachne Outfit"
+            span!= "by Fortnite Skins"
+
+        a.s-leak__preview-share(href="#" class="" title="")
+          i.icon-font.icon-share
+
+        a.s-leak__preview-model(href="#" class="" title="")
+          i.icon-font.icon-box-closed
+

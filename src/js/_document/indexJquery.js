@@ -57,6 +57,34 @@ $(document).ready((ev) => {
       elem.addClass('is-active');
     });
   };
+
+  const initVideoLeakedSub = () => {
+    const vid = document.getElementById("video");
+
+    /**
+     *
+     */
+    $('[play-video-js]').on('click', (ev) => {
+      const elem = $(ev.currentTarget);
+
+      if(!vid.paused) {
+        vid.pause();
+      } else {
+        vid.play();
+        elem.fadeOut(300);
+      }
+    });
+
+    /**
+     *
+     */
+    $(vid).on('click', () => {
+      if(!vid.paused) {
+        vid.pause();
+        $('[play-video-js]').fadeIn(300);
+      }
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -87,6 +115,7 @@ $(document).ready((ev) => {
     listFilterSoldierBtn();
     initFilterCollapse();
     initItemNavBtn();
+    initVideoLeakedSub();
   };
   initJquery();
 });

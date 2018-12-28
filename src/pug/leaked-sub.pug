@@ -6,4 +6,24 @@ pageClassName: p-leaked-sub
 extends shared/_layout
 
 block content
-  div.body(class!= pageClassName)
+  div.body.body--start(class!= pageClassName)
+
+    include components/common/_mainBanner
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+
+            section#s-leak
+
+              include ./components/leaked/_s-leak
+
+              .updated--medium
+                include ./components/common/_updated
+
+          .section__wrapper-right
+
+            include components/common/_sectionBanner
+            include components/common/_popular
+            include components/common/_sectionBanner

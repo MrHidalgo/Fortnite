@@ -1,0 +1,25 @@
+.s-leak__image
+
+  .s-leak__image-bg
+
+  .s-leak__image-triangle
+    img(src="./img/img-sleak-triangle-ipa-0.svg" alt="" title="")
+    img(src="./img/img-sleak-triangle-ipa-1.svg" alt="" title="")
+    img(src="./img/img-sleak-triangle-ipa-2.svg" alt="" title="")
+
+  .s-leak__image-wrapper
+
+    .s-leak__image-head
+
+      .s-leak__title
+        i.icon-font.icon-polaroid
+        p!= "Images"
+
+    .s-leak__image-body
+
+      .s-leak__image-row
+        each val, idx in ['Featured', 'Icon', 'Closeup', 'Image 3']
+          .s-leak__image-block(class!= "s-leak__image-block--" + idx)
+            div
+              img(src="./img/img-sleak-image.jpg" alt="" title="")
+            p!= val
