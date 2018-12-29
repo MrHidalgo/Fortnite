@@ -1,9 +1,48 @@
 ProjectTitle: Fortnite
 
 PageList:
+- file: shop-rotation.html
+  titleName: Shop rotation
+  ready: 01
+
+- file:
+  titleName: =====IN DEVELOPING - desktop
+  ready: 0
+
+- file: history-sub.html
+  titleName: History sub
+  ready: 15
+- file: shop.html
+  titleName: Shop
+  ready: 5
+- file: skin.html
+  titleName: Skin
+  ready: 20
+
+- file:
+  titleName: =====IN DEVELOPING - mobile
+  ready: 0
+
 - file: index.html
   titleName: Home
   ready: 60
+- file: history.html
+  titleName: History
+  ready: 60
+- file: leaked.html
+  titleName: Leaked
+  ready: 60
+- file: leaked-sub.html
+  titleName: Leaked sub
+  ready: 60
+- file: sets.html
+  titleName: Sets
+  ready: 60
+
+- file:
+  titleName: =====AWAITING TESTING
+  ready: 0
+
 - file: 404.html
   titleName: 404
   ready: 75
@@ -16,42 +55,23 @@ PageList:
 - file: rewards.html
   titleName: Battle pass rewards
   ready: 75
-- file: history.html
-  titleName: History
-  ready: 60
-- file: history-sub.html
-  titleName: History sub
-  ready: 15
-- file: beginners.html
-  titleName: Beginner tips
-  ready: 75
-- file: leaked.html
-  titleName: Leaked
-  ready: 60
-- file: leaked-sub.html
-  titleName: Leaked sub
-  ready: 60
-- file: privacy-policy.html
-  titleName: Privacy Policy
-  ready: 75
-- file: search.html
-  titleName: Search
-  ready: 75
-- file: sets.html
-  titleName: Sets
-  ready: 60
-- file: shop-rotation.html
-  titleName: Shop rotation
-  ready: 10
-- file: shop.html
-  titleName: Shop
-  ready: 5
-- file: skin.html
-  titleName: Skin
-  ready: 20
 - file: emotes.html
   titleName: Emotes
   ready: 75
 - file: emotes-1.html
   titleName: Emotes no rarity and category
   ready: 75
+- file: privacy-policy.html
+  titleName: Privacy Policy
+  ready: 75
+- file: search.html
+  titleName: Search
+  ready: 75
+- file: beginners.html
+  titleName: Beginner tips
+  ready: 75
+
+- file:
+  titleName: PAGE FINISHED
+  ready: 0
+
