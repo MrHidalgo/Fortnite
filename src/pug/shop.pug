@@ -7,3 +7,20 @@ extends shared/_layout
 
 block content
   div.body(class!= pageClassName)
+
+    include ./components/shop/_shop
+    .shop--item
+      include ./components/home/_item
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+
+
+
+          .section__wrapper-right
+
+            include components/common/_sectionBanner
+            include components/common/_daily
+            include components/common/_sectionBanner

@@ -1,0 +1,260 @@
+// SECTION shop :: START
+
+.shop {
+  z-index: 3;
+  position: relative;
+
+  &--item {
+    z-index: 2;
+    position: relative;
+    top: -50px;
+
+    .item {
+      padding-top: 100px;
+    }
+  }
+
+  &__bg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &-top,
+    &-bottom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-top {
+      z-index: 1;
+      height: 508px;
+      background-color: #41315f;
+      background-image: url('../img/img-shop-main.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+
+    &-bottom {
+      z-index: 0;
+      top: 408px;
+      height: calc(100% - 408px);
+      background-color: #1f1f1f;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+
+      &:before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #262626;
+        clip-path: polygon(0 100%, 80% 55%, 100% 0, 100% 100%);
+      }
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+    min-height: 648px;
+  }
+
+  &__row {
+    &-0 {
+      padding-top: 122px;
+    }
+
+    &-1 {
+      padding-top: 76px;
+
+      .item__nav {
+        top: -10px;
+        max-width: 1026px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &-bg {
+          clip-path: polygon(2% 2%, 100% 0, 98% 98%, 0% 100%);
+        }
+
+        &-wrapper {
+          justify-content: space-between;
+          padding-left: 42px;
+          padding-right: 42px;
+        }
+
+        &-btn {
+          height: 98px;
+        }
+      }
+    }
+
+    &-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 7px;
+
+      .rotation__cost {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__title {
+    padding-bottom: 20px;
+    color: $c-white;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100px;
+
+    span {
+      color: #ffff00;
+    }
+  }
+
+  &__desc {
+    color: $c-white;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+
+    span {
+      display: block;
+      color: #f4b657;
+    }
+  }
+
+  &__category {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 404px;
+    min-height: 53px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f4d180;
+    clip-path: polygon(3% 0, 100% 1%, 98% 98%, 0 100%);
+
+    &:before {
+      content: '';
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fcdb90;
+      clip-path: polygon(0 100%, 65% 75%, 100% 0, 100% 100%);
+    }
+
+    span {
+      z-index: 2;
+      position: relative;
+      color: #eea341;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 36px;
+    }
+  }
+
+  &__update {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: -5px;
+    width: 100%;
+    max-width: 325px;
+    min-height: 112px;
+    margin-left: 10px;
+
+    &-bg {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &:nth-of-type(1) {
+          top: 5px;
+          left: 3px;
+          background-color: #2ab3e4;
+          clip-path: polygon(0 0, 100% 0, 98% 99%, 3% 100%);
+        }
+
+        &:nth-of-type(2) {
+          top: 0;
+          left: 0;
+          background-color: #35b8e7;
+          clip-path: polygon(0 0, 100% 0, 98% 99%, 3% 100%);
+
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #5fd5ff;
+            clip-path: polygon(5% 100%, 85% 65%, 100% 0, 100% 100%);
+          }
+        }
+      }
+    }
+
+    &-left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 105px;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: calc(100% - 105px);
+      padding-left: 13px;
+
+      span,
+      p {
+        line-height: 1;
+      }
+
+      span {
+        padding-bottom: 5px;
+        color: $c-white;
+        font-size: 18px;
+      }
+
+      p {
+        color: #0183b1;
+        font-size: 48px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+// SECTION shop :: END

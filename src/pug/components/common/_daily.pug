@@ -1,0 +1,40 @@
+// SECTION daily :: START
+
+section#daily.daily
+  .daily__bg
+
+  .daily__triangle
+    img(src="./img/img-daily-triangle-0.svg" alt="" title="")
+    img(src="./img/img-daily-triangle-1.svg" alt="" title="")
+
+  .daily__wrapper
+    .daily__header
+      .daily__title
+        p!= "latest 5 days of the shop"
+
+    .daily__body
+
+      each val, idx in [1,2,3,4,5]
+        .daily__block(class!= "daily__block-" + idx)
+          .daily__block-bg
+            span
+            span
+
+          .daily__block-top
+            .daily__block-title!= "August 10, 2018"
+
+          .daily__block-bottom
+            .daily__block-left
+              p.daily__block-total!= "<span>Total Price:</span> <img src=\"./img/img-skin-points.png\" srcset=\"./img/img-skin-points@2x.png 2x\" alt=\"\" title=\"\"> <i>12,000</i>"
+              p.daily__block-featured!= "<span>Featured:</span> 5 items"
+              p.daily__block-items!= "<span>daily:</span> 6 items"
+
+            .daily__block-right
+              a.daily__block-btn(href="#" class="" title="")!= "Check it out!"
+
+
+
+    .daily__footer
+      a.c-btn.c-btn--bg(href="#" class="" title="")!= "View More <span>></span>"
+
+// SECTION daily :: END

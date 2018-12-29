@@ -571,16 +571,16 @@
         <% if(page.ready == 01) { %> - IN PROGRESS <% } %>
       </span>
       <span class="pagelist__filename--testing">
-        <% if(page.ready >= 75 && page.ready <= 95) { %> - AWAITING TESTING/REVIEW <% } %>
+        <% if(page.ready >= 75 && page.ready <= 95) { %> - AWAITING TESTING - review <% } %>
       </span>
       <span class="pagelist__filename--developing">
-        <% if(page.ready >= 1 && page.ready < 55) { %> - IN DEVELOPING - desktop <% } %>
+        <% if(page.ready >= 1 && page.ready < 55) { %> - IN DEVELOPING - desktop view <% } %>
       </span>
       <span class="pagelist__filename--developing">
-        <% if(page.ready >= 55 && page.ready < 75) { %> - IN DEVELOPING - mobile <% } %>
+        <% if(page.ready >= 55 && page.ready < 75) { %> - IN DEVELOPING - mobile view <% } %>
       </span>
       <span class="pagelist__filename--finished">
-        <% if(page.ready > 95) { %> - PAGE FINISHED <% } %>
+        <% if(page.ready > 95) { %> - FINISHED PAGES <% } %>
       </span>
     </p>
 

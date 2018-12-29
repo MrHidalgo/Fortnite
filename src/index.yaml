@@ -1,8 +1,8 @@
 ProjectTitle: Fortnite
 
 PageList:
-- file: shop-rotation.html
-  titleName: Shop rotation
+- file: shop.html
+  titleName: Shop
   ready: 01
 
 - file:
@@ -11,9 +11,6 @@ PageList:
 
 - file: history-sub.html
   titleName: History sub
-  ready: 10
-- file: shop.html
-  titleName: Shop
   ready: 10
 - file: skin.html
   titleName: Skin
@@ -37,6 +34,9 @@ PageList:
   ready: 60
 - file: sets.html
   titleName: Sets
+  ready: 60
+- file: shop-rotation.html
+  titleName: Shop rotation
   ready: 60
 
 - file:
