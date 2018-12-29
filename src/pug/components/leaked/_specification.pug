@@ -1,0 +1,67 @@
+// SECTION specification :: START
+
+section#specification.specification
+
+  .specification__bg
+    span
+    span
+    span
+
+  .specification__triangle
+    img(src="./img/img-specification-triangle-0.svg" alt="" title="")
+    img(src="./img/img-specification-triangle-1.svg" alt="" title="")
+    img(src="./img/img-specification-triangle-2.svg" alt="" title="")
+    img(src="./img/img-specification-triangle-3.svg" alt="" title="")
+    img(src="./img/img-specification-triangle-4.svg" alt="" title="")
+
+  .c-grid
+    .specification__wrapper
+      .specification__wrapper-left
+
+        .specification__bot-wrapper
+          .specification__bot-left
+            .b-skin.b-skin--small.b-skin--epic
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+          .specification__bot-right
+            p.specification__bot-name!= "Arachne"
+
+            a.specification__bot-btn(href="#" class="" title="")
+              .specification__bot-btn-bg
+                span
+                span
+              span!= 'Legendary outfit'
+
+            p.specification__bot-subtitle!= "Weave a web to victory."
+
+            ul
+              li
+                p!= "No Rating:"
+                span
+                  i.icon-font.icon-star
+                  i.icon-font.icon-star
+                  i.icon-font.icon-star
+                  i.icon-font.icon-star
+                  i.icon-font.icon-star
+              li
+                p!= "Patch Added:"
+                span!= "6.10"
+              li
+                p!= "Source:"
+                span!= "Item Shop"
+
+      .specification__wrapper-right
+
+        .specification__video
+          .specification__video-title
+            p!= "Play Video"
+            i.icon-font.icon-btn-arrow
+
+          .specification__video-content
+            video(poster='./img/img-specification-video-poster.png')
+              source(src="./media/video.mp4" type="video/mp4")
+
+            a.specification__video-btn(href="#" class="" title="")
+              i.icon-font.icon-play-button
+
+// SECTION specification :: END

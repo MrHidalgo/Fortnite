@@ -30,7 +30,7 @@ PageList:
   ready: 60
 - file: leaked-sub.html
   titleName: Leaked sub
-  ready: 45
+  ready: 60
 - file: privacy-policy.html
   titleName: Privacy Policy
   ready: 75
