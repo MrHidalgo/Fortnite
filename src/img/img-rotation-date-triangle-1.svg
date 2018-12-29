@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="71" height="39" viewBox="0 0 71 39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffb45d;
+        stroke: #de9932;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="img-rotation-date-triangle-1" class="cls-1" d="M1248,311l-66-24,20,34Z" transform="translate(-1179.5 -284.5)"/>
+</svg>

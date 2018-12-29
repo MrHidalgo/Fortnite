@@ -11,13 +11,13 @@ PageList:
 
 - file: history-sub.html
   titleName: History sub
-  ready: 15
+  ready: 10
 - file: shop.html
   titleName: Shop
-  ready: 5
+  ready: 10
 - file: skin.html
   titleName: Skin
-  ready: 20
+  ready: 10
 
 - file:
   titleName: =====IN DEVELOPING - mobile

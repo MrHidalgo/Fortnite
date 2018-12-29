@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="103.688" height="100.969" viewBox="0 0 103.688 100.969">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e2a83e;
+        stroke: #19c1fe;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="img-rotation-body-triangle-0" class="cls-1" d="M161,245l46.106,92.972-95.691-50.115Z" transform="translate(-107.406 -241)"/>
+</svg>

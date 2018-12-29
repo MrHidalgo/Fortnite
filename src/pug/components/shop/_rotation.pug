@@ -1,0 +1,95 @@
+// SECTION shop rotation :: START
+
+section#rotation.rotation
+  .c-grid
+    .rotation__wrapper
+
+      .rotation__head
+
+        .rotation__title
+          .rotation__title-bg
+          p!= "Fortnite <span>Shop Rotation</span>"
+
+        .rotation__info-wrapper
+          .rotation__cost
+            .rotation__cost-bg
+              span
+              span
+
+            .rotation__cost-left
+              img(src="./img/img-rotation-cost.png" srcset="./img/img-rotation-cost@2x.png 2x" alt="" title="")
+
+            .rotation__cost-right
+              span!= "Cost:"
+              p!= "10,700"
+
+          .rotation__info
+            .rotation__info-bg
+            .rotation__info-triangle
+              img(src="./img/img-rotation-date-triangle-0.svg" alt="" title="")
+              img(src="./img/img-rotation-date-triangle-1.svg" alt="" title="")
+
+            i.icon-font.icon-calendar
+            p!= "NOVEMBER 15 2018 <span>|</span><a href='#'> FortniteSkins.net</a>"
+
+      .rotation__body
+        .rotation__body-bg
+        .rotation__body-triangle
+          img(src="./img/img-rotation-body-triangle-0.svg" alt="" title="")
+          img(src="./img/img-rotation-body-triangle-1.svg" alt="" title="")
+          img(src="./img/img-rotation-body-triangle-2.svg" alt="" title="")
+          img(src="./img/img-rotation-body-triangle-3.svg" alt="" title="")
+          img(src="./img/img-rotation-body-triangle-4.svg" alt="" title="")
+          img(src="./img/img-rotation-body-triangle-5.svg" alt="" title="")
+
+        .rotation__body-left
+
+          .info__subtitle
+            p!= "Featured"
+
+          .rotation__box
+            -for(var i = 0; i < 6; i++)
+              div
+                .b-skin.b-skin--small(
+                class!= (i === 0) ? "b-skin--epic": (i === 1) ? 'b-skin--rare': (i === 2) ? 'b-skin--legendary': (i === 3) ? 'b-skin--uncommon': 'b-skin--rare'
+                )
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .b-skin__points
+                    img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                    span!= "1500"
+
+                  .b-skin__view
+                    .e-skin__block-view
+                      i.icon-font.icon-cube
+                      span!= "3d"
+
+                  .b-skin__info
+                    p!= "Skin Name"
+
+        .rotation__body-right
+
+          .info__subtitle
+            p!= "Daily"
+
+          .rotation__box
+            -for(var i = 0; i < 4; i++)
+              div
+                .b-skin.b-skin--small(
+                class!= (i === 0) ? "b-skin--epic": (i === 1) ? 'b-skin--rare': (i === 2) ? 'b-skin--legendary': (i === 3) ? 'b-skin--uncommon': 'b-skin--rare'
+                )
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .b-skin__points
+                    img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                    span!= "1500"
+
+                  .b-skin__view
+                    .e-skin__block-view
+                      i.icon-font.icon-cube
+                      span!= "3d"
+
+                  .b-skin__info
+                    p!= "Skin Name"
+
+// SECTION shop rotation :: END
