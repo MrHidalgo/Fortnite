@@ -1,0 +1,244 @@
+// SECTION stats :: START
+
+.stats {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    &-0 {
+      padding-bottom: 32px;
+    }
+
+    &-1 {
+      padding-top: 32px;
+      padding-bottom: 31px;
+    }
+
+    &-2 {
+      padding-top: 31px;
+      padding-bottom: 61px;
+    }
+  }
+
+  // rarity
+  &__rarity {
+    position: relative;
+    min-height: 211px;
+
+    &-bg {
+
+
+      &,
+      &:before {
+        position: absolute;
+        left: 0;
+        width: 100%;
+      }
+
+      & {
+        z-index: -1;
+        top: 40px;
+        height: calc(100% - 40px);
+        background-color: #1f1f1f;
+        clip-path: polygon(0 0, 100% 4%, 98% 97%, 1% 100%);
+      }
+
+      &:before {
+        content: '';
+        top: 0;
+        height: 100%;
+        background-color: #262626;
+        clip-path: polygon(0 100%, 50% 90%, 90% 0, 100% 0, 100% 100%);
+      }
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 625px;
+      min-height: 97px;
+      margin-left: 10px;
+      padding-left: 26px;
+      background-color: #181818;
+      clip-path: polygon(0 0, 100% 5%, 98% 95%, 2% 100%);
+      color: $c-white;
+
+      .icon-font {
+        font-size: 42px;
+      }
+
+      p {
+        padding-left: 12px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 40px;
+      }
+    }
+
+    &-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 40px 40px;
+    }
+
+    &-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 152px;
+      min-height: 57px;
+      clip-path: polygon(0 0, 100% 5%, 98% 95%, 2% 100%);
+
+      &--0 {
+        background-color: #09b958;
+
+        &:before {
+          background-color: #00aa4c;
+        }
+      }
+      &--1 {
+        background-color: #0aa4db;
+
+        &:before {
+          background-color: #008ec1;
+        }
+      }
+      &--2 {
+        background-color: #bb2eea;
+
+        &:before {
+          background-color: #ac00e6;
+        }
+      }
+      &--3 {
+        background-color: #e9af35;
+
+        &:before {
+          background-color: #db9e1c;
+        }
+      }
+
+      &:before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 100%, 50% 80%, 100% 0, 100% 100%);
+        @include transition(clip-path);
+      }
+
+      &:hover {
+        &:before {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          @include transition(clip-path);
+        }
+      }
+
+      span {
+        z-index: 1;
+        position: relative;
+        color: $c-white;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+    }
+  }
+  // rarity :: end
+
+  // follow
+  &__follow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 111px;
+    padding: 40px 45px;
+
+    &-bg,
+    &-triangle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-bg {
+      z-index: -1;
+      background-color: #edf9fd;
+      clip-path: polygon(0 0, 98% 3%, 100% 96%, 1% 100%);
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #d5ecf4;
+
+        &:nth-of-type(1) {
+          clip-path: polygon(0 0, 15% 55%, 50% 55%, 0 100%);
+        }
+        &:nth-of-type(2) {
+          clip-path: polygon(65% 93%, 75% 25%, 100% 0, 100% 100%);
+        }
+      }
+    }
+
+    &-triangle {
+      z-index: 0;
+
+      img {
+        position: absolute;
+
+        &:nth-of-type(1) {
+          top: -30px;
+          left: 10%;
+        }
+        &:nth-of-type(2) {
+          top: 5%;
+          right: -3%;
+        }
+        &:nth-of-type(3) {
+          bottom: -30px;
+          left: 15%;
+        }
+        &:nth-of-type(4) {
+          bottom: -5%;
+          right: 15%;
+        }
+        &:nth-of-type(5) {
+          bottom: -40px;
+          right: 0;
+        }
+      }
+    }
+
+    &-left {
+      width: 150px;
+
+      p {
+        color: #273c43;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 36px;
+      }
+    }
+
+    &-right {
+      width: 100%;
+      max-width: calc(100% - 150px);
+    }
+  }
+  // follow :: end
+}
+
+// SECTION stats :: END
