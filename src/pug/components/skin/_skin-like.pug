@@ -1,12 +1,65 @@
 // SECTION skin like :: START
 
 section.skin.skin--like
-  .skin__bg
 
-  .skin__triangle
+  .section-resize(section-resize-js)
+    .section-resize-bg
+    .section-resize-triangle
+      img(src="./img/img-skin-like-triangle-0.svg" alt="" title="")
+      img(src="./img/img-skin-like-triangle-1.svg" alt="" title="")
+      img(src="./img/img-skin-like-triangle-2.svg" alt="" title="")
+      img(src="./img/img-skin-like-triangle-3.svg" alt="" title="")
+      img(src="./img/img-skin-like-triangle-4.svg" alt="" title="")
 
   .skin__wrapper
 
     .skin__like
+      .skin__like-header
+        p!= "You might also like"
+
+      .skin__like-body
+        .skin__like-block
+          div
+            .b-skin.b-skin--small(
+              class!= 'b-skin--rare'
+            )
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+          div
+            p!= "Skin Name"
+            span!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
+
+        .skin__like-block
+          div
+            .b-skin.b-skin--small(
+            class!= 'b-skin--epic'
+            )
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+          div
+            p!= "Skin Name"
+            span!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
+
+        .skin__like-block
+          div
+            .b-skin.b-skin--small(
+            class!= 'b-skin--legendary'
+            )
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+          div
+            p!= "Skin Name"
+            span!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
+
+        .skin__like-block
+          div
+            .b-skin.b-skin--small(
+            class!= 'b-skin--uncommon'
+            )
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+          div
+            p!= "Skin Name"
+            span!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
+
 
 // SECTION skin like :: END
