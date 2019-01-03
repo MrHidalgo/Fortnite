@@ -178,15 +178,38 @@
 
   // images
   &--images {
-    .skin__header {
-      background-color: #36caff;
+    .skin {
+      &__header {
+        background-color: #36caff;
 
-      &:before {
-        background-color: #1ac2fe;
+        &:before {
+          background-color: #1ac2fe;
+        }
+      }
+
+      &__body {
+        padding: 35px 20px;
+      }
+    }
+
+    .s-leak__image-row {
+      margin-bottom: 35px;
+    }
+  }
+  &__images {
+    &-text {
+      padding-bottom: 35px;
+      color: #273c43;
+      line-height: 1.6;
+      font-size: 16px;
+      font-family: 'Ubuntu', sans-serif;
+
+      a {
+        color: $c-black;
+        font-weight: bold;
       }
     }
   }
-  &__images {}
   // images :: end
 
   // history
