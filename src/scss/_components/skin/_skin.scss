@@ -1,0 +1,387 @@
+// SECTION skin :: START
+
+#skin {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 696px;
+  margin-left: auto;
+  @include adaptive(991) {
+    max-width: 100%;
+  }
+}
+
+.skin {
+  // common
+  &--description,
+  &--gameplay,
+  &--gallery,
+  &--styles,
+  &--images,
+  &--history {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .skin {
+      &__bg,
+      &__triangle {
+        position: absolute;
+        left: 0;
+        width: 100%;
+      }
+
+      &__bg {
+        z-index: -1;
+        top: 42px;
+        height: calc(100% - 42px);
+        background-color: #edf9fd;
+        clip-path: polygon(0 2%, 100% 0, 98% 98%, 1% 100%);
+      }
+
+      &__triangle {
+        z-index: auto;
+        top: 0;
+        height: 100%;
+
+        img {
+          position: absolute;
+
+          &:nth-child(1) {
+            bottom: -8%;
+            left: 4%;
+          }
+          &:nth-child(2) {
+            bottom: -1%;
+            left: 20%;
+          }
+          &:nth-child(3) {
+            bottom: -1%;
+            right: 20%;
+          }
+          &:nth-child(4) {
+            bottom: -5%;
+            right: 3%;
+          }
+        }
+      }
+
+      &__wrapper {
+        z-index: 2;
+        position: relative;
+        width: 100%;
+        min-height: 300px;
+      }
+
+      &__header {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        max-width: 90%;
+        min-height: 97px;
+        padding-left: 20px;
+        clip-path: polygon(0 0, 100% 7%, 97% 96%, 2% 100%);
+
+        &:before {
+          content: '';
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          clip-path: polygon(0 100%, 80% 75%, 100% 0, 100% 100%);
+        }
+
+        i,
+        p {
+          color: $c-white;
+        }
+
+        .icon {
+          &-info {
+            font-size: 36px;
+          }
+          &-gameplay {
+            font-size: 45px;
+          }
+          &-polaroid {
+            font-size: 50px;
+          }
+        }
+
+        p {
+          padding-left: 15px;
+          line-height: 1;
+          text-transform: uppercase;
+          @include fluid(font-size, 320px, 767px, 25px, 48px);
+        }
+      }
+    }
+  }
+  // common :: end
+
+  // description
+  &--description {
+    .skin__header {
+      background-color: #ffd600;
+
+      &:before {
+        background-color: #f0ca07;
+      }
+    }
+  }
+  &__description {}
+  // description :: end
+
+  // gameplay
+  &--gameplay {
+    .skin__header {
+      background-color: #36caff;
+
+      &:before {
+        background-color: #1ac2fe;
+      }
+    }
+  }
+  &__gameplay {}
+  // gameplay :: end
+
+  // gallery
+  &--gallery {
+    .skin__header {
+      background-color: #ff7236;
+
+      &:before {
+        background-color: #dc602c;
+      }
+    }
+  }
+  &__gallery {}
+  // gallery :: end
+
+  // styles
+  &--styles {
+    .skin__header {
+      background-color: #518da4;
+
+      &:before {
+        background-color: #45839a;
+      }
+    }
+  }
+  &__styles {}
+  // styles :: end
+
+  // images
+  &--images {
+    .skin__header {
+      background-color: #36caff;
+
+      &:before {
+        background-color: #1ac2fe;
+      }
+    }
+  }
+  &__images {}
+  // images :: end
+
+  // history
+  &--history {
+    .skin {
+      &__header {
+        background-color: #ffb45d;
+
+        &:before {
+          background-color: #eea341;
+        }
+      }
+
+      &__body {
+        padding: 24px 20px 38px;
+      }
+    }
+  }
+  &__history {
+    &-row {
+      &-0 {}
+
+      &-1 {
+        padding-bottom: 34px;
+      }
+
+      &-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &-3 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+
+    &-text {
+      padding-bottom: 24px;
+      color: #273c43;
+      line-height: 1.6;
+      font-weight: 500;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    &-note {
+      position: relative;
+      min-height: 66px;
+      padding: 19px 24px 13px 14px;
+      background-color: #d0e9f1;
+      clip-path: polygon(0 5%, 100% 0, 97% 98%, 1% 100%);
+
+      p {
+        color: #273c43;
+        line-height: 1.6;
+        font-weight: 500;
+        font-family: 'Ubuntu', sans-serif;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: calc((100% - 32px) / 3);
+
+      > p {
+        padding-bottom: 7px;
+        color: #273c43;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+
+    &-block {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 100%;
+      min-height: 45px;
+      clip-path: polygon(0 0, 100% 5%, 97% 98%, 1% 100%);
+
+      &:before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 100%, 55% 70%, 100% 0, 100% 100%);
+      }
+
+      &-0 {
+        margin-bottom: 17px;
+        background-color: #fcdb90;
+        color: #dc602c;
+
+        &:before {
+          background-color: #efcd7f;
+        }
+      }
+
+      &-1 {
+        margin-bottom: 7px;
+        background-color: #ff7236;
+        color: $c-white;
+
+        &:before {
+          background-color: #dc602c;
+        }
+
+        &:last-of-type {
+          margin-bottom: 35px;
+        }
+      }
+
+      span {
+        z-index: 2;
+        position: relative;
+        line-height: 1;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+    }
+
+    &-ind {
+      display: flex;
+      align-items: center;
+
+
+      &-0 {
+        span {
+          background-color: #ff7236;
+
+          &:before {
+            background-color: #dc602c;
+          }
+        }
+      }
+
+      &-1 {
+        margin-left: 23px;
+
+        span {
+          background-color: #1ac2fe;
+
+          &:before {
+            background-color: #119ccd;
+          }
+        }
+      }
+
+      span  {
+        position: relative;
+        width: 19px;
+        height: 17px;
+        clip-path: polygon(0 5%, 100% 0, 97% 98%, 1% 90%);
+
+        &:before {
+          content: '';
+          z-index: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          clip-path: polygon(0 100%, 55% 70%, 100% 0, 100% 100%);
+        }
+      }
+
+      p {
+        margin-left: 10px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+    }
+  }
+  // history :: end
+
+  // like
+  &--like {}
+  &__like {}
+  // like :: end
+}
+
+// SECTION skin :: END

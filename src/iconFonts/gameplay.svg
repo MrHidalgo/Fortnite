@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="45" viewBox="0 0 54 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="gameplay" class="cls-1" d="M217,4227.75a4.5,4.5,0,0,0-4.5,4.5v9h-11.25v-31.5H226v18h-9ZM205.749,4212H203.5v4.5h2.25V4212Zm0,22.5H203.5v4.5h2.25v-4.5Zm4.5-22.5H208v4.5h2.25V4212Zm0,22.5H208v4.5h2.25v-4.5Zm4.5-22.5H212.5v4.5h2.25V4212Zm4.5,0H217v4.5h2.25V4212Zm4.5,0H221.5v4.5h2.25V4212ZM172,4203h29.25v4.5H172V4203Zm27,6.75v31.5h-24.75v-31.5H199Zm2.25,38.25H172v-4.5h29.25v4.5Z" transform="translate(-172 -4203)"/>
+</svg>

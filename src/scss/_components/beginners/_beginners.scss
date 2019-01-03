@@ -729,6 +729,7 @@
           width: 100%;
           max-width: calc(100% - 182px);
           padding-top: 28px;
+          padding-right: 15px;
           @include adaptive(575) {
             max-width: 100%;
             padding-left: 30px;

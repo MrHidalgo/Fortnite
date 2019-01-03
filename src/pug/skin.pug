@@ -16,7 +16,32 @@ block content
           .section__wrapper-left
 
             section#skin
+
+              include ./components/skin/_skin-description
+
+              section.s-leak
+                include ./components/leaked/_s-leak-preview
+
+              include ./components/skin/_skin-gameplay
+              include ./components/skin/_skin-gallery
+              include ./components/skin/_skin-styles
+              include ./components/skin/_skin-images
+
+              section.s-leak
+                include ./components/leaked/_s-leak-audio
+
+              include ./components/skin/_skin-history
+
+              .updated--medium
+                include ./components/common/_updated
+
               include ./components/common/_breadcrumbs
+
+              include ./components/beginners/_beginners-comments
+
+              include ./components/skin/_skin-like
+
+
 
           .section__wrapper-right
 

@@ -1,155 +1,173 @@
 $sprite: (
   arrow: (
-    offset-x: -26px,
-    offset-y: -157px,
+    offset-x: -224px,
+    offset-y: 0px,
     width: 21px,
     height: 23px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   backBling: (
-    offset-x: 0px,
-    offset-y: -157px,
+    offset-x: -161px,
+    offset-y: -80px,
     width: 21px,
     height: 27px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   battle-pass-challenges: (
-    offset-x: 0px,
+    offset-x: -70px,
     offset-y: 0px,
     width: 53px,
     height: 61px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   emote: (
-    offset-x: -171px,
+    offset-x: -190px,
     offset-y: -101px,
     width: 25px,
     height: 29px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   emoticon: (
-    offset-x: -109px,
-    offset-y: -124px,
+    offset-x: -32px,
+    offset-y: -186px,
     width: 33px,
     height: 18px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   glider: (
-    offset-x: -38px,
-    offset-y: -124px,
+    offset-x: -129px,
+    offset-y: -139px,
     width: 34px,
     height: 27px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   harvestingTool: (
-    offset-x: -171px,
+    offset-x: -190px,
     offset-y: -68px,
     width: 27px,
     height: 28px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   i-guides: (
-    offset-x: -48px,
-    offset-y: -66px,
+    offset-x: 0px,
+    offset-y: -139px,
     width: 52px,
     height: 42px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
+    image: '../img/sprite.png'
+  ),
+  i-history: (
+    offset-x: -128px,
+    offset-y: 0px,
+    width: 57px,
+    height: 56px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   loadingScreen: (
-    offset-x: 0px,
-    offset-y: -124px,
+    offset-x: -91px,
+    offset-y: -139px,
     width: 33px,
     height: 28px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   outfit: (
-    offset-x: -105px,
-    offset-y: -66px,
+    offset-x: -57px,
+    offset-y: -139px,
     width: 29px,
     height: 33px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   skydivingTrails: (
-    offset-x: -171px,
+    offset-x: -190px,
     offset-y: 0px,
     width: 29px,
     height: 31px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   spray: (
-    offset-x: -139px,
-    offset-y: -66px,
+    offset-x: -190px,
+    offset-y: -135px,
     width: 27px,
     height: 26px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   star-full: (
-    offset-x: -117px,
-    offset-y: 0px,
+    offset-x: -59px,
+    offset-y: -80px,
     width: 49px,
     height: 53px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   star-half: (
-    offset-x: 0px,
-    offset-y: -66px,
+    offset-x: -113px,
+    offset-y: -80px,
     width: 43px,
     height: 53px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
+    image: '../img/sprite.png'
+  ),
+  styles: (
+    offset-x: 0px,
+    offset-y: 0px,
+    width: 65px,
+    height: 75px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   token: (
-    offset-x: -171px,
+    offset-x: -190px,
     offset-y: -36px,
     width: 29px,
     height: 27px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   toy: (
-    offset-x: -77px,
-    offset-y: -124px,
+    offset-x: 0px,
+    offset-y: -186px,
     width: 27px,
     height: 24px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
   weekly-challenges: (
-    offset-x: -58px,
-    offset-y: 0px,
+    offset-x: 0px,
+    offset-y: -80px,
     width: 54px,
     height: 54px,
-    total-width: 200px,
-    total-height: 184px,
+    total-width: 245px,
+    total-height: 210px,
     image: '../img/sprite.png'
   ),
 );
@@ -221,6 +239,9 @@ $sprite: (
 .i-guides:before {
   @include sprite(i-guides);
 }
+.i-history:before {
+  @include sprite(i-history);
+}
 .loadingScreen:before {
   @include sprite(loadingScreen);
 }
@@ -238,6 +259,9 @@ $sprite: (
 }
 .star-half:before {
   @include sprite(star-half);
+}
+.styles:before {
+  @include sprite(styles);
 }
 .token:before {
   @include sprite(token);
