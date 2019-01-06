@@ -504,15 +504,129 @@
 
   // gallery
   &--gallery {
-    .skin__header {
-      background-color: #ff7236;
+    .skin {
+      &__header {
+        background-color: #ff7236;
 
-      &:before {
-        background-color: #dc602c;
+        &:before {
+          background-color: #dc602c;
+        }
+      }
+
+      &__body {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 20px 65px;
       }
     }
   }
-  &__gallery {}
+  &__gallery {
+    &-images {
+      display: flex;
+      justify-content: space-between;
+      min-height: 342px;
+      margin-bottom: 20px;
+
+      &-left,
+      &-right {
+        width: 100%;
+        max-width: calc((100% - 20px) / 2);
+      }
+
+      &-left {
+        > div {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          border: 4px solid $c-white;
+          background-color: $c-white;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+
+      &-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .skin__gallery-images-top,
+        .skin__gallery-images-bottom {
+          height: calc((342px - 10px) / 2);
+        }
+
+        .skin__gallery-images-left,
+        .skin__gallery-images-right {
+          max-width: calc((100% - 10px) / 2);
+
+          > div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 4px solid $c-white;
+            background-color: $c-white;
+
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+      }
+
+      &-top {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &-bottom {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &-wallpaper {
+      position: relative;
+      min-height: 357px;
+      margin-bottom: 20px;
+      border: 4px solid $c-white;
+      background-color: $c-white;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &-note {
+      color: #273c43;
+      line-height: 1.6;
+      font-size: 16px;
+      font-family: 'Ubuntu', sans-serif;
+
+      a {
+        color: #ff7236;
+      }
+    }
+  }
   // gallery :: end
 
   // styles
