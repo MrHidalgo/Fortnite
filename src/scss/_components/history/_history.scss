@@ -9,6 +9,10 @@
   @include adaptive(991) {
     max-width: 100%;
   }
+
+  .p-history & {
+    max-width: 100%;
+  }
 }
 
 .history {

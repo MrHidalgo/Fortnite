@@ -1,0 +1,100 @@
+// SECTION history sub stats :: START
+
+section#stats.stats
+  .stats__wrapper.stats__wrapper-0
+
+    .stats__block
+      .stats__block-bg
+      .stats__block-triangle
+
+      .stats__block-header
+        .stats__block-header-bg
+        .stats__block-title
+          i.icon-font.icon-graph
+          p!= "Stats"
+
+        p.stats__block-text!= "Check the list for the most viewed items in the shop and the rarest items in Fortnite Battle Royale."
+
+      .stats__block-body
+        .stats__block-row
+          .stats__block-category.stats__block-category-0
+            .stats__block-category-bg
+            i.icon-font.icon-table
+            p!= "Most Displayed Items"
+
+          each val, idx in [1,2,3]
+            .stats__block-box
+              div
+                .b-skin.b-skin--small(
+                class!= (idx === 0) ? "b-skin--epic": (idx === 1) ? 'b-skin--rare': (idx === 2) ? 'b-skin--legendary': (idx === 3) ? 'b-skin--uncommon': 'b-skin--rare'
+                )
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .b-skin__view
+                    .e-skin__block-view
+                      i.icon-font.icon-cube
+                      span!= "3d"
+              div
+                p.stats__block-name!= "Skin Name"
+
+                .stats__block-items
+                  i
+                  != "Seen 34 times"
+
+        .stats__block-row
+          .stats__block-category.stats__block-category-1
+            .stats__block-category-bg
+            i.icon-font.icon-diamond
+            p!= "Most Rare Items"
+
+          each val, idx in [1,2,3]
+            .stats__block-box
+              div
+                .b-skin.b-skin--small(
+                class!= (idx === 0) ? "b-skin--epic": (idx === 1) ? 'b-skin--rare': (idx === 2) ? 'b-skin--legendary': (idx === 3) ? 'b-skin--uncommon': 'b-skin--rare'
+                )
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .b-skin__view
+                    .e-skin__block-view
+                      i.icon-font.icon-cube
+                      span!= "3d"
+
+              div
+                p.stats__block-name!= "Skin Name"
+
+                .stats__block-items
+                  i
+                  != "Seen 34 times"
+
+        .stats__block-row
+          .stats__block-category.stats__block-category-2
+            .stats__block-category-bg
+            i.icon-font.icon-cup
+            p!= "Top Rated Items"
+
+          each val, idx in [1,2,3]
+            .stats__block-box
+              div
+                .b-skin.b-skin--small(
+                class!= (idx === 0) ? "b-skin--epic": (idx === 1) ? 'b-skin--rare': (idx === 2) ? 'b-skin--legendary': (idx === 3) ? 'b-skin--uncommon': 'b-skin--rare'
+                )
+                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+                  .b-skin__view
+                    .e-skin__block-view
+                      i.icon-font.icon-cube
+                      span!= "3d"
+
+              div
+                p.stats__block-name!= "Skin Name"
+
+                .stats__block-like
+                  a.comments__btn-like(href="#" class="" title="")
+                    i.icon-font.icon-like
+                    span!= "525"
+                  a.comments__btn-dislike(href="#" class="" title="")
+                    i.icon-font.icon-dislike
+                    span!= "211"
+
+// SECTION history sub stats :: END

@@ -26,7 +26,7 @@
 
     &--epic {
       .e-skin__block-image {
-        background-image: url('../img/img-e-skin-bg-epic.png');
+        background-image: radial-gradient(#c359ff,#4b2483);
       }
       .e-skin__block-badge {
         &:before {
@@ -36,7 +36,7 @@
     }
     &--uncommon {
       .e-skin__block-image {
-        background-image: url('../img/img-e-skin-bg-uncommon.png');
+        background-image: radial-gradient(#69bb1e,#175117);
       }
       .e-skin__block-badge {
         &:before {
@@ -46,7 +46,7 @@
     }
     &--rare {
       .e-skin__block-image {
-        background-image: url('../img/img-e-skin-bg-rare.png');
+        background-image: radial-gradient(#2cc1ff,#143977);
       }
       .e-skin__block-badge {
         &:before {
