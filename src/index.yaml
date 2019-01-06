@@ -1,17 +1,10 @@
 ProjectTitle: Fortnite
 
 PageList:
-- file: skin.html
-  titleName: Skin
-  ready: 01
-
-- file:
-  titleName: =====IN DEVELOPING - desktop
-  ready: 0
 
 - file: history-sub.html
   titleName: History sub
-  ready: 10
+  ready: 01
 
 - file:
   titleName: =====IN DEVELOPING - mobile
@@ -22,6 +15,9 @@ PageList:
   ready: 60
 - file: shop.html
   titleName: Shop
+  ready: 60
+- file: skin.html
+  titleName: Skin
   ready: 60
 - file: history.html
   titleName: History

@@ -1,0 +1,91 @@
+// SECTION skin main :: START
+
+section.skin.skin--main
+
+  .section-resize.section-resize--0(section-resize-js)
+    .section-resize-bg
+    .section-resize-triangle
+      img(src="./img/img-skin-main-triangle-0.svg" alt="" title="")
+
+  .section-resize.section-resize--1(section-resize-js)
+    .section-resize-bg
+      span
+    .section-resize-triangle
+      img(src="./img/img-skin-main-triangle-1.svg" alt="" title="")
+      img(src="./img/img-skin-main-triangle-2.svg" alt="" title="")
+      img(src="./img/img-skin-main-triangle-3.svg" alt="" title="")
+
+  .skin__wrapper.skin__wrapper-0
+
+    .skin__main.skin__main-0
+      .skin__body
+        .skin__main-header
+          .skin__main-header-left
+            .b-skin.b-skin--small.b-skin--epic
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+          .skin__main-header-right
+            .skin__main-header-title
+              span
+              p!= "Red Knight"
+
+              .skin__main-header-like
+                .skin__main-header-like-bg
+                  span
+                  span
+
+                a.comments__btn-like(href="#" class="" title="")
+                  i.icon-font.icon-like
+                  span!= "525"
+                a.comments__btn-dislike(href="#" class="" title="")
+                  i.icon-font.icon-dislike
+                  span!= "211"
+
+            .skin__main-header-info
+              p
+                span!= "October 10, 2018   |   Pickaxes   |"
+
+              a(href="#" class="" title="")
+                i.icon-font.icon-bubble
+                span!= "35 comments"
+
+              a(href="#" class="" title="")!= "Legendary"
+
+
+  .skin__wrapper.skin__wrapper-1
+
+    .skin__main.skin__main-1
+      .skin__body
+
+        .skin__main-image
+
+          //img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+          .skin__main-image-area
+            i.icon-png.i-area
+
+            span
+              i.icon-font.icon-close
+
+            form.c-form
+              .c-form__group.c-form__group--two
+                .c-form__group-col.c-form__group-col-0
+                  +formInput(dataFormObj.inputName)
+
+                .c-form__group-col.c-form__group-col-1
+
+                  +formInput(dataFormObj.inputEmail)
+
+              +formTextarea(dataFormObj.textareaField)
+
+              div
+                a.c-btn.c-btn--bg(href="#" class="" title="")
+                  i.icon-font.icon-send
+
+
+          a.skin__main-image-fullscreen(href="#" class="" title="")
+            i.icon-font.icon-fullscreen
+
+
+
+// SECTION skin main :: END

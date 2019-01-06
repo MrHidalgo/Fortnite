@@ -4,7 +4,7 @@
  * @description Window on load.
  */
 $(window).on("load", (ev) => {
-  initSectionBGResize('.beginners--main, .home--leaded, .skin--like');
+  initSectionBGResize('.beginners--main, .home--leaded, .skin--like, .skin--main');
 });
 
 
@@ -12,7 +12,7 @@ $(window).on("load", (ev) => {
  * @description Window on resize.
  */
 $(window).on("resize", (ev) => {
-  initSectionBGResize('.beginners--main, .home--leaded, .skin--like');
+  initSectionBGResize('.beginners--main, .home--leaded, .skin--like, .skin--main');
   // initSectionBGResize('.home--leaded');
 });
 

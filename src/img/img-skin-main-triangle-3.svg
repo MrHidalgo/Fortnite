@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="89" viewBox="0 0 119 89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #de9831;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 7px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="img-skin-main-triangle-3" class="cls-1" d="M776.467,1191l-79.478-82L809,1139.25Z" transform="translate(-693.5 -1105.5)"/>
+</svg>

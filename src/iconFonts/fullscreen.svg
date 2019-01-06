@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="30.97" viewBox="0 0 36 30.97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.72;
+      }
+    </style>
+  </defs>
+  <path id="fullscreen" class="cls-1" d="M787.5,1079.98v-2.4h4.94v-4.96h2.547v7.36H787.5Zm4.94-28.59H787.5v-2.4h7.487v7.36h-2.547v-4.96Zm-30.88,4.96h-2.548v-7.36H766.5v2.4h-4.94v4.96Zm2.392-2.4h26.1v21.07h-26.1v-21.07Zm2.548,18.67h21v-16.27h-21v16.27Zm2.47-13.71h16.137v11.16H768.969v-11.16Zm-7.41,18.67h4.94v2.4h-7.488v-7.36h2.548v4.96Z" transform="translate(-759 -1049)"/>
+</svg>
