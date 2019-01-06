@@ -18,4 +18,42 @@ section.skin.skin--styles
 
       .skin__body
 
+        p.skin__styles-text!= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+        .skin__styles-desc
+          .skin__styles-desc-left
+            .b-skin.b-skin--small.b-skin--legendary
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+          .skin__styles-desc-right
+            .skin__styles-desc-title
+              p!= "Red Knight"
+              .skin__styles-desc-btn
+                a.skin__styles-desc-btn--orange(href="#" class="" title="")!= "Legendary"
+                a.skin__styles-desc-btn--black(href="#" class="" title="")!= "Outfits"
+
+            .skin__styles-desc-info
+              p!= "There can only be one."
+              p!= "Part of the <strong>Omega</strong> set"
+              span
+                i!= "[Unlockable Styles], "
+                i!= "[Selectable Styles]"
+
+
+        .info__subtitle
+          p!= "Armor Stage (Stage 6)"
+
+        .skin__styles-image.skin__styles-image-0
+          each val, idx in [1,2,3,4,5,6]
+            .b-skin.b-skin--small.b-skin--legendary
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+        .info__subtitle
+          p!= "Light Color (Purple)"
+
+        .skin__styles-image.skin__styles-image-1
+          each val, idx in [1,2,3]
+            .b-skin.b-skin--small.b-skin--legendary
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
 // SECTION skin styles :: END
