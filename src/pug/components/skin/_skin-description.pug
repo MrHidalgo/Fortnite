@@ -18,4 +18,109 @@ section.skin.skin--description
 
       .skin__body
 
+        p.skin__description-desc!= "The red menace of Anarchy Acres."
+
+        .skin__description-subtitle.skin__description-subtitle-0
+          .info__subtitle
+            i.icon-font.icon-atom
+            p!= "Reactive"
+
+
+        .skin__description-content.skin__description-content-0
+          p.skin__description-desc!= "Transforms by dealing damage, or outliving</br>other players."
+
+        .skin__description-subtitle.skin__description-subtitle-1
+          .info__subtitle
+            i.icon-png.i-comparison
+            p!= "Comparison"
+
+
+        .skin__description-content.skin__description-content-1
+
+          .skin__description-block
+            .skin__description-block-left
+            .skin__description-block-right
+
+            a.skin__description-block-line(href="#" class="" title="")
+              span
+                i
+                i
+                i
+
+            a.skin__description-block-btn.skin__description-block-btn--on(href="#" class="" title="")!= "On"
+            a.skin__description-block-btn.skin__description-block-btn--off(href="#" class="" title="")!= "Off"
+
+
+          .skin__description-info
+            .skin__description-info-title
+              span
+              p!= "miscellaneous"
+
+            div
+              .skin__description-info-desc
+                span!= "ID:"
+                p!= "HID_205_Anthena_Commando_F_GarageBand"
+
+              .skin__description-info-desc
+                span!= "patch Added:"
+                p!= "3.3.0"
+
+              .skin__description-info-desc
+                span!= "Source:"
+                p!= "Item Shop"
+
+
+
+        .skin__description-subtitle.skin__description-subtitle-2
+          .info__subtitle
+            i.icon-font.icon-reach
+            p!= "Reach"
+
+
+        .skin__description-content.skin__description-content-2
+          p.skin__description-desc!= "Can be bought from Cash Shop with 800 V-Bucks."
+          p.skin__description-note!= "The Red Knight is an outfit in the Fortnite: Battle Royale and is a part of the <span>Fort Knights Set</span>. The outfit was available for 1200 V-Bucks before the Season 2 of the game began. The Red Knight Outfit also appears rarely in the Daily Item Shop for 2000 V-Bucks."
+
+
+        .skin__description-subtitle.skin__description-subtitle-3
+          .info__subtitle
+            i.icon-font.icon-tools
+            p!= "Design"
+
+        .skin__description-content.skin__description-content-3
+          p.skin__description-note!= "Cover with red details and outlines, this black suit resembles the theme of the second season of the Battle Pass, but it is actually not a part of it. The Red Knight outfit is the Red Menace of Anarchy Acres of the <span>Fort Knights Set.</span>"
+
+        .skin__description-subtitle.skin__description-subtitle-4
+          .info__subtitle
+            i.icon-font.icon-sets
+            p!= "Set"
+
+
+        .skin__description-content.skin__description-content-4
+          p.skin__description-desc.skin__description-desc--color!= "There is 11 cosmetics item in the Fort Knights set, check the list below to see which items are included."
+
+          .skin__description-skin
+            -for(var i = 0; i < 4; i++)
+              .skin__description-skin-col
+                .skin__description-skin-left
+                  .b-skin.b-skin--small.b-skin--epic
+                    img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+                .skin__description-skin-right
+                  h5!= "Skin Name"
+                  p!= "October 10, 2018"
+                  span!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
+
+          .skin__description-btn
+            a.c-btn.c-btn--bg(href="#" class="" title="")!= "See More <span>></span>"
+
+
+        .skin__description-subtitle.skin__description-subtitle-5
+          .info__subtitle
+            i.icon-png.i-get
+            p!= "How to get it"
+
+
+        .skin__description-content.skin__description-content-5
+          p.skin__description-note!= "<span>How to get it:</span> This legendary outfit can be purchased in the <span>Item Shop</span> during its rotation. This outfit often appears in the Featured section whenever it is available."
+
 // SECTION skin description :: END
