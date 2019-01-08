@@ -1,0 +1,141 @@
+// SECTION history shop rotation :: START
+
+.h-rotation {
+  position: relative;
+  margin-bottom: 75px;
+
+  .shop__update {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 390px;
+
+    &-bg {
+      span {
+        &:nth-of-type(1) {
+          top: 9px;
+          left: 6px;
+        }
+      }
+    }
+
+    &-right {
+      > div {
+        display: flex;
+        align-items: center;
+        padding-bottom: 5px;
+
+        span {
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  &__bg,
+  &__triangle {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+
+  &__bg {
+    z-index: -1;
+    top: 133px;
+    height: calc(100% - 133px);
+    background-color: #edf9fd;
+    clip-path: polygon(0 0, 100% 0, 99.5% 99.5%, 1% 100%);
+  }
+
+  &__triangle {
+    z-index: 0;
+    top: 0;
+    height: 100%;
+
+    img {
+      position: absolute;
+
+      &:nth-of-type(1) {
+        bottom: -30px;
+        left: 10%;
+      }
+      &:nth-of-type(2) {
+        bottom: -30px;
+        right: 10%;
+      }
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+  }
+
+  &__head {
+    position: relative;
+    min-height: 206px;
+    padding-top: 66px;
+    padding-left: 8px;
+    padding-right: 9px;
+  }
+
+  &__body {
+    padding: 17px 28px 52px;
+  }
+
+  &__title {
+    position: relative;
+    min-height: 140px;
+    padding: 67px 33px 15px 30px;
+    background-color: #0183b1;
+    clip-path: polygon(0 10%, 100% 0, 95% 98%, 2% 100%);
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #06739a;
+      clip-path: polygon(5% 100%, 85% 55%, 100% 0, 100% 100%);
+    }
+
+    p {
+      color: $c-white;
+      line-height: 1.6;
+      font-family: 'Ubuntu', sans-serif;
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+
+    &-0 {
+      background-color: #f66d33;
+
+      &:after {
+        background-color: #ff814c;
+      }
+
+      &:before {
+        background-color: #de561c;
+      }
+    }
+
+    &-1 {
+      background-color: #f4d180;
+
+      &:after {
+        background-color: #fcdb90;
+      }
+
+      &:before {
+        background-color: #e3c171;
+      }
+    }
+  }
+}
+
+// SECTION history shop rotation :: END

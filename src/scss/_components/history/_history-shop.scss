@@ -243,7 +243,9 @@
       padding-right: 10px;
 
       .b-skin {
-        width: 157px;
+        width: calc((100% - 24px) / 4);
+        margin-left: 3px;
+        margin-right: 3px;
         margin-bottom: 13px;
         box-shadow: none;
         border-color: #e8f2ff;

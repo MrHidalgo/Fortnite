@@ -1,0 +1,78 @@
+// SECTION history shop rotation :: START
+
+section#h-rotation.h-rotation
+  .h-rotation__bg
+
+  .h-rotation__triangle
+    img(src="./img/img-h-rotation-triangle-0.svg" alt="" title="")
+    img(src="./img/img-h-rotation-triangle-1.svg" alt="" title="")
+
+  .h-rotation__wrapper
+
+    .h-rotation__head
+      .shop__update
+        .shop__update-bg
+          span
+          span
+
+        .shop__update-left
+          img(src="./img/img-shop-update.png" srcset="./img/img-shop-update@2x.png 2x" alt="" title="")
+
+        .shop__update-right
+          div
+            i.icon-png.i-h-rotation
+            span!= "Shop Rotation"
+          p!= "July 26, 2018"
+
+      .h-rotation__title
+        p!= "This is the shop rotation of July 26, 2018 for Fortnite Battle Royale. It had 5 featured and 6 daily items. To buy all cosmetics form this shop rotation, you must spend about 11.100 V-Bucks."
+
+    .h-rotation__body
+
+      .info__subtitle.h-rotation__subtitle.h-rotation__subtitle-0
+        p!= "Featured"
+
+      .h-shop__block-skin
+
+        -for(var i = 0; i < 4; i++)
+          .b-skin.b-skin--small(
+            class!= (i === 0) ? "b-skin--epic": (i === 1) ? 'b-skin--rare': (i === 2) ? 'b-skin--legendary': (i === 3) ? 'b-skin--uncommon': 'b-skin--rare'
+          )
+            img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+            .b-skin__points
+              img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+              span!= "1500"
+
+            .b-skin__view
+              .e-skin__block-view
+                i.icon-font.icon-cube
+                span!= "3d"
+
+            .b-skin__info
+              p!= "Skin Name"
+
+      .info__subtitle.h-rotation__subtitle.h-rotation__subtitle-1
+        p!= "Daily"
+
+      .h-shop__block-skin
+
+        -for(var i = 0; i < 6; i++)
+          .b-skin.b-skin--small(
+          class!= (i === 0) ? "b-skin--epic": (i === 1) ? 'b-skin--rare': (i === 2) ? 'b-skin--legendary': (i === 3) ? 'b-skin--uncommon': 'b-skin--rare'
+          )
+            img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+            .b-skin__points
+              img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+              span!= "1500"
+
+            .b-skin__view
+              .e-skin__block-view
+                i.icon-font.icon-cube
+                span!= "3d"
+
+            .b-skin__info
+              p!= "Skin Name"
+
+// SECTION history shop rotation :: END

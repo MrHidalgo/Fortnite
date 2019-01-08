@@ -162,17 +162,20 @@
 	@if $filename == star {
 		$char: "\E02D";
 	}
-	@if $filename == table {
+	@if $filename == strike-month {
 		$char: "\E02E";
 	}
-	@if $filename == tools {
+	@if $filename == table {
 		$char: "\E02F";
 	}
-	@if $filename == triangle-rotate {
+	@if $filename == tools {
 		$char: "\E030";
 	}
-	@if $filename == twitter {
+	@if $filename == triangle-rotate {
 		$char: "\E031";
+	}
+	@if $filename == twitter {
+		$char: "\E032";
 	}
 
 	@return $char;
@@ -367,6 +370,10 @@
 }
 .icon-star {
 	@include icon(star);
+
+}
+.icon-strike-month {
+	@include icon(strike-month);
 
 }
 .icon-table {

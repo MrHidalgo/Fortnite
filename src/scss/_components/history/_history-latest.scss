@@ -1,0 +1,160 @@
+// SECTION history latest :: START
+
+.h-latest {
+  position: relative;
+  margin-top: 75px;
+  margin-bottom: 75px;
+
+  &__bg,
+  &__triangle {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - (55px + 65px));
+  }
+
+  &__bg {
+    z-index: -1;
+    background-color: #e2a83f;
+    clip-path: polygon(0 0, 100% 0, 99.5% 99.5%, 1% 100%);
+  }
+
+  &__triangle {
+    z-index: 0;
+
+    img {
+      position: absolute;
+
+      &:nth-of-type(1) {
+        top: 10%;
+        left: -20px;
+      }
+      &:nth-of-type(2) {
+        top: -30px;
+        right: 8%;
+      }
+      &:nth-of-type(3) {
+        top: -30px;
+        right: 0;
+      }
+      &:nth-of-type(4) {
+        bottom: -40px;
+        right: 0;
+      }
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+  }
+
+  &__head {
+    padding-left: 3px;
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 8px 16px 18px;
+  }
+
+  &__footer {
+    padding-left: 11px;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    min-height: 100px;
+    padding-left: 25px;
+    padding-right: 15px;
+    background-color: #f0ca06;
+    clip-path: polygon(0 0, 100% 2%, 96% 100%, 2% 98%);
+    color: $c-white;
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffd600;
+      clip-path: polygon(0 100%, 85% 65%, 100% 0, 100% 100%);
+    }
+
+    .icon-strike-month {
+      font-size: 42px;
+    }
+
+    p {
+      padding-left: 23px;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 48px;
+    }
+  }
+
+  &__block {
+    width: calc(100% / 2);
+    padding-bottom: 21px;
+
+    &:nth-child(odd) {
+      padding-right: 10px;
+    }
+    &:nth-child(even) {
+      padding-left: 10px;
+    }
+
+    .daily__block {
+      margin-bottom: 0;
+
+      &-btn {
+        &:hover {
+          color: #f59639;
+        }
+      }
+    }
+  }
+
+  &__follow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    min-height: 78px;
+    padding-left: 19px;
+    padding-right: 15px;
+    background-color: #fe48b7;
+    clip-path: polygon(0 2%, 100% 0, 96% 97%, 2% 100%);
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fe23a9;
+      clip-path: polygon(0 100%, 75% 55%, 100% 0, 100% 100%);
+    }
+
+    p {
+      padding-right: 36px;
+      color: $c-white;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 36px;
+    }
+  }
+}
+
+// SECTION history latest :: END
