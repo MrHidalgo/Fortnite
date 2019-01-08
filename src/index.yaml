@@ -5,14 +5,23 @@ PageList:
 - file: index.html
   titleName: Home
   ready: 60
-- file: shop.html
-  titleName: Shop
-  ready: 60
 - file: skin.html
   titleName: Skin
   ready: 60
+- file: sets.html
+  titleName: Sets
+  ready: 60
+- file: shop.html
+  titleName: Shop
+  ready: 60
+- file: shop-rotation.html
+  titleName: Shop rotation
+  ready: 60
 - file: history.html
   titleName: History
+  ready: 60
+- file: history-sub.html
+  titleName: History sub
   ready: 60
 - file: leaked.html
   titleName: Leaked
@@ -20,18 +29,21 @@ PageList:
 - file: leaked-sub.html
   titleName: Leaked sub
   ready: 60
-- file: sets.html
-  titleName: Sets
-  ready: 60
-- file: shop-rotation.html
-  titleName: Shop rotation
-  ready: 60
-- file: history-sub.html
-  titleName: History sub
-  ready: 60
 
 - file: 404.html
   titleName: 404
+  ready: 75
+- file: privacy-policy.html
+  titleName: Privacy Policy
+  ready: 75
+- file: rewards.html
+  titleName: Battle pass rewards
+  ready: 75
+- file: search.html
+  titleName: Search
+  ready: 75
+- file: beginners.html
+  titleName: Beginner tips
   ready: 75
 - file: list-table.html
   titleName: List of all skins - table
@@ -39,22 +51,10 @@ PageList:
 - file: list-grid.html
   titleName: List of all skins - grid
   ready: 75
-- file: rewards.html
-  titleName: Battle pass rewards
-  ready: 75
 - file: emotes.html
   titleName: Emotes
   ready: 75
 - file: emotes-1.html
   titleName: Emotes no rarity and category
-  ready: 75
-- file: privacy-policy.html
-  titleName: Privacy Policy
-  ready: 75
-- file: search.html
-  titleName: Search
-  ready: 75
-- file: beginners.html
-  titleName: Beginner tips
   ready: 75
 
