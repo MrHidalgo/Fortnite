@@ -92,8 +92,9 @@
 
 @import "_components/history/history";
 @import "_components/history/history-shop";
-@import "_components/history/_history-rotation";
-@import "_components/history/_history-latest";
+@import "_components/history/history-sub-rotation";
+@import "_components/history/history-sub-latest";
+@import "_components/history/history-sub-graph";
 
 @import "_components/leaked/leaked";
 @import "_components/leaked/leak";

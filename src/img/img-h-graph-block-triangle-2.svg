@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="97" height="51" viewBox="0 0 97 51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d5edf5;
+        stroke: #edf9fd;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="img-h-graph-block-triangle-2" class="cls-1" d="M253,1619l34,43-92-46Z" transform="translate(-192.5 -1613.5)"/>
+</svg>

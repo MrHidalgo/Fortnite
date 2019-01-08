@@ -1,0 +1,361 @@
+// SECTION history graph :: START
+
+.h-graph {
+  position: relative;
+  margin-bottom: 75px;
+
+  &__bg,
+  &__triangle {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - (37px + 48px));
+  }
+
+  &__bg {
+    z-index: -1;
+    background-color: #edf9fd;
+    clip-path: polygon(0 0, 100% 0, 99.5% 99.5%, 0.5% 100%);
+  }
+
+  &__triangle {
+    z-index: 0;
+
+    img {
+      position: absolute;
+
+      &:nth-of-type(1) {
+        top: -30px;
+        right: 10%;
+      }
+      &:nth-of-type(2) {
+        bottom: -30px;
+        left: -5%;
+      }
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+  }
+
+  &__head {
+    padding-left: 18px;
+  }
+
+  &__body {
+    padding: 30px 13px 30px 32px;
+  }
+
+  &__footer {
+    padding-left: 35px;
+    padding-right: 20px;
+  }
+
+  &__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 411px;
+    min-height: 100px;
+    padding-left: 20px;
+    padding-right: 15px;
+    background-color: #d735ca;
+    clip-path: polygon(0 0, 100% 2%, 96% 100%, 2% 98%);
+    color: $c-white;
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ff00ea;
+      clip-path: polygon(0 100%, 85% 65%, 100% 0, 100% 100%);
+    }
+
+    .icon-chart {
+      font-size: 44px;
+    }
+
+    p {
+      padding-left: 23px;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 48px;
+    }
+  }
+
+  &__block {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 37px 16px 47px;
+    margin-bottom: 30px;
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #d5edf5;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &-0 {
+      &:before {
+        clip-path: polygon(0 2%, 100% 0%, 100% 100%, 1% 98%);
+      }
+
+      .h-graph__block-triangle {
+        img {
+          &:nth-of-type(1) {
+            top: -5%;
+            right: 10%;
+          }
+          &:nth-of-type(2) {
+            bottom: -8%;
+            right: 10%;
+          }
+        }
+      }
+    }
+
+    &-1 {
+      &:before {
+        clip-path: polygon(0 0%, 98% 2%, 100% 100%, 1% 92%);
+      }
+
+      .h-graph__block-triangle {
+        img {
+          &:nth-of-type(1) {
+            top: -8%;
+            left: 5%;
+          }
+          &:nth-of-type(2) {
+            top: 3%;
+            right: -1%;
+          }
+          &:nth-of-type(3) {
+            bottom: -10px;
+            right: 10%;
+          }
+        }
+      }
+    }
+
+    &-2 {
+      &:before {
+        clip-path: polygon(0 0, 100% 2%, 99% 98%, 1% 100%);
+      }
+
+      .h-graph__block-triangle {
+        img {
+          &:nth-of-type(1) {
+            top: -10px;
+            right: 15%;
+          }
+          &:nth-of-type(2) {
+            bottom: -10px;
+            right: 20%;
+          }
+        }
+      }
+    }
+
+    &-triangle {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        position: absolute;
+      }
+    }
+
+    &-left,
+    &-right {
+      z-index: 2;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      padding: 15px;
+    }
+
+    &-info {
+      position: relative;
+      width: 100%;
+      max-width: 268px;
+      padding: 12px;
+
+      &-bg {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        span {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          clip-path: polygon(0 0, 100% 0.5%, 98% 99%, 2% 100%);
+
+          &:nth-of-type(1) {
+            top: 10px;
+            left: 5px;
+            background-color: #c9e9f4;
+          }
+
+          &:nth-of-type(2) {
+            top: 0;
+            left: 0;
+            background-color: #b6e1ef;
+
+            &:before {
+              content: '';
+              z-index: -1;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: #9dcad9;
+              clip-path: polygon(0 100%, 75% 70%, 100% 0, 100% 100%);
+            }
+          }
+        }
+      }
+
+      &-content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 158px;
+      }
+
+      &-box {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+
+        div {
+          position: relative;
+          width: 43px;
+          height: 37px;
+          clip-path: polygon(0 10%, 100% 0, 95% 100%, 5% 95%);
+
+          &:before {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(0 100%, 75% 70%, 100% 0, 100% 100%);
+          }
+
+          @each $classMod, $bgc1, $bgc2 in
+            ('flamenco', #e98849, #d17031),
+            ('heliotrope', #c361f3, #ae4adf),
+            ('summer-sky', #3b9be4, #2f8fd7),
+            ('yellow-green', #85e430, #70c622),
+            ('opal', #a8c7bb, #8cb2a3),
+            ('rose-bud', #ffa69e, #f09188),
+            ('burgundy', #800020, #6b041e),
+            ('twilight', #d8beca, #bc96a8),
+            ('dark-orange', #ff8d00, #db7c06),
+            ('magic-mint', #b2edc9, #8ed8ab)
+          {
+            &.#{$classMod} {
+              background-color: $bgc1;
+              &:before {
+                background-color: $bgc2;
+              }
+            }
+          }
+        }
+
+        p {
+          padding-left: 8px;
+          color: $c-black;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 67px;
+    background-color: #0183b1;
+    clip-path: polygon(0 5%, 100% 0, 95% 98%, 3% 100%);
+    color: $c-white;
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #06739a;
+      clip-path: polygon(0 100%, 75% 55%, 100% 0, 100% 100%);
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon {
+      &-calendar-wr {
+        font-size: 27px;
+      }
+      &-ribbon {
+        font-size: 23px;
+      }
+      &-bubble {
+        font-size: 23px;
+      }
+    }
+
+    span {
+      margin-left: 30px;
+      margin-right: 30px;
+      font-size: 18px;
+    }
+
+    p {
+      padding-left: 13px;
+      line-height: 1;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+  }
+}
+
+// SECTION history graph :: END
