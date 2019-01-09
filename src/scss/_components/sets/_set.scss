@@ -1,8 +1,8 @@
 // SECTION set :: START
 
 .set {
-  padding-top: 67px;
-  padding-bottom: 67px;
+  @include fluid(padding-top, 320px, 1439px, 40px, 67px);
+  @include fluid(padding-bottom, 320px, 1439px, 40px, 67px);
 
   .c-grid {
     max-width: 1260px;
@@ -130,8 +130,8 @@
       p {
         color: $c-white;
         line-height: 1;
+        text-align: center;
         text-transform: uppercase;
-        //font-size: 48px;
         @include fluid(font-size, 320px, 1439px, 36px, 48px);
       }
     }
@@ -182,13 +182,15 @@
       > div {
         display: flex;
         justify-content: center;
+        @include adaptive(575) {
+          flex-direction: column;
+        }
 
         > p {
           padding-bottom: 10px;
           line-height: 1;
           text-align: center;
           text-transform: uppercase;
-          //font-size: 30px;
           @include fluid(font-size, 320px, 1439px, 24px, 30px);
         }
 
@@ -216,6 +218,9 @@
               width: 4px;
               height: 13px;
               background-color: #fefdff;
+              @include adaptive(575) {
+                display: none;
+              }
             }
 
             &:before {

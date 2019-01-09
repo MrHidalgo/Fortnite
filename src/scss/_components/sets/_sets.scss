@@ -43,7 +43,7 @@
       line-height: 1;
       text-transform: uppercase;
       font-size: 100px;
-      @include fluid(font-size, 320px, 1439px, 65px, 100px);
+      @include fluid(font-size, 320px, 1439px, 55px, 100px);
 
       span {
         color: #ffff00;
@@ -163,24 +163,42 @@
     &-1,
     &-2 {
       display: flex;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
     }
 
     &-1 {
       align-items: center;
       padding-top: 70px;
+
+      @include adaptive(767) {
+        .sets__wrapper-right {
+          display: none;
+        }
+      }
     }
 
     &-2 {
       align-items: flex-start;
+      @include adaptive(767) {
+        flex-direction: column-reverse;
+      }
     }
 
     &-left {
       width: 100%;
       max-width: calc(100% - 370px);
+      @include adaptive(767) {
+        max-width: 100%;
+      }
     }
 
     &-right {
       width: 370px;
+      @include adaptive(767) {
+        width: 100%;
+      }
     }
   }
 
@@ -293,6 +311,11 @@
     padding: 21px 28px;
     background-color: #ff00ee;
     clip-path: polygon(2% 0, 98% 0, 100% 100%, 0 93%);
+    @include adaptive(767) {
+      max-width: 370px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &-content {
       position: relative;
