@@ -197,6 +197,9 @@
       display: flex;
       flex-direction: column;
       width: 440px;
+      @include adaptive(991) {
+        width: 45%;
+      }
     }
 
     &-right {
@@ -204,6 +207,9 @@
       align-items: center;
       width: 100%;
       max-width: calc(100% - 440px);
+      @include adaptive(991) {
+        max-width: 55%;
+      }
     }
   }
 
@@ -211,7 +217,7 @@
     color: #d98f2a;
     line-height: 1;
     text-transform: uppercase;
-    font-size: 56px;
+    @include fluid(font-size, 320px, 1439px, 40px, 56px);
   }
 
   &__follow,
@@ -225,14 +231,14 @@
       padding-right: 30px;
       color: $c-white;
       text-shadow: -5px 8.66px 0px rgba(#f8d076, 1);
-      font-size: 155px;
+      @include fluid(font-size, 320px, 1439px, 100px, 155px);
     }
 
     &-1 {
       color: #0183b1;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 83px;
+      @include fluid(font-size, 320px, 1439px, 65px, 83px);
 
       span {
         color: #ff7236;

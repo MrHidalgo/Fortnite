@@ -89,8 +89,11 @@
       > div {
         display: flex;
         justify-content: center;
+        min-width: 200px;
         width: calc((100% - 16px) / 5);
         margin-bottom: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
       }
 
       .b-skin {
@@ -128,7 +131,8 @@
         color: $c-white;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 48px;
+        //font-size: 48px;
+        @include fluid(font-size, 320px, 1439px, 36px, 48px);
       }
     }
 
@@ -184,7 +188,8 @@
           line-height: 1;
           text-align: center;
           text-transform: uppercase;
-          font-size: 30px;
+          //font-size: 30px;
+          @include fluid(font-size, 320px, 1439px, 24px, 30px);
         }
 
         > span {
@@ -192,9 +197,9 @@
           padding-left: 14px;
           padding-right: 14px;
           text-align: center;
-          font-size: 18px;
           font-weight: bold;
           font-family: 'Ubuntu', sans-serif;
+          @include fluid(font-size, 320px, 1439px, 16px, 18px);
 
           span {
             font-weight: normal;

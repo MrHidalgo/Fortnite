@@ -43,6 +43,7 @@
       line-height: 1;
       text-transform: uppercase;
       font-size: 100px;
+      @include fluid(font-size, 320px, 1439px, 65px, 100px);
 
       span {
         color: #ffff00;
@@ -50,8 +51,8 @@
     }
 
     &-text {
-      font-size: 20px;
       font-family: 'Ubuntu', sans-serif;
+      @include fluid(font-size, 320px, 1439px, 16px, 20px);
     }
   }
   // top :: end
@@ -142,7 +143,7 @@
         color: $c-white;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 48px;
+        @include fluid(font-size, 320px, 1439px, 36px, 48px);
       }
     }
   }
@@ -189,6 +190,9 @@
     max-width: 805px;
     min-height: 248px;
     padding: 47px 54px;
+    @include adaptive(1199) {
+      padding: 30px 40px;
+    }
 
     &-bg {
       z-index: -1;
@@ -234,8 +238,8 @@
     &-text {
       padding-bottom: 20px;
       color: $c-white;
-      font-size: 18px;
       font-family: 'Ubuntu', sans-serif;
+      @include fluid(font-size, 320px, 1439px, 14px, 18px);
 
       &:last-of-type {
         padding-bottom: 0;
@@ -270,8 +274,8 @@
       position: relative;
       color: $c-white;
       line-height: 1.6;
-      font-size: 18px;
       font-family: 'Ubuntu', sans-serif;
+      @include fluid(font-size, 320px, 1439px, 14px, 18px);
 
       span {
         font-weight: bold;
