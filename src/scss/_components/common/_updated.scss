@@ -93,14 +93,25 @@
 
       &__wrapper {
         min-height: 180px;
+        @include adaptive(1199) {
+          flex-direction: column-reverse;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
 
         &-left {
           width: 240px;
+          @include adaptive(1199) {
+            width: 100%;
+          }
         }
 
         &-right {
           width: 100%;
           max-width: calc(100% - 240px);
+          @include adaptive(1199) {
+            max-width: 100%;
+          }
         }
       }
 

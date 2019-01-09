@@ -73,8 +73,8 @@
       color: $c-white;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 73px;
       text-align: center;
+      @include fluid(font-size, 768px, 1439px, 50px, 73px);
 
       span {
         color: #ffff00;
@@ -175,7 +175,7 @@
         color: $c-white;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 48px;
+        @include fluid(font-size, 320px, 1439px, 36px, 48px);
       }
     }
 
@@ -184,6 +184,9 @@
       left: -15px;
       min-height: 182px;
       padding: 46px 39px 46px 74px;
+      @include adaptive(991) {
+        padding: 36px 29px 36px 54px;
+      }
 
       &-bg {
         z-index: -1;
@@ -231,6 +234,7 @@
         line-height: 1.6;
         font-size: 18px;
         font-family: 'Ubuntu', sans-serif;
+        @include fluid(font-size, 320px, 1439px, 14px, 18px);
 
         span {
           color: #ffff00;
@@ -366,18 +370,18 @@
       }
 
       .icon-menology {
-        font-size: 50px;
+        @include fluid(font-size, 320px, 1439px, 38px, 50px);
       }
 
       .icon-preview {
-        font-size: 30px;
+        @include fluid(font-size, 320px, 1439px, 24px, 30px);
       }
 
       p {
         padding-left: 17px;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 48px;
+        @include fluid(font-size, 320px, 1439px, 36px, 48px);
       }
     }
 
@@ -388,14 +392,25 @@
       justify-content: space-between;
 
       > div {
+        min-width: 315px;
         width: calc((100% - 20px) / 3);
         min-height: 166px;
         margin-bottom: 13px;
+        @include adaptive(1439) {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+        @include adaptive(991) {
+          width: calc((100% - 20px) / 2);
+        }
       }
 
       .b-skin {
         width: 190px;
         height: 156px;
+        @include adaptive(1199) {
+          width: 100%;
+        }
 
         &__view {
           top: 2px;
@@ -412,6 +427,9 @@
         &:nth-of-type(1) {
           width: 190px;
           padding-top: 10px;
+          @include adaptive(1199) {
+            width: 150px;
+          }
         }
 
         &:nth-of-type(2) {
@@ -420,6 +438,9 @@
           max-width: calc(100% - 190px);
           padding-top: 15px;
           padding-left: 25px;
+          @include adaptive(1199) {
+            max-width: calc(100% - 150px);
+          }
 
           &:before {
             content: '';
