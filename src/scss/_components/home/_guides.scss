@@ -115,27 +115,11 @@
     color: $c-white;
     clip-path: polygon(0 0, 100% 3%, 96% 100%, 4% 100%);
 
-    &-icon {
-      position: relative;
-    }
-
-    .icon-guides {
-      font-size: 42px;
-    }
-
-    .icon-fortnite-logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #fe23a9;
-      font-size: 26px;
-    }
-
     p {
       padding-left: 18px;
       line-height: 1;
       text-transform: uppercase;
+      @include fluid(padding-left, 320px, 992px, 10px, 18px);
       @include fluid(font-size, 320px, 992px, 30px, 45px);
     }
   }
@@ -162,6 +146,9 @@
         max-width: 100%;
         margin-bottom: 24px;
       }
+      @include adaptive(575) {
+        margin-bottom: 15px;
+      }
     }
 
     &-1,
@@ -169,6 +156,10 @@
       max-width: 25%;
       @include adaptive(991) {
         max-width: calc((100% - 48px) / 2);
+      }
+      @include adaptive(575) {
+        max-width: 100%;
+        margin-bottom: 15px;
       }
     }
 

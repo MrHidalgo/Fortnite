@@ -71,14 +71,52 @@
             flex-wrap: wrap;
           }
 
-          .b-skin {
+          .b-skin__wrapper {
+            @include adaptive(1365) {
+              width: calc(100% / 4);
+              padding-left: 5px;
+              padding-right: 5px;
+
+              .b-skin {
+                width: 100%;
+              }
+            }
             @include adaptive(1199) {
-              flex-basis: calc((100% - 60px) / 2);
-              margin: 0 15px 30px;
+              display: flex;
+              justify-content: center;
+              width: calc(100% / 2);
+              margin-bottom: 24px;
+
+              .b-skin {
+                width: 175px;
+              }
             }
             @include adaptive(991) {
-              flex-basis: auto;
-              margin: auto;
+              width: calc(100% / 4);
+              padding-left: 7.5px;
+              padding-right: 7.5px;
+
+              .b-skin {
+                width: 100%;
+              }
+            }
+            @include adaptive(767) {
+              display: flex;
+              justify-content: center;
+              width: calc(100% / 2);
+              margin-bottom: 15px;
+
+              .b-skin {
+                width: 175px;
+              }
+            }
+            @include adaptive(424) {
+              width: 100%;
+              padding: 0;
+
+              .b-skin {
+                width: 175;
+              }
             }
           }
         }
@@ -93,7 +131,8 @@
       &__title {
         display: flex;
         align-items: center;
-        width: 322px;
+        width: 100%;
+        max-width: 322px;
         height: 82px;
         padding-left: 37px;
         background-color: #181818;
@@ -105,7 +144,7 @@
         }
 
         .icon-font {
-          font-size: 31px;
+          @include fluid(font-size, 320px, 768px, 25px, 31px);
         }
 
         p {
@@ -113,6 +152,7 @@
           line-height: 1;
           text-transform: uppercase;
           font-size: 40px;
+          @include fluid(font-size, 320px, 768px, 36px, 40px);
         }
       }
     }
@@ -127,6 +167,9 @@
           .e-skin__block-wrapper {
             padding-left: 15px;
             padding-top: 15px;
+            @include adaptive(575) {
+              padding-left: 0;
+            }
           }
         }
 
@@ -134,6 +177,10 @@
           display: flex;
           justify-content: flex-end;
           padding-top: 25px;
+          @include adaptive(767) {
+            padding-top: 0;
+            margin-bottom: 30px;
+          }
         }
       }
 

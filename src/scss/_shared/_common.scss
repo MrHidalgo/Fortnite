@@ -15,6 +15,10 @@
       left: -15px !important;
       width: calc(100% + 15px) !important;
     }
+    @include adaptive(767) {
+      left: -15px !important;
+      width: calc(100% + 30px) !important;
+    }
 
     &-bg {
       z-index: -1;
@@ -50,7 +54,12 @@
     .p-home & {
       @include adaptive(991) {
         flex-wrap: wrap;
-        //flex-direction: column-reverse;
+      }
+    }
+
+    .p-home & {
+      @include adaptive(991) {
+        flex-direction: column-reverse;
       }
     }
 

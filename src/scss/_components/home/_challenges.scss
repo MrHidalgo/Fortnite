@@ -48,6 +48,9 @@
     margin-bottom: 5px;
     padding-left: 18px;
     padding-right: 9px;
+    @include adaptive(575) {
+      padding-left: 9px;
+    }
 
     &-0 {
       span {
@@ -103,6 +106,9 @@
 
     &-left {
       width: 57px;
+      @include adaptive(575) {
+        width: 30px;
+      }
     }
 
     &-middle {
@@ -114,6 +120,9 @@
     &-right {
       width: 100%;
       max-width: calc(100% - (72px + 57px));
+      @include adaptive(575) {
+        max-width: calc(100% - (72px + 30px));
+      }
     }
 
     &-check {
@@ -124,12 +133,19 @@
       height: 56px;
       background-color: #ffa200;
       clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+      @include adaptive(575) {
+        width: 30px;
+        height: 29px;
+      }
 
       span {
         transform: rotate(90deg);
         color: $c-white;
         font-size: 48px;
         font-family: "DCC-Scisor", sans-serif;
+        @include adaptive(575) {
+          font-size: 25px;
+        }
       }
     }
 
@@ -174,6 +190,9 @@
       display: flex;
       flex-direction: column;
       padding-left: 20px;
+      @include adaptive(575) {
+        padding-left: 0;
+      }
     }
 
     &-left {
@@ -182,6 +201,10 @@
       align-items: center;
       justify-content: center;
       width: 187px;
+      @include adaptive(575) {
+        width: 65px;
+        text-align: center;
+      }
 
       &:after {
         content: '';
@@ -200,6 +223,11 @@
       max-width: calc(100% - (187px + 65px));
       padding-left: 37px;
       padding-right: 10px;
+      @include adaptive(575) {
+        max-width: calc(100% - (65px + 65px));
+        padding-left: 10px;
+        padding-right: 5px;
+      }
     }
 
     &-right {
@@ -212,13 +240,14 @@
       color: $c-white;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 18px;
+      @include fluid(font-size, 320px, 768px, 14px, 18px);
     }
 
     &-name,
     &-desc {
       font-size: 16px;
       font-family: 'Ubuntu', sans-serif;
+      @include fluid(font-size, 320px, 768px, 14px, 16px);
     }
 
     &-name {

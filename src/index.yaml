@@ -4,7 +4,7 @@ PageList:
 
 - file: index.html
   titleName: Home
-  ready: 60
+  ready: 75
 - file: skin.html
   titleName: Skin
   ready: 60
