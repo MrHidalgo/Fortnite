@@ -12,8 +12,8 @@
     top: 0;
     height: 100%;
     @include adaptive(991) {
-      left: 0 !important;
-      width: 100% !important;
+      left: -15px !important;
+      width: calc(100% + 15px) !important;
     }
 
     &-bg {
@@ -46,9 +46,11 @@
       flex-wrap: wrap;
     }
 
-    .p-beginners & {
+    .p-beginners &,
+    .p-home & {
       @include adaptive(991) {
         flex-wrap: wrap;
+        //flex-direction: column-reverse;
       }
     }
 
@@ -66,7 +68,8 @@
         padding-right: 0;
       }
 
-      .p-beginners & {
+      .p-beginners &,
+      .p-home & {
         @include adaptive(991) {
           max-width: 100%;
           padding-right: 0;
@@ -87,7 +90,8 @@
         max-width: 100%;
       }
 
-      .p-beginners & {
+      .p-beginners &,
+      .p-home & {
         @include adaptive(991) {
           max-width: 100%;
         }

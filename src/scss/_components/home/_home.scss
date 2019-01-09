@@ -67,6 +67,20 @@
           display: flex;
           align-items: flex-start;
           justify-content: space-between;
+          @include adaptive(1199) {
+            flex-wrap: wrap;
+          }
+
+          .b-skin {
+            @include adaptive(1199) {
+              flex-basis: calc((100% - 60px) / 2);
+              margin: 0 15px 30px;
+            }
+            @include adaptive(991) {
+              flex-basis: auto;
+              margin: auto;
+            }
+          }
         }
 
         &-2 {

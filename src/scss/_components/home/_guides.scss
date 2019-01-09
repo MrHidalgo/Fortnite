@@ -158,15 +158,25 @@
 
     &-0 {
       max-width: 50%;
+      @include adaptive(991) {
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
     }
 
     &-1,
     &-2 {
       max-width: 25%;
+      @include adaptive(991) {
+        max-width: calc((100% - 48px) / 2);
+      }
     }
 
     &-wrapper {
       display: flex;
+      @include adaptive(991) {
+        flex-wrap: wrap;
+      }
     }
 
     img {
