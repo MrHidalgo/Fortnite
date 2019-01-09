@@ -249,6 +249,12 @@
     padding-bottom: 9px;
   }
 
+  &__like {
+    @include adaptive(575) {
+      padding-bottom: 30px;
+    }
+  }
+
   &__data {
     &-0 {
       padding-right: 30px;

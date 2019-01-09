@@ -8,11 +8,17 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
 
     &-left,
     &-right {
       width: 100%;
       max-width: calc((100% - 12px) / 2);
+      @include adaptive(767) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -21,8 +27,11 @@
     display: flex;
     flex-direction: column;
     min-height: 294px;
-    padding-bottom: 88px;
     margin-bottom: 46px;
+    @include adaptive(767) {
+      min-height: 0;
+      @include fluid(padding-bottom, 320px, 767px, 55px, 88px);
+    }
 
     &-bg,
     &-triangle {
@@ -87,7 +96,7 @@
         padding-left: 15px;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 30px;
+        @include fluid(font-size, 320px, 767, 24px, 30px);
       }
     }
 
@@ -134,14 +143,14 @@
       color: #273c43;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 30px;
+      @include fluid(font-size, 320px, 767, 24px, 30px);
     }
 
     &-twitter {
       color: #bfbfbf;
-      font-size: 16px;
       font-family: 'Ubuntu', sans-serif;
       @include transition(color);
+      @include fluid(font-size, 320px, 767, 14px, 16px);
 
       &:hover {
         color: #273c43;

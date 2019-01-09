@@ -75,9 +75,16 @@
       text-transform: uppercase;
       text-align: center;
       @include fluid(font-size, 768px, 1439px, 50px, 73px);
+      @include adaptive(767) {
+        @include fluid(font-size, 320px, 767px, 36px, 50px);
+      }
 
       span {
         color: #ffff00;
+        @include adaptive(767) {
+          display: block;
+          @include fluid(font-size, 320px, 767px, 50px, 73px);
+        }
       }
     }
 
@@ -87,6 +94,9 @@
       font-size: 20px;
       font-family: 'Ubuntu', sans-serif;
       text-align: center;
+      @include adaptive(767) {
+        @include fluid(font-size, 320px, 767px, 16px, 20px);
+      }
     }
   }
   // top :: end
@@ -187,6 +197,10 @@
       @include adaptive(991) {
         padding: 36px 29px 36px 54px;
       }
+      @include adaptive(767) {
+        min-height: 0;
+        padding: 30px 20px 15px 30px;
+      }
 
       &-bg {
         z-index: -1;
@@ -250,6 +264,9 @@
     position: relative;
     top: -150px;
     min-height: 1458px;
+    @include adaptive(575) {
+      overflow: hidden;
+    }
 
     &-bg {
       height: calc(100% - 34px);
@@ -307,11 +324,14 @@
       min-height: 97px;
       margin-left: auto;
       margin-right: auto;
-      padding: 5px 36px 5px 42px;
+      padding: 10px 36px 10px 42px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: $c-white;
+      @include adaptive(575) {
+        position: relative;
+      }
 
       &--0 {
         top: calc(100% - (98px - 36px));
@@ -403,6 +423,12 @@
         @include adaptive(991) {
           width: calc((100% - 20px) / 2);
         }
+        @include adaptive(767) {
+          width: 100%;
+          max-width: 400px;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
 
       .b-skin {
@@ -430,6 +456,12 @@
           @include adaptive(1199) {
             width: 150px;
           }
+          @include adaptive(767) {
+            width: 190px;
+          }
+          @include adaptive(575) {
+            width: 190px;
+          }
         }
 
         &:nth-of-type(2) {
@@ -439,6 +471,12 @@
           padding-top: 15px;
           padding-left: 25px;
           @include adaptive(1199) {
+            max-width: calc(100% - 150px);
+          }
+          @include adaptive(767) {
+            max-width: calc(100% - 190px);
+          }
+          @include adaptive(575) {
             max-width: calc(100% - 150px);
           }
 
@@ -516,21 +554,37 @@
       min-height: 327px;
       padding-top: 98px;
       padding-bottom: 98px;
+      @include adaptive(767) {
+        @include fluid(padding-top, 320px, 767px, 35px, 98px);
+        @include fluid(padding-bottom, 320px, 767px, 65px, 98px);
+      }
     }
 
     &-1 {
       display: flex;
       padding-top: 61px;
       padding-bottom: 81px;
+      @include adaptive(767) {
+        flex-direction: column;
+      }
 
       .leaked__wrapper-left {
         width: 100%;
         max-width: calc(100% - 370px);
         padding-top: 35px;
+        @include adaptive(767) {
+          max-width: 100%;
+        }
       }
 
       .leaked__wrapper-right {
         width: 370px;
+        @include adaptive(767) {
+          width: 100%;
+        }
+        @include adaptive(575) {
+          display: none;
+        }
       }
     }
 
