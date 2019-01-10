@@ -45,7 +45,8 @@
       align-items: center;
       bottom: -102px;
       left: 0;
-      width: 654px;
+      width: 100%;
+      max-width: 654px;
       min-height: 102px;
       padding-left: 16px;
       background-color: #fe23a9;
@@ -149,24 +150,32 @@
     &-0 {
       display: flex;
       justify-content: center;
-      padding-top: 60px;
       padding-bottom: 30px;
+      @include fluid(padding-top, 320px, 1439px, 30px, 60px);
     }
 
     &-1 {
       display: flex;
       padding-top: 75px;
-
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
 
       .history__wrapper-left {
         width: 100%;
         max-width: calc(100% - 370px);
         padding-right: 15px;
+        @include adaptive(767) {
+          max-width: 100%;
+        }
       }
 
       .history__wrapper-right {
         width: 370px;
         padding-bottom: 75px;
+        @include adaptive(767) {
+          display: none;
+        }
       }
     }
   }
@@ -182,7 +191,7 @@
     line-height: 1;
     text-transform: uppercase;
     font-size: 100px;
-    @include fluid(font-size, 320px, 1430px, 65px, 100px);
+    @include fluid(font-size, 320px, 1430px, 55px, 100px);
   }
 
   &__text {
@@ -203,6 +212,9 @@
     padding: 47px 54px;
     @include adaptive(991) {
       padding: 37px 44px;
+    }
+    @include adaptive(575) {
+      padding-top: 77px;
     }
 
     &-bg {
@@ -266,6 +278,7 @@
       color: $c-white;
       font-size: 18px;
       font-family: 'Ubuntu', sans-serif;
+      @include fluid(font-size, 320px, 767px, 14px, 18px);
 
       &-0 {
         padding-bottom: 30px;
@@ -290,6 +303,9 @@
     padding-left: 29px;
     background-color: #2a2a2a;
     clip-path: polygon(0 3%, 100% 0, 96% 97%, 3% 100%);
+    @include adaptive(575) {
+      margin-left: auto;
+    }
 
     &:before {
       content: '';

@@ -66,6 +66,11 @@
     &-body {
       padding-left: 27px;
       padding-right: 27px;
+      @include adaptive(575) {
+        overflow: hidden;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
 
     &-footer {
@@ -179,6 +184,9 @@
         line-height: 1;
         text-transform: uppercase;
         @include fluid(font-size, 320px, 1439px, 36px, 48px);
+        @include adaptive(575) {
+          padding-right: 5px;
+        }
       }
     }
 
@@ -196,6 +204,13 @@
       @include adaptive(1199) {
         padding-left: 30%;
       }
+      @include adaptive(575) {
+        padding-left: 0;
+        height: 97px;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 30px;
+      }
 
       > div {
         position: relative;
@@ -212,6 +227,9 @@
           align-items: center;
           justify-content: flex-end;
           padding-right: 27px;
+          @include adaptive(424) {
+            padding-right: 20px;
+          }
 
           &:after {
             content: '';
@@ -227,6 +245,16 @@
 
         &:nth-of-type(2) {
           padding-left: 27px;
+          @include adaptive(575) {
+            display: flex;
+            justify-content: flex-end;
+            padding-left: 0;
+            padding-right: 27px;
+            padding-top: 10px;
+          }
+          @include adaptive(424) {
+            padding-right: 20px;
+          }
         }
       }
 
@@ -257,6 +285,15 @@
         }
         @include adaptive(991) {
           width: calc((100% - 24px) / 4);
+        }
+        @include adaptive(767) {
+          width: calc((100% - 18px) / 3);
+        }
+        @include adaptive(575) {
+          width: calc((100% - 12px) / 2);
+        }
+        @include adaptive(424) {
+          width: 100%;
         }
 
         &__points {
@@ -289,6 +326,9 @@
       justify-content: space-between;
       min-height: 97px;
       padding: 5px 21px;
+      @include adaptive(575) {
+        flex-direction: column;
+      }
 
       &:before {
         content: '';
@@ -313,6 +353,13 @@
         min-height: 69px;
         padding: 5px 10px;
         clip-path: polygon(0 10%, 100% 0, 99% 100%, 0 90%);
+        @include adaptive(575) {
+          margin-bottom: 5px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
 
         &:before {
           content: '';

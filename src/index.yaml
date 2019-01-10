@@ -19,7 +19,7 @@ PageList:
   ready: 60
 - file: history.html
   titleName: History
-  ready: 60
+  ready: 75
 - file: history-sub.html
   titleName: History sub
   ready: 60
