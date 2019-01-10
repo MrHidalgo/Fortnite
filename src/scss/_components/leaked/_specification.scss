@@ -221,12 +221,20 @@
     &-wrapper {
       display: flex;
       align-items: flex-start;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+      }
     }
 
     &-left {
       width: 100%;
       max-width: 330px;
       padding-right: 22px;
+      @include adaptive(575) {
+        max-width: 100%;
+        padding-bottom: 15px;
+        padding-right: 0;
+      }
 
       .b-skin {
         align-items: center;
@@ -241,6 +249,9 @@
       flex-direction: column;
       width: 253px;
       color: $c-white;
+      @include adaptive(575) {
+        width: 100%;
+      }
 
       ul {
         display: flex;
@@ -279,6 +290,9 @@
       line-height: 1;
       text-transform: uppercase;
       @include fluid(font-size, 320px, 1439px, 40px, 72px);
+      @include adaptive(575) {
+        text-align: center;
+      }
     }
 
     &-btn {
@@ -290,6 +304,10 @@
       max-width: 157px;
       height: 42px;
       padding: 5px 15px;
+      @include adaptive(575) {
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       &:hover {
         .specification__bot-btn-bg {

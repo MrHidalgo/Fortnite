@@ -43,6 +43,12 @@
         @include adaptive(991) {
           flex-direction: row;
         }
+        @include adaptive(767) {
+          min-height: 0;
+          flex-direction: column-reverse;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
 
         &-left {
           width: 330px;
@@ -53,6 +59,10 @@
           @include adaptive(991) {
             width: 330px;
             padding-bottom: 0;
+          }
+          @include adaptive(767) {
+            width: 100%;
+            padding-bottom: 30px;
           }
         }
 
@@ -65,6 +75,10 @@
           }
           @include adaptive(991) {
             max-width: calc(100% - 330px);
+          }
+          @include adaptive(767) {
+            max-width: 100%;
+            padding-top: 30px;
           }
         }
       }

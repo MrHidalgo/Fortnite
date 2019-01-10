@@ -28,7 +28,7 @@ PageList:
   ready: 75
 - file: leaked-sub.html
   titleName: Leaked sub
-  ready: 60
+  ready: 75
 
 - file: 404.html
   titleName: 404

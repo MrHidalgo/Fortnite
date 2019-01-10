@@ -208,6 +208,9 @@
 
     &-body {
       padding: 51px 35px 68px;
+      @include adaptive(575) {
+        padding: 31px 15px 38px;
+      }
     }
 
     &-row {
@@ -234,6 +237,13 @@
       @include adaptive(991) {
         width: calc((100% - 88px) / 4);
         margin-bottom: 0;
+      }
+      @include adaptive(767) {
+        width: calc((100% - 44px) / 2);
+        margin-bottom: 38px;
+      }
+      @include adaptive(575) {
+        width: calc((100% - 22px) / 1);
       }
 
       > div {
@@ -266,6 +276,9 @@
   // preview
   &__preview {
     min-height: 558px;
+    @include adaptive(575) {
+      min-height: 0;
+    }
 
     &--empty {
       min-height: 395px;
@@ -308,6 +321,9 @@
       max-width: 100%;
       height: 396px;
       border: 5px solid $c-white;
+      @include adaptive(575) {
+        height: 296px;
+      }
 
       video {
         position: absolute;
@@ -493,17 +509,33 @@
     &-control {
       display: flex;
       align-items: center;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+      }
 
       > div {
         &:nth-of-type(1) {
           width: 60px;
+          @include adaptive(575) {
+            order: 2;
+            width: 50%;
+          }
         }
         &:nth-of-type(2) {
           width: 100%;
           max-width: calc(100% - (60px + 75px));
+          @include adaptive(575) {
+            order: 1;
+            max-width: 100%;
+            padding-bottom: 15px;
+          }
         }
         &:nth-of-type(3) {
           width: 75px;
+          @include adaptive(575) {
+            order: 3;
+            width: 50%;
+          }
         }
 
         p,
@@ -579,6 +611,9 @@
       display: flex;
       align-items: flex-start;
       padding-top: 22px;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+      }
 
       > div {
         display: flex;
@@ -587,11 +622,19 @@
         &:nth-of-type(1) {
           width: 100%;
           max-width: calc(100% - 100px);
+          @include adaptive(575) {
+            max-width: 100%;
+            padding-bottom: 15px;
+          }
         }
 
         &:nth-of-type(2) {
           justify-content: flex-end;
           width: 100px;
+          @include adaptive(575) {
+            justify-content: flex-start;
+            width: 100%;
+          }
         }
       }
     }
@@ -733,7 +776,7 @@
       padding-left: 14px;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 48px;
+      @include fluid(font-size, 320px, 1439px, 36px, 48px);
     }
   }
   // title :: end
@@ -811,8 +854,8 @@
 
       p {
         color: $c-white;
-        font-size: 18px;
         font-family: 'Ubuntu', sans-serif;
+        @include fluid(font-size, 320px, 767px, 16px, 18px);
       }
     }
   }
