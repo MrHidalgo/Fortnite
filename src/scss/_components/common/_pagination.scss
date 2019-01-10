@@ -8,6 +8,10 @@
   margin-left: auto;
   padding-top: 6px;
   padding-bottom: 50px;
+  @include adaptive(991) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include adaptive(767) {
     display: none;
   }

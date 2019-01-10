@@ -17,7 +17,6 @@
 
 .history {
   position: relative;
-  min-height: 689px;
 
   // top
   &__top {
@@ -54,7 +53,7 @@
       color: $c-white;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 36px;
+      @include fluid(font-size, 320px, 1430px, 26px, 36px);
 
       &:before {
         content: '';
@@ -158,6 +157,7 @@
       display: flex;
       padding-top: 75px;
 
+
       .history__wrapper-left {
         width: 100%;
         max-width: calc(100% - 370px);
@@ -182,6 +182,7 @@
     line-height: 1;
     text-transform: uppercase;
     font-size: 100px;
+    @include fluid(font-size, 320px, 1430px, 65px, 100px);
   }
 
   &__text {
@@ -190,9 +191,9 @@
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-    font-size: 20px;
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
+    @include fluid(font-size, 320px, 1430px, 16px, 20px);
   }
 
   &__content {
@@ -200,6 +201,9 @@
     max-width: 805px;
     min-height: 248px;
     padding: 47px 54px;
+    @include adaptive(991) {
+      padding: 37px 44px;
+    }
 
     &-bg {
       z-index: -1;
