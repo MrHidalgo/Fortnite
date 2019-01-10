@@ -37,29 +37,50 @@
 
       &__wrapper {
         min-height: 216px;
+        @include adaptive(1199) {
+          flex-direction: column-reverse;
+        }
+        @include adaptive(991) {
+          flex-direction: row;
+        }
 
         &-left {
           width: 330px;
+          @include adaptive(1199) {
+            width: 100%;
+            padding-bottom: 30px;
+          }
+          @include adaptive(991) {
+            width: 330px;
+            padding-bottom: 0;
+          }
         }
 
         &-right {
           width: 100%;
           max-width: calc(100% - 330px);
+          @include adaptive(1199) {
+            max-width: 100%;
+            padding-top: 30px;
+          }
+          @include adaptive(991) {
+            max-width: calc(100% - 330px);
+          }
         }
       }
 
       &__title {
-        font-size: 55px;
+        @include fluid(font-size, 320px, 1365px, 25px, 55px);
       }
 
       &__data {
         &-0 {
           padding-right: 20px;
-          font-size: 140px;
+          @include fluid(font-size, 320px, 1365px, 100px, 140px);
         }
 
         &-1 {
-          font-size: 63px;
+          @include fluid(font-size, 320px, 1365px, 40px, 63px);
         }
       }
     }

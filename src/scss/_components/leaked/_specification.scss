@@ -76,15 +76,34 @@
     display: flex;
     align-items: center;
     padding-top: 36px;
+    @include adaptive(991) {
+      flex-direction: column;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include adaptive(991) {
+        width: 100%;
+      }
+    }
+
+    &-left {
+      padding-right: 15px;
+      @include adaptive(991) {
+        padding-right: 0;
+        padding-bottom: 30px;
+      }
     }
 
     &-right {
       display: flex;
       justify-content: flex-end;
+      padding-left: 15px;
+      @include adaptive(991) {
+        justify-content: center;
+        padding-left: 0;
+      }
     }
   }
 
@@ -206,7 +225,7 @@
 
     &-left {
       width: 100%;
-      max-width: calc(100% - 253);
+      max-width: 330px;
       padding-right: 22px;
 
       .b-skin {
@@ -259,7 +278,7 @@
       padding-bottom: 10px;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 72px;
+      @include fluid(font-size, 320px, 1439px, 40px, 72px);
     }
 
     &-btn {
@@ -338,15 +357,15 @@
         color: $c-white;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 18px;
+        @include fluid(font-size, 320px, 1439px, 14px, 18px);
       }
     }
 
     &-subtitle {
       padding-top: 15px;
       padding-bottom: 15px;
-      font-size: 20px;
       font-family: 'Ubuntu', sans-serif;
+      @include fluid(font-size, 320px, 1439px, 16px, 20px);
     }
   }
 }

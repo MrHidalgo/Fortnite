@@ -51,7 +51,8 @@
     }
 
     .p-beginners &,
-    .p-home & {
+    .p-home &,
+    .p-leaked-sub & {
       @include adaptive(991) {
         flex-wrap: wrap;
       }
@@ -78,7 +79,8 @@
       }
 
       .p-beginners &,
-      .p-home & {
+      .p-home &,
+      .p-leaked-sub & {
         @include adaptive(991) {
           max-width: 100%;
           padding-right: 0;
@@ -100,7 +102,8 @@
       }
 
       .p-beginners &,
-      .p-home & {
+      .p-home &,
+      .p-leaked-sub & {
         @include adaptive(991) {
           max-width: 100%;
         }
