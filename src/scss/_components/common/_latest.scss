@@ -188,11 +188,11 @@
     }
 
     @each $className, $colorVal in
-        (0, 'radial-gradient(#ea8d23,#78371d)'),
-        (1, 'radial-gradient(#c359ff,#4b2483)'),
-        (2, 'radial-gradient(#2cc1ff,#143977)'),
-        (3, 'radial-gradient(#69bb1e,#175117)'),
-        (4, 'radial-gradient(#bebebe,#646464)')
+      (0, 'radial-gradient(#ea8d23,#c04d1f)'),
+      (1, 'radial-gradient(#c359ff,#701fe5)'),
+      (2, 'radial-gradient(#2cc1ff,#215dc2)'),
+      (3, 'radial-gradient(#69bb1e,#227622)'),
+      (4, 'radial-gradient(#bebebe,#848282)')
     {
       &-#{$className} {
         .latest__block-photo {
