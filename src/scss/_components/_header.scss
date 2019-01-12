@@ -341,18 +341,10 @@
       width: 46px;
       height: 44px;
       border: none;
-      background-color: transparent;
-      background-image: url('../img/header-search-bg.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      @include transition(background-color 0.5s);
+      background-color: #ffd500;
+      clip-path: polygon(0 0, 100% 7%, 98% 95%, 3% 100%);
       @include adaptive(1199) {
         background-color: #ffd400;
-      }
-      
-      &:hover {
-        background-color: #ffd400;
-        @include transition(background-color 0.5s);
       }
 
       .icon-font {
