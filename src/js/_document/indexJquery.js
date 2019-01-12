@@ -85,6 +85,16 @@ $(document).ready((ev) => {
       }
     });
   };
+
+  const initSearchExpand = () => {
+    $('[search-btn-js]').on('click', (ev) => {
+      if($(window).width() > 767) {
+        $(ev.currentTarget)
+          .closest('.header__search')
+          .toggleClass('is-active');
+      }
+    })
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -116,6 +126,15 @@ $(document).ready((ev) => {
     initFilterCollapse();
     initItemNavBtn();
     initVideoLeakedSub();
+    initSearchExpand();
+
+    $('body').on('click', function (e) {
+      const className = ".header__search";
+
+      if (!$(e.target).closest(className).length) {
+        $('.header__search').removeClass('is-active');
+      }
+    });
   };
   initJquery();
 });

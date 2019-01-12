@@ -62,8 +62,8 @@ header#header.header
 
           // header search button
           .header__search
-            span!= "Search"
-            a.header__search-btn(href="#" class="" title="")
+            input(type="text" placeholder='Search')
+            a.header__search-btn(href="#" class="" title="" search-btn-js)
               i.icon-font.icon-search
 
 // HEADER :: END
