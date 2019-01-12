@@ -13,7 +13,7 @@ PageList:
   ready: 75
 - file: shop.html
   titleName: Shop
-  ready: 60
+  ready: 75
 - file: shop-rotation.html
   titleName: Shop rotation
   ready: 60
@@ -24,7 +24,8 @@ PageList:
   titleName: History sub
   ready: 60
 - file: leaked.html
-  titleName: Leaked  ready: 75
+  titleName: Leaked
+  ready: 75
 - file: leaked-sub.html
   titleName: Leaked sub
   ready: 75
@@ -55,4 +56,3 @@ PageList:
 - file: emotes-1.html
   titleName: Emotes no rarity and category
   ready: 75
-

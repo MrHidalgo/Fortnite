@@ -85,6 +85,10 @@
       align-items: flex-start;
       justify-content: space-between;
       padding: 20px 23px 35px;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
 
     &-title {
@@ -101,7 +105,7 @@
         padding-left: 14px;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 40px;
+        @include fluid(font-size, 320px, 991px, 36px, 40px);
       }
     }
 
@@ -117,6 +121,10 @@
       display: flex;
       flex-direction: column;
       width: calc((100% - 20px) / 3);
+      @include adaptive(767) {
+        width: 100%;
+        margin-bottom: 30px;
+      }
     }
 
     &-category {
@@ -127,6 +135,11 @@
       padding-left: 32px;
       margin-bottom: 26px;
       color: $c-white;
+      @include adaptive(767) {
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
 
       &-bg {
         z-index: -1;
@@ -178,6 +191,12 @@
       align-items: flex-start;
       min-height: 95px;
       margin-bottom: 26px;
+      @include adaptive(767) {
+        width: 100%;
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       &:last-of-type {
         margin-bottom: 0;
@@ -214,7 +233,7 @@
       color: #273c43;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 24px;
+      @include fluid(font-size, 320px, 991px, 20px, 24px);
     }
 
     &-items {
@@ -311,7 +330,6 @@
 
     &-bg {
 
-
       &,
       &:before {
         position: absolute;
@@ -350,13 +368,14 @@
 
       .icon-font {
         font-size: 42px;
+        @include fluid(font-size, 320px, 1439px, 35px, 42px);
       }
 
       p {
         padding-left: 12px;
         line-height: 1;
         text-transform: uppercase;
-        font-size: 40px;
+        @include fluid(font-size, 320px, 1439px, 33px, 40px);
       }
     }
 
@@ -365,6 +384,9 @@
       align-items: center;
       justify-content: space-between;
       padding: 22px 40px 40px;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
     }
 
     &-btn {
@@ -376,6 +398,9 @@
       max-width: 152px;
       min-height: 57px;
       clip-path: polygon(0 0, 100% 5%, 98% 95%, 2% 100%);
+      @include adaptive(767) {
+        margin: 10px 30px;
+      }
 
       &--0 {
         background-color: #09b958;
@@ -444,6 +469,12 @@
     align-items: center;
     min-height: 111px;
     padding: 40px 45px;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
+    @include adaptive(575) {
+      padding: 20px 25px;
+    }
 
     &-bg,
     &-triangle {
@@ -506,7 +537,13 @@
     }
 
     &-left {
+      z-index: 2;
+      position: relative;
       width: 150px;
+      @include adaptive(767) {
+        width: 100%;
+        padding-bottom: 30px;
+      }
 
       p {
         color: #273c43;
@@ -517,11 +554,24 @@
     }
 
     &-right {
+      z-index: 3;
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: space-around;
       width: 100%;
       max-width: calc(100% - 150px);
+      @include adaptive(767) {
+        max-width: 100%;
+      }
+      @include adaptive(575) {
+        flex-direction: column;
+        align-items: flex-start;
+
+        > div {
+          margin-bottom: 30px;
+        }
+      }
     }
   }
   // follow :: end

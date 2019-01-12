@@ -54,7 +54,7 @@
       color: $c-white;
       line-height: 1;
       text-transform: uppercase;
-      @include fluid(font-size, 320px, 1430px, 26px, 36px);
+      @include fluid(font-size, 320px, 1439px, 26px, 36px);
 
       &:before {
         content: '';
@@ -191,7 +191,7 @@
     line-height: 1;
     text-transform: uppercase;
     font-size: 100px;
-    @include fluid(font-size, 320px, 1430px, 55px, 100px);
+    @include fluid(font-size, 320px, 1439px, 55px, 100px);
   }
 
   &__text {
@@ -202,7 +202,7 @@
     line-height: 1.6;
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
-    @include fluid(font-size, 320px, 1430px, 16px, 20px);
+    @include fluid(font-size, 320px, 1439px, 16px, 20px);
   }
 
   &__content {

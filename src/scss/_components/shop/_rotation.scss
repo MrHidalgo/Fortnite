@@ -389,8 +389,8 @@
 
       p {
         color: #ffc3fa;
-        font-size: 48px;
         text-transform: uppercase;
+        @include fluid(font-size, 320px, 991px, 40px, 48px);
       }
     }
   }

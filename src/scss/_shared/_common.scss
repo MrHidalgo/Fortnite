@@ -59,6 +59,12 @@
       }
     }
 
+    .p-shop & {
+      @include adaptive(1199) {
+        flex-wrap: wrap;
+      }
+    }
+
     .p-home & {
       @include adaptive(991) {
         flex-direction: column-reverse;
@@ -88,6 +94,13 @@
           padding-right: 0;
         }
       }
+
+      .p-shop & {
+        @include adaptive(1199) {
+          max-width: 100%;
+          padding-right: 0;
+        }
+      }
     }
 
     &-right {
@@ -108,6 +121,12 @@
       .p-leaked-sub &,
       .p-history & {
         @include adaptive(991) {
+          max-width: 100%;
+        }
+      }
+
+      .p-shop & {
+        @include adaptive(1199) {
           max-width: 100%;
         }
       }
