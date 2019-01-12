@@ -1312,26 +1312,6 @@
         font-weight: bold;
       }
     }
-
-    .s-leak__image-block {
-      > div {
-        background-image: url('../img/img-transparent-bg.png');
-        background-repeat: repeat;
-
-        img {
-          position: relative;
-          top: 50%;
-          transform: translateY(-50%);
-          display: block;
-          width: auto;
-          height: auto;
-          max-width: 100%;
-          max-height: 100%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-    }
   }
   // images :: end
 

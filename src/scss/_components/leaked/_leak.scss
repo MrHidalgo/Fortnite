@@ -96,7 +96,7 @@
         padding-left: 15px;
         line-height: 1;
         text-transform: uppercase;
-        @include fluid(font-size, 320px, 767, 24px, 30px);
+        @include fluid(font-size, 320px, 767px, 24px, 30px);
       }
     }
 
@@ -143,14 +143,14 @@
       color: #273c43;
       line-height: 1;
       text-transform: uppercase;
-      @include fluid(font-size, 320px, 767, 24px, 30px);
+      @include fluid(font-size, 320px, 767px, 24px, 30px);
     }
 
     &-twitter {
       color: #bfbfbf;
       font-family: 'Ubuntu', sans-serif;
       @include transition(color);
-      @include fluid(font-size, 320px, 767, 14px, 16px);
+      @include fluid(font-size, 320px, 767px, 14px, 16px);
 
       &:hover {
         color: #273c43;
