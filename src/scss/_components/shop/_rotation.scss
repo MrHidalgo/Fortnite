@@ -48,6 +48,13 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 80px 30px 75px;
+    @include adaptive(991) {
+      flex-wrap: wrap;
+    }
+    @include adaptive(575) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
     &-bg,
     &-triangle {
@@ -101,6 +108,9 @@
     &-right {
       width: 100%;
       max-width: calc((100% - 30px) / 2);
+      @include adaptive(991) {
+        max-width: 100%;
+      }
 
       .info__subtitle {
         min-height: 93px;
@@ -109,8 +119,8 @@
 
         p {
           line-height: 1;
-          font-size: 47px;
           text-transform: uppercase;
+          @include fluid(font-size, 320px, 991px, 36px, 47px);
         }
       }
     }
@@ -152,6 +162,9 @@
     > div {
       width: calc((100% - (12px * 2)) / 3);
       margin-bottom: 35px;
+      @include adaptive(575) {
+        width: 100%;
+      }
     }
 
     .b-skin {
@@ -210,7 +223,7 @@
       text-shadow: 0 6px 0 rgba(0, 0, 0, 0.16);
       line-height: 1;
       text-transform: uppercase;
-      font-size: 100px;
+      @include fluid(font-size, 320px, 1439px, 45px, 100px);
 
       span {
         color: #ffd600;
@@ -230,6 +243,12 @@
     min-height: 94px;
     padding-left: 40px;
     padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    @include adaptive(991) {
+      max-width: 100%;
+      left: 0;
+    }
 
     &-bg,
     &-triangle {
@@ -283,31 +302,44 @@
       max-width: 1031px;
       margin-left: auto;
       margin-right: auto;
+      @include adaptive(991) {
+        flex-direction: column-reverse;
+        max-width: 100%;
+      }
     }
 
     .icon-calendar {
       color: $c-white;
-      font-size: 61px;
+      @include fluid(font-size, 320px, 1439px, 40px, 61px);
     }
 
     p {
+      z-index: 2;
+      position: relative;
       display: flex;
       align-items: center;
       padding-left: 9px;
       color: $c-white;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 43px;
+      @include fluid(font-size, 320px, 1439px, 33px, 43px);
+      @include adaptive(575) {
+        flex-wrap: wrap;
+      }
 
       span {
         padding-left: 10px;
         padding-right: 10px;
-        font-size: 30px;
+        @include fluid(font-size, 320px, 1439px, 25px, 30px);
+        @include adaptive(575) {
+          display: none;
+        }
       }
 
       a {
         color: $c-white;
         font-size: 30px;
+        @include fluid(font-size, 320px, 1439px, 25px, 30px);
       }
     }
   }
@@ -321,6 +353,10 @@
     width: 100%;
     max-width: 325px;
     min-height: 112px;
+    @include adaptive(991) {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     &-bg {
       z-index: -1;

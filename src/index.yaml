@@ -16,7 +16,7 @@ PageList:
   ready: 75
 - file: shop-rotation.html
   titleName: Shop rotation
-  ready: 60
+  ready: 75
 - file: history.html
   titleName: History
   ready: 75
