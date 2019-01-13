@@ -6,7 +6,7 @@
   width: 100%;
   max-width: 696px;
   margin-left: auto;
-  @include adaptive(991) {
+  @include adaptive(1199) {
     max-width: 100%;
   }
 }
@@ -246,11 +246,18 @@
   &__main {
     &-header {
       display: flex;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+      }
 
       &-left {
         z-index: 2;
         position: relative;
         width: 198px;
+        @include adaptive(575) {
+          margin-left: auto;
+          margin-right: auto;
+        }
 
         .b-skin {
           width: 100%;
@@ -263,6 +270,9 @@
         position: relative;
         width: 100%;
         max-width: calc(100% - 198px);
+        @include adaptive(575) {
+          max-width: 100%;
+        }
       }
 
       &-title {
@@ -306,7 +316,7 @@
           color: $c-white;
           line-height: 1;
           text-transform: uppercase;
-          font-size: 48px;
+          @include fluid(font-size, 320px, 991px, 36px, 48px);
         }
       }
 
@@ -408,6 +418,9 @@
         padding: 25px 15px 5px 5px;
         background-color: #fcdb90;
         clip-path: polygon(0 0, 100% 1%, 96% 100%, 0 100%);
+        @include adaptive(575) {
+          flex-wrap: wrap;
+        }
 
         &:before {
           content: '';
@@ -446,10 +459,10 @@
             height: 33px;
             color: $c-white;
             line-height: 1;
-            font-size: 18px;
             text-transform: uppercase;
             background-color: #e9af35;
             clip-path: polygon(0 0, 100% 1%, 97% 100%, 0 100%);
+            @include fluid(font-size, 320px, 991px, 14px, 18px);
 
             &:before {
               content: '';
@@ -479,6 +492,9 @@
       border: 5px solid $c-white;
       box-shadow: 0 2px 10px 2px rgba($c-black, 0.15);
       @extend %radialGradientOrange;
+      @include adaptive(575) {
+        max-width: 100%;
+      }
 
       &:before {
         content: '';
@@ -559,6 +575,15 @@
           padding: 16px 25px 15px 14px;
           background-color: rgba(#313131, 0.9);
           clip-path: polygon(0 3%, 100% 0, 97% 100%, 1% 96%);
+          @include adaptive(767) {
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          @include adaptive(575) {
+            left: -85px;
+          }
 
           > div {
             &:nth-of-type(1) {
@@ -676,6 +701,10 @@
       border: 4px solid $c-white;
       box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.08);
       background-image: radial-gradient( 50% 50%, circle closest-side, rgb(33,33,33) 0%, rgb(0,0,0) 100%);
+      @include adaptive(767) {
+        width: 100%;
+        max-width: 621px;
+      }
 
       .img-comp-container {
         position: absolute;
@@ -870,6 +899,9 @@
         padding: 5px 15px 5px 30px;
         margin-bottom: 2px;
         background-color: #5c9ab0;
+        @include adaptive(575) {
+          flex-wrap: wrap;
+        }
 
         &:nth-of-type(1) {
           clip-path: polygon(0 0, 99% 2%, 100% 100%, 0.5% 97%);
@@ -893,6 +925,11 @@
           color: $c-white;
           font-size: 16px;
           font-family: 'Ubuntu', sans-serif;
+          @include adaptive(575) {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
         }
       }
     }
@@ -908,10 +945,21 @@
         width: 50%;
         max-width: calc((100% - 14px) / 2);
         padding-bottom: 14px;
+        @include adaptive(767) {
+          width: 100%;
+          max-width: 100%;
+        }
+        @include adaptive(575) {
+          flex-wrap: wrap;
+        }
       }
 
       &-left {
         width: 153px;
+        @include adaptive(575) {
+          margin-left: auto;
+          margin-right: auto;
+        }
 
         .b-skin {
           width: 100%;
@@ -923,6 +971,10 @@
         width: 100%;
         max-width: calc(100% - 153px);
         padding-left: 14px;
+        @include adaptive(575) {
+          max-width: 100%;
+          text-align: center;
+        }
 
         h5 {
           color: #273c43;
@@ -1022,11 +1074,17 @@
       justify-content: space-between;
       min-height: 342px;
       margin-bottom: 20px;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+      }
 
       &-left,
       &-right {
         width: 100%;
         max-width: calc((100% - 20px) / 2);
+        @include adaptive(575) {
+          max-width: 100%;
+        }
       }
 
       &-left {
@@ -1045,6 +1103,9 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
+            @include adaptive(575) {
+              position: relative;
+            }
           }
         }
       }
@@ -1160,6 +1221,9 @@
       display: flex;
       align-items: flex-start;
       padding-bottom: 24px;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+      }
 
       &-left {
         z-index: 1;
@@ -1177,6 +1241,9 @@
         position: relative;
         width: 100%;
         max-width: calc(100% - 209px);
+        @include adaptive(575) {
+          max-width: 100%;
+        }
       }
 
       &-title {
@@ -1193,13 +1260,16 @@
           color: $c-white;
           line-height: 1;
           text-transform: uppercase;
-          font-size: 36px;
+          @include fluid(font-size, 320px, 991px, 30px, 36px);
         }
       }
 
       &-btn {
         display: flex;
         align-items: center;
+        @include adaptive(767) {
+          flex-direction: column;
+        }
 
         &--orange {
           color: #ff9839;
@@ -1229,6 +1299,9 @@
 
           &:last-of-type {
             margin-left: 9px;
+            @include adaptive(767) {
+              margin-top: 5px;
+            }
           }
 
           &:before {
@@ -1276,6 +1349,9 @@
           color: $c-white;
           font-size: 16px;
           font-family: 'Ubuntu', sans-serif;
+          @include adaptive(767) {
+            font-size: 14px;
+          }
         }
 
         p {}
@@ -1290,6 +1366,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
 
       &-0 {
         margin-bottom: 20px;
@@ -1328,6 +1407,15 @@
     }
   }
   &__images {
+    .s-leak__image-block {
+      @include adaptive(1199) {
+        width: calc((100% - 66px) / 3);
+      }
+      @include adaptive(575) {
+        width: 100%;
+      }
+    }
+
     &-text {
       padding-bottom: 35px;
       color: #273c43;
@@ -1371,6 +1459,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include adaptive(575) {
+          flex-wrap: wrap;
+        }
       }
 
       &-3 {
@@ -1412,6 +1503,9 @@
       flex-direction: column;
       width: 100%;
       max-width: calc((100% - 32px) / 3);
+      @include adaptive(575) {
+        max-width: 100%;
+      }
 
       > p {
         padding-bottom: 7px;
@@ -1539,6 +1633,9 @@
     margin-bottom: 75px;
 
     .section-resize {
+      @include adaptive(767) {
+        width: calc(100% + 30px) !important;
+      }
       &-bg {
         background-color: #262626;
 
@@ -1607,6 +1704,11 @@
       align-items: flex-start;
       justify-content: space-between;
       padding: 37px 15px 170px;
+      @include adaptive(767) {
+        padding-left: 0;
+        padding-right: 15px;
+        padding-bottom: 100px;
+      }
     }
 
     &-block {
@@ -1614,15 +1716,24 @@
       align-items: center;
       width: calc((100% - 15px) / 2);
       margin-bottom: 30px;
+      @include adaptive(767) {
+        width: 100%;
+      }
 
       > div {
         &:nth-of-type(1) {
           width: 169px;
+          @include adaptive(575) {
+            width: 130px;
+          }
         }
         &:nth-of-type(2) {
           width: 100%;
           max-width: calc(100% - 169px);
           padding-left: 15px;
+          @include adaptive(575) {
+            max-width: calc(100% - 130px);
+          }
         }
 
         .b-skin {

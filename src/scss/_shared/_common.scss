@@ -20,6 +20,13 @@
       width: calc(100% + 30px) !important;
     }
 
+    .p-skin & {
+      @include adaptive(1199) {
+        left: -15px !important;
+        width: calc(100% + 15px) !important;
+      }
+    }
+
     &-bg {
       z-index: -1;
       position: absolute;
@@ -60,7 +67,8 @@
     }
 
     .p-shop &,
-    .p-history & {
+    .p-history &,
+    .p-skin & {
       @include adaptive(1199) {
         flex-wrap: wrap;
       }
@@ -97,7 +105,8 @@
       }
 
       .p-shop &,
-      .p-history & {
+      .p-history &,
+      .p-skin & {
         @include adaptive(1199) {
           max-width: 100%;
           padding-right: 0;
@@ -128,7 +137,8 @@
       }
 
       .p-shop &,
-      .p-history & {
+      .p-history &,
+      .p-skin & {
         @include adaptive(1199) {
           max-width: 100%;
         }
