@@ -59,7 +59,8 @@
       }
     }
 
-    .p-shop & {
+    .p-shop &,
+    .p-history & {
       @include adaptive(1199) {
         flex-wrap: wrap;
       }
@@ -95,7 +96,8 @@
         }
       }
 
-      .p-shop & {
+      .p-shop &,
+      .p-history & {
         @include adaptive(1199) {
           max-width: 100%;
           padding-right: 0;
@@ -125,7 +127,8 @@
         }
       }
 
-      .p-shop & {
+      .p-shop &,
+      .p-history & {
         @include adaptive(1199) {
           max-width: 100%;
         }

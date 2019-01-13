@@ -58,6 +58,9 @@
     display: flex;
     flex-wrap: wrap;
     padding: 30px 8px 16px 18px;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
   }
 
   &__footer {
@@ -90,26 +93,35 @@
     }
 
     .icon-strike-month {
-      font-size: 42px;
+      @include fluid(font-size, 320px, 767px, 36px, 42px);
     }
 
     p {
       padding-left: 23px;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 48px;
+      @include fluid(font-size, 320px, 767px, 36px, 48px);
     }
   }
 
   &__block {
     width: calc(100% / 2);
     padding-bottom: 21px;
+    @include adaptive(767) {
+      width: 100%;
+    }
 
     &:nth-child(odd) {
       padding-right: 10px;
+      @include adaptive(767) {
+        padding-right: 0;
+      }
     }
     &:nth-child(even) {
       padding-left: 10px;
+      @include adaptive(767) {
+        padding-left: 0;
+      }
     }
 
     .daily__block {
@@ -130,10 +142,15 @@
     width: 100%;
     max-width: 90%;
     min-height: 78px;
-    padding-left: 19px;
-    padding-right: 15px;
+    padding: 5px 15px 5px 15px;
     background-color: #fe48b7;
     clip-path: polygon(0 2%, 100% 0, 96% 97%, 2% 100%);
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
+    @include adaptive(575) {
+      padding-top: 10px;
+    }
 
     &:before {
       content: '';
@@ -161,6 +178,9 @@
       justify-content: space-around;
       width: 100%;
       max-width: 100%;
+      @include adaptive(575) {
+        flex-direction: column;
+      }
     }
   }
 }

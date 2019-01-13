@@ -9,6 +9,12 @@
     top: 0;
     left: 0;
     max-width: 390px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    p {
+      @include fluid(font-size, 320px, 991, 36px, 40px);
+    }
 
     &-bg {
       span {

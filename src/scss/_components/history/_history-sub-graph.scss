@@ -47,6 +47,10 @@
 
   &__body {
     padding: 30px 13px 30px 32px;
+    @include adaptive(767) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   &__footer {
@@ -87,7 +91,7 @@
       padding-left: 23px;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 48px;
+      @include fluid(font-size, 320px, 991px, 36px, 48px);
     }
   }
 
@@ -97,6 +101,11 @@
     align-items: center;
     padding: 37px 16px 47px;
     margin-bottom: 30px;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
 
     &:before {
       content: '';
@@ -196,6 +205,11 @@
       justify-content: center;
       width: 50%;
       padding: 15px;
+      @include adaptive(767) {
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+      }
     }
 
     &-graph {
@@ -204,6 +218,10 @@
       height: 324px;
       margin-left: auto;
       margin-right: auto;
+      @include adaptive(767) {
+        width: 100%;
+        max-width: 326px;
+      }
 
       canvas {
         position: absolute;
@@ -325,8 +343,11 @@
     justify-content: center;
     min-height: 67px;
     background-color: #0183b1;
-    clip-path: polygon(0 5%, 100% 0, 95% 98%, 3% 100%);
+    clip-path: polygon(0 5%, 100% 0, 97% 98%, 2% 100%);
     color: $c-white;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
 
     &:before {
       content: '';
@@ -343,17 +364,23 @@
     > div {
       display: flex;
       align-items: center;
+      @include adaptive(767) {
+        width: 100%;
+        justify-content: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
     }
 
     .icon {
       &-calendar-wr {
-        font-size: 27px;
+        @include fluid(font-size, 320px, 767px, 22px, 27px);
       }
       &-ribbon {
-        font-size: 23px;
+        @include fluid(font-size, 320px, 767px, 20px, 23px);
       }
       &-bubble {
-        font-size: 23px;
+        @include fluid(font-size, 320px, 767px, 20px, 23px);
       }
     }
 
@@ -361,13 +388,16 @@
       margin-left: 30px;
       margin-right: 30px;
       font-size: 18px;
+      @include adaptive(767) {
+        display: none;
+      }
     }
 
     p {
       padding-left: 13px;
       line-height: 1;
       text-transform: uppercase;
-      font-size: 18px;
+      @include fluid(font-size, 320px, 767px, 16px, 18px);
     }
   }
 }
