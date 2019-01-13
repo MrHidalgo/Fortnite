@@ -67,32 +67,32 @@ section#filter.filter
 
           .filter__category.filter__category-2
 
-            .filter__category-main.filter__category-main--0
+            .filter__category-main.filter__category-main--0(data-checkboxHead='0')
               span
               span
               div
                 img(src="./img/img-battle-pass-filter.png" srcset="./img/img-battle-pass-filter@2x.png 2x" alt="" title="")
                 +formCheckbox(dataFormObj.checkboxFieldBattlePass)
 
-            .filter__category-checkbox.filter__category-checkbox--0
-              +formCheckbox(dataFormObj.checkboxField13)
-              +formCheckbox(dataFormObj.checkboxField14)
-              +formCheckbox(dataFormObj.checkboxField15)
-              +formCheckbox(dataFormObj.checkboxField16)
-              +formCheckbox(dataFormObj.checkboxField17)
+            .filter__category-checkbox.filter__category-checkbox--0(data-checkboxBody='0')
+              +formCheckbox(dataFormObj.checkboxField13)(disabled='disabled')
+              +formCheckbox(dataFormObj.checkboxField14)(disabled='disabled')
+              +formCheckbox(dataFormObj.checkboxField15)(disabled='disabled')
+              +formCheckbox(dataFormObj.checkboxField16)(disabled='disabled')
+              +formCheckbox(dataFormObj.checkboxField17)(disabled='disabled')
 
-            .filter__category-main.filter__category-main--1
+            .filter__category-main.filter__category-main--1(data-checkboxHead='1')
               span
               span
               div
                 img(src="./img/img-battle-vbucks-filter.png" srcset="./img/img-battle-vbucks-filter@2x.png 2x" alt="" title="")
                 +formCheckbox(dataFormObj.checkboxFieldVBucks)
 
-            .filter__category-checkbox.filter__category-checkbox--0
-              +formCheckbox(dataFormObj.checkboxField18)
-              +formCheckbox(dataFormObj.checkboxField19)
-              +formCheckbox(dataFormObj.checkboxField20)
-              +formCheckbox(dataFormObj.checkboxField21)
+            .filter__category-checkbox.filter__category-checkbox--0(data-checkboxBody='1')
+              +formCheckbox(dataFormObj.checkboxField18)(disabled='disabled')
+              +formCheckbox(dataFormObj.checkboxField19)(disabled='disabled')
+              +formCheckbox(dataFormObj.checkboxField20)(disabled='disabled')
+              +formCheckbox(dataFormObj.checkboxField21)(disabled='disabled')
 
       .filter__wrapper-right
 

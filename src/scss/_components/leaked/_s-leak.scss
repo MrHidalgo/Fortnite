@@ -836,12 +836,19 @@
 
     &-head {
       display: flex;
+      align-items: center;
       justify-content: center;
+      width: 69px;
+      height: 69px;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 29px;
+      border-radius: 100%;
+      background-color: #35b8e7;
 
       .icon-alert {
-        color: #35b8e7;
-        font-size: 69px;
+        color: #fff;
+        font-size: 39px;
       }
     }
 

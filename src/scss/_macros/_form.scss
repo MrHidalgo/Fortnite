@@ -144,6 +144,12 @@ $form-notify-font-weight: bold;
     display: flex;
     flex-direction: column;
     margin-bottom: $form-field-margin;
+    @include transition(opacity);
+
+    &.is-disabled {
+      opacity: 0.5;
+      @include transition(opacity);
+    }
 
     &.is-error,
     &.is-invalid,
