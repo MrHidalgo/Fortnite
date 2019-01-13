@@ -198,6 +198,20 @@
       padding: 15px;
     }
 
+    &-graph {
+      position: relative;
+      width: 326px;
+      height: 324px;
+      margin-left: auto;
+      margin-right: auto;
+
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
     &-info {
       position: relative;
       width: 100%;

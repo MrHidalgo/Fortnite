@@ -176,6 +176,75 @@ $(document).ready((ev) => {
       }
     }
   };
+
+
+  const initGraph = () => {
+    let graph0 = document.getElementById("graph-0"),
+      graph1 = document.getElementById("graph-1"),
+      graph2 = document.getElementById("graph-2");
+
+    new Chart(graph0, {
+      type: "doughnut",
+      data: {
+        labels: [
+          'Outfits',
+          'Gliders',
+          'Pickaxes',
+          'Emotes'
+        ],
+        datasets: [{
+          data: [4,2,3,2],
+          borderWidth: 2,
+          backgroundColor: [
+            '#e98849',
+            '#c361f3',
+            '#3b9be4',
+            '#85e430'
+          ]
+        }]
+      }
+    });
+
+    new Chart(graph1, {
+      type: "doughnut",
+      data: {
+        labels: [
+          'Daily',
+          'Featured'
+        ],
+        datasets: [{
+          data: [5,6],
+          borderWidth: 2,
+          backgroundColor: [
+            '#a8c7bb',
+            '#ffa69e',
+          ]
+        }]
+      }
+    });
+
+    new Chart(graph2, {
+      type: "doughnut",
+      data: {
+        labels: [
+          'Legendary',
+          'Rare',
+          'Epic',
+          'Uncommon'
+        ],
+        datasets: [{
+          data: [2,1,6,2],
+          borderWidth: 2,
+          backgroundColor: [
+            '#800020',
+            '#d8beca',
+            '#ff8d00',
+            '#b2edc9'
+          ]
+        }]
+      }
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -208,7 +277,8 @@ $(document).ready((ev) => {
     initItemNavBtn();
     initVideoLeakedSub();
     initSearchExpand();
-    initImageCompaire();
+    initImageCompare();
+    initGraph();
 
     $('body').on('click', function (e) {
       const className = ".header__search";
