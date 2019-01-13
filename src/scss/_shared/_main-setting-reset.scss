@@ -5,7 +5,9 @@ body {
 
 
   &.is-hideScroll {
-    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    overflow: hidden !important;
   }
 }
 
@@ -32,8 +34,9 @@ body {
   &.is-hideScroll {
     @include adaptive(1199) {
       &:before {
+        overflow: hidden;
         content: '';
-        z-index: 999;
+        z-index: 1000;
         position: fixed;
         top: 0;
         left: 0;

@@ -134,6 +134,15 @@ $sprite: (
     total-height: 280px,
     image: '../img/sprite.png'
   ),
+  i-preview-small: (
+    offset-x: -152px,
+    offset-y: -80px,
+    width: 23px,
+    height: 13px,
+    total-width: 280px,
+    total-height: 280px,
+    image: '../img/sprite.png'
+  ),
   i-preview: (
     offset-x: -113px,
     offset-y: -171px,
@@ -322,6 +331,9 @@ $sprite: (
 }
 .i-history:before {
   @include sprite(i-history);
+}
+.i-preview-small:before {
+  @include sprite(i-preview-small);
 }
 .i-preview:before {
   @include sprite(i-preview);
