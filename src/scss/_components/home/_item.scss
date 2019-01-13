@@ -325,16 +325,15 @@
     &-name {
       z-index: 2;
       position: relative;
-      padding-left: 17px;
+      padding-bottom: 10px;
       color: $c-white;
       line-height: 1;
       text-transform: uppercase;
       font-size: 40px;
-      writing-mode: tb;
-      transform: scale(-1);
+      transform: rotate(-90deg);
       @include adaptive(767) {
-        writing-mode: horizontal-tb;
-        transform: scale(1);
+        transform: rotate(0);
+        padding-bottom: 0;
       }
     }
   }
