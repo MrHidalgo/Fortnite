@@ -235,7 +235,53 @@
       font-family: 'Anton', sans-serif;
 
       &:hover {
+        button {
+          outline: none;
+          background-color: transparent;
+          border-color: transparent;
+        }
+      }
+
+      .show {
+        button {
+          outline: none;
+          background-color: transparent !important;
+          border-color: transparent !important;
+        }
+      }
+
+      select {
+        opacity: 0;
+      }
+
+      button {
+        outline: none;
+        background-color: transparent;
+        border-color: transparent;
+
+        &:focus {
+          outline: none !important;
+          box-shadow: none;
+        }
+
+        &:after {
+          content: ">";
+          width: auto;
+          height: auto;
+          margin: 0;
+          vertical-align: middle;
+          color: $c-white;
+          font-size: 18px;
+          font-family: 'DCC-Scisor', sans-serif;
+          transform: rotate(90deg);
+          border: none;
+        }
+      }
+
+      .filter-option-inner-inner {
         color: $c-white;
+        text-transform: uppercase;
+        font-size: 18px;
       }
 
       &:before {
@@ -248,17 +294,6 @@
         height: 4px;
         background-color: $c-white;
         clip-path: polygon(0 15%, 100% 0, 99% 100%, 1% 100%);
-      }
-
-      p {
-        text-transform: uppercase;
-        font-size: 18px;
-      }
-
-      i {
-        font-size: 18px;
-        font-family: 'DCC-Scisor', sans-serif;
-        transform: rotate(90deg);
       }
     }
 

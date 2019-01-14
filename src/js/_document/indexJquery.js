@@ -289,6 +289,12 @@ $(document).ready((ev) => {
       }
     })
   };
+
+
+  const initListFilterSelect = () => {
+    $('.filter_0').selectpicker();
+    $('.filter_1').selectpicker();
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -324,6 +330,7 @@ $(document).ready((ev) => {
     initImageCompare();
     initGraph();
     initFilterRadioBtn();
+    initListFilterSelect();
 
     $('body').on('click', function (e) {
       const className = ".header__search";

@@ -16,9 +16,12 @@ section#filter.filter
 
           // 1 col
           .filter__category.filter__category-0
-            a(href="#").filter__category-title
-              p!= "Select Category"
-              i!= ">"
+
+            .filter__category-title
+              select(class="filter_0" title="Select Category")
+                option!= "Mustard"
+                option!= "Ketchup"
+                option!= "Barbecue"
 
             .filter__category-content
               p.filter__category-subtitle!= "Rarity:"
@@ -37,9 +40,12 @@ section#filter.filter
 
           // 2 col
           .filter__category.filter__category-1
-            a(href="#").filter__category-title
-              p!= "Select Set"
-              i!= ">"
+
+            .filter__category-title
+              select(class="filter_1" title="Select Set")
+                option!= "Mustard"
+                option!= "Ketchup"
+                option!= "Barbecue"
 
             .filter__category-content
               p.filter__category-subtitle!= "Types:"

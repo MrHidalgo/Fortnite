@@ -38,6 +38,7 @@
     "popper.js": "^1.14.6",
     "jquery-validation": "^1.19.0",
     "jquery.stellar": "^0.6.2",
-    "swiper": "^4.4.5"
+    "swiper": "^4.4.5",
+    "bootstrap-select": "^1.13.5"
   }
 }

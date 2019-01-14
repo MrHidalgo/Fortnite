@@ -13,5 +13,6 @@
 * - jquery.stellar;
 * - swiper;
 * - Chart.min.js;
+* - bootstrap-select;
 *
 * */
