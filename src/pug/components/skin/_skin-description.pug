@@ -14,7 +14,7 @@ section.skin.skin--description
     .skin__description
       .skin__header
         i.icon-font.icon-info
-        p!= "Description"
+        h2!= "Description"
 
       .skin__body
 
@@ -23,7 +23,7 @@ section.skin.skin--description
         .skin__description-subtitle.skin__description-subtitle-0
           .info__subtitle
             i.icon-font.icon-atom
-            p!= "Reactive"
+            h3!= "Reactive"
 
 
         .skin__description-content.skin__description-content-0
@@ -32,7 +32,7 @@ section.skin.skin--description
         .skin__description-subtitle.skin__description-subtitle-1
           .info__subtitle
             i.icon-png.i-comparison
-            p!= "Comparison"
+            h3!= "Comparison"
 
 
         .skin__description-content.skin__description-content-1
@@ -54,7 +54,7 @@ section.skin.skin--description
           .skin__description-info
             .skin__description-info-title
               span
-              p!= "miscellaneous"
+              h3!= "miscellaneous"
 
             div
               .skin__description-info-desc
@@ -74,7 +74,7 @@ section.skin.skin--description
         .skin__description-subtitle.skin__description-subtitle-2
           .info__subtitle
             i.icon-font.icon-reach
-            p!= "Reach"
+            h3!= "Reach"
 
 
         .skin__description-content.skin__description-content-2
@@ -85,7 +85,7 @@ section.skin.skin--description
         .skin__description-subtitle.skin__description-subtitle-3
           .info__subtitle
             i.icon-font.icon-tools
-            p!= "Design"
+            h3!= "Design"
 
         .skin__description-content.skin__description-content-3
           p.skin__description-note!= "Cover with red details and outlines, this black suit resembles the theme of the second season of the Battle Pass, but it is actually not a part of it. The Red Knight outfit is the Red Menace of Anarchy Acres of the <span>Fort Knights Set.</span>"
@@ -93,7 +93,7 @@ section.skin.skin--description
         .skin__description-subtitle.skin__description-subtitle-4
           .info__subtitle
             i.icon-font.icon-sets
-            p!= "Set"
+            h3!= "Set"
 
 
         .skin__description-content.skin__description-content-4
@@ -102,13 +102,14 @@ section.skin.skin--description
           .skin__description-skin
             -for(var i = 0; i < 4; i++)
               .skin__description-skin-col
-                .skin__description-skin-left
+                a(href="#").skin__description-skin-left
                   .b-skin.b-skin--small.b-skin--epic
                     img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
                 .skin__description-skin-right
-                  h5!= "Skin Name"
-                  p!= "October 10, 2018"
-                  span!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
+                  a(href="#")
+                    h4!= "Skin Name"
+                  span!= "October 10, 2018"
+                  p!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
 
           .skin__description-btn
             a.c-btn.c-btn--bg(href="#" class="" title="")!= "See More <span>></span>"
@@ -117,7 +118,7 @@ section.skin.skin--description
         .skin__description-subtitle.skin__description-subtitle-5
           .info__subtitle
             i.icon-png.i-get
-            p!= "How to get it"
+            h2!= "How to get it"
 
 
         .skin__description-content.skin__description-content-5

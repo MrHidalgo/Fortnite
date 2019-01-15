@@ -95,6 +95,13 @@
       line-height: 1;
       text-transform: uppercase;
       font-size: 18px;
+      @include transition(opacity, color);
+
+      &:hover {
+        opacity: 0.75;
+        color: #273c43;
+        @include transition(opacity, color);
+      }
     }
 
     &-num {

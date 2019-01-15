@@ -156,11 +156,19 @@
       }
     }
 
-    p {
+    p,
+    h2,
+    h3 {
       z-index: 1;
       position: relative;
       color: $c-white;
       @include fluid(font-size, 320px, 1440px, 28px, 36px);
+    }
+
+    h2,
+    h3 {
+      padding-left: 5px;
+      text-transform: uppercase;
     }
   }
 

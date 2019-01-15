@@ -40,7 +40,7 @@ section#comments.comments
       // header comments - count messages
       .comments__header
         i.icon-png.i-comments
-        p!= "<span>38</span> Comments"
+        h3!= "<span>38</span> Comments"
 
   .c-grid.c-grid-1
     .comments__wrapper.comments__wrapper-1
@@ -60,7 +60,7 @@ section#comments.comments
                 img(src="./img/" + commentsDataArr[idx].imgName + ".png" srcset="./img/" + commentsDataArr[idx].imgName + "@2x.png 2x" alt="" title="")
 
             .comments__messages-right
-              p.comments__messages-name!= commentsDataArr[idx].name
+              h4.comments__messages-name!= commentsDataArr[idx].name
               p.comments__messages-time!= commentsDataArr[idx].time
               p.comments__messages-text!= commentsDataArr[idx].text
 

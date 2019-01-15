@@ -14,44 +14,44 @@ section.skin.skin--images
     .skin__images
       .skin__header
         i.icon-font.icon-polaroid
-        p!= "PNG Images"
+        h2!= "PNG Images"
 
       .skin__body
 
         p.skin__images-text!= "Red Knight high-quality PNG images with transparent background to use them as you wish (YouTube thumbnails, skin concept and so on)."
 
         .info__subtitle
-          p!= "Official Icons"
+          h3!= "Official Icons"
 
         p.skin__images-text!= "Used in-game to Shop and Locker, credit to Epic Games."
 
         .s-leak__image-row
           each val, idx in ['Featured', 'Icon', 'Closeup']
-            .s-leak__image-block(class!= "s-leak__image-block--" + idx)
+            a.s-leak__image-block(href="#" class!= "s-leak__image-block--" + idx)
               div
                 img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
               p!= val
 
         .info__subtitle
-          p!= "Reactive Icons"
+          h3!= "Reactive Icons"
 
         p.skin__images-text!= "Transform by dealing damage, or outliving other players."
 
         .s-leak__image-row
           each val, idx in ['Icon', 'Featured', 'Image 3']
-            .s-leak__image-block(class!= "s-leak__image-block--" + idx)
+            a.s-leak__image-block(href="#" class!= "s-leak__image-block--" + idx)
               div
                 img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
               p!= val
 
         .info__subtitle
-          p!= "PNG Images"
+          h3!= "PNG Images"
 
         p.skin__images-text!= "Other images. Please credit back to <a href='#'>FortniteSkins.net</a> if you use any of these images."
 
         .s-leak__image-row
           each val, idx in ['Featured', 'Icon', 'Closeup']
-            .s-leak__image-block(class!= "s-leak__image-block--" + idx)
+            a.s-leak__image-block(href="#" class!= "s-leak__image-block--" + idx)
               div
                 img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 

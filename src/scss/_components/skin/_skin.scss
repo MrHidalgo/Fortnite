@@ -97,7 +97,7 @@
         }
 
         i,
-        p {
+        h2 {
           color: $c-white;
         }
 
@@ -113,7 +113,7 @@
           }
         }
 
-        p {
+        h2 {
           padding-left: 15px;
           line-height: 1;
           text-transform: uppercase;
@@ -310,7 +310,7 @@
           }
         }
 
-        p {
+        h1 {
           z-index: 2;
           position: relative;
           color: $c-white;
@@ -437,6 +437,11 @@
         p {
           color: #273c43;
           font-family: 'Ubuntu', sans-serif;
+
+          span,
+          a {
+            color: #273c43;
+          }
         }
 
         > a {
@@ -882,7 +887,7 @@
           }
         }
 
-        p {
+        h3 {
           z-index: 2;
           position: relative;
           padding-left: 10px;
@@ -976,7 +981,7 @@
           text-align: center;
         }
 
-        h5 {
+        h4 {
           color: #273c43;
           font-size: 18px;
           text-transform: uppercase;
@@ -987,12 +992,13 @@
           font-family: 'Ubuntu', sans-serif;
         }
 
-        p {
-          padding-bottom: 5px;
+        span {
+          display: block;
+          padding-bottom: 10px;
           color: #9eadb7;
         }
 
-        span {
+        p {
           color: #657782;
           font-size: 12px;
         }
@@ -1537,6 +1543,13 @@
         clip-path: polygon(0 100%, 55% 70%, 100% 0, 100% 100%);
       }
 
+      &:hover {
+        span {
+          color: initial;
+          @include transition(color);
+        }
+      }
+
       &-0 {
         margin-bottom: 17px;
         background-color: #fcdb90;
@@ -1568,6 +1581,7 @@
         text-align: center;
         text-transform: uppercase;
         font-size: 16px;
+        @include transition(color);
       }
     }
 
@@ -1689,7 +1703,7 @@
       background-color: #181818;
       clip-path: polygon(0 0, 100% 7%, 97% 96%, 2% 100%);
 
-      p {
+      h2 {
         padding-left: 15px;
         color: $c-white;
         line-height: 1;
@@ -1741,19 +1755,19 @@
           height: 138px;
         }
 
-        p,
-        span {
+        h3,
+        p {
           color: $c-white;
         }
 
-        p {
+        h3 {
           padding-bottom: 10px;
           line-height: 1;
           text-transform: uppercase;
           font-size: 18px;
         }
 
-        span {
+        p {
           font-size: 12px;
           font-family: 'Ubuntu', sans-serif;
         }

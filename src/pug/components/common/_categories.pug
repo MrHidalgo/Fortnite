@@ -58,9 +58,9 @@ section#categories.categories.sidebar
 
     .categories__block-wrapper
       each val, idx in categoriesData
-        a.categories__block(href="#" class!= "categories__block-" + idx)
+        .categories__block(class!= "categories__block-" + idx)
           .categories__block-left
-            p.categories__block-name!= categoriesData[idx].name
+            a(href="#").categories__block-name!= categoriesData[idx].name
           .categories__block-right
             p.categories__block-num!= categoriesData[idx].num
 
