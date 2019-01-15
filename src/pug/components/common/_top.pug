@@ -41,13 +41,13 @@ section#top.top.sidebar
     img(src="./img/img-top-figure-1.svg" alt="" title="")
 
   .top__title
-    p!= "Top 5 Skins"
+    h3!= "Top 5 Skins"
 
   .top__wrapper.sidebar__wrapper
     .top__block-wrapper
 
       each val, idx in topData
-        .top__block(class!= 'top__block-' + idx)
+        a.top__block(href='#' class!= 'top__block-' + idx)
           .top__block-photo
             div
               // (un)comment test images if need
@@ -61,14 +61,14 @@ section#top.top.sidebar
             div
               .top__block-header
                 div
-                  p!= topData[idx].name
+                  h4!= topData[idx].name
 
                 div
                   .top__block-badge
-                    a.comments__btn-like(href="#" class="" title="")
+                    span.comments__btn-like(class="" title="")
                       i.icon-font.icon-like
                       span!= "525"
-                    a.comments__btn-dislike(href="#" class="" title="")
+                    span.comments__btn-dislike(class="" title="")
                       i.icon-font.icon-dislike
                       span!= "211"
 

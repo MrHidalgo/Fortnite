@@ -51,31 +51,36 @@
     }
 
     > div {
+      display: flex;
+
       &:nth-of-type(1) {
         width: 100%;
         max-width: calc(100% - 85px);
+
+        > div {
+          display: flex;
+          align-items: center;
+          @include adaptive(575) {
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+
+          i {
+            margin-right: 15px;
+          }
+
+          h3 {
+            color: #273c43;
+            text-transform: uppercase;
+            font-size: 28px;
+            @include fluid(font-size, 320px, 768px, 22px, 28px);
+          }
+        }
       }
       &:nth-of-type(2) {
         width: 85px;
       }
 
-    }
-
-    p {
-      display: flex;
-      align-items: center;
-      color: #273c43;
-      text-transform: uppercase;
-      font-size: 28px;
-      @include fluid(font-size, 320px, 768px, 22px, 28px);
-      @include adaptive(575) {
-        padding-top: 5px;
-        padding-bottom: 5px;
-      }
-
-      i {
-        margin-right: 15px;
-      }
     }
 
     span {
@@ -146,12 +151,12 @@
       }
     }
 
-    p,
-    span {
+    h4,
+    p {
       font-family: 'Ubuntu', sans-serif;
     }
 
-    p {
+    h4 {
       padding-bottom: 10px;
       color: #273c43;
       font-size: 16px;
@@ -161,7 +166,7 @@
       }
     }
 
-    span {
+    p {
       color: #657782;
       font-size: 14px;
       @include adaptive(575) {

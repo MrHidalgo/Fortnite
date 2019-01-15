@@ -30,9 +30,9 @@ section#royal.royal.sidebar
   .royal__wrapper.sidebar__wrapper
     .royal__header
       div
-        p
+        div
           i.icon-font.icon-megaphone
-          != "Battle Royale News"
+          h3!= "Battle Royale News"
       div
         span!= "21 hours Ago"
 
@@ -46,8 +46,8 @@ section#royal.royal.sidebar
                 img(src="./img/" + royalData[idx].imgName + ".png" srcset="./img/" + royalData[idx].imgName + "@2x.png 2x" alt="" title="")
 
             .royal__block-right
-              p!= royalData[idx].title
-              span!= royalData[idx].desc
+              h4!= royalData[idx].title
+              p!= royalData[idx].desc
 
     .royal__footer
       a.c-btn.c-btn--bg(href="#" class="" title="")!= "All News <span>></span>"

@@ -62,7 +62,7 @@ section#latest.latest.sidebar
 
     .latest__block-wrapper
       each val, idx in latestData
-        .latest__block(class!= "latest__block-" + idx)
+        a.latest__block(href="#" class!= "latest__block-" + idx)
           .latest__block-left
             .latest__block-photo
               div
@@ -71,7 +71,7 @@ section#latest.latest.sidebar
 
           .latest__block-right
             .latest__block-header
-              p.latest__block-title!= latestData[idx].name
+              h4.latest__block-title!= latestData[idx].name
 
               if(latestData[idx].badge)
                 span!= latestData[idx].badge

@@ -216,7 +216,7 @@
         }
       }
 
-      p {
+      h4 {
         padding-top: 13px;
         color: $c-white;
         line-height: 1;
@@ -243,7 +243,7 @@
       background-color: #ffd600;
       clip-path: polygon(0 0, 100% 2%, 99% 97%, 1% 98%);
 
-      > a {
+      > span {
         display: flex;
         align-items: center;
         justify-content: center;

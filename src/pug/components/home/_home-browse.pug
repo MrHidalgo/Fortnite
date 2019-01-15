@@ -3,7 +3,7 @@
 mixin emotesSkinBlock(classMod, classSkinName, badgeName, imgName)
   .e-skin__block(class!= "e-skin__block-" + classMod + ' e-skin__block--' + classSkinName)
     .e-skin__block-left
-      .e-skin__block-image
+      a(href='#').e-skin__block-image
 
         img(src="./img/" + imgName + ".png" srcset="./img/" + imgName + "@2x.png 2x" alt="" title="")
 
@@ -22,13 +22,14 @@ mixin emotesSkinBlock(classMod, classSkinName, badgeName, imgName)
         img(src="./img/img-skin-triangle-2.svg" alt="" title="")
 
       .e-skin__block-content
-        p.e-skin__block-name!= "Skin name"
+        a(href='#')
+          h3.e-skin__block-name!= "Skin name"
         .e-skin__block-points
           img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
           span!= "1500"
 
         p.e-skin__block-desc!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem."
-        p.e-skin__block-date!= "<span>October 10, 2018</span> | <span>Emotes</span>"
+        p.e-skin__block-date!= "<span>October 10, 2018</span> | <a href='#'>Emotes</span>"
         a.e-skin__block-comments(href="#" class="" title="")
           i.icon-font.icon-bubble
           span!= "35 comments"
@@ -39,7 +40,7 @@ section.home.home--browse
 
       .home__title
         i.icon-font.icon-all
-        p!= "Browse Skins"
+        h2!= "Browse Skins"
 
     .home__wrapper.home__wrapper-1
 

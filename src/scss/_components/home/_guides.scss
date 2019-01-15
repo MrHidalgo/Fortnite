@@ -115,7 +115,7 @@
     color: $c-white;
     clip-path: polygon(0 0, 100% 3%, 96% 100%, 4% 100%);
 
-    p {
+    h2 {
       padding-left: 18px;
       line-height: 1;
       text-transform: uppercase;
@@ -189,14 +189,14 @@
       padding: 17px 11px;
       background-color: rgba($c-black, 0.7);
 
-      p {
+      h3 {
         padding-bottom: 10px;
         color: #ffd600;
         text-transform: uppercase;
         font-size: 20px;
       }
 
-      span {
+      p {
         color: $c-white;
         font-family: 'Ubuntu', sans-serif;
       }

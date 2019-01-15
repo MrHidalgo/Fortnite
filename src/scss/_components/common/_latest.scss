@@ -301,6 +301,7 @@
     }
 
     &-title {
+      color: #273c43;
       font-size: 24px;
       padding-right: 5px;
       @include fluid(font-size, 320px, 768px, 19px, 24px);
@@ -312,6 +313,7 @@
 
     &-desc,
     &-data {
+      color: #273c43;
       font-family: 'Rajdhani', sans-serif;
     }
 
