@@ -101,7 +101,7 @@
         font-size: 34px;
       }
 
-      p {
+      h2 {
         padding-left: 14px;
         line-height: 1;
         text-transform: uppercase;
@@ -178,7 +178,7 @@
         font-size: 16px;
       }
 
-      p {
+      h3 {
         padding-left: 5px;
         line-height: 1;
         text-transform: uppercase;
@@ -285,7 +285,7 @@
       clip-path: polygon(0 0, 100% 1%, 98% 100%, 1% 100%);
       color: $c-white;
 
-      > a {
+      > span {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -371,7 +371,7 @@
         @include fluid(font-size, 320px, 1439px, 35px, 42px);
       }
 
-      p {
+      h2 {
         padding-left: 12px;
         line-height: 1;
         text-transform: uppercase;

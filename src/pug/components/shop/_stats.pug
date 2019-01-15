@@ -11,7 +11,7 @@ section#stats.stats
         .stats__block-header-bg
         .stats__block-title
           i.icon-font.icon-graph
-          p!= "Stats"
+          h2!= "Stats"
 
         p.stats__block-text!= "Check the list for the most viewed items in the shop and the rarest items in Fortnite Battle Royale."
 
@@ -20,10 +20,10 @@ section#stats.stats
           .stats__block-category.stats__block-category-0
             .stats__block-category-bg
             i.icon-font.icon-table
-            p!= "Most Displayed Items"
+            h3!= "Most Displayed Items"
 
           each val, idx in [1,2,3,4,5]
-            .stats__block-box
+            a(href='#').stats__block-box
               div
                 .b-skin.b-skin--small(
                   class!= (idx === 0) ? "b-skin--epic": (idx === 1) ? 'b-skin--rare': (idx === 2) ? 'b-skin--legendary': (idx === 3) ? 'b-skin--uncommon': 'b-skin--rare'
@@ -35,7 +35,7 @@ section#stats.stats
                       i.icon-font.icon-cube
                       span!= "3d"
               div
-                p.stats__block-name!= "Skin Name"
+                h4.stats__block-name!= "Skin Name"
 
                 .stats__block-items
                   i
@@ -45,10 +45,10 @@ section#stats.stats
           .stats__block-category.stats__block-category-1
             .stats__block-category-bg
             i.icon-font.icon-diamond
-            p!= "Most Rare Items"
+            h3!= "Most Rare Items"
 
           each val, idx in [1,2,3,4,5]
-            .stats__block-box
+            a(href='#').stats__block-box
               div
                 .b-skin.b-skin--small(
                 class!= (idx === 0) ? "b-skin--epic": (idx === 1) ? 'b-skin--rare': (idx === 2) ? 'b-skin--legendary': (idx === 3) ? 'b-skin--uncommon': 'b-skin--rare'
@@ -61,7 +61,7 @@ section#stats.stats
                       span!= "3d"
 
               div
-                p.stats__block-name!= "Skin Name"
+                h4.stats__block-name!= "Skin Name"
 
                 .stats__block-items
                   i
@@ -71,10 +71,10 @@ section#stats.stats
           .stats__block-category.stats__block-category-2
             .stats__block-category-bg
             i.icon-font.icon-cup
-            p!= "Top Rated Items"
+            h3!= "Top Rated Items"
 
           each val, idx in [1,2,3,4,5]
-            .stats__block-box
+            a(href='#').stats__block-box
               div
                 .b-skin.b-skin--small(
                 class!= (idx === 0) ? "b-skin--epic": (idx === 1) ? 'b-skin--rare': (idx === 2) ? 'b-skin--legendary': (idx === 3) ? 'b-skin--uncommon': 'b-skin--rare'
@@ -87,13 +87,13 @@ section#stats.stats
                       span!= "3d"
 
               div
-                p.stats__block-name!= "Skin Name"
+                h4.stats__block-name!= "Skin Name"
 
                 .stats__block-like
-                  a.comments__btn-like(href="#" class="" title="")
+                  span.comments__btn-like(href="#" class="" title="")
                     i.icon-font.icon-like
                     span!= "525"
-                  a.comments__btn-dislike(href="#" class="" title="")
+                  span.comments__btn-dislike(href="#" class="" title="")
                     i.icon-font.icon-dislike
                     span!= "211"
 
@@ -104,7 +104,7 @@ section#stats.stats
       .stats__rarity-bg
       .stats__rarity-header
         i.icon-font.icon-diamond
-        p!= "All Shop Items by Rarity"
+        h2!= "All Shop Items by Rarity"
       .stats__rarity-body
         a.stats__rarity-btn.stats__rarity-btn--0(href="#" class="" title="")
           span!= "95 Items"
