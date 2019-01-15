@@ -264,7 +264,8 @@
       padding-left: 13px;
 
       span,
-      p {
+      p,
+      h1 {
         line-height: 1;
       }
 
@@ -274,7 +275,8 @@
         font-size: 18px;
       }
 
-      p {
+      p,
+      h1 {
         color: #0183b1;
         text-transform: uppercase;
         @include fluid(font-size, 320px, 991px, 40px, 48px);

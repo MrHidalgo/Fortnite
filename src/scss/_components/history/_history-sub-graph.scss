@@ -87,7 +87,7 @@
       font-size: 44px;
     }
 
-    p {
+    h2 {
       padding-left: 23px;
       line-height: 1;
       text-transform: uppercase;
@@ -361,7 +361,8 @@
       clip-path: polygon(0 100%, 75% 55%, 100% 0, 100% 100%);
     }
 
-    > div {
+    > div,
+      a {
       display: flex;
       align-items: center;
       @include adaptive(767) {
@@ -377,9 +378,11 @@
         @include fluid(font-size, 320px, 767px, 22px, 27px);
       }
       &-ribbon {
+        color: $c-white;
         @include fluid(font-size, 320px, 767px, 20px, 23px);
       }
       &-bubble {
+        color: $c-white;
         @include fluid(font-size, 320px, 767px, 20px, 23px);
       }
     }
@@ -394,6 +397,7 @@
     }
 
     p {
+      color: $c-white;
       padding-left: 13px;
       line-height: 1;
       text-transform: uppercase;

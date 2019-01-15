@@ -13,7 +13,7 @@ section#h-graph.h-graph
     .h-graph__head
       .h-graph__title
         i.icon-font.icon-chart
-        p!= "Statistics"
+        h2!= "Statistics"
 
     .h-graph__body
       .h-graph__block.h-graph__block-0
@@ -109,13 +109,13 @@ section#h-graph.h-graph
 
         span!= "|"
 
-        .h-graph__info-badge
+        a(href='#').h-graph__info-badge
           i.icon-font.icon-ribbon
           p!= "Sales History"
 
         span!= "|"
 
-        .h-graph__info-comment
+        a(href='#').h-graph__info-comment
           i.icon-font.icon-bubble
           p!= "1 comment"
 
