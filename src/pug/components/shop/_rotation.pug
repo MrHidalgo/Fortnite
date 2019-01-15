@@ -8,7 +8,7 @@ section#rotation.rotation
 
         .rotation__title
           .rotation__title-bg
-          p!= "Fortnite <span>Shop Rotation</span>"
+          h1!= "Fortnite <span>Shop Rotation</span>"
 
         .rotation__info-wrapper
           .rotation__cost
@@ -45,12 +45,12 @@ section#rotation.rotation
         .rotation__body-left
 
           .info__subtitle
-            p!= "Featured"
+            h2!= "Featured"
 
           .rotation__box
             -for(var i = 0; i < 6; i++)
               div
-                .b-skin.b-skin--small(
+                a(href='#').b-skin.b-skin--small(
                 class!= (i === 0) ? "b-skin--epic": (i === 1) ? 'b-skin--rare': (i === 2) ? 'b-skin--legendary': (i === 3) ? 'b-skin--uncommon': 'b-skin--rare'
                 )
                   img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
@@ -65,17 +65,17 @@ section#rotation.rotation
                       span!= "3d"
 
                   .b-skin__info
-                    p!= "Skin Name"
+                    h3!= "Skin Name"
 
         .rotation__body-right
 
           .info__subtitle
-            p!= "Daily"
+            h2!= "Daily"
 
           .rotation__box
             -for(var i = 0; i < 4; i++)
               div
-                .b-skin.b-skin--small(
+                a(href='#').b-skin.b-skin--small(
                 class!= (i === 0) ? "b-skin--epic": (i === 1) ? 'b-skin--rare': (i === 2) ? 'b-skin--legendary': (i === 3) ? 'b-skin--uncommon': 'b-skin--rare'
                 )
                   img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
@@ -90,6 +90,6 @@ section#rotation.rotation
                       span!= "3d"
 
                   .b-skin__info
-                    p!= "Skin Name"
+                    h3!= "Skin Name"
 
 // SECTION shop rotation :: END
