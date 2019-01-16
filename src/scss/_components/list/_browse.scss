@@ -150,12 +150,12 @@
     }
 
     .icon-browse,
-    p {
+    h2 {
       color: $c-white;
       @include fluid(font-size, 320px, 992px, 35px, 48px);
     }
 
-    p {
+    h2 {
       padding-left: 15px;
       text-transform: uppercase;
     }
@@ -365,7 +365,7 @@
       }
     }
 
-    h1 {
+    h3 {
       padding-left: 18px;
       color: #273c43;
       line-height: 1;
@@ -405,7 +405,7 @@
       height: 44px;
       background-color: rgba(#273c43, 0.57);
 
-      p {
+      h3 {
         color: $c-white;
         line-height: 1;
         text-transform: uppercase;

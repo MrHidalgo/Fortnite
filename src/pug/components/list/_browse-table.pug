@@ -23,14 +23,15 @@
           .browse__table-tr(class!= "browse__table-tr--" + boxClassMod)
             .browse__table-td.browse__table-td-0
 
-              .browse__box(class!= "browse__box--" + boxClassMod)
+              a.browse__box(href="#" class!= "browse__box--" + boxClassMod)
                 .e-skin__block-view
                   i.icon-font.icon-cube
                   span!= "3d"
 
                 img(src="./img/img-skin-ts.png" alt="" title="")
 
-              h1!= "Skin Name"
+              a(href="#" class="" title="")
+                h3!= "Skin Name"
             .browse__table-td.browse__table-td-1
               p!= rarityName
             .browse__table-td.browse__table-td-2

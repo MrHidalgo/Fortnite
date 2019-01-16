@@ -10,7 +10,7 @@
 
   .browse__box-wrapper
     mixin boxContent(boxClassMod)
-      .browse__box(class!= "browse__box--" + boxClassMod)
+      a.browse__box(href='#' class!= "browse__box--" + boxClassMod)
         .e-skin__block-view
           i.icon-font.icon-cube
           span!= "3d"
@@ -20,7 +20,7 @@
           span!= "1500"
 
         .browse__box-name
-          p!= "Skin Name"
+          h3!= "Skin Name"
 
         img(src="./img/img-skin-ts.png" alt="" title="")
 
