@@ -7,12 +7,13 @@ section#popular.popular
   .popular__wrapper
 
     .popular__head
-      p!= "Popular Items"
+      h4!= "Popular Items"
 
     .popular__body
       -for(var i = 0; i < 5; i++)
         div
-          .b-skin.b-skin--small(
+          a.b-skin.b-skin--small(
+          href='#'
           class!= (i === 0) ? "b-skin--epic": (i === 1) ? 'b-skin--rare': (i === 2) ? 'b-skin--legendary': (i === 3) ? 'b-skin--uncommon': 'b-skin--rare'
           )
             img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
@@ -27,7 +28,7 @@ section#popular.popular
                 span!= "3d"
 
             .b-skin__info
-              p!= "Skin Name"
+              h4!= "Skin Name"
 
     .popular__footer
       a.c-btn.c-btn--bg(href="#" class="" title="")!= "All Items <span>></span>"

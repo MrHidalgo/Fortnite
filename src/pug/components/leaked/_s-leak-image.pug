@@ -13,13 +13,13 @@
 
       .s-leak__title
         i.icon-font.icon-polaroid
-        p!= "Images"
+        h2!= "Images"
 
     .s-leak__image-body
 
       .s-leak__image-row
         each val, idx in ['Featured', 'Icon', 'Closeup', 'Image 3']
-          .s-leak__image-block(class!= "s-leak__image-block--" + idx)
+          a.s-leak__image-block(href='#' class!= "s-leak__image-block--" + idx)
             div
               img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
             p!= val
