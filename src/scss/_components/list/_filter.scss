@@ -5,6 +5,9 @@
   position: relative;
   top: -100px;
   min-height: 730px;
+  @include adaptive(767) {
+    overflow: hidden;
+  }
 
   &__bg,
   &__trinagle {
@@ -111,8 +114,13 @@
     width: 100%;
     max-width: 719px;
     min-height: 78px;
+    padding: 5px;
     margin-top: 15px;
     padding-left: 34px;
+    @include adaptive(767) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
     &-bg {
       z-index: -1;
@@ -139,6 +147,10 @@
 
     &-share {
       padding-right: 23px;
+      @include adaptive(767) {
+        padding-right: 0;
+        margin-bottom: 15px;
+      }
 
       &:last-of-type {
         padding-right: 0;
@@ -151,6 +163,9 @@
       line-height: 1;
       text-transform: uppercase;
       font-size: 36px;
+      @include adaptive(767) {
+        padding-bottom: 15px;
+      }
     }
   }
 

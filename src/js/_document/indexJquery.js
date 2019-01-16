@@ -323,7 +323,7 @@ $(document).ready((ev) => {
 		// ==========================================
     initLatestTabs();
     listFilterSoldierBtn();
-    initFilterCollapse();
+    // initFilterCollapse();
     initItemNavBtn();
     initVideoLeakedSub();
     initSearchExpand();
