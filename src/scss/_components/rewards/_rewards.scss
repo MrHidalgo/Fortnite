@@ -180,14 +180,14 @@
       }
     }
 
-    h1,
+    h2,
     p {
       line-height: 1.2;
       text-align: center;
       text-transform: uppercase;
     }
 
-    h1 {
+    h2 {
       padding-top: 5px;
       color: $c-white;
       @include fluid(font-size, 320px, 1440px, 28px, 50px);
