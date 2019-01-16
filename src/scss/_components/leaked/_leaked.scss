@@ -179,7 +179,7 @@
         clip-path: polygon(0 100%, 65% 55%, 100% 0, 100% 100%);
       }
 
-      p {
+      h2 {
         z-index: 2;
         position: relative;
         color: $c-white;
@@ -397,7 +397,7 @@
         @include fluid(font-size, 320px, 1439px, 24px, 30px);
       }
 
-      p {
+      h3 {
         padding-left: 17px;
         line-height: 1;
         text-transform: uppercase;
