@@ -106,6 +106,12 @@
       }
     }
 
+    &-left,
+    &-right {
+      z-index: 1;
+      position: relative;
+    }
+
     &-left {
       width: 116px;
       @include adaptive(575) {
