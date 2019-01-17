@@ -29,26 +29,6 @@ $(document).ready((ev) => {
     });
   };
 
-  const listFilterSoldierBtn = () => {
-    $('.filter__category-soldier > a').on('click', (ev) => {
-      const elem = $(ev.currentTarget);
-
-      $('.filter__category-soldier > a').removeClass('is-active');
-      elem.addClass('is-active');
-    });
-  };
-
-  const initFilterCollapse = () => {
-    $('.filter__category-title').on('click', (ev) => {
-      const elem = $(ev.currentTarget),
-        collapseContent = elem.siblings('.filter__category-content');
-
-      if($(window).width() <= 575) {
-        collapseContent.slideToggle(300);
-      }
-    });
-  };
-
   const initItemNavBtn = () => {
     $('.item__nav-btn').on('click', (ev) => {
       const elem = $(ev.currentTarget);
@@ -248,7 +228,6 @@ $(document).ready((ev) => {
     // callback
 		// ==========================================
     initLatestTabs();
-    listFilterSoldierBtn();
     initItemNavBtn();
     initVideoLeakedSub();
     initSearchExpand();

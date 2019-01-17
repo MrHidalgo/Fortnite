@@ -606,6 +606,9 @@ $form-notify-font-weight: bold;
   &__checkbox {
     &:checked {
       &+label {
+        img {
+          opacity: 1;
+        }
         .c-form__checkbox-icon {
 
           &:after {
@@ -629,6 +632,12 @@ $form-notify-font-weight: bold;
 
     &-wrapper {
       height: $form-field-checkbox-height;
+
+      label {
+        img {
+          opacity: 0.5;
+        }
+      }
     }
 
     &-icon {
