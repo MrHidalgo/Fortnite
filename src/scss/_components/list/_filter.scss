@@ -314,7 +314,8 @@
 
     &-content {
       @include adaptive(575) {
-        display: none;
+        //display: none;
+        margin-bottom: 15px;
       }
       @include respond(medium) {
         display: block !important;
@@ -450,6 +451,7 @@
 
         .c-form__field {
           margin-bottom: 0;
+          width: 100%;
 
           span {
             font-family: 'Ubuntu', sans-serif;
