@@ -7,6 +7,8 @@
     &-0 {
       position: relative;
       min-height: 279px;
+      display: flex;
+      align-items: center;
 
       // background
       .pp__bg {
@@ -107,15 +109,11 @@
     justify-content: center;
     width: 100%;
     max-width: 600px;
-    padding-top: 75px;
+    margin-top: -40px ;
     margin-left: auto;
     margin-right: auto;
-
-    svg {
-      text {
-        @include fluid(font-size, 320px, 768px, 50px, 100px);
-      }
-    }
+    color: $c-white;
+    @include fluid(font-size, 320px, 768px, 50px, 100px);
   }
 }
 
