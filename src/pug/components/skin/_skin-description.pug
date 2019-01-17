@@ -38,14 +38,9 @@ section.skin.skin--description
         .skin__description-content.skin__description-content-1
 
           .skin__description-block
-
-            // IMPORTANT
-            // NEED TO ADD IMAGE -> WIDTH FIX
-            .img-comp-container
-              .img-comp-img
-                img(src="./img/deadfire-featured.png" alt="" title="")
-              .img-comp-img.img-comp-overlay
-                img(src="./img/deadfire-featured-reactive.png" alt="" title="")
+            div(compare-box-js)
+              img(src="./img/deadfire-featured-reactive.png" alt="" title="" compare-boxImg-js)
+              img(src="./img/deadfire-featured.png" alt="" title="" compare-boxImg-js)
 
             .skin__description-block-btn.skin__description-block-btn--on(class="" title="")!= "On"
             .skin__description-block-btn.skin__description-block-btn--off(class="" title="")!= "Off"
@@ -68,7 +63,6 @@ section.skin.skin--description
               .skin__description-info-desc
                 span!= "Source:"
                 p!= "Item Shop"
-
 
 
         .skin__description-subtitle.skin__description-subtitle-2

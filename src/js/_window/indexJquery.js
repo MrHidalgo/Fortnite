@@ -13,7 +13,6 @@ $(window).on("load", (ev) => {
  */
 $(window).on("resize", (ev) => {
   initSectionBGResize('.beginners--main, .home--leaded, .skin--like, .skin--main');
-  // initSectionBGResize('.home--leaded');
 });
 
 
