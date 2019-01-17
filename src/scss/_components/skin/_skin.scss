@@ -9,6 +9,9 @@
   @include adaptive(1199) {
     max-width: 100%;
   }
+  @include adaptive(767) {
+    overflow: hidden;
+  }
 }
 
 .skin {

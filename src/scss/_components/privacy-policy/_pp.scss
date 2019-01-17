@@ -2,6 +2,9 @@
 
 .pp {
   padding-bottom: 127px;
+  @include adaptive(767) {
+    overflow: hidden;
+  }
 
   &__wrapper {
     &-0 {

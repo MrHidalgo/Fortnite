@@ -11,6 +11,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include adaptive(767) {
+    overflow: hidden;
+  }
 
   &:before {
     content: '';

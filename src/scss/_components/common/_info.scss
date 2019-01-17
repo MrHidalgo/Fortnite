@@ -15,6 +15,9 @@
 
   &--rewards {
     padding-bottom: 120px;
+    @include adaptive(767) {
+      overflow: hidden;
+    }
   }
 
   &__content {
