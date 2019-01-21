@@ -657,7 +657,6 @@
 
     .b-skin {
       overflow: hidden;
-      position: relative;
 
       &:hover {
         &:after {
@@ -672,7 +671,6 @@
       }
 
       img {
-        will-change: contents;
         backface-visibility: hidden;
         transform-origin: center;
         @include transition(transform);

@@ -59,6 +59,95 @@
     }
   ];
 
+mixin swiperFeatured1Content()
+  .swiper-slide.b-skin.b-skin--epic
+    img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+    .b-skin__badge
+      .e-skin__block-badge.e-skin__block-badge--style
+        span!= "Pick Your STyle!"
+      .e-skin__block-badge
+        i.icon-font.icon-diamond
+        span!= "epic"
+
+    .b-skin__view
+      .e-skin__block-view
+        i.icon-font.icon-cube
+        span!= "3d"
+
+    p.b-skin__out!= "2 out of 3"
+
+    .b-skin__info
+      p!= "Skin Name"
+      .e-skin__block-points
+        img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+        span!= "1500"
+
+  .swiper-slide.b-skin.b-skin--rare
+    img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+    .b-skin__badge
+      .e-skin__block-badge.e-skin__block-badge--style
+        span!= "Pick Your STyle!"
+      .e-skin__block-badge
+        i.icon-font.icon-diamond
+        span!= "rare"
+
+    .b-skin__view
+      .e-skin__block-view
+        i.icon-font.icon-cube
+        span!= "3d"
+
+    p.b-skin__out!= "2 out of 3"
+
+    .b-skin__info
+      p!= "Skin Name"
+      .e-skin__block-points
+        img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+        span!= "1500"
+
+  .swiper-slide.b-skin.b-skin--legendary
+    img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+    .b-skin__badge
+      .e-skin__block-badge
+        i.icon-font.icon-diamond
+        span!= "legendary"
+
+    .b-skin__view
+      .e-skin__block-view
+        i.icon-font.icon-cube
+        span!= "3d"
+
+    p.b-skin__out!= "2 out of 3"
+
+    .b-skin__info
+      p!= "Skin Name"
+      .e-skin__block-points
+        img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+        span!= "1500"
+
+  .swiper-slide.b-skin.b-skin--uncommon
+    img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+    .b-skin__badge
+      .e-skin__block-badge
+        i.icon-font.icon-diamond
+        span!= "uncommon"
+
+    .b-skin__view
+      .e-skin__block-view
+        i.icon-font.icon-cube
+        span!= "3d"
+
+    p.b-skin__out!= "2 out of 3"
+
+    .b-skin__info
+      p!= "Skin Name"
+      .e-skin__block-points
+        img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+        span!= "1500"
+
 section#item.item
 
   .item__bg
@@ -130,17 +219,14 @@ section#item.item
 
           .item__slider-wrapper.item__slider-wrapper-0
             .item__slider.item__slider-0
-
-              mixin swiperFeatured1Content()
-                .swiper-slide.b-skin.b-skin--epic
+              if(pageClassName !== 'p-shop')
+                .swiper-slide.b-skin.b-skin--legendary
                   img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 
                   .b-skin__badge
-                    .e-skin__block-badge.e-skin__block-badge--style
-                      span!= "Pick Your STyle!"
                     .e-skin__block-badge
                       i.icon-font.icon-diamond
-                      span!= "epic"
+                      span!= "legendary"
 
                   .b-skin__view
                     .e-skin__block-view
@@ -154,7 +240,11 @@ section#item.item
                     .e-skin__block-points
                       img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
                       span!= "1500"
+              else
+                +swiper('swiper-container--featured swiper-container--featured-0', 'swiperFeatured1Content', false, true, false)
 
+            .item__slider.item__slider-1
+              if(pageClassName === 'p-shop')
                 .swiper-slide.b-skin.b-skin--rare
                   img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 
@@ -177,28 +267,58 @@ section#item.item
                     .e-skin__block-points
                       img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
                       span!= "1500"
+              else
+                +swiper('swiper-container--featured swiper-container--featured-1', 'swiperFeatured1Content', false, true, false)
 
-                .swiper-slide.b-skin.b-skin--legendary
-                  img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+            if(pageClassName !== 'p-shop')
+              .item__slider.item__slider-2
+                +swiper('swiper-container--featured swiper-container--featured-2', 'swiperFeatured1Content', false, true, false)
 
-                  .b-skin__badge
-                    .e-skin__block-badge
-                      i.icon-font.icon-diamond
-                      span!= "legendary"
+        .item__row-right
 
-                  .b-skin__view
-                    .e-skin__block-view
-                      i.icon-font.icon-cube
-                      span!= "3d"
+          .item__subtitle.item__subtitle-1
+            .item__subtitle-bg
+            i.icon-font.icon-btn-arrow
+            i.icon-font.icon-btn-arrow
+            h3.item__subtitle-name!= "Daily"
 
-                  p.b-skin__out!= "2 out of 3"
+          .item__slider-wrapper.item__slider-wrapper-1
+            .item__slider.item__slider-3
+              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
 
-                  .b-skin__info
-                    p!= "Skin Name"
-                    .e-skin__block-points
-                      img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
-                      span!= "1500"
+            .item__slider.item__slider-4
+              .swiper-slide.b-skin.b-skin--legendary
+                img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 
+                .b-skin__badge
+                  .e-skin__block-badge
+                    i.icon-font.icon-diamond
+                    span!= "legendary"
+
+                .b-skin__view
+                  .e-skin__block-view
+                    i.icon-font.icon-cube
+                    span!= "3d"
+
+                p.b-skin__out!= "2 out of 3"
+
+                .b-skin__info
+                  p!= "Skin Name"
+                  .e-skin__block-points
+                    img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                    span!= "1500"
+
+            .item__slider.item__slider-5
+              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+
+            .item__slider.item__slider-6
+              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+
+            if(pageClassName === 'p-shop')
+              .item__slider.item__slider-7
+                +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+
+              .item__slider.item__slider-8
                 .swiper-slide.b-skin.b-skin--uncommon
                   img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 
@@ -219,44 +339,6 @@ section#item.item
                     .e-skin__block-points
                       img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
                       span!= "1500"
-
-
-              +swiper('swiper-container--featured swiper-container--featured-0', 'swiperFeatured1Content', false, true, false)
-
-            .item__slider.item__slider-1
-              +swiper('swiper-container--featured swiper-container--featured-1', 'swiperFeatured1Content', false, true, false)
-
-            if(pageClassName !== 'p-shop')
-              .item__slider.item__slider-2
-                +swiper('swiper-container--featured swiper-container--featured-2', 'swiperFeatured1Content', false, true, false)
-
-        .item__row-right
-
-          .item__subtitle.item__subtitle-1
-            .item__subtitle-bg
-            i.icon-font.icon-btn-arrow
-            i.icon-font.icon-btn-arrow
-            h3.item__subtitle-name!= "Daily"
-
-          .item__slider-wrapper.item__slider-wrapper-1
-            .item__slider.item__slider-3
-              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
-
-            .item__slider.item__slider-4
-              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
-
-            .item__slider.item__slider-5
-              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
-
-            .item__slider.item__slider-6
-              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
-
-            if(pageClassName === 'p-shop')
-              .item__slider.item__slider-7
-                +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
-
-              .item__slider.item__slider-8
-                +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
 
       .item__row.item__row-2
         a.item__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "Item Shop <span>></span>"
