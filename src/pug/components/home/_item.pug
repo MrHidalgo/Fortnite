@@ -72,7 +72,7 @@ mixin swiperFeatured1Content()
         i.icon-font.icon-cube
         span!= "3d"
 
-    p.b-skin__out!= "2 out of 3"
+    //p.b-skin__out!= "2 out of 3"
 
     .b-skin__info
       p!= "Skin Name"
@@ -92,7 +92,7 @@ mixin swiperFeatured1Content()
         i.icon-font.icon-cube
         span!= "3d"
 
-    p.b-skin__out!= "2 out of 3"
+    //p.b-skin__out!= "2 out of 3"
 
     .b-skin__info
       p!= "Skin Name"
@@ -108,7 +108,7 @@ mixin swiperFeatured1Content()
         i.icon-font.icon-cube
         span!= "3d"
 
-    p.b-skin__out!= "2 out of 3"
+    //p.b-skin__out!= "2 out of 3"
 
     .b-skin__info
       p!= "Skin Name"
@@ -124,7 +124,7 @@ mixin swiperFeatured1Content()
         i.icon-font.icon-cube
         span!= "3d"
 
-    p.b-skin__out!= "2 out of 3"
+    //p.b-skin__out!= "2 out of 3"
 
     .b-skin__info
       p!= "Skin Name"
@@ -212,7 +212,7 @@ section#item.item
                       i.icon-font.icon-cube
                       span!= "3d"
 
-                  p.b-skin__out!= "2 out of 3"
+                  //p.b-skin__out!= "2 out of 3"
 
                   .b-skin__info
                     p!= "Skin Name"
@@ -220,7 +220,7 @@ section#item.item
                       img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
                       span!= "1500"
               else
-                +swiper('swiper-container--featured swiper-container--featured-0', 'swiperFeatured1Content', false, true, false)
+                +swiper('swiper-container--featured swiper-container--featured-0', 'swiperFeatured1Content', true, false, false)
 
             .item__slider.item__slider-1
               if(pageClassName === 'p-shop')
@@ -236,7 +236,7 @@ section#item.item
                       i.icon-font.icon-cube
                       span!= "3d"
 
-                  p.b-skin__out!= "2 out of 3"
+                  //p.b-skin__out!= "2 out of 3"
 
                   .b-skin__info
                     p!= "Skin Name"
@@ -244,11 +244,11 @@ section#item.item
                       img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
                       span!= "1500"
               else
-                +swiper('swiper-container--featured swiper-container--featured-1', 'swiperFeatured1Content', false, true, false)
+                +swiper('swiper-container--featured swiper-container--featured-1', 'swiperFeatured1Content', true, false, false)
 
             if(pageClassName !== 'p-shop')
               .item__slider.item__slider-2
-                +swiper('swiper-container--featured swiper-container--featured-2', 'swiperFeatured1Content', false, true, false)
+                +swiper('swiper-container--featured swiper-container--featured-2', 'swiperFeatured1Content', true, false, false)
 
         .item__row-right
 
@@ -260,7 +260,7 @@ section#item.item
 
           .item__slider-wrapper.item__slider-wrapper-1
             .item__slider.item__slider-3
-              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', true, false, false)
 
             .item__slider.item__slider-4
               a(href="#").swiper-slide.b-skin.b-skin--legendary
@@ -271,7 +271,7 @@ section#item.item
                     i.icon-font.icon-cube
                     span!= "3d"
 
-                p.b-skin__out!= "2 out of 3"
+                //p.b-skin__out!= "2 out of 3"
 
                 .b-skin__info
                   p!= "Skin Name"
@@ -280,14 +280,14 @@ section#item.item
                     span!= "1500"
 
             .item__slider.item__slider-5
-              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+              +swiper('swiper-container--daily swiper-container--daily-1', 'swiperFeatured1Content', true, false, false)
 
             .item__slider.item__slider-6
-              +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+              +swiper('swiper-container--daily swiper-container--daily-2', 'swiperFeatured1Content', true, false, false)
 
             if(pageClassName === 'p-shop')
               .item__slider.item__slider-7
-                +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
+                +swiper('swiper-container--daily swiper-container--daily-3', 'swiperFeatured1Content', true, false, false)
 
               .item__slider.item__slider-8
                 a(href="#").swiper-slide.b-skin.b-skin--uncommon
@@ -298,7 +298,7 @@ section#item.item
                       i.icon-font.icon-cube
                       span!= "3d"
 
-                  p.b-skin__out!= "2 out of 3"
+                  //p.b-skin__out!= "2 out of 3"
 
                   .b-skin__info
                     p!= "Skin Name"

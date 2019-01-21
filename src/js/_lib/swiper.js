@@ -64,7 +64,7 @@ const initSwiper = () => {
    *
    * @returns {{navigation: {nextEl: string, prevEl: string}, freeMode: boolean, loop: boolean, grabCursor: boolean, effect: string, watchOverflow: boolean, normalizeSlideIndex: boolean, slidesPerView: number, spaceBetween: number}}
    */
-  const swiperFeaturesOpt = () => {
+  const swiperFeaturesOpt = (autoDelay) => {
     return {
       loop: true,
       watchOverflow: true,
@@ -72,11 +72,23 @@ const initSwiper = () => {
       grabCursor: true,
       freeMode: false,
       effect: 'slide',
-      // autoplay: {
-      //   delay: 5000,
-      // },
+      autoplay: {
+        delay: autoDelay,
+        disableOnInteraction: false
+      },
       slidesPerView: 1,
       spaceBetween: 0,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+          return '<div class="b-skin__out">' +
+            '<span class="' + currentClass + '"></span>' +
+            ' of ' +
+            '<span class="' + totalClass + '"></span>' +
+            '</div>';
+        }
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -84,11 +96,11 @@ const initSwiper = () => {
     }
   };
 
-  const swiperFeatures0 = new Swiper('.swiper-container--featured-0', swiperFeaturesOpt());
-  const swiperFeatures1 = new Swiper('.swiper-container--featured-1', swiperFeaturesOpt());
-  const swiperFeatures2 = new Swiper('.swiper-container--featured-2', swiperFeaturesOpt());
-  const swiperDaily0 = new Swiper('.swiper-container--daily-0', swiperFeaturesOpt());
-  const swiperDaily1 = new Swiper('.swiper-container--daily-1', swiperFeaturesOpt());
-  const swiperDaily2 = new Swiper('.swiper-container--daily-2', swiperFeaturesOpt());
-  const swiperDaily3 = new Swiper('.swiper-container--daily-3', swiperFeaturesOpt());
+  const swiperFeatures0 = new Swiper('.swiper-container--featured-0', swiperFeaturesOpt(4000));
+  const swiperFeatures1 = new Swiper('.swiper-container--featured-1', swiperFeaturesOpt(5000));
+  const swiperFeatures2 = new Swiper('.swiper-container--featured-2', swiperFeaturesOpt(6000));
+  const swiperDaily0 = new Swiper('.swiper-container--daily-0', swiperFeaturesOpt(3000));
+  const swiperDaily1 = new Swiper('.swiper-container--daily-1', swiperFeaturesOpt(5500));
+  const swiperDaily2 = new Swiper('.swiper-container--daily-2', swiperFeaturesOpt(8000));
+  const swiperDaily3 = new Swiper('.swiper-container--daily-3', swiperFeaturesOpt(7500));
 };

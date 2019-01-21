@@ -360,14 +360,23 @@
   }
 
   &__out {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
     position: absolute;
-    left: 5px;
-    bottom: 54px;
-    color: $c-white;
+    left: 6px;
+    bottom: 52px;
+    width: 50px;
+    //height: 23px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+    line-height: 1;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     font-family: "Rajdhani", sans-serif;
+
   }
 
   &__badge {
