@@ -60,15 +60,12 @@
   ];
 
 mixin swiperFeatured1Content()
-  .swiper-slide.b-skin.b-skin--epic
+  a(href="#").swiper-slide.b-skin.b-skin--epic
     img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 
     .b-skin__badge
       .e-skin__block-badge.e-skin__block-badge--style
         span!= "Pick Your STyle!"
-      .e-skin__block-badge
-        i.icon-font.icon-diamond
-        span!= "epic"
 
     .b-skin__view
       .e-skin__block-view
@@ -83,15 +80,12 @@ mixin swiperFeatured1Content()
         img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
         span!= "1500"
 
-  .swiper-slide.b-skin.b-skin--rare
+  a(href="#").swiper-slide.b-skin.b-skin--rare
     img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 
     .b-skin__badge
       .e-skin__block-badge.e-skin__block-badge--style
         span!= "Pick Your STyle!"
-      .e-skin__block-badge
-        i.icon-font.icon-diamond
-        span!= "rare"
 
     .b-skin__view
       .e-skin__block-view
@@ -106,13 +100,8 @@ mixin swiperFeatured1Content()
         img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
         span!= "1500"
 
-  .swiper-slide.b-skin.b-skin--legendary
+  a(href="#").swiper-slide.b-skin.b-skin--legendary
     img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
-
-    .b-skin__badge
-      .e-skin__block-badge
-        i.icon-font.icon-diamond
-        span!= "legendary"
 
     .b-skin__view
       .e-skin__block-view
@@ -127,13 +116,8 @@ mixin swiperFeatured1Content()
         img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
         span!= "1500"
 
-  .swiper-slide.b-skin.b-skin--uncommon
+  a(href="#").swiper-slide.b-skin.b-skin--uncommon
     img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
-
-    .b-skin__badge
-      .e-skin__block-badge
-        i.icon-font.icon-diamond
-        span!= "uncommon"
 
     .b-skin__view
       .e-skin__block-view
@@ -220,13 +204,8 @@ section#item.item
           .item__slider-wrapper.item__slider-wrapper-0
             .item__slider.item__slider-0
               if(pageClassName !== 'p-shop')
-                .swiper-slide.b-skin.b-skin--legendary
+                a(href="#").swiper-slide.b-skin.b-skin--legendary
                   img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
-
-                  .b-skin__badge
-                    .e-skin__block-badge
-                      i.icon-font.icon-diamond
-                      span!= "legendary"
 
                   .b-skin__view
                     .e-skin__block-view
@@ -245,15 +224,12 @@ section#item.item
 
             .item__slider.item__slider-1
               if(pageClassName === 'p-shop')
-                .swiper-slide.b-skin.b-skin--rare
+                a(href="#").swiper-slide.b-skin.b-skin--rare
                   img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 
                   .b-skin__badge
                     .e-skin__block-badge.e-skin__block-badge--style
                       span!= "Pick Your STyle!"
-                    .e-skin__block-badge
-                      i.icon-font.icon-diamond
-                      span!= "rare"
 
                   .b-skin__view
                     .e-skin__block-view
@@ -287,13 +263,8 @@ section#item.item
               +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
 
             .item__slider.item__slider-4
-              .swiper-slide.b-skin.b-skin--legendary
+              a(href="#").swiper-slide.b-skin.b-skin--legendary
                 img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
-
-                .b-skin__badge
-                  .e-skin__block-badge
-                    i.icon-font.icon-diamond
-                    span!= "legendary"
 
                 .b-skin__view
                   .e-skin__block-view
@@ -319,13 +290,8 @@ section#item.item
                 +swiper('swiper-container--daily swiper-container--daily-0', 'swiperFeatured1Content', false, true, false)
 
               .item__slider.item__slider-8
-                .swiper-slide.b-skin.b-skin--uncommon
+                a(href="#").swiper-slide.b-skin.b-skin--uncommon
                   img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
-
-                  .b-skin__badge
-                    .e-skin__block-badge
-                      i.icon-font.icon-diamond
-                      span!= "uncommon"
 
                   .b-skin__view
                     .e-skin__block-view
