@@ -279,7 +279,7 @@
         margin-right: 3px;
         margin-bottom: 13px;
         box-shadow: none;
-        border-color: #e8f2ff;
+        //border-color: #e8f2ff;
         @include adaptive(1199) {
           width: calc((100% - 18px) / 3);
         }

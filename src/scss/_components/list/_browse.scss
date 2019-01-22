@@ -376,21 +376,55 @@
   }
 
   &__box {
+    overflow: hidden;
     position: relative;
     width: 173px;
     height: 137px;
     padding: 10px;
     border: 5px solid #e8f2ff;
 
-    @each $className, $gradName in
-        (legendary, '%radialGradientOrange'),
-        (epic, '%radialGradientPink'),
-        (rare, '%radialGradientBlue'),
-        (uncommon, '%radialGradientGreen')
+    @each $className, $gradName, $borderVal in
+        (legendary, '%radialGradientOrange', #e38748),
+        (epic, '%radialGradientPink', #b04eec),
+        (rare, '%radialGradientBlue', #3ad6ff),
+        (uncommon, '%radialGradientGreen', #8fee3b)
     {
       &--#{$className} {
-        @extend #{$gradName};
+        border-color: $borderVal;
+
+        &:before {
+          @extend #{$gradName};
+        }
       }
+    }
+
+    &:hover {
+      &:after {
+        opacity: 1;
+        @include transition(opacity);
+      }
+
+      > img {
+        transform: scale(1.1);
+        @include transition(transform);
+      }
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+    }
+
+    &:after {
+      opacity: 0;
+      background: radial-gradient(200px at center,hsla(0,0%,100%,.3),hsla(0,0%,100%,.05));
+      @include transition(opacity);
     }
 
     &-name {
@@ -445,13 +479,14 @@
     }
 
     > img {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
       display: block;
       max-width: 100%;
       max-height: 100%;
-      margin: auto;
+      margin-left: auto;
+      margin-right: auto;
+      backface-visibility: hidden;
+      transform-origin: center;
+      @include transition(transform);
     }
   }
 }

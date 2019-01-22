@@ -187,15 +187,17 @@
       min-height: 0;
     }
 
-    @each $className, $colorVal in
-      (0, 'radial-gradient(#ea8d23,#c04d1f)'),
-      (1, 'radial-gradient(#c359ff,#701fe5)'),
-      (2, 'radial-gradient(#2cc1ff,#215dc2)'),
-      (3, 'radial-gradient(#69bb1e,#227622)'),
-      (4, 'radial-gradient(#bebebe,#848282)')
+    @each $className, $colorVal, $borderColor in
+      (0, 'radial-gradient(#ea8d23,#c04d1f)', #e38748),
+      (1, 'radial-gradient(#c359ff,#701fe5)', #b04eec),
+      (2, 'radial-gradient(#2cc1ff,#215dc2)', #3ad6ff),
+      (3, 'radial-gradient(#69bb1e,#227622)', #8fee3b),
+      (4, 'radial-gradient(#bebebe,#848282)', #bebebe)
     {
       &-#{$className} {
         .latest__block-photo {
+          background-color: $borderColor;
+
           > div {
             background-image: #{$colorVal};
           }
@@ -254,26 +256,48 @@
           transform: scale(1.1);
           @include transition(transform);
         }
+
+        > div {
+          &:after {
+            opacity: 1;
+            @include transition(opacity);
+          }
+        }
       }
 
       > div {
-        content: '';
         position: absolute;
         top: 4px;
         left: 4px;
         width: calc(100% - 8px);
         height: calc(100% - 8px);
         clip-path: polygon(0 0, 100% 3%, 97% 95%, 5% 100%);
+
+        &:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        &:after {
+          opacity: 0;
+          background: radial-gradient(200px at center,hsla(0,0%,100%,.3),hsla(0,0%,100%,.05));
+          @include transition(opacity);
+        }
       }
 
       img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        backface-visibility: hidden;
+        transform-origin: center;
         @include transition(transform);
       }
     }
