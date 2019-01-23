@@ -242,7 +242,7 @@
         width: calc((100% - 44px) / 2);
         margin-bottom: 38px;
       }
-      @include adaptive(575) {
+      @include adaptive(374) {
         width: calc((100% - 22px) / 1);
       }
 
@@ -330,7 +330,7 @@
         height: 296px;
       }
 
-      video {
+      iframe {
         position: absolute;
         top: 0;
         left: 0;

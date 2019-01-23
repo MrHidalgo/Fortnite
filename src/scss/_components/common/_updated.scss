@@ -23,6 +23,9 @@
             left: auto;
             bottom: -25%;
             right: -5%;
+            @include adaptive(767) {
+              display: none;
+            }
           }
           &:nth-of-type(3) {
             top: -5px;

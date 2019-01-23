@@ -221,7 +221,7 @@
     &-wrapper {
       display: flex;
       align-items: flex-start;
-      @include adaptive(575) {
+      @include adaptive(374) {
         flex-wrap: wrap;
       }
     }
@@ -231,6 +231,9 @@
       max-width: 330px;
       padding-right: 22px;
       @include adaptive(575) {
+        padding-bottom: 15px;
+      }
+      @include adaptive(374) {
         max-width: 100%;
         padding-bottom: 15px;
         padding-right: 0;
