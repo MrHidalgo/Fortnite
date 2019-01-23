@@ -272,6 +272,10 @@
       flex-wrap: wrap;
       padding-left: 10px;
       padding-right: 10px;
+      @include adaptive(575) {
+        padding-left: 0;
+        padding-right: 0;
+      }
 
       .b-skin {
         width: calc((100% - 24px) / 4);
@@ -279,7 +283,6 @@
         margin-right: 3px;
         margin-bottom: 13px;
         box-shadow: none;
-        //border-color: #e8f2ff;
         @include adaptive(1199) {
           width: calc((100% - 18px) / 3);
         }
@@ -292,7 +295,7 @@
         @include adaptive(575) {
           width: calc((100% - 12px) / 2);
         }
-        @include adaptive(424) {
+        @include adaptive(374) {
           width: 100%;
         }
 

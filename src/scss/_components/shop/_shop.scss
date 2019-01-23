@@ -279,7 +279,7 @@
       h1 {
         color: #0183b1;
         text-transform: uppercase;
-        @include fluid(font-size, 320px, 991px, 40px, 48px);
+        @include fluid(font-size, 320px, 991px, 30px, 48px);
       }
     }
   }

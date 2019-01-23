@@ -79,6 +79,9 @@
     background-color: #f0ca06;
     clip-path: polygon(0 0, 100% 2%, 96% 100%, 2% 98%);
     color: $c-white;
+    @include adaptive(575) {
+      max-width: 95%;
+    }
 
     &:before {
       content: '';
@@ -100,7 +103,7 @@
       padding-left: 23px;
       line-height: 1;
       text-transform: uppercase;
-      @include fluid(font-size, 320px, 767px, 36px, 48px);
+      @include fluid(font-size, 320px, 767px, 28px, 48px);
     }
   }
 
@@ -180,6 +183,7 @@
       max-width: 100%;
       @include adaptive(575) {
         flex-direction: column;
+        align-items: flex-start;
       }
     }
   }

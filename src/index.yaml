@@ -22,7 +22,7 @@ PageList:
   ready: 80
 - file: history-sub.html
   titleName: History sub
-  ready: 80
+  ready: 96
 - file: leaked.html
   titleName: Leaked
   ready: 96

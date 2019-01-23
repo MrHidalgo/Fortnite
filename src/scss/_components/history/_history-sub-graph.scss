@@ -56,6 +56,10 @@
   &__footer {
     padding-left: 35px;
     padding-right: 20px;
+    @include adaptive(575) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   &__title {
@@ -345,7 +349,7 @@
     background-color: #0183b1;
     clip-path: polygon(0 5%, 100% 0, 97% 98%, 2% 100%);
     color: $c-white;
-    @include adaptive(767) {
+    @include adaptive(374) {
       flex-wrap: wrap;
     }
 
@@ -375,15 +379,15 @@
 
     .icon {
       &-calendar-wr {
-        @include fluid(font-size, 320px, 767px, 22px, 27px);
+        @include fluid(font-size, 320px, 767px, 20px, 27px);
       }
       &-ribbon {
         color: $c-white;
-        @include fluid(font-size, 320px, 767px, 20px, 23px);
+        @include fluid(font-size, 320px, 767px, 18px, 23px);
       }
       &-bubble {
         color: $c-white;
-        @include fluid(font-size, 320px, 767px, 20px, 23px);
+        @include fluid(font-size, 320px, 767px, 18px, 23px);
       }
     }
 
@@ -401,7 +405,10 @@
       padding-left: 13px;
       line-height: 1;
       text-transform: uppercase;
-      @include fluid(font-size, 320px, 767px, 16px, 18px);
+      @include fluid(font-size, 320px, 767px, 12px, 18px);
+      @include adaptive(575) {
+        padding-left: 7px;
+      }
     }
   }
 }
