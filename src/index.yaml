@@ -16,10 +16,10 @@ PageList:
   ready: 80
 - file: shop-rotation.html
   titleName: Shop rotation
-  ready: 80
+  ready: 96
 - file: history.html
   titleName: History
-  ready: 80
+  ready: 96
 - file: history-sub.html
   titleName: History sub
   ready: 96
