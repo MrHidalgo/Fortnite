@@ -40,7 +40,7 @@ PageList:
   ready: 80
 - file: search.html
   titleName: Search
-  ready: 80
+  ready: 96
 - file: beginners.html
   titleName: Beginner tips
   ready: 96
