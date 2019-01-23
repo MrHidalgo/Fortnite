@@ -13,7 +13,7 @@ PageList:
   ready: 80
 - file: shop.html
   titleName: Shop
-  ready: 80
+  ready: 96
 - file: shop-rotation.html
   titleName: Shop rotation
   ready: 96

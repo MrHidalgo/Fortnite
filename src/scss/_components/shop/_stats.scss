@@ -386,6 +386,8 @@
       padding: 22px 40px 40px;
       @include adaptive(767) {
         flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
       }
     }
 
@@ -399,7 +401,11 @@
       min-height: 57px;
       clip-path: polygon(0 0, 100% 5%, 98% 95%, 2% 100%);
       @include adaptive(767) {
-        margin: 10px 30px;
+        margin-bottom: 15px;
+      }
+      @include adaptive(374) {
+        margin-left: auto;
+        margin-right: auto;
       }
 
       &--0 {
@@ -516,6 +522,9 @@
         &:nth-of-type(1) {
           top: -30px;
           left: 10%;
+          @include adaptive(767) {
+            display: none;
+          }
         }
         &:nth-of-type(2) {
           top: 5%;
@@ -532,6 +541,9 @@
         &:nth-of-type(5) {
           bottom: -40px;
           right: 0;
+          @include adaptive(767) {
+            display: none;
+          }
         }
       }
     }
