@@ -34,7 +34,7 @@ PageList:
   ready: 80
 - file: privacy-policy.html
   titleName: Privacy Policy
-  ready: 80
+  ready: 96
 - file: rewards.html
   titleName: Battle pass rewards
   ready: 96

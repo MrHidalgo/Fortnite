@@ -74,9 +74,15 @@
 
           &-0 {
             left: 0;
+            @include adaptive(575) {
+              display: none;
+            }
           }
           &-1 {
             left: 100px;
+            @include adaptive(575) {
+              bottom: 15px;
+            }
           }
           &-2 {
             right: 100px;
@@ -84,6 +90,9 @@
           }
           &-3 {
             right: 0;
+            @include adaptive(575) {
+              display: none;
+            }
           }
         }
       }
