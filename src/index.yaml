@@ -7,7 +7,7 @@ PageList:
   ready: 80
 - file: skin.html
   titleName: Skin
-  ready: 80
+  ready: 96
 - file: sets.html
   titleName: Sets
   ready: 96
