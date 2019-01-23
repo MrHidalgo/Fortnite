@@ -723,6 +723,9 @@
     &-4 {}
     &-5 {
       margin-bottom: 0;
+      @include adaptive(575) {
+        margin-bottom: 11px;
+      }
     }
     &-6,
     &-7,
@@ -745,6 +748,8 @@
       &-0 {
         align-items: flex-start;
         @include adaptive(575) {
+          flex-wrap: wrap;
+
           .item__slider {
             width: 100%;
             max-width: calc((100% - 20px) / 2);
@@ -774,8 +779,32 @@
 
       &-1 {
         flex-wrap: wrap;
+        @include adaptive(575) {
+          .item__slider {
+            width: 100%;
+            max-width: calc((100% - 20px) / 2);
+            margin-left: 5px;
+            margin-right: 5px;
+          }
+
+          .b-skin {
+            width: 100%;
+          }
+        }
         @include adaptive(424) {
           justify-content: center;
+        }
+        @include adaptive(374) {
+          .item__slider {
+            max-width: 100%;
+
+            .swiper-container,
+            .b-skin {
+              max-width: 175px;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          }
         }
       }
     }

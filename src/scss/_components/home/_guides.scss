@@ -59,6 +59,9 @@
     left: 0;
     width: 100%;
     height: 100%;
+    @include adaptive(575) {
+      display: none;
+    }
 
     &-img {
       position: absolute;

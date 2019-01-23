@@ -8624,7 +8624,7 @@ picture {
   }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 374px) {
   /* line 74, src/scss/_components/home/_home.scss */
   .home--leaded .home__wrapper-1 .b-skin__wrapper {
     width: 100%;
@@ -9980,19 +9980,26 @@ picture {
   margin-bottom: 0;
 }
 
-/* line 727, src/scss/_components/home/_item.scss */
+@media screen and (max-width: 575px) {
+  /* line 724, src/scss/_components/home/_item.scss */
+  .item__slider-5 {
+    margin-bottom: 11px;
+  }
+}
+
+/* line 730, src/scss/_components/home/_item.scss */
 .item__slider-6, .item__slider-7, .item__slider-8 {
   margin-bottom: 0;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 727, src/scss/_components/home/_item.scss */
+  /* line 730, src/scss/_components/home/_item.scss */
   .item__slider-6, .item__slider-7, .item__slider-8 {
     margin-bottom: 11px;
   }
 }
 
-/* line 736, src/scss/_components/home/_item.scss */
+/* line 739, src/scss/_components/home/_item.scss */
 .item__slider-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10005,13 +10012,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 736, src/scss/_components/home/_item.scss */
+  /* line 739, src/scss/_components/home/_item.scss */
   .item__slider-wrapper {
     max-width: 100%;
   }
 }
 
-/* line 745, src/scss/_components/home/_item.scss */
+/* line 748, src/scss/_components/home/_item.scss */
 .item__slider-wrapper-0 {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -10020,13 +10027,18 @@ picture {
 
 @media screen and (max-width: 575px) {
   /* line 748, src/scss/_components/home/_item.scss */
+  .item__slider-wrapper-0 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  /* line 753, src/scss/_components/home/_item.scss */
   .item__slider-wrapper-0 .item__slider {
     width: 100%;
     max-width: calc((100% - 20px) / 2);
     margin-left: 5px !important;
     margin-right: 5px !important;
   }
-  /* line 754, src/scss/_components/home/_item.scss */
+  /* line 759, src/scss/_components/home/_item.scss */
   .item__slider-wrapper-0 .item__slider .swiper-container,
   .item__slider-wrapper-0 .item__slider .b-skin {
     width: 100%;
@@ -10037,7 +10049,7 @@ picture {
 }
 
 @media screen and (max-width: 374px) {
-  /* line 745, src/scss/_components/home/_item.scss */
+  /* line 748, src/scss/_components/home/_item.scss */
   .item__slider-wrapper-0 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -10047,7 +10059,7 @@ picture {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 767, src/scss/_components/home/_item.scss */
+  /* line 772, src/scss/_components/home/_item.scss */
   .item__slider-wrapper-0 .item__slider {
     max-width: 100%;
     margin-left: 0 !important;
@@ -10055,18 +10067,46 @@ picture {
   }
 }
 
-/* line 775, src/scss/_components/home/_item.scss */
+/* line 780, src/scss/_components/home/_item.scss */
 .item__slider-wrapper-1 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 575px) {
+  /* line 783, src/scss/_components/home/_item.scss */
+  .item__slider-wrapper-1 .item__slider {
+    width: 100%;
+    max-width: calc((100% - 20px) / 2);
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  /* line 790, src/scss/_components/home/_item.scss */
+  .item__slider-wrapper-1 .b-skin {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 424px) {
-  /* line 775, src/scss/_components/home/_item.scss */
+  /* line 780, src/scss/_components/home/_item.scss */
   .item__slider-wrapper-1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  /* line 798, src/scss/_components/home/_item.scss */
+  .item__slider-wrapper-1 .item__slider {
+    max-width: 100%;
+  }
+  /* line 801, src/scss/_components/home/_item.scss */
+  .item__slider-wrapper-1 .item__slider .swiper-container,
+  .item__slider-wrapper-1 .item__slider .b-skin {
+    max-width: 175px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -10146,52 +10186,59 @@ picture {
   height: 100%;
 }
 
-/* line 63, src/scss/_components/home/_guides.scss */
+@media screen and (max-width: 575px) {
+  /* line 55, src/scss/_components/home/_guides.scss */
+  .guides__triangle {
+    display: none;
+  }
+}
+
+/* line 66, src/scss/_components/home/_guides.scss */
 .guides__triangle-img {
   position: absolute;
 }
 
-/* line 66, src/scss/_components/home/_guides.scss */
+/* line 69, src/scss/_components/home/_guides.scss */
 .guides__triangle-img-0 {
   top: 0;
   left: 0;
 }
 
-/* line 70, src/scss/_components/home/_guides.scss */
+/* line 73, src/scss/_components/home/_guides.scss */
 .guides__triangle-img-1 {
   top: 0;
   right: 0;
 }
 
-/* line 74, src/scss/_components/home/_guides.scss */
+/* line 77, src/scss/_components/home/_guides.scss */
 .guides__triangle-img-2 {
   left: 3%;
   bottom: -10%;
 }
 
-/* line 78, src/scss/_components/home/_guides.scss */
+/* line 81, src/scss/_components/home/_guides.scss */
 .guides__triangle-img-3 {
   right: 30%;
   bottom: -2%;
 }
 
-/* line 85, src/scss/_components/home/_guides.scss */
+/* line 88, src/scss/_components/home/_guides.scss */
 .guides .c-grid {
   max-width: 1230px;
 }
 
-/* line 89, src/scss/_components/home/_guides.scss */
+/* line 92, src/scss/_components/home/_guides.scss */
 .guides__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 93, src/scss/_components/home/_guides.scss */
+/* line 96, src/scss/_components/home/_guides.scss */
 .guides__wrapper-0 {
   padding-top: 65px;
 }
 
-/* line 99, src/scss/_components/home/_guides.scss */
+/* line 102, src/scss/_components/home/_guides.scss */
 .guides__wrapper-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10202,7 +10249,7 @@ picture {
   padding-top: 40px;
 }
 
-/* line 106, src/scss/_components/home/_guides.scss */
+/* line 109, src/scss/_components/home/_guides.scss */
 .guides__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10221,7 +10268,7 @@ picture {
           clip-path: polygon(0 0, 100% 3%, 96% 100%, 4% 100%);
 }
 
-/* line 118, src/scss/_components/home/_guides.scss */
+/* line 121, src/scss/_components/home/_guides.scss */
 .guides__title h2 {
   padding-left: 18px;
   line-height: 1;
@@ -10231,34 +10278,34 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 118, src/scss/_components/home/_guides.scss */
+  /* line 121, src/scss/_components/home/_guides.scss */
   .guides__title h2 {
     padding-left: calc(10px + 8 * (100vw - 320px) / 672);
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 118, src/scss/_components/home/_guides.scss */
+  /* line 121, src/scss/_components/home/_guides.scss */
   .guides__title h2 {
     padding-left: 18px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 118, src/scss/_components/home/_guides.scss */
+  /* line 121, src/scss/_components/home/_guides.scss */
   .guides__title h2 {
     font-size: calc(30px + 15 * (100vw - 320px) / 672);
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 118, src/scss/_components/home/_guides.scss */
+  /* line 121, src/scss/_components/home/_guides.scss */
   .guides__title h2 {
     font-size: 45px;
   }
 }
 
-/* line 127, src/scss/_components/home/_guides.scss */
+/* line 130, src/scss/_components/home/_guides.scss */
 .guides__block {
   overflow: hidden;
   position: relative;
@@ -10269,7 +10316,7 @@ picture {
   border: 4px solid #e6f3f8;
 }
 
-/* line 137, src/scss/_components/home/_guides.scss */
+/* line 140, src/scss/_components/home/_guides.scss */
 .guides__block:hover img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -10281,13 +10328,13 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 143, src/scss/_components/home/_guides.scss */
+/* line 146, src/scss/_components/home/_guides.scss */
 .guides__block-0 {
   max-width: 50%;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 143, src/scss/_components/home/_guides.scss */
+  /* line 146, src/scss/_components/home/_guides.scss */
   .guides__block-0 {
     max-width: 100%;
     margin-bottom: 24px;
@@ -10295,33 +10342,33 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 143, src/scss/_components/home/_guides.scss */
+  /* line 146, src/scss/_components/home/_guides.scss */
   .guides__block-0 {
     margin-bottom: 15px;
   }
 }
 
-/* line 154, src/scss/_components/home/_guides.scss */
+/* line 157, src/scss/_components/home/_guides.scss */
 .guides__block-1, .guides__block-2 {
   max-width: 25%;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 154, src/scss/_components/home/_guides.scss */
+  /* line 157, src/scss/_components/home/_guides.scss */
   .guides__block-1, .guides__block-2 {
     max-width: calc((100% - 48px) / 2);
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 154, src/scss/_components/home/_guides.scss */
+  /* line 157, src/scss/_components/home/_guides.scss */
   .guides__block-1, .guides__block-2 {
     max-width: 100%;
     margin-bottom: 15px;
   }
 }
 
-/* line 166, src/scss/_components/home/_guides.scss */
+/* line 169, src/scss/_components/home/_guides.scss */
 .guides__block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10329,14 +10376,14 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 166, src/scss/_components/home/_guides.scss */
+  /* line 169, src/scss/_components/home/_guides.scss */
   .guides__block-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 173, src/scss/_components/home/_guides.scss */
+/* line 176, src/scss/_components/home/_guides.scss */
 .guides__block img {
   position: absolute;
   top: 0;
@@ -10354,7 +10401,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 184, src/scss/_components/home/_guides.scss */
+/* line 187, src/scss/_components/home/_guides.scss */
 .guides__block-info {
   position: absolute;
   bottom: 0;
@@ -10364,7 +10411,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* line 192, src/scss/_components/home/_guides.scss */
+/* line 195, src/scss/_components/home/_guides.scss */
 .guides__block-info h3 {
   padding-bottom: 10px;
   color: #ffd600;
@@ -10372,13 +10419,13 @@ picture {
   font-size: 20px;
 }
 
-/* line 199, src/scss/_components/home/_guides.scss */
+/* line 202, src/scss/_components/home/_guides.scss */
 .guides__block-info p {
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 205, src/scss/_components/home/_guides.scss */
+/* line 208, src/scss/_components/home/_guides.scss */
 .guides__block-badge {
   position: absolute;
   display: -webkit-box;
@@ -10400,7 +10447,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
 }
 
-/* line 218, src/scss/_components/home/_guides.scss */
+/* line 221, src/scss/_components/home/_guides.scss */
 .guides__block-badge p {
   color: #fff;
   text-transform: uppercase;
