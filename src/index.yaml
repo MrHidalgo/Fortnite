@@ -10,7 +10,7 @@ PageList:
   ready: 80
 - file: sets.html
   titleName: Sets
-  ready: 80
+  ready: 96
 - file: shop.html
   titleName: Shop
   ready: 96

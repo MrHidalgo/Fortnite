@@ -55,7 +55,7 @@
         top: -75px;
         right: 10%;
         @include adaptive(767) {
-          right: 0;
+          display: none;
         }
       }
       &:nth-of-type(2) {

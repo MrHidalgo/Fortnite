@@ -5,6 +5,9 @@
 
   .p-sets & {
     top: 75px;
+    @include adaptive(767) {
+      top: 0;
+    }
   }
 
   &--medium {
@@ -221,6 +224,9 @@
       &:nth-of-type(2) {
         top: -7%;
         left: 5%;
+        @include adaptive(767) {
+          display: none;
+        }
       }
       &:nth-of-type(3) {
         top: 4%;

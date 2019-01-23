@@ -56,6 +56,9 @@
         &:nth-of-type(5) {
           left: 10%;
           bottom: -30px;
+          @include adaptive(575) {
+            display: none;
+          }
         }
       }
     }
@@ -94,6 +97,17 @@
         margin-bottom: 30px;
         padding-left: 5px;
         padding-right: 5px;
+        @include adaptive(767) {
+          width: 100%;
+          min-width: auto;
+          max-width: calc((100% - 30px) / 3);
+        }
+        @include adaptive(575) {
+          max-width: calc((100% - 20px) / 2);
+        }
+        @include adaptive(374) {
+          max-width: 100%;
+        }
       }
 
       .b-skin {
@@ -102,7 +116,7 @@
 
         &__view {
           bottom: auto;
-          top: 2px;
+          top: 4px;
 
           .icon-font,
           span {
@@ -126,13 +140,17 @@
       padding: 5px 30px;
       background-color: #5fd5ff;
       clip-path: polygon(0 0, 100% 4%, 96% 96%, 3% 100%);
+      @include adaptive(575) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
 
       h3 {
         color: $c-white;
         line-height: 1;
         text-align: center;
         text-transform: uppercase;
-        @include fluid(font-size, 320px, 1439px, 36px, 48px);
+        @include fluid(font-size, 320px, 1439px, 33px, 48px);
       }
     }
 
@@ -149,6 +167,10 @@
       margin-right: auto;
       padding: 35px 30px 15px;
       color: $c-white;
+      @include adaptive(575) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
 
       &-bg {
         z-index: -1;
@@ -182,7 +204,7 @@
       > div {
         display: flex;
         justify-content: center;
-        @include adaptive(575) {
+        @include adaptive(374) {
           flex-direction: column;
         }
 
@@ -202,6 +224,10 @@
           font-weight: bold;
           font-family: 'Ubuntu', sans-serif;
           @include fluid(font-size, 320px, 1439px, 16px, 18px);
+          @include adaptive(575) {
+            padding-left: 7px;
+            padding-right: 7px;
+          }
 
           span {
             font-weight: normal;

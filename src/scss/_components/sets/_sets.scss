@@ -124,6 +124,9 @@
       padding-left: 41px;
       background-color: #871cea;
       clip-path: polygon(1% 1%, 96% 0, 100% 100%, 0 98%);
+      @include adaptive(575) {
+        padding-left: 21px;
+      }
 
       &:before {
         content: '';
