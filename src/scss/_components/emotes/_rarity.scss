@@ -8,7 +8,11 @@
   min-height: 258px;
   margin-left: auto;
   @include adaptive(767) {
+    top: -52px;
     margin-right: auto;
+  }
+  @include adaptive(374) {
+    top: -42px;
   }
 
   &:before {
@@ -83,6 +87,9 @@
       &:nth-of-type(5) {
         bottom: -10%;
         left: 0;
+        @include adaptive(767) {
+          display: none;
+        }
       }
       &:nth-of-type(6) {
         left: 20%;
@@ -91,6 +98,9 @@
       &:nth-of-type(7) {
         right: 0;
         bottom: -10%;
+        @include adaptive(374) {
+          display: none;
+        }
       }
     }
   }

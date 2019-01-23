@@ -49,6 +49,10 @@
   }
 
   &__triangle {
+    @include adaptive(374) {
+      display: none;
+    }
+
     img {
       @include adaptive(767) {
         transform: scale(0.75);
