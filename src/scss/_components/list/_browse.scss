@@ -152,7 +152,7 @@
     .icon-browse,
     h2 {
       color: $c-white;
-      @include fluid(font-size, 320px, 992px, 35px, 48px);
+      @include fluid(font-size, 320px, 992px, 30px, 48px);
     }
 
     h2 {
@@ -357,14 +357,14 @@
 
     &-th {
       color: #273c43;
-      @include fluid(font-size, 320px, 1200px, 14px, 16px);
+      @include fluid(font-size, 320px, 1200px, 12px, 16px);
     }
 
     &-td {
       display: flex;
       align-items: center;
       color: #728388;
-      @include fluid(font-size, 320px, 1200px, 16px, 18px);
+      @include fluid(font-size, 320px, 1200px, 14px, 18px);
 
       .e-skin__block-points {
         display: flex;
@@ -374,7 +374,7 @@
         span {
           color: #728388;
           font-family: 'Ubuntu', sans-serif;
-          @include fluid(font-size, 320px, 1200px, 16px, 18px);
+          @include fluid(font-size, 320px, 1200px, 14px, 18px);
         }
       }
     }
@@ -385,7 +385,7 @@
       line-height: 1;
       text-transform: uppercase;
       font-family: 'Anton', sans-serif;
-      @include fluid(font-size, 320px, 1200px, 25px, 30px);
+      @include fluid(font-size, 320px, 1200px, 24px, 30px);
     }
   }
 
@@ -458,7 +458,7 @@
         line-height: 1;
         text-transform: uppercase;
         font-family: 'Anton', sans-serif;
-        @include fluid(font-size, 320px, 1200px, 20px, 24px);
+        @include fluid(font-size, 320px, 1200px, 18px, 24px);
       }
     }
 
@@ -475,7 +475,7 @@
         color: $c-white;
         line-height: 1;
         font-weight: 500;
-        @include fluid(font-size, 320px, 1200px, 16px, 18px);
+        @include fluid(font-size, 320px, 1200px, 14px, 18px);
       }
     }
 

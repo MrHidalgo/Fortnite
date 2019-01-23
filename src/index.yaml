@@ -46,7 +46,7 @@ PageList:
   ready: 80
 - file: list-table.html
   titleName: List of all skins - table
-  ready: 80
+  ready: 96
 - file: list-grid.html
   titleName: List of all skins - grid
   ready: 96
