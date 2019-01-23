@@ -170,6 +170,20 @@
         @include adaptive(1365) {
           margin: 18px 9px;
         }
+        @include adaptive(575) {
+          width: 100%;
+          max-width: calc((100% - 12px) / 2);
+          margin: 3px;
+        }
+        @include adaptive(424) {
+          width: 100%;
+          max-width: calc((100% - 12px) / 2);
+          height: 156px;
+          margin: 3px;
+        }
+        @include adaptive(374) {
+          height: 136px;
+        }
 
         &-wrapper {
           display: flex;

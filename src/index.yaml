@@ -49,7 +49,7 @@ PageList:
   ready: 80
 - file: list-grid.html
   titleName: List of all skins - grid
-  ready: 80
+  ready: 96
 - file: emotes.html
   titleName: Emotes
   ready: 96
