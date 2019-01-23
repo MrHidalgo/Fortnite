@@ -31,7 +31,7 @@ PageList:
   ready: 80
 - file: 404.html
   titleName: 404
-  ready: 80
+  ready: 96
 - file: privacy-policy.html
   titleName: Privacy Policy
   ready: 96

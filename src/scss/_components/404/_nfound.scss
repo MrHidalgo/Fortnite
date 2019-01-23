@@ -18,8 +18,8 @@
   p {
     color: $c-white;
     text-align: center;
-    font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
+    @include fluid(font-size, 320px, 767px, 20px, 24px);
   }
 
   img {
