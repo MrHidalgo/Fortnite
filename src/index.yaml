@@ -37,7 +37,7 @@ PageList:
   ready: 80
 - file: rewards.html
   titleName: Battle pass rewards
-  ready: 80
+  ready: 96
 - file: search.html
   titleName: Search
   ready: 96

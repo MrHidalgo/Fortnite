@@ -44,6 +44,9 @@
 
         &:nth-child(1) {
           left: 0;
+          @include adaptive(767) {
+            display: none;
+          }
         }
         &:nth-child(2) {
           left: 30%;
@@ -53,6 +56,9 @@
         }
         &:nth-child(4) {
           right: 0;
+          @include adaptive(767) {
+            display: none;
+          }
         }
       }
     }
@@ -106,6 +112,9 @@
     margin-bottom: 31px;
     background-color: #273c43;
     clip-path: polygon(0 6%, 100% 0, 99% 96%, 1% 100%);
+    @include adaptive(767) {
+      padding-left: 15px;
+    }
 
     &:after,
     &:before {
@@ -165,7 +174,7 @@
       z-index: 1;
       position: relative;
       color: $c-white;
-      @include fluid(font-size, 320px, 1440px, 28px, 36px);
+      @include fluid(font-size, 320px, 1440px, 24px, 36px);
     }
 
     h2,
