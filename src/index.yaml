@@ -43,7 +43,7 @@ PageList:
   ready: 80
 - file: beginners.html
   titleName: Beginner tips
-  ready: 80
+  ready: 96
 - file: list-table.html
   titleName: List of all skins - table
   ready: 96

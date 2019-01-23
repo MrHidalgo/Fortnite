@@ -105,6 +105,9 @@
           &:nth-child(2) {
             left: 5%;
             bottom: -8%;
+            @include adaptive(767) {
+              display: none;
+            }
           }
           &:nth-child(3) {
             left: 25%;
@@ -242,10 +245,16 @@
           &:nth-child(1) {
             top: -10%;
             left: 0;
+            @include adaptive(575) {
+              display: none;
+            }
           }
           &:nth-child(2) {
             top: -20%;
             right: 0;
+            @include adaptive(575) {
+              display: none;
+            }
           }
           &:nth-child(3) {
             top: 15%;
@@ -254,6 +263,9 @@
           &:nth-child(4) {
             left: -5%;
             bottom: -10%;
+            @include adaptive(575) {
+              display: none;
+            }
           }
         }
       }
@@ -375,6 +387,9 @@
           &:nth-child(1) {
             bottom: -8%;
             left: 4%;
+            @include adaptive(767) {
+              display: none;
+            }
           }
           &:nth-child(2) {
             bottom: -1%;
@@ -387,6 +402,9 @@
           &:nth-child(4) {
             bottom: -5%;
             right: 3%;
+            @include adaptive(767) {
+              display: none;
+            }
           }
         }
       }
@@ -571,10 +589,16 @@
           &:nth-child(2) {
             top: -30%;
             right: 5%;
+            @include adaptive(767) {
+              display: none;
+            }
           }
           &:nth-child(3) {
             bottom: -20%;
             left: 0;
+            @include adaptive(424) {
+              display: none;
+            }
           }
           &:nth-child(4) {
             bottom: -15%;
@@ -587,6 +611,9 @@
           &:nth-child(6) {
             bottom: -30%;
             right: 0;
+            @include adaptive(767) {
+              display: none;
+            }
           }
         }
       }
@@ -705,6 +732,9 @@
           &:nth-child(2) {
             right: 2%;
             bottom: -15%;
+            @include adaptive(767) {
+              display: none;
+            }
           }
         }
       }
@@ -729,6 +759,8 @@
         }
 
         &-right {
+          z-index: 2;
+          position: relative;
           width: 100%;
           max-width: calc(100% - 182px);
           padding-top: 28px;
