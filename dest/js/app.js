@@ -392,14 +392,14 @@ var initWebFontLoader = function initWebFontLoader() {
  * @description Window on load.
  */
 $(window).on("load", function (ev) {
-  initSectionBGResize('.beginners--main, .home--leaded, .skin--like, .skin--main');
+  // initSectionBGResize('.beginners--main, .home--leaded, .skin--like, .skin--main');
 });
 
 /**
  * @description Window on resize.
  */
 $(window).on("resize", function (ev) {
-  initSectionBGResize('.beginners--main, .home--leaded, .skin--like, .skin--main');
+  // initSectionBGResize('.beginners--main, .home--leaded, .skin--like, .skin--main');
 });
 
 /**
@@ -635,6 +635,45 @@ $(document).ready(function (ev) {
       no_overlay: true
     });
   };
+
+  var initTickerText = function initTickerText() {
+    if ($('.b-skin__info--ticker').length > 0) {
+      var set = function set() {
+        $('.b-skin__info--ticker, .b-skin__info--wticker').find('p').css({
+          'opacity': '1'
+        });
+
+        $tw.css({
+          'transform': 'translate3d(' + wwidth + 'px,0,0)'
+        });
+
+        window.setInterval(function () {
+          $tw.css({
+            'transition': 'all linear ' + (width + wwidth) / 250 * 2 + 's'
+          });
+          $tw.css({
+            'transform': 'translate3d(' + width * -1 + 'px,0,0)'
+          });
+        }, 1);
+      };
+
+      var $tw = $('.b-skin__info--ticker');
+      var $w = $('.b-skin__info');
+
+      $tw.bind("transitionend", function () {
+        $tw.css({
+          'transition': 'all linear 0s'
+        });
+
+        set();
+      });
+
+      var width = $tw.width() + 50;
+      var wwidth = $w.width() + 50;
+
+      set();
+    }
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -667,6 +706,7 @@ $(document).ready(function (ev) {
     initFilterRadioBtn();
     initListFilterSelect();
     initImageCompare();
+    initTickerText();
 
     $('body').on('click', function (e) {
       var className = ".header__search";

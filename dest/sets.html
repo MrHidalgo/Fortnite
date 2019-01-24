@@ -27,7 +27,31 @@
     <!-- STYLE :: START-->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.css">
-    <!-- STYLE :: END--><!--[if lt IE 9]>
+    <!-- STYLE :: END-->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async>
+      function initSectionBGResize(parentNodeName) {
+        if($('[section-resize-js]').length) {
+          const sectionResize = $('[section-resize-js]');
+      
+          const sectionRight = $('[section-right-js]'),
+            widthElem = sectionRight[0].getBoundingClientRect().left,
+            leftOffset = sectionResize.closest(parentNodeName)[0].getBoundingClientRect().left;
+      
+          if($(window).width() > 991) {
+            sectionResize.css({
+              'left' : -(leftOffset),
+              'width' : widthElem
+            });
+          }
+        }
+      };
+      
+      $(window).on("load resize", function(ev) {
+        initSectionBGResize('.beginners--main, .home--leaded, .skin--like, .skin--main');
+      });
+      
+    </script><!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
@@ -182,7 +206,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -190,7 +216,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--legendary" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -198,7 +226,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--uncommon" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -206,7 +236,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -214,7 +246,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -222,7 +256,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -230,7 +266,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -238,7 +276,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -246,7 +286,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -254,7 +296,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
               </div>
             </div>
@@ -280,7 +324,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -288,7 +334,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--legendary" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -296,7 +344,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--uncommon" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -304,7 +354,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -312,7 +364,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -320,7 +374,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -328,7 +384,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -336,7 +394,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -344,7 +404,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -352,7 +414,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
               </div>
             </div>
@@ -378,7 +442,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -386,7 +452,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--legendary" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -394,7 +462,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--uncommon" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -402,7 +472,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -410,7 +482,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -418,7 +492,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -426,7 +502,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -434,7 +512,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -442,7 +522,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
                 <div><a class="b-skin b-skin--small b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                     <div class="b-skin__points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
@@ -450,7 +532,9 @@
                       <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                     </div>
                     <div class="b-skin__info">
-                      <p>Skin Name</p>
+                      <div class="b-skin__info--ticker">
+                        <p>Skin Name - very long name</p>
+                      </div>
                     </div></a></div>
               </div>
             </div>

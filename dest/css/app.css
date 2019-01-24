@@ -1519,6 +1519,7 @@ picture {
 
 /* line 345, src/scss/_shared/_common.scss */
 .b-skin__info {
+  overflow: hidden;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1540,30 +1541,42 @@ picture {
   background-color: rgba(0, 0, 0, 0.57);
 }
 
-/* line 357, src/scss/_shared/_common.scss */
+/* line 358, src/scss/_shared/_common.scss */
+.b-skin__info--ticker {
+  white-space: nowrap;
+}
+
+/* line 362, src/scss/_shared/_common.scss */
 .b-skin__info p,
 .b-skin__info h3,
 .b-skin__info h4 {
+  opacity: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
   padding-bottom: 3px;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
   color: #fff;
   line-height: 1;
   text-transform: uppercase;
   font-size: 20px;
 }
 
-/* line 367, src/scss/_shared/_common.scss */
+/* line 383, src/scss/_shared/_common.scss */
 .b-skin__info .e-skin__block-points {
   position: relative;
   padding-bottom: 0;
 }
 
-/* line 371, src/scss/_shared/_common.scss */
+/* line 387, src/scss/_shared/_common.scss */
 .b-skin__info .e-skin__block-points span {
   color: #fff;
   font-weight: 500;
 }
 
-/* line 378, src/scss/_shared/_common.scss */
+/* line 394, src/scss/_shared/_common.scss */
 .b-skin__out {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1587,7 +1600,7 @@ picture {
   font-family: "Rajdhani", sans-serif;
 }
 
-/* line 398, src/scss/_shared/_common.scss */
+/* line 414, src/scss/_shared/_common.scss */
 .b-skin__badge {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1604,7 +1617,7 @@ picture {
   left: 0;
 }
 
-/* line 406, src/scss/_shared/_common.scss */
+/* line 422, src/scss/_shared/_common.scss */
 .b-skin__badge .e-skin__block-badge {
   position: relative;
   display: -webkit-inline-box;
@@ -1612,12 +1625,12 @@ picture {
   display: inline-flex;
 }
 
-/* line 410, src/scss/_shared/_common.scss */
+/* line 426, src/scss/_shared/_common.scss */
 .b-skin__badge .e-skin__block-badge--style {
   height: 20px;
 }
 
-/* line 421, src/scss/_shared/_common.scss */
+/* line 437, src/scss/_shared/_common.scss */
 .b-skin__view {
   position: absolute;
   display: -webkit-box;
@@ -1634,7 +1647,7 @@ picture {
   right: 6px;
 }
 
-/* line 430, src/scss/_shared/_common.scss */
+/* line 446, src/scss/_shared/_common.scss */
 .b-skin__sound {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1643,17 +1656,17 @@ picture {
   font-size: 18px;
 }
 
-/* line 435, src/scss/_shared/_common.scss */
+/* line 451, src/scss/_shared/_common.scss */
 .b-skin__sound:hover {
   color: #fff;
 }
 
-/* line 440, src/scss/_shared/_common.scss */
+/* line 456, src/scss/_shared/_common.scss */
 .b-skin .e-skin__block-view {
   position: static;
 }
 
-/* line 449, src/scss/_shared/_common.scss */
+/* line 465, src/scss/_shared/_common.scss */
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1661,7 +1674,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 449, src/scss/_shared/_common.scss */
+  /* line 465, src/scss/_shared/_common.scss */
   .copyright {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1670,7 +1683,7 @@ picture {
   }
 }
 
-/* line 456, src/scss/_shared/_common.scss */
+/* line 472, src/scss/_shared/_common.scss */
 .copyright p {
   color: #fff;
   font-size: 14px;
@@ -1678,25 +1691,25 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 456, src/scss/_shared/_common.scss */
+  /* line 472, src/scss/_shared/_common.scss */
   .copyright p {
     text-align: center;
   }
 }
 
-/* line 464, src/scss/_shared/_common.scss */
+/* line 480, src/scss/_shared/_common.scss */
 .copyright p span {
   font-weight: bold;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 472, src/scss/_shared/_common.scss */
+  /* line 488, src/scss/_shared/_common.scss */
   .newsletter {
     margin-bottom: 54px;
   }
 }
 
-/* line 477, src/scss/_shared/_common.scss */
+/* line 493, src/scss/_shared/_common.scss */
 .newsletter__text {
   padding-bottom: 25px;
   color: #657782;
@@ -1706,7 +1719,7 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 487, src/scss/_shared/_common.scss */
+/* line 503, src/scss/_shared/_common.scss */
 .newsletter__form-cover {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1718,7 +1731,7 @@ picture {
   background-repeat: no-repeat;
 }
 
-/* line 496, src/scss/_shared/_common.scss */
+/* line 512, src/scss/_shared/_common.scss */
 .newsletter__form-input {
   position: relative;
   width: 100%;
@@ -1726,7 +1739,7 @@ picture {
   height: 100%;
 }
 
-/* line 502, src/scss/_shared/_common.scss */
+/* line 518, src/scss/_shared/_common.scss */
 .newsletter__form-input input {
   outline: none;
   position: absolute;
@@ -1769,12 +1782,12 @@ picture {
   color: #657782;
 }
 
-/* line 522, src/scss/_shared/_common.scss */
+/* line 538, src/scss/_shared/_common.scss */
 .newsletter__form-btn {
   position: relative;
 }
 
-/* line 526, src/scss/_shared/_common.scss */
+/* line 542, src/scss/_shared/_common.scss */
 .newsletter__form-btn:hover:before {
   top: 0;
   -webkit-transform: translateY(0);
@@ -1789,7 +1802,7 @@ picture {
   transition: top 0.3s ease-in-out, transform 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 534, src/scss/_shared/_common.scss */
+/* line 550, src/scss/_shared/_common.scss */
 .newsletter__form-btn:hover i {
   color: #070c17;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1797,7 +1810,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 540, src/scss/_shared/_common.scss */
+/* line 556, src/scss/_shared/_common.scss */
 .newsletter__form-btn:before {
   content: '';
   position: absolute;
@@ -1816,7 +1829,7 @@ picture {
   transition: top 0.3s ease-in-out, transform 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 552, src/scss/_shared/_common.scss */
+/* line 568, src/scss/_shared/_common.scss */
 .newsletter__form-btn button {
   cursor: pointer;
   outline: none;
@@ -1840,7 +1853,7 @@ picture {
   background-color: transparent;
 }
 
-/* line 567, src/scss/_shared/_common.scss */
+/* line 583, src/scss/_shared/_common.scss */
 .newsletter__form-btn button i {
   color: #657782;
   font-size: 23px;
@@ -1849,7 +1862,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 579, src/scss/_shared/_common.scss */
+/* line 595, src/scss/_shared/_common.scss */
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1859,7 +1872,7 @@ picture {
           align-items: center;
 }
 
-/* line 583, src/scss/_shared/_common.scss */
+/* line 599, src/scss/_shared/_common.scss */
 .social__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1876,7 +1889,7 @@ picture {
   margin-right: 15px;
 }
 
-/* line 592, src/scss/_shared/_common.scss */
+/* line 608, src/scss/_shared/_common.scss */
 .social__link i {
   color: #fff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1884,12 +1897,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 606, src/scss/_shared/_common.scss */
+/* line 622, src/scss/_shared/_common.scss */
 .social__link--facebook i {
   font-size: 20px;
 }
 
-/* line 611, src/scss/_shared/_common.scss */
+/* line 627, src/scss/_shared/_common.scss */
 .social__link--facebook:hover i {
   color: #3b5998;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1897,12 +1910,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 606, src/scss/_shared/_common.scss */
+/* line 622, src/scss/_shared/_common.scss */
 .social__link--twitter i {
   font-size: 22px;
 }
 
-/* line 611, src/scss/_shared/_common.scss */
+/* line 627, src/scss/_shared/_common.scss */
 .social__link--twitter:hover i {
   color: #00aced;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1910,12 +1923,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 606, src/scss/_shared/_common.scss */
+/* line 622, src/scss/_shared/_common.scss */
 .social__link--google-plus i {
   font-size: 26px;
 }
 
-/* line 611, src/scss/_shared/_common.scss */
+/* line 627, src/scss/_shared/_common.scss */
 .social__link--google-plus:hover i {
   color: #dd4b39;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1923,12 +1936,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 606, src/scss/_shared/_common.scss */
+/* line 622, src/scss/_shared/_common.scss */
 .social__link--rss i {
   font-size: 18px;
 }
 
-/* line 611, src/scss/_shared/_common.scss */
+/* line 627, src/scss/_shared/_common.scss */
 .social__link--rss:hover i {
   color: #f26522;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1936,12 +1949,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 606, src/scss/_shared/_common.scss */
+/* line 622, src/scss/_shared/_common.scss */
 .social__link--pinterest i {
   font-size: 20px;
 }
 
-/* line 611, src/scss/_shared/_common.scss */
+/* line 627, src/scss/_shared/_common.scss */
 .social__link--pinterest:hover i {
   color: #cb2027;
   -webkit-transition: color 0.3s ease-in-out;
@@ -1949,12 +1962,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 606, src/scss/_shared/_common.scss */
+/* line 622, src/scss/_shared/_common.scss */
 .social__link--instagram i {
   font-size: 20px;
 }
 
-/* line 611, src/scss/_shared/_common.scss */
+/* line 627, src/scss/_shared/_common.scss */
 .social__link--instagram:hover i {
   color: #bc2a8d;
   -webkit-transition: color 0.3s ease-in-out;

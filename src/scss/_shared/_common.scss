@@ -343,6 +343,7 @@
   }
 
   &__info {
+    overflow: hidden;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -354,14 +355,29 @@
     height: 54px;
     background-color: rgba($c-black, 0.57);
 
+    &--ticker {
+      white-space: nowrap;
+    }
+
     p,
     h3,
     h4 {
+      opacity: 0;
+      overflow:hidden;
+      white-space:nowrap;
+      display:inline-block;
       padding-bottom: 3px;
+      transition-property: all;
       color: $c-white;
       line-height: 1;
       text-transform: uppercase;
       font-size: 20px;
+    }
+
+    p,
+    h3,
+    h4 {
+
     }
 
     .e-skin__block-points {

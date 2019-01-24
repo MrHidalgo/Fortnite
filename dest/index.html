@@ -27,7 +27,31 @@
     <!-- STYLE :: START-->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.css">
-    <!-- STYLE :: END--><!--[if lt IE 9]>
+    <!-- STYLE :: END-->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async>
+      function initSectionBGResize(parentNodeName) {
+        if($('[section-resize-js]').length) {
+          const sectionResize = $('[section-resize-js]');
+      
+          const sectionRight = $('[section-right-js]'),
+            widthElem = sectionRight[0].getBoundingClientRect().left,
+            leftOffset = sectionResize.closest(parentNodeName)[0].getBoundingClientRect().left;
+      
+          if($(window).width() > 991) {
+            sectionResize.css({
+              'left' : -(leftOffset),
+              'width' : widthElem
+            });
+          }
+        }
+      };
+      
+      $(window).on("load resize", function(ev) {
+        initSectionBGResize('.beginners--main, .home--leaded, .skin--like, .skin--main');
+      });
+      
+    </script><!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
@@ -221,7 +245,9 @@
                       </div>
                       <!--p.b-skin__out!= "2 out of 3"-->
                       <div class="b-skin__info">
-                        <p>Skin Name</p>
+                        <div class="b-skin__info--wticker">
+                          <p>Skin Name</p>
+                        </div>
                         <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                       </div></a>
                   </div>
@@ -236,18 +262,22 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--wticker">
+                                    <p>Skin Name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__badge">
-                                  <div class="e-skin__block-badge e-skin__block-badge--style"><span>Pick Your STyle!</span></div>
+                                  <div class="e-skin__block-badge e-skin__block-badge--style"><span>Pick Your Style!</span></div>
                                 </div>
                                 <div class="b-skin__view">
                                   <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--ticker">
+                                    <p>Skin Name - very long name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--legendary" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__view">
@@ -255,7 +285,9 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--wticker">
+                                    <p>Skin Name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--uncommon" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__view">
@@ -263,7 +295,9 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--ticker">
+                                    <p>Skin Name - very long name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a>
                       </div>
@@ -281,18 +315,22 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--wticker">
+                                    <p>Skin Name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__badge">
-                                  <div class="e-skin__block-badge e-skin__block-badge--style"><span>Pick Your STyle!</span></div>
+                                  <div class="e-skin__block-badge e-skin__block-badge--style"><span>Pick Your Style!</span></div>
                                 </div>
                                 <div class="b-skin__view">
                                   <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--ticker">
+                                    <p>Skin Name - very long name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--legendary" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__view">
@@ -300,7 +338,9 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--wticker">
+                                    <p>Skin Name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--uncommon" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__view">
@@ -308,7 +348,9 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--ticker">
+                                    <p>Skin Name - very long name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a>
                       </div>
@@ -334,18 +376,22 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--wticker">
+                                    <p>Skin Name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__badge">
-                                  <div class="e-skin__block-badge e-skin__block-badge--style"><span>Pick Your STyle!</span></div>
+                                  <div class="e-skin__block-badge e-skin__block-badge--style"><span>Pick Your Style!</span></div>
                                 </div>
                                 <div class="b-skin__view">
                                   <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--ticker">
+                                    <p>Skin Name - very long name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--legendary" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__view">
@@ -353,7 +399,9 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--wticker">
+                                    <p>Skin Name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--uncommon" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__view">
@@ -361,7 +409,9 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--ticker">
+                                    <p>Skin Name - very long name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a>
                       </div>
@@ -374,7 +424,9 @@
                       </div>
                       <!--p.b-skin__out!= "2 out of 3"-->
                       <div class="b-skin__info">
-                        <p>Skin Name</p>
+                        <div class="b-skin__info--wticker">
+                          <p>Skin Name</p>
+                        </div>
                         <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                       </div></a></div>
                   <div class="item__slider item__slider-5">
@@ -388,18 +440,22 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--wticker">
+                                    <p>Skin Name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__badge">
-                                  <div class="e-skin__block-badge e-skin__block-badge--style"><span>Pick Your STyle!</span></div>
+                                  <div class="e-skin__block-badge e-skin__block-badge--style"><span>Pick Your Style!</span></div>
                                 </div>
                                 <div class="b-skin__view">
                                   <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--ticker">
+                                    <p>Skin Name - very long name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--legendary" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__view">
@@ -407,7 +463,9 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--wticker">
+                                    <p>Skin Name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--uncommon" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__view">
@@ -415,7 +473,9 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--ticker">
+                                    <p>Skin Name - very long name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a>
                       </div>
@@ -433,18 +493,22 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--wticker">
+                                    <p>Skin Name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--rare" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__badge">
-                                  <div class="e-skin__block-badge e-skin__block-badge--style"><span>Pick Your STyle!</span></div>
+                                  <div class="e-skin__block-badge e-skin__block-badge--style"><span>Pick Your Style!</span></div>
                                 </div>
                                 <div class="b-skin__view">
                                   <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--ticker">
+                                    <p>Skin Name - very long name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--legendary" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__view">
@@ -452,7 +516,9 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--wticker">
+                                    <p>Skin Name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a><a class="swiper-slide b-skin b-skin--uncommon" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                                 <div class="b-skin__view">
@@ -460,7 +526,9 @@
                                 </div>
                                 <!--p.b-skin__out!= "2 out of 3"-->
                                 <div class="b-skin__info">
-                                  <p>Skin Name</p>
+                                  <div class="b-skin__info--ticker">
+                                    <p>Skin Name - very long name</p>
+                                  </div>
                                   <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                 </div></a>
                       </div>
@@ -497,24 +565,32 @@
                           <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                         </div>
                         <div class="b-skin__info">
-                          <p>Skin Name</p>
+                          <div class="b-skin__info--wticker">
+                            <p>Skin Name</p>
+                          </div>
                         </div></a></div>
                     <div class="b-skin__wrapper"><a class="b-skin b-skin--rare b-skin--big" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                         <div class="b-skin__view"><span class="b-skin__sound" href="#" title=""><i class="icon-font icon-sound"></i></span></div>
                         <div class="b-skin__info">
-                          <p>Skin Name</p>
+                          <div class="b-skin__info--ticker">
+                            <p>Skin Name - very long name</p>
+                          </div>
                         </div></a></div>
                     <div class="b-skin__wrapper"><a class="b-skin b-skin--epic b-skin--big" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                         <div class="b-skin__view"><span class="b-skin__sound" href="#" title=""><i class="icon-font icon-sound"></i></span>
                           <div class="e-skin__block-view"><i class="icon-font icon-cube"></i><span>3d</span></div>
                         </div>
                         <div class="b-skin__info">
-                          <p>Skin Name</p>
+                          <div class="b-skin__info--wticker">
+                            <p>Skin Name</p>
+                          </div>
                         </div></a></div>
                     <div class="b-skin__wrapper"><a class="b-skin b-skin--rare b-skin--big" href="#"><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="">
                         <div class="b-skin__view"><span class="b-skin__sound" href="#" title=""><i class="icon-font icon-sound"></i></span></div>
                         <div class="b-skin__info">
-                          <p>Skin Name</p>
+                          <div class="b-skin__info--ticker">
+                            <p>Skin Name - very long name</p>
+                          </div>
                         </div></a></div>
                   </div>
                   <div class="home__wrapper home__wrapper-2"><a class="c-btn c-btn--bg" href="#" title="">View More <span>></span></a></div>

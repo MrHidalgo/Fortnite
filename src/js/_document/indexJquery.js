@@ -201,6 +201,45 @@ $(document).ready((ev) => {
       no_overlay: true
     });
   };
+
+  const initTickerText = () => {
+    if($('.b-skin__info--ticker').length > 0) {
+      let $tw = $('.b-skin__info--ticker');
+      let $w = $('.b-skin__info');
+
+      $tw.bind("transitionend", function(){
+        $tw.css({
+          'transition':'all linear 0s'
+        });
+
+        set();
+      });
+
+      let width = $tw.width() + 50;
+      let wwidth = $w.width() + 50;
+
+      function set(){
+        $('.b-skin__info--ticker, .b-skin__info--wticker' ).find('p').css({
+          'opacity' : '1'
+        });
+
+        $tw.css({
+          'transform':'translate3d(' + wwidth + 'px,0,0)'
+        });
+
+        window.setInterval(function(){
+          $tw.css({
+            'transition':'all linear ' + (((width + wwidth) / 250) * 2) + 's'
+          });
+          $tw.css({
+            'transform':'translate3d(' + (width *- 1) + 'px,0,0)'
+          });
+        },1)
+      }
+
+      set();
+    }
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -235,6 +274,7 @@ $(document).ready((ev) => {
     initFilterRadioBtn();
     initListFilterSelect();
     initImageCompare();
+    initTickerText();
 
     $('body').on('click', function (e) {
       const className = ".header__search";

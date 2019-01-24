@@ -27,7 +27,31 @@
     <!-- STYLE :: START-->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.css">
-    <!-- STYLE :: END--><!--[if lt IE 9]>
+    <!-- STYLE :: END-->
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script async>
+      function initSectionBGResize(parentNodeName) {
+        if($('[section-resize-js]').length) {
+          const sectionResize = $('[section-resize-js]');
+      
+          const sectionRight = $('[section-right-js]'),
+            widthElem = sectionRight[0].getBoundingClientRect().left,
+            leftOffset = sectionResize.closest(parentNodeName)[0].getBoundingClientRect().left;
+      
+          if($(window).width() > 991) {
+            sectionResize.css({
+              'left' : -(leftOffset),
+              'width' : widthElem
+            });
+          }
+        }
+      };
+      
+      $(window).on("load resize", function(ev) {
+        initSectionBGResize('.beginners--main, .home--leaded, .skin--like, .skin--main');
+      });
+      
+    </script><!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
