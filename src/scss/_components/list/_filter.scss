@@ -193,6 +193,10 @@
         width: 100%;
       }
 
+      .c-form__checkbox-wrapper {
+        width: 100%;
+      }
+
       .filter__category-checkbox {
 
         &--0 {
@@ -458,6 +462,10 @@
 
         &.c-form__field--checkbox-soldier {
           align-items: flex-start;
+
+          .c-form__checkbox-wrapper {
+            width: 100%;
+          }
         }
 
         .c-form__field {

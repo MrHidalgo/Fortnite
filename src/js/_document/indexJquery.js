@@ -219,7 +219,7 @@ $(document).ready((ev) => {
       let wwidth = $w.width() + 50;
 
       function set(){
-        $('.b-skin__info--ticker, .b-skin__info--wticker' ).find('p').css({
+        $('.b-skin__info--ticker, .b-skin__info--wticker').find('p').css({
           'opacity' : '1'
         });
 
