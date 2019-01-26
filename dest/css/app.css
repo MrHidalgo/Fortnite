@@ -16,28 +16,28 @@
 }
 
 /* line 15, src/scss/_utilities/_extend.scss */
-.b-skin--legendary:before, .grants__progress-btn--orange, .results__block--orange .results__block-img, .browse__box--legendary:before, .skin__main-image {
+.b-skin--legendary:before, .grants__progress-btn--orange, .e-skin__block--legendary .e-skin__block-image:before, .results__block--orange .results__block-img, .browse__box--legendary:before, .skin__main-image {
   background-image: -webkit-radial-gradient(#ea8d23, #c04d1f);
   background-image: -o-radial-gradient(#ea8d23, #c04d1f);
   background-image: radial-gradient(#ea8d23, #c04d1f);
 }
 
 /* line 19, src/scss/_utilities/_extend.scss */
-.b-skin--epic:before, .grants__progress-btn--pink, .results__block--pink .results__block-img, .browse__box--epic:before {
+.b-skin--epic:before, .grants__progress-btn--pink, .e-skin__block--epic .e-skin__block-image:before, .results__block--pink .results__block-img, .browse__box--epic:before {
   background-image: -webkit-radial-gradient(#c359ff, #701fe5);
   background-image: -o-radial-gradient(#c359ff, #701fe5);
   background-image: radial-gradient(#c359ff, #701fe5);
 }
 
 /* line 23, src/scss/_utilities/_extend.scss */
-.b-skin--rare:before, .grants__progress-btn--blue, .results__block--blue .results__block-img, .browse__box--rare:before {
+.b-skin--rare:before, .grants__progress-btn--blue, .e-skin__block--rare .e-skin__block-image:before, .results__block--blue .results__block-img, .browse__box--rare:before {
   background-image: -webkit-radial-gradient(#2cc1ff, #215dc2);
   background-image: -o-radial-gradient(#2cc1ff, #215dc2);
   background-image: radial-gradient(#2cc1ff, #215dc2);
 }
 
 /* line 27, src/scss/_utilities/_extend.scss */
-.b-skin--uncommon:before, .grants__progress-btn--green, .results__block--green .results__block-img, .browse__box--uncommon:before {
+.b-skin--uncommon:before, .grants__progress-btn--green, .e-skin__block--uncommon .e-skin__block-image:before, .results__block--green .results__block-img, .browse__box--uncommon:before {
   background-image: -webkit-radial-gradient(#69bb1e, #227622);
   background-image: -o-radial-gradient(#69bb1e, #227622);
   background-image: radial-gradient(#69bb1e, #227622);
@@ -14146,50 +14146,45 @@ picture {
 
 /* line 28, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block--epic .e-skin__block-image {
-  background-image: -webkit-radial-gradient(#c359ff, #701fe5);
-  background-image: -o-radial-gradient(#c359ff, #701fe5);
-  background-image: radial-gradient(#c359ff, #701fe5);
+  border-color: #b04eec;
 }
 
-/* line 32, src/scss/_components/emotes/_e-skin.scss */
+/* line 36, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block--epic .e-skin__block-badge:before {
-  background-image: -webkit-gradient(linear, left top, right top, from(#f642c9), to(#ff00e7));
-  background-image: -webkit-linear-gradient(left, #f642c9 0%, #ff00e7 100%);
-  background-image: -o-linear-gradient(left, #f642c9 0%, #ff00e7 100%);
-  background-image: linear-gradient(90deg, #f642c9 0%, #ff00e7 100%);
+  background-color: #b04eec;
 }
 
-/* line 38, src/scss/_components/emotes/_e-skin.scss */
+/* line 43, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block--uncommon .e-skin__block-image {
-  background-image: -webkit-radial-gradient(#69bb1e, #227622);
-  background-image: -o-radial-gradient(#69bb1e, #227622);
-  background-image: radial-gradient(#69bb1e, #227622);
+  border-color: #8fee3b;
 }
 
-/* line 42, src/scss/_components/emotes/_e-skin.scss */
+/* line 51, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block--uncommon .e-skin__block-badge:before {
-  background-image: -webkit-gradient(linear, left top, right top, from(#0bb000), to(#73d102));
-  background-image: -webkit-linear-gradient(left, #0bb000 0%, #73d102 100%);
-  background-image: -o-linear-gradient(left, #0bb000 0%, #73d102 100%);
-  background-image: linear-gradient(90deg, #0bb000 0%, #73d102 100%);
-}
-
-/* line 48, src/scss/_components/emotes/_e-skin.scss */
-.e-skin__block--rare .e-skin__block-image {
-  background-image: -webkit-radial-gradient(#2cc1ff, #215dc2);
-  background-image: -o-radial-gradient(#2cc1ff, #215dc2);
-  background-image: radial-gradient(#2cc1ff, #215dc2);
-}
-
-/* line 52, src/scss/_components/emotes/_e-skin.scss */
-.e-skin__block--rare .e-skin__block-badge:before {
-  background-image: -webkit-gradient(linear, left top, right top, from(#1f59ee), to(#4cb8ff));
-  background-image: -webkit-linear-gradient(left, #1f59ee 0%, #4cb8ff 100%);
-  background-image: -o-linear-gradient(left, #1f59ee 0%, #4cb8ff 100%);
-  background-image: linear-gradient(90deg, #1f59ee 0%, #4cb8ff 100%);
+  background-color: #8fee3b;
 }
 
 /* line 58, src/scss/_components/emotes/_e-skin.scss */
+.e-skin__block--rare .e-skin__block-image {
+  border-color: #3ad6ff;
+}
+
+/* line 66, src/scss/_components/emotes/_e-skin.scss */
+.e-skin__block--rare .e-skin__block-badge:before {
+  background-color: #3ad6ff;
+}
+
+/* line 73, src/scss/_components/emotes/_e-skin.scss */
+.e-skin__block--legendary .e-skin__block-image {
+  border-color: #e38748;
+}
+
+/* line 81, src/scss/_components/emotes/_e-skin.scss */
+.e-skin__block--legendary .e-skin__block-badge:before {
+  background-color: #e38748;
+}
+
+/* line 88, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14201,7 +14196,7 @@ picture {
       flex-wrap: wrap;
 }
 
-/* line 64, src/scss/_components/emotes/_e-skin.scss */
+/* line 94, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14212,7 +14207,7 @@ picture {
   width: 162px;
 }
 
-/* line 70, src/scss/_components/emotes/_e-skin.scss */
+/* line 100, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-right {
   position: relative;
   width: 100%;
@@ -14220,7 +14215,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 70, src/scss/_components/emotes/_e-skin.scss */
+  /* line 100, src/scss/_components/emotes/_e-skin.scss */
   .e-skin__block-right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14231,10 +14226,10 @@ picture {
   }
 }
 
-/* line 79, src/scss/_components/emotes/_e-skin.scss */
+/* line 109, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-right:before {
   content: '';
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -14245,32 +14240,85 @@ picture {
           clip-path: polygon(3% 3%, 100% 0, 97% 100%, 0 97%);
 }
 
-/* line 92, src/scss/_components/emotes/_e-skin.scss */
+/* line 122, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-image {
+  overflow: hidden;
+  z-index: 2;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 152px;
   height: 199px;
   border: 4px solid #e8f2ff;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
-/* line 101, src/scss/_components/emotes/_e-skin.scss */
-.e-skin__block-image img {
+/* line 133, src/scss/_components/emotes/_e-skin.scss */
+.e-skin__block-image:before, .e-skin__block-image:after {
+  content: '';
   position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  max-width: 100%;
-  height: auto;
-  mix-blend-mode: screen;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
 }
 
-/* line 113, src/scss/_components/emotes/_e-skin.scss */
+/* line 144, src/scss/_components/emotes/_e-skin.scss */
+.e-skin__block-image:after {
+  opacity: 0;
+  background: -webkit-radial-gradient(center, 200px, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background: -o-radial-gradient(center, 200px, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  background: radial-gradient(200px at center, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 151, src/scss/_components/emotes/_e-skin.scss */
+.e-skin__block-image:hover:after {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 156, src/scss/_components/emotes/_e-skin.scss */
+.e-skin__block-image:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 162, src/scss/_components/emotes/_e-skin.scss */
+.e-skin__block-image img {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 176, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-badge {
   position: absolute;
   display: -webkit-box;
@@ -14287,7 +14335,7 @@ picture {
   color: #fff;
 }
 
-/* line 124, src/scss/_components/emotes/_e-skin.scss */
+/* line 187, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-badge:before {
   content: '';
   z-index: 0;
@@ -14300,26 +14348,26 @@ picture {
           clip-path: polygon(0 0, 100% 0, 97% 99%, 0 100%);
 }
 
-/* line 135, src/scss/_components/emotes/_e-skin.scss */
+/* line 198, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-badge i,
 .e-skin__block-badge span {
   z-index: 1;
   position: relative;
 }
 
-/* line 141, src/scss/_components/emotes/_e-skin.scss */
+/* line 204, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-badge .icon-font {
   font-size: 10px;
 }
 
-/* line 145, src/scss/_components/emotes/_e-skin.scss */
+/* line 208, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-badge span {
   padding-left: 5px;
   text-transform: uppercase;
   font-size: 11px;
 }
 
-/* line 152, src/scss/_components/emotes/_e-skin.scss */
+/* line 215, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-view {
   position: absolute;
   display: -webkit-box;
@@ -14336,19 +14384,19 @@ picture {
   color: #fff;
 }
 
-/* line 163, src/scss/_components/emotes/_e-skin.scss */
+/* line 226, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-view .icon-font {
   font-size: 11px;
 }
 
-/* line 167, src/scss/_components/emotes/_e-skin.scss */
+/* line 230, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-view span {
   padding-left: 2px;
   text-transform: uppercase;
   font-size: 11px;
 }
 
-/* line 174, src/scss/_components/emotes/_e-skin.scss */
+/* line 237, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-figure {
   z-index: 0;
   position: absolute;
@@ -14358,44 +14406,44 @@ picture {
   height: 100%;
 }
 
-/* line 182, src/scss/_components/emotes/_e-skin.scss */
+/* line 245, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-figure img {
   position: absolute;
 }
 
-/* line 185, src/scss/_components/emotes/_e-skin.scss */
+/* line 248, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-figure img:nth-of-type(1) {
   top: -10px;
   left: 0;
 }
 
-/* line 189, src/scss/_components/emotes/_e-skin.scss */
+/* line 252, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-figure img:nth-of-type(2) {
   top: -10px;
   right: 0;
 }
 
-/* line 193, src/scss/_components/emotes/_e-skin.scss */
+/* line 256, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-figure img:nth-of-type(3) {
   bottom: -20px;
   right: 0;
 }
 
-/* line 200, src/scss/_components/emotes/_e-skin.scss */
+/* line 263, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-content {
   z-index: 1;
   position: relative;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 200, src/scss/_components/emotes/_e-skin.scss */
+  /* line 263, src/scss/_components/emotes/_e-skin.scss */
   .e-skin__block-content {
     padding-top: 15px;
     padding-bottom: 15px;
   }
 }
 
-/* line 209, src/scss/_components/emotes/_e-skin.scss */
+/* line 272, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-name {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -14406,27 +14454,27 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 209, src/scss/_components/emotes/_e-skin.scss */
+  /* line 272, src/scss/_components/emotes/_e-skin.scss */
   .e-skin__block-name {
     font-size: calc(19px + 5 * (100vw - 320px) / 447);
   }
 }
 
 @media screen and (min-width: 767px) {
-  /* line 209, src/scss/_components/emotes/_e-skin.scss */
+  /* line 272, src/scss/_components/emotes/_e-skin.scss */
   .e-skin__block-name {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 209, src/scss/_components/emotes/_e-skin.scss */
+  /* line 272, src/scss/_components/emotes/_e-skin.scss */
   .e-skin__block-name {
     padding-top: 10px;
   }
 }
 
-/* line 221, src/scss/_components/emotes/_e-skin.scss */
+/* line 284, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-points {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14437,18 +14485,18 @@ picture {
   padding-bottom: 7px;
 }
 
-/* line 226, src/scss/_components/emotes/_e-skin.scss */
+/* line 289, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-points img {
   padding-right: 5px;
 }
 
-/* line 230, src/scss/_components/emotes/_e-skin.scss */
+/* line 293, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-points span {
   color: #273c43;
   font-family: 'Rajdhani', sans-serif;
 }
 
-/* line 236, src/scss/_components/emotes/_e-skin.scss */
+/* line 299, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-desc {
   width: 100%;
   max-width: 153px;
@@ -14462,13 +14510,13 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 236, src/scss/_components/emotes/_e-skin.scss */
+  /* line 299, src/scss/_components/emotes/_e-skin.scss */
   .e-skin__block-desc {
     max-width: calc(100% - 15px);
   }
 }
 
-/* line 251, src/scss/_components/emotes/_e-skin.scss */
+/* line 314, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-date {
   color: #9eadb7;
   font-size: 11px;
@@ -14476,12 +14524,12 @@ picture {
   padding-bottom: 7px;
 }
 
-/* line 257, src/scss/_components/emotes/_e-skin.scss */
+/* line 320, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-date a {
   color: #9eadb7;
 }
 
-/* line 262, src/scss/_components/emotes/_e-skin.scss */
+/* line 325, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-comments {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14497,7 +14545,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 270, src/scss/_components/emotes/_e-skin.scss */
+/* line 333, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-comments:hover {
   color: #b1b1b1;
   -webkit-transition: color 0.3s ease-in-out;
@@ -14505,7 +14553,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 275, src/scss/_components/emotes/_e-skin.scss */
+/* line 338, src/scss/_components/emotes/_e-skin.scss */
 .e-skin__block-comments .icon-font {
   padding-right: 5px;
   color: #b1b1b1;
