@@ -179,6 +179,46 @@
     }
   }
 
+  &__block,
+  &__comment {
+    animation-name: c-slideInLeft;
+    animation-fill-mode: both;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+
+    &-wrapper {
+      overflow: hidden;
+      display: none;
+
+      padding: 0 25px;
+      @include adaptive(575) {
+        padding: 0 15px;
+      }
+
+      &.is-active {
+        display: block;
+
+        .latest__block {
+          &:nth-of-type(1) {
+            animation-delay: 0.1s;
+          }
+          &:nth-of-type(2) {
+            animation-delay: 0.2s;
+          }
+          &:nth-of-type(3) {
+            animation-delay: 0.3s;
+          }
+          &:nth-of-type(4) {
+            animation-delay: 0.4s;
+          }
+          &:nth-of-type(5) {
+            animation-delay: 0.5s;
+          }
+        }
+      }
+    }
+  }
+
   &__block {
     display: flex;
     min-height: 136px;
@@ -207,15 +247,6 @@
 
     &:last-of-type {
       margin-bottom: 0;
-    }
-
-    &-wrapper {
-      display: flex;
-      flex-direction: column;
-      padding: 0 25px;
-      @include adaptive(575) {
-        padding: 0 15px;
-      }
     }
 
     &-left {
@@ -350,6 +381,18 @@
     &-data {
       @include fluid(font-size, 320px, 768px, 12px, 14px);
     }
+  }
+}
+
+@keyframes c-slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 

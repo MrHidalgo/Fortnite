@@ -5902,6 +5902,67 @@ picture {
 }
 
 /* line 182, src/scss/_components/common/_latest.scss */
+.latest__block, .latest__comment {
+  -webkit-animation-name: c-slideInLeft;
+          animation-name: c-slideInLeft;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+/* line 189, src/scss/_components/common/_latest.scss */
+.latest__block-wrapper, .latest__comment-wrapper {
+  overflow: hidden;
+  display: none;
+  padding: 0 25px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 189, src/scss/_components/common/_latest.scss */
+  .latest__block-wrapper, .latest__comment-wrapper {
+    padding: 0 15px;
+  }
+}
+
+/* line 198, src/scss/_components/common/_latest.scss */
+.latest__block-wrapper.is-active, .latest__comment-wrapper.is-active {
+  display: block;
+}
+
+/* line 202, src/scss/_components/common/_latest.scss */
+.latest__block-wrapper.is-active .latest__block:nth-of-type(1), .latest__comment-wrapper.is-active .latest__block:nth-of-type(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+/* line 205, src/scss/_components/common/_latest.scss */
+.latest__block-wrapper.is-active .latest__block:nth-of-type(2), .latest__comment-wrapper.is-active .latest__block:nth-of-type(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+/* line 208, src/scss/_components/common/_latest.scss */
+.latest__block-wrapper.is-active .latest__block:nth-of-type(3), .latest__comment-wrapper.is-active .latest__block:nth-of-type(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+/* line 211, src/scss/_components/common/_latest.scss */
+.latest__block-wrapper.is-active .latest__block:nth-of-type(4), .latest__comment-wrapper.is-active .latest__block:nth-of-type(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+/* line 214, src/scss/_components/common/_latest.scss */
+.latest__block-wrapper.is-active .latest__block:nth-of-type(5), .latest__comment-wrapper.is-active .latest__block:nth-of-type(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+/* line 222, src/scss/_components/common/_latest.scss */
 .latest__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5911,109 +5972,90 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 182, src/scss/_components/common/_latest.scss */
+  /* line 222, src/scss/_components/common/_latest.scss */
   .latest__block {
     min-height: 0;
   }
 }
 
-/* line 198, src/scss/_components/common/_latest.scss */
+/* line 238, src/scss/_components/common/_latest.scss */
 .latest__block-0 .latest__block-photo {
   background-color: #e38748;
 }
 
-/* line 201, src/scss/_components/common/_latest.scss */
+/* line 241, src/scss/_components/common/_latest.scss */
 .latest__block-0 .latest__block-photo > div {
   background-image: -webkit-radial-gradient(#ea8d23,#c04d1f);
   background-image: -o-radial-gradient(#ea8d23,#c04d1f);
   background-image: radial-gradient(#ea8d23,#c04d1f);
 }
 
-/* line 198, src/scss/_components/common/_latest.scss */
+/* line 238, src/scss/_components/common/_latest.scss */
 .latest__block-1 .latest__block-photo {
   background-color: #b04eec;
 }
 
-/* line 201, src/scss/_components/common/_latest.scss */
+/* line 241, src/scss/_components/common/_latest.scss */
 .latest__block-1 .latest__block-photo > div {
   background-image: -webkit-radial-gradient(#c359ff,#701fe5);
   background-image: -o-radial-gradient(#c359ff,#701fe5);
   background-image: radial-gradient(#c359ff,#701fe5);
 }
 
-/* line 198, src/scss/_components/common/_latest.scss */
+/* line 238, src/scss/_components/common/_latest.scss */
 .latest__block-2 .latest__block-photo {
   background-color: #3ad6ff;
 }
 
-/* line 201, src/scss/_components/common/_latest.scss */
+/* line 241, src/scss/_components/common/_latest.scss */
 .latest__block-2 .latest__block-photo > div {
   background-image: -webkit-radial-gradient(#2cc1ff,#215dc2);
   background-image: -o-radial-gradient(#2cc1ff,#215dc2);
   background-image: radial-gradient(#2cc1ff,#215dc2);
 }
 
-/* line 198, src/scss/_components/common/_latest.scss */
+/* line 238, src/scss/_components/common/_latest.scss */
 .latest__block-3 .latest__block-photo {
   background-color: #8fee3b;
 }
 
-/* line 201, src/scss/_components/common/_latest.scss */
+/* line 241, src/scss/_components/common/_latest.scss */
 .latest__block-3 .latest__block-photo > div {
   background-image: -webkit-radial-gradient(#69bb1e,#227622);
   background-image: -o-radial-gradient(#69bb1e,#227622);
   background-image: radial-gradient(#69bb1e,#227622);
 }
 
-/* line 198, src/scss/_components/common/_latest.scss */
+/* line 238, src/scss/_components/common/_latest.scss */
 .latest__block-4 .latest__block-photo {
   background-color: #bebebe;
 }
 
-/* line 201, src/scss/_components/common/_latest.scss */
+/* line 241, src/scss/_components/common/_latest.scss */
 .latest__block-4 .latest__block-photo > div {
   background-image: -webkit-radial-gradient(#bebebe,#848282);
   background-image: -o-radial-gradient(#bebebe,#848282);
   background-image: radial-gradient(#bebebe,#848282);
 }
 
-/* line 208, src/scss/_components/common/_latest.scss */
+/* line 248, src/scss/_components/common/_latest.scss */
 .latest__block:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 212, src/scss/_components/common/_latest.scss */
-.latest__block-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 25px;
-}
-
-@media screen and (max-width: 575px) {
-  /* line 212, src/scss/_components/common/_latest.scss */
-  .latest__block-wrapper {
-    padding: 0 15px;
-  }
-}
-
-/* line 221, src/scss/_components/common/_latest.scss */
+/* line 252, src/scss/_components/common/_latest.scss */
 .latest__block-left {
   width: 158px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 221, src/scss/_components/common/_latest.scss */
+  /* line 252, src/scss/_components/common/_latest.scss */
   .latest__block-left {
     width: 128px;
   }
 }
 
-/* line 228, src/scss/_components/common/_latest.scss */
+/* line 259, src/scss/_components/common/_latest.scss */
 .latest__block-right {
   width: 100%;
   max-width: calc(100% - 158px);
@@ -6021,13 +6063,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 228, src/scss/_components/common/_latest.scss */
+  /* line 259, src/scss/_components/common/_latest.scss */
   .latest__block-right {
     max-width: calc(100% - 128px);
   }
 }
 
-/* line 237, src/scss/_components/common/_latest.scss */
+/* line 268, src/scss/_components/common/_latest.scss */
 .latest__block-photo {
   cursor: pointer;
   overflow: hidden;
@@ -6045,14 +6087,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 237, src/scss/_components/common/_latest.scss */
+  /* line 268, src/scss/_components/common/_latest.scss */
   .latest__block-photo {
     width: 108px;
     height: 106px;
   }
 }
 
-/* line 255, src/scss/_components/common/_latest.scss */
+/* line 286, src/scss/_components/common/_latest.scss */
 .latest__block-photo:hover img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -6064,7 +6106,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 261, src/scss/_components/common/_latest.scss */
+/* line 292, src/scss/_components/common/_latest.scss */
 .latest__block-photo:hover > div:after {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -6072,7 +6114,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 268, src/scss/_components/common/_latest.scss */
+/* line 299, src/scss/_components/common/_latest.scss */
 .latest__block-photo > div {
   position: absolute;
   top: 4px;
@@ -6083,7 +6125,7 @@ picture {
           clip-path: polygon(0 0, 100% 3%, 97% 95%, 5% 100%);
 }
 
-/* line 276, src/scss/_components/common/_latest.scss */
+/* line 307, src/scss/_components/common/_latest.scss */
 .latest__block-photo > div:after {
   content: '';
   position: absolute;
@@ -6094,7 +6136,7 @@ picture {
   height: 100%;
 }
 
-/* line 286, src/scss/_components/common/_latest.scss */
+/* line 317, src/scss/_components/common/_latest.scss */
 .latest__block-photo > div:after {
   opacity: 0;
   background: -webkit-radial-gradient(center, 200px, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
@@ -6105,7 +6147,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 293, src/scss/_components/common/_latest.scss */
+/* line 324, src/scss/_components/common/_latest.scss */
 .latest__block-photo img {
   display: block;
   max-width: 100%;
@@ -6124,7 +6166,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 305, src/scss/_components/common/_latest.scss */
+/* line 336, src/scss/_components/common/_latest.scss */
 .latest__block-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6136,7 +6178,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 305, src/scss/_components/common/_latest.scss */
+  /* line 336, src/scss/_components/common/_latest.scss */
   .latest__block-header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -6144,7 +6186,7 @@ picture {
   }
 }
 
-/* line 313, src/scss/_components/common/_latest.scss */
+/* line 344, src/scss/_components/common/_latest.scss */
 .latest__block-header span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6165,7 +6207,7 @@ picture {
   font-size: 14px;
 }
 
-/* line 327, src/scss/_components/common/_latest.scss */
+/* line 358, src/scss/_components/common/_latest.scss */
 .latest__block-title {
   color: #273c43;
   font-size: 24px;
@@ -6174,34 +6216,34 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 327, src/scss/_components/common/_latest.scss */
+  /* line 358, src/scss/_components/common/_latest.scss */
   .latest__block-title {
     font-size: calc(19px + 5 * (100vw - 320px) / 448);
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 327, src/scss/_components/common/_latest.scss */
+  /* line 358, src/scss/_components/common/_latest.scss */
   .latest__block-title {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 327, src/scss/_components/common/_latest.scss */
+  /* line 358, src/scss/_components/common/_latest.scss */
   .latest__block-title {
     width: 100%;
     max-width: calc(100% - 43px);
   }
 }
 
-/* line 338, src/scss/_components/common/_latest.scss */
+/* line 369, src/scss/_components/common/_latest.scss */
 .latest__block-desc, .latest__block-data {
   color: #273c43;
   font-family: 'Rajdhani', sans-serif;
 }
 
-/* line 344, src/scss/_components/common/_latest.scss */
+/* line 375, src/scss/_components/common/_latest.scss */
 .latest__block-desc {
   line-height: 1.2;
   font-weight: 600;
@@ -6209,35 +6251,61 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 344, src/scss/_components/common/_latest.scss */
+  /* line 375, src/scss/_components/common/_latest.scss */
   .latest__block-desc {
     font-size: calc(14px + 2 * (100vw - 320px) / 448);
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 344, src/scss/_components/common/_latest.scss */
+  /* line 375, src/scss/_components/common/_latest.scss */
   .latest__block-desc {
     font-size: 16px;
   }
 }
 
-/* line 350, src/scss/_components/common/_latest.scss */
+/* line 381, src/scss/_components/common/_latest.scss */
 .latest__block-data {
   font-size: 12px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 350, src/scss/_components/common/_latest.scss */
+  /* line 381, src/scss/_components/common/_latest.scss */
   .latest__block-data {
     font-size: calc(12px + 2 * (100vw - 320px) / 448);
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 350, src/scss/_components/common/_latest.scss */
+  /* line 381, src/scss/_components/common/_latest.scss */
   .latest__block-data {
     font-size: 14px;
+  }
+}
+
+@-webkit-keyframes c-slideInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes c-slideInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 

@@ -428,7 +428,12 @@ $(document).ready(function (ev) {
    */
   var initLatestTabs = function initLatestTabs() {
     $('.latest__btn').on('click', function (ev) {
-      var elem = $(ev.currentTarget);
+      var elem = $(ev.currentTarget),
+          _elemID = elem.data('id'),
+          _elemTabs = $('[data-content="' + _elemID + '"]');
+
+      $('.latest__content').removeClass('is-active');
+      _elemTabs.toggleClass('is-active');
 
       $('.latest__btn').removeClass('is-active');
       elem.addClass('is-active');

@@ -22,7 +22,12 @@ $(document).ready((ev) => {
    */
   const initLatestTabs = () => {
     $('.latest__btn').on('click', (ev) => {
-      const elem = $(ev.currentTarget);
+      const elem = $(ev.currentTarget),
+        _elemID = elem.data('id'),
+        _elemTabs = $('[data-content="' + _elemID + '"]');
+
+      $('.latest__content').removeClass('is-active');
+      _elemTabs.toggleClass('is-active');
 
       $('.latest__btn').removeClass('is-active');
       elem.addClass('is-active');
