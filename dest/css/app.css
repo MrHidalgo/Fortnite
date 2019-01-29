@@ -6399,60 +6399,60 @@ picture {
 }
 
 /* line 65, src/scss/_components/common/_top.scss */
-.top__block-0 .top__block-photo {
+.top__block--legendary .top__block-photo {
   background-color: #e38748;
 }
 
 /* line 68, src/scss/_components/common/_top.scss */
-.top__block-0 .top__block-photo > div {
+.top__block--legendary .top__block-photo > div {
   background-image: -webkit-radial-gradient(#ea8d23,#c04d1f);
   background-image: -o-radial-gradient(#ea8d23,#c04d1f);
   background-image: radial-gradient(#ea8d23,#c04d1f);
 }
 
 /* line 65, src/scss/_components/common/_top.scss */
-.top__block-1 .top__block-photo {
+.top__block--epic .top__block-photo {
   background-color: #b04eec;
 }
 
 /* line 68, src/scss/_components/common/_top.scss */
-.top__block-1 .top__block-photo > div {
+.top__block--epic .top__block-photo > div {
   background-image: -webkit-radial-gradient(#c359ff,#701fe5);
   background-image: -o-radial-gradient(#c359ff,#701fe5);
   background-image: radial-gradient(#c359ff,#701fe5);
 }
 
 /* line 65, src/scss/_components/common/_top.scss */
-.top__block-2 .top__block-photo {
+.top__block--rare .top__block-photo {
   background-color: #3ad6ff;
 }
 
 /* line 68, src/scss/_components/common/_top.scss */
-.top__block-2 .top__block-photo > div {
+.top__block--rare .top__block-photo > div {
   background-image: -webkit-radial-gradient(#2cc1ff,#215dc2);
   background-image: -o-radial-gradient(#2cc1ff,#215dc2);
   background-image: radial-gradient(#2cc1ff,#215dc2);
 }
 
 /* line 65, src/scss/_components/common/_top.scss */
-.top__block-3 .top__block-photo {
+.top__block--uncommon .top__block-photo {
   background-color: #8fee3b;
 }
 
 /* line 68, src/scss/_components/common/_top.scss */
-.top__block-3 .top__block-photo > div {
+.top__block--uncommon .top__block-photo > div {
   background-image: -webkit-radial-gradient(#69bb1e,#227622);
   background-image: -o-radial-gradient(#69bb1e,#227622);
   background-image: radial-gradient(#69bb1e,#227622);
 }
 
 /* line 65, src/scss/_components/common/_top.scss */
-.top__block-4 .top__block-photo {
+.top__block--default .top__block-photo {
   background-color: #bebebe;
 }
 
 /* line 68, src/scss/_components/common/_top.scss */
-.top__block-4 .top__block-photo > div {
+.top__block--default .top__block-photo > div {
   background-image: -webkit-radial-gradient(#bebebe,#848282);
   background-image: -o-radial-gradient(#bebebe,#848282);
   background-image: radial-gradient(#bebebe,#848282);
