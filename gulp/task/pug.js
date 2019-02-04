@@ -30,7 +30,7 @@ const renderPug = () => {
     .src(srcPath)
     .pipe(plumber(configOption.pipeBreaking.err))
     // .pipe(gulpif(global.isPugWatching, emitty.stream(global.emittyChangedPugFile)))
-    .pipe(emitty.stream(global.emittyChangedPugFile))
+    // .pipe(emitty.stream(global.emittyChangedPugFile))
     .pipe(frontMatter({
       property: 'data'
     }))
@@ -60,7 +60,11 @@ gulp.task('pug', function() {
 gulp.task('pug:watch', function() {
   // global.isPugWatching = true;
 
-  gulp.watch(configPath.src.templates + '/**', ['pug']).on('all', (event, filepath) => {
+  gulp.watch([
+    configPath.src.templates + '/**',
+    configPath.src.templates + '/**/**',
+    configPath.src.templates + '/**/**/**',
+  ], ['pug']).on('all', (event, filepath) => {
     global.emittyChangedPugFile = filepath;
   });
 });
