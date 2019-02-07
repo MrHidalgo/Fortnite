@@ -33,158 +33,161 @@
 	@if $filename == all {
 		$char: "\E002";
 	}
-	@if $filename == atom {
+	@if $filename == arr-dcc {
 		$char: "\E003";
 	}
-	@if $filename == box-closed {
+	@if $filename == atom {
 		$char: "\E004";
 	}
-	@if $filename == browse {
+	@if $filename == box-closed {
 		$char: "\E005";
 	}
-	@if $filename == btn-arrow {
+	@if $filename == browse {
 		$char: "\E006";
 	}
-	@if $filename == bubble {
+	@if $filename == btn-arrow {
 		$char: "\E007";
 	}
-	@if $filename == calendar-wr {
+	@if $filename == bubble {
 		$char: "\E008";
 	}
-	@if $filename == calendar {
+	@if $filename == calendar-wr {
 		$char: "\E009";
 	}
-	@if $filename == chart {
+	@if $filename == calendar {
 		$char: "\E00A";
 	}
-	@if $filename == check {
+	@if $filename == chart {
 		$char: "\E00B";
 	}
-	@if $filename == close {
+	@if $filename == check {
 		$char: "\E00C";
 	}
-	@if $filename == comments-single {
+	@if $filename == close {
 		$char: "\E00D";
 	}
-	@if $filename == comments {
+	@if $filename == comments-single {
 		$char: "\E00E";
 	}
-	@if $filename == cube {
+	@if $filename == comments {
 		$char: "\E00F";
 	}
-	@if $filename == cup {
+	@if $filename == cube {
 		$char: "\E010";
 	}
-	@if $filename == diamond {
+	@if $filename == cup {
 		$char: "\E011";
 	}
-	@if $filename == dislike {
+	@if $filename == diamond {
 		$char: "\E012";
 	}
-	@if $filename == embed {
+	@if $filename == dislike {
 		$char: "\E013";
 	}
-	@if $filename == facebook {
+	@if $filename == embed {
 		$char: "\E014";
 	}
-	@if $filename == fullscreen {
+	@if $filename == facebook {
 		$char: "\E015";
 	}
-	@if $filename == gameplay {
+	@if $filename == fullscreen {
 		$char: "\E016";
 	}
-	@if $filename == google-plus {
+	@if $filename == gameplay {
 		$char: "\E017";
 	}
-	@if $filename == graph {
+	@if $filename == google-plus {
 		$char: "\E018";
 	}
-	@if $filename == grid {
+	@if $filename == graph {
 		$char: "\E019";
 	}
-	@if $filename == guides {
+	@if $filename == grid {
 		$char: "\E01A";
 	}
-	@if $filename == info {
+	@if $filename == guides {
 		$char: "\E01B";
 	}
-	@if $filename == instagram {
+	@if $filename == info {
 		$char: "\E01C";
 	}
-	@if $filename == like-heart {
+	@if $filename == instagram {
 		$char: "\E01D";
 	}
-	@if $filename == like {
+	@if $filename == like-heart {
 		$char: "\E01E";
 	}
-	@if $filename == megaphone {
+	@if $filename == like {
 		$char: "\E01F";
 	}
-	@if $filename == menology {
+	@if $filename == megaphone {
 		$char: "\E020";
 	}
-	@if $filename == pinterest {
+	@if $filename == menology {
 		$char: "\E021";
 	}
-	@if $filename == play-button {
+	@if $filename == pinterest {
 		$char: "\E022";
 	}
-	@if $filename == polaroid {
+	@if $filename == play-button {
 		$char: "\E023";
 	}
-	@if $filename == preview {
+	@if $filename == polaroid {
 		$char: "\E024";
 	}
-	@if $filename == reach {
+	@if $filename == preview {
 		$char: "\E025";
 	}
-	@if $filename == ribbon {
+	@if $filename == reach {
 		$char: "\E026";
 	}
-	@if $filename == rss {
+	@if $filename == ribbon {
 		$char: "\E027";
 	}
-	@if $filename == sales {
+	@if $filename == rss {
 		$char: "\E028";
 	}
-	@if $filename == search {
+	@if $filename == sales {
 		$char: "\E029";
 	}
-	@if $filename == send {
+	@if $filename == search {
 		$char: "\E02A";
 	}
-	@if $filename == sets {
+	@if $filename == send {
 		$char: "\E02B";
 	}
-	@if $filename == share {
+	@if $filename == sets {
 		$char: "\E02C";
 	}
-	@if $filename == shop {
+	@if $filename == share {
 		$char: "\E02D";
 	}
-	@if $filename == sound {
+	@if $filename == shop {
 		$char: "\E02E";
 	}
-	@if $filename == sound2 {
+	@if $filename == sound {
 		$char: "\E02F";
 	}
-	@if $filename == star {
+	@if $filename == sound2 {
 		$char: "\E030";
 	}
-	@if $filename == strike-month {
+	@if $filename == star {
 		$char: "\E031";
 	}
-	@if $filename == table {
+	@if $filename == strike-month {
 		$char: "\E032";
 	}
-	@if $filename == tools {
+	@if $filename == table {
 		$char: "\E033";
 	}
-	@if $filename == triangle-rotate {
+	@if $filename == tools {
 		$char: "\E034";
 	}
-	@if $filename == twitter {
+	@if $filename == triangle-rotate {
 		$char: "\E035";
+	}
+	@if $filename == twitter {
+		$char: "\E036";
 	}
 
 	@return $char;
@@ -207,6 +210,10 @@
 }
 .icon-all {
 	@include icon(all);
+
+}
+.icon-arr-dcc {
+	@include icon(arr-dcc);
 
 }
 .icon-atom {

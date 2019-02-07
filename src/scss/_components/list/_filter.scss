@@ -285,14 +285,21 @@
         }
 
         &:after {
-          content: ">";
+          content: "";
           width: auto;
           height: auto;
           margin: 0;
           vertical-align: middle;
           color: $c-white;
-          font-size: 18px;
-          font-family: 'DCC-Scisor', sans-serif;
+          font-size: 8px;
+          font-family: "iconFont", sans-serif;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          font-style: normal;
+          font-variant: normal;
+          font-weight: normal;
+          text-decoration: none;
+          text-transform: none;
           transform: rotate(90deg);
           border: none;
         }

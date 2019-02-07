@@ -75,9 +75,9 @@ $btn-color--border: rgba(#000, 1);
     &-wrap {}
   }
 
-  span {
+  i {
     padding-left: 13px;
-    font-family: 'DCC-Scisor', sans-serif;
+    font-size: 12px;
     transform: translateX(0);
     @include transition(transform);
   }

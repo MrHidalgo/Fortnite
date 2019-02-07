@@ -61,8 +61,7 @@
       margin-right: 8px;
       color: #1ac2fe;
       line-height: 1;
-      font-size: 38px;
-      font-family: 'DCC-Scisor', sans-serif;
+      font-size: 19px;
       @include transition(color);
 
       &[disabled] {
@@ -75,6 +74,11 @@
         color: #1ac2fe;
         @include transition(color);
       }
+    }
+
+    &-first,
+    &-prev {
+      transform: rotate(-180deg);
     }
 
     &-first {

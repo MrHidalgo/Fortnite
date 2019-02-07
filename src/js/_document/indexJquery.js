@@ -258,14 +258,14 @@ $(document).ready((ev) => {
     // default
     initWebFontLoader();
     initPreventBehavior();
-    initSvg4everybody();
+    // initSvg4everybody();
 		// ==========================================
 
     // lib
-    initObjectFitImages();
-    initValidation();
+    // initObjectFitImages();
+    // initValidation();
     initHamburger();
-    initStellar();
+    // initStellar();
     initSwiper();
 		// ==========================================
 

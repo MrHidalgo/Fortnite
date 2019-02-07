@@ -60,17 +60,6 @@ var initHamburger = function initHamburger() {
 };
 
 /**
- * @name initObjectFitImages
- *
- * @description Polyfill object-fit/object-position on <img>
- */
-var initObjectFitImages = function initObjectFitImages() {
-  var objFitImages = document.querySelectorAll('.object-fit');
-
-  objectFitImages(objFitImages);
-};
-
-/**
  * @name initPreventBehavior
  *
  * @description
@@ -111,72 +100,6 @@ var initSectionBGResize = function initSectionBGResize(parentNodeName) {
       });
     }
   }
-};
-
-/**
- * @name initStellar
- * @description Stellar.js is a jQuery plugin that provides parallax scrolling effects to any scrolling element.
- *
- * Parallax Elements
- * - data-stellar-ratio="1"
- *
- * Parallax Backgrounds
- * - data-stellar-background-ratio="1"
- */
-var initStellar = function initStellar() {
-  var stellarSection = "[parallax-rewards-bg-js], [parallax-list-bg-js], " + "[parallax-leaked-bg-js], [parallax-sets-bg-js], [parallax-shop-bg-js]";
-
-  if ($(stellarSection).length) {
-    $(function () {
-      $.stellar({
-        // Set scrolling to be in either one or both directions
-        horizontalScrolling: false,
-        verticalScrolling: true,
-
-        // Set the global alignment offsets
-        horizontalOffset: 0,
-        verticalOffset: 0,
-
-        // Refreshes parallax content on window load and resize
-        responsive: false,
-
-        // Select which property is used to calculate scroll.
-        // Choose 'scroll', 'position', 'margin' or 'transform',
-        // or write your own 'scrollProperty' plugin.
-        scrollProperty: 'scroll',
-
-        // Select which property is used to position elements.
-        // Choose between 'position' or 'transform',
-        // or write your own 'positionProperty' plugin.
-        positionProperty: 'position',
-
-        // Enable or disable the two types of parallax
-        parallaxBackgrounds: true,
-        parallaxElements: true,
-
-        // Hide parallax elements that move outside the viewport
-        hideDistantElements: false,
-
-        // Customise how elements are shown and hidden
-        hideElement: function hideElement($elem) {
-          $elem.hide();
-        },
-        showElement: function showElement($elem) {
-          $elem.show();
-        }
-      });
-    });
-  }
-};
-
-/**
- * @name initSvg4everybody
- *
- * @description SVG for Everybody adds external spritemaps support to otherwise SVG-capable browsers.
- */
-var initSvg4everybody = function initSvg4everybody() {
-
-  svg4everybody();
 };
 
 /**
@@ -279,85 +202,6 @@ var initSwiper = function initSwiper() {
   var swiperDaily1 = new Swiper('.swiper-container--daily-1', swiperFeaturesOpt(5500));
   var swiperDaily2 = new Swiper('.swiper-container--daily-2', swiperFeaturesOpt(8000));
   var swiperDaily3 = new Swiper('.swiper-container--daily-3', swiperFeaturesOpt(7500));
-};
-
-/**
- * @name initValidation
- *
- * @description
- */
-var initValidation = function initValidation() {
-
-  /**
-   *
-   * @param form
-   */
-  var validationSubmitHandler = function validationSubmitHandler(form) {
-    $.ajax({
-      type: "POST",
-      url: $(form).attr('action'),
-      data: $(form).serialize(),
-      success: function success(response) {
-        var data = $.parseJSON(response);
-
-        if (data.status === 'success') {
-          // do something
-        } else {
-            // do something
-          }
-      }
-    });
-  };
-
-  /**
-   *
-   * @param error
-   * @param element
-   */
-  var validationErrorPlacement = function validationErrorPlacement(error, element) {
-    error.appendTo(element.closest('.c-form__field'));
-  };
-
-  /**
-   *
-   * @param element
-   */
-  var validationHighlight = function validationHighlight(element) {
-    $(element).closest('.c-form__field').addClass('is-error');
-  };
-
-  /**
-   *
-   * @param element
-   */
-  var validationUnhighlight = function validationUnhighlight(element) {
-    $(element).closest('.c-form__field').removeClass('is-error');
-  };
-
-  /**
-   * @description
-   */
-  $("#formName").validate({
-    submitHandler: validationSubmitHandler,
-    errorPlacement: validationErrorPlacement,
-    highlight: validationHighlight,
-    unhighlight: validationUnhighlight,
-    rules: {
-      name: 'required',
-      email: {
-        required: true,
-        email: true
-      },
-      password: {
-        required: true,
-        minlength: 8
-      },
-      message: 'required',
-      select: 'required',
-      radio: 'required',
-      checkbox: 'required'
-    }
-  });
 };
 
 /**
@@ -690,14 +534,14 @@ $(document).ready(function (ev) {
     // default
     initWebFontLoader();
     initPreventBehavior();
-    initSvg4everybody();
+    // initSvg4everybody();
     // ==========================================
 
     // lib
-    initObjectFitImages();
-    initValidation();
+    // initObjectFitImages();
+    // initValidation();
     initHamburger();
-    initStellar();
+    // initStellar();
     initSwiper();
     // ==========================================
 

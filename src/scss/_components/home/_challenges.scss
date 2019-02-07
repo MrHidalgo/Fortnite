@@ -138,14 +138,10 @@
         height: 29px;
       }
 
-      span {
+      i {
         transform: rotate(90deg);
         color: $c-white;
-        font-size: 48px;
-        font-family: "DCC-Scisor", sans-serif;
-        @include adaptive(575) {
-          font-size: 25px;
-        }
+        font-size: 21px;
       }
     }
 

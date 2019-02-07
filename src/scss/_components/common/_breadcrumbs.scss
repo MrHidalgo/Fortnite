@@ -54,10 +54,11 @@
   }
 
   &__icon {
+    display: flex;
+    align-items: center;
     color: #ff7236;
     line-height: 1;
-    font-size: 33px;
-    font-family: 'DCC - Scisor', sans-serif;
+    font-size: 17px;
   }
 }
 
