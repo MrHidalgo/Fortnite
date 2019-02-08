@@ -83,7 +83,7 @@
 /* line 371, src/scss/_generated/_spritePNG.scss */
 .arrow:before {
   background-image: url("../img/sprite.png");
-  background-position: -312px -66px;
+  background-position: -276px -32px;
   background-repeat: no-repeat;
   width: 21px;
   height: 23px;
@@ -92,7 +92,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 371, src/scss/_generated/_spritePNG.scss */
   .arrow:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -100,7 +100,7 @@
 /* line 374, src/scss/_generated/_spritePNG.scss */
 .backBling:before {
   background-image: url("../img/sprite.png");
-  background-position: -312px -34px;
+  background-position: -276px 0px;
   background-repeat: no-repeat;
   width: 21px;
   height: 27px;
@@ -109,7 +109,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 374, src/scss/_generated/_spritePNG.scss */
   .backBling:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -117,7 +117,7 @@
 /* line 377, src/scss/_generated/_spritePNG.scss */
 .battle-pass-challenges:before {
   background-image: url("../img/sprite.png");
-  background-position: -153px 0px;
+  background-position: -70px 0px;
   background-repeat: no-repeat;
   width: 53px;
   height: 61px;
@@ -126,7 +126,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 377, src/scss/_generated/_spritePNG.scss */
   .battle-pass-challenges:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -134,16 +134,16 @@
 /* line 380, src/scss/_generated/_spritePNG.scss */
 .c-bandage:before {
   background-image: url("../img/sprite.png");
-  background-position: -121px -137px;
+  background-position: -190px -125px;
   background-repeat: no-repeat;
-  width: 49px;
-  height: 54px;
+  width: 33px;
+  height: 37px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 380, src/scss/_generated/_spritePNG.scss */
   .c-bandage:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -151,16 +151,16 @@
 /* line 383, src/scss/_generated/_spritePNG.scss */
 .c-book:before {
   background-image: url("../img/sprite.png");
-  background-position: -265px -180px;
+  background-position: -276px -110px;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 32px;
+  width: 18px;
+  height: 20px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 383, src/scss/_generated/_spritePNG.scss */
   .c-book:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -168,16 +168,16 @@
 /* line 386, src/scss/_generated/_spritePNG.scss */
 .c-music:before {
   background-image: url("../img/sprite.png");
-  background-position: 0px -80px;
+  background-position: -111px -186px;
   background-repeat: no-repeat;
-  width: 70px;
-  height: 52px;
+  width: 33px;
+  height: 26px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 386, src/scss/_generated/_spritePNG.scss */
   .c-music:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -185,16 +185,16 @@
 /* line 389, src/scss/_generated/_spritePNG.scss */
 .c-pets:before {
   background-image: url("../img/sprite.png");
-  background-position: -265px -46px;
+  background-position: -161px -80px;
   background-repeat: no-repeat;
-  width: 29px;
-  height: 54px;
+  width: 19px;
+  height: 33px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 389, src/scss/_generated/_spritePNG.scss */
   .c-pets:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -202,16 +202,16 @@
 /* line 392, src/scss/_generated/_spritePNG.scss */
 .c-umbrella:before {
   background-image: url("../img/sprite.png");
-  background-position: -153px -66px;
+  background-position: -113px -139px;
   background-repeat: no-repeat;
-  width: 51px;
-  height: 52px;
+  width: 33px;
+  height: 35px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 392, src/scss/_generated/_spritePNG.scss */
   .c-umbrella:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -219,16 +219,16 @@
 /* line 395, src/scss/_generated/_spritePNG.scss */
 .c-wraps:before {
   background-image: url("../img/sprite.png");
-  background-position: -70px 0px;
+  background-position: -186px -186px;
   background-repeat: no-repeat;
-  width: 78px;
-  height: 54px;
+  width: 33px;
+  height: 22px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 395, src/scss/_generated/_spritePNG.scss */
   .c-wraps:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -236,7 +236,7 @@
 /* line 398, src/scss/_generated/_spritePNG.scss */
 .emote:before {
   background-image: url("../img/sprite.png");
-  background-position: -312px 0px;
+  background-position: -242px -101px;
   background-repeat: no-repeat;
   width: 25px;
   height: 29px;
@@ -245,7 +245,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 398, src/scss/_generated/_spritePNG.scss */
   .emote:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -253,7 +253,7 @@
 /* line 401, src/scss/_generated/_spritePNG.scss */
 .emoticon:before {
   background-image: url("../img/sprite.png");
-  background-position: -137px -238px;
+  background-position: 0px -224px;
   background-repeat: no-repeat;
   width: 33px;
   height: 18px;
@@ -262,7 +262,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 401, src/scss/_generated/_spritePNG.scss */
   .emoticon:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -270,16 +270,16 @@
 /* line 404, src/scss/_generated/_spritePNG.scss */
 .eventbook:before {
   background-image: url("../img/sprite.png");
-  background-position: -175px -137px;
+  background-position: -276px -85px;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 32px;
+  width: 18px;
+  height: 20px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 404, src/scss/_generated/_spritePNG.scss */
   .eventbook:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -287,16 +287,16 @@
 /* line 407, src/scss/_generated/_spritePNG.scss */
 .flip:before {
   background-image: url("../img/sprite.png");
-  background-position: -128px -198px;
+  background-position: -276px -135px;
   background-repeat: no-repeat;
-  width: 32px;
-  height: 29px;
+  width: 20px;
+  height: 18px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 407, src/scss/_generated/_spritePNG.scss */
   .flip:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -304,7 +304,7 @@
 /* line 410, src/scss/_generated/_spritePNG.scss */
 .glider:before {
   background-image: url("../img/sprite.png");
-  background-position: -203px -198px;
+  background-position: -72px -186px;
   background-repeat: no-repeat;
   width: 34px;
   height: 27px;
@@ -313,7 +313,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 410, src/scss/_generated/_spritePNG.scss */
   .glider:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -321,7 +321,7 @@
 /* line 413, src/scss/_generated/_spritePNG.scss */
 .harvestingTool:before {
   background-image: url("../img/sprite.png");
-  background-position: 0px -274px;
+  background-position: -242px -68px;
   background-repeat: no-repeat;
   width: 27px;
   height: 28px;
@@ -330,7 +330,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 413, src/scss/_generated/_spritePNG.scss */
   .harvestingTool:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -338,7 +338,7 @@
 /* line 416, src/scss/_generated/_spritePNG.scss */
 .i-comments-single:before {
   background-image: url("../img/sprite.png");
-  background-position: -211px -116px;
+  background-position: -190px 0px;
   background-repeat: no-repeat;
   width: 47px;
   height: 38px;
@@ -347,7 +347,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 416, src/scss/_generated/_spritePNG.scss */
   .i-comments-single:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -355,7 +355,7 @@
 /* line 419, src/scss/_generated/_spritePNG.scss */
 .i-comments:before {
   background-image: url("../img/sprite.png");
-  background-position: 0px -198px;
+  background-position: -57px -139px;
   background-repeat: no-repeat;
   width: 51px;
   height: 35px;
@@ -364,7 +364,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 419, src/scss/_generated/_spritePNG.scss */
   .i-comments:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -372,7 +372,7 @@
 /* line 422, src/scss/_generated/_spritePNG.scss */
 .i-comparison:before {
   background-image: url("../img/sprite.png");
-  background-position: -68px -238px;
+  background-position: -149px -186px;
   background-repeat: no-repeat;
   width: 32px;
   height: 24px;
@@ -381,7 +381,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 422, src/scss/_generated/_spritePNG.scss */
   .i-comparison:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -389,7 +389,7 @@
 /* line 425, src/scss/_generated/_spritePNG.scss */
 .i-get:before {
   background-image: url("../img/sprite.png");
-  background-position: -265px 0px;
+  background-position: -190px -43px;
   background-repeat: no-repeat;
   width: 42px;
   height: 41px;
@@ -398,7 +398,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 425, src/scss/_generated/_spritePNG.scss */
   .i-get:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -406,7 +406,7 @@
 /* line 428, src/scss/_generated/_spritePNG.scss */
 .i-guides:before {
   background-image: url("../img/sprite.png");
-  background-position: -75px -80px;
+  background-position: 0px -139px;
   background-repeat: no-repeat;
   width: 52px;
   height: 42px;
@@ -415,7 +415,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 428, src/scss/_generated/_spritePNG.scss */
   .i-guides:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -423,7 +423,7 @@
 /* line 431, src/scss/_generated/_spritePNG.scss */
 .i-h-rotation:before {
   background-image: url("../img/sprite.png");
-  background-position: -90px -198px;
+  background-position: -151px -139px;
   background-repeat: no-repeat;
   width: 33px;
   height: 29px;
@@ -432,7 +432,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 431, src/scss/_generated/_spritePNG.scss */
   .i-h-rotation:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -440,7 +440,7 @@
 /* line 434, src/scss/_generated/_spritePNG.scss */
 .i-history:before {
   background-image: url("../img/sprite.png");
-  background-position: 0px -137px;
+  background-position: -128px 0px;
   background-repeat: no-repeat;
   width: 57px;
   height: 56px;
@@ -449,7 +449,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 434, src/scss/_generated/_spritePNG.scss */
   .i-history:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -457,7 +457,7 @@
 /* line 437, src/scss/_generated/_spritePNG.scss */
 .i-preview-small:before {
   background-image: url("../img/sprite.png");
-  background-position: -312px -94px;
+  background-position: -242px -195px;
   background-repeat: no-repeat;
   width: 23px;
   height: 13px;
@@ -466,7 +466,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 437, src/scss/_generated/_spritePNG.scss */
   .i-preview-small:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -474,7 +474,7 @@
 /* line 440, src/scss/_generated/_spritePNG.scss */
 .i-preview:before {
   background-image: url("../img/sprite.png");
-  background-position: -211px -159px;
+  background-position: -190px -89px;
   background-repeat: no-repeat;
   width: 46px;
   height: 31px;
@@ -483,7 +483,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 440, src/scss/_generated/_spritePNG.scss */
   .i-preview:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -491,7 +491,7 @@
 /* line 443, src/scss/_generated/_spritePNG.scss */
 .loadingScreen:before {
   background-image: url("../img/sprite.png");
-  background-position: -165px -198px;
+  background-position: -34px -186px;
   background-repeat: no-repeat;
   width: 33px;
   height: 28px;
@@ -500,7 +500,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 443, src/scss/_generated/_spritePNG.scss */
   .loadingScreen:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -508,7 +508,7 @@
 /* line 446, src/scss/_generated/_spritePNG.scss */
 .outfit:before {
   background-image: url("../img/sprite.png");
-  background-position: -56px -198px;
+  background-position: 0px -186px;
   background-repeat: no-repeat;
   width: 29px;
   height: 33px;
@@ -517,7 +517,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 446, src/scss/_generated/_spritePNG.scss */
   .outfit:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -525,7 +525,7 @@
 /* line 449, src/scss/_generated/_spritePNG.scss */
 .skydivingTrails:before {
   background-image: url("../img/sprite.png");
-  background-position: 0px -238px;
+  background-position: -242px 0px;
   background-repeat: no-repeat;
   width: 29px;
   height: 31px;
@@ -534,7 +534,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 449, src/scss/_generated/_spritePNG.scss */
   .skydivingTrails:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -542,7 +542,7 @@
 /* line 452, src/scss/_generated/_spritePNG.scss */
 .spray:before {
   background-image: url("../img/sprite.png");
-  background-position: -32px -274px;
+  background-position: -242px -135px;
   background-repeat: no-repeat;
   width: 27px;
   height: 26px;
@@ -551,7 +551,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 452, src/scss/_generated/_spritePNG.scss */
   .spray:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -559,7 +559,7 @@
 /* line 455, src/scss/_generated/_spritePNG.scss */
 .star-full:before {
   background-image: url("../img/sprite.png");
-  background-position: -211px 0px;
+  background-position: -59px -80px;
   background-repeat: no-repeat;
   width: 49px;
   height: 53px;
@@ -568,7 +568,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 455, src/scss/_generated/_spritePNG.scss */
   .star-full:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -576,7 +576,7 @@
 /* line 458, src/scss/_generated/_spritePNG.scss */
 .star-half:before {
   background-image: url("../img/sprite.png");
-  background-position: -211px -58px;
+  background-position: -113px -80px;
   background-repeat: no-repeat;
   width: 43px;
   height: 53px;
@@ -585,7 +585,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 458, src/scss/_generated/_spritePNG.scss */
   .star-half:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -602,7 +602,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 461, src/scss/_generated/_spritePNG.scss */
   .styles:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -610,7 +610,7 @@
 /* line 464, src/scss/_generated/_spritePNG.scss */
 .token:before {
   background-image: url("../img/sprite.png");
-  background-position: -34px -238px;
+  background-position: -242px -36px;
   background-repeat: no-repeat;
   width: 29px;
   height: 27px;
@@ -619,7 +619,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 464, src/scss/_generated/_spritePNG.scss */
   .token:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -627,7 +627,7 @@
 /* line 467, src/scss/_generated/_spritePNG.scss */
 .toy:before {
   background-image: url("../img/sprite.png");
-  background-position: -105px -238px;
+  background-position: -242px -166px;
   background-repeat: no-repeat;
   width: 27px;
   height: 24px;
@@ -636,7 +636,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 467, src/scss/_generated/_spritePNG.scss */
   .toy:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -644,16 +644,16 @@
 /* line 470, src/scss/_generated/_spritePNG.scss */
 .vbucks:before {
   background-image: url("../img/sprite.png");
-  background-position: -265px -142px;
+  background-position: -276px -158px;
   background-repeat: no-repeat;
-  width: 30px;
-  height: 33px;
+  width: 18px;
+  height: 20px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 470, src/scss/_generated/_spritePNG.scss */
   .vbucks:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -661,16 +661,16 @@
 /* line 473, src/scss/_generated/_spritePNG.scss */
 .vip:before {
   background-image: url("../img/sprite.png");
-  background-position: -265px -105px;
+  background-position: -276px -60px;
   background-repeat: no-repeat;
-  width: 34px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 473, src/scss/_generated/_spritePNG.scss */
   .vip:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
@@ -678,7 +678,7 @@
 /* line 476, src/scss/_generated/_spritePNG.scss */
 .weekly-challenges:before {
   background-image: url("../img/sprite.png");
-  background-position: -62px -137px;
+  background-position: 0px -80px;
   background-repeat: no-repeat;
   width: 54px;
   height: 54px;
@@ -687,7 +687,7 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 476, src/scss/_generated/_spritePNG.scss */
   .weekly-challenges:before {
-    background-size: 337px 302px;
+    background-size: 297px 242px;
     background-image: url("../img/sprite@2x.png");
   }
 }
