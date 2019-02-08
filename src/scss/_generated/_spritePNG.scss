@@ -1,236 +1,326 @@
 $sprite: (
   arrow: (
-    offset-x: -76px,
-    offset-y: -186px,
+    offset-x: -749px,
+    offset-y: -584px,
     width: 21px,
     height: 23px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   backBling: (
-    offset-x: -161px,
-    offset-y: -80px,
+    offset-x: -928px,
+    offset-y: -337px,
     width: 21px,
     height: 27px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   battle-pass-challenges: (
-    offset-x: -70px,
-    offset-y: 0px,
+    offset-x: -749px,
+    offset-y: -337px,
     width: 53px,
     height: 61px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
+    image: '../img/sprite.png'
+  ),
+  c-bandage: (
+    offset-x: -516px,
+    offset-y: -218px,
+    width: 207px,
+    height: 232px,
+    total-width: 949px,
+    total-height: 687px,
+    image: '../img/sprite.png'
+  ),
+  c-book: (
+    offset-x: -749px,
+    offset-y: -212px,
+    width: 112px,
+    height: 120px,
+    total-width: 949px,
+    total-height: 687px,
+    image: '../img/sprite.png'
+  ),
+  c-music: (
+    offset-x: 0px,
+    offset-y: -507px,
+    width: 240px,
+    height: 180px,
+    total-width: 949px,
+    total-height: 687px,
+    image: '../img/sprite.png'
+  ),
+  c-pets: (
+    offset-x: 0px,
+    offset-y: 0px,
+    width: 256px,
+    height: 256px,
+    total-width: 949px,
+    total-height: 687px,
+    image: '../img/sprite.png'
+  ),
+  c-umbrella: (
+    offset-x: -749px,
+    offset-y: 0px,
+    width: 200px,
+    height: 207px,
+    total-width: 949px,
+    total-height: 687px,
+    image: '../img/sprite.png'
+  ),
+  c-wraps: (
+    offset-x: -245px,
+    offset-y: -507px,
+    width: 234px,
+    height: 162px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   emote: (
-    offset-x: -242px,
-    offset-y: -101px,
+    offset-x: -749px,
+    offset-y: -550px,
     width: 25px,
     height: 29px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   emoticon: (
-    offset-x: -190px,
-    offset-y: -163px,
+    offset-x: -843px,
+    offset-y: -550px,
     width: 33px,
     height: 18px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
+    image: '../img/sprite.png'
+  ),
+  eventbook: (
+    offset-x: -237px,
+    offset-y: -261px,
+    width: 224px,
+    height: 237px,
+    total-width: 949px,
+    total-height: 687px,
+    image: '../img/sprite.png'
+  ),
+  flip: (
+    offset-x: -516px,
+    offset-y: 0px,
+    width: 228px,
+    height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   glider: (
-    offset-x: 0px,
-    offset-y: -186px,
+    offset-x: -890px,
+    offset-y: -461px,
     width: 34px,
     height: 27px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   harvestingTool: (
-    offset-x: -242px,
-    offset-y: -68px,
+    offset-x: -922px,
+    offset-y: -292px,
     width: 27px,
     height: 28px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   i-comments-single: (
-    offset-x: -190px,
-    offset-y: 0px,
+    offset-x: -749px,
+    offset-y: -461px,
     width: 47px,
     height: 38px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   i-comments: (
-    offset-x: -57px,
-    offset-y: -139px,
+    offset-x: -866px,
+    offset-y: -292px,
     width: 51px,
     height: 35px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   i-comparison: (
-    offset-x: -39px,
-    offset-y: -186px,
+    offset-x: -898px,
+    offset-y: -504px,
     width: 32px,
     height: 24px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   i-get: (
-    offset-x: -190px,
-    offset-y: -43px,
+    offset-x: -749px,
+    offset-y: -504px,
     width: 42px,
     height: 41px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   i-guides: (
-    offset-x: 0px,
-    offset-y: -139px,
+    offset-x: -851px,
+    offset-y: -403px,
     width: 52px,
     height: 42px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   i-h-rotation: (
-    offset-x: -113px,
-    offset-y: -139px,
+    offset-x: -908px,
+    offset-y: -403px,
     width: 33px,
     height: 29px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   i-history: (
-    offset-x: -128px,
-    offset-y: 0px,
+    offset-x: -807px,
+    offset-y: -337px,
     width: 57px,
     height: 56px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   i-preview-small: (
-    offset-x: -242px,
-    offset-y: -195px,
+    offset-x: -881px,
+    offset-y: -550px,
     width: 23px,
     height: 13px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   i-preview: (
-    offset-x: -190px,
-    offset-y: -89px,
+    offset-x: -801px,
+    offset-y: -461px,
     width: 46px,
     height: 31px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   loadingScreen: (
-    offset-x: -151px,
-    offset-y: -139px,
+    offset-x: -852px,
+    offset-y: -461px,
     width: 33px,
     height: 28px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   outfit: (
-    offset-x: -190px,
-    offset-y: -125px,
+    offset-x: -796px,
+    offset-y: -504px,
     width: 29px,
     height: 33px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   skydivingTrails: (
-    offset-x: -242px,
-    offset-y: 0px,
+    offset-x: -830px,
+    offset-y: -504px,
     width: 29px,
     height: 31px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   spray: (
-    offset-x: -242px,
-    offset-y: -135px,
+    offset-x: -779px,
+    offset-y: -550px,
     width: 27px,
     height: 26px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   star-full: (
-    offset-x: -59px,
-    offset-y: -80px,
+    offset-x: -749px,
+    offset-y: -403px,
     width: 49px,
     height: 53px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   star-half: (
-    offset-x: -113px,
-    offset-y: -80px,
+    offset-x: -803px,
+    offset-y: -403px,
     width: 43px,
     height: 53px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   styles: (
-    offset-x: 0px,
-    offset-y: 0px,
+    offset-x: -866px,
+    offset-y: -212px,
     width: 65px,
     height: 75px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   token: (
-    offset-x: -242px,
-    offset-y: -36px,
+    offset-x: -864px,
+    offset-y: -504px,
     width: 29px,
     height: 27px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   toy: (
-    offset-x: -242px,
-    offset-y: -166px,
+    offset-x: -811px,
+    offset-y: -550px,
     width: 27px,
     height: 24px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
+    image: '../img/sprite.png'
+  ),
+  vbucks: (
+    offset-x: 0px,
+    offset-y: -261px,
+    width: 232px,
+    height: 241px,
+    total-width: 949px,
+    total-height: 687px,
+    image: '../img/sprite.png'
+  ),
+  vip: (
+    offset-x: -261px,
+    offset-y: 0px,
+    width: 250px,
+    height: 228px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
   weekly-challenges: (
-    offset-x: 0px,
-    offset-y: -80px,
+    offset-x: -869px,
+    offset-y: -337px,
     width: 54px,
     height: 54px,
-    total-width: 271px,
-    total-height: 213px,
+    total-width: 949px,
+    total-height: 687px,
     image: '../img/sprite.png'
   ),
 );
@@ -287,11 +377,35 @@ $sprite: (
 .battle-pass-challenges:before {
   @include sprite(battle-pass-challenges);
 }
+.c-bandage:before {
+  @include sprite(c-bandage);
+}
+.c-book:before {
+  @include sprite(c-book);
+}
+.c-music:before {
+  @include sprite(c-music);
+}
+.c-pets:before {
+  @include sprite(c-pets);
+}
+.c-umbrella:before {
+  @include sprite(c-umbrella);
+}
+.c-wraps:before {
+  @include sprite(c-wraps);
+}
 .emote:before {
   @include sprite(emote);
 }
 .emoticon:before {
   @include sprite(emoticon);
+}
+.eventbook:before {
+  @include sprite(eventbook);
+}
+.flip:before {
+  @include sprite(flip);
 }
 .glider:before {
   @include sprite(glider);
@@ -352,6 +466,12 @@ $sprite: (
 }
 .toy:before {
   @include sprite(toy);
+}
+.vbucks:before {
+  @include sprite(vbucks);
+}
+.vip:before {
+  @include sprite(vip);
 }
 .weekly-challenges:before {
   @include sprite(weekly-challenges);
