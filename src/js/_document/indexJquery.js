@@ -34,6 +34,10 @@ $(document).ready((ev) => {
     });
   };
 
+
+  /**
+   * @description
+   */
   const initItemNavBtn = () => {
     $('.item__nav-btn').on('click', (ev) => {
       const elem = $(ev.currentTarget);
@@ -43,6 +47,10 @@ $(document).ready((ev) => {
     });
   };
 
+
+  /**
+   * @description
+   */
   const initVideoLeakedSub = () => {
     const vid = document.getElementById("video");
 
@@ -71,6 +79,10 @@ $(document).ready((ev) => {
     });
   };
 
+
+  /**
+   * @description
+   */
   const initSearchExpand = () => {
     $('[search-btn-js]').on('click', (ev) => {
       if($(window).width() > 767) {
@@ -82,6 +94,9 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   * @description
+   */
   const initGraph = () => {
     let graph0 = document.getElementById("graph-0"),
       graph1 = document.getElementById("graph-1"),
@@ -153,6 +168,9 @@ $(document).ready((ev) => {
   };
 
 
+  /**
+   * @description
+   */
   const initFilterRadioBtn = () => {
     $(window).on('load', () => {
       const checkboxBtn = $('input[type="checkbox"]');
@@ -195,11 +213,9 @@ $(document).ready((ev) => {
   };
 
 
-  const initListFilterSelect = () => {
-    $('.filter_0').selectpicker();
-    $('.filter_1').selectpicker();
-  };
-
+  /**
+   * @description
+   */
   const initImageCompare = () => {
     $("[compare-box-js]").twentytwenty({
       click_to_move: true,
@@ -207,6 +223,10 @@ $(document).ready((ev) => {
     });
   };
 
+
+  /**
+   * @description
+   */
   const initTickerText = () => {
     if($('.b-skin__info--ticker').length > 0) {
       let $tw = $('.b-skin__info--ticker');
@@ -245,6 +265,37 @@ $(document).ready((ev) => {
       set();
     }
   };
+
+
+  /**
+   * @description
+   */
+  const initDropDown = () => {
+    /**
+     *
+     * @param ev
+     * @param parent
+     * @param drop
+     * @param maxWidth
+     */
+    const dropHundler = (ev, parent, drop, maxWidth) => {
+      const _el = $(ev.currentTarget),
+        _parentNode = _el.closest(parent),
+        _dropDownNode = _parentNode.find(drop);
+
+      if($(window).width() < maxWidth) {
+        _dropDownNode.slideToggle(350);
+      }
+    };
+
+    $('.header__nav-link--wrapper > a').on('click', (ev) => {
+      dropHundler(ev, '.header__nav-link--wrapper', '.dropdown-menu', 1200);
+    });
+
+    $('.item__dropdown .dropdown__btn').on('click', (ev) => {
+      dropHundler(ev, '.item__dropdown', '.dropdown-menu', 768);
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -277,9 +328,10 @@ $(document).ready((ev) => {
     initSearchExpand();
     initGraph();
     initFilterRadioBtn();
-    initListFilterSelect();
+    // initListFilterSelect();
     initImageCompare();
     initTickerText();
+    initDropDown();
 
     $('body').on('click', function (e) {
       const className = ".header__search";

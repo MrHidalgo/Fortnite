@@ -1,7 +1,7 @@
 // HEADER :: START
 
 .header {
-  overflow: hidden;
+  //overflow: hidden;
   background-color: #2a2a2a;
 
   &__wrapper {
@@ -224,8 +224,60 @@
       }
 
       &--wrapper {
+        position: relative;
         @include adaptive(1199) {
           width: 100%;
+        }
+
+        &:hover {
+          @include respond(extra-large) {
+            > a {
+              color: $c-white;
+              background-color: #313131;
+              @include transition(background-color);
+
+              &:after {
+                background-color: #ffff00;
+                transform: translateY(0);
+                @include transition(background-color, transform);
+              }
+            }
+
+            > div {
+              display: flex;
+            }
+          }
+        }
+
+        > div {
+          display: none;
+          white-space: nowrap;
+          flex-direction: column;
+          padding: 0.5rem 0;
+          margin: 0.125rem 0 0;
+          font-size: 1rem;
+          color: #212529;
+          text-align: left;
+          list-style: none;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          border-radius: 0.25rem;
+          @include respond(extra-large) {
+            z-index: 1000;
+            position: absolute;
+            top: 100%;
+            right: 0;
+          }
+          @include adaptive(1199) {
+            width: 100%;
+            border-radius: 0;
+            background-color: rgba(0, 0, 0, 0.15);
+
+            a {
+              color: #fff !important;
+            }
+          }
         }
       }
 

@@ -474,6 +474,9 @@
             right: 0;
             width: 45px;
             height: 100%;
+            @include adaptive(767) {
+              display: none;
+            }
 
             i {
               transform: rotate(90deg);
@@ -493,6 +496,13 @@
         border-radius: 0;
         background-color: #eec76d;
         clip-path: polygon(0 1%, 100% 0, 99% 99%, 1% 100%);
+        @include adaptive(767) {
+          display: none;
+          z-index: 1000;
+          position: absolute;
+          top: 100%;
+          right: 0;
+        }
       }
 
       &__link {

@@ -284,6 +284,9 @@ $(document).ready(function (ev) {
     });
   };
 
+  /**
+   * @description
+   */
   var initItemNavBtn = function initItemNavBtn() {
     $('.item__nav-btn').on('click', function (ev) {
       var elem = $(ev.currentTarget);
@@ -293,6 +296,9 @@ $(document).ready(function (ev) {
     });
   };
 
+  /**
+   * @description
+   */
   var initVideoLeakedSub = function initVideoLeakedSub() {
     var vid = document.getElementById("video");
 
@@ -321,6 +327,9 @@ $(document).ready(function (ev) {
     });
   };
 
+  /**
+   * @description
+   */
   var initSearchExpand = function initSearchExpand() {
     $('[search-btn-js]').on('click', function (ev) {
       if ($(window).width() > 767) {
@@ -329,6 +338,9 @@ $(document).ready(function (ev) {
     });
   };
 
+  /**
+   * @description
+   */
   var initGraph = function initGraph() {
     var graph0 = document.getElementById("graph-0"),
         graph1 = document.getElementById("graph-1"),
@@ -373,6 +385,9 @@ $(document).ready(function (ev) {
     }
   };
 
+  /**
+   * @description
+   */
   var initFilterRadioBtn = function initFilterRadioBtn() {
     $(window).on('load', function () {
       var checkboxBtn = $('input[type="checkbox"]');
@@ -449,10 +464,10 @@ $(document).ready(function (ev) {
 
           try {
             for (var _iterator3 = checkboxBtnArr[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
-              var _el = _step3.value;
+              var _el2 = _step3.value;
 
-              $(_el).closest('.c-form__field').addClass('is-disabled');
-              $(_el).prop('disabled', true).change().prop('checked', false).change();
+              $(_el2).closest('.c-form__field').addClass('is-disabled');
+              $(_el2).prop('disabled', true).change().prop('checked', false).change();
             }
           } catch (err) {
             _didIteratorError3 = true;
@@ -473,11 +488,9 @@ $(document).ready(function (ev) {
     });
   };
 
-  var initListFilterSelect = function initListFilterSelect() {
-    $('.filter_0').selectpicker();
-    $('.filter_1').selectpicker();
-  };
-
+  /**
+   * @description
+   */
   var initImageCompare = function initImageCompare() {
     $("[compare-box-js]").twentytwenty({
       click_to_move: true,
@@ -485,6 +498,9 @@ $(document).ready(function (ev) {
     });
   };
 
+  /**
+   * @description
+   */
   var initTickerText = function initTickerText() {
     if ($('.b-skin__info--ticker').length > 0) {
       var set = function set() {
@@ -523,6 +539,36 @@ $(document).ready(function (ev) {
       set();
     }
   };
+
+  /**
+   * @description
+   */
+  var initDropDown = function initDropDown() {
+    /**
+     *
+     * @param ev
+     * @param parent
+     * @param drop
+     * @param maxWidth
+     */
+    var dropHundler = function dropHundler(ev, parent, drop, maxWidth) {
+      var _el = $(ev.currentTarget),
+          _parentNode = _el.closest(parent),
+          _dropDownNode = _parentNode.find(drop);
+
+      if ($(window).width() < maxWidth) {
+        _dropDownNode.slideToggle(350);
+      }
+    };
+
+    $('.header__nav-link--wrapper > a').on('click', function (ev) {
+      dropHundler(ev, '.header__nav-link--wrapper', '.dropdown-menu', 1200);
+    });
+
+    $('.item__dropdown .dropdown__btn').on('click', function (ev) {
+      dropHundler(ev, '.item__dropdown', '.dropdown-menu', 768);
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -553,9 +599,10 @@ $(document).ready(function (ev) {
     initSearchExpand();
     initGraph();
     initFilterRadioBtn();
-    initListFilterSelect();
+    // initListFilterSelect();
     initImageCompare();
     initTickerText();
+    initDropDown();
 
     $('body').on('click', function (e) {
       var className = ".header__search";
