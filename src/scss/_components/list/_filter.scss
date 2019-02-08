@@ -500,6 +500,42 @@
       margin-top: 0;
     }
   }
+
+  .selectric {
+    border-color: transparent;
+    background: transparent;
+
+    .label {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .button {
+      background: transparent;
+
+      &:after {
+        content: "";
+        height: auto;
+        margin: 0;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 8px;
+        font-family: "iconFont", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        text-decoration: none;
+        text-transform: none;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        border: none;
+      }
+    }
+  }
 }
 
 // SECTION filter :: END

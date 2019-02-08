@@ -569,6 +569,43 @@ $(document).ready(function (ev) {
       dropHundler(ev, '.item__dropdown', '.dropdown-menu', 768);
     });
   };
+
+  /**
+   *
+   */
+  var initListFilterSelect = function initListFilterSelect() {
+    var selectName = $(".filter_0, .filter_1");
+
+    selectName.selectric({
+      responsive: true,
+      inheritOriginalWidth: false,
+      disableOnMobile: false,
+      onInit: function onInit(element, data) {
+        var $elm = $(element),
+            $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').html($elm.attr('placeholder'));
+      },
+      onBeforeOpen: function onBeforeOpen(element, data) {
+        var $elm = $(element),
+            $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').data('value', $wrapper.find('.label').html()).html($elm.attr('placeholder'));
+      },
+      onBeforeClose: function onBeforeClose(element, data) {
+        var $elm = $(element),
+            $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').html($wrapper.find('.label').data('value'));
+      },
+      onChange: function onChange(element, data) {
+        var $elm = $(element),
+            $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').addClass('is-choose');
+      }
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -580,14 +617,10 @@ $(document).ready(function (ev) {
     // default
     initWebFontLoader();
     initPreventBehavior();
-    // initSvg4everybody();
     // ==========================================
 
     // lib
-    // initObjectFitImages();
-    // initValidation();
     initHamburger();
-    // initStellar();
     initSwiper();
     // ==========================================
 
@@ -599,7 +632,7 @@ $(document).ready(function (ev) {
     initSearchExpand();
     initGraph();
     initFilterRadioBtn();
-    // initListFilterSelect();
+    initListFilterSelect();
     initImageCompare();
     initTickerText();
     initDropDown();

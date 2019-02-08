@@ -1,6 +1,6 @@
 # Fortnite Skins
 
-#### [fortnite.surge.sh](http://fortnite.surge.sh/)
+#### [fortnite-skins](http://fortnite-skins.surge.sh/listPages.html)
 
 ## How to start
 * `yarn && bower i && gulp` - install npm dependencies, bower packages and run dev-server

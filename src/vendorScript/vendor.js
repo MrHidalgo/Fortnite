@@ -6,5 +6,6 @@
 * - swiper;
 * - TwentyTwenty;
 * - event.move;
+* - jquery.selectric.min.js;
 *
 * */

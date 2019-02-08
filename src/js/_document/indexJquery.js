@@ -296,6 +296,44 @@ $(document).ready((ev) => {
       dropHundler(ev, '.item__dropdown', '.dropdown-menu', 768);
     });
   };
+
+
+  /**
+   *
+   */
+  const initListFilterSelect = () => {
+    const selectName = $(".filter_0, .filter_1");
+
+    selectName.selectric({
+      responsive: true,
+      inheritOriginalWidth: false,
+      disableOnMobile: false,
+      onInit: function(element, data){
+        var $elm = $(element),
+          $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').html($elm.attr('placeholder'));
+      },
+      onBeforeOpen: function(element, data){
+        var $elm = $(element),
+          $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').data('value', $wrapper.find('.label').html()).html($elm.attr('placeholder'));
+      },
+      onBeforeClose: function(element, data){
+        var $elm = $(element),
+          $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').html($wrapper.find('.label').data('value'));
+      },
+      onChange: function(element, data) {
+        var $elm = $(element),
+          $wrapper = $elm.closest('.' + data.classes.wrapper);
+
+        $wrapper.find('.label').addClass('is-choose');
+      }
+    });
+  };
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -309,14 +347,10 @@ $(document).ready((ev) => {
     // default
     initWebFontLoader();
     initPreventBehavior();
-    // initSvg4everybody();
 		// ==========================================
 
     // lib
-    // initObjectFitImages();
-    // initValidation();
     initHamburger();
-    // initStellar();
     initSwiper();
 		// ==========================================
 
@@ -328,7 +362,7 @@ $(document).ready((ev) => {
     initSearchExpand();
     initGraph();
     initFilterRadioBtn();
-    // initListFilterSelect();
+    initListFilterSelect();
     initImageCompare();
     initTickerText();
     initDropDown();

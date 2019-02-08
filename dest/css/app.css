@@ -17170,6 +17170,46 @@ picture {
   }
 }
 
+/* line 504, src/scss/_components/list/_filter.scss */
+.filter .selectric {
+  border-color: transparent;
+  background: transparent;
+}
+
+/* line 508, src/scss/_components/list/_filter.scss */
+.filter .selectric .label {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/* line 514, src/scss/_components/list/_filter.scss */
+.filter .selectric .button {
+  background: transparent;
+}
+
+/* line 517, src/scss/_components/list/_filter.scss */
+.filter .selectric .button:after {
+  content: "";
+  height: auto;
+  margin: 0;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 8px;
+  font-family: "iconFont", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  border: none;
+}
+
 /* line 3, src/scss/_components/list/_browse.scss */
 .browse {
   position: relative;
