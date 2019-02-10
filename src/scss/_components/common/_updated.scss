@@ -100,7 +100,7 @@
         }
 
         &-1 {
-          @include fluid(font-size, 320px, 1365px, 40px, 63px);
+          @include fluid(font-size, 320px, 1365px, 35px, 48px);
         }
       }
     }
@@ -167,10 +167,10 @@
         }
 
         &-1 {
-          font-size: 40px;
+          @include fluid(font-size, 320px, 575px, 31px, 40px);
 
           span {
-            font-size: 69px;
+            @include fluid(font-size, 320px, 575px, 45px, 69px);
           }
         }
       }
@@ -311,7 +311,7 @@
       color: #0183b1;
       line-height: 1;
       text-transform: uppercase;
-      @include fluid(font-size, 320px, 1439px, 40px, 83px);
+      @include fluid(font-size, 320px, 1439px, 33px, 83px);
 
       span {
         color: #ff7236;
