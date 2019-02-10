@@ -6835,54 +6835,46 @@ picture {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 131px;
     padding-right: 10px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 424px) {
   /* line 169, src/scss/_components/common/_top.scss */
   .top__block-content > div:nth-of-type(1) {
-    width: 101px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  /* line 169, src/scss/_components/common/_top.scss */
-  .top__block-content > div:nth-of-type(1) {
-    width: 141px;
+    width: 131px;
     padding-right: 5px;
   }
 }
 
-/* line 187, src/scss/_components/common/_top.scss */
+@media screen and (max-width: 374px) {
+  /* line 169, src/scss/_components/common/_top.scss */
+  .top__block-content > div:nth-of-type(1) {
+    width: 141px;
+  }
+}
+
+/* line 190, src/scss/_components/common/_top.scss */
 .top__block-content > div:nth-of-type(2) {
   width: 100%;
   max-width: calc(100% - 101px);
 }
 
-@media screen and (max-width: 991px) {
-  /* line 187, src/scss/_components/common/_top.scss */
+@media screen and (max-width: 424px) {
+  /* line 190, src/scss/_components/common/_top.scss */
   .top__block-content > div:nth-of-type(2) {
     max-width: calc(100% - 131px);
   }
 }
 
-@media screen and (max-width: 767px) {
-  /* line 187, src/scss/_components/common/_top.scss */
-  .top__block-content > div:nth-of-type(2) {
-    max-width: calc(100% - 101px);
-  }
-}
-
-@media screen and (max-width: 375px) {
-  /* line 187, src/scss/_components/common/_top.scss */
+@media screen and (max-width: 374px) {
+  /* line 190, src/scss/_components/common/_top.scss */
   .top__block-content > div:nth-of-type(2) {
     max-width: calc(100% - 141px);
   }
 }
 
-/* line 203, src/scss/_components/common/_top.scss */
+/* line 209, src/scss/_components/common/_top.scss */
 .top__block-num {
   position: relative;
   display: -webkit-box;
@@ -6902,27 +6894,27 @@ picture {
           clip-path: polygon(0 0, 100% 0, 96% 97%, 3% 100%);
 }
 
-/* line 214, src/scss/_components/common/_top.scss */
+/* line 220, src/scss/_components/common/_top.scss */
 .top__block-num span {
   color: #eea341;
   font-size: 30px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 214, src/scss/_components/common/_top.scss */
+  /* line 220, src/scss/_components/common/_top.scss */
   .top__block-num span {
     font-size: calc(30px + 6 * (100vw - 320px) / 448);
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 214, src/scss/_components/common/_top.scss */
+  /* line 220, src/scss/_components/common/_top.scss */
   .top__block-num span {
     font-size: 36px;
   }
 }
 
-/* line 220, src/scss/_components/common/_top.scss */
+/* line 226, src/scss/_components/common/_top.scss */
 .top__block-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6934,14 +6926,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 220, src/scss/_components/common/_top.scss */
+  /* line 226, src/scss/_components/common/_top.scss */
   .top__block-header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 229, src/scss/_components/common/_top.scss */
+/* line 235, src/scss/_components/common/_top.scss */
 .top__block-header > div:nth-of-type(1) {
   width: 100%;
   max-width: calc(100% - 100px);
@@ -6949,19 +6941,19 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 229, src/scss/_components/common/_top.scss */
+  /* line 235, src/scss/_components/common/_top.scss */
   .top__block-header > div:nth-of-type(1) {
     max-width: 100%;
     padding-right: 0;
   }
 }
 
-/* line 239, src/scss/_components/common/_top.scss */
+/* line 245, src/scss/_components/common/_top.scss */
 .top__block-header > div:nth-of-type(2) {
   width: 100px;
 }
 
-/* line 244, src/scss/_components/common/_top.scss */
+/* line 250, src/scss/_components/common/_top.scss */
 .top__block-header h4 {
   padding-top: 13px;
   color: #fff;
@@ -6971,14 +6963,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 244, src/scss/_components/common/_top.scss */
+  /* line 250, src/scss/_components/common/_top.scss */
   .top__block-header h4 {
     padding-top: 41px;
     font-size: 14px;
   }
 }
 
-/* line 257, src/scss/_components/common/_top.scss */
+/* line 263, src/scss/_components/common/_top.scss */
 .top__block-badge {
   z-index: 1;
   position: absolute;
@@ -7001,7 +6993,7 @@ picture {
           clip-path: polygon(0 0, 100% 2%, 99% 97%, 1% 98%);
 }
 
-/* line 271, src/scss/_components/common/_top.scss */
+/* line 277, src/scss/_components/common/_top.scss */
 .top__block-badge > span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7021,41 +7013,41 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 271, src/scss/_components/common/_top.scss */
+  /* line 277, src/scss/_components/common/_top.scss */
   .top__block-badge > span {
     font-size: 12px;
   }
 }
 
-/* line 286, src/scss/_components/common/_top.scss */
+/* line 292, src/scss/_components/common/_top.scss */
 .top__block-badge > span .icon-font {
   position: relative;
   font-size: 14px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 286, src/scss/_components/common/_top.scss */
+  /* line 292, src/scss/_components/common/_top.scss */
   .top__block-badge > span .icon-font {
     font-size: 12px;
   }
 }
 
-/* line 293, src/scss/_components/common/_top.scss */
+/* line 299, src/scss/_components/common/_top.scss */
 .top__block-badge > span .icon-like {
   top: -3px;
 }
 
-/* line 296, src/scss/_components/common/_top.scss */
+/* line 302, src/scss/_components/common/_top.scss */
 .top__block-badge > span .icon-dislike {
   bottom: -2px;
 }
 
-/* line 301, src/scss/_components/common/_top.scss */
+/* line 307, src/scss/_components/common/_top.scss */
 .top__block-badge > span span {
   padding-left: 3px;
 }
 
-/* line 307, src/scss/_components/common/_top.scss */
+/* line 313, src/scss/_components/common/_top.scss */
 .top__block-desc {
   padding-bottom: 5px;
   color: #fff;
@@ -7064,7 +7056,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 307, src/scss/_components/common/_top.scss */
+  /* line 313, src/scss/_components/common/_top.scss */
   .top__block-desc {
     padding-right: 10px;
     padding-bottom: 10px;
