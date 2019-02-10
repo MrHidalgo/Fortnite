@@ -228,13 +228,13 @@
     }
 
     @each $className, $colorVal, $borderColor in
-      (0, 'radial-gradient(#ea8d23,#c04d1f)', #e38748),
-      (1, 'radial-gradient(#c359ff,#701fe5)', #b04eec),
-      (2, 'radial-gradient(#2cc1ff,#215dc2)', #3ad6ff),
-      (3, 'radial-gradient(#69bb1e,#227622)', #8fee3b),
-      (4, 'radial-gradient(#bebebe,#848282)', #bebebe)
+      ('legendary', 'radial-gradient(#ea8d23,#c04d1f)', #e38748),
+      ('epic', 'radial-gradient(#c359ff,#701fe5)', #b04eec),
+      ('rare', 'radial-gradient(#2cc1ff,#215dc2)', #3ad6ff),
+      ('uncommon', 'radial-gradient(#69bb1e,#227622)', #8fee3b),
+      ('default', 'radial-gradient(#bebebe,#848282)', #bebebe)
     {
-      &-#{$className} {
+      &--#{$className} {
         .latest__block-photo {
           background-color: $borderColor;
 

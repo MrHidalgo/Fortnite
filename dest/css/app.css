@@ -6211,60 +6211,60 @@ picture {
 }
 
 /* line 238, src/scss/_components/common/_latest.scss */
-.latest__block-0 .latest__block-photo {
+.latest__block--legendary .latest__block-photo {
   background-color: #e38748;
 }
 
 /* line 241, src/scss/_components/common/_latest.scss */
-.latest__block-0 .latest__block-photo > div {
+.latest__block--legendary .latest__block-photo > div {
   background-image: -webkit-radial-gradient(#ea8d23,#c04d1f);
   background-image: -o-radial-gradient(#ea8d23,#c04d1f);
   background-image: radial-gradient(#ea8d23,#c04d1f);
 }
 
 /* line 238, src/scss/_components/common/_latest.scss */
-.latest__block-1 .latest__block-photo {
+.latest__block--epic .latest__block-photo {
   background-color: #b04eec;
 }
 
 /* line 241, src/scss/_components/common/_latest.scss */
-.latest__block-1 .latest__block-photo > div {
+.latest__block--epic .latest__block-photo > div {
   background-image: -webkit-radial-gradient(#c359ff,#701fe5);
   background-image: -o-radial-gradient(#c359ff,#701fe5);
   background-image: radial-gradient(#c359ff,#701fe5);
 }
 
 /* line 238, src/scss/_components/common/_latest.scss */
-.latest__block-2 .latest__block-photo {
+.latest__block--rare .latest__block-photo {
   background-color: #3ad6ff;
 }
 
 /* line 241, src/scss/_components/common/_latest.scss */
-.latest__block-2 .latest__block-photo > div {
+.latest__block--rare .latest__block-photo > div {
   background-image: -webkit-radial-gradient(#2cc1ff,#215dc2);
   background-image: -o-radial-gradient(#2cc1ff,#215dc2);
   background-image: radial-gradient(#2cc1ff,#215dc2);
 }
 
 /* line 238, src/scss/_components/common/_latest.scss */
-.latest__block-3 .latest__block-photo {
+.latest__block--uncommon .latest__block-photo {
   background-color: #8fee3b;
 }
 
 /* line 241, src/scss/_components/common/_latest.scss */
-.latest__block-3 .latest__block-photo > div {
+.latest__block--uncommon .latest__block-photo > div {
   background-image: -webkit-radial-gradient(#69bb1e,#227622);
   background-image: -o-radial-gradient(#69bb1e,#227622);
   background-image: radial-gradient(#69bb1e,#227622);
 }
 
 /* line 238, src/scss/_components/common/_latest.scss */
-.latest__block-4 .latest__block-photo {
+.latest__block--default .latest__block-photo {
   background-color: #bebebe;
 }
 
 /* line 241, src/scss/_components/common/_latest.scss */
-.latest__block-4 .latest__block-photo > div {
+.latest__block--default .latest__block-photo > div {
   background-image: -webkit-radial-gradient(#bebebe,#848282);
   background-image: -o-radial-gradient(#bebebe,#848282);
   background-image: radial-gradient(#bebebe,#848282);
