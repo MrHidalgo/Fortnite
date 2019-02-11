@@ -1,0 +1,156 @@
+// SECTION top combos :: START
+
+-
+  var topData = [
+    {
+      classMod: 'legendary',
+      imgName: 'img-top-0',
+      num: '1.',
+      name: 'Skull Ranger',
+      desc: 'Lorem ipsum dolor sit ue nibh vivamus ten.'
+    },
+    {
+      classMod: 'epic',
+      imgName: 'img-top-1',
+      num: '2.',
+      name: 'Dark Bag',
+      desc: 'Lorem ipsum dolor sit ue nibh vivamus ten.'
+    },
+    {
+      classMod: 'rare',
+      imgName: 'img-top-2',
+      num: '3.',
+      name: 'Dark Bomber',
+      desc: 'Lorem ipsum dolor sit ue nibh vivamus ten.'
+    },
+    {
+      classMod: 'uncommon',
+      imgName: 'img-top-3',
+      num: '4.',
+      name: 'Thunder Crash',
+      desc: 'Lorem ipsum dolor sit ue nibh vivamus ten.'
+    },
+    {
+      classMod: 'default',
+      imgName: 'img-top-4',
+      num: '5.',
+      name: 'Dark Glyph',
+      desc: 'Lorem ipsum dolor sit ue nibh vivamus ten.'
+    }
+  ];
+  var comboData = [
+  {
+  classMod: 'epic',
+  comboName: 'Malcore wings'
+  },
+  {
+  classMod: 'epic',
+  comboName: 'evil eye'
+  },
+  {
+  classMod: 'epic',
+  comboName: 'swarm'
+  },
+  {
+  classMod: 'epic',
+  comboName: 'Malcore wings'
+  },
+  {
+  classMod: 'epic',
+  comboName: 'evil eye'
+  },
+  {
+  classMod: 'epic',
+  comboName: 'swarm'
+  },
+  ];
+
+section#top.top.sidebar
+
+  .top__figure.sidebar__figure
+    img(src="./img/img-top-figure-0.svg" alt="" title="")
+    img(src="./img/img-top-figure-1.svg" alt="" title="")
+
+  .top__title
+    h3!= "Top 5 Combos"
+
+  .top__wrapper.sidebar__wrapper
+    .top__block-wrapper
+
+      each val, idx in topData
+        a.top__block(href='#' class!= 'top__block-' + idx + ' top__block--' + topData[idx].classMod)
+          .top__block-photo
+            div
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+          .top__block-content
+            div
+              .top__block-num
+                span!= topData[idx].num
+
+            div
+              .top__block-header
+                div
+                  h4!= topData[idx].name
+
+                div
+                  .top__block-badge
+                    span.comments__btn-like(class="" title="")
+                      i.icon-font.icon-like
+                      span!= "525"
+                    span.comments__btn-dislike(class="" title="")
+                      i.icon-font.icon-dislike
+                      span!= "211"
+
+              .top__block-desc
+                .cm-skin__wrapper.cm-skin__wrapper--full
+                  if(idx === 0)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                  else if(idx === 1)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                  else if(idx === 2)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                  else if(idx === 3)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                  else if(idx === 4)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                  else if(idx === 5)
+                    div
+                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+
+// SECTION top combos :: END

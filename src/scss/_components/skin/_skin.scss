@@ -1849,6 +1849,7 @@
 
       > div {
         max-width: 100%;
+        padding-right: 50px;
       }
 
       .e-skin__block-figure {
@@ -1861,7 +1862,7 @@
 
       .e-skin__block-right {
         &:before {
-          background-color: $c-white;
+          //background-color: $c-white;
         }
       }
     }

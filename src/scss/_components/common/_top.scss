@@ -46,7 +46,7 @@
     line-height: 1;
     text-transform: uppercase;
     font-size: 36px;
-    @include fluid(font-size, 320px, 768px, 30px, 36px);
+    @include fluid(font-size, 320px, 768px, 27px, 33px);
   }
 
   &__block {
@@ -319,6 +319,26 @@
         padding-right: 10px;
         padding-bottom: 10px;
         font-size: 12px;
+      }
+
+      .cm-skin {
+        border-width: 1px;
+        height: 32px;
+      }
+
+      .cm-skin__wrapper {
+        position: relative;
+        left: -5px;
+
+         > div {
+           width: calc(100% / 6);
+           padding: 1px;
+         }
+      }
+
+      .cm-skin__badge,
+      .cm-skin__info {
+        display: none;
       }
     }
   }
