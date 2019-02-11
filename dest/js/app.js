@@ -502,7 +502,7 @@ $(document).ready(function (ev) {
    * @description
    */
   var initTickerText = function initTickerText() {
-    if ($('.b-skin__info--ticker, .cm-skin__info--ticker').length > 0) {
+    if ($('.b-skin__info--ticker').length > 0 || $('.cm-skin__info--ticker').length > 0) {
       var set = function set() {
         $('.b-skin__info--ticker, .cm-skin__info--ticker, .b-skin__info--wticker, .cm-skin__info--wticker').find('p').css({
           'opacity': '1'

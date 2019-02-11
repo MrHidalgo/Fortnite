@@ -1851,7 +1851,7 @@ picture {
 .cm-skin:before, .cm-skin:after {
   content: '';
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: 0;
   left: 0;
   width: calc(100% + 2px);
@@ -1901,6 +1901,7 @@ picture {
 
 /* line 516, src/scss/_shared/_common.scss */
 .cm-skin img {
+  position: relative;
   display: block;
   max-width: 100%;
   max-height: 100%;
@@ -1916,7 +1917,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 525, src/scss/_shared/_common.scss */
+/* line 526, src/scss/_shared/_common.scss */
 .cm-skin__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1926,24 +1927,24 @@ picture {
   width: 100%;
 }
 
-/* line 531, src/scss/_shared/_common.scss */
+/* line 532, src/scss/_shared/_common.scss */
 .cm-skin__wrapper--half > div {
   max-width: 50%;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 531, src/scss/_shared/_common.scss */
+  /* line 532, src/scss/_shared/_common.scss */
   .cm-skin__wrapper--half > div {
     max-width: 100%;
   }
 }
 
-/* line 540, src/scss/_shared/_common.scss */
+/* line 541, src/scss/_shared/_common.scss */
 .cm-skin__wrapper--full > div {
   max-width: 100%;
 }
 
-/* line 545, src/scss/_shared/_common.scss */
+/* line 546, src/scss/_shared/_common.scss */
 .cm-skin__wrapper > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1956,13 +1957,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 545, src/scss/_shared/_common.scss */
+  /* line 546, src/scss/_shared/_common.scss */
   .cm-skin__wrapper > div {
     padding: 5px;
   }
 }
 
-/* line 556, src/scss/_shared/_common.scss */
+/* line 557, src/scss/_shared/_common.scss */
 .cm-skin__badge {
   position: absolute;
   display: -webkit-box;
@@ -1980,14 +1981,14 @@ picture {
   height: 35px;
 }
 
-/* line 566, src/scss/_shared/_common.scss */
+/* line 567, src/scss/_shared/_common.scss */
 .cm-skin__badge i {
   -webkit-transform: scale(0.75);
       -ms-transform: scale(0.75);
           transform: scale(0.75);
 }
 
-/* line 571, src/scss/_shared/_common.scss */
+/* line 572, src/scss/_shared/_common.scss */
 .cm-skin__info {
   overflow: hidden;
   z-index: 2;
@@ -2012,12 +2013,19 @@ picture {
   background-color: rgba(0, 0, 0, 0.57);
 }
 
-/* line 585, src/scss/_shared/_common.scss */
+/* line 586, src/scss/_shared/_common.scss */
 .cm-skin__info--ticker {
   white-space: nowrap;
 }
 
-/* line 589, src/scss/_shared/_common.scss */
+/* line 591, src/scss/_shared/_common.scss */
+.cm-skin__info--wticker p,
+.cm-skin__info--wticker h3,
+.cm-skin__info--wticker h4 {
+  opacity: 1 !important;
+}
+
+/* line 598, src/scss/_shared/_common.scss */
 .cm-skin__info p,
 .cm-skin__info h3,
 .cm-skin__info h4 {
@@ -2034,7 +2042,7 @@ picture {
   font-size: 18px;
 }
 
-/* line 604, src/scss/_shared/_common.scss */
+/* line 613, src/scss/_shared/_common.scss */
 .cm-skin__points {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2044,12 +2052,12 @@ picture {
           align-items: center;
 }
 
-/* line 608, src/scss/_shared/_common.scss */
+/* line 617, src/scss/_shared/_common.scss */
 .cm-skin__points img {
   padding-right: 5px;
 }
 
-/* line 612, src/scss/_shared/_common.scss */
+/* line 621, src/scss/_shared/_common.scss */
 .cm-skin__points span {
   padding-top: 3px;
   color: #fff;
@@ -2061,20 +2069,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 612, src/scss/_shared/_common.scss */
+  /* line 621, src/scss/_shared/_common.scss */
   .cm-skin__points span {
     font-size: calc(14px + 2 * (100vw - 320px) / 880);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 612, src/scss/_shared/_common.scss */
+  /* line 621, src/scss/_shared/_common.scss */
   .cm-skin__points span {
     font-size: 16px;
   }
 }
 
-/* line 626, src/scss/_shared/_common.scss */
+/* line 635, src/scss/_shared/_common.scss */
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2082,7 +2090,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 626, src/scss/_shared/_common.scss */
+  /* line 635, src/scss/_shared/_common.scss */
   .copyright {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2091,7 +2099,7 @@ picture {
   }
 }
 
-/* line 633, src/scss/_shared/_common.scss */
+/* line 642, src/scss/_shared/_common.scss */
 .copyright p {
   color: #fff;
   font-size: 14px;
@@ -2099,25 +2107,25 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 633, src/scss/_shared/_common.scss */
+  /* line 642, src/scss/_shared/_common.scss */
   .copyright p {
     text-align: center;
   }
 }
 
-/* line 641, src/scss/_shared/_common.scss */
+/* line 650, src/scss/_shared/_common.scss */
 .copyright p span {
   font-weight: bold;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 649, src/scss/_shared/_common.scss */
+  /* line 658, src/scss/_shared/_common.scss */
   .newsletter {
     margin-bottom: 54px;
   }
 }
 
-/* line 654, src/scss/_shared/_common.scss */
+/* line 663, src/scss/_shared/_common.scss */
 .newsletter__text {
   padding-bottom: 25px;
   color: #657782;
@@ -2127,7 +2135,7 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 664, src/scss/_shared/_common.scss */
+/* line 673, src/scss/_shared/_common.scss */
 .newsletter__form-cover {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2139,7 +2147,7 @@ picture {
   background-repeat: no-repeat;
 }
 
-/* line 673, src/scss/_shared/_common.scss */
+/* line 682, src/scss/_shared/_common.scss */
 .newsletter__form-input {
   position: relative;
   width: 100%;
@@ -2147,7 +2155,7 @@ picture {
   height: 100%;
 }
 
-/* line 679, src/scss/_shared/_common.scss */
+/* line 688, src/scss/_shared/_common.scss */
 .newsletter__form-input input {
   outline: none;
   position: absolute;
@@ -2190,12 +2198,12 @@ picture {
   color: #657782;
 }
 
-/* line 699, src/scss/_shared/_common.scss */
+/* line 708, src/scss/_shared/_common.scss */
 .newsletter__form-btn {
   position: relative;
 }
 
-/* line 703, src/scss/_shared/_common.scss */
+/* line 712, src/scss/_shared/_common.scss */
 .newsletter__form-btn:hover:before {
   top: 0;
   -webkit-transform: translateY(0);
@@ -2210,7 +2218,7 @@ picture {
   transition: top 0.3s ease-in-out, transform 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 711, src/scss/_shared/_common.scss */
+/* line 720, src/scss/_shared/_common.scss */
 .newsletter__form-btn:hover i {
   color: #070c17;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2218,7 +2226,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 717, src/scss/_shared/_common.scss */
+/* line 726, src/scss/_shared/_common.scss */
 .newsletter__form-btn:before {
   content: '';
   position: absolute;
@@ -2237,7 +2245,7 @@ picture {
   transition: top 0.3s ease-in-out, transform 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 729, src/scss/_shared/_common.scss */
+/* line 738, src/scss/_shared/_common.scss */
 .newsletter__form-btn button {
   cursor: pointer;
   outline: none;
@@ -2261,7 +2269,7 @@ picture {
   background-color: transparent;
 }
 
-/* line 744, src/scss/_shared/_common.scss */
+/* line 753, src/scss/_shared/_common.scss */
 .newsletter__form-btn button i {
   color: #657782;
   font-size: 23px;
@@ -2270,7 +2278,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 756, src/scss/_shared/_common.scss */
+/* line 765, src/scss/_shared/_common.scss */
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2280,7 +2288,7 @@ picture {
           align-items: center;
 }
 
-/* line 760, src/scss/_shared/_common.scss */
+/* line 769, src/scss/_shared/_common.scss */
 .social__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2297,7 +2305,7 @@ picture {
   margin-right: 15px;
 }
 
-/* line 769, src/scss/_shared/_common.scss */
+/* line 778, src/scss/_shared/_common.scss */
 .social__link i {
   color: #fff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2305,12 +2313,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 783, src/scss/_shared/_common.scss */
+/* line 792, src/scss/_shared/_common.scss */
 .social__link--facebook i {
   font-size: 20px;
 }
 
-/* line 788, src/scss/_shared/_common.scss */
+/* line 797, src/scss/_shared/_common.scss */
 .social__link--facebook:hover i {
   color: #3b5998;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2318,12 +2326,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 783, src/scss/_shared/_common.scss */
+/* line 792, src/scss/_shared/_common.scss */
 .social__link--twitter i {
   font-size: 22px;
 }
 
-/* line 788, src/scss/_shared/_common.scss */
+/* line 797, src/scss/_shared/_common.scss */
 .social__link--twitter:hover i {
   color: #00aced;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2331,12 +2339,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 783, src/scss/_shared/_common.scss */
+/* line 792, src/scss/_shared/_common.scss */
 .social__link--google-plus i {
   font-size: 26px;
 }
 
-/* line 788, src/scss/_shared/_common.scss */
+/* line 797, src/scss/_shared/_common.scss */
 .social__link--google-plus:hover i {
   color: #dd4b39;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2344,12 +2352,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 783, src/scss/_shared/_common.scss */
+/* line 792, src/scss/_shared/_common.scss */
 .social__link--rss i {
   font-size: 18px;
 }
 
-/* line 788, src/scss/_shared/_common.scss */
+/* line 797, src/scss/_shared/_common.scss */
 .social__link--rss:hover i {
   color: #f26522;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2357,12 +2365,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 783, src/scss/_shared/_common.scss */
+/* line 792, src/scss/_shared/_common.scss */
 .social__link--pinterest i {
   font-size: 20px;
 }
 
-/* line 788, src/scss/_shared/_common.scss */
+/* line 797, src/scss/_shared/_common.scss */
 .social__link--pinterest:hover i {
   color: #cb2027;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2370,12 +2378,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 783, src/scss/_shared/_common.scss */
+/* line 792, src/scss/_shared/_common.scss */
 .social__link--instagram i {
   font-size: 20px;
 }
 
-/* line 788, src/scss/_shared/_common.scss */
+/* line 797, src/scss/_shared/_common.scss */
 .social__link--instagram:hover i {
   color: #bc2a8d;
   -webkit-transition: color 0.3s ease-in-out;
@@ -29082,6 +29090,32 @@ picture {
 .skin__like-block > div p {
   font-size: 12px;
   font-family: 'Ubuntu', sans-serif;
+}
+
+/* line 1846, src/scss/_components/skin/_skin.scss */
+.skin__like .e-skin__block-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 1850, src/scss/_components/skin/_skin.scss */
+.skin__like .e-skin__block-wrapper > div {
+  max-width: 100%;
+}
+
+/* line 1854, src/scss/_components/skin/_skin.scss */
+.skin__like .e-skin__block-wrapper .e-skin__block-figure {
+  display: none;
+}
+
+/* line 1858, src/scss/_components/skin/_skin.scss */
+.skin__like .e-skin__block-wrapper .e-skin__block-desc {
+  max-width: 90%;
+}
+
+/* line 1863, src/scss/_components/skin/_skin.scss */
+.skin__like .e-skin__block-wrapper .e-skin__block-right:before {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

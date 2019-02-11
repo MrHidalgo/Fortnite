@@ -476,7 +476,7 @@
   &:after {
     content: '';
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     top: 0;
     left: 0;
     width: calc(100% + 2px);
@@ -514,6 +514,7 @@
   }
 
   img {
+    position: relative;
     display: block;
     max-width: 100%;
     max-height: 100%;
@@ -584,6 +585,14 @@
 
     &--ticker {
       white-space: nowrap;
+    }
+
+    &--wticker {
+      p,
+      h3,
+      h4 {
+        opacity: 1 !important;
+      }
     }
 
     p,

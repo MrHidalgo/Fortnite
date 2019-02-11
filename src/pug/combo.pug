@@ -1,0 +1,63 @@
+---
+title: Fortnite - combo
+
+pageClassName: p-combo
+---
+extends shared/_layout
+
+block content
+  div.body(class!= pageClassName)
+
+    include components/common/_mainBanner
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+
+            section#skin
+
+              include ./components/skin/_skin-main
+              include ./components/skin/_skin-description
+
+              //section.s-leak
+                include ./components/leaked/_s-leak-preview
+
+              //include ./components/skin/_skin-gameplay
+              //include ./components/skin/_skin-gallery
+              //include ./components/skin/_skin-styles
+              //include ./components/skin/_skin-images
+
+              //section.s-leak
+                include ./components/leaked/_s-leak-audio
+
+              //include ./components/skin/_skin-history
+
+              .updated--medium
+                include ./components/common/_updated
+
+              include ./components/common/_breadcrumbs
+
+              include ./components/beginners/_beginners-comments
+
+              include ./components/skin/_skin-like
+
+          .section__wrapper-right(section-right-js)
+
+            include components/common/_search
+            include components/common/_sectionBanner
+            include components/common/_latest
+            include components/common/_sectionBanner
+            include components/common/_top
+            include components/common/_royal
+            include components/common/_categories
+
+    include components/common/_reply
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include components/common/_comments
+
+          .section__wrapper-right

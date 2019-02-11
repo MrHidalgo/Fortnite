@@ -1842,6 +1842,29 @@
         }
       }
     }
+
+    .e-skin__block-wrapper {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      > div {
+        max-width: 100%;
+      }
+
+      .e-skin__block-figure {
+        display: none;
+      }
+
+      .e-skin__block-desc {
+        max-width: 90%;
+      }
+
+      .e-skin__block-right {
+        &:before {
+          background-color: $c-white;
+        }
+      }
+    }
   }
   // like :: end
 }

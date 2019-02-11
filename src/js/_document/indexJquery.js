@@ -228,7 +228,8 @@ $(document).ready((ev) => {
    * @description
    */
   const initTickerText = () => {
-    if($('.b-skin__info--ticker, .cm-skin__info--ticker').length > 0) {
+    if($('.b-skin__info--ticker').length > 0 || $('.cm-skin__info--ticker').length > 0) {
+
       let $tw = $('.b-skin__info--ticker, .cm-skin__info--ticker');
       let $w = $('.b-skin__info, .cm-skin__info');
 
