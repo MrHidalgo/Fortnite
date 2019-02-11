@@ -502,9 +502,9 @@ $(document).ready(function (ev) {
    * @description
    */
   var initTickerText = function initTickerText() {
-    if ($('.b-skin__info--ticker').length > 0) {
+    if ($('.b-skin__info--ticker, .cm-skin__info--ticker').length > 0) {
       var set = function set() {
-        $('.b-skin__info--ticker, .b-skin__info--wticker').find('p').css({
+        $('.b-skin__info--ticker, .cm-skin__info--ticker, .b-skin__info--wticker, .cm-skin__info--wticker').find('p').css({
           'opacity': '1'
         });
 
@@ -522,8 +522,8 @@ $(document).ready(function (ev) {
         }, 1);
       };
 
-      var $tw = $('.b-skin__info--ticker');
-      var $w = $('.b-skin__info');
+      var $tw = $('.b-skin__info--ticker, .cm-skin__info--ticker');
+      var $w = $('.b-skin__info, .cm-skin__info');
 
       $tw.bind("transitionend", function () {
         $tw.css({

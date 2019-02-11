@@ -1,0 +1,87 @@
+// SECTION home cosmetics skins :: START
+
+section.home.home--cosmetics
+  .home__triangle
+    img(src="./img/img-challenges-triangle-0.svg" alt="" title="")
+    img(src="./img/img-challenges-triangle-1.svg" alt="" title="")
+
+  .c-grid
+    .home__wrapper.home__wrapper-0
+
+      .home__title
+        i.icon-font.icon-cosmetics
+        h2!= "Browse Combo</span>"
+
+    .home__wrapper.home__wrapper-1
+
+      .home__row
+        .home__row-left
+
+          .home__row-top
+
+            .cm-skin__wrapper.cm-skin__wrapper--half
+              -
+                var comboData = [
+                  {
+                    classMod: 'epic',
+                    comboName: 'Malcore wings'
+                  },
+                  {
+                    classMod: 'epic',
+                    comboName: 'evil eye'
+                  },
+                  {
+                    classMod: 'epic',
+                    comboName: 'swarm'
+                  },
+                  {
+                    classMod: 'epic',
+                    comboName: 'Malcore wings'
+                  },
+                  {
+                    classMod: 'epic',
+                    comboName: 'evil eye'
+                  },
+                  {
+                    classMod: 'epic',
+                    comboName: 'swarm'
+                  },
+                ];
+              each val, idx in comboData
+                div
+                  +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+
+            .cm-skin__wrapper.cm-skin__wrapper--full
+              -
+                var comboData = [
+                  {
+                    classMod: 'epic',
+                    comboName: 'Malcore wings'
+                  },
+                  {
+                    classMod: 'epic',
+                    comboName: 'evil eye'
+                  },
+                  {
+                    classMod: 'epic',
+                    comboName: 'swarm'
+                  },
+                  {
+                    classMod: 'epic',
+                    comboName: 'Malcore wings'
+                  }
+                ];
+              each val, idx in comboData
+                div
+                  +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+
+          .home__row-bottom
+            p.home__subtitle!= "Evil Elmira<br><span>Cosmetics Combo</span>"
+
+        .home__row-right
+          img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+    .home__wrapper.home__wrapper-2
+      a.item__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "View More <i class='icon-font icon-arr-dcc'></i>"
+
+// SECTION home cosmetics skins :: END

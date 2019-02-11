@@ -13,3 +13,18 @@ include ./_mixin/_nav
 include ./_mixin/_form
 
 //- MIXIN :: END
+
+mixin comboSkin(classMod, comboName)
+  a.cm-skin(class!= "cm-skin--" + classMod href="#" title="")
+    .cm-skin__badge
+      i.icon-png.harvestingTool
+
+    .cm-skin__info
+      .cm-skin__info--wticker
+        p!= comboName
+
+      .cm-skin__points
+        img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+        span!= "1500"
+
+    img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")

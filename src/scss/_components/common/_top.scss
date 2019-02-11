@@ -23,7 +23,7 @@
 
   &__wrapper {
     padding: 50px 22px 27px;
-    @include adaptive(575) {
+    @include adaptive(424) {
       padding-left: 15px;
       padding-right: 15px;
     }

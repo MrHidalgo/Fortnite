@@ -228,9 +228,9 @@ $(document).ready((ev) => {
    * @description
    */
   const initTickerText = () => {
-    if($('.b-skin__info--ticker').length > 0) {
-      let $tw = $('.b-skin__info--ticker');
-      let $w = $('.b-skin__info');
+    if($('.b-skin__info--ticker, .cm-skin__info--ticker').length > 0) {
+      let $tw = $('.b-skin__info--ticker, .cm-skin__info--ticker');
+      let $w = $('.b-skin__info, .cm-skin__info');
 
       $tw.bind("transitionend", function(){
         $tw.css({
@@ -244,7 +244,7 @@ $(document).ready((ev) => {
       let wwidth = $w.width() + 50;
 
       function set(){
-        $('.b-skin__info--ticker, .b-skin__info--wticker').find('p').css({
+        $('.b-skin__info--ticker, .cm-skin__info--ticker, .b-skin__info--wticker, .cm-skin__info--wticker').find('p').css({
           'opacity' : '1'
         });
 
