@@ -96,6 +96,8 @@
       &:hover {
         img {
           transform: scale(1.1);
+          backface-visibility: hidden;
+          transform-origin: center;
           @include transition(transform);
         }
 
@@ -148,9 +150,9 @@
       position: relative;
       display: flex;
       width: 100%;
-      max-width: 307px;
+      max-width: calc(100% - 45px);
       min-height: 94px;
-      margin-left: auto;
+      margin-left: 45px;
       margin-top: 9px;
 
       &:before {
@@ -169,39 +171,11 @@
         &:nth-of-type(1) {
           padding-left: 14px;
           width: 101px;
-          @include adaptive(991) {
-            display: flex;
-            justify-content: flex-end;
-            //width: 131px;
-            padding-right: 10px;
-          }
-          //@include adaptive(767) {
-          //  width: 101px;
-          //}
-          @include adaptive(424) {
-            width: 131px;
-            padding-right: 5px;
-          }
-          @include adaptive(374) {
-            width: 141px;
-          }
         }
 
         &:nth-of-type(2) {
           width: 100%;
           max-width: calc(100% - 101px);
-          @include adaptive(991) {
-            //max-width: calc(100% - 131px);
-          }
-          //@include adaptive(767) {
-          //  max-width: calc(100% - 101px);
-          //}
-          @include adaptive(424) {
-            max-width: calc(100% - 131px);
-          }
-          @include adaptive(374) {
-            max-width: calc(100% - 141px);
-          }
         }
       }
     }

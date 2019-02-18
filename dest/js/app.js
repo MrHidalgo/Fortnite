@@ -621,7 +621,7 @@ $(document).ready(function (ev) {
 
     // lib
     initHamburger();
-    initSwiper();
+    // initSwiper();
     // ==========================================
 
     // callback
@@ -634,7 +634,7 @@ $(document).ready(function (ev) {
     initFilterRadioBtn();
     initListFilterSelect();
     initImageCompare();
-    initTickerText();
+    // initTickerText();
     initDropDown();
 
     $('body').on('click', function (e) {

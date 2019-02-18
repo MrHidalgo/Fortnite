@@ -3,7 +3,8 @@ const gulp        = require('gulp'),
   pug             = require('gulp-pug'),
   plumber         = require('gulp-plumber'),
   frontMatter     = require('gulp-front-matter'),
-  emitty          = require('emitty').setup('src/pug', 'pug'),
+  // emitty          = require('emitty').setup('src/pug', 'pug'),
+  changedInPlace  = require('gulp-changed-in-place')
   htmlmin         = require('gulp-htmlmin');
 
 
@@ -46,6 +47,7 @@ const renderPug = () => {
       removeEmptyAttributes: true,
       removeComments: true
     })))
+    .pipe(changedInPlace(configOption.changed))
     .pipe(gulp.dest(configPath.dest.html));
 };
 
@@ -65,6 +67,6 @@ gulp.task('pug:watch', function() {
     configPath.src.templates + '/**/**',
     configPath.src.templates + '/**/**/**',
   ], ['pug']).on('all', (event, filepath) => {
-    global.emittyChangedPugFile = filepath;
+    // global.emittyChangedPugFile = filepath;
   });
 });
