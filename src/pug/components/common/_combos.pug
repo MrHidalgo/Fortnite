@@ -40,7 +40,7 @@
   ];
   var comboData = [
   {
-  classMod: 'epic',
+  classMod: 'legendary',
   comboName: 'Malcore wings'
   },
   {
@@ -48,20 +48,16 @@
   comboName: 'evil eye'
   },
   {
-  classMod: 'epic',
+  classMod: 'rare',
   comboName: 'swarm'
   },
   {
-  classMod: 'epic',
+  classMod: 'uncommon',
   comboName: 'Malcore wings'
   },
   {
-  classMod: 'epic',
+  classMod: 'default',
   comboName: 'evil eye'
-  },
-  {
-  classMod: 'epic',
-  comboName: 'swarm'
   },
   ];
 
@@ -106,51 +102,35 @@ section#top.top.sidebar
                 .cm-skin__wrapper.cm-skin__wrapper--full
                   if(idx === 0)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
-                    div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
-                    div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                   else if(idx === 1)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
-                    div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
-                    div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                   else if(idx === 2)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
-                    div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
-                    div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                   else if(idx === 3)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
-                    div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                   else if(idx === 4)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
-                    div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
                   else if(idx === 5)
                     div
-                      +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
+                      +comboSkin(comboData[idx].classMod, idx)
 
 // SECTION top combos :: END
