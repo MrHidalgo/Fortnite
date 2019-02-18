@@ -5280,7 +5280,26 @@ picture {
   padding-bottom: 50px;
 }
 
-/* line 10, src/scss/_components/common/_breadcrumbs.scss */
+@media screen and (max-width: 575px) {
+  /* line 3, src/scss/_components/common/_breadcrumbs.scss */
+  .breadcrumbs {
+    padding-left: 0;
+  }
+  /* line 9, src/scss/_components/common/_breadcrumbs.scss */
+  .p-rewards .breadcrumbs {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 14, src/scss/_components/common/_breadcrumbs.scss */
+  .breadcrumbs .c-grid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 21, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5290,7 +5309,18 @@ picture {
           justify-content: space-between;
 }
 
-/* line 15, src/scss/_components/common/_breadcrumbs.scss */
+@media screen and (max-width: 767px) {
+  /* line 21, src/scss/_components/common/_breadcrumbs.scss */
+  .breadcrumbs__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* line 30, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs__list {
   position: relative;
   display: -webkit-inline-box;
@@ -5307,7 +5337,23 @@ picture {
           clip-path: polygon(0 0, 100% 2%, 98% 98%, 0 100%);
 }
 
-/* line 25, src/scss/_components/common/_breadcrumbs.scss */
+@media screen and (max-width: 767px) {
+  /* line 30, src/scss/_components/common/_breadcrumbs.scss */
+  .breadcrumbs__list {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 44, src/scss/_components/common/_breadcrumbs.scss */
+  .breadcrumbs__list + .breadcrumbs__list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* line 50, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs__list:before {
   content: '';
   z-index: -1;
@@ -5321,13 +5367,21 @@ picture {
           clip-path: polygon(0 100%, 85% 65%, 100% 0, 100% 100%);
 }
 
-/* line 38, src/scss/_components/common/_breadcrumbs.scss */
+/* line 63, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs__item {
   padding-left: 17px;
   padding-right: 17px;
 }
 
-/* line 43, src/scss/_components/common/_breadcrumbs.scss */
+@media screen and (max-width: 767px) {
+  /* line 63, src/scss/_components/common/_breadcrumbs.scss */
+  .breadcrumbs__item {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+}
+
+/* line 72, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs__link {
   color: #282e42;
   line-height: 1;
@@ -5339,20 +5393,32 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 43, src/scss/_components/common/_breadcrumbs.scss */
+  /* line 72, src/scss/_components/common/_breadcrumbs.scss */
   .breadcrumbs__link {
     font-size: calc(12px + 2 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 43, src/scss/_components/common/_breadcrumbs.scss */
+  /* line 72, src/scss/_components/common/_breadcrumbs.scss */
   .breadcrumbs__link {
     font-size: 14px;
   }
 }
 
-/* line 50, src/scss/_components/common/_breadcrumbs.scss */
+@media screen and (max-width: 575px) {
+  /* line 72, src/scss/_components/common/_breadcrumbs.scss */
+  .breadcrumbs__link {
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    display: block;
+    max-width: 120px;
+  }
+}
+
+/* line 86, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs__link:hover {
   color: #ff7236;
   -webkit-transition: color 0.3s ease-in-out;
@@ -5360,7 +5426,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 56, src/scss/_components/common/_breadcrumbs.scss */
+/* line 92, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5371,6 +5437,13 @@ picture {
   color: #ff7236;
   line-height: 1;
   font-size: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 92, src/scss/_components/common/_breadcrumbs.scss */
+  .breadcrumbs__icon {
+    font-size: 14px;
+  }
 }
 
 /* line 3, src/scss/_components/common/_reply.scss */

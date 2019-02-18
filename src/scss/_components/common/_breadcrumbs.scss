@@ -4,12 +4,27 @@
   padding-left: 15px;
   padding-bottom: 50px;
   @include adaptive(575) {
-    //display: none;
+    padding-left: 0;
+
+    .p-rewards & {
+      padding-left: 15px;
+    }
+  }
+
+  .c-grid {
+    @include adaptive(767) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+      align-items: center;
+    }
   }
 
   &__list {
@@ -21,6 +36,16 @@
     padding-right: 15px;
     background-color: #f4f6f6;
     clip-path: polygon(0 0, 100% 2%, 98% 98%, 0 100%);
+    @include adaptive(767) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    @include adaptive(575) {
+      & + .breadcrumbs__list {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
 
     &:before {
       content: '';
@@ -38,6 +63,10 @@
   &__item {
     padding-left: 17px;
     padding-right: 17px;
+    @include adaptive(767) {
+      padding-left: 0;
+      padding-right: 10px;
+    }
   }
 
   &__link {
@@ -46,6 +75,13 @@
     text-transform: uppercase;
     @include transition(color);
     @include fluid(font-size, 320px, 1440px, 12px, 14px);
+    @include adaptive(575) {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: block;
+      max-width: 120px;
+    }
 
     &:hover {
       color: #ff7236;
@@ -59,6 +95,9 @@
     color: #ff7236;
     line-height: 1;
     font-size: 17px;
+    @include adaptive(767) {
+      font-size: 14px;
+    }
   }
 }
 
