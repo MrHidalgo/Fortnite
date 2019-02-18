@@ -23525,23 +23525,25 @@ picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1199px) {
-  /* line 216, src/scss/_components/leaked/_s-leak.scss */
-  .s-leak__image-row {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+/* line 220, src/scss/_components/leaked/_s-leak.scss */
+.s-leak__image-row > div {
+  width: 100%;
+  max-width: calc(100% / 3);
+  padding: 5px 10px;
+  margin-bottom: 15px;
 }
 
-/* line 225, src/scss/_components/leaked/_s-leak.scss */
+/* line 226, src/scss/_components/leaked/_s-leak.scss */
+.s-leak__image-row > div > a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 233, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__image-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23562,7 +23564,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 225, src/scss/_components/leaked/_s-leak.scss */
+  /* line 233, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__image-block {
     width: calc((100% - 44px) / 2);
     margin-bottom: 38px;
@@ -23570,7 +23572,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 225, src/scss/_components/leaked/_s-leak.scss */
+  /* line 233, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__image-block {
     width: calc((100% - 88px) / 4);
     margin-bottom: 0;
@@ -23578,7 +23580,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 225, src/scss/_components/leaked/_s-leak.scss */
+  /* line 233, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__image-block {
     width: calc((100% - 44px) / 2);
     margin-bottom: 38px;
@@ -23586,13 +23588,13 @@ picture {
 }
 
 @media screen and (max-width: 374px) {
-  /* line 225, src/scss/_components/leaked/_s-leak.scss */
+  /* line 233, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__image-block {
     width: calc((100% - 22px) / 1);
   }
 }
 
-/* line 249, src/scss/_components/leaked/_s-leak.scss */
+/* line 257, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__image-block > div {
   position: relative;
   width: 152px;
@@ -23601,7 +23603,7 @@ picture {
   background-repeat: repeat;
 }
 
-/* line 256, src/scss/_components/leaked/_s-leak.scss */
+/* line 264, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__image-block > div img {
   position: relative;
   top: 50%;
@@ -23617,8 +23619,12 @@ picture {
   margin-right: auto;
 }
 
-/* line 270, src/scss/_components/leaked/_s-leak.scss */
+/* line 278, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__image-block > p {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   padding-top: 19px;
   color: #273c43;
   line-height: 1;
@@ -23627,37 +23633,37 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 270, src/scss/_components/leaked/_s-leak.scss */
+  /* line 278, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__image-block > p {
     font-size: calc(20px + 4 * (100vw - 320px) / 1045);
   }
 }
 
 @media screen and (min-width: 1365px) {
-  /* line 270, src/scss/_components/leaked/_s-leak.scss */
+  /* line 278, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__image-block > p {
     font-size: 24px;
   }
 }
 
-/* line 282, src/scss/_components/leaked/_s-leak.scss */
+/* line 293, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview {
   min-height: 558px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 282, src/scss/_components/leaked/_s-leak.scss */
+  /* line 293, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__preview {
     min-height: 0;
   }
 }
 
-/* line 288, src/scss/_components/leaked/_s-leak.scss */
+/* line 299, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview--empty {
   min-height: 395px;
 }
 
-/* line 291, src/scss/_components/leaked/_s-leak.scss */
+/* line 302, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview--empty .s-leak__preview-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23671,22 +23677,22 @@ picture {
   min-height: calc(395px - 97px);
 }
 
-/* line 299, src/scss/_components/leaked/_s-leak.scss */
+/* line 310, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview .s-leak__title {
   background-color: #ffd600;
 }
 
-/* line 302, src/scss/_components/leaked/_s-leak.scss */
+/* line 313, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview .s-leak__title:before {
   background-color: #b5970a;
 }
 
-/* line 306, src/scss/_components/leaked/_s-leak.scss */
+/* line 317, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview .s-leak__title .icon-font {
   font-size: 44px;
 }
 
-/* line 311, src/scss/_components/leaked/_s-leak.scss */
+/* line 322, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-bg {
   top: 55px;
   height: calc(100% - 55px);
@@ -23695,12 +23701,12 @@ picture {
           clip-path: polygon(0 7%, 100% 0, 99% 97%, 3% 100%);
 }
 
-/* line 318, src/scss/_components/leaked/_s-leak.scss */
+/* line 329, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-body {
   padding: 19px 30px 46px;
 }
 
-/* line 322, src/scss/_components/leaked/_s-leak.scss */
+/* line 333, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-video {
   overflow: hidden;
   position: relative;
@@ -23711,13 +23717,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 322, src/scss/_components/leaked/_s-leak.scss */
+  /* line 333, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__preview-video {
     height: 296px;
   }
 }
 
-/* line 333, src/scss/_components/leaked/_s-leak.scss */
+/* line 344, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-video iframe {
   position: absolute;
   top: 0;
@@ -23726,7 +23732,7 @@ picture {
   height: 100%;
 }
 
-/* line 344, src/scss/_components/leaked/_s-leak.scss */
+/* line 355, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-play {
   position: absolute;
   top: 50%;
@@ -23749,7 +23755,7 @@ picture {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 357, src/scss/_components/leaked/_s-leak.scss */
+/* line 368, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-play i {
   position: relative;
   left: 6px;
@@ -23757,7 +23763,7 @@ picture {
   font-size: 50px;
 }
 
-/* line 365, src/scss/_components/leaked/_s-leak.scss */
+/* line 376, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-share {
   position: absolute;
   display: -webkit-box;
@@ -23767,13 +23773,13 @@ picture {
   right: 15px;
 }
 
-/* line 371, src/scss/_components/leaked/_s-leak.scss */
+/* line 382, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-share .icon-font {
   color: #fff;
   font-size: 15px;
 }
 
-/* line 377, src/scss/_components/leaked/_s-leak.scss */
+/* line 388, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-model {
   position: absolute;
   display: -webkit-box;
@@ -23793,13 +23799,13 @@ picture {
   background-color: #1caad9;
 }
 
-/* line 389, src/scss/_components/leaked/_s-leak.scss */
+/* line 400, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-model .icon-font {
   color: #fff;
   font-size: 20px;
 }
 
-/* line 395, src/scss/_components/leaked/_s-leak.scss */
+/* line 406, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-name {
   position: absolute;
   display: -webkit-box;
@@ -23812,24 +23818,24 @@ picture {
   left: 15px;
 }
 
-/* line 403, src/scss/_components/leaked/_s-leak.scss */
+/* line 414, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-name > div:nth-of-type(1) {
   width: 33px;
 }
 
-/* line 407, src/scss/_components/leaked/_s-leak.scss */
+/* line 418, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-name > div:nth-of-type(2) {
   padding-left: 8px;
 }
 
-/* line 411, src/scss/_components/leaked/_s-leak.scss */
+/* line 422, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-name > div img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 417, src/scss/_components/leaked/_s-leak.scss */
+/* line 428, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-name > div p,
 .s-leak__preview-name > div span {
   color: #fff;
@@ -23837,27 +23843,27 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 424, src/scss/_components/leaked/_s-leak.scss */
+/* line 435, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-name > div p {
   font-size: 17px;
 }
 
-/* line 428, src/scss/_components/leaked/_s-leak.scss */
+/* line 439, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__preview-name > div span {
   font-size: 13px;
 }
 
-/* line 437, src/scss/_components/leaked/_s-leak.scss */
+/* line 448, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio {
   min-height: 340px;
 }
 
-/* line 440, src/scss/_components/leaked/_s-leak.scss */
+/* line 451, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio--empty {
   min-height: 395px;
 }
 
-/* line 443, src/scss/_components/leaked/_s-leak.scss */
+/* line 454, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio--empty .s-leak__preview-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23871,22 +23877,22 @@ picture {
   min-height: calc(395px - 97px);
 }
 
-/* line 451, src/scss/_components/leaked/_s-leak.scss */
+/* line 462, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio .s-leak__title {
   background-color: #d735ca;
 }
 
-/* line 454, src/scss/_components/leaked/_s-leak.scss */
+/* line 465, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio .s-leak__title:before {
   background-color: #ff00ea;
 }
 
-/* line 458, src/scss/_components/leaked/_s-leak.scss */
+/* line 469, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio .s-leak__title .icon-font {
   font-size: 30px;
 }
 
-/* line 463, src/scss/_components/leaked/_s-leak.scss */
+/* line 474, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-bg {
   top: 58px;
   height: calc(100% - 58px);
@@ -23895,12 +23901,12 @@ picture {
           clip-path: polygon(0 7%, 100% 0, 99% 97%, 3% 100%);
 }
 
-/* line 470, src/scss/_components/leaked/_s-leak.scss */
+/* line 481, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-body {
   padding: 30px;
 }
 
-/* line 474, src/scss/_components/leaked/_s-leak.scss */
+/* line 485, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23912,33 +23918,33 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 474, src/scss/_components/leaked/_s-leak.scss */
+  /* line 485, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__audio-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 483, src/scss/_components/leaked/_s-leak.scss */
+/* line 494, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-content > div:nth-of-type(1) {
   width: 157px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 483, src/scss/_components/leaked/_s-leak.scss */
+  /* line 494, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__audio-content > div:nth-of-type(1) {
     width: 100%;
     padding-bottom: 15px;
   }
 }
 
-/* line 490, src/scss/_components/leaked/_s-leak.scss */
+/* line 501, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-content > div:nth-of-type(1) .b-skin {
   width: 100%;
   height: 127px;
 }
 
-/* line 495, src/scss/_components/leaked/_s-leak.scss */
+/* line 506, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-content > div:nth-of-type(2) {
   width: 100%;
   max-width: calc(100% - 157px);
@@ -23946,13 +23952,13 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 495, src/scss/_components/leaked/_s-leak.scss */
+  /* line 506, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__audio-content > div:nth-of-type(2) {
     max-width: 100%;
   }
 }
 
-/* line 506, src/scss/_components/leaked/_s-leak.scss */
+/* line 517, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-wave {
   position: relative;
   width: 100%;
@@ -23961,7 +23967,7 @@ picture {
   margin-bottom: 15px;
 }
 
-/* line 514, src/scss/_components/leaked/_s-leak.scss */
+/* line 525, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-control {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23972,20 +23978,20 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 514, src/scss/_components/leaked/_s-leak.scss */
+  /* line 525, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__audio-control {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 522, src/scss/_components/leaked/_s-leak.scss */
+/* line 533, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-control > div:nth-of-type(1) {
   width: 60px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 522, src/scss/_components/leaked/_s-leak.scss */
+  /* line 533, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__audio-control > div:nth-of-type(1) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -23994,14 +24000,14 @@ picture {
   }
 }
 
-/* line 529, src/scss/_components/leaked/_s-leak.scss */
+/* line 540, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-control > div:nth-of-type(2) {
   width: 100%;
   max-width: calc(100% - (60px + 75px));
 }
 
 @media screen and (max-width: 575px) {
-  /* line 529, src/scss/_components/leaked/_s-leak.scss */
+  /* line 540, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__audio-control > div:nth-of-type(2) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -24011,13 +24017,13 @@ picture {
   }
 }
 
-/* line 538, src/scss/_components/leaked/_s-leak.scss */
+/* line 549, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-control > div:nth-of-type(3) {
   width: 75px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 538, src/scss/_components/leaked/_s-leak.scss */
+  /* line 549, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__audio-control > div:nth-of-type(3) {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
@@ -24026,13 +24032,13 @@ picture {
   }
 }
 
-/* line 546, src/scss/_components/leaked/_s-leak.scss */
+/* line 557, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-control > div p,
 .s-leak__audio-control > div span {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 551, src/scss/_components/leaked/_s-leak.scss */
+/* line 562, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-control > div p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24044,13 +24050,13 @@ picture {
   font-size: 14px;
 }
 
-/* line 557, src/scss/_components/leaked/_s-leak.scss */
+/* line 568, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-control > div p span {
   color: #de4439;
   padding-right: 10px;
 }
 
-/* line 562, src/scss/_components/leaked/_s-leak.scss */
+/* line 573, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-control > div p a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24062,17 +24068,17 @@ picture {
   color: #8cb2bf;
 }
 
-/* line 568, src/scss/_components/leaked/_s-leak.scss */
+/* line 579, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-control > div p a img {
   margin-right: 5px;
 }
 
-/* line 574, src/scss/_components/leaked/_s-leak.scss */
+/* line 585, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-control > div > span {
   font-size: 16px;
 }
 
-/* line 580, src/scss/_components/leaked/_s-leak.scss */
+/* line 591, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-play {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24089,7 +24095,7 @@ picture {
   background-color: #ea8c52;
 }
 
-/* line 589, src/scss/_components/leaked/_s-leak.scss */
+/* line 600, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-play i {
   position: relative;
   left: 2px;
@@ -24097,7 +24103,7 @@ picture {
   font-size: 20px;
 }
 
-/* line 597, src/scss/_components/leaked/_s-leak.scss */
+/* line 608, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-volume {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24107,13 +24113,13 @@ picture {
           align-items: center;
 }
 
-/* line 601, src/scss/_components/leaked/_s-leak.scss */
+/* line 612, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-volume i {
   color: #2a2a2a;
   font-size: 16px;
 }
 
-/* line 606, src/scss/_components/leaked/_s-leak.scss */
+/* line 617, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-volume span {
   width: 100%;
   max-width: calc(100% - 25px);
@@ -24122,7 +24128,7 @@ picture {
   background-color: #de4439;
 }
 
-/* line 615, src/scss/_components/leaked/_s-leak.scss */
+/* line 626, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-share {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24134,14 +24140,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 615, src/scss/_components/leaked/_s-leak.scss */
+  /* line 626, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__audio-share {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 623, src/scss/_components/leaked/_s-leak.scss */
+/* line 634, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-share > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24151,21 +24157,21 @@ picture {
           align-items: center;
 }
 
-/* line 627, src/scss/_components/leaked/_s-leak.scss */
+/* line 638, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-share > div:nth-of-type(1) {
   width: 100%;
   max-width: calc(100% - 100px);
 }
 
 @media screen and (max-width: 575px) {
-  /* line 627, src/scss/_components/leaked/_s-leak.scss */
+  /* line 638, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__audio-share > div:nth-of-type(1) {
     max-width: 100%;
     padding-bottom: 15px;
   }
 }
 
-/* line 636, src/scss/_components/leaked/_s-leak.scss */
+/* line 647, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-share > div:nth-of-type(2) {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -24174,7 +24180,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 636, src/scss/_components/leaked/_s-leak.scss */
+  /* line 647, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__audio-share > div:nth-of-type(2) {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -24183,7 +24189,7 @@ picture {
   }
 }
 
-/* line 647, src/scss/_components/leaked/_s-leak.scss */
+/* line 658, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn {
   position: relative;
   display: -webkit-box;
@@ -24204,7 +24210,7 @@ picture {
           clip-path: polygon(0 0, 100% 2%, 98% 98%, 2% 100%);
 }
 
-/* line 659, src/scss/_components/leaked/_s-leak.scss */
+/* line 670, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn:before {
   content: '';
   z-index: 0;
@@ -24222,7 +24228,7 @@ picture {
   transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
 }
 
-/* line 672, src/scss/_components/leaked/_s-leak.scss */
+/* line 683, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn:hover:before {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -24233,37 +24239,37 @@ picture {
   transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
 }
 
-/* line 678, src/scss/_components/leaked/_s-leak.scss */
+/* line 689, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn--like {
   background-color: #ca3f39;
 }
 
-/* line 681, src/scss/_components/leaked/_s-leak.scss */
+/* line 692, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn--like:before {
   background-color: #d6524c;
 }
 
-/* line 685, src/scss/_components/leaked/_s-leak.scss */
+/* line 696, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn--like i {
   font-size: 15px;
 }
 
-/* line 690, src/scss/_components/leaked/_s-leak.scss */
+/* line 701, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn--embed {
   background-color: #1ac2fe;
 }
 
-/* line 693, src/scss/_components/leaked/_s-leak.scss */
+/* line 704, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn--embed:before {
   background-color: #15abe0;
 }
 
-/* line 697, src/scss/_components/leaked/_s-leak.scss */
+/* line 708, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn--embed i {
   font-size: 23px;
 }
 
-/* line 702, src/scss/_components/leaked/_s-leak.scss */
+/* line 713, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn i,
 .s-leak__audio-btn span {
   z-index: 1;
@@ -24271,7 +24277,7 @@ picture {
   color: #fff;
 }
 
-/* line 711, src/scss/_components/leaked/_s-leak.scss */
+/* line 722, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-btn span {
   padding-left: 5px;
   line-height: 1;
@@ -24279,7 +24285,7 @@ picture {
   font-size: 14px;
 }
 
-/* line 719, src/scss/_components/leaked/_s-leak.scss */
+/* line 730, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-like, .s-leak__audio-play-count {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24296,7 +24302,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 729, src/scss/_components/leaked/_s-leak.scss */
+/* line 740, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-like:hover, .s-leak__audio-play-count:hover {
   opacity: 0.5;
   color: #2a2a2a;
@@ -24305,19 +24311,19 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 735, src/scss/_components/leaked/_s-leak.scss */
+/* line 746, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-like i, .s-leak__audio-play-count i {
   font-size: 12px;
 }
 
-/* line 739, src/scss/_components/leaked/_s-leak.scss */
+/* line 750, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__audio-like span, .s-leak__audio-play-count span {
   padding-left: 5px;
   font-size: 13px;
   font-weight: 500;
 }
 
-/* line 752, src/scss/_components/leaked/_s-leak.scss */
+/* line 763, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__title {
   position: relative;
   display: -webkit-box;
@@ -24334,7 +24340,7 @@ picture {
           clip-path: polygon(0 0, 100% 4%, 96% 96%, 2% 100%);
 }
 
-/* line 762, src/scss/_components/leaked/_s-leak.scss */
+/* line 773, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__title:before {
   content: '';
   z-index: 0;
@@ -24347,7 +24353,7 @@ picture {
           clip-path: polygon(0 100%, 75% 80%, 100% 0, 100% 100%);
 }
 
-/* line 773, src/scss/_components/leaked/_s-leak.scss */
+/* line 784, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__title .icon-font,
 .s-leak__title h2 {
   z-index: 2;
@@ -24355,7 +24361,7 @@ picture {
   color: #fff;
 }
 
-/* line 780, src/scss/_components/leaked/_s-leak.scss */
+/* line 791, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__title h2 {
   padding-left: 14px;
   line-height: 1;
@@ -24364,20 +24370,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 780, src/scss/_components/leaked/_s-leak.scss */
+  /* line 791, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__title h2 {
     font-size: calc(36px + 12 * (100vw - 320px) / 1119);
   }
 }
 
 @media screen and (min-width: 1439px) {
-  /* line 780, src/scss/_components/leaked/_s-leak.scss */
+  /* line 791, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__title h2 {
     font-size: 48px;
   }
 }
 
-/* line 790, src/scss/_components/leaked/_s-leak.scss */
+/* line 801, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty {
   position: relative;
   display: -webkit-box;
@@ -24390,7 +24396,7 @@ picture {
   width: 100%;
 }
 
-/* line 796, src/scss/_components/leaked/_s-leak.scss */
+/* line 807, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-bg, .s-leak__empty-triangle {
   position: absolute;
   top: 0;
@@ -24399,7 +24405,7 @@ picture {
   height: 100%;
 }
 
-/* line 805, src/scss/_components/leaked/_s-leak.scss */
+/* line 816, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-bg {
   z-index: -1;
   background-color: #35b8e7;
@@ -24407,41 +24413,41 @@ picture {
           clip-path: polygon(0 0, 100% 4%, 97% 96%, 3% 100%);
 }
 
-/* line 811, src/scss/_components/leaked/_s-leak.scss */
+/* line 822, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-triangle {
   z-index: 0;
 }
 
-/* line 814, src/scss/_components/leaked/_s-leak.scss */
+/* line 825, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-triangle img {
   position: absolute;
 }
 
-/* line 817, src/scss/_components/leaked/_s-leak.scss */
+/* line 828, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-triangle img:nth-of-type(1) {
   top: -30px;
   left: 15%;
 }
 
-/* line 821, src/scss/_components/leaked/_s-leak.scss */
+/* line 832, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-triangle img:nth-of-type(2) {
   top: -20px;
   right: 0;
 }
 
-/* line 825, src/scss/_components/leaked/_s-leak.scss */
+/* line 836, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-triangle img:nth-of-type(3) {
   bottom: -15px;
   left: 15px;
 }
 
-/* line 832, src/scss/_components/leaked/_s-leak.scss */
+/* line 843, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 837, src/scss/_components/leaked/_s-leak.scss */
+/* line 848, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24461,13 +24467,13 @@ picture {
   background-color: #35b8e7;
 }
 
-/* line 849, src/scss/_components/leaked/_s-leak.scss */
+/* line 860, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-head .icon-alert {
   color: #fff;
   font-size: 39px;
 }
 
-/* line 855, src/scss/_components/leaked/_s-leak.scss */
+/* line 866, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-body {
   position: relative;
   display: -webkit-box;
@@ -24487,7 +24493,7 @@ picture {
   padding: 5px 15px;
 }
 
-/* line 867, src/scss/_components/leaked/_s-leak.scss */
+/* line 878, src/scss/_components/leaked/_s-leak.scss */
 .s-leak__empty-body p {
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
@@ -24495,14 +24501,14 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 867, src/scss/_components/leaked/_s-leak.scss */
+  /* line 878, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__empty-body p {
     font-size: calc(16px + 2 * (100vw - 320px) / 447);
   }
 }
 
 @media screen and (min-width: 767px) {
-  /* line 867, src/scss/_components/leaked/_s-leak.scss */
+  /* line 878, src/scss/_components/leaked/_s-leak.scss */
   .s-leak__empty-body p {
     font-size: 18px;
   }
