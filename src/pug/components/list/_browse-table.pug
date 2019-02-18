@@ -41,8 +41,9 @@
             .browse__table-td.browse__table-td-3
               p!= "September <span>23</span>, 2018"
 
-        each val, idx in [1,2,3]
+        each val, idx in [1,2,3,4,5,6,7,8,9]
           +browseTableContent('epic', 'Epic')
           +browseTableContent('rare', 'Rare')
           +browseTableContent('uncommon', 'Uncommon')
           +browseTableContent('legendary', 'Legendary')
+          +browseTableContent('default', 'Default')

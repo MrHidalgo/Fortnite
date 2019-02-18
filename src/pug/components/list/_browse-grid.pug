@@ -11,6 +11,9 @@
   .browse__box-wrapper
     mixin boxContent(boxClassMod)
       a.browse__box(href='#' class!= "browse__box--" + boxClassMod)
+
+        img(src="./img/img-skin-ts.png" alt="" title="")
+
         .e-skin__block-view
           i.icon-font.icon-cube
           span!= "3d"
@@ -22,10 +25,9 @@
         .browse__box-name
           h3!= "Skin Name"
 
-        img(src="./img/img-skin-ts.png" alt="" title="")
-
-    each val, idx in [1,2,3,4,5,6,7,8,9,10]
+    each val, idx in [1,2,3,4,5,6,7,8,9]
       +boxContent('epic')
       +boxContent('rare')
       +boxContent('uncommon')
       +boxContent('legendary')
+      +boxContent('default')

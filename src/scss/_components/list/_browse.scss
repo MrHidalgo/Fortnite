@@ -23,7 +23,7 @@
     top: 78px;
     height: calc(100% - 78px);
     background-color: #edf9fd;
-    clip-path: polygon(0 0, 100% 0.25%, 99% 100%, 1% 99.75%);
+    clip-path: polygon(0 0, 100% 20px, 99% 100%, 1% 99.99%);
   }
 
   &__triangle {
@@ -42,12 +42,12 @@
         }
       }
       &:nth-child(2) {
-        right: 10%;
-        bottom: -6%;
+        right: 100px;
+        bottom: -10px;
       }
       &:nth-child(3) {
-        bottom: -7%;
-        right: -2%;
+        right: -15px;
+        bottom: -15px;
       }
     }
   }
@@ -320,6 +320,7 @@
           (epic, #c359ff),
           (rare, #2cc1ff),
           (uncommon, #69bb1e)
+          (default, #bebebe)
       {
         &--#{$className} {
           .browse__table-td-1 {
@@ -393,14 +394,14 @@
     position: relative;
     width: 173px;
     height: 137px;
-    padding: 10px;
     border: 5px solid #e8f2ff;
 
     @each $className, $gradName, $borderVal in
         (legendary, '%radialGradientOrange', #e38748),
         (epic, '%radialGradientPink', #b04eec),
         (rare, '%radialGradientBlue', #3ad6ff),
-        (uncommon, '%radialGradientGreen', #8fee3b)
+        (uncommon, '%radialGradientGreen', #8fee3b),
+        (default, '%radialGradientGray', #bebebe)
     {
       &--#{$className} {
         border-color: $borderVal;
@@ -494,10 +495,9 @@
     > img {
       display: block;
       max-width: 100%;
-      max-height: 100%;
+      height: auto;
       margin-left: auto;
       margin-right: auto;
-      backface-visibility: hidden;
       transform-origin: center;
       @include transition(transform);
     }
