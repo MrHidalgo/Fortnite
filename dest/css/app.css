@@ -10545,7 +10545,7 @@ picture {
 }
 
 /* line 699, src/scss/_components/home/_item.scss */
-.item__slider .b-skin:hover img {
+.item__slider .b-skin:hover > img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -10557,7 +10557,7 @@ picture {
 }
 
 /* line 705, src/scss/_components/home/_item.scss */
-.item__slider .b-skin img {
+.item__slider .b-skin > img {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform-origin: center;
@@ -11642,22 +11642,52 @@ picture {
   display: flex;
 }
 
-/* line 85, src/scss/_components/home/_combos.scss */
+@media screen and (max-width: 575px) {
+  /* line 82, src/scss/_components/home/_combos.scss */
+  .combos__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 88, src/scss/_components/home/_combos.scss */
 .combos__row-left, .combos__row-right {
   width: 50%;
 }
 
-/* line 90, src/scss/_components/home/_combos.scss */
+@media screen and (max-width: 575px) {
+  /* line 88, src/scss/_components/home/_combos.scss */
+  .combos__row-left, .combos__row-right {
+    width: 100%;
+  }
+}
+
+/* line 96, src/scss/_components/home/_combos.scss */
 .combos__row-left {
   padding-right: 7px;
 }
 
-/* line 93, src/scss/_components/home/_combos.scss */
+@media screen and (max-width: 575px) {
+  /* line 96, src/scss/_components/home/_combos.scss */
+  .combos__row-left {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 103, src/scss/_components/home/_combos.scss */
 .combos__row-right {
   padding-left: 7px;
 }
 
-/* line 98, src/scss/_components/home/_combos.scss */
+@media screen and (max-width: 575px) {
+  /* line 103, src/scss/_components/home/_combos.scss */
+  .combos__row-right {
+    padding-left: 0;
+  }
+}
+
+/* line 111, src/scss/_components/home/_combos.scss */
 .combos__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11675,22 +11705,50 @@ picture {
           clip-path: polygon(0 0, 100% 1%, 96% 97%, 2% 98%);
 }
 
-/* line 109, src/scss/_components/home/_combos.scss */
+/* line 122, src/scss/_components/home/_combos.scss */
 .combos__header .icon-i-combos {
-  font-size: 42px;
   color: #fff;
+  font-size: 30px;
 }
 
-/* line 114, src/scss/_components/home/_combos.scss */
+@media screen and (min-width: 320px) {
+  /* line 122, src/scss/_components/home/_combos.scss */
+  .combos__header .icon-i-combos {
+    font-size: calc(30px + 12 * (100vw - 320px) / 672);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 122, src/scss/_components/home/_combos.scss */
+  .combos__header .icon-i-combos {
+    font-size: 42px;
+  }
+}
+
+/* line 127, src/scss/_components/home/_combos.scss */
 .combos__header h2 {
   padding-left: 15px;
-  font-size: 48px;
   color: white;
   text-transform: uppercase;
   line-height: 1.2;
+  font-size: 30px;
 }
 
-/* line 123, src/scss/_components/home/_combos.scss */
+@media screen and (min-width: 320px) {
+  /* line 127, src/scss/_components/home/_combos.scss */
+  .combos__header h2 {
+    font-size: calc(30px + 18 * (100vw - 320px) / 672);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 127, src/scss/_components/home/_combos.scss */
+  .combos__header h2 {
+    font-size: 48px;
+  }
+}
+
+/* line 136, src/scss/_components/home/_combos.scss */
 .combos__footer {
   position: relative;
   height: 50px;
@@ -11702,7 +11760,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 130, src/scss/_components/home/_combos.scss */
+/* line 143, src/scss/_components/home/_combos.scss */
 .combos__btn {
   z-index: 10;
   position: absolute;
@@ -11712,12 +11770,12 @@ picture {
   height: 59px;
 }
 
-/* line 139, src/scss/_components/home/_combos.scss */
+/* line 152, src/scss/_components/home/_combos.scss */
 .combos__box {
   position: relative;
 }
 
-/* line 142, src/scss/_components/home/_combos.scss */
+/* line 155, src/scss/_components/home/_combos.scss */
 .combos__box-bg {
   z-index: -1;
   position: absolute;
@@ -11730,7 +11788,7 @@ picture {
           clip-path: polygon(1% 1%, 100% 0, 97% 98%, 2% 100%);
 }
 
-/* line 152, src/scss/_components/home/_combos.scss */
+/* line 165, src/scss/_components/home/_combos.scss */
 .combos__box-bg:before {
   content: '';
   position: absolute;
@@ -11743,7 +11801,7 @@ picture {
           clip-path: polygon(0 0, 40% 0, 80% 70%, 0 100%);
 }
 
-/* line 164, src/scss/_components/home/_combos.scss */
+/* line 177, src/scss/_components/home/_combos.scss */
 .combos__box-triangle {
   z-index: 0;
   position: absolute;
@@ -11753,42 +11811,42 @@ picture {
   height: 100%;
 }
 
-/* line 172, src/scss/_components/home/_combos.scss */
+/* line 185, src/scss/_components/home/_combos.scss */
 .combos__box-triangle img {
   position: absolute;
 }
 
-/* line 175, src/scss/_components/home/_combos.scss */
+/* line 188, src/scss/_components/home/_combos.scss */
 .combos__box-triangle img:nth-of-type(1) {
   top: 50px;
   left: -15px;
 }
 
-/* line 179, src/scss/_components/home/_combos.scss */
+/* line 192, src/scss/_components/home/_combos.scss */
 .combos__box-triangle img:nth-of-type(2) {
   top: 25%;
   left: -10px;
 }
 
-/* line 183, src/scss/_components/home/_combos.scss */
+/* line 196, src/scss/_components/home/_combos.scss */
 .combos__box-triangle img:nth-of-type(3) {
   top: 50px;
   right: -15px;
 }
 
-/* line 187, src/scss/_components/home/_combos.scss */
+/* line 200, src/scss/_components/home/_combos.scss */
 .combos__box-triangle img:nth-of-type(4) {
   left: -15px;
   bottom: -15px;
 }
 
-/* line 191, src/scss/_components/home/_combos.scss */
+/* line 204, src/scss/_components/home/_combos.scss */
 .combos__box-triangle img:nth-of-type(5) {
   left: 20%;
   bottom: -20px;
 }
 
-/* line 198, src/scss/_components/home/_combos.scss */
+/* line 211, src/scss/_components/home/_combos.scss */
 .combos__box-wrapper {
   z-index: 2;
   position: relative;
@@ -11797,7 +11855,15 @@ picture {
   display: flex;
 }
 
-/* line 204, src/scss/_components/home/_combos.scss */
+@media screen and (max-width: 1199px) {
+  /* line 211, src/scss/_components/home/_combos.scss */
+  .combos__box-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 220, src/scss/_components/home/_combos.scss */
 .combos__box-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11815,7 +11881,14 @@ picture {
   padding-right: 15px;
 }
 
-/* line 213, src/scss/_components/home/_combos.scss */
+@media screen and (max-width: 1199px) {
+  /* line 220, src/scss/_components/home/_combos.scss */
+  .combos__box-left {
+    max-width: 100%;
+  }
+}
+
+/* line 232, src/scss/_components/home/_combos.scss */
 .combos__box-left > img {
   display: block;
   max-width: 100%;
@@ -11824,7 +11897,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 221, src/scss/_components/home/_combos.scss */
+/* line 240, src/scss/_components/home/_combos.scss */
 .combos__box-left .e-skin__block-points {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11840,14 +11913,14 @@ picture {
   padding-bottom: 0;
 }
 
-/* line 229, src/scss/_components/home/_combos.scss */
+/* line 248, src/scss/_components/home/_combos.scss */
 .combos__box-left .e-skin__block-points span {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
 }
 
-/* line 237, src/scss/_components/home/_combos.scss */
+/* line 256, src/scss/_components/home/_combos.scss */
 .combos__box-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11858,7 +11931,37 @@ picture {
   padding-top: 80px;
 }
 
-/* line 244, src/scss/_components/home/_combos.scss */
+@media screen and (max-width: 1199px) {
+  /* line 256, src/scss/_components/home/_combos.scss */
+  .combos__box-right {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* line 268, src/scss/_components/home/_combos.scss */
+  .combos__box-right > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: calc(100% / 3);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 277, src/scss/_components/home/_combos.scss */
+  .combos__box-right > div {
+    width: calc(100% / 2);
+  }
+}
+
+/* line 283, src/scss/_components/home/_combos.scss */
 .combos__box-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11870,7 +11973,7 @@ picture {
   padding-top: 10px;
 }
 
-/* line 251, src/scss/_components/home/_combos.scss */
+/* line 290, src/scss/_components/home/_combos.scss */
 .combos__box-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11891,7 +11994,7 @@ picture {
   padding: 5px 10px;
 }
 
-/* line 264, src/scss/_components/home/_combos.scss */
+/* line 303, src/scss/_components/home/_combos.scss */
 .combos__box-title--bg {
   position: absolute;
   top: 0;
@@ -11903,7 +12006,7 @@ picture {
           clip-path: polygon(0 1%, 99% 0, 100% 99%, 3% 98%);
 }
 
-/* line 273, src/scss/_components/home/_combos.scss */
+/* line 312, src/scss/_components/home/_combos.scss */
 .combos__box-title--bg:before {
   content: '';
   z-index: 0;
@@ -11917,7 +12020,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 35% 45%, 0 100%);
 }
 
-/* line 286, src/scss/_components/home/_combos.scss */
+/* line 325, src/scss/_components/home/_combos.scss */
 .combos__box-title--triangle {
   position: absolute;
   top: 0;
@@ -11926,36 +12029,36 @@ picture {
   height: 100%;
 }
 
-/* line 293, src/scss/_components/home/_combos.scss */
+/* line 332, src/scss/_components/home/_combos.scss */
 .combos__box-title--triangle img {
   position: absolute;
 }
 
-/* line 296, src/scss/_components/home/_combos.scss */
+/* line 335, src/scss/_components/home/_combos.scss */
 .combos__box-title--triangle img:nth-of-type(1) {
   top: -10px;
   left: -10px;
 }
 
-/* line 300, src/scss/_components/home/_combos.scss */
+/* line 339, src/scss/_components/home/_combos.scss */
 .combos__box-title--triangle img:nth-of-type(2) {
   top: 0;
   right: 0;
 }
 
-/* line 304, src/scss/_components/home/_combos.scss */
+/* line 343, src/scss/_components/home/_combos.scss */
 .combos__box-title--triangle img:nth-of-type(3) {
   left: 0;
   bottom: 0;
 }
 
-/* line 308, src/scss/_components/home/_combos.scss */
+/* line 347, src/scss/_components/home/_combos.scss */
 .combos__box-title--triangle img:nth-of-type(4) {
   right: -10px;
   bottom: -10px;
 }
 
-/* line 315, src/scss/_components/home/_combos.scss */
+/* line 354, src/scss/_components/home/_combos.scss */
 .combos__box-title p {
   z-index: 2;
   position: relative;
@@ -11969,7 +12072,7 @@ picture {
   line-height: 1.2;
 }
 
-/* line 328, src/scss/_components/home/_combos.scss */
+/* line 367, src/scss/_components/home/_combos.scss */
 .combos__box-total {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11986,7 +12089,7 @@ picture {
   color: #fff;
 }
 
-/* line 339, src/scss/_components/home/_combos.scss */
+/* line 378, src/scss/_components/home/_combos.scss */
 .combos__box-total:before {
   content: '';
   z-index: -1;
@@ -12000,7 +12103,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
 }
 
-/* line 351, src/scss/_components/home/_combos.scss */
+/* line 390, src/scss/_components/home/_combos.scss */
 .combos__box-total--bg {
   z-index: -1;
   position: absolute;
@@ -12013,7 +12116,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
 }
 
-/* line 361, src/scss/_components/home/_combos.scss */
+/* line 400, src/scss/_components/home/_combos.scss */
 .combos__box-total--bg:before {
   content: '';
   position: absolute;
@@ -12026,7 +12129,7 @@ picture {
           clip-path: polygon(0 100%, 80% 70%, 100% 0, 100% 100%);
 }
 
-/* line 373, src/scss/_components/home/_combos.scss */
+/* line 412, src/scss/_components/home/_combos.scss */
 .combos__box-total p {
   font-size: 14px;
   padding-right: 5px;
@@ -12035,7 +12138,14 @@ picture {
   line-height: 1.2;
 }
 
-/* line 381, src/scss/_components/home/_combos.scss */
+@media screen and (max-width: 767px) {
+  /* line 412, src/scss/_components/home/_combos.scss */
+  .combos__box-total p {
+    font-size: 12px;
+  }
+}
+
+/* line 423, src/scss/_components/home/_combos.scss */
 .combos__box-total .e-skin__block-points {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12046,7 +12156,7 @@ picture {
   padding-bottom: 0;
 }
 
-/* line 386, src/scss/_components/home/_combos.scss */
+/* line 428, src/scss/_components/home/_combos.scss */
 .combos__box-total .e-skin__block-points span {
   font-size: 24px;
   font-weight: 600;
@@ -12055,7 +12165,14 @@ picture {
   line-height: 1.2;
 }
 
-/* line 396, src/scss/_components/home/_combos.scss */
+@media screen and (max-width: 767px) {
+  /* line 428, src/scss/_components/home/_combos.scss */
+  .combos__box-total .e-skin__block-points span {
+    font-size: 18px;
+  }
+}
+
+/* line 441, src/scss/_components/home/_combos.scss */
 .combos__box-like {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12069,7 +12186,7 @@ picture {
   height: 53px;
 }
 
-/* line 404, src/scss/_components/home/_combos.scss */
+/* line 449, src/scss/_components/home/_combos.scss */
 .combos__box-like:before {
   content: '';
   z-index: -1;
@@ -12083,7 +12200,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 97% 100%, 2% 100%);
 }
 
-/* line 416, src/scss/_components/home/_combos.scss */
+/* line 461, src/scss/_components/home/_combos.scss */
 .combos__box-like--bg {
   z-index: -1;
   position: absolute;
@@ -12096,7 +12213,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 97% 100%, 2% 100%);
 }
 
-/* line 426, src/scss/_components/home/_combos.scss */
+/* line 471, src/scss/_components/home/_combos.scss */
 .combos__box-like--bg:before {
   content: '';
   position: absolute;
@@ -12109,7 +12226,7 @@ picture {
           clip-path: polygon(0 100%, 80% 70%, 100% 0, 100% 100%);
 }
 
-/* line 438, src/scss/_components/home/_combos.scss */
+/* line 483, src/scss/_components/home/_combos.scss */
 .combos__box-like > span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12128,42 +12245,56 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
+@media screen and (max-width: 767px) {
+  /* line 483, src/scss/_components/home/_combos.scss */
+  .combos__box-like > span {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 575px) {
-  /* line 438, src/scss/_components/home/_combos.scss */
+  /* line 483, src/scss/_components/home/_combos.scss */
   .combos__box-like > span {
     font-size: 14px;
   }
 }
 
-/* line 453, src/scss/_components/home/_combos.scss */
+/* line 501, src/scss/_components/home/_combos.scss */
 .combos__box-like > span .icon-font {
   position: relative;
   font-size: 18px;
 }
 
+@media screen and (max-width: 767px) {
+  /* line 501, src/scss/_components/home/_combos.scss */
+  .combos__box-like > span .icon-font {
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 575px) {
-  /* line 453, src/scss/_components/home/_combos.scss */
+  /* line 501, src/scss/_components/home/_combos.scss */
   .combos__box-like > span .icon-font {
     font-size: 14px;
   }
 }
 
-/* line 460, src/scss/_components/home/_combos.scss */
+/* line 511, src/scss/_components/home/_combos.scss */
 .combos__box-like > span .icon-like {
   top: -3px;
 }
 
-/* line 463, src/scss/_components/home/_combos.scss */
+/* line 514, src/scss/_components/home/_combos.scss */
 .combos__box-like > span .icon-dislike {
   bottom: -2px;
 }
 
-/* line 468, src/scss/_components/home/_combos.scss */
+/* line 519, src/scss/_components/home/_combos.scss */
 .combos__box-like > span span {
   padding-left: 3px;
 }
 
-/* line 475, src/scss/_components/home/_combos.scss */
+/* line 526, src/scss/_components/home/_combos.scss */
 .combos__block {
   overflow: hidden;
   display: -webkit-box;
@@ -12178,42 +12309,49 @@ picture {
   margin-bottom: 10px;
 }
 
-/* line 492, src/scss/_components/home/_combos.scss */
+@media screen and (max-width: 1199px) {
+  /* line 526, src/scss/_components/home/_combos.scss */
+  .combos__block {
+    margin-right: 0;
+  }
+}
+
+/* line 546, src/scss/_components/home/_combos.scss */
 .combos__block--legendary .combos__block-top:before {
   background-image: -webkit-radial-gradient(#ea8d23,#c04d1f);
   background-image: -o-radial-gradient(#ea8d23,#c04d1f);
   background-image: radial-gradient(#ea8d23,#c04d1f);
 }
 
-/* line 492, src/scss/_components/home/_combos.scss */
+/* line 546, src/scss/_components/home/_combos.scss */
 .combos__block--epic .combos__block-top:before {
   background-image: -webkit-radial-gradient(#c359ff,#701fe5);
   background-image: -o-radial-gradient(#c359ff,#701fe5);
   background-image: radial-gradient(#c359ff,#701fe5);
 }
 
-/* line 492, src/scss/_components/home/_combos.scss */
+/* line 546, src/scss/_components/home/_combos.scss */
 .combos__block--rare .combos__block-top:before {
   background-image: -webkit-radial-gradient(#2cc1ff,#215dc2);
   background-image: -o-radial-gradient(#2cc1ff,#215dc2);
   background-image: radial-gradient(#2cc1ff,#215dc2);
 }
 
-/* line 492, src/scss/_components/home/_combos.scss */
+/* line 546, src/scss/_components/home/_combos.scss */
 .combos__block--uncommon .combos__block-top:before {
   background-image: -webkit-radial-gradient(#69bb1e,#227622);
   background-image: -o-radial-gradient(#69bb1e,#227622);
   background-image: radial-gradient(#69bb1e,#227622);
 }
 
-/* line 492, src/scss/_components/home/_combos.scss */
+/* line 546, src/scss/_components/home/_combos.scss */
 .combos__block--default .combos__block-top:before {
   background-image: -webkit-radial-gradient(#bebebe,#848282);
   background-image: -o-radial-gradient(#bebebe,#848282);
   background-image: radial-gradient(#bebebe,#848282);
 }
 
-/* line 501, src/scss/_components/home/_combos.scss */
+/* line 555, src/scss/_components/home/_combos.scss */
 .combos__block:hover .combos__block-top:after {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -12221,7 +12359,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 506, src/scss/_components/home/_combos.scss */
+/* line 560, src/scss/_components/home/_combos.scss */
 .combos__block:hover .combos__block-top img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -12233,7 +12371,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 513, src/scss/_components/home/_combos.scss */
+/* line 567, src/scss/_components/home/_combos.scss */
 .combos__block-top {
   overflow: hidden;
   position: relative;
@@ -12246,7 +12384,7 @@ picture {
           box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.17);
 }
 
-/* line 523, src/scss/_components/home/_combos.scss */
+/* line 577, src/scss/_components/home/_combos.scss */
 .combos__block-top:before, .combos__block-top:after {
   content: '';
   z-index: -1;
@@ -12257,7 +12395,7 @@ picture {
   height: calc(100% + 2px);
 }
 
-/* line 534, src/scss/_components/home/_combos.scss */
+/* line 588, src/scss/_components/home/_combos.scss */
 .combos__block-top:after {
   opacity: 0;
   background: -webkit-radial-gradient(center, 200px, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
@@ -12268,7 +12406,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 540, src/scss/_components/home/_combos.scss */
+/* line 594, src/scss/_components/home/_combos.scss */
 .combos__block-top img {
   z-index: 2;
   position: relative;
@@ -12287,12 +12425,12 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 552, src/scss/_components/home/_combos.scss */
+/* line 606, src/scss/_components/home/_combos.scss */
 .combos__block-bottom {
   min-height: 40px;
 }
 
-/* line 555, src/scss/_components/home/_combos.scss */
+/* line 609, src/scss/_components/home/_combos.scss */
 .combos__block-bottom p {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -12303,7 +12441,7 @@ picture {
   line-height: 1.2;
 }
 
-/* line 565, src/scss/_components/home/_combos.scss */
+/* line 619, src/scss/_components/home/_combos.scss */
 .combos__block-bottom .e-skin__block-points {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -12314,14 +12452,14 @@ picture {
   padding-bottom: 0;
 }
 
-/* line 570, src/scss/_components/home/_combos.scss */
+/* line 624, src/scss/_components/home/_combos.scss */
 .combos__block-bottom .e-skin__block-points span {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
 }
 
-/* line 578, src/scss/_components/home/_combos.scss */
+/* line 632, src/scss/_components/home/_combos.scss */
 .combos__block-badge {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12340,7 +12478,7 @@ picture {
   background-color: #e8f2ff;
 }
 
-/* line 589, src/scss/_components/home/_combos.scss */
+/* line 643, src/scss/_components/home/_combos.scss */
 .combos__block-badge i {
   opacity: 0.65;
   -webkit-filter: invert(1);

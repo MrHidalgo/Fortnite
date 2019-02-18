@@ -75,22 +75,23 @@ section#combos.combos
               .combos__box-right
 
                 each val, idx in combosBlock
-                  a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
-                    .combos__block-top
-                      .combos__block-badge
-                        i.icon-png(class!= combosBlock[idx].iconName)
+                  div
+                    a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+                      .combos__block-top
+                        .combos__block-badge
+                          i.icon-png(class!= combosBlock[idx].iconName)
 
-                    .combos__block-bottom
-                      if(idx === 0)
-                        .b-skin__info--ticker
-                          p!= "SKIN NAME"
-                      else
-                        .b-skin__info--wticker
-                          p!= "SKIN NAME"
+                      .combos__block-bottom
+                        if(idx === 0)
+                          .b-skin__info--ticker
+                            p!= "SKIN NAME"
+                        else
+                          .b-skin__info--wticker
+                            p!= "SKIN NAME"
 
-                      .e-skin__block-points
-                        img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
-                        span!= "1500"
+                        .e-skin__block-points
+                          img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                          span!= "1500"
 
             .combos__box-wrapper
               .combos__box-bottom
@@ -144,22 +145,23 @@ section#combos.combos
               .combos__box-right
 
                 each val, idx in combosBlock
-                  a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
-                    .combos__block-top
-                      .combos__block-badge
-                        i.icon-png(class!= combosBlock[idx].iconName)
+                  div
+                    a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+                      .combos__block-top
+                        .combos__block-badge
+                          i.icon-png(class!= combosBlock[idx].iconName)
 
-                    .combos__block-bottom
-                      if(idx === 1)
-                        .b-skin__info--ticker
-                          p!= "SKIN NAME"
-                      else
-                        .b-skin__info--wticker
-                          p!= "SKIN NAME"
+                      .combos__block-bottom
+                        if(idx === 1)
+                          .b-skin__info--ticker
+                            p!= "SKIN NAME"
+                        else
+                          .b-skin__info--wticker
+                            p!= "SKIN NAME"
 
-                      .e-skin__block-points
-                        img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
-                        span!= "1500"
+                        .e-skin__block-points
+                          img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                          span!= "1500"
 
             .combos__box-wrapper
               .combos__box-bottom

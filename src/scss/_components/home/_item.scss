@@ -696,13 +696,13 @@
           @include transition(opacity);
         }
 
-        img {
+        > img {
           transform: scale(1.1);
           @include transition(transform);
         }
       }
 
-      img {
+      > img {
         backface-visibility: hidden;
         transform-origin: center;
         @include transition(transform);

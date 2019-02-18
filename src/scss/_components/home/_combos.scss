@@ -81,17 +81,30 @@
 
   &__row {
     display: flex;
+    @include adaptive(575) {
+      flex-wrap: wrap;
+    }
 
     &-left,
     &-right {
       width: 50%;
+      @include adaptive(575) {
+        width: 100%;
+      }
     }
 
     &-left {
       padding-right: 7px;
+      @include adaptive(575) {
+        padding-right: 0;
+        margin-bottom: 30px;
+      }
     }
     &-right {
       padding-left: 7px;
+      @include adaptive(575) {
+        padding-left: 0;
+      }
     }
   }
 
@@ -107,16 +120,16 @@
     clip-path: polygon(0 0, 100% 1%, 96% 97%, 2% 98%);
 
     .icon-i-combos {
-      font-size: 42px;
       color: #fff;
+      @include fluid(font-size, 320px, 992px, 30px, 42px);
     }
 
     h2 {
       padding-left: 15px;
-      font-size: 48px;
       color: rgb(255, 255, 255);
       text-transform: uppercase;
       line-height: 1.2;
+      @include fluid(font-size, 320px, 992px, 30px, 48px);
     }
   }
 
@@ -199,6 +212,9 @@
       z-index: 2;
       position: relative;
       display: flex;
+      @include adaptive(1199) {
+        flex-wrap: wrap;
+      }
     }
 
     &-left {
@@ -209,6 +225,9 @@
       max-width: calc(100% - 245px);
       padding-left: 15px;
       padding-right: 15px;
+      @include adaptive(1199) {
+        max-width: 100%;
+      }
 
       > img {
         display: block;
@@ -239,6 +258,26 @@
       flex-wrap: wrap;
       width: 245px;
       padding-top: 80px;
+      @include adaptive(1199) {
+        width: 100%;
+        max-width: 100%;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        > div {
+          display: flex;
+          justify-content: center;
+          width: calc(100% / 3);
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+      @include adaptive(767) {
+        > div {
+          width: calc(100% / 2);
+        }
+      }
     }
 
     &-bottom {
@@ -376,6 +415,9 @@
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         line-height: 1.2;
+        @include adaptive(767) {
+          font-size: 12px;
+        }
       }
 
       .e-skin__block-points {
@@ -389,6 +431,9 @@
           color: rgb(255, 255, 255);
           text-transform: uppercase;
           line-height: 1.2;
+          @include adaptive(767) {
+            font-size: 18px;
+          }
         }
       }
     }
@@ -445,6 +490,9 @@
         font-size: 18px;
         font-weight: bold;
         font-family: 'Ubuntu', sans-serif;
+        @include adaptive(767) {
+          font-size: 16px;
+        }
         @include adaptive(575) {
           font-size: 14px;
         }
@@ -453,6 +501,9 @@
           &-font {
             position: relative;
             font-size: 18px;
+            @include adaptive(767) {
+              font-size: 16px;
+            }
             @include adaptive(575) {
               font-size: 14px;
             }
@@ -479,6 +530,9 @@
     width: 105px;
     margin-right: 15px;
     margin-bottom: 10px;
+    @include adaptive(1199) {
+      margin-right: 0;
+    }
 
     @each $className, $colorVal in
         ('legendary', 'radial-gradient(#ea8d23,#c04d1f)'),
