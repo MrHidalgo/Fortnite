@@ -4,7 +4,7 @@
   padding-left: 15px;
   padding-bottom: 50px;
   @include adaptive(575) {
-    display: none;
+    //display: none;
   }
 
   &__wrapper {

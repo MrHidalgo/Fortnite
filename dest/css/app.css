@@ -5280,13 +5280,6 @@ picture {
   padding-bottom: 50px;
 }
 
-@media screen and (max-width: 575px) {
-  /* line 3, src/scss/_components/common/_breadcrumbs.scss */
-  .breadcrumbs {
-    display: none;
-  }
-}
-
 /* line 10, src/scss/_components/common/_breadcrumbs.scss */
 .breadcrumbs__wrapper {
   display: -webkit-box;
@@ -28190,9 +28183,10 @@ picture {
   border: 4px solid #fff;
   -webkit-box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.08);
           box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.08);
-  background-image: -webkit-radial-gradient(50% 50%, circle closest-side, #212121 0%, black 100%);
-  background-image: -o-radial-gradient(50% 50%, circle closest-side, #212121 0%, black 100%);
-  background-image: radial-gradient(50% 50%, circle closest-side, #212121 0%, black 100%);
+  background: -webkit-radial-gradient(center, ellipse, #000333 0%, black 100%);
+  background: -o-radial-gradient(center, ellipse, #000333 0%, black 100%);
+  background: radial-gradient(ellipse at center, #000333 0%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000333',GradientType=1 );
 }
 
 @media screen and (max-width: 767px) {
@@ -28203,14 +28197,14 @@ picture {
   }
 }
 
-/* line 736, src/scss/_components/skin/_skin.scss */
+/* line 737, src/scss/_components/skin/_skin.scss */
 .skin__description-block img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 742, src/scss/_components/skin/_skin.scss */
+/* line 743, src/scss/_components/skin/_skin.scss */
 .skin__description-block .twentytwenty-handle {
   cursor: ew-resize;
   top: 0;
@@ -28222,12 +28216,12 @@ picture {
   border-radius: 0;
 }
 
-/* line 756, src/scss/_components/skin/_skin.scss */
+/* line 757, src/scss/_components/skin/_skin.scss */
 .skin__description-block .twentytwenty-handle:before, .skin__description-block .twentytwenty-handle:after {
   display: none;
 }
 
-/* line 761, src/scss/_components/skin/_skin.scss */
+/* line 762, src/scss/_components/skin/_skin.scss */
 .skin__description-block .twentytwenty-handle span {
   position: absolute;
   display: -webkit-box;
@@ -28256,7 +28250,7 @@ picture {
           clip-path: polygon(0 0, 100% 15%, 94% 90%, 8% 100%);
 }
 
-/* line 776, src/scss/_components/skin/_skin.scss */
+/* line 777, src/scss/_components/skin/_skin.scss */
 .skin__description-block .twentytwenty-handle span:before, .skin__description-block .twentytwenty-handle span:after {
   content: '';
   position: absolute;
@@ -28269,22 +28263,22 @@ picture {
   background-color: #83b4c4;
 }
 
-/* line 787, src/scss/_components/skin/_skin.scss */
+/* line 788, src/scss/_components/skin/_skin.scss */
 .skin__description-block .twentytwenty-handle span:before {
   top: 38%;
 }
 
-/* line 791, src/scss/_components/skin/_skin.scss */
+/* line 792, src/scss/_components/skin/_skin.scss */
 .skin__description-block .twentytwenty-handle span:after {
   bottom: 38%;
 }
 
-/* line 795, src/scss/_components/skin/_skin.scss */
+/* line 796, src/scss/_components/skin/_skin.scss */
 .skin__description-block .twentytwenty-handle span:nth-of-type(2) {
   display: none;
 }
 
-/* line 801, src/scss/_components/skin/_skin.scss */
+/* line 802, src/scss/_components/skin/_skin.scss */
 .skin__description-block-btn {
   position: absolute;
   z-index: 50;
@@ -28312,7 +28306,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 818, src/scss/_components/skin/_skin.scss */
+/* line 819, src/scss/_components/skin/_skin.scss */
 .skin__description-block-btn:hover {
   color: #fff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -28320,7 +28314,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 822, src/scss/_components/skin/_skin.scss */
+/* line 823, src/scss/_components/skin/_skin.scss */
 .skin__description-block-btn:hover:before {
   -webkit-clip-path: polygon(0 5%, 97% 0, 100% 100%, 0 95%);
           clip-path: polygon(0 5%, 97% 0, 100% 100%, 0 95%);
@@ -28331,7 +28325,7 @@ picture {
   transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
 }
 
-/* line 828, src/scss/_components/skin/_skin.scss */
+/* line 829, src/scss/_components/skin/_skin.scss */
 .skin__description-block-btn:before {
   content: '';
   z-index: -1;
@@ -28349,29 +28343,29 @@ picture {
   transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
 }
 
-/* line 840, src/scss/_components/skin/_skin.scss */
+/* line 841, src/scss/_components/skin/_skin.scss */
 .skin__description-block-btn--on {
   left: 5px;
   background-color: #ffd600;
 }
 
-/* line 844, src/scss/_components/skin/_skin.scss */
+/* line 845, src/scss/_components/skin/_skin.scss */
 .skin__description-block-btn--on:before {
   background-color: #f0ca07;
 }
 
-/* line 849, src/scss/_components/skin/_skin.scss */
+/* line 850, src/scss/_components/skin/_skin.scss */
 .skin__description-block-btn--off {
   right: 5px;
   background-color: #057298;
 }
 
-/* line 853, src/scss/_components/skin/_skin.scss */
+/* line 854, src/scss/_components/skin/_skin.scss */
 .skin__description-block-btn--off:before {
   background-color: #046181;
 }
 
-/* line 860, src/scss/_components/skin/_skin.scss */
+/* line 861, src/scss/_components/skin/_skin.scss */
 .skin__description-info {
   min-height: 213px;
   margin-bottom: 20px;
@@ -28381,7 +28375,7 @@ picture {
           clip-path: polygon(0 0, 100% 1%, 98% 100%, 2% 97%);
 }
 
-/* line 867, src/scss/_components/skin/_skin.scss */
+/* line 868, src/scss/_components/skin/_skin.scss */
 .skin__description-info-title {
   position: relative;
   display: -webkit-box;
@@ -28397,7 +28391,7 @@ picture {
           clip-path: polygon(0 5%, 100% 0, 99% 100%, 0.5% 95%);
 }
 
-/* line 876, src/scss/_components/skin/_skin.scss */
+/* line 877, src/scss/_components/skin/_skin.scss */
 .skin__description-info-title > span {
   position: absolute;
   top: 0;
@@ -28406,7 +28400,7 @@ picture {
   height: 100%;
 }
 
-/* line 883, src/scss/_components/skin/_skin.scss */
+/* line 884, src/scss/_components/skin/_skin.scss */
 .skin__description-info-title > span:before, .skin__description-info-title > span:after {
   content: '';
   z-index: 0;
@@ -28418,19 +28412,19 @@ picture {
   background-color: #c4e7f3;
 }
 
-/* line 895, src/scss/_components/skin/_skin.scss */
+/* line 896, src/scss/_components/skin/_skin.scss */
 .skin__description-info-title > span:before {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 30%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 30%);
 }
 
-/* line 899, src/scss/_components/skin/_skin.scss */
+/* line 900, src/scss/_components/skin/_skin.scss */
 .skin__description-info-title > span:after {
   -webkit-clip-path: polygon(0 100%, 5% 50%, 9% 85%, 100% 100%);
           clip-path: polygon(0 100%, 5% 50%, 9% 85%, 100% 100%);
 }
 
-/* line 904, src/scss/_components/skin/_skin.scss */
+/* line 905, src/scss/_components/skin/_skin.scss */
 .skin__description-info-title h3 {
   z-index: 2;
   position: relative;
@@ -28440,7 +28434,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 914, src/scss/_components/skin/_skin.scss */
+/* line 915, src/scss/_components/skin/_skin.scss */
 .skin__description-info-desc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28455,32 +28449,32 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 914, src/scss/_components/skin/_skin.scss */
+  /* line 915, src/scss/_components/skin/_skin.scss */
   .skin__description-info-desc {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 925, src/scss/_components/skin/_skin.scss */
+/* line 926, src/scss/_components/skin/_skin.scss */
 .skin__description-info-desc:nth-of-type(1) {
   -webkit-clip-path: polygon(0 0, 99% 2%, 100% 100%, 0.5% 97%);
           clip-path: polygon(0 0, 99% 2%, 100% 100%, 0.5% 97%);
 }
 
-/* line 928, src/scss/_components/skin/_skin.scss */
+/* line 929, src/scss/_components/skin/_skin.scss */
 .skin__description-info-desc:nth-of-type(2) {
   -webkit-clip-path: polygon(1% 0, 100% 0, 99% 100%, 1.5% 97%);
           clip-path: polygon(1% 0, 100% 0, 99% 100%, 1.5% 97%);
 }
 
-/* line 931, src/scss/_components/skin/_skin.scss */
+/* line 932, src/scss/_components/skin/_skin.scss */
 .skin__description-info-desc:nth-of-type(3) {
   -webkit-clip-path: polygon(2% 0, 98% 2%, 99% 100%, 1.5% 97%);
           clip-path: polygon(2% 0, 98% 2%, 99% 100%, 1.5% 97%);
 }
 
-/* line 935, src/scss/_components/skin/_skin.scss */
+/* line 936, src/scss/_components/skin/_skin.scss */
 .skin__description-info-desc span {
   padding-right: 5px;
   color: #90cee4;
@@ -28489,7 +28483,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 943, src/scss/_components/skin/_skin.scss */
+/* line 944, src/scss/_components/skin/_skin.scss */
 .skin__description-info-desc p {
   color: #fff;
   font-size: 16px;
@@ -28497,7 +28491,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 943, src/scss/_components/skin/_skin.scss */
+  /* line 944, src/scss/_components/skin/_skin.scss */
   .skin__description-info-desc p {
     overflow: hidden;
     -o-text-overflow: ellipsis;
@@ -28506,7 +28500,7 @@ picture {
   }
 }
 
-/* line 956, src/scss/_components/skin/_skin.scss */
+/* line 957, src/scss/_components/skin/_skin.scss */
 .skin__description-skin {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28518,7 +28512,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 961, src/scss/_components/skin/_skin.scss */
+/* line 962, src/scss/_components/skin/_skin.scss */
 .skin__description-skin-col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28532,7 +28526,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 961, src/scss/_components/skin/_skin.scss */
+  /* line 962, src/scss/_components/skin/_skin.scss */
   .skin__description-skin-col {
     width: 100%;
     max-width: 100%;
@@ -28540,40 +28534,40 @@ picture {
 }
 
 @media screen and (max-width: 374px) {
-  /* line 961, src/scss/_components/skin/_skin.scss */
+  /* line 962, src/scss/_components/skin/_skin.scss */
   .skin__description-skin-col {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 976, src/scss/_components/skin/_skin.scss */
+/* line 977, src/scss/_components/skin/_skin.scss */
 .skin__description-skin-left {
   width: 153px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 976, src/scss/_components/skin/_skin.scss */
+  /* line 977, src/scss/_components/skin/_skin.scss */
   .skin__description-skin-left {
     width: 143px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  /* line 976, src/scss/_components/skin/_skin.scss */
+  /* line 977, src/scss/_components/skin/_skin.scss */
   .skin__description-skin-left {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* line 986, src/scss/_components/skin/_skin.scss */
+/* line 987, src/scss/_components/skin/_skin.scss */
 .skin__description-skin-left .b-skin {
   width: 100%;
   height: 120px;
 }
 
-/* line 992, src/scss/_components/skin/_skin.scss */
+/* line 993, src/scss/_components/skin/_skin.scss */
 .skin__description-skin-right {
   width: 100%;
   max-width: calc(100% - 153px);
@@ -28581,14 +28575,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 992, src/scss/_components/skin/_skin.scss */
+  /* line 993, src/scss/_components/skin/_skin.scss */
   .skin__description-skin-right {
     max-width: calc(100% - 143px);
   }
 }
 
 @media screen and (max-width: 374px) {
-  /* line 992, src/scss/_components/skin/_skin.scss */
+  /* line 993, src/scss/_components/skin/_skin.scss */
   .skin__description-skin-right {
     max-width: 100%;
     text-align: center;
@@ -28597,33 +28591,33 @@ picture {
   }
 }
 
-/* line 1006, src/scss/_components/skin/_skin.scss */
+/* line 1007, src/scss/_components/skin/_skin.scss */
 .skin__description-skin-right h4 {
   color: #273c43;
   font-size: 18px;
   text-transform: uppercase;
 }
 
-/* line 1012, src/scss/_components/skin/_skin.scss */
+/* line 1013, src/scss/_components/skin/_skin.scss */
 .skin__description-skin-right p,
 .skin__description-skin-right span {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 1017, src/scss/_components/skin/_skin.scss */
+/* line 1018, src/scss/_components/skin/_skin.scss */
 .skin__description-skin-right span {
   display: block;
   padding-bottom: 10px;
   color: #9eadb7;
 }
 
-/* line 1023, src/scss/_components/skin/_skin.scss */
+/* line 1024, src/scss/_components/skin/_skin.scss */
 .skin__description-skin-right p {
   color: #657782;
   font-size: 12px;
 }
 
-/* line 1030, src/scss/_components/skin/_skin.scss */
+/* line 1031, src/scss/_components/skin/_skin.scss */
 .skin__description-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28634,25 +28628,25 @@ picture {
   padding-bottom: 20px;
 }
 
-/* line 1036, src/scss/_components/skin/_skin.scss */
+/* line 1037, src/scss/_components/skin/_skin.scss */
 .skin__description-desc, .skin__description-note {
   color: #273c43;
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 1042, src/scss/_components/skin/_skin.scss */
+/* line 1043, src/scss/_components/skin/_skin.scss */
 .skin__description-desc {
   padding-bottom: 22px;
   font-size: 18px;
   font-weight: 500;
 }
 
-/* line 1047, src/scss/_components/skin/_skin.scss */
+/* line 1048, src/scss/_components/skin/_skin.scss */
 .skin__description-desc--color {
   color: #ff7738;
 }
 
-/* line 1052, src/scss/_components/skin/_skin.scss */
+/* line 1053, src/scss/_components/skin/_skin.scss */
 .skin__description-note {
   padding-left: 20px;
   padding-bottom: 20px;
@@ -28660,32 +28654,32 @@ picture {
   font-size: 16px;
 }
 
-/* line 1058, src/scss/_components/skin/_skin.scss */
+/* line 1059, src/scss/_components/skin/_skin.scss */
 .skin__description-note span {
   font-weight: bold;
 }
 
-/* line 1067, src/scss/_components/skin/_skin.scss */
+/* line 1068, src/scss/_components/skin/_skin.scss */
 .skin--gameplay .skin__header {
   background-color: #36caff;
 }
 
-/* line 1070, src/scss/_components/skin/_skin.scss */
+/* line 1071, src/scss/_components/skin/_skin.scss */
 .skin--gameplay .skin__header:before {
   background-color: #1ac2fe;
 }
 
-/* line 1080, src/scss/_components/skin/_skin.scss */
+/* line 1081, src/scss/_components/skin/_skin.scss */
 .skin--gallery .skin__header {
   background-color: #ff7236;
 }
 
-/* line 1083, src/scss/_components/skin/_skin.scss */
+/* line 1084, src/scss/_components/skin/_skin.scss */
 .skin--gallery .skin__header:before {
   background-color: #dc602c;
 }
 
-/* line 1088, src/scss/_components/skin/_skin.scss */
+/* line 1089, src/scss/_components/skin/_skin.scss */
 .skin--gallery .skin__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28697,12 +28691,12 @@ picture {
   padding: 25px 20px 65px;
 }
 
-/* line 1096, src/scss/_components/skin/_skin.scss */
+/* line 1097, src/scss/_components/skin/_skin.scss */
 .skin__gallery .info__subtitle {
   text-transform: uppercase;
 }
 
-/* line 1100, src/scss/_components/skin/_skin.scss */
+/* line 1101, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28715,27 +28709,27 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1100, src/scss/_components/skin/_skin.scss */
+  /* line 1101, src/scss/_components/skin/_skin.scss */
   .skin__gallery-images {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 1109, src/scss/_components/skin/_skin.scss */
+/* line 1110, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images-left, .skin__gallery-images-right {
   width: 100%;
   max-width: calc((100% - 20px) / 2);
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1109, src/scss/_components/skin/_skin.scss */
+  /* line 1110, src/scss/_components/skin/_skin.scss */
   .skin__gallery-images-left, .skin__gallery-images-right {
     max-width: 100%;
   }
 }
 
-/* line 1119, src/scss/_components/skin/_skin.scss */
+/* line 1120, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images-left > div {
   position: relative;
   width: 100%;
@@ -28744,7 +28738,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 1126, src/scss/_components/skin/_skin.scss */
+/* line 1127, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images-left > div img {
   position: absolute;
   top: 0;
@@ -28758,13 +28752,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1126, src/scss/_components/skin/_skin.scss */
+  /* line 1127, src/scss/_components/skin/_skin.scss */
   .skin__gallery-images-left > div img {
     position: relative;
   }
 }
 
-/* line 1141, src/scss/_components/skin/_skin.scss */
+/* line 1142, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28778,19 +28772,19 @@ picture {
           justify-content: space-between;
 }
 
-/* line 1146, src/scss/_components/skin/_skin.scss */
+/* line 1147, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images-right .skin__gallery-images-top,
 .skin__gallery-images-right .skin__gallery-images-bottom {
   height: calc((342px - 10px) / 2);
 }
 
-/* line 1151, src/scss/_components/skin/_skin.scss */
+/* line 1152, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images-right .skin__gallery-images-left,
 .skin__gallery-images-right .skin__gallery-images-right {
   max-width: calc((100% - 10px) / 2);
 }
 
-/* line 1155, src/scss/_components/skin/_skin.scss */
+/* line 1156, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images-right .skin__gallery-images-left > div,
 .skin__gallery-images-right .skin__gallery-images-right > div {
   position: relative;
@@ -28800,7 +28794,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 1162, src/scss/_components/skin/_skin.scss */
+/* line 1163, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images-right .skin__gallery-images-left > div img,
 .skin__gallery-images-right .skin__gallery-images-right > div img {
   position: absolute;
@@ -28814,7 +28808,7 @@ picture {
      object-position: center;
 }
 
-/* line 1175, src/scss/_components/skin/_skin.scss */
+/* line 1176, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28824,7 +28818,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 1180, src/scss/_components/skin/_skin.scss */
+/* line 1181, src/scss/_components/skin/_skin.scss */
 .skin__gallery-images-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28834,7 +28828,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 1186, src/scss/_components/skin/_skin.scss */
+/* line 1187, src/scss/_components/skin/_skin.scss */
 .skin__gallery-wallpaper {
   position: relative;
   min-height: 357px;
@@ -28843,7 +28837,7 @@ picture {
   background-color: #fff;
 }
 
-/* line 1193, src/scss/_components/skin/_skin.scss */
+/* line 1194, src/scss/_components/skin/_skin.scss */
 .skin__gallery-wallpaper img {
   position: absolute;
   top: 0;
@@ -28856,7 +28850,7 @@ picture {
      object-position: center;
 }
 
-/* line 1204, src/scss/_components/skin/_skin.scss */
+/* line 1205, src/scss/_components/skin/_skin.scss */
 .skin__gallery-note {
   color: #273c43;
   line-height: 1.6;
@@ -28864,22 +28858,22 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 1210, src/scss/_components/skin/_skin.scss */
+/* line 1211, src/scss/_components/skin/_skin.scss */
 .skin__gallery-note a {
   color: #ff7236;
 }
 
-/* line 1220, src/scss/_components/skin/_skin.scss */
+/* line 1221, src/scss/_components/skin/_skin.scss */
 .skin--styles .skin__header {
   background-color: #518da4;
 }
 
-/* line 1223, src/scss/_components/skin/_skin.scss */
+/* line 1224, src/scss/_components/skin/_skin.scss */
 .skin--styles .skin__header:before {
   background-color: #45839a;
 }
 
-/* line 1228, src/scss/_components/skin/_skin.scss */
+/* line 1229, src/scss/_components/skin/_skin.scss */
 .skin--styles .skin__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28891,13 +28885,13 @@ picture {
   padding: 25px 20px 65px;
 }
 
-/* line 1236, src/scss/_components/skin/_skin.scss */
+/* line 1237, src/scss/_components/skin/_skin.scss */
 .skin__styles .info__subtitle {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* line 1241, src/scss/_components/skin/_skin.scss */
+/* line 1242, src/scss/_components/skin/_skin.scss */
 .skin__styles-text {
   padding-bottom: 20px;
   color: #273c43;
@@ -28905,7 +28899,7 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 1248, src/scss/_components/skin/_skin.scss */
+/* line 1249, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28917,14 +28911,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1248, src/scss/_components/skin/_skin.scss */
+  /* line 1249, src/scss/_components/skin/_skin.scss */
   .skin__styles-desc {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 1256, src/scss/_components/skin/_skin.scss */
+/* line 1257, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-left {
   z-index: 1;
   position: relative;
@@ -28932,20 +28926,20 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1256, src/scss/_components/skin/_skin.scss */
+  /* line 1257, src/scss/_components/skin/_skin.scss */
   .skin__styles-desc-left {
     width: 100%;
   }
 }
 
-/* line 1264, src/scss/_components/skin/_skin.scss */
+/* line 1265, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-left .b-skin {
   width: 100%;
   height: 212px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1264, src/scss/_components/skin/_skin.scss */
+  /* line 1265, src/scss/_components/skin/_skin.scss */
   .skin__styles-desc-left .b-skin {
     width: 200px;
     margin-left: auto;
@@ -28953,7 +28947,7 @@ picture {
   }
 }
 
-/* line 1275, src/scss/_components/skin/_skin.scss */
+/* line 1276, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-right {
   z-index: 0;
   position: relative;
@@ -28962,13 +28956,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1275, src/scss/_components/skin/_skin.scss */
+  /* line 1276, src/scss/_components/skin/_skin.scss */
   .skin__styles-desc-right {
     max-width: 100%;
   }
 }
 
-/* line 1285, src/scss/_components/skin/_skin.scss */
+/* line 1286, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28989,7 +28983,7 @@ picture {
           clip-path: polygon(0 5%, 98% 0, 100% 100%, 0 100%);
 }
 
-/* line 1295, src/scss/_components/skin/_skin.scss */
+/* line 1296, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-title p {
   color: #fff;
   line-height: 1;
@@ -28998,20 +28992,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 1295, src/scss/_components/skin/_skin.scss */
+  /* line 1296, src/scss/_components/skin/_skin.scss */
   .skin__styles-desc-title p {
     font-size: calc(30px + 6 * (100vw - 320px) / 671);
   }
 }
 
 @media screen and (min-width: 991px) {
-  /* line 1295, src/scss/_components/skin/_skin.scss */
+  /* line 1296, src/scss/_components/skin/_skin.scss */
   .skin__styles-desc-title p {
     font-size: 36px;
   }
 }
 
-/* line 1303, src/scss/_components/skin/_skin.scss */
+/* line 1304, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29022,7 +29016,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1303, src/scss/_components/skin/_skin.scss */
+  /* line 1304, src/scss/_components/skin/_skin.scss */
   .skin__styles-desc-btn {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -29031,27 +29025,27 @@ picture {
   }
 }
 
-/* line 1310, src/scss/_components/skin/_skin.scss */
+/* line 1311, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-btn--orange {
   color: #ff9839;
 }
 
-/* line 1313, src/scss/_components/skin/_skin.scss */
+/* line 1314, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-btn--orange:hover {
   color: #ff9839;
 }
 
-/* line 1317, src/scss/_components/skin/_skin.scss */
+/* line 1318, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-btn--black {
   color: #282e42;
 }
 
-/* line 1320, src/scss/_components/skin/_skin.scss */
+/* line 1321, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-btn--black:hover {
   color: #282e42;
 }
 
-/* line 1325, src/scss/_components/skin/_skin.scss */
+/* line 1326, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-btn a {
   position: relative;
   display: -webkit-box;
@@ -29071,19 +29065,19 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 1336, src/scss/_components/skin/_skin.scss */
+/* line 1337, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-btn a:last-of-type {
   margin-left: 9px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1336, src/scss/_components/skin/_skin.scss */
+  /* line 1337, src/scss/_components/skin/_skin.scss */
   .skin__styles-desc-btn a:last-of-type {
     margin-top: 5px;
   }
 }
 
-/* line 1343, src/scss/_components/skin/_skin.scss */
+/* line 1344, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-btn a:before {
   content: '';
   z-index: -1;
@@ -29097,7 +29091,7 @@ picture {
           clip-path: polygon(0 100%, 70% 55%, 100% 0, 100% 100%);
 }
 
-/* line 1357, src/scss/_components/skin/_skin.scss */
+/* line 1358, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-info {
   position: relative;
   display: -webkit-box;
@@ -29124,7 +29118,7 @@ picture {
           clip-path: polygon(0 2%, 100% 0, 95% 99%, 0 100%);
 }
 
-/* line 1370, src/scss/_components/skin/_skin.scss */
+/* line 1371, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-info:before {
   content: '';
   z-index: -1;
@@ -29138,7 +29132,7 @@ picture {
           clip-path: polygon(0 100%, 70% 55%, 100% 0, 100% 100%);
 }
 
-/* line 1382, src/scss/_components/skin/_skin.scss */
+/* line 1383, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-info p,
 .skin__styles-desc-info i {
   padding-bottom: 14px;
@@ -29148,19 +29142,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1382, src/scss/_components/skin/_skin.scss */
+  /* line 1383, src/scss/_components/skin/_skin.scss */
   .skin__styles-desc-info p,
   .skin__styles-desc-info i {
     font-size: 14px;
   }
 }
 
-/* line 1395, src/scss/_components/skin/_skin.scss */
+/* line 1396, src/scss/_components/skin/_skin.scss */
 .skin__styles-desc-info i {
   font-style: italic;
 }
 
-/* line 1401, src/scss/_components/skin/_skin.scss */
+/* line 1402, src/scss/_components/skin/_skin.scss */
 .skin__styles-image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29174,19 +29168,19 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1401, src/scss/_components/skin/_skin.scss */
+  /* line 1402, src/scss/_components/skin/_skin.scss */
   .skin__styles-image {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 1409, src/scss/_components/skin/_skin.scss */
+/* line 1410, src/scss/_components/skin/_skin.scss */
 .skin__styles-image-0 {
   margin-bottom: 20px;
 }
 
-/* line 1413, src/scss/_components/skin/_skin.scss */
+/* line 1414, src/scss/_components/skin/_skin.scss */
 .skin__styles-image .b-skin {
   width: 94px;
   height: 94px;
@@ -29197,39 +29191,39 @@ picture {
   border-color: #e9f2ff;
 }
 
-/* line 1428, src/scss/_components/skin/_skin.scss */
+/* line 1429, src/scss/_components/skin/_skin.scss */
 .skin--images .skin__header {
   background-color: #36caff;
 }
 
-/* line 1431, src/scss/_components/skin/_skin.scss */
+/* line 1432, src/scss/_components/skin/_skin.scss */
 .skin--images .skin__header:before {
   background-color: #1ac2fe;
 }
 
-/* line 1436, src/scss/_components/skin/_skin.scss */
+/* line 1437, src/scss/_components/skin/_skin.scss */
 .skin--images .skin__body {
   padding: 35px 20px;
 }
 
-/* line 1441, src/scss/_components/skin/_skin.scss */
+/* line 1442, src/scss/_components/skin/_skin.scss */
 .skin--images .s-leak__image-row {
   margin-bottom: 35px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 1446, src/scss/_components/skin/_skin.scss */
+  /* line 1447, src/scss/_components/skin/_skin.scss */
   .skin__images .s-leak__image-block {
     width: calc((100% - 66px) / 3);
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1446, src/scss/_components/skin/_skin.scss */
+  /* line 1447, src/scss/_components/skin/_skin.scss */
   .skin__images .s-leak__image-block {
     width: calc((100% - 44px) / 2);
   }
-  /* line 1453, src/scss/_components/skin/_skin.scss */
+  /* line 1454, src/scss/_components/skin/_skin.scss */
   .skin__images .s-leak__image-block > div {
     width: 100%;
     max-width: 100%;
@@ -29237,13 +29231,13 @@ picture {
 }
 
 @media screen and (max-width: 374px) {
-  /* line 1446, src/scss/_components/skin/_skin.scss */
+  /* line 1447, src/scss/_components/skin/_skin.scss */
   .skin__images .s-leak__image-block {
     width: 100%;
   }
 }
 
-/* line 1463, src/scss/_components/skin/_skin.scss */
+/* line 1464, src/scss/_components/skin/_skin.scss */
 .skin__images-text {
   padding-bottom: 35px;
   color: #273c43;
@@ -29252,33 +29246,33 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 1470, src/scss/_components/skin/_skin.scss */
+/* line 1471, src/scss/_components/skin/_skin.scss */
 .skin__images-text a {
   color: #000;
   font-weight: bold;
 }
 
-/* line 1481, src/scss/_components/skin/_skin.scss */
+/* line 1482, src/scss/_components/skin/_skin.scss */
 .skin--history .skin__header {
   background-color: #ffb45d;
 }
 
-/* line 1484, src/scss/_components/skin/_skin.scss */
+/* line 1485, src/scss/_components/skin/_skin.scss */
 .skin--history .skin__header:before {
   background-color: #eea341;
 }
 
-/* line 1489, src/scss/_components/skin/_skin.scss */
+/* line 1490, src/scss/_components/skin/_skin.scss */
 .skin--history .skin__body {
   padding: 24px 20px 38px;
 }
 
-/* line 1498, src/scss/_components/skin/_skin.scss */
+/* line 1499, src/scss/_components/skin/_skin.scss */
 .skin__history-row-1 {
   padding-bottom: 34px;
 }
 
-/* line 1502, src/scss/_components/skin/_skin.scss */
+/* line 1503, src/scss/_components/skin/_skin.scss */
 .skin__history-row-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29290,14 +29284,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1502, src/scss/_components/skin/_skin.scss */
+  /* line 1503, src/scss/_components/skin/_skin.scss */
   .skin__history-row-2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 1512, src/scss/_components/skin/_skin.scss */
+/* line 1513, src/scss/_components/skin/_skin.scss */
 .skin__history-row-3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29311,7 +29305,7 @@ picture {
   margin-top: 34px;
 }
 
-/* line 1520, src/scss/_components/skin/_skin.scss */
+/* line 1521, src/scss/_components/skin/_skin.scss */
 .skin__history-text {
   padding-bottom: 24px;
   color: #273c43;
@@ -29320,7 +29314,7 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 1528, src/scss/_components/skin/_skin.scss */
+/* line 1529, src/scss/_components/skin/_skin.scss */
 .skin__history-note {
   position: relative;
   min-height: 66px;
@@ -29330,7 +29324,7 @@ picture {
           clip-path: polygon(0 5%, 100% 0, 97% 98%, 1% 100%);
 }
 
-/* line 1535, src/scss/_components/skin/_skin.scss */
+/* line 1536, src/scss/_components/skin/_skin.scss */
 .skin__history-note p {
   color: #273c43;
   line-height: 1.6;
@@ -29338,12 +29332,12 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 1541, src/scss/_components/skin/_skin.scss */
+/* line 1542, src/scss/_components/skin/_skin.scss */
 .skin__history-note p span {
   font-weight: bold;
 }
 
-/* line 1547, src/scss/_components/skin/_skin.scss */
+/* line 1548, src/scss/_components/skin/_skin.scss */
 .skin__history-col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29355,7 +29349,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 1552, src/scss/_components/skin/_skin.scss */
+/* line 1553, src/scss/_components/skin/_skin.scss */
 .skin__history-col > div {
   width: 100%;
   max-width: calc(100% / 3);
@@ -29363,20 +29357,20 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1559, src/scss/_components/skin/_skin.scss */
+  /* line 1560, src/scss/_components/skin/_skin.scss */
   .skin__history-col:nth-of-type(1) > div {
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1567, src/scss/_components/skin/_skin.scss */
+  /* line 1568, src/scss/_components/skin/_skin.scss */
   .skin__history-col:nth-of-type(2) > div {
     max-width: 50%;
   }
 }
 
-/* line 1574, src/scss/_components/skin/_skin.scss */
+/* line 1575, src/scss/_components/skin/_skin.scss */
 .skin__history-col p {
   padding-bottom: 7px;
   color: #273c43;
@@ -29385,7 +29379,7 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 1583, src/scss/_components/skin/_skin.scss */
+/* line 1584, src/scss/_components/skin/_skin.scss */
 .skin__history-block {
   position: relative;
   display: -webkit-box;
@@ -29405,7 +29399,7 @@ picture {
           clip-path: polygon(0 0, 100% 5%, 97% 98%, 1% 100%);
 }
 
-/* line 1594, src/scss/_components/skin/_skin.scss */
+/* line 1595, src/scss/_components/skin/_skin.scss */
 .skin__history-block:before {
   content: '';
   z-index: 0;
@@ -29418,7 +29412,7 @@ picture {
           clip-path: polygon(0 100%, 55% 70%, 100% 0, 100% 100%);
 }
 
-/* line 1606, src/scss/_components/skin/_skin.scss */
+/* line 1607, src/scss/_components/skin/_skin.scss */
 .skin__history-block:hover span {
   color: initial;
   -webkit-transition: color 0.3s ease-in-out;
@@ -29426,35 +29420,35 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 1612, src/scss/_components/skin/_skin.scss */
+/* line 1613, src/scss/_components/skin/_skin.scss */
 .skin__history-block-0 {
   background-color: #fcdb90;
   color: #dc602c;
 }
 
-/* line 1616, src/scss/_components/skin/_skin.scss */
+/* line 1617, src/scss/_components/skin/_skin.scss */
 .skin__history-block-0:before {
   background-color: #efcd7f;
 }
 
-/* line 1621, src/scss/_components/skin/_skin.scss */
+/* line 1622, src/scss/_components/skin/_skin.scss */
 .skin__history-block-1 {
   margin-bottom: 7px;
   background-color: #ff7236;
   color: #fff;
 }
 
-/* line 1626, src/scss/_components/skin/_skin.scss */
+/* line 1627, src/scss/_components/skin/_skin.scss */
 .skin__history-block-1:before {
   background-color: #dc602c;
 }
 
-/* line 1630, src/scss/_components/skin/_skin.scss */
+/* line 1631, src/scss/_components/skin/_skin.scss */
 .skin__history-block-1:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 1635, src/scss/_components/skin/_skin.scss */
+/* line 1636, src/scss/_components/skin/_skin.scss */
 .skin__history-block span {
   z-index: 2;
   position: relative;
@@ -29468,13 +29462,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1635, src/scss/_components/skin/_skin.scss */
+  /* line 1636, src/scss/_components/skin/_skin.scss */
   .skin__history-block span {
     font-size: 14px;
   }
 }
 
-/* line 1649, src/scss/_components/skin/_skin.scss */
+/* line 1650, src/scss/_components/skin/_skin.scss */
 .skin__history-ind {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29484,32 +29478,32 @@ picture {
           align-items: center;
 }
 
-/* line 1655, src/scss/_components/skin/_skin.scss */
+/* line 1656, src/scss/_components/skin/_skin.scss */
 .skin__history-ind-0 span {
   background-color: #ff7236;
 }
 
-/* line 1658, src/scss/_components/skin/_skin.scss */
+/* line 1659, src/scss/_components/skin/_skin.scss */
 .skin__history-ind-0 span:before {
   background-color: #dc602c;
 }
 
-/* line 1664, src/scss/_components/skin/_skin.scss */
+/* line 1665, src/scss/_components/skin/_skin.scss */
 .skin__history-ind-1 {
   margin-left: 23px;
 }
 
-/* line 1667, src/scss/_components/skin/_skin.scss */
+/* line 1668, src/scss/_components/skin/_skin.scss */
 .skin__history-ind-1 span {
   background-color: #1ac2fe;
 }
 
-/* line 1670, src/scss/_components/skin/_skin.scss */
+/* line 1671, src/scss/_components/skin/_skin.scss */
 .skin__history-ind-1 span:before {
   background-color: #119ccd;
 }
 
-/* line 1676, src/scss/_components/skin/_skin.scss */
+/* line 1677, src/scss/_components/skin/_skin.scss */
 .skin__history-ind span {
   position: relative;
   width: 19px;
@@ -29518,7 +29512,7 @@ picture {
           clip-path: polygon(0 5%, 100% 0, 97% 98%, 1% 90%);
 }
 
-/* line 1682, src/scss/_components/skin/_skin.scss */
+/* line 1683, src/scss/_components/skin/_skin.scss */
 .skin__history-ind span:before {
   content: '';
   z-index: 0;
@@ -29531,7 +29525,7 @@ picture {
           clip-path: polygon(0 100%, 55% 70%, 100% 0, 100% 100%);
 }
 
-/* line 1694, src/scss/_components/skin/_skin.scss */
+/* line 1695, src/scss/_components/skin/_skin.scss */
 .skin__history-ind p {
   margin-left: 10px;
   line-height: 1;
@@ -29539,7 +29533,7 @@ picture {
   font-size: 18px;
 }
 
-/* line 1705, src/scss/_components/skin/_skin.scss */
+/* line 1706, src/scss/_components/skin/_skin.scss */
 .skin--like {
   position: relative;
   margin-top: 50px;
@@ -29547,18 +29541,18 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1710, src/scss/_components/skin/_skin.scss */
+  /* line 1711, src/scss/_components/skin/_skin.scss */
   .skin--like .section-resize {
     width: calc(100% + 30px) !important;
   }
 }
 
-/* line 1714, src/scss/_components/skin/_skin.scss */
+/* line 1715, src/scss/_components/skin/_skin.scss */
 .skin--like .section-resize-bg {
   background-color: #262626;
 }
 
-/* line 1717, src/scss/_components/skin/_skin.scss */
+/* line 1718, src/scss/_components/skin/_skin.scss */
 .skin--like .section-resize-bg:before {
   content: '';
   z-index: 0;
@@ -29572,58 +29566,58 @@ picture {
           clip-path: polygon(0 0, 55% 20%, 75% 70%, 0 90%);
 }
 
-/* line 1732, src/scss/_components/skin/_skin.scss */
+/* line 1733, src/scss/_components/skin/_skin.scss */
 .skin--like .section-resize-triangle img:nth-of-type(1) {
   top: 0;
   right: 0;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1732, src/scss/_components/skin/_skin.scss */
+  /* line 1733, src/scss/_components/skin/_skin.scss */
   .skin--like .section-resize-triangle img:nth-of-type(1) {
     display: none;
   }
 }
 
-/* line 1739, src/scss/_components/skin/_skin.scss */
+/* line 1740, src/scss/_components/skin/_skin.scss */
 .skin--like .section-resize-triangle img:nth-of-type(2) {
   bottom: 0;
   left: 20%;
 }
 
-/* line 1743, src/scss/_components/skin/_skin.scss */
+/* line 1744, src/scss/_components/skin/_skin.scss */
 .skin--like .section-resize-triangle img:nth-of-type(3) {
   bottom: -3%;
   left: 30%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1743, src/scss/_components/skin/_skin.scss */
+  /* line 1744, src/scss/_components/skin/_skin.scss */
   .skin--like .section-resize-triangle img:nth-of-type(3) {
     display: none;
   }
 }
 
-/* line 1750, src/scss/_components/skin/_skin.scss */
+/* line 1751, src/scss/_components/skin/_skin.scss */
 .skin--like .section-resize-triangle img:nth-of-type(4) {
   bottom: -5%;
   right: 10%;
 }
 
-/* line 1754, src/scss/_components/skin/_skin.scss */
+/* line 1755, src/scss/_components/skin/_skin.scss */
 .skin--like .section-resize-triangle img:nth-of-type(5) {
   bottom: -2%;
   right: 0;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1754, src/scss/_components/skin/_skin.scss */
+  /* line 1755, src/scss/_components/skin/_skin.scss */
   .skin--like .section-resize-triangle img:nth-of-type(5) {
     display: none;
   }
 }
 
-/* line 1766, src/scss/_components/skin/_skin.scss */
+/* line 1767, src/scss/_components/skin/_skin.scss */
 .skin__like-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29640,7 +29634,7 @@ picture {
           clip-path: polygon(0 0, 100% 7%, 97% 96%, 2% 100%);
 }
 
-/* line 1776, src/scss/_components/skin/_skin.scss */
+/* line 1777, src/scss/_components/skin/_skin.scss */
 .skin__like-header h2 {
   padding-left: 15px;
   color: #fff;
@@ -29650,20 +29644,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 1776, src/scss/_components/skin/_skin.scss */
+  /* line 1777, src/scss/_components/skin/_skin.scss */
   .skin__like-header h2 {
     font-size: calc(25px + 23 * (100vw - 320px) / 447);
   }
 }
 
 @media screen and (min-width: 767px) {
-  /* line 1776, src/scss/_components/skin/_skin.scss */
+  /* line 1777, src/scss/_components/skin/_skin.scss */
   .skin__like-header h2 {
     font-size: 48px;
   }
 }
 
-/* line 1785, src/scss/_components/skin/_skin.scss */
+/* line 1786, src/scss/_components/skin/_skin.scss */
 .skin__like-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29680,14 +29674,14 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1785, src/scss/_components/skin/_skin.scss */
+  /* line 1786, src/scss/_components/skin/_skin.scss */
   .skin__like-body {
     padding-right: 15px;
     padding-bottom: 35px;
   }
 }
 
-/* line 1797, src/scss/_components/skin/_skin.scss */
+/* line 1798, src/scss/_components/skin/_skin.scss */
 .skin__like-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29700,25 +29694,25 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1797, src/scss/_components/skin/_skin.scss */
+  /* line 1798, src/scss/_components/skin/_skin.scss */
   .skin__like-block {
     width: 100%;
   }
 }
 
-/* line 1807, src/scss/_components/skin/_skin.scss */
+/* line 1808, src/scss/_components/skin/_skin.scss */
 .skin__like-block > div:nth-of-type(1) {
   width: 169px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1807, src/scss/_components/skin/_skin.scss */
+  /* line 1808, src/scss/_components/skin/_skin.scss */
   .skin__like-block > div:nth-of-type(1) {
     width: 130px;
   }
 }
 
-/* line 1813, src/scss/_components/skin/_skin.scss */
+/* line 1814, src/scss/_components/skin/_skin.scss */
 .skin__like-block > div:nth-of-type(2) {
   width: 100%;
   max-width: calc(100% - 169px);
@@ -29726,25 +29720,25 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 1813, src/scss/_components/skin/_skin.scss */
+  /* line 1814, src/scss/_components/skin/_skin.scss */
   .skin__like-block > div:nth-of-type(2) {
     max-width: calc(100% - 130px);
   }
 }
 
-/* line 1822, src/scss/_components/skin/_skin.scss */
+/* line 1823, src/scss/_components/skin/_skin.scss */
 .skin__like-block > div .b-skin {
   width: 100%;
   height: 138px;
 }
 
-/* line 1827, src/scss/_components/skin/_skin.scss */
+/* line 1828, src/scss/_components/skin/_skin.scss */
 .skin__like-block > div h3,
 .skin__like-block > div p {
   color: #fff;
 }
 
-/* line 1832, src/scss/_components/skin/_skin.scss */
+/* line 1833, src/scss/_components/skin/_skin.scss */
 .skin__like-block > div h3 {
   padding-bottom: 10px;
   line-height: 1;
@@ -29752,30 +29746,30 @@ picture {
   font-size: 18px;
 }
 
-/* line 1839, src/scss/_components/skin/_skin.scss */
+/* line 1840, src/scss/_components/skin/_skin.scss */
 .skin__like-block > div p {
   font-size: 12px;
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 1846, src/scss/_components/skin/_skin.scss */
+/* line 1847, src/scss/_components/skin/_skin.scss */
 .skin__like .e-skin__block-wrapper {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 1850, src/scss/_components/skin/_skin.scss */
+/* line 1851, src/scss/_components/skin/_skin.scss */
 .skin__like .e-skin__block-wrapper > div {
   max-width: 100%;
   padding-right: 50px;
 }
 
-/* line 1855, src/scss/_components/skin/_skin.scss */
+/* line 1856, src/scss/_components/skin/_skin.scss */
 .skin__like .e-skin__block-wrapper .e-skin__block-figure {
   display: none;
 }
 
-/* line 1859, src/scss/_components/skin/_skin.scss */
+/* line 1860, src/scss/_components/skin/_skin.scss */
 .skin__like .e-skin__block-wrapper .e-skin__block-desc {
   max-width: 90%;
 }
