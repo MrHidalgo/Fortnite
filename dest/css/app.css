@@ -7485,28 +7485,43 @@ picture {
 }
 
 /* line 309, src/scss/_components/common/_top.scss */
+.top__block-desc .combos__block-badge {
+  top: -2px;
+  left: -2px;
+  width: 15px;
+  height: 15px;
+}
+
+/* line 315, src/scss/_components/common/_top.scss */
+.top__block-desc .combos__block-badge i {
+  -webkit-transform: scale(0.25);
+      -ms-transform: scale(0.25);
+          transform: scale(0.25);
+}
+
+/* line 320, src/scss/_components/common/_top.scss */
 .top__block-desc .combos__block-top {
   border-width: 2px;
 }
 
-/* line 313, src/scss/_components/common/_top.scss */
+/* line 324, src/scss/_components/common/_top.scss */
 .top__block-desc .combos__block--empty {
   background-color: #bebebe;
 }
 
-/* line 316, src/scss/_components/common/_top.scss */
+/* line 327, src/scss/_components/common/_top.scss */
 .top__block-desc .combos__block--empty p {
   font-size: 22px;
   font-family: 'Anton', sans-serif;
 }
 
-/* line 323, src/scss/_components/common/_top.scss */
+/* line 334, src/scss/_components/common/_top.scss */
 .top__block-desc .cm-skin__wrapper {
   position: relative;
   left: -5px;
 }
 
-/* line 327, src/scss/_components/common/_top.scss */
+/* line 338, src/scss/_components/common/_top.scss */
 .top__block-desc .cm-skin__wrapper > div {
   width: calc(100% / 4);
   padding: 0;
