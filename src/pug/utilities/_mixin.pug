@@ -18,3 +18,8 @@ mixin comboSkin(classMod, idx)
   .combos__block(class!= "combos__block-" + idx + ' combos__block--' + classMod)
     .combos__block-top
       img(src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="")
+
+mixin comboSkinMore()
+  .combos__block.combos__block--empty
+    .combos__block-top
+      p!= "+3"

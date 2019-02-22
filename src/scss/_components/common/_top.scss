@@ -309,6 +309,15 @@
         &-top {
           border-width: 2px;
         }
+
+        &--empty {
+          background-color: #bebebe;
+
+          p {
+            font-size: 22px;
+            font-family: 'Anton', sans-serif;
+          }
+        }
       }
 
       .cm-skin__wrapper {

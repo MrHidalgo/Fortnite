@@ -7489,13 +7489,24 @@ picture {
   border-width: 2px;
 }
 
-/* line 314, src/scss/_components/common/_top.scss */
+/* line 313, src/scss/_components/common/_top.scss */
+.top__block-desc .combos__block--empty {
+  background-color: #bebebe;
+}
+
+/* line 316, src/scss/_components/common/_top.scss */
+.top__block-desc .combos__block--empty p {
+  font-size: 22px;
+  font-family: 'Anton', sans-serif;
+}
+
+/* line 323, src/scss/_components/common/_top.scss */
 .top__block-desc .cm-skin__wrapper {
   position: relative;
   left: -5px;
 }
 
-/* line 318, src/scss/_components/common/_top.scss */
+/* line 327, src/scss/_components/common/_top.scss */
 .top__block-desc .cm-skin__wrapper > div {
   width: calc(100% / 4);
   padding: 0;
@@ -12544,6 +12555,9 @@ picture {
 
 /* line 562, src/scss/_components/home/_combos.scss */
 .combos__block:hover .combos__block-top img {
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -12554,7 +12568,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 569, src/scss/_components/home/_combos.scss */
+/* line 570, src/scss/_components/home/_combos.scss */
 .combos__block-top {
   overflow: hidden;
   display: -webkit-box;
@@ -12576,7 +12590,7 @@ picture {
           box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.17);
 }
 
-/* line 582, src/scss/_components/home/_combos.scss */
+/* line 583, src/scss/_components/home/_combos.scss */
 .combos__block-top:before, .combos__block-top:after {
   content: '';
   z-index: -1;
@@ -12587,7 +12601,7 @@ picture {
   height: calc(100% + 2px);
 }
 
-/* line 593, src/scss/_components/home/_combos.scss */
+/* line 594, src/scss/_components/home/_combos.scss */
 .combos__block-top:after {
   opacity: 0;
   background: -webkit-radial-gradient(center, 200px, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
@@ -12598,7 +12612,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 599, src/scss/_components/home/_combos.scss */
+/* line 600, src/scss/_components/home/_combos.scss */
 .combos__block-top img {
   z-index: 2;
   position: relative;
@@ -12607,8 +12621,6 @@ picture {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
           transform-origin: center;

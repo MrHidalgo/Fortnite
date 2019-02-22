@@ -560,6 +560,7 @@
         }
 
         img {
+          transform-origin: center;
           transform: scale(1.1);
           @include transition(transform);
         }
@@ -604,7 +605,6 @@
         height: auto;
         margin-left: auto;
         margin-right: auto;
-        backface-visibility: hidden;
         transform-origin: center;
         @include transition(transform);
       }
