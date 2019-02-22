@@ -15463,7 +15463,14 @@ picture {
   transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
 }
 
-/* line 149, src/scss/_components/emotes/_rarity.scss */
+@media screen and (max-width: 1199px) {
+  /* line 130, src/scss/_components/emotes/_rarity.scss */
+  .rarity__btn {
+    font-size: 15px;
+  }
+}
+
+/* line 152, src/scss/_components/emotes/_rarity.scss */
 .rarity__btn:before {
   content: '';
   z-index: -1;
@@ -15482,12 +15489,12 @@ picture {
   transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
 }
 
-/* line 162, src/scss/_components/emotes/_rarity.scss */
+/* line 165, src/scss/_components/emotes/_rarity.scss */
 .rarity__btn:last-of-type {
   margin-right: 0;
 }
 
-/* line 166, src/scss/_components/emotes/_rarity.scss */
+/* line 169, src/scss/_components/emotes/_rarity.scss */
 .rarity__btn:hover {
   color: #fff;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -15499,7 +15506,7 @@ picture {
   transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
 }
 
-/* line 171, src/scss/_components/emotes/_rarity.scss */
+/* line 174, src/scss/_components/emotes/_rarity.scss */
 .rarity__btn:hover:before {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
@@ -15513,63 +15520,73 @@ picture {
   transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
 }
 
-/* line 178, src/scss/_components/emotes/_rarity.scss */
-.rarity__btn--green {
-  background-color: #09b958;
+/* line 188, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn--legendary {
+  background-color: #e38748;
 }
 
-/* line 180, src/scss/_components/emotes/_rarity.scss */
-.rarity__btn--green:before {
-  background-color: #00aa4c;
+/* line 191, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn--legendary:before {
+  background-color: #c1601e;
 }
 
-/* line 184, src/scss/_components/emotes/_rarity.scss */
-.rarity__btn--blue {
-  background-color: #0aa4db;
+/* line 188, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn--epic {
+  background-color: #b04eec;
 }
 
-/* line 186, src/scss/_components/emotes/_rarity.scss */
-.rarity__btn--blue:before {
-  background-color: #008ec1;
+/* line 191, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn--epic:before {
+  background-color: #8e17d6;
 }
 
-/* line 190, src/scss/_components/emotes/_rarity.scss */
-.rarity__btn--purple {
-  background-color: #bb2eea;
+/* line 188, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn--rare {
+  background-color: #3ad6ff;
 }
 
-/* line 192, src/scss/_components/emotes/_rarity.scss */
-.rarity__btn--purple:before {
-  background-color: #ac00e6;
+/* line 191, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn--rare:before {
+  background-color: #00bbed;
 }
 
-/* line 196, src/scss/_components/emotes/_rarity.scss */
-.rarity__btn--black {
-  background-color: #888888;
+/* line 188, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn--uncommon {
+  background-color: #8fee3b;
 }
 
-/* line 198, src/scss/_components/emotes/_rarity.scss */
-.rarity__btn--black:before {
-  background-color: #636363;
+/* line 191, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn--uncommon:before {
+  background-color: #69cb12;
 }
 
-/* line 202, src/scss/_components/emotes/_rarity.scss */
+/* line 188, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn--default {
+  background-color: #bebebe;
+}
+
+/* line 191, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn--default:before {
+  background-color: #989898;
+}
+
+/* line 197, src/scss/_components/emotes/_rarity.scss */
 .rarity__btn--gray {
   background-color: #ffffff;
   color: #000;
 }
 
-/* line 206, src/scss/_components/emotes/_rarity.scss */
+/* line 201, src/scss/_components/emotes/_rarity.scss */
 .rarity__btn--gray:before {
   background-color: #eef0f7;
 }
 
-/* line 210, src/scss/_components/emotes/_rarity.scss */
+/* line 205, src/scss/_components/emotes/_rarity.scss */
 .rarity__btn--gray:hover {
   color: #000;
 }
 
-/* line 215, src/scss/_components/emotes/_rarity.scss */
+/* line 210, src/scss/_components/emotes/_rarity.scss */
 .rarity__btn-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15579,73 +15596,87 @@ picture {
           align-items: center;
 }
 
-/* line 219, src/scss/_components/emotes/_rarity.scss */
-.rarity__btn-wrapper-0 {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 @media screen and (max-width: 991px) {
-  /* line 219, src/scss/_components/emotes/_rarity.scss */
+  /* line 214, src/scss/_components/emotes/_rarity.scss */
   .rarity__btn-wrapper-0 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 225, src/scss/_components/emotes/_rarity.scss */
+/* line 219, src/scss/_components/emotes/_rarity.scss */
+.rarity__btn-wrapper-0 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  width: 100%;
+  max-width: calc(100% / 3);
+}
+
+@media screen and (max-width: 424px) {
+  /* line 219, src/scss/_components/emotes/_rarity.scss */
+  .rarity__btn-wrapper-0 > div {
+    max-width: calc(100% / 2);
+  }
+}
+
+/* line 231, src/scss/_components/emotes/_rarity.scss */
 .rarity__btn-wrapper-0 .rarity__btn {
   max-width: 133px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 225, src/scss/_components/emotes/_rarity.scss */
+  /* line 231, src/scss/_components/emotes/_rarity.scss */
   .rarity__btn-wrapper-0 .rarity__btn {
-    max-width: calc((100% - 15px) / 2);
     margin-right: 0;
     margin-bottom: 15px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 225, src/scss/_components/emotes/_rarity.scss */
+  /* line 231, src/scss/_components/emotes/_rarity.scss */
   .rarity__btn-wrapper-0 .rarity__btn {
     max-width: 133px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 225, src/scss/_components/emotes/_rarity.scss */
+  /* line 231, src/scss/_components/emotes/_rarity.scss */
   .rarity__btn-wrapper-0 .rarity__btn {
-    max-width: calc((100% - 15px) / 2);
     margin-right: 0;
     margin-bottom: 15px;
   }
 }
 
 @media screen and (max-width: 364px) {
-  /* line 225, src/scss/_components/emotes/_rarity.scss */
+  /* line 231, src/scss/_components/emotes/_rarity.scss */
   .rarity__btn-wrapper-0 .rarity__btn {
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 364px) {
-  /* line 246, src/scss/_components/emotes/_rarity.scss */
+  /* line 250, src/scss/_components/emotes/_rarity.scss */
   .rarity__btn-wrapper-1 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-/* line 251, src/scss/_components/emotes/_rarity.scss */
+/* line 255, src/scss/_components/emotes/_rarity.scss */
 .rarity__btn-wrapper-1 .rarity__btn {
   max-width: 201px;
 }
 
 @media screen and (max-width: 364px) {
-  /* line 251, src/scss/_components/emotes/_rarity.scss */
+  /* line 255, src/scss/_components/emotes/_rarity.scss */
   .rarity__btn-wrapper-1 .rarity__btn {
     max-width: 100%;
     margin-right: 0;

@@ -145,6 +145,9 @@
     text-transform: uppercase;
     clip-path: polygon(0 0, 100% 5%, 97% 96%, 2% 100%);
     @include transition(clip-path);
+    @include adaptive(1199) {
+      font-size: 15px;
+    }
 
     &:before {
       content: '';
@@ -175,30 +178,22 @@
       }
     }
 
-    &--green {
-      background-color: #09b958;
-      &:before {
-        background-color: #00aa4c;
+    @each $classMod, $bgMain, $bgBefore in
+        ('legendary', #e38748, #e38748),
+        ('epic', #b04eec, #b04eec),
+        ('rare', #3ad6ff, #3ad6ff),
+        ('uncommon', #8fee3b, #8fee3b),
+        ('default', #bebebe, #bebebe)
+    {
+      &--#{$classMod} {
+        background-color: $bgMain;
+
+        &:before {
+          background-color: darken($bgBefore, 15%);
+        }
       }
     }
-    &--blue {
-      background-color: #0aa4db;
-      &:before {
-        background-color: #008ec1;
-      }
-    }
-    &--purple {
-      background-color: #bb2eea;
-      &:before {
-        background-color: #ac00e6;
-      }
-    }
-    &--black {
-      background-color: #888888;
-      &:before {
-        background-color: #636363;
-      }
-    }
+
     &--gray {
       background-color: #ffffff;
       color: $c-black;
@@ -217,15 +212,25 @@
       align-items: center;
 
       &-0 {
-        justify-content: space-between;
         @include adaptive(991) {
           flex-wrap: wrap;
+        }
+
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px;
+          width: 100%;
+          max-width: calc(100% / 3);
+          @include adaptive(424) {
+            max-width: calc(100% / 2);
+          }
         }
 
         .rarity__btn {
           max-width: 133px;
           @include adaptive(991) {
-            max-width: calc((100% - 15px) / 2);
             margin-right: 0;
             margin-bottom: 15px;
           }
@@ -233,7 +238,6 @@
             max-width: 133px;
           }
           @include adaptive(575) {
-            max-width: calc((100% - 15px) / 2);
             margin-right: 0;
             margin-bottom: 15px;
           }

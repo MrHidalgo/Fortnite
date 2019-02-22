@@ -19,10 +19,16 @@ section#rarity.rarity
       p.rarity__title!= "Rarity:"
 
       .rarity__btn-wrapper.rarity__btn-wrapper-0
-        a.rarity__btn.rarity__btn--green(href="#" class="" title="")!= "Uncommon<br>Emotes"
-        a.rarity__btn.rarity__btn--blue(href="#" class="" title="")!= "Rare Emotes"
-        a.rarity__btn.rarity__btn--purple(href="#" class="" title="")!= "Epic Emotes"
-        a.rarity__btn.rarity__btn--black(href="#" class="" title="")!= "Common Emotes"
+        div
+          a.rarity__btn.rarity__btn--legendary(href="#" class="" title="")!= "Legendary<br>Emotes"
+        div
+          a.rarity__btn.rarity__btn--uncommon(href="#" class="" title="")!= "Uncommon<br>Emotes"
+        div
+          a.rarity__btn.rarity__btn--rare(href="#" class="" title="")!= "Rare Emotes"
+        div
+          a.rarity__btn.rarity__btn--epic(href="#" class="" title="")!= "Epic Emotes"
+        div
+          a.rarity__btn.rarity__btn--default(href="#" class="" title="")!= "Common Emotes"
 
     .rarity__row.rarity__row-1
       p.rarity__title!= "Categories:"
