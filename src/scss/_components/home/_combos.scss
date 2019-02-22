@@ -223,6 +223,7 @@
       justify-content: flex-end;
       width: 100%;
       max-width: calc(100% - 245px);
+      min-height: 572px;
       padding-left: 15px;
       padding-right: 15px;
       @include adaptive(1199) {
@@ -235,6 +236,7 @@
         height: auto;
         margin-left: auto;
         margin-right: auto;
+        filter: drop-shadow(15px 5px 0px #171f32);
       }
 
       .e-skin__block-points {
