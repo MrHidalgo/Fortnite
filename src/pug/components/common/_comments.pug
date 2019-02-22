@@ -64,6 +64,9 @@ section#comments.comments
               p.comments__messages-time!= commentsDataArr[idx].time
               p.comments__messages-text!= commentsDataArr[idx].text
 
+            .comments__messages-bottom
+              a(href="#" class="" title="")!= "Reply"
+
             .comments__messages-badge
               a.comments__btn-like(href="#" class="" title="")
                 i.icon-font.icon-like

@@ -56,6 +56,7 @@
     overflow: hidden;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     min-height: 189px;
     margin-bottom: 31px;
@@ -126,6 +127,34 @@
       @include adaptive(575) {
         max-width: calc(100% - 79px);
         padding-top: 34px;
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      max-width: 100%;
+      padding: 15px;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 75px;
+        height: 35px;
+        background-color: #daf0f8;
+        clip-path: polygon(0 0, 100% 2%, 99% 97%, 1% 98%);
+        color: #273c43;
+        font-size: 18px;
+        text-transform: uppercase;
+        @include transition(clip-path);
+
+        &:hover {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          @include transition(clip-path);
+        }
       }
     }
 

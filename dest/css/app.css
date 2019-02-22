@@ -5616,23 +5616,18 @@ picture {
 }
 
 /* line 117, src/scss/_components/common/_reply.scss */
-.reply__wrapper-left .c-form .c-btn {
-  margin-left: auto;
-}
-
-/* line 123, src/scss/_components/common/_reply.scss */
 .reply__wrapper-right {
   width: 370px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 123, src/scss/_components/common/_reply.scss */
+  /* line 117, src/scss/_components/common/_reply.scss */
   .reply__wrapper-right {
     display: none;
   }
 }
 
-/* line 131, src/scss/_components/common/_reply.scss */
+/* line 125, src/scss/_components/common/_reply.scss */
 .reply__title {
   position: relative;
   display: -webkit-box;
@@ -5651,20 +5646,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 131, src/scss/_components/common/_reply.scss */
+  /* line 125, src/scss/_components/common/_reply.scss */
   .reply__title {
     height: calc(75px + 25 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 131, src/scss/_components/common/_reply.scss */
+  /* line 125, src/scss/_components/common/_reply.scss */
   .reply__title {
     height: 100px;
   }
 }
 
-/* line 142, src/scss/_components/common/_reply.scss */
+/* line 136, src/scss/_components/common/_reply.scss */
 .reply__title:before {
   content: '';
   z-index: -1;
@@ -5678,27 +5673,27 @@ picture {
           clip-path: polygon(0 100%, 75% 15%, 100% 0, 100% 100%, 0 100%);
 }
 
-/* line 154, src/scss/_components/common/_reply.scss */
+/* line 148, src/scss/_components/common/_reply.scss */
 .reply__title .icon-font {
   color: #fff;
   font-size: 20px;
 }
 
 @media screen and (min-width: 320px) {
-  /* line 154, src/scss/_components/common/_reply.scss */
+  /* line 148, src/scss/_components/common/_reply.scss */
   .reply__title .icon-font {
     font-size: calc(20px + 15 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 154, src/scss/_components/common/_reply.scss */
+  /* line 148, src/scss/_components/common/_reply.scss */
   .reply__title .icon-font {
     font-size: 35px;
   }
 }
 
-/* line 159, src/scss/_components/common/_reply.scss */
+/* line 153, src/scss/_components/common/_reply.scss */
 .reply__title h3 {
   padding-left: 10px;
   color: #fff;
@@ -5709,16 +5704,62 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 159, src/scss/_components/common/_reply.scss */
+  /* line 153, src/scss/_components/common/_reply.scss */
   .reply__title h3 {
     font-size: calc(30px + 18 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 159, src/scss/_components/common/_reply.scss */
+  /* line 153, src/scss/_components/common/_reply.scss */
   .reply__title h3 {
     font-size: 48px;
+  }
+}
+
+/* line 163, src/scss/_components/common/_reply.scss */
+.reply__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 424px) {
+  /* line 163, src/scss/_components/common/_reply.scss */
+  .reply__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 30px;
+  }
+  /* line 171, src/scss/_components/common/_reply.scss */
+  .reply__row button,
+  .reply__row a {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* line 178, src/scss/_components/common/_reply.scss */
+.reply__row .c-form__field {
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 424px) {
+  /* line 178, src/scss/_components/common/_reply.scss */
+  .reply__row .c-form__field {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -5840,6 +5881,8 @@ picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   min-height: 189px;
   margin-bottom: 31px;
@@ -5857,7 +5900,7 @@ picture {
   }
 }
 
-/* line 70, src/scss/_components/common/_comments.scss */
+/* line 71, src/scss/_components/common/_comments.scss */
 .comments__messages-figure {
   z-index: 0;
   position: absolute;
@@ -5867,88 +5910,139 @@ picture {
   height: 100%;
 }
 
-/* line 78, src/scss/_components/common/_comments.scss */
+/* line 79, src/scss/_components/common/_comments.scss */
 .comments__messages-figure img {
   position: absolute;
 }
 
-/* line 81, src/scss/_components/common/_comments.scss */
+/* line 82, src/scss/_components/common/_comments.scss */
 .comments__messages-figure img:nth-of-type(1) {
   top: -10px;
   left: 15%;
 }
 
-/* line 86, src/scss/_components/common/_comments.scss */
+/* line 87, src/scss/_components/common/_comments.scss */
 .comments__messages-figure img:nth-of-type(2) {
   bottom: 0;
   left: 10px;
 }
 
-/* line 93, src/scss/_components/common/_comments.scss */
+/* line 94, src/scss/_components/common/_comments.scss */
 .comments__messages--main {
   max-width: calc(100% - (12px + 43px));
 }
 
 @media screen and (max-width: 767px) {
-  /* line 93, src/scss/_components/common/_comments.scss */
+  /* line 94, src/scss/_components/common/_comments.scss */
   .comments__messages--main {
     max-width: 100%;
   }
 }
 
-/* line 99, src/scss/_components/common/_comments.scss */
+/* line 100, src/scss/_components/common/_comments.scss */
 .comments__messages--additional {
   max-width: calc(100% - (104px + 43px));
 }
 
 @media screen and (max-width: 767px) {
-  /* line 99, src/scss/_components/common/_comments.scss */
+  /* line 100, src/scss/_components/common/_comments.scss */
   .comments__messages--additional {
     max-width: calc(100% - (45px));
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 99, src/scss/_components/common/_comments.scss */
+  /* line 100, src/scss/_components/common/_comments.scss */
   .comments__messages--additional {
     max-width: calc(100% - (30px));
   }
 }
 
-/* line 109, src/scss/_components/common/_comments.scss */
+/* line 110, src/scss/_components/common/_comments.scss */
 .comments__messages-left, .comments__messages-right {
   z-index: 1;
   position: relative;
 }
 
-/* line 115, src/scss/_components/common/_comments.scss */
+/* line 116, src/scss/_components/common/_comments.scss */
 .comments__messages-left {
   width: 116px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 115, src/scss/_components/common/_comments.scss */
+  /* line 116, src/scss/_components/common/_comments.scss */
   .comments__messages-left {
     width: 79px;
     padding-top: 34px;
   }
 }
 
-/* line 123, src/scss/_components/common/_comments.scss */
+/* line 124, src/scss/_components/common/_comments.scss */
 .comments__messages-right {
   width: 100%;
   max-width: calc(100% - 116px);
 }
 
 @media screen and (max-width: 575px) {
-  /* line 123, src/scss/_components/common/_comments.scss */
+  /* line 124, src/scss/_components/common/_comments.scss */
   .comments__messages-right {
     max-width: calc(100% - 79px);
     padding-top: 34px;
   }
 }
 
-/* line 132, src/scss/_components/common/_comments.scss */
+/* line 133, src/scss/_components/common/_comments.scss */
+.comments__messages-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+}
+
+/* line 140, src/scss/_components/common/_comments.scss */
+.comments__messages-bottom a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 75px;
+  height: 35px;
+  background-color: #daf0f8;
+  -webkit-clip-path: polygon(0 0, 100% 2%, 99% 97%, 1% 98%);
+          clip-path: polygon(0 0, 100% 2%, 99% 97%, 1% 98%);
+  color: #273c43;
+  font-size: 18px;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-clip-path 0.3s ease-in-out;
+  transition: -webkit-clip-path 0.3s ease-in-out;
+  -o-transition: clip-path 0.3s ease-in-out;
+  transition: clip-path 0.3s ease-in-out;
+  transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
+}
+
+/* line 154, src/scss/_components/common/_comments.scss */
+.comments__messages-bottom a:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-transition: -webkit-clip-path 0.3s ease-in-out;
+  transition: -webkit-clip-path 0.3s ease-in-out;
+  -o-transition: clip-path 0.3s ease-in-out;
+  transition: clip-path 0.3s ease-in-out;
+  transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
+}
+
+/* line 161, src/scss/_components/common/_comments.scss */
 .comments__messages-badge {
   z-index: 1;
   position: absolute;
@@ -5972,34 +6066,34 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 132, src/scss/_components/common/_comments.scss */
+  /* line 161, src/scss/_components/common/_comments.scss */
   .comments__messages-badge {
     max-width: calc(165px + 30 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 132, src/scss/_components/common/_comments.scss */
+  /* line 161, src/scss/_components/common/_comments.scss */
   .comments__messages-badge {
     max-width: 195px;
   }
 }
 
 @media screen and (min-width: 320px) {
-  /* line 132, src/scss/_components/common/_comments.scss */
+  /* line 161, src/scss/_components/common/_comments.scss */
   .comments__messages-badge {
     height: calc(49px + 31 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 132, src/scss/_components/common/_comments.scss */
+  /* line 161, src/scss/_components/common/_comments.scss */
   .comments__messages-badge {
     height: 80px;
   }
 }
 
-/* line 146, src/scss/_components/common/_comments.scss */
+/* line 175, src/scss/_components/common/_comments.scss */
 .comments__messages-badge > a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6018,28 +6112,28 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 158, src/scss/_components/common/_comments.scss */
+/* line 187, src/scss/_components/common/_comments.scss */
 .comments__messages-badge > a .icon-font {
   position: relative;
   font-size: 20px;
 }
 
-/* line 162, src/scss/_components/common/_comments.scss */
+/* line 191, src/scss/_components/common/_comments.scss */
 .comments__messages-badge > a .icon-like {
   top: -4px;
 }
 
-/* line 165, src/scss/_components/common/_comments.scss */
+/* line 194, src/scss/_components/common/_comments.scss */
 .comments__messages-badge > a .icon-dislike {
   bottom: -3px;
 }
 
-/* line 170, src/scss/_components/common/_comments.scss */
+/* line 199, src/scss/_components/common/_comments.scss */
 .comments__messages-badge > a span {
   padding-left: 5px;
 }
 
-/* line 176, src/scss/_components/common/_comments.scss */
+/* line 205, src/scss/_components/common/_comments.scss */
 .comments__messages-photo {
   overflow: hidden;
   position: relative;
@@ -6049,14 +6143,14 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 176, src/scss/_components/common/_comments.scss */
+  /* line 205, src/scss/_components/common/_comments.scss */
   .comments__messages-photo {
     width: 64px;
     height: 64px;
   }
 }
 
-/* line 187, src/scss/_components/common/_comments.scss */
+/* line 216, src/scss/_components/common/_comments.scss */
 .comments__messages-photo img {
   position: absolute;
   top: 0;
@@ -6069,7 +6163,7 @@ picture {
      object-position: center;
 }
 
-/* line 198, src/scss/_components/common/_comments.scss */
+/* line 227, src/scss/_components/common/_comments.scss */
 .comments__messages-name {
   padding-bottom: 15px;
   line-height: 1;
@@ -6077,20 +6171,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 198, src/scss/_components/common/_comments.scss */
+  /* line 227, src/scss/_components/common/_comments.scss */
   .comments__messages-name {
     font-size: calc(20px + 4 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 198, src/scss/_components/common/_comments.scss */
+  /* line 227, src/scss/_components/common/_comments.scss */
   .comments__messages-name {
     font-size: 24px;
   }
 }
 
-/* line 204, src/scss/_components/common/_comments.scss */
+/* line 233, src/scss/_components/common/_comments.scss */
 .comments__messages-time {
   padding-bottom: 22px;
   color: #bfbfbf;
@@ -6100,20 +6194,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 204, src/scss/_components/common/_comments.scss */
+  /* line 233, src/scss/_components/common/_comments.scss */
   .comments__messages-time {
     font-size: calc(14px + 2 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 204, src/scss/_components/common/_comments.scss */
+  /* line 233, src/scss/_components/common/_comments.scss */
   .comments__messages-time {
     font-size: 16px;
   }
 }
 
-/* line 212, src/scss/_components/common/_comments.scss */
+/* line 241, src/scss/_components/common/_comments.scss */
 .comments__messages-text {
   color: #657782;
   line-height: 1.66667;
@@ -6123,14 +6217,14 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 212, src/scss/_components/common/_comments.scss */
+  /* line 241, src/scss/_components/common/_comments.scss */
   .comments__messages-text {
     font-size: calc(16px + 2 * (100vw - 320px) / 1120);
   }
 }
 
 @media screen and (min-width: 1440px) {
-  /* line 212, src/scss/_components/common/_comments.scss */
+  /* line 241, src/scss/_components/common/_comments.scss */
   .comments__messages-text {
     font-size: 18px;
   }

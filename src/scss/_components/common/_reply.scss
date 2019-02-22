@@ -112,12 +112,6 @@
       @include adaptive(767) {
         max-width: 100%;
       }
-
-      .c-form {
-        .c-btn {
-          margin-left: auto;
-        }
-      }
     }
 
     &-right {
@@ -163,6 +157,33 @@
       text-transform: uppercase;
       text-shadow: 0 10px 9px rgba($c-black, 0.017);
       @include fluid(font-size, 320px, 1440px, 30px, 48px);
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include adaptive(424) {
+      flex-direction: column;
+      padding-bottom: 30px;
+
+      button,
+      a {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .c-form__field {
+      margin-bottom: 0;
+      margin-right: 15px;
+      @include adaptive(424) {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
   }
 }

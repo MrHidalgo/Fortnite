@@ -31,7 +31,10 @@ section#reply.reply
 
               +formInput(dataFormObj.inputEmail)
 
-          +formBtn('', 'c-btn c-btn--bg', 'Post Comment <span>></span>')
+          .reply__row
+            +formBtn('', 'c-btn c-btn--bg', 'Post Comment <i class="icon-font icon-arr-dcc"></i>')
+            a.item__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "Cancel reply <i class='icon-font icon-arr-dcc'></i>"
+
 
       .reply__wrapper-right
 
