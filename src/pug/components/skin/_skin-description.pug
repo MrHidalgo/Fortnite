@@ -20,9 +20,6 @@ section.skin.skin--description
 
         p.skin__description-desc!= "The red menace of Anarchy Acres."
 
-        if(pageClassName === 'p-combo')
-          p.skin__description-desc!= "Transforms by dealing damage, or outliving</br>other players."
-
         if(pageClassName === 'p-skin')
           .skin__description-subtitle.skin__description-subtitle-0
             .info__subtitle
@@ -101,7 +98,9 @@ section.skin.skin--description
               -for(var i = 0; i < 4; i++)
                 .skin__description-skin-col
                   a(href="#").skin__description-skin-left
-                    .b-skin.b-skin--small.b-skin--epic
+                    .b-skin.b-skin--small(
+                      class!= (i === 0) ? 'b-skin--common':(i === 1) ? 'b-skin--uncommon':(i === 2) ? 'b-skin--epic':'b-skin--legendary'
+                    )
                       img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
                   .skin__description-skin-right
                     a(href="#")

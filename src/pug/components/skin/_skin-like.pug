@@ -1,39 +1,5 @@
 // SECTION skin like :: START
 
-mixin emotesSkinBlock(classMod, classSkinName, badgeName, imgName)
-  .e-skin__block(class!= "e-skin__block-" + classMod + ' e-skin__block--' + classSkinName)
-    .e-skin__block-left
-      a(href='#').e-skin__block-image
-
-        img(src="./img/" + imgName + ".png" srcset="./img/" + imgName + "@2x.png 2x" alt="" title="")
-
-        .e-skin__block-badge
-          i.icon-font.icon-diamond
-          span!= badgeName
-
-        .e-skin__block-view
-          i.icon-font.icon-cube
-          span!= "3d"
-
-    .e-skin__block-right
-      .e-skin__block-figure
-        img(src="./img/img-skin-triangle-0.svg" alt="" title="")
-        img(src="./img/img-skin-triangle-1.svg" alt="" title="")
-        img(src="./img/img-skin-triangle-2.svg" alt="" title="")
-
-      .e-skin__block-content
-        a(href='#')
-          h3.e-skin__block-name!= "Skin name"
-        .e-skin__block-points
-          img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
-          span!= "1500"
-
-        p.e-skin__block-desc!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem."
-        p.e-skin__block-date!= "<span>October 10, 2018</span> | <a href='#'>Emotes</span>"
-        a.e-skin__block-comments(href="#" class="" title="")
-          i.icon-font.icon-bubble
-          span!= "35 comments"
-
 section.skin.skin--like
 
   .section-resize(section-resize-js)
@@ -51,56 +17,49 @@ section.skin.skin--like
       .skin__like-header
         h2!= "You might also like"
 
-      if(pageClassName === 'p-combo')
-        .e-skin__block-wrapper
+      .skin__like-body
+        a(href='#').skin__like-block
+          div
+            .b-skin.b-skin--small(
+              class!= 'b-skin--rare'
+            )
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+          div
+            h3!= "Skin Name"
+            p!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
 
-          +emotesSkinBlock(0, 'epic', 'epic', 'img-skin-epic')
-          +emotesSkinBlock(1, 'uncommon', 'uncommon', 'img-skin-uncommon')
+        a(href='#').skin__like-block
+          div
+            .b-skin.b-skin--small(
+            class!= 'b-skin--epic'
+            )
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 
-      if(pageClassName === 'p-skin')
-        .skin__like-body
-          a(href='#').skin__like-block
-            div
-              .b-skin.b-skin--small(
-                class!= 'b-skin--rare'
-              )
-                img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
-            div
-              h3!= "Skin Name"
-              p!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
+          div
+            h3!= "Skin Name"
+            p!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
 
-          a(href='#').skin__like-block
-            div
-              .b-skin.b-skin--small(
-              class!= 'b-skin--epic'
-              )
-                img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+        a(href='#').skin__like-block
+          div
+            .b-skin.b-skin--small(
+            class!= 'b-skin--legendary'
+            )
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 
-            div
-              h3!= "Skin Name"
-              p!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
+          div
+            h3!= "Skin Name"
+            p!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
 
-          a(href='#').skin__like-block
-            div
-              .b-skin.b-skin--small(
-              class!= 'b-skin--legendary'
-              )
-                img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+        a(href='#').skin__like-block
+          div
+            .b-skin.b-skin--small(
+            class!= 'b-skin--common'
+            )
+              img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
 
-            div
-              h3!= "Skin Name"
-              p!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
-
-          a(href='#').skin__like-block
-            div
-              .b-skin.b-skin--small(
-              class!= 'b-skin--uncommon'
-              )
-                img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
-
-            div
-              h3!= "Skin Name"
-              p!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
+          div
+            h3!= "Skin Name"
+            p!= "Lorem ipsum dolor sit amet, cetur adipiscing elit. Nunc non congue nibh. Vivamus tempor sem ullper viverra accumsan."
 
 
 // SECTION skin like :: END
