@@ -57,67 +57,33 @@ section.skin.skin--main
     .skin__main.skin__main-1
       .skin__body
 
-        if(pageClassName === 'p-combo')
-          .cm-skin__wrapper.cm-skin__wrapper--half
-            -
-              var comboData = [
-              {
-              classMod: 'epic',
-              comboName: 'Malcore wings'
-              },
-              {
-              classMod: 'epic',
-              comboName: 'evil eye'
-              },
-              {
-              classMod: 'epic',
-              comboName: 'swarm'
-              },
-              {
-              classMod: 'epic',
-              comboName: 'Malcore wings'
-              },
-              {
-              classMod: 'epic',
-              comboName: 'evil eye'
-              },
-              {
-              classMod: 'epic',
-              comboName: 'swarm'
-              },
-              ];
-            each val, idx in comboData
+        .skin__main-image
+
+          //img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
+
+          .skin__main-image-area
+            i.icon-png.i-area
+
+            span
+              i.icon-font.icon-close
+
+            form.c-form
+              .c-form__group.c-form__group--two
+                .c-form__group-col.c-form__group-col-0
+                  +formInput(dataFormObj.inputName)
+
+                .c-form__group-col.c-form__group-col-1
+
+                  +formInput(dataFormObj.inputEmail)
+
+              +formTextarea(dataFormObj.textareaField)
+
               div
-                +comboSkin(comboData[idx].classMod, comboData[idx].comboName)
-
-        if(pageClassName === 'p-skin')
-          .skin__main-image
-
-            //img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")
-
-            .skin__main-image-area
-              i.icon-png.i-area
-
-              span
-                i.icon-font.icon-close
-
-              form.c-form
-                .c-form__group.c-form__group--two
-                  .c-form__group-col.c-form__group-col-0
-                    +formInput(dataFormObj.inputName)
-
-                  .c-form__group-col.c-form__group-col-1
-
-                    +formInput(dataFormObj.inputEmail)
-
-                +formTextarea(dataFormObj.textareaField)
-
-                div
-                  a.c-btn.c-btn--bg(href="#" class="" title="")
-                    i.icon-font.icon-send
+                a.c-btn.c-btn--bg(href="#" class="" title="")
+                  i.icon-font.icon-send
 
 
-            a.skin__main-image-fullscreen(href="#" class="" title="")
-              i.icon-font.icon-fullscreen
+          a.skin__main-image-fullscreen(href="#" class="" title="")
+            i.icon-font.icon-fullscreen
 
 // SECTION skin main :: END

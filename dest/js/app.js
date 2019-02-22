@@ -493,8 +493,13 @@ $(document).ready(function (ev) {
    */
   var initImageCompare = function initImageCompare() {
     $("[compare-box-js]").twentytwenty({
-      click_to_move: true,
+      click_to_move: false,
       no_overlay: true
+    });
+
+    $('.skin__description-block > .twentytwenty-wrapper').css({
+      'width': '100%',
+      'maxWidth': $('.skin__description-block img')[0].naturalWidth
     });
   };
 

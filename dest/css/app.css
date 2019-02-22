@@ -28417,7 +28417,7 @@ picture {
 /* line 721, src/scss/_components/skin/_skin.scss */
 .skin__description-block {
   position: relative;
-  width: 621px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -28438,7 +28438,7 @@ picture {
   }
 }
 
-/* line 737, src/scss/_components/skin/_skin.scss */
+/* line 736, src/scss/_components/skin/_skin.scss */
 .skin__description-block img {
   display: block;
   max-width: 100%;
@@ -28449,7 +28449,13 @@ picture {
   right: 0;
 }
 
-/* line 747, src/scss/_components/skin/_skin.scss */
+/* line 746, src/scss/_components/skin/_skin.scss */
+.skin__description-block > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 751, src/scss/_components/skin/_skin.scss */
 .skin__description-block .twentytwenty-handle {
   cursor: ew-resize;
   top: 0;

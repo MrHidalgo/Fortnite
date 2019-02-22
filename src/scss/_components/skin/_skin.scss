@@ -720,8 +720,7 @@
 
     &-block {
       position: relative;
-      width: 621px;
-      //min-height: 261px;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 20px;
@@ -744,13 +743,14 @@
         right: 0;
       }
 
+      > div {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       .twentytwenty-handle {
         cursor: ew-resize;
-        //position: absolute;
-        //z-index: 10;
         top: 0;
-        //left: 50%;
-        //transform: translateX(-50%);
         width: 9px;
         height: 100%;
         background-color: #b70e0e;
