@@ -1,7 +1,7 @@
 ---
-title: Fortnite - combos full page
+title: Fortnite - combo single page
 
-pageClassName: p-combos
+pageClassName: p-combo
 ---
 extends shared/_layout
 
@@ -17,9 +17,12 @@ block content
 
             section#combo
 
-              include ./components/combo/_combo-skins
+              .updated--medium
+                include ./components/common/_updated
 
-              include ./components/common/_pagination
+              include ./components/common/_breadcrumbs
+
+              include ./components/combo/_combo-like
 
           .section__wrapper-right(section-right-js)
 
@@ -31,3 +34,13 @@ block content
             include components/common/_combos
             include components/common/_royal
             include components/common/_categories
+
+    include components/common/_reply
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include components/common/_comments
+
+          .section__wrapper-right
