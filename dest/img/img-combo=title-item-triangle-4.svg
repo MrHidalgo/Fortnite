@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59" height="26" viewBox="0 0 59 26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #34606f;
+        stroke: #23d6fe;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="img-combo_title-item-triangle-4" data-name="img-combo=title-item-triangle-4" class="cls-1" d="M790,512l-56-2,52,23Z" transform="translate(-732.5 -508.5)"/>
+</svg>
