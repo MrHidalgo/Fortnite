@@ -1,0 +1,101 @@
+// SECTION combo :: START
+
+#combo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 696px;
+  margin-left: auto;
+  @include adaptive(1199) {
+    max-width: 100%;
+  }
+  @include adaptive(767) {
+    overflow: hidden;
+  }
+}
+
+.combo {
+  &__like {
+    .skin__like-body {
+      padding-bottom: 100px;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      > div {
+        width: 100%;
+        max-width: calc((100% - 10px) / 2);
+        margin-bottom: 30px;
+      }
+    }
+
+    .combos {
+      &__box {
+        &-bg,
+        &-triangle ,
+        &-bottom {
+          display: none;
+        }
+
+        &-left {
+          max-width: calc(100% - 144px);
+          min-height: 0;
+          padding-left: 5px;
+          padding-right: 10px;
+
+          .e-skin__block-points {
+            img {
+              transform: scale(0.8);
+            }
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+
+        &-right {
+          width: 144px;
+          padding-top: 30px;
+        }
+
+        &-title {
+          height: 34px;
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+
+      &__block {
+        width: 62px;
+        margin-right: 10px;
+
+        &-top {
+          height: 62px;
+        }
+
+        &-bottom  {
+          p {
+            font-size: 14px;
+            padding-bottom: 0;
+          }
+        }
+
+        &-badge {
+          width: 17px;
+          height: 17px;
+
+          i {
+            transform: scale(0.3);
+          }
+        }
+      }
+    }
+  }
+}
+
+// SECTION combo :: END

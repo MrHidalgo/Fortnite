@@ -5,6 +5,7 @@
   var historyDataArr = ['Home', 'Shop History', '07.26.2018'];
   var skinDataArr = ['Home', 'Outfits', 'Red Knight'];
   var berginnerDataArr = ['Home', 'Guides', 'Fortnite Battle Royale: Beginner’s Tips'];
+  var combosDataArr = ['Home', 'Outfits', 'Red Knight'];
 
 section#breadcrumbs.breadcrumbs
   .c-grid
@@ -53,6 +54,22 @@ section#breadcrumbs.breadcrumbs
               a.breadcrumbs__link(href="#" class="" title="")!= val
 
             if(idx < skinDataArr.length - 1)
+              li.breadcrumbs__item
+                span.breadcrumbs__icon
+                  i.icon-font.icon-arr-dcc
+                  i.icon-font.icon-arr-dcc
+
+        ul.breadcrumbs__list
+          li.breadcrumbs__item
+            a.breadcrumbs__link(href="#" class="" title="")!= "Legendary Outfits"
+
+      else if(pageClassName === 'p-combos')
+        ul.breadcrumbs__list
+          each val, idx in combosDataArr
+            li.breadcrumbs__item
+              a.breadcrumbs__link(href="#" class="" title="")!= val
+
+            if(idx < combosDataArr.length - 1)
               li.breadcrumbs__item
                 span.breadcrumbs__icon
                   i.icon-font.icon-arr-dcc

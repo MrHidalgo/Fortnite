@@ -1,7 +1,7 @@
 ---
 title: Fortnite - combo
 
-pageClassName: p-combo
+pageClassName: p-combos
 ---
 extends shared/_layout
 
@@ -15,32 +15,16 @@ block content
         .section__wrapper
           .section__wrapper-left
 
-            section#skin
+            section#combo
 
-              include ./components/skin/_skin-main
-              include ./components/skin/_skin-description
-
-              //section.s-leak
-                include ./components/leaked/_s-leak-preview
-
-              //include ./components/skin/_skin-gameplay
-              //include ./components/skin/_skin-gallery
-              //include ./components/skin/_skin-styles
-              //include ./components/skin/_skin-images
-
-              //section.s-leak
-                include ./components/leaked/_s-leak-audio
-
-              //include ./components/skin/_skin-history
+              include ./components/common/_pagination
 
               .updated--medium
                 include ./components/common/_updated
 
               include ./components/common/_breadcrumbs
 
-              include ./components/beginners/_beginners-comments
-
-              include ./components/skin/_skin-like
+              include ./components/combo/_combo-like
 
           .section__wrapper-right(section-right-js)
 

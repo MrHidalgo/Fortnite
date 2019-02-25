@@ -1275,8 +1275,8 @@ picture {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-clip-path: polygon(0 0, 99% 5%, 100% 95%, 0 100%);
-          clip-path: polygon(0 0, 99% 5%, 100% 95%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 99% 50px, 100% 97%, 0 100%);
+          clip-path: polygon(0 0, 99% 50px, 100% 97%, 0 100%);
 }
 
 /* line 40, src/scss/_shared/_common.scss */
@@ -29865,7 +29865,7 @@ picture {
 
 /* line 1748, src/scss/_components/skin/_skin.scss */
 .skin--like .section-resize-triangle img:nth-of-type(3) {
-  bottom: -3%;
+  bottom: -30px;
   left: 30%;
 }
 
@@ -29878,13 +29878,13 @@ picture {
 
 /* line 1755, src/scss/_components/skin/_skin.scss */
 .skin--like .section-resize-triangle img:nth-of-type(4) {
-  bottom: -5%;
+  bottom: -35px;
   right: 10%;
 }
 
 /* line 1759, src/scss/_components/skin/_skin.scss */
 .skin--like .section-resize-triangle img:nth-of-type(5) {
-  bottom: -2%;
+  bottom: -15px;
   right: 0;
 }
 
@@ -30050,6 +30050,129 @@ picture {
 /* line 1864, src/scss/_components/skin/_skin.scss */
 .skin__like .e-skin__block-wrapper .e-skin__block-desc {
   max-width: 90%;
+}
+
+/* line 3, src/scss/_components/combo/_combo.scss */
+#combo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 696px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 3, src/scss/_components/combo/_combo.scss */
+  #combo {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/combo/_combo.scss */
+  #combo {
+    overflow: hidden;
+  }
+}
+
+/* line 19, src/scss/_components/combo/_combo.scss */
+.combo__like .skin__like-body {
+  padding-bottom: 100px;
+}
+
+/* line 23, src/scss/_components/combo/_combo.scss */
+.combo__like-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 28, src/scss/_components/combo/_combo.scss */
+.combo__like-wrapper > div {
+  width: 100%;
+  max-width: calc((100% - 10px) / 2);
+  margin-bottom: 30px;
+}
+
+/* line 37, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__box-bg, .combo__like .combos__box-triangle, .combo__like .combos__box-bottom {
+  display: none;
+}
+
+/* line 43, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__box-left {
+  max-width: calc(100% - 144px);
+  min-height: 0;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+/* line 50, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__box-left .e-skin__block-points img {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+/* line 53, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__box-left .e-skin__block-points span {
+  font-size: 14px;
+}
+
+/* line 59, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__box-right {
+  width: 144px;
+  padding-top: 30px;
+}
+
+/* line 64, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__box-title {
+  height: 34px;
+}
+
+/* line 67, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__box-title p {
+  font-size: 16px;
+}
+
+/* line 73, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__block {
+  width: 62px;
+  margin-right: 10px;
+}
+
+/* line 77, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__block-top {
+  height: 62px;
+}
+
+/* line 82, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__block-bottom p {
+  font-size: 14px;
+  padding-bottom: 0;
+}
+
+/* line 88, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__block-badge {
+  width: 17px;
+  height: 17px;
+}
+
+/* line 92, src/scss/_components/combo/_combo.scss */
+.combo__like .combos__block-badge i {
+  -webkit-transform: scale(0.3);
+      -ms-transform: scale(0.3);
+          transform: scale(0.3);
 }
 
 /*# sourceMappingURL=maps/app.css.map */

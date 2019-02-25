@@ -1746,18 +1746,18 @@
             left: 20%;
           }
           &:nth-of-type(3) {
-            bottom: -3%;
+            bottom: -30px;
             left: 30%;
             @include adaptive(767) {
               display: none;
             }
           }
           &:nth-of-type(4) {
-            bottom: -5%;
+            bottom: -35px;
             right: 10%;
           }
           &:nth-of-type(5) {
-            bottom: -2%;
+            bottom: -15px;
             right: 0;
             @include adaptive(767) {
               display: none;

@@ -8,8 +8,11 @@ PageList:
 - file: skin.html
   titleName: Skin
   ready: 96
-- file: combo.html
+- file: combo-single.html
   titleName: Combo
+  ready: 96
+- file: combo-full.html
+  titleName: Combos
   ready: 96
 - file: sets.html
   titleName: Sets

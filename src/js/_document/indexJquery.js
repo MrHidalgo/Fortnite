@@ -222,10 +222,12 @@ $(document).ready((ev) => {
       no_overlay: true
     });
 
-    $('.skin__description-block > .twentytwenty-wrapper').css({
-      'width' : '100%',
-      'maxWidth' : $('.skin__description-block img')[0].naturalWidth
-    });
+    if($('.twentytwenty-wrapper').length > 0) {
+      $('.skin__description-block > .twentytwenty-wrapper').css({
+        'width' : '100%',
+        'maxWidth' : $('.skin__description-block img')[0].naturalWidth
+      });
+    }
   };
 
 
