@@ -60,7 +60,9 @@
     .p-beginners &,
     .p-home &,
     .p-leaked-sub &,
-    .p-history & {
+    .p-history &,
+    .p-combos &,
+    .p-combo & {
       @include adaptive(991) {
         flex-wrap: wrap;
       }
@@ -97,7 +99,9 @@
       .p-beginners &,
       .p-home &,
       .p-leaked-sub &,
-      .p-history & {
+      .p-history &,
+      .p-combos &,
+      .p-combo &  {
         @include adaptive(991) {
           max-width: 100%;
           padding-right: 0;
@@ -130,7 +134,9 @@
       .p-beginners &,
       .p-home &,
       .p-leaked-sub &,
-      .p-history & {
+      .p-history &,
+      .p-combos &,
+      .p-combo & {
         @include adaptive(991) {
           max-width: 100%;
         }

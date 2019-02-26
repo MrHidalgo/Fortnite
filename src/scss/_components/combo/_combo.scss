@@ -168,9 +168,64 @@
         text-transform: uppercase;
         color: rgb(255, 255, 255);
         line-height: 1.2;
+        @include adaptive(991) {
+          font-size: 50px;
+        }
+        @include adaptive(575) {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .combos {
+      &__box {
+        &-left {
+          @include adaptive(991) {
+            max-width: calc(100% - 245px);
+          }
+          @include adaptive(767) {
+            max-width: 100%;
+          }
+        }
+        &-right {
+          @include adaptive(991) {
+            width: 245px;
+            padding: 0;
+            padding-top: 80px;
+            padding-right: 15px;
+
+            > div {
+              width: calc(100% / 2);
+            }
+          }
+          @include adaptive(767) {
+            width: 100%;
+            padding-top: 30px;
+            padding-left: 15px;
+          }
+
+          > div {
+            @include adaptive(767) {
+              width: calc(100% / 3);
+            }
+            @include adaptive(374) {
+              width: calc(100% / 2);
+            }
+          }
+        }
       }
     }
   }
+
+  //&__drop {
+  //  position: absolute;
+  //  top: 50%;
+  //  left: 0;
+  //  width: 100%;
+  //  max-width: calc(100% + 500px);
+  //  min-height: 573px;
+  //  background-color: #e0a038;
+  //}
 
   &__custom {
     position: relative;
@@ -259,14 +314,31 @@
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         line-height: 1.2;
+        @include adaptive(1199) {
+          font-size: 40px;
+        }
+        @include adaptive(767) {
+          font-size: 35px;
+        }
+        @include adaptive(575) {
+          font-size: 28px;
+        }
       }
     }
 
     .combos {
       &__box {
         &-left {
+          @include adaptive(991) {
+            max-width: calc(100% - 245px);
+          }
+          @include adaptive(767) {
+            max-width: 100%;
+          }
+
           .combos__block {
-            width: 295px;
+            width: 100%;
+            max-width: 295px;
             height: 408px;
             margin-left: auto;
             margin-right: auto;
@@ -281,13 +353,45 @@
           }
         }
 
+        &-right {
+          @include adaptive(991) {
+            width: 245px;
+            padding-top: 80px;
+            padding-right: 15px;
+
+            > div {
+              width: calc(100% / 2);
+            }
+          }
+          @include adaptive(767) {
+            width: 100%;
+            padding-left: 15px;
+            padding-top: 30px;
+          }
+
+          > div {
+            @include adaptive(767) {
+              width: calc(100% / 3);
+            }
+            @include adaptive(374) {
+              width: calc(100% / 2);
+            }
+          }
+        }
+
         &-bottom {
           justify-content: center;
           padding-top: 30px;
+          @include adaptive(424) {
+            flex-direction: column;
+          }
 
           a {
             margin-left: 10px;
             margin-right: 10px;
+            @include adaptive(424) {
+              margin-bottom: 10px;
+            }
 
             .icon-saves {
               font-size: 26px;
@@ -329,6 +433,9 @@
       > div {
         width: 100%;
         max-width: calc((100% - 30px) / 2);
+        @include adaptive(575) {
+          max-width: 100%;
+        }
       }
     }
 
@@ -501,6 +608,9 @@
         width: 100%;
         max-width: calc((100% - 10px) / 2);
         margin-bottom: 30px;
+        @include adaptive(424) {
+          max-width: 100%;
+        }
       }
     }
 
@@ -517,6 +627,9 @@
           min-height: 0;
           padding-left: 5px;
           padding-right: 10px;
+          @include adaptive(1199) {
+            max-width: 100%;
+          }
 
           .e-skin__block-points {
             img {
@@ -532,6 +645,23 @@
           position: relative;
           width: 144px;
           padding-top: 30px;
+          @include adaptive(1199) {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          > div {
+            @include adaptive(767) {
+              width: calc(100% / 3);
+            }
+            @include adaptive(575) {
+              width: calc(100% / 2);
+            }
+            @include adaptive(424) {
+              width: calc(100% / 3);
+            }
+          }
         }
 
         &-title {
@@ -546,6 +676,9 @@
       &__block {
         width: 62px;
         margin-right: 10px;
+        @include adaptive(1199) {
+          margin-right: 0;
+        }
 
         &-top {
           height: 62px;
