@@ -132,68 +132,77 @@
 	@if $filename == menology {
 		$char: "\E023";
 	}
-	@if $filename == pinterest {
+	@if $filename == paint {
 		$char: "\E024";
 	}
-	@if $filename == play-button {
+	@if $filename == pinterest {
 		$char: "\E025";
 	}
-	@if $filename == polaroid {
+	@if $filename == play-button {
 		$char: "\E026";
 	}
-	@if $filename == preview {
+	@if $filename == plus-add {
 		$char: "\E027";
 	}
-	@if $filename == reach {
+	@if $filename == polaroid {
 		$char: "\E028";
 	}
-	@if $filename == ribbon {
+	@if $filename == preview {
 		$char: "\E029";
 	}
-	@if $filename == rss {
+	@if $filename == reach {
 		$char: "\E02A";
 	}
-	@if $filename == sales {
+	@if $filename == ribbon {
 		$char: "\E02B";
 	}
-	@if $filename == search {
+	@if $filename == rss {
 		$char: "\E02C";
 	}
-	@if $filename == send {
+	@if $filename == sales {
 		$char: "\E02D";
 	}
-	@if $filename == sets {
+	@if $filename == saves {
 		$char: "\E02E";
 	}
-	@if $filename == share {
+	@if $filename == search {
 		$char: "\E02F";
 	}
-	@if $filename == shop {
+	@if $filename == send {
 		$char: "\E030";
 	}
-	@if $filename == sound {
+	@if $filename == sets {
 		$char: "\E031";
 	}
-	@if $filename == sound2 {
+	@if $filename == share {
 		$char: "\E032";
 	}
-	@if $filename == star {
+	@if $filename == shop {
 		$char: "\E033";
 	}
-	@if $filename == strike-month {
+	@if $filename == sound {
 		$char: "\E034";
 	}
-	@if $filename == table {
+	@if $filename == sound2 {
 		$char: "\E035";
 	}
-	@if $filename == tools {
+	@if $filename == star {
 		$char: "\E036";
 	}
-	@if $filename == triangle-rotate {
+	@if $filename == strike-month {
 		$char: "\E037";
 	}
-	@if $filename == twitter {
+	@if $filename == table {
 		$char: "\E038";
+	}
+	@if $filename == tools {
+		$char: "\E039";
+	}
+	@if $filename == triangle-rotate {
+		$char: "\E03A";
+	}
+	@if $filename == twitter {
+		$char: "\E03B";
 	}
 
 	@return $char;
@@ -350,12 +359,20 @@
 	@include icon(menology);
 
 }
+.icon-paint {
+	@include icon(paint);
+
+}
 .icon-pinterest {
 	@include icon(pinterest);
 
 }
 .icon-play-button {
 	@include icon(play-button);
+
+}
+.icon-plus-add {
+	@include icon(plus-add);
 
 }
 .icon-polaroid {
@@ -380,6 +397,10 @@
 }
 .icon-sales {
 	@include icon(sales);
+
+}
+.icon-saves {
+	@include icon(saves);
 
 }
 .icon-search {

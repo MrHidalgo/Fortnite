@@ -1,0 +1,85 @@
+// SECTION :: START
+
+-
+  var combosBlock = [
+    {
+      classMod: 'custom',
+      iconName: 'outfit',
+    },
+    {
+      classMod: 'custom',
+      iconName: 'backBling',
+    },
+    {
+      classMod: 'custom',
+      iconName: 'harvestingTool',
+    },
+    {
+      classMod: 'custom',
+      iconName: 'skydivingTrails',
+    },
+    {
+      classMod: 'custom',
+      iconName: 'emoticon',
+    },
+  ];
+
+section.combo.combo__custom.combo--custom
+
+  .section-resize(section-resize-js)
+    .section-resize-bg
+    .section-resize-triangle
+      img(src="./img/img-combo-custom-triangle-0.svg" alt="" title="")
+      img(src="./img/img-combo-custom-triangle-1.svg" alt="" title="")
+      img(src="./img/img-combo-custom-triangle-2.svg" alt="" title="")
+      img(src="./img/img-combo-custom-triangle-3.svg" alt="" title="")
+      img(src="./img/img-combo-custom-triangle-4.svg" alt="" title="")
+      img(src="./img/img-combo-custom-triangle-5.svg" alt="" title="")
+
+  .combo__custom-wrapper
+
+    .combo__custom-title
+      i.icon-font.icon-paint
+      p!= "Create Your Custom Combo"
+
+    .combos__box
+
+      .combos__box-wrapper
+        .combos__box-left
+
+          a.combos__block.combos__block--custom(href="#")
+            .combos__block-top
+              i.icon-font.icon-plus-add
+
+          .combos__box-title
+            .combos__box-title--bg
+            .combos__box-title--triangle
+              img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
+              img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
+              img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
+              img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
+            p!= "Skin"
+
+        .combos__box-right
+
+          each val, idx in combosBlock
+            div
+              a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+                .combos__block-top
+                  i.icon-font.icon-plus-add
+
+                .combos__block-bottom
+                  if(idx === 0)
+                    .b-skin__info--ticker
+                      p!= "SKIN NAME"
+                  else
+                    .b-skin__info--wticker
+                      p!= "SKIN NAME"
+
+      .combos__box-wrapper
+        .combos__box-bottom
+
+          a.c-btn.c-btn--bg(href="#" class="" title="")!= "Preview <i class='icon-font icon-arr-dcc'></i>"
+          a.c-btn.c-btn--bg(href="#" class="" title="")!= "<i class='icon-font icon-saves'></i> Save Screenshot"
+
+// SECTION :: END
