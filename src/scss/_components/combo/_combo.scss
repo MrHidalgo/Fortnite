@@ -217,15 +217,161 @@
     }
   }
 
-  //&__drop {
-  //  position: absolute;
-  //  top: 50%;
-  //  left: 0;
-  //  width: 100%;
-  //  max-width: calc(100% + 500px);
-  //  min-height: 573px;
-  //  background-color: #e0a038;
-  //}
+  &__drop {
+    overflow: hidden;
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    max-height: 573px;
+
+    &-bg {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 98%;
+      background-color: #e0a038;
+      clip-path: polygon(0 0, 100% 2%, 98% 99%, 1% 100%);
+
+      &:before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #e4ac52;
+        clip-path: polygon(0 100%, 75% 80%, 100% 0, 100% 100%);
+      }
+    }
+
+    &-btn {
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      a {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+    
+    &-content {
+      overflow-y: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      height: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      > div {
+        width: 100%;
+        max-width: calc(100% / 6);
+        height: 220px;
+        max-height: 220px;
+        padding: 0 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        @include adaptive(1199) {
+          max-width: calc(100% / 5);
+        }
+        @include adaptive(991) {
+          max-width: calc(100% / 4);
+        }
+        @include adaptive(767) {
+          max-width: calc(100% / 3);
+        }
+        @include adaptive(575) {
+          max-width: calc(100% / 2);
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+
+      .combos {
+        &__box {
+          position: relative;
+          display: flex;
+
+          &.is-active {
+            .combos__box-svg {
+              opacity: 1;
+              @include transition(opacity);
+            }
+          }
+
+          &-svg {
+            opacity: 0;
+            z-index: 5;
+            position: absolute;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            @include transition(opacity);
+
+            svg {
+              width: 100%;
+              max-width: 114px;
+            }
+          }
+
+          &-left {
+            max-width: 100%;
+            min-height: 220px;
+            max-height: 100%;
+            @include adaptive(575) {
+              padding: 0;
+            }
+
+            img {
+              max-height: 100%;
+            }
+          }
+
+          &-title {
+            height: 34px;
+
+            &--triangle {
+              img {
+                transform-origin: center;
+                transform: scale(0.5);
+
+                &:nth-of-type(2) {
+                  top: -5px;
+                  right: -5px;
+                }
+                &:nth-of-type(3) {
+                  bottom: -5px;
+                  left: -5px;
+                }
+              }
+            }
+
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 
   &__custom {
     position: relative;
@@ -411,10 +557,34 @@
           align-items: center;
           justify-content: center;
 
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background-color: transparent;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            @include transition(background-color, clip-path);
+
+            &.is-open {
+              background-color: #e0a038;
+              clip-path: polygon(0 0, 100% 10%, 94% 100%, 8% 100%);
+              @include transition(background-color, clip-path);
+
+              .icon-font {
+                opacity: 1;
+                transform: scale(0.85);
+                @include transition(opacity, transform);
+              }
+            }
+           }
+
           .icon-font {
             opacity: 0.1;
             color: #ffffff;
             font-size: 43px;
+            transform-origin: center;
+            @include transition(opacity, transform);
           }
         }
       }

@@ -613,6 +613,45 @@ $(document).ready(function (ev) {
       }
     });
   };
+
+  var initComboDrop = function initComboDrop() {
+    $('[combo-drop-btn-js]').on('click', function (ev) {
+      var _headerHeight = $('header').outerHeight(true),
+          _bannerMainHeight = $('.body > .banner--main').outerHeight(true);
+
+      var _btn = $(ev.currentTarget),
+          _btnArr = $('[combo-drop-btn-js]'),
+          _btnData = _btn.find('.combos__block-top')[0].getBoundingClientRect(),
+          _btnOffsetTop = _btn.offset().top - (_headerHeight + _bannerMainHeight),
+          _btnIconHeight = _btn.find('.icon-plus-add').outerHeight(true);
+
+      var _dropNode = $('[combo-drop-js]');
+
+      if (!_btn.hasClass('is-active')) {
+        _btnArr.removeClass('is-active');
+        _btnArr.find('span').removeClass('is-open');
+
+        _btn.addClass('is-active');
+        _btn.find('.icon-plus-add').parent().addClass('is-open');
+
+        _dropNode.css({
+          'top': _btnOffsetTop + (_btnData.height / 2 + _btnIconHeight / 2)
+        }).hide().slideDown(350);
+      }
+    });
+
+    $('[combo-drop-cancel-js], [combo-drop-ok-js]').on('click', function (ev) {
+      $('.combo__drop').slideUp(350);
+      $('[combo-drop-btn-js]').removeClass('is-active');
+      $('[combo-drop-btn-js]').find('span').removeClass('is-open');
+      $('[combo-drop-skin-js]').removeClass('is-active');
+    });
+
+    $('[combo-drop-skin-js]').on('click', function (ev) {
+      $('[combo-drop-skin-js]').removeClass('is-active');
+      $(ev.currentTarget).addClass('is-active');
+    });
+  };
   /*
   * CALLBACK :: end
   * ============================================= */
@@ -643,12 +682,17 @@ $(document).ready(function (ev) {
     initImageCompare();
     // initTickerText();
     initDropDown();
+    initComboDrop();
 
     $('body').on('click', function (e) {
-      var className = ".header__search";
+      var className = ".header__search, .combo__custom .combos__block--custom, .combo__drop";
 
       if (!$(e.target).closest(className).length) {
         $('.header__search').removeClass('is-active');
+        $('.combo__drop').slideUp(350);
+        $('[combo-drop-btn-js]').removeClass('is-active');
+        $('[combo-drop-btn-js]').find('span').removeClass('is-open');
+        $('[combo-drop-skin-js]').removeClass('is-active');
       }
     });
   };

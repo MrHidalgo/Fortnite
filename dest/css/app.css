@@ -1311,6 +1311,7 @@ picture {
 
 /* line 54, src/scss/_shared/_common.scss */
 .section__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1325,7 +1326,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 60, src/scss/_shared/_common.scss */
+  /* line 61, src/scss/_shared/_common.scss */
   .p-beginners .section__wrapper,
   .p-home .section__wrapper,
   .p-leaked-sub .section__wrapper,
@@ -1338,7 +1339,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 71, src/scss/_shared/_common.scss */
+  /* line 72, src/scss/_shared/_common.scss */
   .p-shop .section__wrapper,
   .p-history .section__wrapper,
   .p-skin .section__wrapper {
@@ -1348,7 +1349,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 79, src/scss/_shared/_common.scss */
+  /* line 80, src/scss/_shared/_common.scss */
   .p-home .section__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1357,7 +1358,7 @@ picture {
   }
 }
 
-/* line 85, src/scss/_shared/_common.scss */
+/* line 86, src/scss/_shared/_common.scss */
 .section__wrapper-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1372,14 +1373,14 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 85, src/scss/_shared/_common.scss */
+  /* line 86, src/scss/_shared/_common.scss */
   .section__wrapper-left {
     max-width: calc(100% - 370px);
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 85, src/scss/_shared/_common.scss */
+  /* line 86, src/scss/_shared/_common.scss */
   .section__wrapper-left {
     max-width: 100%;
     padding-right: 0;
@@ -1387,7 +1388,7 @@ picture {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 99, src/scss/_shared/_common.scss */
+  /* line 100, src/scss/_shared/_common.scss */
   .p-beginners .section__wrapper-left,
   .p-home .section__wrapper-left,
   .p-leaked-sub .section__wrapper-left,
@@ -1400,7 +1401,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 111, src/scss/_shared/_common.scss */
+  /* line 112, src/scss/_shared/_common.scss */
   .p-shop .section__wrapper-left,
   .p-history .section__wrapper-left,
   .p-skin .section__wrapper-left {
@@ -1409,7 +1410,7 @@ picture {
   }
 }
 
-/* line 121, src/scss/_shared/_common.scss */
+/* line 122, src/scss/_shared/_common.scss */
 .section__wrapper-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1424,21 +1425,21 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 121, src/scss/_shared/_common.scss */
+  /* line 122, src/scss/_shared/_common.scss */
   .section__wrapper-right {
     max-width: 370px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 121, src/scss/_shared/_common.scss */
+  /* line 122, src/scss/_shared/_common.scss */
   .section__wrapper-right {
     max-width: 100%;
   }
 }
 
 @media screen and (max-width: 991px) {
-  /* line 134, src/scss/_shared/_common.scss */
+  /* line 135, src/scss/_shared/_common.scss */
   .p-beginners .section__wrapper-right,
   .p-home .section__wrapper-right,
   .p-leaked-sub .section__wrapper-right,
@@ -1450,7 +1451,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 145, src/scss/_shared/_common.scss */
+  /* line 146, src/scss/_shared/_common.scss */
   .p-shop .section__wrapper-right,
   .p-history .section__wrapper-right,
   .p-skin .section__wrapper-right {
@@ -1458,7 +1459,7 @@ picture {
   }
 }
 
-/* line 158, src/scss/_shared/_common.scss */
+/* line 159, src/scss/_shared/_common.scss */
 .sidebar {
   position: relative;
   width: 100%;
@@ -1467,7 +1468,7 @@ picture {
   margin-right: auto;
 }
 
-/* line 165, src/scss/_shared/_common.scss */
+/* line 166, src/scss/_shared/_common.scss */
 .sidebar:after {
   content: '';
   z-index: -1;
@@ -1478,7 +1479,7 @@ picture {
   height: 100%;
 }
 
-/* line 175, src/scss/_shared/_common.scss */
+/* line 176, src/scss/_shared/_common.scss */
 .sidebar__figure {
   z-index: 0;
   overflow: hidden;
@@ -1489,18 +1490,18 @@ picture {
   height: 100%;
 }
 
-/* line 184, src/scss/_shared/_common.scss */
+/* line 185, src/scss/_shared/_common.scss */
 .sidebar__figure img {
   position: absolute;
 }
 
-/* line 189, src/scss/_shared/_common.scss */
+/* line 190, src/scss/_shared/_common.scss */
 .sidebar__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 197, src/scss/_shared/_common.scss */
+/* line 198, src/scss/_shared/_common.scss */
 .ratings {
   z-index: 1;
   position: relative;
@@ -1512,14 +1513,14 @@ picture {
           align-items: center;
 }
 
-/* line 203, src/scss/_shared/_common.scss */
+/* line 204, src/scss/_shared/_common.scss */
 .ratings__btn {
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 206, src/scss/_shared/_common.scss */
+/* line 207, src/scss/_shared/_common.scss */
 .ratings__btn:hover {
   opacity: 0.75;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1527,7 +1528,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 215, src/scss/_shared/_common.scss */
+/* line 216, src/scss/_shared/_common.scss */
 .b-skin {
   cursor: pointer;
   overflow: hidden;
@@ -1547,17 +1548,17 @@ picture {
           box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.15);
 }
 
-/* line 226, src/scss/_shared/_common.scss */
+/* line 227, src/scss/_shared/_common.scss */
 .b-skin--big {
   min-height: 288px;
 }
 
-/* line 230, src/scss/_shared/_common.scss */
+/* line 231, src/scss/_shared/_common.scss */
 .b-skin--small {
   height: 139px;
 }
 
-/* line 234, src/scss/_shared/_common.scss */
+/* line 235, src/scss/_shared/_common.scss */
 .b-skin:before, .b-skin:after {
   content: '';
   position: absolute;
@@ -1568,7 +1569,7 @@ picture {
   height: calc(100% + 2px);
 }
 
-/* line 245, src/scss/_shared/_common.scss */
+/* line 246, src/scss/_shared/_common.scss */
 .b-skin:after {
   opacity: 0;
   background: -webkit-radial-gradient(center, 200px, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
@@ -1579,7 +1580,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 252, src/scss/_shared/_common.scss */
+/* line 253, src/scss/_shared/_common.scss */
 .b-skin:hover:after {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1587,7 +1588,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 257, src/scss/_shared/_common.scss */
+/* line 258, src/scss/_shared/_common.scss */
 .b-skin:hover > img {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
@@ -1602,57 +1603,57 @@ picture {
   transition: transform-origin 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out, -ms-transform-origin 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 264, src/scss/_shared/_common.scss */
+/* line 265, src/scss/_shared/_common.scss */
 .b-skin--epic {
   border-color: #b04eec;
 }
 
-/* line 272, src/scss/_shared/_common.scss */
+/* line 273, src/scss/_shared/_common.scss */
 .b-skin--epic .e-skin__block-badge:before {
   background-color: #b04eec;
 }
 
-/* line 278, src/scss/_shared/_common.scss */
+/* line 279, src/scss/_shared/_common.scss */
 .b-skin--rare {
   border-color: #3ad6ff;
 }
 
-/* line 286, src/scss/_shared/_common.scss */
+/* line 287, src/scss/_shared/_common.scss */
 .b-skin--rare .e-skin__block-badge:before {
   background-color: #3ad6ff;
 }
 
-/* line 292, src/scss/_shared/_common.scss */
+/* line 293, src/scss/_shared/_common.scss */
 .b-skin--legendary {
   border-color: #e38748;
 }
 
-/* line 300, src/scss/_shared/_common.scss */
+/* line 301, src/scss/_shared/_common.scss */
 .b-skin--legendary .e-skin__block-badge:before {
   background-color: #e38748;
 }
 
-/* line 306, src/scss/_shared/_common.scss */
+/* line 307, src/scss/_shared/_common.scss */
 .b-skin--uncommon {
   border-color: #8fee3b;
 }
 
-/* line 314, src/scss/_shared/_common.scss */
+/* line 315, src/scss/_shared/_common.scss */
 .b-skin--uncommon .e-skin__block-badge:before {
   background-color: #8fee3b;
 }
 
-/* line 320, src/scss/_shared/_common.scss */
+/* line 321, src/scss/_shared/_common.scss */
 .b-skin--common {
   border-color: #bebebe;
 }
 
-/* line 328, src/scss/_shared/_common.scss */
+/* line 329, src/scss/_shared/_common.scss */
 .b-skin--common .e-skin__block-badge:before {
   background-color: #bebebe;
 }
 
-/* line 335, src/scss/_shared/_common.scss */
+/* line 336, src/scss/_shared/_common.scss */
 .b-skin img {
   display: block;
   max-width: 100%;
@@ -1669,7 +1670,7 @@ picture {
   transition: transform-origin 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform-origin 0.3s ease-in-out, -ms-transform-origin 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 344, src/scss/_shared/_common.scss */
+/* line 345, src/scss/_shared/_common.scss */
 .b-skin__points {
   position: absolute;
   display: -webkit-box;
@@ -1683,12 +1684,12 @@ picture {
   padding-bottom: 0;
 }
 
-/* line 352, src/scss/_shared/_common.scss */
+/* line 353, src/scss/_shared/_common.scss */
 .b-skin__points img {
   padding-right: 5px;
 }
 
-/* line 356, src/scss/_shared/_common.scss */
+/* line 357, src/scss/_shared/_common.scss */
 .b-skin__points span {
   padding-top: 3px;
   color: #fff;
@@ -1699,20 +1700,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 356, src/scss/_shared/_common.scss */
+  /* line 357, src/scss/_shared/_common.scss */
   .b-skin__points span {
     font-size: calc(16px + 2 * (100vw - 320px) / 880);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 356, src/scss/_shared/_common.scss */
+  /* line 357, src/scss/_shared/_common.scss */
   .b-skin__points span {
     font-size: 18px;
   }
 }
 
-/* line 366, src/scss/_shared/_common.scss */
+/* line 367, src/scss/_shared/_common.scss */
 .b-skin__info {
   overflow: hidden;
   position: absolute;
@@ -1736,12 +1737,12 @@ picture {
   background-color: rgba(0, 0, 0, 0.57);
 }
 
-/* line 379, src/scss/_shared/_common.scss */
+/* line 380, src/scss/_shared/_common.scss */
 .b-skin__info--ticker {
   white-space: nowrap;
 }
 
-/* line 383, src/scss/_shared/_common.scss */
+/* line 384, src/scss/_shared/_common.scss */
 .b-skin__info p,
 .b-skin__info h3,
 .b-skin__info h4 {
@@ -1759,19 +1760,19 @@ picture {
   font-size: 20px;
 }
 
-/* line 398, src/scss/_shared/_common.scss */
+/* line 399, src/scss/_shared/_common.scss */
 .b-skin__info .e-skin__block-points {
   position: relative;
   padding-bottom: 0;
 }
 
-/* line 402, src/scss/_shared/_common.scss */
+/* line 403, src/scss/_shared/_common.scss */
 .b-skin__info .e-skin__block-points span {
   color: #fff;
   font-weight: 500;
 }
 
-/* line 409, src/scss/_shared/_common.scss */
+/* line 410, src/scss/_shared/_common.scss */
 .b-skin__out {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1795,7 +1796,7 @@ picture {
   font-family: "Rajdhani", sans-serif;
 }
 
-/* line 429, src/scss/_shared/_common.scss */
+/* line 430, src/scss/_shared/_common.scss */
 .b-skin__badge {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1812,7 +1813,7 @@ picture {
   left: 0;
 }
 
-/* line 437, src/scss/_shared/_common.scss */
+/* line 438, src/scss/_shared/_common.scss */
 .b-skin__badge .e-skin__block-badge {
   position: relative;
   display: -webkit-inline-box;
@@ -1820,12 +1821,12 @@ picture {
   display: inline-flex;
 }
 
-/* line 441, src/scss/_shared/_common.scss */
+/* line 442, src/scss/_shared/_common.scss */
 .b-skin__badge .e-skin__block-badge--style {
   height: 20px;
 }
 
-/* line 452, src/scss/_shared/_common.scss */
+/* line 453, src/scss/_shared/_common.scss */
 .b-skin__view {
   position: absolute;
   display: -webkit-box;
@@ -1842,7 +1843,7 @@ picture {
   right: 6px;
 }
 
-/* line 461, src/scss/_shared/_common.scss */
+/* line 462, src/scss/_shared/_common.scss */
 .b-skin__sound {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1851,17 +1852,17 @@ picture {
   font-size: 18px;
 }
 
-/* line 466, src/scss/_shared/_common.scss */
+/* line 467, src/scss/_shared/_common.scss */
 .b-skin__sound:hover {
   color: #fff;
 }
 
-/* line 471, src/scss/_shared/_common.scss */
+/* line 472, src/scss/_shared/_common.scss */
 .b-skin .e-skin__block-view {
   position: static;
 }
 
-/* line 480, src/scss/_shared/_common.scss */
+/* line 481, src/scss/_shared/_common.scss */
 .cm-skin {
   cursor: pointer;
   overflow: hidden;
@@ -1886,7 +1887,7 @@ picture {
           box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* line 496, src/scss/_shared/_common.scss */
+/* line 497, src/scss/_shared/_common.scss */
 .cm-skin:before, .cm-skin:after {
   content: '';
   position: absolute;
@@ -1897,7 +1898,7 @@ picture {
   height: calc(100% + 2px);
 }
 
-/* line 507, src/scss/_shared/_common.scss */
+/* line 508, src/scss/_shared/_common.scss */
 .cm-skin:after {
   opacity: 0;
   background: -webkit-radial-gradient(center, 200px, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
@@ -1908,7 +1909,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 514, src/scss/_shared/_common.scss */
+/* line 515, src/scss/_shared/_common.scss */
 .cm-skin:hover:after {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1916,7 +1917,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 519, src/scss/_shared/_common.scss */
+/* line 520, src/scss/_shared/_common.scss */
 .cm-skin:hover > img {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -1928,17 +1929,17 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 525, src/scss/_shared/_common.scss */
+/* line 526, src/scss/_shared/_common.scss */
 .cm-skin--epic {
   border-color: #b04eec;
 }
 
-/* line 532, src/scss/_shared/_common.scss */
+/* line 533, src/scss/_shared/_common.scss */
 .cm-skin--epic .cm-skin__badge {
   background-color: #b04eec;
 }
 
-/* line 537, src/scss/_shared/_common.scss */
+/* line 538, src/scss/_shared/_common.scss */
 .cm-skin img {
   position: relative;
   display: block;
@@ -1956,7 +1957,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 547, src/scss/_shared/_common.scss */
+/* line 548, src/scss/_shared/_common.scss */
 .cm-skin__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1966,24 +1967,24 @@ picture {
   width: 100%;
 }
 
-/* line 553, src/scss/_shared/_common.scss */
+/* line 554, src/scss/_shared/_common.scss */
 .cm-skin__wrapper--half > div {
   max-width: 50%;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 553, src/scss/_shared/_common.scss */
+  /* line 554, src/scss/_shared/_common.scss */
   .cm-skin__wrapper--half > div {
     max-width: 100%;
   }
 }
 
-/* line 562, src/scss/_shared/_common.scss */
+/* line 563, src/scss/_shared/_common.scss */
 .cm-skin__wrapper--full > div {
   max-width: 100%;
 }
 
-/* line 567, src/scss/_shared/_common.scss */
+/* line 568, src/scss/_shared/_common.scss */
 .cm-skin__wrapper > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1996,13 +1997,13 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 567, src/scss/_shared/_common.scss */
+  /* line 568, src/scss/_shared/_common.scss */
   .cm-skin__wrapper > div {
     padding: 5px;
   }
 }
 
-/* line 578, src/scss/_shared/_common.scss */
+/* line 579, src/scss/_shared/_common.scss */
 .cm-skin__badge {
   position: absolute;
   display: -webkit-box;
@@ -2020,14 +2021,14 @@ picture {
   height: 35px;
 }
 
-/* line 588, src/scss/_shared/_common.scss */
+/* line 589, src/scss/_shared/_common.scss */
 .cm-skin__badge i {
   -webkit-transform: scale(0.75);
       -ms-transform: scale(0.75);
           transform: scale(0.75);
 }
 
-/* line 593, src/scss/_shared/_common.scss */
+/* line 594, src/scss/_shared/_common.scss */
 .cm-skin__info {
   overflow: hidden;
   z-index: 2;
@@ -2052,19 +2053,19 @@ picture {
   background-color: rgba(0, 0, 0, 0.57);
 }
 
-/* line 607, src/scss/_shared/_common.scss */
+/* line 608, src/scss/_shared/_common.scss */
 .cm-skin__info--ticker {
   white-space: nowrap;
 }
 
-/* line 612, src/scss/_shared/_common.scss */
+/* line 613, src/scss/_shared/_common.scss */
 .cm-skin__info--wticker p,
 .cm-skin__info--wticker h3,
 .cm-skin__info--wticker h4 {
   opacity: 1 !important;
 }
 
-/* line 619, src/scss/_shared/_common.scss */
+/* line 620, src/scss/_shared/_common.scss */
 .cm-skin__info p,
 .cm-skin__info h3,
 .cm-skin__info h4 {
@@ -2081,7 +2082,7 @@ picture {
   font-size: 18px;
 }
 
-/* line 634, src/scss/_shared/_common.scss */
+/* line 635, src/scss/_shared/_common.scss */
 .cm-skin__points {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2091,12 +2092,12 @@ picture {
           align-items: center;
 }
 
-/* line 638, src/scss/_shared/_common.scss */
+/* line 639, src/scss/_shared/_common.scss */
 .cm-skin__points img {
   padding-right: 5px;
 }
 
-/* line 642, src/scss/_shared/_common.scss */
+/* line 643, src/scss/_shared/_common.scss */
 .cm-skin__points span {
   padding-top: 3px;
   color: #fff;
@@ -2108,20 +2109,20 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 642, src/scss/_shared/_common.scss */
+  /* line 643, src/scss/_shared/_common.scss */
   .cm-skin__points span {
     font-size: calc(14px + 2 * (100vw - 320px) / 880);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 642, src/scss/_shared/_common.scss */
+  /* line 643, src/scss/_shared/_common.scss */
   .cm-skin__points span {
     font-size: 16px;
   }
 }
 
-/* line 656, src/scss/_shared/_common.scss */
+/* line 657, src/scss/_shared/_common.scss */
 .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2129,7 +2130,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 656, src/scss/_shared/_common.scss */
+  /* line 657, src/scss/_shared/_common.scss */
   .copyright {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -2138,7 +2139,7 @@ picture {
   }
 }
 
-/* line 663, src/scss/_shared/_common.scss */
+/* line 664, src/scss/_shared/_common.scss */
 .copyright p {
   color: #fff;
   font-size: 14px;
@@ -2146,25 +2147,25 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 663, src/scss/_shared/_common.scss */
+  /* line 664, src/scss/_shared/_common.scss */
   .copyright p {
     text-align: center;
   }
 }
 
-/* line 671, src/scss/_shared/_common.scss */
+/* line 672, src/scss/_shared/_common.scss */
 .copyright p span {
   font-weight: bold;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 679, src/scss/_shared/_common.scss */
+  /* line 680, src/scss/_shared/_common.scss */
   .newsletter {
     margin-bottom: 54px;
   }
 }
 
-/* line 684, src/scss/_shared/_common.scss */
+/* line 685, src/scss/_shared/_common.scss */
 .newsletter__text {
   padding-bottom: 25px;
   color: #657782;
@@ -2174,7 +2175,7 @@ picture {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 694, src/scss/_shared/_common.scss */
+/* line 695, src/scss/_shared/_common.scss */
 .newsletter__form-cover {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2186,7 +2187,7 @@ picture {
   background-repeat: no-repeat;
 }
 
-/* line 703, src/scss/_shared/_common.scss */
+/* line 704, src/scss/_shared/_common.scss */
 .newsletter__form-input {
   position: relative;
   width: 100%;
@@ -2194,7 +2195,7 @@ picture {
   height: 100%;
 }
 
-/* line 709, src/scss/_shared/_common.scss */
+/* line 710, src/scss/_shared/_common.scss */
 .newsletter__form-input input {
   outline: none;
   position: absolute;
@@ -2237,12 +2238,12 @@ picture {
   color: #657782;
 }
 
-/* line 729, src/scss/_shared/_common.scss */
+/* line 730, src/scss/_shared/_common.scss */
 .newsletter__form-btn {
   position: relative;
 }
 
-/* line 733, src/scss/_shared/_common.scss */
+/* line 734, src/scss/_shared/_common.scss */
 .newsletter__form-btn:hover:before {
   top: 0;
   -webkit-transform: translateY(0);
@@ -2257,7 +2258,7 @@ picture {
   transition: top 0.3s ease-in-out, transform 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 741, src/scss/_shared/_common.scss */
+/* line 742, src/scss/_shared/_common.scss */
 .newsletter__form-btn:hover i {
   color: #070c17;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2265,7 +2266,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 747, src/scss/_shared/_common.scss */
+/* line 748, src/scss/_shared/_common.scss */
 .newsletter__form-btn:before {
   content: '';
   position: absolute;
@@ -2284,7 +2285,7 @@ picture {
   transition: top 0.3s ease-in-out, transform 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 759, src/scss/_shared/_common.scss */
+/* line 760, src/scss/_shared/_common.scss */
 .newsletter__form-btn button {
   cursor: pointer;
   outline: none;
@@ -2308,7 +2309,7 @@ picture {
   background-color: transparent;
 }
 
-/* line 774, src/scss/_shared/_common.scss */
+/* line 775, src/scss/_shared/_common.scss */
 .newsletter__form-btn button i {
   color: #657782;
   font-size: 23px;
@@ -2317,7 +2318,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 786, src/scss/_shared/_common.scss */
+/* line 787, src/scss/_shared/_common.scss */
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2327,7 +2328,7 @@ picture {
           align-items: center;
 }
 
-/* line 790, src/scss/_shared/_common.scss */
+/* line 791, src/scss/_shared/_common.scss */
 .social__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2344,7 +2345,7 @@ picture {
   margin-right: 15px;
 }
 
-/* line 799, src/scss/_shared/_common.scss */
+/* line 800, src/scss/_shared/_common.scss */
 .social__link i {
   color: #fff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2352,12 +2353,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 813, src/scss/_shared/_common.scss */
+/* line 814, src/scss/_shared/_common.scss */
 .social__link--facebook i {
   font-size: 20px;
 }
 
-/* line 818, src/scss/_shared/_common.scss */
+/* line 819, src/scss/_shared/_common.scss */
 .social__link--facebook:hover i {
   color: #3b5998;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2365,12 +2366,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 813, src/scss/_shared/_common.scss */
+/* line 814, src/scss/_shared/_common.scss */
 .social__link--twitter i {
   font-size: 22px;
 }
 
-/* line 818, src/scss/_shared/_common.scss */
+/* line 819, src/scss/_shared/_common.scss */
 .social__link--twitter:hover i {
   color: #00aced;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2378,12 +2379,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 813, src/scss/_shared/_common.scss */
+/* line 814, src/scss/_shared/_common.scss */
 .social__link--google-plus i {
   font-size: 26px;
 }
 
-/* line 818, src/scss/_shared/_common.scss */
+/* line 819, src/scss/_shared/_common.scss */
 .social__link--google-plus:hover i {
   color: #dd4b39;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2391,12 +2392,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 813, src/scss/_shared/_common.scss */
+/* line 814, src/scss/_shared/_common.scss */
 .social__link--rss i {
   font-size: 18px;
 }
 
-/* line 818, src/scss/_shared/_common.scss */
+/* line 819, src/scss/_shared/_common.scss */
 .social__link--rss:hover i {
   color: #f26522;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2404,12 +2405,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 813, src/scss/_shared/_common.scss */
+/* line 814, src/scss/_shared/_common.scss */
 .social__link--pinterest i {
   font-size: 20px;
 }
 
-/* line 818, src/scss/_shared/_common.scss */
+/* line 819, src/scss/_shared/_common.scss */
 .social__link--pinterest:hover i {
   color: #cb2027;
   -webkit-transition: color 0.3s ease-in-out;
@@ -2417,12 +2418,12 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 813, src/scss/_shared/_common.scss */
+/* line 814, src/scss/_shared/_common.scss */
 .social__link--instagram i {
   font-size: 20px;
 }
 
-/* line 818, src/scss/_shared/_common.scss */
+/* line 819, src/scss/_shared/_common.scss */
 .social__link--instagram:hover i {
   color: #bc2a8d;
   -webkit-transition: color 0.3s ease-in-out;
@@ -30362,30 +30363,248 @@ picture {
   }
 }
 
-/* line 230, src/scss/_components/combo/_combo.scss */
+/* line 220, src/scss/_components/combo/_combo.scss */
+.combo__drop {
+  overflow: hidden;
+  z-index: 1000;
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  max-height: 573px;
+}
+
+/* line 232, src/scss/_components/combo/_combo.scss */
+.combo__drop-bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  background-color: #e0a038;
+  -webkit-clip-path: polygon(0 0, 100% 2%, 98% 99%, 1% 100%);
+          clip-path: polygon(0 0, 100% 2%, 98% 99%, 1% 100%);
+}
+
+/* line 242, src/scss/_components/combo/_combo.scss */
+.combo__drop-bg:before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e4ac52;
+  -webkit-clip-path: polygon(0 100%, 75% 80%, 100% 0, 100% 100%);
+          clip-path: polygon(0 100%, 75% 80%, 100% 0, 100% 100%);
+}
+
+/* line 255, src/scss/_components/combo/_combo.scss */
+.combo__drop-btn {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 265, src/scss/_components/combo/_combo.scss */
+.combo__drop-btn a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 271, src/scss/_components/combo/_combo.scss */
+.combo__drop-content {
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 280, src/scss/_components/combo/_combo.scss */
+.combo__drop-content > div {
+  width: 100%;
+  max-width: calc(100% / 6);
+  height: 220px;
+  max-height: 220px;
+  padding: 0 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 280, src/scss/_components/combo/_combo.scss */
+  .combo__drop-content > div {
+    max-width: calc(100% / 5);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 280, src/scss/_components/combo/_combo.scss */
+  .combo__drop-content > div {
+    max-width: calc(100% / 4);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 280, src/scss/_components/combo/_combo.scss */
+  .combo__drop-content > div {
+    max-width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 280, src/scss/_components/combo/_combo.scss */
+  .combo__drop-content > div {
+    max-width: calc(100% / 2);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/* line 305, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 310, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box.is-active .combos__box-svg {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 316, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box-svg {
+  opacity: 0;
+  z-index: 5;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* line 329, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box-svg svg {
+  width: 100%;
+  max-width: 114px;
+}
+
+/* line 335, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box-left {
+  max-width: 100%;
+  min-height: 220px;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 335, src/scss/_components/combo/_combo.scss */
+  .combo__drop-content .combos__box-left {
+    padding: 0;
+  }
+}
+
+/* line 343, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box-left img {
+  max-height: 100%;
+}
+
+/* line 348, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box-title {
+  height: 34px;
+}
+
+/* line 352, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box-title--triangle img {
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+/* line 356, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box-title--triangle img:nth-of-type(2) {
+  top: -5px;
+  right: -5px;
+}
+
+/* line 360, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box-title--triangle img:nth-of-type(3) {
+  bottom: -5px;
+  left: -5px;
+}
+
+/* line 367, src/scss/_components/combo/_combo.scss */
+.combo__drop-content .combos__box-title p {
+  font-size: 16px;
+}
+
+/* line 376, src/scss/_components/combo/_combo.scss */
 .combo__custom {
   position: relative;
   margin-bottom: 100px;
 }
 
-/* line 234, src/scss/_components/combo/_combo.scss */
+/* line 380, src/scss/_components/combo/_combo.scss */
 .p-combos .combo__custom {
   margin-bottom: 0;
 }
 
-/* line 238, src/scss/_components/combo/_combo.scss */
+/* line 384, src/scss/_components/combo/_combo.scss */
 .combo__custom .section-resize {
   top: -30px;
 }
 
-/* line 241, src/scss/_components/combo/_combo.scss */
+/* line 387, src/scss/_components/combo/_combo.scss */
 .combo__custom .section-resize-bg {
   background-color: #313131;
   -webkit-clip-path: polygon(0 0, 100% 1%, 98% 98%, 0 100%);
           clip-path: polygon(0 0, 100% 1%, 98% 98%, 0 100%);
 }
 
-/* line 245, src/scss/_components/combo/_combo.scss */
+/* line 391, src/scss/_components/combo/_combo.scss */
 .combo__custom .section-resize-bg:before {
   content: '';
   z-index: 0;
@@ -30397,55 +30616,55 @@ picture {
   background-color: #2a2a2a;
 }
 
-/* line 256, src/scss/_components/combo/_combo.scss */
+/* line 402, src/scss/_components/combo/_combo.scss */
 .combo__custom .section-resize-bg:before {
   -webkit-clip-path: polygon(0 100%, 80% 50%, 30% 0, 100% 0, 100% 100%);
           clip-path: polygon(0 100%, 80% 50%, 30% 0, 100% 0, 100% 100%);
 }
 
-/* line 263, src/scss/_components/combo/_combo.scss */
+/* line 409, src/scss/_components/combo/_combo.scss */
 .combo__custom .section-resize-triangle img:nth-of-type(1) {
   top: -20px;
   left: 10px;
 }
 
-/* line 267, src/scss/_components/combo/_combo.scss */
+/* line 413, src/scss/_components/combo/_combo.scss */
 .combo__custom .section-resize-triangle img:nth-of-type(2) {
   top: -50px;
   left: 15%;
 }
 
-/* line 271, src/scss/_components/combo/_combo.scss */
+/* line 417, src/scss/_components/combo/_combo.scss */
 .combo__custom .section-resize-triangle img:nth-of-type(3) {
   top: -20px;
   right: 30px;
 }
 
-/* line 275, src/scss/_components/combo/_combo.scss */
+/* line 421, src/scss/_components/combo/_combo.scss */
 .combo__custom .section-resize-triangle img:nth-of-type(4) {
   left: 30px;
   bottom: -30px;
 }
 
-/* line 279, src/scss/_components/combo/_combo.scss */
+/* line 425, src/scss/_components/combo/_combo.scss */
 .combo__custom .section-resize-triangle img:nth-of-type(5) {
   left: 30%;
   bottom: -25px;
 }
 
-/* line 283, src/scss/_components/combo/_combo.scss */
+/* line 429, src/scss/_components/combo/_combo.scss */
 .combo__custom .section-resize-triangle img:nth-of-type(6) {
   right: -15px;
   bottom: -15px;
 }
 
-/* line 291, src/scss/_components/combo/_combo.scss */
+/* line 437, src/scss/_components/combo/_combo.scss */
 .combo__custom-wrapper {
   padding-top: 30px;
   padding-bottom: 100px;
 }
 
-/* line 296, src/scss/_components/combo/_combo.scss */
+/* line 442, src/scss/_components/combo/_combo.scss */
 .combo__custom-title {
   position: relative;
   display: -webkit-box;
@@ -30462,13 +30681,13 @@ picture {
           clip-path: polygon(0 0, 100% 2%, 97% 98%, 2% 100%);
 }
 
-/* line 306, src/scss/_components/combo/_combo.scss */
+/* line 452, src/scss/_components/combo/_combo.scss */
 .combo__custom-title i {
   color: #ffffff;
   font-size: 47px;
 }
 
-/* line 311, src/scss/_components/combo/_combo.scss */
+/* line 457, src/scss/_components/combo/_combo.scss */
 .combo__custom-title p {
   padding-left: 10px;
   font-size: 48px;
@@ -30478,41 +30697,41 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 311, src/scss/_components/combo/_combo.scss */
+  /* line 457, src/scss/_components/combo/_combo.scss */
   .combo__custom-title p {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 311, src/scss/_components/combo/_combo.scss */
+  /* line 457, src/scss/_components/combo/_combo.scss */
   .combo__custom-title p {
     font-size: 35px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 311, src/scss/_components/combo/_combo.scss */
+  /* line 457, src/scss/_components/combo/_combo.scss */
   .combo__custom-title p {
     font-size: 28px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  /* line 331, src/scss/_components/combo/_combo.scss */
+  /* line 477, src/scss/_components/combo/_combo.scss */
   .combo__custom .combos__box-left {
     max-width: calc(100% - 245px);
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 331, src/scss/_components/combo/_combo.scss */
+  /* line 477, src/scss/_components/combo/_combo.scss */
   .combo__custom .combos__box-left {
     max-width: 100%;
   }
 }
 
-/* line 339, src/scss/_components/combo/_combo.scss */
+/* line 485, src/scss/_components/combo/_combo.scss */
 .combo__custom .combos__box-left .combos__block {
   width: 100%;
   max-width: 295px;
@@ -30522,31 +30741,31 @@ picture {
   margin-bottom: 30px;
 }
 
-/* line 347, src/scss/_components/combo/_combo.scss */
+/* line 493, src/scss/_components/combo/_combo.scss */
 .combo__custom .combos__box-left .combos__block-top {
   height: 100%;
 }
 
-/* line 349, src/scss/_components/combo/_combo.scss */
+/* line 495, src/scss/_components/combo/_combo.scss */
 .combo__custom .combos__box-left .combos__block-top .icon-font {
   font-size: 61px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 356, src/scss/_components/combo/_combo.scss */
+  /* line 502, src/scss/_components/combo/_combo.scss */
   .combo__custom .combos__box-right {
     width: 245px;
     padding-top: 80px;
     padding-right: 15px;
   }
-  /* line 362, src/scss/_components/combo/_combo.scss */
+  /* line 508, src/scss/_components/combo/_combo.scss */
   .combo__custom .combos__box-right > div {
     width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 356, src/scss/_components/combo/_combo.scss */
+  /* line 502, src/scss/_components/combo/_combo.scss */
   .combo__custom .combos__box-right {
     width: 100%;
     padding-left: 15px;
@@ -30555,20 +30774,20 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 372, src/scss/_components/combo/_combo.scss */
+  /* line 518, src/scss/_components/combo/_combo.scss */
   .combo__custom .combos__box-right > div {
     width: calc(100% / 3);
   }
 }
 
 @media screen and (max-width: 374px) {
-  /* line 372, src/scss/_components/combo/_combo.scss */
+  /* line 518, src/scss/_components/combo/_combo.scss */
   .combo__custom .combos__box-right > div {
     width: calc(100% / 2);
   }
 }
 
-/* line 382, src/scss/_components/combo/_combo.scss */
+/* line 528, src/scss/_components/combo/_combo.scss */
 .combo__custom .combos__box-bottom {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -30577,7 +30796,7 @@ picture {
 }
 
 @media screen and (max-width: 424px) {
-  /* line 382, src/scss/_components/combo/_combo.scss */
+  /* line 528, src/scss/_components/combo/_combo.scss */
   .combo__custom .combos__box-bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -30586,31 +30805,31 @@ picture {
   }
 }
 
-/* line 389, src/scss/_components/combo/_combo.scss */
+/* line 535, src/scss/_components/combo/_combo.scss */
 .combo__custom .combos__box-bottom a {
   margin-left: 10px;
   margin-right: 10px;
 }
 
 @media screen and (max-width: 424px) {
-  /* line 389, src/scss/_components/combo/_combo.scss */
+  /* line 535, src/scss/_components/combo/_combo.scss */
   .combo__custom .combos__box-bottom a {
     margin-bottom: 10px;
   }
 }
 
-/* line 396, src/scss/_components/combo/_combo.scss */
+/* line 542, src/scss/_components/combo/_combo.scss */
 .combo__custom .combos__box-bottom a .icon-saves {
   font-size: 26px;
   margin-right: 5px;
 }
 
-/* line 403, src/scss/_components/combo/_combo.scss */
+/* line 549, src/scss/_components/combo/_combo.scss */
 .combo__custom .combos__box-title {
   top: 0;
 }
 
-/* line 409, src/scss/_components/combo/_combo.scss */
+/* line 555, src/scss/_components/combo/_combo.scss */
 .combo__custom .combos__block-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30623,20 +30842,75 @@ picture {
           justify-content: center;
 }
 
-/* line 414, src/scss/_components/combo/_combo.scss */
+/* line 560, src/scss/_components/combo/_combo.scss */
+.combo__custom .combos__block-top span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  background-color: transparent;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, clip-path 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, clip-path 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
+}
+
+/* line 569, src/scss/_components/combo/_combo.scss */
+.combo__custom .combos__block-top span.is-open {
+  background-color: #e0a038;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 94% 100%, 8% 100%);
+          clip-path: polygon(0 0, 100% 10%, 94% 100%, 8% 100%);
+  -webkit-transition: background-color 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, clip-path 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, clip-path 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
+}
+
+/* line 574, src/scss/_components/combo/_combo.scss */
+.combo__custom .combos__block-top span.is-open .icon-font {
+  opacity: 1;
+  -webkit-transform: scale(0.85);
+      -ms-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 582, src/scss/_components/combo/_combo.scss */
 .combo__custom .combos__block-top .icon-font {
   opacity: 0.1;
   color: #ffffff;
   font-size: 43px;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 424, src/scss/_components/combo/_combo.scss */
+/* line 594, src/scss/_components/combo/_combo.scss */
 .combo__skins {
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-/* line 428, src/scss/_components/combo/_combo.scss */
+/* line 598, src/scss/_components/combo/_combo.scss */
 .combo__skins-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30648,27 +30922,27 @@ picture {
           justify-content: space-between;
 }
 
-/* line 433, src/scss/_components/combo/_combo.scss */
+/* line 603, src/scss/_components/combo/_combo.scss */
 .combo__skins-wrapper > div {
   width: 100%;
   max-width: calc((100% - 30px) / 2);
 }
 
 @media screen and (max-width: 575px) {
-  /* line 433, src/scss/_components/combo/_combo.scss */
+  /* line 603, src/scss/_components/combo/_combo.scss */
   .combo__skins-wrapper > div {
     max-width: 100%;
   }
 }
 
-/* line 442, src/scss/_components/combo/_combo.scss */
+/* line 612, src/scss/_components/combo/_combo.scss */
 .combo__skins-description {
   z-index: 2;
   position: relative;
   min-height: 170px;
 }
 
-/* line 447, src/scss/_components/combo/_combo.scss */
+/* line 617, src/scss/_components/combo/_combo.scss */
 .combo__skins-description:before {
   content: '';
   z-index: -1;
@@ -30682,7 +30956,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 98% 99%, 0 100%);
 }
 
-/* line 459, src/scss/_components/combo/_combo.scss */
+/* line 629, src/scss/_components/combo/_combo.scss */
 .combo__skins-description--triangle {
   position: absolute;
   top: 0;
@@ -30691,36 +30965,36 @@ picture {
   height: 100%;
 }
 
-/* line 466, src/scss/_components/combo/_combo.scss */
+/* line 636, src/scss/_components/combo/_combo.scss */
 .combo__skins-description--triangle img {
   position: absolute;
 }
 
-/* line 469, src/scss/_components/combo/_combo.scss */
+/* line 639, src/scss/_components/combo/_combo.scss */
 .combo__skins-description--triangle img:nth-of-type(1) {
   left: 0;
   bottom: -20px;
 }
 
-/* line 473, src/scss/_components/combo/_combo.scss */
+/* line 643, src/scss/_components/combo/_combo.scss */
 .combo__skins-description--triangle img:nth-of-type(2) {
   bottom: -20px;
   left: 50px;
 }
 
-/* line 477, src/scss/_components/combo/_combo.scss */
+/* line 647, src/scss/_components/combo/_combo.scss */
 .combo__skins-description--triangle img:nth-of-type(3) {
   bottom: -10px;
   right: 50px;
 }
 
-/* line 481, src/scss/_components/combo/_combo.scss */
+/* line 651, src/scss/_components/combo/_combo.scss */
 .combo__skins-description--triangle img:nth-of-type(4) {
   bottom: -20px;
   right: 0;
 }
 
-/* line 488, src/scss/_components/combo/_combo.scss */
+/* line 658, src/scss/_components/combo/_combo.scss */
 .combo__skins-description p {
   position: relative;
   display: -webkit-box;
@@ -30737,14 +31011,14 @@ picture {
           clip-path: polygon(0 0, 100% 0, 95% 93%, 2% 100%);
 }
 
-/* line 499, src/scss/_components/combo/_combo.scss */
+/* line 669, src/scss/_components/combo/_combo.scss */
 .combo__skins-description p .icon-font {
   color: #fff;
   font-size: 26px;
   margin-right: 9px;
 }
 
-/* line 505, src/scss/_components/combo/_combo.scss */
+/* line 675, src/scss/_components/combo/_combo.scss */
 .combo__skins-description p > span {
   font-size: 30px;
   color: white;
@@ -30752,12 +31026,12 @@ picture {
   line-height: 1.2;
 }
 
-/* line 513, src/scss/_components/combo/_combo.scss */
+/* line 683, src/scss/_components/combo/_combo.scss */
 .combo__skins-description > div {
   padding: 10px 20px 20px;
 }
 
-/* line 516, src/scss/_components/combo/_combo.scss */
+/* line 686, src/scss/_components/combo/_combo.scss */
 .combo__skins-description > div span {
   font-size: 16px;
   font-family: "Ubuntu", sans-serif;
@@ -30766,39 +31040,39 @@ picture {
   line-height: 1.69;
 }
 
-/* line 530, src/scss/_components/combo/_combo.scss */
+/* line 700, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__box-triangle img:nth-of-type(1) {
   top: 40px;
   left: -10px;
 }
 
-/* line 534, src/scss/_components/combo/_combo.scss */
+/* line 704, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__box-triangle img:nth-of-type(2) {
   top: 50px;
   right: -10px;
   left: auto;
 }
 
-/* line 539, src/scss/_components/combo/_combo.scss */
+/* line 709, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__box-triangle img:nth-of-type(3) {
   top: 150px;
   left: -10px;
 }
 
-/* line 543, src/scss/_components/combo/_combo.scss */
+/* line 713, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__box-triangle img:nth-of-type(4) {
   left: -20px;
   top: 30%;
 }
 
-/* line 547, src/scss/_components/combo/_combo.scss */
+/* line 717, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__box-triangle img:nth-of-type(5) {
   right: -10px;
   top: 35%;
   left: auto;
 }
 
-/* line 556, src/scss/_components/combo/_combo.scss */
+/* line 726, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__box-wrapper-0 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -30806,7 +31080,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 561, src/scss/_components/combo/_combo.scss */
+/* line 731, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__box-left {
   max-width: 100%;
   min-height: 0;
@@ -30814,13 +31088,13 @@ picture {
   padding-right: 30px;
 }
 
-/* line 568, src/scss/_components/combo/_combo.scss */
+/* line 738, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__box-right {
   width: 100%;
   padding-top: 30px;
 }
 
-/* line 572, src/scss/_components/combo/_combo.scss */
+/* line 742, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__box-right > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30832,7 +31106,7 @@ picture {
   max-width: calc(100% / 3);
 }
 
-/* line 580, src/scss/_components/combo/_combo.scss */
+/* line 750, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__box-total {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -30843,23 +31117,23 @@ picture {
           align-items: flex-start;
 }
 
-/* line 586, src/scss/_components/combo/_combo.scss */
+/* line 756, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__block {
   width: 81px;
   margin-right: 0;
 }
 
-/* line 590, src/scss/_components/combo/_combo.scss */
+/* line 760, src/scss/_components/combo/_combo.scss */
 .combo__skins .combos__block-top {
   height: 81px;
 }
 
-/* line 598, src/scss/_components/combo/_combo.scss */
+/* line 768, src/scss/_components/combo/_combo.scss */
 .combo__like .skin__like-body {
   padding-bottom: 100px;
 }
 
-/* line 602, src/scss/_components/combo/_combo.scss */
+/* line 772, src/scss/_components/combo/_combo.scss */
 .combo__like-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30871,7 +31145,7 @@ picture {
           justify-content: space-between;
 }
 
-/* line 607, src/scss/_components/combo/_combo.scss */
+/* line 777, src/scss/_components/combo/_combo.scss */
 .combo__like-wrapper > div {
   width: 100%;
   max-width: calc((100% - 10px) / 2);
@@ -30879,18 +31153,18 @@ picture {
 }
 
 @media screen and (max-width: 424px) {
-  /* line 607, src/scss/_components/combo/_combo.scss */
+  /* line 777, src/scss/_components/combo/_combo.scss */
   .combo__like-wrapper > div {
     max-width: 100%;
   }
 }
 
-/* line 619, src/scss/_components/combo/_combo.scss */
+/* line 789, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__box-bg, .combo__like .combos__box-triangle, .combo__like .combos__box-bottom {
   display: none;
 }
 
-/* line 625, src/scss/_components/combo/_combo.scss */
+/* line 795, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__box-left {
   max-width: calc(100% - 144px);
   min-height: 0;
@@ -30899,25 +31173,25 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 625, src/scss/_components/combo/_combo.scss */
+  /* line 795, src/scss/_components/combo/_combo.scss */
   .combo__like .combos__box-left {
     max-width: 100%;
   }
 }
 
-/* line 635, src/scss/_components/combo/_combo.scss */
+/* line 805, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__box-left .e-skin__block-points img {
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
 }
 
-/* line 638, src/scss/_components/combo/_combo.scss */
+/* line 808, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__box-left .e-skin__block-points span {
   font-size: 14px;
 }
 
-/* line 644, src/scss/_components/combo/_combo.scss */
+/* line 814, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__box-right {
   position: relative;
   width: 144px;
@@ -30925,7 +31199,7 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 644, src/scss/_components/combo/_combo.scss */
+  /* line 814, src/scss/_components/combo/_combo.scss */
   .combo__like .combos__box-right {
     width: 100%;
     padding-left: 0;
@@ -30934,67 +31208,67 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 654, src/scss/_components/combo/_combo.scss */
+  /* line 824, src/scss/_components/combo/_combo.scss */
   .combo__like .combos__box-right > div {
     width: calc(100% / 3);
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 654, src/scss/_components/combo/_combo.scss */
+  /* line 824, src/scss/_components/combo/_combo.scss */
   .combo__like .combos__box-right > div {
     width: calc(100% / 2);
   }
 }
 
 @media screen and (max-width: 424px) {
-  /* line 654, src/scss/_components/combo/_combo.scss */
+  /* line 824, src/scss/_components/combo/_combo.scss */
   .combo__like .combos__box-right > div {
     width: calc(100% / 3);
   }
 }
 
-/* line 667, src/scss/_components/combo/_combo.scss */
+/* line 837, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__box-title {
   height: 34px;
 }
 
-/* line 670, src/scss/_components/combo/_combo.scss */
+/* line 840, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__box-title p {
   font-size: 16px;
 }
 
-/* line 676, src/scss/_components/combo/_combo.scss */
+/* line 846, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__block {
   width: 62px;
   margin-right: 10px;
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 676, src/scss/_components/combo/_combo.scss */
+  /* line 846, src/scss/_components/combo/_combo.scss */
   .combo__like .combos__block {
     margin-right: 0;
   }
 }
 
-/* line 683, src/scss/_components/combo/_combo.scss */
+/* line 853, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__block-top {
   height: 62px;
 }
 
-/* line 688, src/scss/_components/combo/_combo.scss */
+/* line 858, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__block-bottom p {
   font-size: 14px;
   padding-bottom: 0;
 }
 
-/* line 694, src/scss/_components/combo/_combo.scss */
+/* line 864, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__block-badge {
   width: 17px;
   height: 17px;
 }
 
-/* line 698, src/scss/_components/combo/_combo.scss */
+/* line 868, src/scss/_components/combo/_combo.scss */
 .combo__like .combos__block-badge i {
   -webkit-transform: scale(0.3);
       -ms-transform: scale(0.3);

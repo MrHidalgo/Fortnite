@@ -47,9 +47,10 @@ section.combo.combo__custom.combo--custom
       .combos__box-wrapper
         .combos__box-left
 
-          a.combos__block.combos__block--custom(href="#")
+          a.combos__block.combos__block--custom(href="#" combo-drop-btn-js)
             .combos__block-top
-              i.icon-font.icon-plus-add
+              span
+                i.icon-font.icon-plus-add
 
           .combos__box-title
             .combos__box-title--bg
@@ -60,15 +61,14 @@ section.combo.combo__custom.combo--custom
               img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
             p!= "Skin"
 
-          //.combo__drop
-
         .combos__box-right
 
           each val, idx in combosBlock
             div
-              a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+              a.combos__block(combo-drop-btn-js href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
                 .combos__block-top
-                  i.icon-font.icon-plus-add
+                  span
+                    i.icon-font.icon-plus-add
 
                 .combos__block-bottom
                   if(idx === 0)
