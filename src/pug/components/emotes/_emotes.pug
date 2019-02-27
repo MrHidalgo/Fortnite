@@ -15,7 +15,14 @@ section#emotes.emotes
   .c-grid
     .emotes__wrapper
 
-      h1.emotes__title!= "Fortnite Emotes"
-      p.emotes__text!= "Fortnite comes with different emotes (dances) that will allow users to express themselves uniquely on the battlefield. Users can choose from the six (6) emotes available and equip themselves with the ones that will be more useful to them on the battlefield."
+      if(pageClassName === 'p-combos')
+        h1.combo__title!= "<span>Fortnite</span> Combos"
+      else
+        h1.emotes__title!= "<span>Fortnite</span> Emotes"
+
+      if(pageClassName === 'p-combos')
+        p.combo__text!= "The <span>Pickaxe</span>, also know as <span>harvesting tool</span>, is a tool that players can use to mine and break materials in the world of Fortnite. The pickax tool can also be used to cause damage against enemies in-game."
+      else
+        p.emotes__text!= "Fortnite comes with different emotes (dances) that will allow users to express themselves uniquely on the battlefield. Users can choose from the six (6) emotes available and equip themselves with the ones that will be more useful to them on the battlefield."
 
 // SECTION emotes :: END
