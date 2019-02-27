@@ -1,0 +1,96 @@
+---
+title: Fortnite - combo single page
+
+pageClassName: p-combo
+---
+extends shared/_layout
+
+block content
+  div.body(class!= pageClassName)
+
+    include components/common/_mainBanner
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+
+            section#combo
+
+              include ./components/combo/_combo-preview
+              include ./components/combo/_combo-description
+
+              .updated--medium
+                include ./components/common/_updated
+
+              include ./components/common/_breadcrumbs
+
+              include ./components/combo/_combo-like
+              include ./components/combo/_combo-recent
+
+          .section__wrapper-right(section-right-js)
+
+            include components/common/_search
+            include components/common/_sectionBanner
+            include components/common/_latest
+            include components/common/_sectionBanner
+            include components/common/_top
+            include components/common/_combos
+            include components/common/_royal
+            include components/common/_categories
+
+          .combo__drop(combo-drop-js)
+            .combo__drop-bg
+            .combo__drop-content
+              each val, idx in [1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]
+                div
+                  a.combos__box(href="#" combo-drop-skin-js)
+                    -
+                      var svg = `
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill-opacity: 0;
+                              stroke: #fff;
+                              stroke-linejoin: round;
+                              stroke-width: 9px;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
+                      </svg>`;
+
+                    .combos__box-svg
+                      != svg
+
+                    .combos__box-wrapper
+                      .combos__box-left
+                        if(idx % 2 === 0)
+                          img(src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="")
+                        else
+                          img(src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="")
+
+                        .combos__box-title
+                          .combos__box-title--bg
+                          .combos__box-title--triangle
+                            img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
+                            img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
+                            img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
+                            img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
+                          p!= "Skin Name Here"
+
+            .combo__drop-btn
+              a.c-btn.c-btn--bg(combo-drop-ok-js href="#" class="" title="")!= "okay <i class='icon-font icon-arr-dcc'></i>"
+              a.c-btn.c-btn--bg(combo-drop-cancel-js href="#" class="" title="")!= "cancel <i class='icon-font icon-arr-dcc'></i>"
+
+    include components/common/_reply
+
+    section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include components/common/_comments
+
+          .section__wrapper-right

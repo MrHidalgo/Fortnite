@@ -14,6 +14,9 @@ PageList:
 - file: combo-make.html
   titleName: Make combo
   ready: 96
+- file: combo-preview.html
+  titleName: Combo preview
+  ready: 96
 - file: sets.html
   titleName: Sets
   ready: 96

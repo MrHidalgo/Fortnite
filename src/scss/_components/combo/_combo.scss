@@ -50,6 +50,7 @@
   &__item {
     position: relative;
     min-height: 350px;
+    padding-bottom: 50px;
 
     .section-resize {
       &-bg {
@@ -1120,6 +1121,129 @@
       display: flex;
       justify-content: center;
       padding: 50px 30px;
+    }
+  }
+
+  &__preview {
+    margin-bottom: 50px;
+
+    .section-resize {
+      &-bg {
+        background-color: #232F4C;
+
+        &:before {
+          background-color: #1D2841;
+        }
+      }
+      &-triangle {
+        img {
+          &:nth-of-type(1),
+          &:nth-of-type(3),
+          &:nth-of-type(4),
+          &:nth-of-type(5) {
+            display: none;
+          }
+
+          &:nth-of-type(2) {
+            bottom: -10px;
+          }
+        }
+      }
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+
+        > div {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+
+      .skin__like-header {
+        width: auto;
+        max-width: initial;
+        padding-right: 30px;
+        @include adaptive(575) {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+
+      .icon-i-combos {
+        color: #fff;
+        @include fluid(font-size, 320px, 992px, 30px, 42px);
+      }
+    }
+
+    &-body {
+      padding-bottom: 50px;
+    }
+
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include adaptive(575) {
+        flex-wrap: wrap;
+
+        > div {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        a {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    .combos__box {
+      &-bg,
+      &-triangle,
+      &-bottom {
+        display: none;
+      }
+
+      &-left {
+        @include adaptive(991) {
+          max-width: calc(100% - 245px);
+        }
+        @include adaptive(767) {
+          max-width: 100%;
+        }
+      }
+      &-right {
+        @include adaptive(991) {
+          width: 245px;
+          padding: 0;
+          padding-top: 80px;
+          padding-right: 15px;
+
+          > div {
+            width: calc(100% / 2);
+          }
+        }
+        @include adaptive(767) {
+          width: 100%;
+          padding-top: 30px;
+          padding-left: 15px;
+        }
+
+        > div {
+          @include adaptive(767) {
+            width: calc(100% / 3);
+          }
+          @include adaptive(374) {
+            width: calc(100% / 2);
+          }
+        }
+      }
     }
   }
 }
