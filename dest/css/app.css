@@ -31366,7 +31366,7 @@ picture {
 }
 
 /* line 924, src/scss/_components/combo/_combo.scss */
-.combo__create-bg:before {
+.combo__create-bg:before, .combo__create-bg:after {
   content: '';
   z-index: 0;
   position: absolute;
@@ -31377,13 +31377,19 @@ picture {
   background-color: #282f42;
 }
 
-/* line 935, src/scss/_components/combo/_combo.scss */
+/* line 936, src/scss/_components/combo/_combo.scss */
 .combo__create-bg:before {
   -webkit-clip-path: polygon(0 0, 25% 70%, 100% 100%, 0 100%);
           clip-path: polygon(0 0, 25% 70%, 100% 100%, 0 100%);
 }
 
 /* line 940, src/scss/_components/combo/_combo.scss */
+.combo__create-bg:after {
+  -webkit-clip-path: polygon(80% 25%, 95% 5%, 100% 0, 100% 40%);
+          clip-path: polygon(80% 25%, 95% 5%, 100% 0, 100% 40%);
+}
+
+/* line 945, src/scss/_components/combo/_combo.scss */
 .combo__create-triangle {
   z-index: 0;
   position: absolute;
@@ -31393,30 +31399,30 @@ picture {
   height: 100%;
 }
 
-/* line 948, src/scss/_components/combo/_combo.scss */
+/* line 953, src/scss/_components/combo/_combo.scss */
 .combo__create-triangle img {
   position: absolute;
 }
 
-/* line 951, src/scss/_components/combo/_combo.scss */
+/* line 956, src/scss/_components/combo/_combo.scss */
 .combo__create-triangle img:nth-of-type(1) {
   left: -15px;
   top: 60%;
 }
 
-/* line 955, src/scss/_components/combo/_combo.scss */
+/* line 960, src/scss/_components/combo/_combo.scss */
 .combo__create-triangle img:nth-of-type(2) {
   top: 10%;
   left: -20px;
 }
 
-/* line 959, src/scss/_components/combo/_combo.scss */
+/* line 964, src/scss/_components/combo/_combo.scss */
 .combo__create-triangle img:nth-of-type(3) {
   bottom: -15px;
   right: -15px;
 }
 
-/* line 966, src/scss/_components/combo/_combo.scss */
+/* line 971, src/scss/_components/combo/_combo.scss */
 .combo__create-title {
   position: relative;
   display: -webkit-box;
@@ -31435,13 +31441,13 @@ picture {
           clip-path: polygon(0 0, 100% 2%, 97% 98%, 2% 100%);
 }
 
-/* line 978, src/scss/_components/combo/_combo.scss */
+/* line 983, src/scss/_components/combo/_combo.scss */
 .combo__create-title i {
   color: #ffffff;
   font-size: 47px;
 }
 
-/* line 983, src/scss/_components/combo/_combo.scss */
+/* line 988, src/scss/_components/combo/_combo.scss */
 .combo__create-title p {
   padding-left: 10px;
   font-size: 48px;
@@ -31451,27 +31457,27 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 983, src/scss/_components/combo/_combo.scss */
+  /* line 988, src/scss/_components/combo/_combo.scss */
   .combo__create-title p {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 983, src/scss/_components/combo/_combo.scss */
+  /* line 988, src/scss/_components/combo/_combo.scss */
   .combo__create-title p {
     font-size: 35px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 983, src/scss/_components/combo/_combo.scss */
+  /* line 988, src/scss/_components/combo/_combo.scss */
   .combo__create-title p {
     font-size: 28px;
   }
 }
 
-/* line 1001, src/scss/_components/combo/_combo.scss */
+/* line 1006, src/scss/_components/combo/_combo.scss */
 .combo__create-body {
   display: -webkit-box;
   display: -ms-flexbox;
