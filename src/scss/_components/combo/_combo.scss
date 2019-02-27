@@ -407,7 +407,7 @@
 
   &__custom {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     .p-combos & {
       margin-bottom: 0;
@@ -799,8 +799,51 @@
   }
 
   &__like {
+    position: relative;
+
+    &-bg {
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #edf9fd;
+      clip-path: polygon(0 0, 100% 10px, 99% 99%, 20px 100%);
+    }
+
+    &-triangle {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        position: absolute;
+
+        &:nth-of-type(1) {
+          bottom: 5%;
+          left: -15px;
+        }
+        &:nth-of-type(2) {
+          bottom: -10px;
+          left: 5%;
+        }
+        &:nth-of-type(3) {
+          bottom: -15px;
+          right: 10%;
+        }
+        &:nth-of-type(4) {
+          top: 10px;
+          right: -30px;
+        }
+      }
+    }
+
     .skin__like-body {
-      padding-bottom: 100px;
+      padding-bottom: 0;
     }
 
     &-wrapper {
@@ -818,12 +861,46 @@
       }
     }
 
+    &-footer {
+      display: flex;
+      justify-content: center;
+      padding: 30px 0;
+    }
+
     .combos {
       &__box {
-        &-bg,
-        &-triangle ,
-        &-bottom {
-          display: none;
+        &-triangle {
+          img {
+            &:nth-of-type(1) {
+              top: 5px;
+            }
+            &:nth-of-type(2) {
+              top: 30%;
+              right: -10px;
+              left: auto;
+            }
+            &:nth-of-type(3) {
+              top: 50%;
+              right: auto;
+              left: -10px;
+            }
+            &:nth-of-type(4) {
+              left: 40%;
+            }
+            &:nth-of-type(5) {
+              display: none;
+            }
+          }
+        }
+
+        &-wrapper {
+          padding-bottom: 15px;
+        }
+
+        &-bg {
+          z-index: 0;
+          top: 0;
+          height: 100%;
         }
 
         &-left {
@@ -873,6 +950,42 @@
 
           p {
             font-size: 16px;
+          }
+        }
+
+        &-bottom {
+          @include adaptive(767) {
+            flex-wrap: wrap;
+          }
+        }
+
+        &-total {
+          p {
+            font-size: 12px;
+          }
+
+          .e-skin__block-points {
+            span {
+              font-size: 18px;
+            }
+          }
+        }
+
+        &-like {
+          > span {
+            font-size: 16px;
+            @include adaptive(767) {
+              font-size: 14px;
+            }
+
+            .icon {
+              &-font {
+                font-size: 16px;
+                @include adaptive(767) {
+                  font-size: 14px;
+                }
+              }
+            }
           }
         }
       }
