@@ -622,17 +622,32 @@ $(document).ready(function (ev) {
       var _btn = $(ev.currentTarget),
           _btnArr = $('[combo-drop-btn-js]'),
           _btnData = _btn.find('.combos__block-top')[0].getBoundingClientRect(),
-          _btnOffsetTop = _btn.offset().top - (_headerHeight + _bannerMainHeight),
-          _btnIconHeight = _btn.find('.icon-plus-add').outerHeight(true);
+          _btnOffsetTop = _btn.offset().top,
+          _btnIconHeight = _btn.find('.icon-plus-add').outerHeight(true),
+          _btnIconWidth = _btn.find('.icon-plus-add').outerWidth(true),
+          _btnIconLeft = _btn.find('.icon-plus-add').offset().left;
 
-      var _dropNode = $('[combo-drop-js]');
+      var _dropNode = $('[combo-drop-js]'),
+          _dropCorner = $('.combo__drop-corner');
+
+      var _classCorner = '';
 
       if (!_btn.hasClass('is-active')) {
+        $('html,body').addClass('is-hideScroll');
+
         _btnArr.removeClass('is-active');
         _btnArr.find('span').removeClass('is-open');
 
         _btn.addClass('is-active');
         _btn.find('.icon-plus-add').parent().addClass('is-open');
+
+        _classCorner = _btnIconWidth >= 61 ? 'is-big' : 'is-small';
+
+        _dropCorner.addClass(_classCorner);
+        _dropCorner.css({
+          top: -_btnIconHeight - 15,
+          left: _btnIconLeft - 15
+        });
 
         _dropNode.css({
           'top': _btnOffsetTop + (_btnData.height / 2 + _btnIconHeight / 2)
@@ -645,6 +660,8 @@ $(document).ready(function (ev) {
       $('[combo-drop-btn-js]').removeClass('is-active');
       $('[combo-drop-btn-js]').find('span').removeClass('is-open');
       $('[combo-drop-skin-js]').removeClass('is-active');
+      $('html,body').removeClass('is-hideScroll');
+      $('.combo__drop-corner').removeClass('is-small is-big');
     });
 
     $('[combo-drop-skin-js]').on('click', function (ev) {
@@ -693,6 +710,8 @@ $(document).ready(function (ev) {
         $('[combo-drop-btn-js]').removeClass('is-active');
         $('[combo-drop-btn-js]').find('span').removeClass('is-open');
         $('[combo-drop-skin-js]').removeClass('is-active');
+        $('html,body').removeClass('is-hideScroll');
+        $('.combo__drop-corner').removeClass('is-small is-big');
       }
     });
   };

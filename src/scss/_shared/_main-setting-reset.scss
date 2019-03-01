@@ -5,7 +5,7 @@ body {
 
 
   &.is-hideScroll {
-    position: fixed;
+    //position: fixed;
     width: 100%;
     overflow: hidden !important;
   }
@@ -32,18 +32,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   &.is-hideScroll {
-    @include adaptive(1199) {
-      &:before {
-        overflow: hidden;
-        content: '';
-        z-index: 1000;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba($c-black, 0.86);
-      }
+    //@include adaptive(1199) {
+    //
+    //}
+    &:before {
+      overflow: hidden;
+      content: '';
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($c-black, 0.86);
     }
   }
 }

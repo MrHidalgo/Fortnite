@@ -1,0 +1,53 @@
+// SECTION combo drop :: START
+
+.combo__drop(combo-drop-js)
+  .combo__drop-corner
+    i.icon-font.icon-plus-add
+
+  .combo__drop-bg
+  .combo__drop-content
+    each val, idx in [1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]
+      div
+        a.combos__box(href="#" combo-drop-skin-js)
+          -
+            var svg = `
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill-opacity: 0;
+                              stroke: #fff;
+                              stroke-linejoin: round;
+                              stroke-width: 9px;
+                              fill-rule: evenodd;
+                            }
+                          </style>
+                        </defs>
+                        <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
+                      </svg>`;
+
+          .combos__box-svg
+            != svg
+
+          .combos__box-wrapper
+            .combos__box-left
+              if(idx % 2 === 0)
+                img(src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="")
+              else
+                img(src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="")
+
+              .combos__box-title
+                .combos__box-title--bg
+                .combos__box-title--triangle
+                  img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
+                  img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
+                  img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
+                  img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
+                p!= "Skin Name Here"
+
+  .combo__drop-btn
+    a.c-btn.c-btn--bg(combo-drop-ok-js href="#" class="" title="")!= "okay <i class='icon-font icon-arr-dcc'></i>"
+    a.c-btn.c-btn--bg(combo-drop-cancel-js href="#" class="" title="")!= "cancel <i class='icon-font icon-arr-dcc'></i>"
+
+
+// SECTION combo drop :: END
