@@ -37,287 +37,95 @@ section.skin.skin--like.combo__like
 
     .skin__like
       .skin__like-header
+        i.icon-font.icon-info
         h2!= "You might also like"
 
       .skin__like-body
 
         .combo__like-wrapper
-          div
-            .combos__box
+          each idx, val in [1,2,3,4]
+            div
+              .combos__box(
+                class!= (val === 1) ? 'combos__box--legendary':
+                  (val === 2) ? 'combos__box--epic':
+                    (val === 3) ? 'combos__box--rare':'combos__box--uncommon'
+              )
 
-              .combos__box-bg
-              .combos__box-triangle
-                img(src="./img/img-combosbox-m-triangle-0.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-1.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-2.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-3.svg" srcset="" alt="" title="")
+                .combos__box-bg
+                .combos__box-triangle
+                  img(src="./img/img-combosbox-m-triangle-0.svg" srcset="" alt="" title="")
+                  img(src="./img/img-combosbox-m-triangle-1.svg" srcset="" alt="" title="")
+                  img(src="./img/img-combosbox-m-triangle-2.svg" srcset="" alt="" title="")
+                  img(src="./img/img-combosbox-m-triangle-3.svg" srcset="" alt="" title="")
 
-              .combos__box-wrapper
-                .combos__box-left
-                  img(src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="")
-
-                  .combos__box-title
-                    .combos__box-title--bg
-                    .combos__box-title--triangle
-                      //img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
-                      img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
-                      img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
-                      //img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
-                    p!= "Skin Name Here"
-
-                  .e-skin__block-points
-                    img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
-                    span!= "1500"
-
-                .combos__box-right
-
-                  each val, idx in combosBlock
+                .combos__box-wrapper
+                  .combos__box-heading
                     div
-                      a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
-                        .combos__block-top
-                          .combos__block-badge
-                            i.icon-png(class!= combosBlock[idx].iconName)
+                      i.icon-font.icon-i-combos
+                      h1!= "Skin name"
 
-                          img(src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="")
+                    div
+                      .combos__box-like
+                        .combos__box-like--bg
 
-                        .combos__block-bottom
-                          if(idx === 0)
-                            .b-skin__info--ticker
-                              p!= "SKIN NAME"
-                          else
-                            .b-skin__info--wticker
-                              p!= "SKIN NAME"
+                        a.comments__btn-like(href="#" class="" title="")
+                          i.icon-font.icon-like
+                          span!= "525"
+                        a.comments__btn-dislike(href="#" class="" title="")
+                          i.icon-font.icon-dislike
+                          span!= "211"
 
-                          .e-skin__block-points
-                            img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
-                            span!= "1500"
+                .combos__box-wrapper
+                  a.combos__box-left(href="#")
+                    .combos__box-img
+                      img(src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="")
 
-              .combos__box-wrapper
-                .combos__box-bottom
-                  .combos__box-total
-                    .combos__box-total--bg
+                    .combos__box-title
+                      .combos__box-title--bg
+                      .combos__box-title--triangle
+                        //img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
+                        img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
+                        img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
+                        //img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
+                      p!= "Skin Name Here"
 
-                    p!= "Total price:"
                     .e-skin__block-points
                       img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
-                      span!= "12,000"
+                      span!= "1500"
 
-                  .combos__box-like
-                    .combos__box-like--bg
+                  .combos__box-right
 
-                    span.comments__btn-like(class="" title="")
-                      i.icon-font.icon-like
-                      span!= "525"
-                    span.comments__btn-dislike(class="" title="")
-                      i.icon-font.icon-dislike
-                      span!= "211"
-          div
-            .combos__box
+                    each val, idx in combosBlock
+                      div
+                        a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+                          .combos__block-top
+                            .combos__block-badge
+                              i.icon-png(class!= combosBlock[idx].iconName)
 
-              .combos__box-bg
-              .combos__box-triangle
-                img(src="./img/img-combosbox-m-triangle-0.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-1.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-2.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-3.svg" srcset="" alt="" title="")
+                            img(src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="")
 
-              .combos__box-wrapper
-                .combos__box-left
-                  img(src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="")
+                          .combos__block-bottom
+                            if(idx === 0)
+                              .b-skin__info--ticker
+                                p!= "SKIN NAME"
+                            else
+                              .b-skin__info--wticker
+                                p!= "SKIN NAME"
 
-                  .combos__box-title
-                    .combos__box-title--bg
-                    .combos__box-title--triangle
-                      //img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
-                      img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
-                      img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
-                      //img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
-                    p!= "Skin Name Here"
+                            .e-skin__block-points
+                              img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
+                              span!= "1500"
 
-                  .e-skin__block-points
-                    img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
-                    span!= "1500"
+                .combos__box-wrapper
+                  .combos__box-bottom
+                    .combos__box-total
+                      .combos__box-total--bg
 
-                .combos__box-right
+                      p!= "Total price:"
+                      .e-skin__block-points
+                        img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
+                        span!= "12,000"
 
-                  each val, idx in combosBlock
-                    div
-                      a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
-                        .combos__block-top
-                          .combos__block-badge
-                            i.icon-png(class!= combosBlock[idx].iconName)
-
-                          img(src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="")
-
-                        .combos__block-bottom
-                          if(idx === 0)
-                            .b-skin__info--ticker
-                              p!= "SKIN NAME"
-                          else
-                            .b-skin__info--wticker
-                              p!= "SKIN NAME"
-
-                          .e-skin__block-points
-                            img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
-                            span!= "1500"
-
-              .combos__box-wrapper
-                .combos__box-bottom
-                  .combos__box-total
-                    .combos__box-total--bg
-
-                    p!= "Total price:"
-                    .e-skin__block-points
-                      img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
-                      span!= "12,000"
-
-                  .combos__box-like
-                    .combos__box-like--bg
-
-                    span.comments__btn-like(class="" title="")
-                      i.icon-font.icon-like
-                      span!= "525"
-                    span.comments__btn-dislike(class="" title="")
-                      i.icon-font.icon-dislike
-                      span!= "211"
-          div
-            .combos__box
-
-              .combos__box-bg
-              .combos__box-triangle
-                img(src="./img/img-combosbox-m-triangle-0.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-1.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-2.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-3.svg" srcset="" alt="" title="")
-
-              .combos__box-wrapper
-                .combos__box-left
-                  img(src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="")
-
-                  .combos__box-title
-                    .combos__box-title--bg
-                    .combos__box-title--triangle
-                      //img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
-                      img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
-                      img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
-                      //img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
-                    p!= "Skin Name Here"
-
-                  .e-skin__block-points
-                    img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
-                    span!= "1500"
-
-                .combos__box-right
-
-                  each val, idx in combosBlock
-                    div
-                      a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
-                        .combos__block-top
-                          .combos__block-badge
-                            i.icon-png(class!= combosBlock[idx].iconName)
-
-                          img(src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="")
-
-                        .combos__block-bottom
-                          if(idx === 0)
-                            .b-skin__info--ticker
-                              p!= "SKIN NAME"
-                          else
-                            .b-skin__info--wticker
-                              p!= "SKIN NAME"
-
-                          .e-skin__block-points
-                            img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
-                            span!= "1500"
-
-              .combos__box-wrapper
-                .combos__box-bottom
-                  .combos__box-total
-                    .combos__box-total--bg
-
-                    p!= "Total price:"
-                    .e-skin__block-points
-                      img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
-                      span!= "12,000"
-
-                  .combos__box-like
-                    .combos__box-like--bg
-
-                    span.comments__btn-like(class="" title="")
-                      i.icon-font.icon-like
-                      span!= "525"
-                    span.comments__btn-dislike(class="" title="")
-                      i.icon-font.icon-dislike
-                      span!= "211"
-          div
-            .combos__box
-
-              .combos__box-bg
-              .combos__box-triangle
-                img(src="./img/img-combosbox-m-triangle-0.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-1.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-2.svg" srcset="" alt="" title="")
-                img(src="./img/img-combosbox-m-triangle-3.svg" srcset="" alt="" title="")
-
-              .combos__box-wrapper
-                .combos__box-left
-                  img(src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="")
-
-                  .combos__box-title
-                    .combos__box-title--bg
-                    .combos__box-title--triangle
-                      //img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
-                      img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
-                      img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
-                      //img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
-                    p!= "Skin Name Here"
-
-                  .e-skin__block-points
-                    img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
-                    span!= "1500"
-
-                .combos__box-right
-
-                  each val, idx in combosBlock
-                    div
-                      a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
-                        .combos__block-top
-                          .combos__block-badge
-                            i.icon-png(class!= combosBlock[idx].iconName)
-
-                          img(src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="")
-
-                        .combos__block-bottom
-                          if(idx === 0)
-                            .b-skin__info--ticker
-                              p!= "SKIN NAME"
-                          else
-                            .b-skin__info--wticker
-                              p!= "SKIN NAME"
-
-                          .e-skin__block-points
-                            img(src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title="")
-                            span!= "1500"
-
-              .combos__box-wrapper
-                .combos__box-bottom
-                  .combos__box-total
-                    .combos__box-total--bg
-
-                    p!= "Total price:"
-                    .e-skin__block-points
-                      img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
-                      span!= "12,000"
-
-                  .combos__box-like
-                    .combos__box-like--bg
-
-                    span.comments__btn-like(class="" title="")
-                      i.icon-font.icon-like
-                      span!= "525"
-                    span.comments__btn-dislike(class="" title="")
-                      i.icon-font.icon-dislike
-                      span!= "211"
 
       .combo__like-footer
         a.item__btn.c-btn.c-btn--bg(href="#" class="" title="")!= "View More <i class='icon-font icon-arr-dcc'></i>"

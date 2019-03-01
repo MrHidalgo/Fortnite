@@ -867,7 +867,7 @@
       width: 100%;
       height: 100%;
       background-color: #edf9fd;
-      clip-path: polygon(0 0, 100% 10px, 99% 99%, 20px 100%);
+      clip-path: polygon(0 0, 100% 10px, calc(100% - 10px) calc(100% - 20px), 10px 100%);
     }
 
     &-triangle {
@@ -900,6 +900,39 @@
       }
     }
 
+    .skin__like-header {
+      position: relative;
+      background-color: #ffd600;
+
+      &:before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 100%, 80% 75%, 100% 0, 100% 100%);
+        background-color: #f0ca07;
+      }
+
+      .icon {
+        &-info {
+          color: #fff;
+          font-size: 36px;
+        }
+      }
+
+      h2 {
+        z-index: 2;
+        position: relative;
+        padding-left: 15px;
+        line-height: 1;
+        text-transform: uppercase;
+        @include fluid(font-size, 320px, 767px, 25px, 48px);
+      }
+    }
+
     .skin__like-body {
       padding-bottom: 0;
     }
@@ -908,10 +941,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      width: 100%;
 
       > div {
         width: 100%;
-        max-width: calc((100% - 10px) / 2);
+        max-width: 100%;
         margin-bottom: 30px;
         @include adaptive(424) {
           max-width: 100%;
@@ -922,14 +956,37 @@
     &-footer {
       display: flex;
       justify-content: center;
-      padding: 30px 0;
+      padding: 0 0 30px 0;
     }
 
     .combos {
       &__box {
+
+        @each $className, $colorVal, $bg1, $bg2 in
+            ('legendary', 'radial-gradient(#ea8d23,#c04d1f)', #e38748, #c04d1f),
+            ('epic', 'radial-gradient(#c359ff,#701fe5)', #b04eec, #701fe5),
+            ('rare', 'radial-gradient(#2cc1ff,#215dc2)', #3ad6ff, #215dc2),
+            ('uncommon', 'radial-gradient(#69bb1e,#227622)', #8fee3b, #227622),
+            ('common', 'radial-gradient(#bebebe,#848282)', #bebebe, #848282)
+        {
+          &--#{$className} {
+            .combos__box-img {
+              background-image: #{$colorVal};
+            }
+            .combos__box-title--bg {
+              background-color: $bg1;
+
+              &:before {
+                background-color: $bg2;
+              }
+            }
+          }
+        }
+
         &-triangle {
           img {
             &:nth-of-type(1) {
+              display: none;
               top: 5px;
             }
             &:nth-of-type(2) {
@@ -943,6 +1000,7 @@
               left: -10px;
             }
             &:nth-of-type(4) {
+              display: none;
               left: 40%;
             }
             &:nth-of-type(5) {
@@ -951,127 +1009,195 @@
           }
         }
 
-        &-wrapper {
-          padding-bottom: 15px;
-        }
-
         &-bg {
           z-index: 0;
-          top: 0;
-          height: 100%;
+          top: 40px;
+          height: calc(100% - 40px);
+        }
+
+        &-heading {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          background-color: #518DA4;
+          width: 95%;
+          min-height: 80px;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 5px 15px;
+          clip-path: polygon(0 0, 100% 7%, 97% 96%, 2% 100%);
+          @include adaptive(575) {
+            flex-wrap: wrap;
+          }
+
+          > div {
+            z-index: 2;
+            position: relative;
+
+            &:nth-of-type(1) {
+              display: flex;
+              align-items: center;
+              @include adaptive(575) {
+                padding-top: 5px;
+              }
+            }
+
+            &:nth-of-type(2) {
+              width: 100%;
+              max-width: 162px;
+              padding-right: 10px;
+              @include adaptive(575) {
+                display: flex;
+                justify-content: flex-end;
+                max-width: 100%;
+                padding-top: 10px;
+                padding-bottom: 5px;
+              }
+
+              .combos__box-like {
+                position: relative;
+                top: -4px;
+                height: 40px;
+
+                > a {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 50%;
+                  height: 100%;
+                  color: $c-white;
+                  font-size: 16px;
+                  font-weight: bold;
+                  font-family: 'Ubuntu', sans-serif;
+                  @include adaptive(575) {
+                    font-size: 14px;
+                  }
+
+                  .icon {
+                    &-font {
+                      position: relative;
+                      font-size: 16px;
+                      @include adaptive(575) {
+                        font-size: 14px;
+                      }
+                    }
+                    &-like {
+                      top: -3px;
+                    }
+                    &-dislike {
+                      bottom: -2px;
+                    }
+                  }
+
+                  span {
+                    padding-left: 3px;
+                  }
+                }
+              }
+            }
+          }
+
+          &:before {
+            content: '';
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(0 100%, 80% 75%, 100% 0, 100% 100%);
+            background-color: #45839A;
+          }
+
+          .icon-font {
+            color: #fff;
+            font-size: 33px;
+          }
+
+          p,
+          h1 {
+            padding-left: 15px;
+            color: #fff;
+            line-height: 1;
+            text-transform: uppercase;
+            @include fluid(font-size, 320px, 767px, 25px, 42px);
+          }
         }
 
         &-left {
-          max-width: calc(100% - 144px);
-          min-height: 0;
-          padding-left: 5px;
-          padding-right: 10px;
+          max-width: calc(100% - 265px);
+          padding-left: 30px;
+          padding-right: 30px;
           @include adaptive(1199) {
             max-width: 100%;
           }
-
-          .e-skin__block-points {
-            img {
-              transform: scale(0.8);
-            }
-            span {
-              font-size: 14px;
-            }
+          @include adaptive(991) {
+            max-width: calc(100% - 265px)
+          }
+          @include adaptive(767) {
+            max-width: 100%;
+            min-height: 0;
+            padding-top: 30px;
           }
         }
 
         &-right {
-          position: relative;
-          width: 144px;
-          padding-top: 30px;
+          width: 265px;
+          padding-top: 50px;
           @include adaptive(1199) {
             width: 100%;
             padding-left: 0;
             padding-right: 0;
           }
+          @include adaptive(991) {
+            width: 265px;
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          @include adaptive(767) {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 30px;
+          }
 
           > div {
+            @include adaptive(991) {
+              width: calc(100% / 2);
+            }
             @include adaptive(767) {
               width: calc(100% / 3);
             }
-            @include adaptive(575) {
+            @include adaptive(424) {
               width: calc(100% / 2);
             }
-            @include adaptive(424) {
-              width: calc(100% / 3);
-            }
-          }
-        }
-
-        &-title {
-          height: 34px;
-
-          p {
-            font-size: 16px;
           }
         }
 
         &-bottom {
-          @include adaptive(767) {
-            flex-wrap: wrap;
-          }
+          display: flex;
+          justify-content: center;
+          max-width: 265px;
+          margin-left: auto;
+          padding-right: 15px;
+          padding-bottom: 30px;
         }
 
-        &-total {
-          p {
-            font-size: 12px;
-          }
+        &-img {
+          border-style: solid;
+          border-width: 4px;
+          border-color: rgb(232, 242, 255);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.17);
+          background-image: radial-gradient(#bebebe,#848282);
 
-          .e-skin__block-points {
-            span {
-              font-size: 18px;
-            }
-          }
-        }
-
-        &-like {
-          > span {
-            font-size: 16px;
-            @include adaptive(767) {
-              font-size: 14px;
-            }
-
-            .icon {
-              &-font {
-                font-size: 16px;
-                @include adaptive(767) {
-                  font-size: 14px;
-                }
-              }
-            }
-          }
-        }
-      }
-
-      &__block {
-        width: 62px;
-        margin-right: 10px;
-        @include adaptive(1199) {
-          margin-right: 0;
-        }
-
-        &-top {
-          height: 62px;
-        }
-
-        &-bottom  {
-          p {
-            font-size: 14px;
-            padding-bottom: 0;
-          }
-        }
-
-        &-badge {
-          width: 17px;
-          height: 17px;
-
-          i {
-            transform: scale(0.3);
+          img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            filter: drop-shadow(10px 5px 0px #171f32);
           }
         }
       }
