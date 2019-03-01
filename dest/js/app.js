@@ -624,8 +624,7 @@ $(document).ready(function (ev) {
           _btnData = _btn.find('.combos__block-top')[0].getBoundingClientRect(),
           _btnOffsetTop = _btn.offset().top,
           _btnIconHeight = _btn.find('.icon-plus-add').outerHeight(true),
-          _btnIconWidth = _btn.find('.icon-plus-add').outerWidth(true),
-          _btnIconLeft = _btn.find('.icon-plus-add').offset().left;
+          _btnIconWidth = _btn.find('.icon-plus-add').outerWidth(true);
 
       var _dropNode = $('[combo-drop-js]'),
           _dropCorner = $('.combo__drop-corner');
@@ -645,8 +644,8 @@ $(document).ready(function (ev) {
 
         _dropCorner.addClass(_classCorner);
         _dropCorner.css({
-          top: -_btnIconHeight - 15,
-          left: _btnIconLeft - 15
+          top: _btn.find('.icon-plus-add')[0].getBoundingClientRect().top - 15,
+          left: _btn.find('.icon-plus-add')[0].getBoundingClientRect().left - 15
         });
 
         _dropNode.css({

@@ -6,9 +6,16 @@
 
   .combo__drop-bg
   .combo__drop-content
-    each val, idx in [1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]
+    each val, idx in [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]
       div
-        a.combos__box(href="#" combo-drop-skin-js)
+        a.combos__box(
+          combo-drop-skin-js
+          href="#"
+          class!= (val === 1) ? 'combos__box--legendary':
+            (val === 2) ? 'combos__box--epic':
+              (val === 3) ? 'combos__box--rare':
+                (val === 4) ? 'combos__box--uncommon':'combos__box--common'
+        )
           -
             var svg = `
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
@@ -44,6 +51,10 @@
                   img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
                   img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
                 p!= "Skin Name Here"
+
+              .e-skin__block-points
+                img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
+                span!= "1500"
 
   .combo__drop-btn
     a.c-btn.c-btn--bg(combo-drop-ok-js href="#" class="" title="")!= "okay <i class='icon-font icon-arr-dcc'></i>"

@@ -256,11 +256,15 @@
     display: none;
     position: absolute;
     left: 0;
+    right: 0;
     width: 100%;
+    max-width: 1295px;
     height: 100%;
     padding-top: 30px;
     padding-bottom: 50px;
     padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
     max-height: 573px;
 
     ::-webkit-scrollbar {
@@ -279,9 +283,9 @@
     }
 
     &-corner {
+      opacity: 0;
       z-index: 1000;
-      position: absolute;
-      top: -58px;
+      position: fixed;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -290,8 +294,10 @@
       clip-path: polygon(0 0, 100% 10%, 94% 100%, 8% 100%);
 
       &.is-big {
+        opacity: 1;
         width: 91px;
         height: 91px;
+        @include transition(opacity);
 
         .icon-font {
           font-size: 61px;
@@ -299,8 +305,10 @@
       }
 
       &.is-small {
+        opacity: 1;
         width: 73px;
         height: 73px;
+        @include transition(opacity);
 
         .icon-font {
           font-size: 43px;
@@ -363,11 +371,8 @@
       > div {
         width: 100%;
         max-width: calc(100% / 6);
-        height: 200px;
-        max-height: 200px;
         padding: 0 15px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 5px;
         @include adaptive(1199) {
           max-width: calc(100% / 5);
         }
@@ -419,7 +424,6 @@
             display: block;
             max-width: 100%;
             min-height: 0;
-            max-height: 200px;
             @include adaptive(575) {
               padding: 0;
             }

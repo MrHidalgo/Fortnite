@@ -5,6 +5,9 @@ pageClassName: p-combo
 ---
 extends shared/_layout
 
+block comboDrop
+  include ./components/combo/_combo-drop
+
 block content
   div.body(class!= pageClassName)
 
