@@ -30,7 +30,7 @@ section.combo
     .combo__skins-wrapper
        each val, id in [1,2,3,4,5,6]
         div
-          .combos__box
+          a.combos__box(href="#" class="" title="")
 
             .combos__box-bg
             .combos__box-triangle
@@ -47,11 +47,11 @@ section.combo
                 .combos__box-title
                   .combos__box-title--bg
                   .combos__box-title--triangle
-                    img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
+                    //img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
                     img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
                     img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
-                    img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
-                  p!= "Skin Name Here"
+                    //img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
+                  h2!= "Skin Name Here"
 
                 .e-skin__block-points
                   img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
@@ -61,7 +61,7 @@ section.combo
 
                 each val, idx in combosBlock
                   div
-                    a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+                    .combos__block(class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
                       .combos__block-top
                         .combos__block-badge
                           i.icon-png(class!= combosBlock[idx].iconName)
@@ -99,21 +99,5 @@ section.combo
                   span.comments__btn-dislike(class="" title="")
                     i.icon-font.icon-dislike
                     span!= "211"
-
-          //.combo__skins-description
-          //  .combo__skins-description--triangle
-          //    img(src="./img/img-comboskins-triangle-0.svg" alt="" title="")
-          //    img(src="./img/img-comboskins-triangle-1.svg" alt="" title="")
-          //    img(src="./img/img-comboskins-triangle-2.svg" alt="" title="")
-          //    img(src="./img/img-comboskins-triangle-3.svg" alt="" title="")
-          //
-          //  p
-          //    i.icon-font.icon-info
-          //    span!= "Description"
-          //
-          //  div
-          //    span!= "The red menace of Anarchy Acres."
-
-
 
 // SECTION combo-skins :: END
