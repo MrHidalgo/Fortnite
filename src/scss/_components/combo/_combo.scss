@@ -678,7 +678,7 @@
   }
 
   &__skins {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
 
     &-wrapper {
@@ -1149,23 +1149,23 @@
 
       i {
         color: #ffffff;
-        font-size: 47px;
+        font-size: 43px;
       }
 
       p {
         padding-left: 10px;
-        font-size: 48px;
+        font-size: 43px;
         color: rgb(255, 255, 255);
         text-transform: uppercase;
         line-height: 1.2;
         @include adaptive(1199) {
-          font-size: 40px;
+          font-size: 38px;
         }
         @include adaptive(767) {
-          font-size: 35px;
+          font-size: 33px;
         }
         @include adaptive(575) {
-          font-size: 28px;
+          font-size: 25px;
         }
       }
     }
@@ -1173,7 +1173,7 @@
     &-body {
       display: flex;
       justify-content: center;
-      padding: 50px 30px;
+      padding: 50px 30px 15px;
     }
   }
 
