@@ -18265,13 +18265,13 @@ picture {
 /* line 64, src/scss/_components/list/_filter.scss */
 .filter__trinagle img:nth-child(2) {
   right: 0;
-  bottom: 15%;
+  bottom: 45px;
 }
 
 @media screen and (max-width: 575px) {
   /* line 64, src/scss/_components/list/_filter.scss */
   .filter__trinagle img:nth-child(2) {
-    bottom: 3%;
+    bottom: 10px;
   }
 }
 
@@ -18944,7 +18944,7 @@ picture {
 
 /* line 37, src/scss/_components/list/_browse.scss */
 .browse__triangle img:nth-child(1) {
-  top: -3%;
+  top: 10px;
   right: -2%;
 }
 

@@ -63,9 +63,9 @@
       }
       &:nth-child(2) {
         right: 0;
-        bottom: 15%;
+        bottom: 45px;
         @include adaptive(575) {
-          bottom: 3%;
+          bottom: 10px;
         }
       }
     }

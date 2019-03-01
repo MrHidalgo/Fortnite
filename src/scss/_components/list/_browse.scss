@@ -35,7 +35,7 @@
       position: absolute;
 
       &:nth-child(1) {
-        top: -3%;
+        top: 10px;
         right: -2%;
         @include adaptive(767) {
           display: none;
