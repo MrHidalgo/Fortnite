@@ -1453,7 +1453,7 @@
         width: calc((100% - 66px) / 3);
       }
       @include adaptive(575) {
-        width: calc((100% - 44px) / 2);
+        width: 100%;
 
         > div {
           width: 100%;

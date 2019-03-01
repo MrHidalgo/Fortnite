@@ -222,6 +222,9 @@
         max-width: calc(100% / 3);
         padding: 5px 10px;
         margin-bottom: 15px;
+        @include adaptive(424) {
+          max-width: calc(100% / 2);
+        }
 
         > a {
           margin-left: auto;
