@@ -40,7 +40,7 @@ section.combo.combo__custom.combo--custom
 
     .combo__custom-title
       i.icon-font.icon-paint
-      p!= "Create Your Custom Combo"
+      h2!= "Create Your Custom Combo"
 
     .combos__box
 
@@ -55,11 +55,11 @@ section.combo.combo__custom.combo--custom
           .combos__box-title
             .combos__box-title--bg
             .combos__box-title--triangle
-              img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
+              //img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
               img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
               img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
-              img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
-            p!= "Skin"
+              //img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
+            h3!= "Skin"
 
         .combos__box-right
 
@@ -73,10 +73,10 @@ section.combo.combo__custom.combo--custom
                 .combos__block-bottom
                   if(idx === 0)
                     .b-skin__info--ticker
-                      p!= "SKIN NAME"
+                      h3!= "SKIN NAME"
                   else
                     .b-skin__info--wticker
-                      p!= "SKIN NAME"
+                      h3!= "SKIN NAME"
 
       .combos__box-wrapper
         .combos__box-bottom

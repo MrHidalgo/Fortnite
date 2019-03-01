@@ -12332,7 +12332,8 @@ picture {
 
 /* line 375, src/scss/_components/home/_combos.scss */
 .combos__box-title p,
-.combos__box-title h2 {
+.combos__box-title h2,
+.combos__box-title h3 {
   z-index: 2;
   position: relative;
   overflow: hidden;
@@ -12345,7 +12346,7 @@ picture {
   line-height: 1.2;
 }
 
-/* line 389, src/scss/_components/home/_combos.scss */
+/* line 390, src/scss/_components/home/_combos.scss */
 .combos__box-total {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12362,7 +12363,7 @@ picture {
   color: #fff;
 }
 
-/* line 400, src/scss/_components/home/_combos.scss */
+/* line 401, src/scss/_components/home/_combos.scss */
 .combos__box-total:before {
   content: '';
   z-index: -1;
@@ -12376,7 +12377,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
 }
 
-/* line 412, src/scss/_components/home/_combos.scss */
+/* line 413, src/scss/_components/home/_combos.scss */
 .combos__box-total--bg {
   z-index: -1;
   position: absolute;
@@ -12389,7 +12390,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%);
 }
 
-/* line 422, src/scss/_components/home/_combos.scss */
+/* line 423, src/scss/_components/home/_combos.scss */
 .combos__box-total--bg:before {
   content: '';
   position: absolute;
@@ -12402,7 +12403,7 @@ picture {
           clip-path: polygon(0 100%, 80% 70%, 100% 0, 100% 100%);
 }
 
-/* line 434, src/scss/_components/home/_combos.scss */
+/* line 435, src/scss/_components/home/_combos.scss */
 .combos__box-total p {
   font-size: 14px;
   padding-right: 5px;
@@ -12412,13 +12413,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 434, src/scss/_components/home/_combos.scss */
+  /* line 435, src/scss/_components/home/_combos.scss */
   .combos__box-total p {
     font-size: 12px;
   }
 }
 
-/* line 445, src/scss/_components/home/_combos.scss */
+/* line 446, src/scss/_components/home/_combos.scss */
 .combos__box-total .e-skin__block-points {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12429,7 +12430,7 @@ picture {
   padding-bottom: 0;
 }
 
-/* line 450, src/scss/_components/home/_combos.scss */
+/* line 451, src/scss/_components/home/_combos.scss */
 .combos__box-total .e-skin__block-points span {
   font-size: 24px;
   font-weight: 600;
@@ -12439,13 +12440,13 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 450, src/scss/_components/home/_combos.scss */
+  /* line 451, src/scss/_components/home/_combos.scss */
   .combos__box-total .e-skin__block-points span {
     font-size: 18px;
   }
 }
 
-/* line 463, src/scss/_components/home/_combos.scss */
+/* line 464, src/scss/_components/home/_combos.scss */
 .combos__box-like {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12459,7 +12460,7 @@ picture {
   height: 53px;
 }
 
-/* line 471, src/scss/_components/home/_combos.scss */
+/* line 472, src/scss/_components/home/_combos.scss */
 .combos__box-like:before {
   content: '';
   z-index: -1;
@@ -12473,7 +12474,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 97% 100%, 2% 100%);
 }
 
-/* line 483, src/scss/_components/home/_combos.scss */
+/* line 484, src/scss/_components/home/_combos.scss */
 .combos__box-like--bg {
   z-index: -1;
   position: absolute;
@@ -12486,7 +12487,7 @@ picture {
           clip-path: polygon(0 0, 100% 0, 97% 100%, 2% 100%);
 }
 
-/* line 493, src/scss/_components/home/_combos.scss */
+/* line 494, src/scss/_components/home/_combos.scss */
 .combos__box-like--bg:before {
   content: '';
   position: absolute;
@@ -12499,7 +12500,7 @@ picture {
           clip-path: polygon(0 100%, 80% 70%, 100% 0, 100% 100%);
 }
 
-/* line 505, src/scss/_components/home/_combos.scss */
+/* line 506, src/scss/_components/home/_combos.scss */
 .combos__box-like > span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12519,55 +12520,55 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 505, src/scss/_components/home/_combos.scss */
+  /* line 506, src/scss/_components/home/_combos.scss */
   .combos__box-like > span {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 505, src/scss/_components/home/_combos.scss */
+  /* line 506, src/scss/_components/home/_combos.scss */
   .combos__box-like > span {
     font-size: 14px;
   }
 }
 
-/* line 523, src/scss/_components/home/_combos.scss */
+/* line 524, src/scss/_components/home/_combos.scss */
 .combos__box-like > span .icon-font {
   position: relative;
   font-size: 18px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 523, src/scss/_components/home/_combos.scss */
+  /* line 524, src/scss/_components/home/_combos.scss */
   .combos__box-like > span .icon-font {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 523, src/scss/_components/home/_combos.scss */
+  /* line 524, src/scss/_components/home/_combos.scss */
   .combos__box-like > span .icon-font {
     font-size: 14px;
   }
 }
 
-/* line 533, src/scss/_components/home/_combos.scss */
+/* line 534, src/scss/_components/home/_combos.scss */
 .combos__box-like > span .icon-like {
   top: -3px;
 }
 
-/* line 536, src/scss/_components/home/_combos.scss */
+/* line 537, src/scss/_components/home/_combos.scss */
 .combos__box-like > span .icon-dislike {
   bottom: -2px;
 }
 
-/* line 541, src/scss/_components/home/_combos.scss */
+/* line 542, src/scss/_components/home/_combos.scss */
 .combos__box-like > span span {
   padding-left: 3px;
 }
 
-/* line 548, src/scss/_components/home/_combos.scss */
+/* line 549, src/scss/_components/home/_combos.scss */
 .combos__block {
   overflow: hidden;
   display: -webkit-box;
@@ -12583,55 +12584,55 @@ picture {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 548, src/scss/_components/home/_combos.scss */
+  /* line 549, src/scss/_components/home/_combos.scss */
   .combos__block {
     margin-right: 0;
   }
 }
 
-/* line 569, src/scss/_components/home/_combos.scss */
+/* line 570, src/scss/_components/home/_combos.scss */
 .combos__block--legendary .combos__block-top:before {
   background-image: -webkit-radial-gradient(#ea8d23,#c04d1f);
   background-image: -o-radial-gradient(#ea8d23,#c04d1f);
   background-image: radial-gradient(#ea8d23,#c04d1f);
 }
 
-/* line 569, src/scss/_components/home/_combos.scss */
+/* line 570, src/scss/_components/home/_combos.scss */
 .combos__block--epic .combos__block-top:before {
   background-image: -webkit-radial-gradient(#c359ff,#701fe5);
   background-image: -o-radial-gradient(#c359ff,#701fe5);
   background-image: radial-gradient(#c359ff,#701fe5);
 }
 
-/* line 569, src/scss/_components/home/_combos.scss */
+/* line 570, src/scss/_components/home/_combos.scss */
 .combos__block--rare .combos__block-top:before {
   background-image: -webkit-radial-gradient(#2cc1ff,#215dc2);
   background-image: -o-radial-gradient(#2cc1ff,#215dc2);
   background-image: radial-gradient(#2cc1ff,#215dc2);
 }
 
-/* line 569, src/scss/_components/home/_combos.scss */
+/* line 570, src/scss/_components/home/_combos.scss */
 .combos__block--uncommon .combos__block-top:before {
   background-image: -webkit-radial-gradient(#69bb1e,#227622);
   background-image: -o-radial-gradient(#69bb1e,#227622);
   background-image: radial-gradient(#69bb1e,#227622);
 }
 
-/* line 569, src/scss/_components/home/_combos.scss */
+/* line 570, src/scss/_components/home/_combos.scss */
 .combos__block--default .combos__block-top:before {
   background-image: -webkit-radial-gradient(#bebebe,#848282);
   background-image: -o-radial-gradient(#bebebe,#848282);
   background-image: radial-gradient(#bebebe,#848282);
 }
 
-/* line 569, src/scss/_components/home/_combos.scss */
+/* line 570, src/scss/_components/home/_combos.scss */
 .combos__block--custom .combos__block-top:before {
   background-image: -webkit-radial-gradient(#727d96,#212c45);
   background-image: -o-radial-gradient(#727d96,#212c45);
   background-image: radial-gradient(#727d96,#212c45);
 }
 
-/* line 578, src/scss/_components/home/_combos.scss */
+/* line 579, src/scss/_components/home/_combos.scss */
 .combos__block:hover .combos__block-top:after {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -12639,7 +12640,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 583, src/scss/_components/home/_combos.scss */
+/* line 584, src/scss/_components/home/_combos.scss */
 .combos__block:hover .combos__block-top img {
   -webkit-transform-origin: center;
       -ms-transform-origin: center;
@@ -12654,7 +12655,7 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 591, src/scss/_components/home/_combos.scss */
+/* line 592, src/scss/_components/home/_combos.scss */
 .combos__block-top {
   overflow: hidden;
   display: -webkit-box;
@@ -12676,7 +12677,7 @@ picture {
           box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.17);
 }
 
-/* line 604, src/scss/_components/home/_combos.scss */
+/* line 605, src/scss/_components/home/_combos.scss */
 .combos__block-top:before, .combos__block-top:after {
   content: '';
   z-index: -1;
@@ -12687,7 +12688,7 @@ picture {
   height: calc(100% + 2px);
 }
 
-/* line 615, src/scss/_components/home/_combos.scss */
+/* line 616, src/scss/_components/home/_combos.scss */
 .combos__block-top:after {
   opacity: 0;
   background: -webkit-radial-gradient(center, 200px, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
@@ -12698,7 +12699,7 @@ picture {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* line 621, src/scss/_components/home/_combos.scss */
+/* line 622, src/scss/_components/home/_combos.scss */
 .combos__block-top img {
   z-index: 2;
   position: relative;
@@ -12717,13 +12718,14 @@ picture {
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
-/* line 634, src/scss/_components/home/_combos.scss */
+/* line 635, src/scss/_components/home/_combos.scss */
 .combos__block-bottom {
   min-height: 40px;
 }
 
-/* line 637, src/scss/_components/home/_combos.scss */
-.combos__block-bottom p {
+/* line 638, src/scss/_components/home/_combos.scss */
+.combos__block-bottom p,
+.combos__block-bottom h3 {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 16px;
@@ -12733,7 +12735,7 @@ picture {
   line-height: 1.2;
 }
 
-/* line 647, src/scss/_components/home/_combos.scss */
+/* line 649, src/scss/_components/home/_combos.scss */
 .combos__block-bottom .e-skin__block-points {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -12744,14 +12746,14 @@ picture {
   padding-bottom: 0;
 }
 
-/* line 652, src/scss/_components/home/_combos.scss */
+/* line 654, src/scss/_components/home/_combos.scss */
 .combos__block-bottom .e-skin__block-points span {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
 }
 
-/* line 660, src/scss/_components/home/_combos.scss */
+/* line 662, src/scss/_components/home/_combos.scss */
 .combos__block-badge {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12771,7 +12773,7 @@ picture {
   background-color: #e8f2ff;
 }
 
-/* line 672, src/scss/_components/home/_combos.scss */
+/* line 674, src/scss/_components/home/_combos.scss */
 .combos__block-badge i {
   opacity: 0.65;
   -webkit-filter: invert(1);
@@ -30408,7 +30410,7 @@ picture {
 }
 
 /* line 197, src/scss/_components/combo/_combo.scss */
-.combo__item-title p {
+.combo__item-title h1 {
   z-index: 2;
   position: relative;
   font-size: 64px;
@@ -30419,14 +30421,14 @@ picture {
 
 @media screen and (max-width: 991px) {
   /* line 197, src/scss/_components/combo/_combo.scss */
-  .combo__item-title p {
+  .combo__item-title h1 {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 575px) {
   /* line 197, src/scss/_components/combo/_combo.scss */
-  .combo__item-title p {
+  .combo__item-title h1 {
     font-size: 40px;
   }
 }
@@ -30882,7 +30884,7 @@ picture {
 }
 
 /* line 543, src/scss/_components/combo/_combo.scss */
-.combo__custom-title p {
+.combo__custom-title h2 {
   padding-left: 10px;
   font-size: 48px;
   color: white;
@@ -30892,21 +30894,21 @@ picture {
 
 @media screen and (max-width: 1199px) {
   /* line 543, src/scss/_components/combo/_combo.scss */
-  .combo__custom-title p {
+  .combo__custom-title h2 {
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 767px) {
   /* line 543, src/scss/_components/combo/_combo.scss */
-  .combo__custom-title p {
+  .combo__custom-title h2 {
     font-size: 35px;
   }
 }
 
 @media screen and (max-width: 575px) {
   /* line 543, src/scss/_components/combo/_combo.scss */
-  .combo__custom-title p {
+  .combo__custom-title h2 {
     font-size: 28px;
   }
 }
