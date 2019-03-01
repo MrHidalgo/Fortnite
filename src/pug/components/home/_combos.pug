@@ -45,7 +45,7 @@ section#combos.combos
       .combos__row
         .combos__row-left
 
-          .combos__box
+          a.combos__box.combos__box--legendary(href="#" class="" title="")
 
             .combos__box-bg
             .combos__box-triangle
@@ -62,10 +62,10 @@ section#combos.combos
                 .combos__box-title
                   .combos__box-title--bg
                   .combos__box-title--triangle
-                    img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
+                    //img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
                     img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
                     img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
-                    img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
+                    //img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
                   p!= "Skin Name Here"
 
                 .e-skin__block-points
@@ -76,7 +76,7 @@ section#combos.combos
 
                 each val, idx in combosBlock
                   div
-                    a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+                    .combos__block(class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
                       .combos__block-top
                         .combos__block-badge
                           i.icon-png(class!= combosBlock[idx].iconName)
@@ -117,7 +117,7 @@ section#combos.combos
 
         .combos__row-right
 
-          .combos__box
+          a.combos__box.combos__box--common(href="#" class="" title="")
 
             .combos__box-bg
             .combos__box-triangle
@@ -134,10 +134,10 @@ section#combos.combos
                 .combos__box-title
                   .combos__box-title--bg
                   .combos__box-title--triangle
-                    img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
+                    //img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")
                     img(src="./img/img-combostitle-triangle-1.svg" alt="" title="")
                     img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
-                    img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
+                    //img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")
                   p!= "Skin Name Here"
 
                 .e-skin__block-points
@@ -148,7 +148,7 @@ section#combos.combos
 
                 each val, idx in combosBlock
                   div
-                    a.combos__block(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+                    .combos__block(class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
                       .combos__block-top
                         .combos__block-badge
                           i.icon-png(class!= combosBlock[idx].iconName)

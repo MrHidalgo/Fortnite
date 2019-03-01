@@ -151,6 +151,25 @@
 
   &__box {
     position: relative;
+    display: block;
+
+    @each $classMod, $bg1, $bg2 in
+        ('legendary', #e38748, #c04d1f),
+        ('epic', #b04eec, #701fe5),
+        ('rare', #3ad6ff, #215dc2),
+        ('uncommon', #8fee3b, #227622),
+        ('common', #bebebe, #848282)
+    {
+      &--#{$classMod} {
+        .combos__box-title--bg {
+          background-color: $bg1;
+
+          &:before {
+            background-color: $bg2;
+          }
+        }
+      }
+    }
 
     &-bg {
       z-index: -1;
@@ -308,7 +327,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #ff7e00;
+        background-color: #bebebe;
         clip-path: polygon(0 1%, 99% 0, 100% 99%, 3% 98%);
 
         &:before {
@@ -319,7 +338,7 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: #ed7500;
+          background-color: #848282;
           clip-path: polygon(0 0, 100% 0, 35% 45%, 0 100%);
         }
       }
@@ -334,22 +353,22 @@
         img {
           position: absolute;
 
+          //&:nth-of-type(1) {
+          //  top: -10px;
+          //  left: -10px;
+          //}
           &:nth-of-type(1) {
-            top: -10px;
-            left: -10px;
-          }
-          &:nth-of-type(2) {
             top: 0;
             right: 0;
           }
-          &:nth-of-type(3) {
+          &:nth-of-type(2) {
             left: 0;
             bottom: 0;
           }
-          &:nth-of-type(4) {
-            right: -10px;
-            bottom: -10px;
-          }
+          //&:nth-of-type(4) {
+          //  right: -10px;
+          //  bottom: -10px;
+          //}
         }
       }
 
