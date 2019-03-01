@@ -8152,13 +8152,6 @@ picture {
   }
 }
 
-@media screen and (max-width: 767px) {
-  /* line 3, src/scss/_components/common/_pagination.scss */
-  .pagination {
-    display: none;
-  }
-}
-
 /* line 19, src/scss/_components/common/_pagination.scss */
 .pagination__wrapper {
   display: -webkit-box;
@@ -8290,6 +8283,13 @@ picture {
   color: #fff;
   -webkit-clip-path: polygon(0 0, 100% 4%, 96% 96%, 4% 100%);
           clip-path: polygon(0 0, 100% 4%, 96% 96%, 4% 100%);
+}
+
+@media screen and (max-width: 424px) {
+  /* line 112, src/scss/_components/common/_pagination.scss */
+  .pagination__btn-num:nth-of-type(4), .pagination__btn-num:nth-of-type(5) {
+    display: none;
+  }
 }
 
 /* line 3, src/scss/_components/common/_updated.scss */

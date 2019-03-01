@@ -286,7 +286,7 @@ $(document).ready((ev) => {
      * @param drop
      * @param maxWidth
      */
-    const dropHundler = (ev, parent, drop, maxWidth) => {
+    const dropHandler = (ev, parent, drop, maxWidth) => {
       const _el = $(ev.currentTarget),
         _parentNode = _el.closest(parent),
         _dropDownNode = _parentNode.find(drop);
@@ -297,11 +297,11 @@ $(document).ready((ev) => {
     };
 
     $('.header__nav-link--wrapper > a').on('click', (ev) => {
-      dropHundler(ev, '.header__nav-link--wrapper', '.dropdown-menu', 1200);
+      dropHandler(ev, '.header__nav-link--wrapper', '.dropdown-menu', 1200);
     });
 
     $('.item__dropdown .dropdown__btn').on('click', (ev) => {
-      dropHundler(ev, '.item__dropdown', '.dropdown-menu', 768);
+      dropHandler(ev, '.item__dropdown', '.dropdown-menu', 768);
     });
   };
 

@@ -13,7 +13,7 @@
     margin-right: auto;
   }
   @include adaptive(767) {
-    display: none;
+    //display: none;
   }
 
   &__wrapper {
@@ -107,6 +107,13 @@
         background-color: #1ac2fe;
         color: $c-white;
         clip-path: polygon(0 0, 100% 4%, 96% 96%, 4% 100%);
+      }
+
+      &:nth-of-type(4),
+      &:nth-of-type(5) {
+        @include adaptive(424) {
+          display: none;
+        }
       }
     }
   }

@@ -558,7 +558,7 @@ $(document).ready(function (ev) {
      * @param drop
      * @param maxWidth
      */
-    var dropHundler = function dropHundler(ev, parent, drop, maxWidth) {
+    var dropHandler = function dropHandler(ev, parent, drop, maxWidth) {
       var _el = $(ev.currentTarget),
           _parentNode = _el.closest(parent),
           _dropDownNode = _parentNode.find(drop);
@@ -569,11 +569,11 @@ $(document).ready(function (ev) {
     };
 
     $('.header__nav-link--wrapper > a').on('click', function (ev) {
-      dropHundler(ev, '.header__nav-link--wrapper', '.dropdown-menu', 1200);
+      dropHandler(ev, '.header__nav-link--wrapper', '.dropdown-menu', 1200);
     });
 
     $('.item__dropdown .dropdown__btn').on('click', function (ev) {
-      dropHundler(ev, '.item__dropdown', '.dropdown-menu', 768);
+      dropHandler(ev, '.item__dropdown', '.dropdown-menu', 768);
     });
   };
 
