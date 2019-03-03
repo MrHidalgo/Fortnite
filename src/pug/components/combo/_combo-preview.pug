@@ -38,37 +38,37 @@ section.skin.skin--like.combo__preview
   .skin__wrapper
 
     .skin__like
-      .combo__preview-header
-
-        .skin__like-header
-          i.icon-font.icon-i-combos
-          h2!= "skin name"
-
-        .combos__box-like
-          .combos__box-like--bg
-
-          span.comments__btn-like(class="" title="")
-            i.icon-font.icon-like
-            span!= "525"
-          span.comments__btn-dislike(class="" title="")
-            i.icon-font.icon-dislike
-            span!= "211"
-
       .combo__preview-body
 
-        .combos__box
-
+        .combos__box.combos__box--legendary
           .combos__box-bg
           .combos__box-triangle
-            img(src="./img/img-combosbox-triangle-0.svg" srcset="" alt="" title="")
-            img(src="./img/img-combosbox-triangle-1.svg" srcset="" alt="" title="")
-            img(src="./img/img-combosbox-triangle-2.svg" srcset="" alt="" title="")
-            img(src="./img/img-combosbox-triangle-3.svg" srcset="" alt="" title="")
-            img(src="./img/img-combosbox-triangle-4.svg" srcset="" alt="" title="")
+            img(src="./img/img-combosbox-m-triangle-0.svg" srcset="" alt="" title="")
+            img(src="./img/img-combosbox-m-triangle-1.svg" srcset="" alt="" title="")
+            img(src="./img/img-combosbox-m-triangle-2.svg" srcset="" alt="" title="")
+            img(src="./img/img-combosbox-m-triangle-3.svg" srcset="" alt="" title="")
 
           .combos__box-wrapper
-            .combos__box-left
-              img(src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="")
+            .combos__box-heading
+              div
+                i.icon-font.icon-i-combos
+                h1!= "Skin name"
+
+              div
+                .combos__box-like
+                  .combos__box-like--bg
+
+                  a.comments__btn-like(href="#" class="" title="")
+                    i.icon-font.icon-like
+                    span!= "525"
+                  a.comments__btn-dislike(href="#" class="" title="")
+                    i.icon-font.icon-dislike
+                    span!= "211"
+
+          .combos__box-wrapper
+            a.combos__box-left(href="#")
+              .combos__box-img
+                img(src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="")
 
               .combos__box-title
                 .combos__box-title--bg
@@ -108,6 +108,10 @@ section.skin.skin--like.combo__preview
 
           .combos__box-wrapper
             .combos__box-bottom
+
+              a.item__btn.c-btn.c-btn--bg(href="#" class="" title="")
+                != "<i class='icon-font icon-paint'></i> Make custom combo <i class='icon-font icon-arr-dcc'></i>"
+
               .combos__box-total
                 .combos__box-total--bg
 
@@ -115,29 +119,5 @@ section.skin.skin--like.combo__preview
                 .e-skin__block-points
                   img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
                   span!= "12,000"
-
-              .combos__box-like
-                .combos__box-like--bg
-
-                span.comments__btn-like(class="" title="")
-                  i.icon-font.icon-like
-                  span!= "525"
-                span.comments__btn-dislike(class="" title="")
-                  i.icon-font.icon-dislike
-                  span!= "211"
-
-
-      .combo__preview-footer
-        .combos__box-total
-          .combos__box-total--bg
-
-          p!= "Total price:"
-          .e-skin__block-points
-            img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
-            span!= "12,000"
-
-        a.c-btn.c-btn--bg(href="#" class="" title="")!= "Make custom combo <i class='icon-font icon-arr-dcc'></i>"
-
-
 
 // SECTION skin like :: END
