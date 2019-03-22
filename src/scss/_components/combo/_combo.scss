@@ -1200,6 +1200,11 @@
             .combos__block-top {
               height: 100%;
               border: none;
+
+              img {
+                z-index: 0;
+                max-height: 100%;
+              }
             }
           }
         }

@@ -64,11 +64,11 @@ section.combo.combo__custom.combo--custom
               img(src="./img/img-combostitle-triangle-2.svg" alt="" title="")
             h3!= "Skin"
 
-        .combos__box-right
+        .combos__box-right(combo-custom-skinAdditional-js)
 
           each val, idx in combosBlock
             div
-              a.combos__block(combo-drop-btn-js data-combos-id=(idx + 2) data-name="combos__block" href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+              a.combos__block(combo-drop-btn-js data-id!=idx data-combos-id=(idx + 2) data-name="combos__block" href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
                 .combos__block-top
                   img(src="" srcset="" alt="" title="" combo-custom-img-js)
 

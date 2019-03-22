@@ -37,7 +37,7 @@ section#combo-preview.skin.skin--like.combo__like.combo__view
 
               .combos__box-wrapper
                 .combos__box-left
-                  a.combos__block.combos__block--common(href="#")
+                  a.combos__block.combos__block--common(href="#" combo-viewMain-skin-js)
                     .combos__block-top
                       img(src="" srcset="" alt="" title="")
 
@@ -52,16 +52,17 @@ section#combo-preview.skin.skin--like.combo__like.combo__view
                     img(src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title="")
                     span!= "1500"
 
-                .combos__box-right
+                .combos__box-right(combo-viewAdditional-skin-js)
 
                   each val, idx in [1,2,3,4,5]
                     div
-                      a.combos__block.combos__block--common(href="#" class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+                      a.combos__block.combos__block--common(href="#" data-id!= idx class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
                         .combos__block-top
                           .combos__block-badge
                             i.icon-png
 
-                          img(src="" srcset="" alt="" title="")
+                          .combos__block-top--img
+                            img(src="" srcset="" alt="" title="")
 
                         .combos__block-bottom
                           if(idx === 0)

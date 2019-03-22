@@ -623,8 +623,6 @@ $(document).ready(function (ev) {
     };
 
     var checkPreviewSkinNode = function checkPreviewSkinNode() {
-      console.log("checkPreviewSkinNode: " + $('#combo-preview').is(':visible'));
-
       if ($('#combo-preview').is(':visible')) {
         $("[data-btn-name='screenshot']").removeClass('is-disabled');
       } else {
@@ -643,9 +641,68 @@ $(document).ready(function (ev) {
       checkPreviewSkinNode();
     };
 
+    var updatePreviewBox = function updatePreviewBox() {
+      var _mainSkin = $('.combos__block[data-combos-id="1"]'),
+          _mainSkinTitle = $('[combo-custom-title-js]');
+
+      var _obj = {
+        main: {
+          img: _mainSkin.find('[combo-custom-img-js]').clone(),
+          classModSkin: _mainSkin.attr('class').substring(_mainSkin.attr('class').indexOf('combos__block--')),
+          classModTitle: _mainSkinTitle.attr('class').substring(_mainSkinTitle.attr('class').indexOf('combos__box--'))
+        }
+      };
+
+      var _viewMainSkin = $('[combo-viewMain-skin-js]'),
+          _viewMainSkinImg = _viewMainSkin.find('.combos__block-top'),
+          _viewMainSkinTitle = _viewMainSkin.siblings('.combos__box-title');
+
+      _viewMainSkinImg.html(_obj.main.img);
+
+      _viewMainSkin.removeClass('combos__block--common').addClass(_obj.main.classModSkin);
+
+      _viewMainSkinTitle.removeClass('combos__box--common').addClass(_obj.main.classModTitle);
+
+      var _iteratorNormalCompletion4 = true;
+      var _didIteratorError4 = false;
+      var _iteratorError4 = undefined;
+
+      try {
+        for (var _iterator4 = $('[combo-custom-skinAdditional-js] .combos__block')[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
+          var _el = _step4.value;
+
+          var _elID = $(_el).data('id'),
+              _elImg = $(_el).find('[combo-custom-img-js]').clone(),
+              _comboAdditionalSkin = $('[combo-viewAdditional-skin-js] .combos__block[data-id="' + _elID + '"]');
+
+          if ($(_el).hasClass('is-skin') && _comboAdditionalSkin.data('id') === _elID) {
+            $('[combo-viewAdditional-skin-js] .combos__block[data-id="' + _elID + '"] .combos__block-top--img').html(_elImg);
+
+            _comboAdditionalSkin.removeClass('combos__block--common').addClass($(_el).attr('class').substring($(_el).attr('class').indexOf('combos__block--')));
+          } else {
+            $('[combo-viewAdditional-skin-js] .combos__block[data-id="' + _elID + '"] .combos__block-top--img').html(_elImg);
+
+            _comboAdditionalSkin.removeClass(_comboAdditionalSkin.attr('class').substring(_comboAdditionalSkin.attr('class').indexOf('combos__block--'))).addClass('combos__block--common');
+          }
+        }
+      } catch (err) {
+        _didIteratorError4 = true;
+        _iteratorError4 = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion4 && _iterator4.return) {
+            _iterator4.return();
+          }
+        } finally {
+          if (_didIteratorError4) {
+            throw _iteratorError4;
+          }
+        }
+      }
+    };
+
     $('[combo-drop-btn-js]').on('click', function (ev) {
       ev.preventDefault();
-      console.log("combo-drop-btn-js");
 
       var _btn = $(ev.currentTarget),
           _btnArr = $('[combo-drop-btn-js]'),
@@ -722,6 +779,7 @@ $(document).ready(function (ev) {
 
       $('[combo-drop-cancel-js]').click();
       additionalBtnPrevScreen();
+      updatePreviewBox();
     });
 
     $('[combo-remove-skin-js]').on('click', function (ev) {
@@ -738,14 +796,16 @@ $(document).ready(function (ev) {
 
       additionalBtnPrevScreen();
       checkPreviewSkinNode();
+      updatePreviewBox();
 
       ev.preventDefault();
       ev.stopPropagation();
     });
 
     $('[combo-custom-preview-js]').on('click', function (ev) {
-      $('.combo__view').slideDown(350);
+      updatePreviewBox();
 
+      $('.combo__view').slideDown(350);
       checkPreviewSkinNode();
     });
 

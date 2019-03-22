@@ -353,8 +353,6 @@ $(document).ready((ev) => {
     };
 
     const checkPreviewSkinNode = () => {
-      console.log(`checkPreviewSkinNode: ${$('#combo-preview').is(':visible')}`);
-
       if($('#combo-preview').is(':visible')) {
         $("[data-btn-name='screenshot']").removeClass('is-disabled');
       } else {
@@ -373,9 +371,56 @@ $(document).ready((ev) => {
       checkPreviewSkinNode();
     };
 
+    const updatePreviewBox = () => {
+      const _mainSkin = $('.combos__block[data-combos-id="1"]'),
+        _mainSkinTitle = $('[combo-custom-title-js]');
+
+      const _obj = {
+        main : {
+          img: _mainSkin.find('[combo-custom-img-js]').clone(),
+          classModSkin: _mainSkin.attr('class').substring(_mainSkin.attr('class').indexOf('combos__block--')),
+          classModTitle: _mainSkinTitle.attr('class').substring(_mainSkinTitle.attr('class').indexOf('combos__box--'))
+        }
+      };
+
+      const _viewMainSkin = $('[combo-viewMain-skin-js]'),
+        _viewMainSkinImg = _viewMainSkin.find('.combos__block-top'),
+        _viewMainSkinTitle = _viewMainSkin.siblings('.combos__box-title');
+
+      _viewMainSkinImg.html(_obj.main.img);
+
+      _viewMainSkin
+        .removeClass('combos__block--common')
+        .addClass(_obj.main.classModSkin);
+
+      _viewMainSkinTitle
+        .removeClass('combos__box--common')
+        .addClass(_obj.main.classModTitle);
+
+      for (let _el of $('[combo-custom-skinAdditional-js] .combos__block')) {
+        const _elID = $(_el).data('id'),
+          _elImg = $(_el).find('[combo-custom-img-js]').clone(),
+          _comboAdditionalSkin = $('[combo-viewAdditional-skin-js] .combos__block[data-id="' + _elID + '"]');
+
+        if($(_el).hasClass('is-skin') && (_comboAdditionalSkin.data('id') === _elID)) {
+          $('[combo-viewAdditional-skin-js] .combos__block[data-id="' + _elID + '"] .combos__block-top--img').html(_elImg);
+
+          _comboAdditionalSkin
+            .removeClass('combos__block--common')
+            .addClass($(_el).attr('class').substring($(_el).attr('class').indexOf('combos__block--')));
+
+        } else {
+          $('[combo-viewAdditional-skin-js] .combos__block[data-id="' + _elID + '"] .combos__block-top--img').html(_elImg);
+
+          _comboAdditionalSkin
+            .removeClass(_comboAdditionalSkin.attr('class').substring(_comboAdditionalSkin.attr('class').indexOf('combos__block--')))
+            .addClass('combos__block--common');
+        }
+      }
+    };
+
     $('[combo-drop-btn-js]').on('click', (ev) => {
       ev.preventDefault();
-      console.log(`combo-drop-btn-js`);
 
       const _btn = $(ev.currentTarget),
         _btnArr = $('[combo-drop-btn-js]'),
@@ -454,6 +499,7 @@ $(document).ready((ev) => {
 
       $('[combo-drop-cancel-js]').click();
       additionalBtnPrevScreen();
+      updatePreviewBox();
     });
 
     $('[combo-remove-skin-js]').on('click', (ev) => {
@@ -472,14 +518,16 @@ $(document).ready((ev) => {
 
       additionalBtnPrevScreen();
       checkPreviewSkinNode();
+      updatePreviewBox();
 
       ev.preventDefault();
       ev.stopPropagation();
     });
 
     $('[combo-custom-preview-js]').on('click', (ev) => {
-      $('.combo__view').slideDown(350);
+      updatePreviewBox();
 
+      $('.combo__view').slideDown(350);
       checkPreviewSkinNode();
     });
 
