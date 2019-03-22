@@ -345,9 +345,37 @@ $(document).ready((ev) => {
 
 
   const initComboDrop = () => {
+    let _id = 0,
+      _classMod = '';
+
+    const checkDisabledBtn = () => {
+      return $('.combos__block[data-combos-id="1"]').hasClass('is-skin');
+    };
+
+    const checkPreviewSkinNode = () => {
+      console.log(`checkPreviewSkinNode: ${$('#combo-preview').is(':visible')}`);
+
+      if($('#combo-preview').is(':visible')) {
+        $("[data-btn-name='screenshot']").removeClass('is-disabled');
+      } else {
+        $("[data-btn-name='screenshot']").addClass('is-disabled');
+      }
+    };
+
+    const additionalBtnPrevScreen = () => {
+      if(checkDisabledBtn()) {
+        $("[data-btn-name='preview']").removeClass('is-disabled');
+      } else {
+        $("[data-btn-name='preview']").addClass('is-disabled');
+        $('.combo__view').hide();
+      }
+
+      checkPreviewSkinNode();
+    };
+
     $('[combo-drop-btn-js]').on('click', (ev) => {
-      const _headerHeight = $('header').outerHeight(true),
-        _bannerMainHeight = $('.body > .banner--main').outerHeight(true);
+      ev.preventDefault();
+      console.log(`combo-drop-btn-js`);
 
       const _btn = $(ev.currentTarget),
         _btnArr = $('[combo-drop-btn-js]'),
@@ -356,10 +384,16 @@ $(document).ready((ev) => {
         _btnIconHeight = _btn.find('.icon-plus-add').outerHeight(true),
         _btnIconWidth = _btn.find('.icon-plus-add').outerWidth(true);
 
+      if (_btn.hasClass('is-skin')) {
+        return false;
+      }
+
       const _dropNode = $('[combo-drop-js]'),
         _dropCorner = $('.combo__drop-corner');
 
       let _classCorner = '';
+
+      _id = _btn.data('combos-id');
 
       if(!_btn.hasClass('is-active')) {
         $('html,body').addClass('is-hideScroll');
@@ -384,18 +418,116 @@ $(document).ready((ev) => {
       }
     });
 
-    $('[combo-drop-cancel-js], [combo-drop-ok-js]').on('click', (ev) => {
-      $('.combo__drop').slideUp(350);
-      $('[combo-drop-btn-js]').removeClass('is-active');
-      $('[combo-drop-btn-js]').find('span').removeClass('is-open');
+    $('[combo-drop-skin-js]').on('click', (ev) => {
+      ev.preventDefault();
+
       $('[combo-drop-skin-js]').removeClass('is-active');
+      $(ev.currentTarget).addClass('is-active');
+    });
+
+    $('[combo-drop-ok-js]').on('click', (ev) => {
+      ev.preventDefault();
+
+      const _elem = $('.combo__drop .combos__box.is-active'),
+        _elemSkinPath = _elem.data('combos-path'),
+        _elemSkinName = _elem.data('combos-name'),
+        _elemSkinExt = _elem.data('combos-ext'),
+        _elemMod = _elem.data('combos-mod');
+
+      const _skin = $('[data-combos-id="' + _id + '"]'),
+        _imgContainer = _skin.find('[combo-custom-img-js]'),
+        _skinTitle = $('[combo-custom-title-js]');
+
+      let _imgSrc = _elemSkinPath + '/' + _elemSkinName + '.' + _elemSkinExt,
+        _imgSrcset = _elemSkinPath + '/' + _elemSkinName + '@2x.' + _elemSkinExt + ' 2x';
+
+      _classMod = _elemMod;
+
+      _imgContainer.attr('src', _imgSrc).attr('srcset', _imgSrcset);
+      _skin
+        .removeClass('combos__block--custom')
+        .addClass('is-skin ' + _skin.data('name') + '--' + _elemMod);
+
+      if(_id === 1) {
+        _skinTitle.addClass(_skinTitle.data('name') + '--' + _elemMod);
+      }
+
+      $('[combo-drop-cancel-js]').click();
+      additionalBtnPrevScreen();
+    });
+
+    $('[combo-remove-skin-js]').on('click', (ev) => {
+      const _skin = $(ev.currentTarget).closest('a'),
+        _imgContainer = _skin.find('[combo-custom-img-js]'),
+        _skinTitle = $('[combo-custom-title-js]');
+
+      _imgContainer.attr('src', '').attr('srcset', '');
+      _skin
+        .removeClass('is-skin ' + _skin.attr('class').substring(_skin.attr('class').indexOf('combos__block--')))
+        .addClass(_skin.data('name') + '--custom');
+
+      if(_skin.data('combos-id') === 1) {
+        _skinTitle.removeClass(_skinTitle.attr('class').substring(_skinTitle.attr('class').indexOf('combos__box--')));
+      }
+
+      additionalBtnPrevScreen();
+      checkPreviewSkinNode();
+
+      ev.preventDefault();
+      ev.stopPropagation();
+    });
+
+    $('[combo-custom-preview-js]').on('click', (ev) => {
+      $('.combo__view').slideDown(350);
+
+      checkPreviewSkinNode();
+    });
+
+    $('[combo-custom-screenshot-js]').on('click', (ev) => {
+      function saveAs(uri, filename) {
+        let link = document.createElement('a');
+
+        if (typeof link.download === 'string') {
+          link.href = uri;
+          link.download = filename;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        } else {
+          window.open(uri);
+        }
+      }
+
+      html2canvas(document.querySelector("#combo-preview")).then(canvas => {
+        console.log(canvas);
+        saveAs(
+          canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream"),
+          'combo-custom.png'
+        );
+      });
+    });
+
+    $('[combo-drop-cancel-js]').on('click', (ev) => {
+      ev.preventDefault();
+
       $('html,body').removeClass('is-hideScroll');
+
+      $('.combo__drop').slideUp(350);
+      $('[combo-drop-btn-js]')
+        .removeClass('is-active')
+        .find('span')
+        .removeClass('is-open');
+
+      $('[combo-drop-skin-js]').removeClass('is-active');
       $('.combo__drop-corner').removeClass('is-small is-big')
     });
 
-    $('[combo-drop-skin-js]').on('click', (ev) => {
-      $('[combo-drop-skin-js]').removeClass('is-active');
-      $(ev.currentTarget).addClass('is-active');
+    $(document).keyup((ev) => {
+      ev.preventDefault();
+
+      if(ev.which === 27) {
+        $('[combo-drop-cancel-js]').click();
+      }
     });
   };
 	/*

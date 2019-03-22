@@ -6,10 +6,17 @@
 
   .combo__drop-bg
   .combo__drop-content
-    each val, idx in [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]
+    each val, idx in [1,2,3,4,5]
       div
         a.combos__box(
           combo-drop-skin-js
+
+          data-combos-id!= val
+          data-combos-path='./img'
+          data-combos-name=(idx % 2 === 0) ? 'img-combosbox-0':'img-combosbox-1'
+          data-combos-ext='png'
+          data-combos-mod!= (val === 1) ? 'legendary':(val === 2) ? 'epic':(val === 3) ? 'rare':(val === 4) ? 'uncommon': 'common'
+
           href="#"
           class!= (val === 1) ? 'combos__box--legendary':
             (val === 2) ? 'combos__box--epic':
@@ -18,20 +25,20 @@
         )
           -
             var svg = `
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-                        <defs>
-                          <style>
-                            .cls-1 {
-                              fill-opacity: 0;
-                              stroke: #fff;
-                              stroke-linejoin: round;
-                              stroke-width: 9px;
-                              fill-rule: evenodd;
-                            }
-                          </style>
-                        </defs>
-                        <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-                      </svg>`;
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill-opacity: 0;
+                      stroke: #fff;
+                      stroke-linejoin: round;
+                      stroke-width: 9px;
+                      fill-rule: evenodd;
+                    }
+                  </style>
+                </defs>
+                <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
+              </svg>`;
 
           .combos__box-svg
             != svg

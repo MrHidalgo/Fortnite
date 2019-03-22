@@ -105,37 +105,13 @@
     </header>
     <!-- HEADER :: END-->
     <div class="body p-combo">
-      <!-- SECTION main banner :: START-->
-      <section class="banner banner--main" id="banner">
-        <div class="banner__box-wrapper">
-          <!-- del after add banner-->
-          <div class="banner__box">
-            <p>Ad Leaderboard size banner</p>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION main banner :: END-->
+      <!--include components/common/_mainBanner-->
       <section class="section">
         <div class="c-grid">
           <div class="section__wrapper">
             <div class="section__wrapper-left">
               <section id="combo">
-                <!-- SECTION :: START-->
-                <section class="combo combo__item combo--item">
-                  <div class="section-resize" section-resize-js>
-                    <div class="section-resize-bg"></div>
-                    <div class="section-resize-triangle"><img src="./img/img-combo-item-triangle-0.svg" alt="" title=""></div>
-                  </div>
-                  <div class="combo__item-wrapper combo__item-wrapper-0">
-                    <div class="combo__item-logo"><img src="./img/img-logo-wlogo.png" srcset="./img/img-logo-wlogo@2x.png 2x" alt="" title=""></div>
-                    <div class="combo__item-title">
-                      <div class="combo__item-title-bg"></div>
-                      <div class="combo__item-title-triangle"><img src="./img/img-combo=title-item-triangle-0.svg" alt="" title=""><img src="./img/img-combo=title-item-triangle-1.svg" alt="" title=""><img src="./img/img-combo=title-item-triangle-2.svg" alt="" title=""><img src="./img/img-combo=title-item-triangle-3.svg" alt="" title=""><img src="./img/img-combo=title-item-triangle-4.svg" alt="" title=""></div>
-                      <h1>Make Combos</h1>
-                    </div>
-                  </div>
-                </section>
-                <!-- SECTION :: END-->
+                <!--include ./components/combo/_combo-item-->
                 <!-- SECTION :: START-->
                 <section class="combo combo__custom combo--custom">
                   <div class="section-resize" section-resize-js>
@@ -148,48 +124,57 @@
                     </div>
                     <div class="combos__box">
                       <div class="combos__box-wrapper">
-                        <div class="combos__box-left"><a class="combos__block combos__block--custom" href="#" combo-drop-btn-js>
-                            <div class="combos__block-top"><span><i class="icon-font icon-plus-add"></i></span></div></a>
-                          <div class="combos__box-title">
+                        <div class="combos__box-left"><a class="combos__block combos__block--custom" href="#" data-combos-id="1" data-name="combos__block" combo-drop-btn-js>
+                            <div class="combos__block-top"><img src="" srcset="" alt="" title="" combo-custom-img-js><span><i class="icon-font icon-plus-add"></i></span>
+                              <div class="combos__block-close" combo-remove-skin-js><i class="icon-font icon-close"></i></div>
+                            </div></a>
+                          <div class="combos__box-title" data-name="combos__box" combo-custom-title-js>
                             <div class="combos__box-title--bg"></div>
-                            <div class="combos__box-title--triangle">
-                              <!--img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")--><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title="">
-                              <!--img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")-->
-                            </div>
+                            <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""></div>
                             <h3>Skin</h3>
                           </div>
                         </div>
                         <div class="combos__box-right">
-                          <div><a class="combos__block combos__block-0 combos__block--custom" combo-drop-btn-js href="#">
-                              <div class="combos__block-top"><span><i class="icon-font icon-plus-add"></i></span></div>
+                          <div><a class="combos__block combos__block-0 combos__block--custom" combo-drop-btn-js data-combos-id="2" data-name="combos__block" href="#">
+                              <div class="combos__block-top"><img src="" srcset="" alt="" title="" combo-custom-img-js><span><i class="icon-font icon-plus-add"></i></span>
+                                <div class="combos__block-close" combo-remove-skin-js><i class="icon-font icon-close"></i></div>
+                              </div>
                               <div class="combos__block-bottom">
                                 <div class="b-skin__info--ticker">
                                   <h3>SKIN NAME</h3>
                                 </div>
                               </div></a></div>
-                          <div><a class="combos__block combos__block-1 combos__block--custom" combo-drop-btn-js href="#">
-                              <div class="combos__block-top"><span><i class="icon-font icon-plus-add"></i></span></div>
+                          <div><a class="combos__block combos__block-1 combos__block--custom" combo-drop-btn-js data-combos-id="3" data-name="combos__block" href="#">
+                              <div class="combos__block-top"><img src="" srcset="" alt="" title="" combo-custom-img-js><span><i class="icon-font icon-plus-add"></i></span>
+                                <div class="combos__block-close" combo-remove-skin-js><i class="icon-font icon-close"></i></div>
+                              </div>
                               <div class="combos__block-bottom">
                                 <div class="b-skin__info--wticker">
                                   <h3>SKIN NAME</h3>
                                 </div>
                               </div></a></div>
-                          <div><a class="combos__block combos__block-2 combos__block--custom" combo-drop-btn-js href="#">
-                              <div class="combos__block-top"><span><i class="icon-font icon-plus-add"></i></span></div>
+                          <div><a class="combos__block combos__block-2 combos__block--custom" combo-drop-btn-js data-combos-id="4" data-name="combos__block" href="#">
+                              <div class="combos__block-top"><img src="" srcset="" alt="" title="" combo-custom-img-js><span><i class="icon-font icon-plus-add"></i></span>
+                                <div class="combos__block-close" combo-remove-skin-js><i class="icon-font icon-close"></i></div>
+                              </div>
                               <div class="combos__block-bottom">
                                 <div class="b-skin__info--wticker">
                                   <h3>SKIN NAME</h3>
                                 </div>
                               </div></a></div>
-                          <div><a class="combos__block combos__block-3 combos__block--custom" combo-drop-btn-js href="#">
-                              <div class="combos__block-top"><span><i class="icon-font icon-plus-add"></i></span></div>
+                          <div><a class="combos__block combos__block-3 combos__block--custom" combo-drop-btn-js data-combos-id="5" data-name="combos__block" href="#">
+                              <div class="combos__block-top"><img src="" srcset="" alt="" title="" combo-custom-img-js><span><i class="icon-font icon-plus-add"></i></span>
+                                <div class="combos__block-close" combo-remove-skin-js><i class="icon-font icon-close"></i></div>
+                              </div>
                               <div class="combos__block-bottom">
                                 <div class="b-skin__info--wticker">
                                   <h3>SKIN NAME</h3>
                                 </div>
                               </div></a></div>
-                          <div><a class="combos__block combos__block-4 combos__block--custom" combo-drop-btn-js href="#">
-                              <div class="combos__block-top"><span><i class="icon-font icon-plus-add"></i></span></div>
+                          <div><a class="combos__block combos__block-4 combos__block--custom" combo-drop-btn-js data-combos-id="6" data-name="combos__block" href="#">
+                              <div class="combos__block-top"><img src="" srcset="" alt="" title="" combo-custom-img-js><span><i class="icon-font icon-plus-add"></i></span>
+                                <div class="combos__block-close" combo-remove-skin-js><i class="icon-font icon-close"></i></div>
+                              </div>
                               <div class="combos__block-bottom">
                                 <div class="b-skin__info--wticker">
                                   <h3>SKIN NAME</h3>
@@ -198,25 +183,20 @@
                         </div>
                       </div>
                       <div class="combos__box-wrapper">
-                        <div class="combos__box-bottom"><a class="c-btn c-btn--bg" href="#" title="">Preview <i class='icon-font icon-arr-dcc'></i></a><a class="c-btn c-btn--bg" href="#" title=""><i class='icon-font icon-saves'></i> Save Screenshot</a></div>
+                        <div class="combos__box-bottom"><a class="c-btn c-btn--bg is-disabled" href="#" combo-custom-preview-js data-btn-name="preview" title="">Preview <i class='icon-font icon-arr-dcc'></i></a><a class="c-btn c-btn--bg is-disabled" href="#" combo-custom-screenshot-js data-btn-name="screenshot" title=""><i class='icon-font icon-saves'></i> Save Screenshot</a></div>
                       </div>
                     </div>
                   </div>
                 </section>
                 <!-- SECTION :: END-->
-                <!-- SECTION skin like :: START-->
-                <section class="skin skin--like combo__like">
-                  <div class="combo__like-bg"></div>
-                  <div class="combo__like-triangle"><img src="./img/img-b-description-triangle-0.svg" alt="" title=""><img src="./img/img-b-description-triangle-1.svg" alt="" title=""><img src="./img/img-b-description-triangle-2.svg" alt="" title=""><img src="./img/img-b-description-triangle-3.svg" alt="" title=""></div>
+                <!-- SECTION skin view :: START-->
+                <section class="skin skin--like combo__like combo__view" id="combo-preview">
                   <div class="skin__wrapper">
                     <div class="skin__like">
-                      <div class="skin__like-header"><i class="icon-font icon-info"></i>
-                        <h2>You might also like</h2>
-                      </div>
                       <div class="skin__like-body">
                         <div class="combo__like-wrapper">
                           <div>
-                            <div class="combos__box combos__box--uncommon">
+                            <div class="combos__box">
                               <div class="combos__box-bg"></div>
                               <div class="combos__box-triangle"><img src="./img/img-combosbox-m-triangle-0.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-1.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-2.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-3.svg" srcset="" alt="" title=""></div>
                               <div class="combos__box-wrapper">
@@ -231,21 +211,20 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="combos__box-wrapper"><a class="combos__box-left" href="#">
-                                  <div class="combos__box-img"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title=""></div>
-                                  <div class="combos__box-title">
+                              <div class="combos__box-wrapper">
+                                <div class="combos__box-left"><a class="combos__block combos__block--common" href="#">
+                                    <div class="combos__block-top"><img src="" srcset="" alt="" title=""></div></a>
+                                  <div class="combos__box-title combos__box--common">
                                     <div class="combos__box-title--bg"></div>
-                                    <div class="combos__box-title--triangle">
-                                      <!--img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")--><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title="">
-                                      <!--img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")-->
-                                    </div>
+                                    <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""></div>
                                     <p>Skin Name Here</p>
                                   </div>
-                                  <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div></a>
+                                  <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
+                                </div>
                                 <div class="combos__box-right">
-                                  <div><a class="combos__block combos__block-0 combos__block--legendary" href="#">
+                                  <div><a class="combos__block combos__block--common combos__block-0 combos__block--custom" href="#">
                                       <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
+                                        <div class="combos__block-badge"><i class="icon-png"></i></div><img src="" srcset="" alt="" title="">
                                       </div>
                                       <div class="combos__block-bottom">
                                         <div class="b-skin__info--ticker">
@@ -253,9 +232,9 @@
                                         </div>
                                         <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                       </div></a></div>
-                                  <div><a class="combos__block combos__block-1 combos__block--epic" href="#">
+                                  <div><a class="combos__block combos__block--common combos__block-1 combos__block--custom" href="#">
                                       <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png backBling"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
+                                        <div class="combos__block-badge"><i class="icon-png"></i></div><img src="" srcset="" alt="" title="">
                                       </div>
                                       <div class="combos__block-bottom">
                                         <div class="b-skin__info--wticker">
@@ -263,9 +242,9 @@
                                         </div>
                                         <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                       </div></a></div>
-                                  <div><a class="combos__block combos__block-2 combos__block--rare" href="#">
+                                  <div><a class="combos__block combos__block--common combos__block-2 combos__block--custom" href="#">
                                       <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png harvestingTool"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
+                                        <div class="combos__block-badge"><i class="icon-png"></i></div><img src="" srcset="" alt="" title="">
                                       </div>
                                       <div class="combos__block-bottom">
                                         <div class="b-skin__info--wticker">
@@ -273,9 +252,9 @@
                                         </div>
                                         <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                       </div></a></div>
-                                  <div><a class="combos__block combos__block-3 combos__block--uncommon" href="#">
+                                  <div><a class="combos__block combos__block--common combos__block-3 combos__block--custom" href="#">
                                       <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png skydivingTrails"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
+                                        <div class="combos__block-badge"><i class="icon-png"></i></div><img src="" srcset="" alt="" title="">
                                       </div>
                                       <div class="combos__block-bottom">
                                         <div class="b-skin__info--wticker">
@@ -283,282 +262,9 @@
                                         </div>
                                         <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
                                       </div></a></div>
-                                  <div><a class="combos__block combos__block-4 combos__block--default" href="#">
+                                  <div><a class="combos__block combos__block--common combos__block-4 combos__block--custom" href="#">
                                       <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png emoticon"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                </div>
-                              </div>
-                              <div class="combos__box-wrapper">
-                                <div class="combos__box-bottom">
-                                  <div class="combos__box-total">
-                                    <div class="combos__box-total--bg"></div>
-                                    <p>Total price:</p>
-                                    <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>12,000</span></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <div class="combos__box combos__box--legendary">
-                              <div class="combos__box-bg"></div>
-                              <div class="combos__box-triangle"><img src="./img/img-combosbox-m-triangle-0.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-1.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-2.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-3.svg" srcset="" alt="" title=""></div>
-                              <div class="combos__box-wrapper">
-                                <div class="combos__box-heading">
-                                  <div><i class="icon-font icon-i-combos"></i>
-                                    <h1>Skin name</h1>
-                                  </div>
-                                  <div>
-                                    <div class="combos__box-like">
-                                      <div class="combos__box-like--bg"></div><a class="comments__btn-like" href="#" title=""><i class="icon-font icon-like"></i><span>525</span></a><a class="comments__btn-dislike" href="#" title=""><i class="icon-font icon-dislike"></i><span>211</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="combos__box-wrapper"><a class="combos__box-left" href="#">
-                                  <div class="combos__box-img"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title=""></div>
-                                  <div class="combos__box-title">
-                                    <div class="combos__box-title--bg"></div>
-                                    <div class="combos__box-title--triangle">
-                                      <!--img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")--><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title="">
-                                      <!--img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")-->
-                                    </div>
-                                    <p>Skin Name Here</p>
-                                  </div>
-                                  <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div></a>
-                                <div class="combos__box-right">
-                                  <div><a class="combos__block combos__block-0 combos__block--legendary" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--ticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-1 combos__block--epic" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png backBling"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-2 combos__block--rare" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png harvestingTool"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-3 combos__block--uncommon" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png skydivingTrails"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-4 combos__block--default" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png emoticon"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                </div>
-                              </div>
-                              <div class="combos__box-wrapper">
-                                <div class="combos__box-bottom">
-                                  <div class="combos__box-total">
-                                    <div class="combos__box-total--bg"></div>
-                                    <p>Total price:</p>
-                                    <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>12,000</span></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <div class="combos__box combos__box--epic">
-                              <div class="combos__box-bg"></div>
-                              <div class="combos__box-triangle"><img src="./img/img-combosbox-m-triangle-0.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-1.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-2.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-3.svg" srcset="" alt="" title=""></div>
-                              <div class="combos__box-wrapper">
-                                <div class="combos__box-heading">
-                                  <div><i class="icon-font icon-i-combos"></i>
-                                    <h1>Skin name</h1>
-                                  </div>
-                                  <div>
-                                    <div class="combos__box-like">
-                                      <div class="combos__box-like--bg"></div><a class="comments__btn-like" href="#" title=""><i class="icon-font icon-like"></i><span>525</span></a><a class="comments__btn-dislike" href="#" title=""><i class="icon-font icon-dislike"></i><span>211</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="combos__box-wrapper"><a class="combos__box-left" href="#">
-                                  <div class="combos__box-img"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title=""></div>
-                                  <div class="combos__box-title">
-                                    <div class="combos__box-title--bg"></div>
-                                    <div class="combos__box-title--triangle">
-                                      <!--img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")--><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title="">
-                                      <!--img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")-->
-                                    </div>
-                                    <p>Skin Name Here</p>
-                                  </div>
-                                  <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div></a>
-                                <div class="combos__box-right">
-                                  <div><a class="combos__block combos__block-0 combos__block--legendary" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--ticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-1 combos__block--epic" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png backBling"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-2 combos__block--rare" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png harvestingTool"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-3 combos__block--uncommon" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png skydivingTrails"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-4 combos__block--default" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png emoticon"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                </div>
-                              </div>
-                              <div class="combos__box-wrapper">
-                                <div class="combos__box-bottom">
-                                  <div class="combos__box-total">
-                                    <div class="combos__box-total--bg"></div>
-                                    <p>Total price:</p>
-                                    <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>12,000</span></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div>
-                            <div class="combos__box combos__box--rare">
-                              <div class="combos__box-bg"></div>
-                              <div class="combos__box-triangle"><img src="./img/img-combosbox-m-triangle-0.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-1.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-2.svg" srcset="" alt="" title=""><img src="./img/img-combosbox-m-triangle-3.svg" srcset="" alt="" title=""></div>
-                              <div class="combos__box-wrapper">
-                                <div class="combos__box-heading">
-                                  <div><i class="icon-font icon-i-combos"></i>
-                                    <h1>Skin name</h1>
-                                  </div>
-                                  <div>
-                                    <div class="combos__box-like">
-                                      <div class="combos__box-like--bg"></div><a class="comments__btn-like" href="#" title=""><i class="icon-font icon-like"></i><span>525</span></a><a class="comments__btn-dislike" href="#" title=""><i class="icon-font icon-dislike"></i><span>211</span></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="combos__box-wrapper"><a class="combos__box-left" href="#">
-                                  <div class="combos__box-img"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title=""></div>
-                                  <div class="combos__box-title">
-                                    <div class="combos__box-title--bg"></div>
-                                    <div class="combos__box-title--triangle">
-                                      <!--img(src="./img/img-combostitle-triangle-0.svg" alt="" title="")--><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title="">
-                                      <!--img(src="./img/img-combostitle-triangle-3.svg" alt="" title="")-->
-                                    </div>
-                                    <p>Skin Name Here</p>
-                                  </div>
-                                  <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div></a>
-                                <div class="combos__box-right">
-                                  <div><a class="combos__block combos__block-0 combos__block--legendary" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--ticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-1 combos__block--epic" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png backBling"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-2 combos__block--rare" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png harvestingTool"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-3 combos__block--uncommon" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png skydivingTrails"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
-                                      </div>
-                                      <div class="combos__block-bottom">
-                                        <div class="b-skin__info--wticker">
-                                          <p>SKIN NAME</p>
-                                        </div>
-                                        <div class="e-skin__block-points"><img src="./img/img-skin-points.png" srcset="./img/img-skin-points@2x.png 2x" alt="" title=""><span>1500</span></div>
-                                      </div></a></div>
-                                  <div><a class="combos__block combos__block-4 combos__block--default" href="#">
-                                      <div class="combos__block-top">
-                                        <div class="combos__block-badge"><i class="icon-png emoticon"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title="">
+                                        <div class="combos__block-badge"><i class="icon-png"></i></div><img src="" srcset="" alt="" title="">
                                       </div>
                                       <div class="combos__block-bottom">
                                         <div class="b-skin__info--wticker">
@@ -581,838 +287,41 @@
                           </div>
                         </div>
                       </div>
-                      <div class="combo__like-footer"><a class="item__btn c-btn c-btn--bg" href="#" title="">View More <i class='icon-font icon-arr-dcc'></i></a></div>
                     </div>
                   </div>
                 </section>
-                <!-- SECTION skin like :: END-->
-                <div class="updated--medium">
-                  <!-- SECTION updated :: START-->
-                  <section class="updated" id="updated">
-                    <div class="updated__bg"><span></span><span></span><span></span></div>
-                    <div class="updated__triangle"><img src="./img/img-updated-triangle-0.svg" srcset="" alt="" title=""><img src="./img/img-updated-triangle-1.svg" srcset="" alt="" title=""><img src="./img/img-updated-triangle-2.svg" srcset="" alt="" title=""><img src="./img/img-updated-triangle-3.svg" srcset="" alt="" title=""></div>
-                    <div class="c-grid">
-                      <div class="updated__wrapper">
-                        <div class="updated__wrapper-left">
-                          <p class="updated__title">Last Updated:</p>
-                          <div class="updated__follow"><a class="twitter-follow-button" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" data-size="large" data-show-count="false">Follow @TwitterDev</a></div>
-                          <div class="updated__like">
-                            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;width=124&amp;layout=button_count&amp;action=like&amp;size=small&amp;show_faces=false&amp;share=true&amp;height=46&amp;appId=326194251067521" width="100%" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                          </div>
-                        </div>
-                        <div class="updated__wrapper-right">
-                          <p class="updated__data updated__data-0">16</p>
-                          <p class="updated__data updated__data-1">September <span>2018</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
-                  <!-- SECTION updated :: END-->
-                </div>
-                <!-- SECTION breadcrumbs :: START-->
-                <section class="breadcrumbs" id="breadcrumbs">
-                  <div class="c-grid">
-                    <div class="breadcrumbs__wrapper">
-                      <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="">Home</a></li>
-                        <li class="breadcrumbs__item"><span class="breadcrumbs__icon"><i class="icon-font icon-arr-dcc"></i><i class="icon-font icon-arr-dcc"></i></span></li>
-                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="">Outfits</a></li>
-                        <li class="breadcrumbs__item"><span class="breadcrumbs__icon"><i class="icon-font icon-arr-dcc"></i><i class="icon-font icon-arr-dcc"></i></span></li>
-                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="">Red Knight</a></li>
-                      </ul>
-                      <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#" title="">Legendary Outfits</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </section>
-                <!-- SECTION breadcrumbs :: END-->
-                <!-- SECTION beginners comments :: START-->
-                <section class="beginners beginners--comments">
-                  <div class="beginners__bg"></div>
-                  <div class="beginners__triangle"><img src="./img/img-b-comments-triangle-0.svg" alt="" title=""><img src="./img/img-b-comments-triangle-1.svg" alt="" title=""></div>
-                  <div class="beginners__wrapper">
-                    <div class="beginners__wrapper-left">
-                      <div class="beginners__user"></div>
-                    </div>
-                    <div class="beginners__wrapper-right">
-                      <h2>Neo</h2>
-                      <p>I am a hard-working web developer with a passion for gaming and eSports events. If you have any issues related to the game or site, leave a comment below, and I will help you as soon as I can.</p>
-                    </div>
-                  </div>
-                </section>
-                <!-- SECTION beginners comments :: END-->
+                <!-- SECTION skin view :: END-->
+                <!--include ./components/combo/_combo-like-->
+                <!--.updated--medium
+                include ./components/common/_updated
+                
+                -->
+                <!--include ./components/common/_breadcrumbs-->
+                <!--include ./components/beginners/_beginners-comments-->
               </section>
             </div>
             <div class="section__wrapper-right" section-right-js>
-              <!-- SECTION search :: START-->
-              <section class="search sidebar" id="search">
-                <div class="search__figure sidebar__figure"><img src="./img/img-search-figure-0.svg" alt="" title=""><img src="./img/img-search-figure-1.svg" alt="" title=""><img src="./img/img-search-figure-2.svg" alt="" title=""></div>
-                <form class="search__wrapper sidebar__wrapper">
-                  <div class="search__wrapper-left">
-                    <input type="text" placeholder="Search">
-                  </div>
-                  <div class="search__wrapper-right">
-                    <div class="header__search">
-                      <button class="header__search-btn" type="submit"><i class="icon-font icon-search"></i></button>
-                    </div>
-                  </div>
-                </form>
-              </section>
-              <!-- SECTION search :: END-->
-              <!-- SECTION section banner :: START-->
-              <section class="banner banner--section" id="banner">
-                <div class="banner__box-wrapper">
-                  <!-- del after add banner-->
-                  <div class="banner__box">
-                    <p>Ad Medium Rectangle<br>banner</p>
-                  </div>
-                </div>
-              </section>
-              <!-- SECTION section banner :: END-->
-              <!-- SECTION latest :: START-->
-              <section class="latest sidebar" id="latest">
-                <div class="latest__figure sidebar__figure"><img src="./img/img-latest-figure-0.svg" alt="" title=""><img src="./img/img-latest-figure-1.svg" alt="" title=""></div>
-                <div class="latest__btn-wrapper"><a class="latest__btn latest__btn-0 is-active" href="#" title="" data-id="0">
-                    <div><i class="icon-font icon-star"></i><span>Latest</span></div><i class="icon-font icon-btn-arrow"></i></a><a class="latest__btn latest__btn-1" href="#" title="" data-id="1">
-                    <div><i class="icon-font icon-bubble"></i><span>Comments</span></div><i class="icon-font icon-btn-arrow"></i></a></div>
-                <div class="latest__wrapper sidebar__wrapper">
-                  <div class="latest__block-wrapper latest__content is-active" data-content="0"><a class="latest__block latest__block-0 latest__block--legendary" href="#">
-                      <div class="latest__block-left">
-                        <div class="latest__block-photo">
-                          <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                        </div>
-                      </div>
-                      <div class="latest__block-right">
-                        <div class="latest__block-header">
-                          <h4 class="latest__block-title">Skull Ranger</h4>
-                        </div>
-                        <p class="latest__block-desc">She’s got a bone to pick.</p><span class="latest__block-data">October 10, 2018</span>
-                      </div></a><a class="latest__block latest__block-1 latest__block--epic" href="#">
-                      <div class="latest__block-left">
-                        <div class="latest__block-photo">
-                          <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                        </div>
-                      </div>
-                      <div class="latest__block-right">
-                        <div class="latest__block-header">
-                          <h4 class="latest__block-title">Dark Bag</h4><span>3d</span>
-                        </div>
-                        <p class="latest__block-desc">Don’t forget to pack an umbrella.</p><span class="latest__block-data">October 5, 2018</span>
-                      </div></a><a class="latest__block latest__block-2 latest__block--rare" href="#">
-                      <div class="latest__block-left">
-                        <div class="latest__block-photo">
-                          <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                        </div>
-                      </div>
-                      <div class="latest__block-right">
-                        <div class="latest__block-header">
-                          <h4 class="latest__block-title">Dark Bomber</h4><span>3d</span>
-                        </div>
-                        <p class="latest__block-desc">The future looks dark.</p><span class="latest__block-data">October 10, 2018</span>
-                      </div></a><a class="latest__block latest__block-3 latest__block--uncommon" href="#">
-                      <div class="latest__block-left">
-                        <div class="latest__block-photo">
-                          <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                        </div>
-                      </div>
-                      <div class="latest__block-right">
-                        <div class="latest__block-header">
-                          <h4 class="latest__block-title">Thunder Crash</h4><span>3d</span>
-                        </div>
-                        <p class="latest__block-desc">Wield the thunder.</p><span class="latest__block-data">October 10, 2018</span>
-                      </div></a><a class="latest__block latest__block-4 latest__block--default" href="#">
-                      <div class="latest__block-left">
-                        <div class="latest__block-photo">
-                          <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                        </div>
-                      </div>
-                      <div class="latest__block-right">
-                        <div class="latest__block-header">
-                          <h4 class="latest__block-title">Dark Glyph</h4><span>3d</span>
-                        </div>
-                        <p class="latest__block-desc">Indecipherable.</p><span class="latest__block-data">October 10, 2018</span>
-                      </div></a>
-                  </div>
-                  <div class="latest__comment-wrapper latest__content" data-content="1"><a class="latest__block latest__block-0" href="#">
-                      <div class="latest__block-left">
-                        <div class="latest__block-photo">
-                          <div>
-                            <!--img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")-->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="latest__block-right">
-                        <div class="latest__block-header">
-                          <h4 class="latest__block-title">User name</h4>
-                        </div>
-                        <p class="latest__block-desc">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-                      </div></a><a class="latest__block latest__block-1" href="#">
-                      <div class="latest__block-left">
-                        <div class="latest__block-photo">
-                          <div>
-                            <!--img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")-->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="latest__block-right">
-                        <div class="latest__block-header">
-                          <h4 class="latest__block-title">User name</h4>
-                        </div>
-                        <p class="latest__block-desc">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-                      </div></a><a class="latest__block latest__block-2" href="#">
-                      <div class="latest__block-left">
-                        <div class="latest__block-photo">
-                          <div>
-                            <!--img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")-->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="latest__block-right">
-                        <div class="latest__block-header">
-                          <h4 class="latest__block-title">User name</h4>
-                        </div>
-                        <p class="latest__block-desc">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-                      </div></a><a class="latest__block latest__block-3" href="#">
-                      <div class="latest__block-left">
-                        <div class="latest__block-photo">
-                          <div>
-                            <!--img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")-->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="latest__block-right">
-                        <div class="latest__block-header">
-                          <h4 class="latest__block-title">User name</h4>
-                        </div>
-                        <p class="latest__block-desc">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-                      </div></a><a class="latest__block latest__block-4" href="#">
-                      <div class="latest__block-left">
-                        <div class="latest__block-photo">
-                          <div>
-                            <!--img(src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title="")-->
-                          </div>
-                        </div>
-                      </div>
-                      <div class="latest__block-right">
-                        <div class="latest__block-header">
-                          <h4 class="latest__block-title">User name</h4>
-                        </div>
-                        <p class="latest__block-desc">Lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-                      </div></a>
-                  </div>
-                </div>
-              </section>
-              <!-- SECTION latest :: END-->
-              <!-- SECTION section banner :: START-->
-              <section class="banner banner--section" id="banner">
-                <div class="banner__box-wrapper">
-                  <!-- del after add banner-->
-                  <div class="banner__box">
-                    <p>Ad Medium Rectangle<br>banner</p>
-                  </div>
-                </div>
-              </section>
-              <!-- SECTION section banner :: END-->
-              <!-- SECTION top :: START-->
-              <section class="top sidebar" id="top">
-                <div class="top__figure sidebar__figure"><img src="./img/img-top-figure-0.svg" alt="" title=""><img src="./img/img-top-figure-1.svg" alt="" title=""></div>
-                <div class="top__title">
-                  <h3>Top 5 Skins</h3>
-                </div>
-                <div class="top__wrapper sidebar__wrapper">
-                  <div class="top__block-wrapper"><a class="top__block top__block-0 top__block--legendary" href="#">
-                      <div class="top__block-photo">
-                        <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                      </div>
-                      <div class="top__block-content">
-                        <div>
-                          <div class="top__block-num"><span>1.</span></div>
-                        </div>
-                        <div>
-                          <div class="top__block-header">
-                            <div>
-                              <h4>Skull Ranger</h4>
-                            </div>
-                            <div>
-                              <div class="top__block-badge"><span class="comments__btn-like" title=""><i class="icon-font icon-like"></i><span>525</span></span><span class="comments__btn-dislike" title=""><i class="icon-font icon-dislike"></i><span>211</span></span></div>
-                            </div>
-                          </div>
-                          <div class="top__block-desc">
-                            <p>Lorem ipsum dolor sit ue nibh vivamus ten.</p>
-                          </div>
-                        </div>
-                      </div></a><a class="top__block top__block-1 top__block--epic" href="#">
-                      <div class="top__block-photo">
-                        <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                      </div>
-                      <div class="top__block-content">
-                        <div>
-                          <div class="top__block-num"><span>2.</span></div>
-                        </div>
-                        <div>
-                          <div class="top__block-header">
-                            <div>
-                              <h4>Dark Bag</h4>
-                            </div>
-                            <div>
-                              <div class="top__block-badge"><span class="comments__btn-like" title=""><i class="icon-font icon-like"></i><span>525</span></span><span class="comments__btn-dislike" title=""><i class="icon-font icon-dislike"></i><span>211</span></span></div>
-                            </div>
-                          </div>
-                          <div class="top__block-desc">
-                            <p>Lorem ipsum dolor sit ue nibh vivamus ten.</p>
-                          </div>
-                        </div>
-                      </div></a><a class="top__block top__block-2 top__block--rare" href="#">
-                      <div class="top__block-photo">
-                        <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                      </div>
-                      <div class="top__block-content">
-                        <div>
-                          <div class="top__block-num"><span>3.</span></div>
-                        </div>
-                        <div>
-                          <div class="top__block-header">
-                            <div>
-                              <h4>Dark Bomber</h4>
-                            </div>
-                            <div>
-                              <div class="top__block-badge"><span class="comments__btn-like" title=""><i class="icon-font icon-like"></i><span>525</span></span><span class="comments__btn-dislike" title=""><i class="icon-font icon-dislike"></i><span>211</span></span></div>
-                            </div>
-                          </div>
-                          <div class="top__block-desc">
-                            <p>Lorem ipsum dolor sit ue nibh vivamus ten.</p>
-                          </div>
-                        </div>
-                      </div></a><a class="top__block top__block-3 top__block--uncommon" href="#">
-                      <div class="top__block-photo">
-                        <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                      </div>
-                      <div class="top__block-content">
-                        <div>
-                          <div class="top__block-num"><span>4.</span></div>
-                        </div>
-                        <div>
-                          <div class="top__block-header">
-                            <div>
-                              <h4>Thunder Crash</h4>
-                            </div>
-                            <div>
-                              <div class="top__block-badge"><span class="comments__btn-like" title=""><i class="icon-font icon-like"></i><span>525</span></span><span class="comments__btn-dislike" title=""><i class="icon-font icon-dislike"></i><span>211</span></span></div>
-                            </div>
-                          </div>
-                          <div class="top__block-desc">
-                            <p>Lorem ipsum dolor sit ue nibh vivamus ten.</p>
-                          </div>
-                        </div>
-                      </div></a><a class="top__block top__block-4 top__block--default" href="#">
-                      <div class="top__block-photo">
-                        <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                      </div>
-                      <div class="top__block-content">
-                        <div>
-                          <div class="top__block-num"><span>5.</span></div>
-                        </div>
-                        <div>
-                          <div class="top__block-header">
-                            <div>
-                              <h4>Dark Glyph</h4>
-                            </div>
-                            <div>
-                              <div class="top__block-badge"><span class="comments__btn-like" title=""><i class="icon-font icon-like"></i><span>525</span></span><span class="comments__btn-dislike" title=""><i class="icon-font icon-dislike"></i><span>211</span></span></div>
-                            </div>
-                          </div>
-                          <div class="top__block-desc">
-                            <p>Lorem ipsum dolor sit ue nibh vivamus ten.</p>
-                          </div>
-                        </div>
-                      </div></a>
-                  </div>
-                </div>
-              </section>
-              <!-- SECTION top :: END-->
-              <!-- SECTION top combos :: START-->
-              <section class="top sidebar" id="top">
-                <div class="top__figure sidebar__figure"><img src="./img/img-top-figure-0.svg" alt="" title=""><img src="./img/img-top-figure-1.svg" alt="" title=""></div>
-                <div class="top__title">
-                  <h3>Top 5 Combos</h3>
-                </div>
-                <div class="top__wrapper sidebar__wrapper">
-                  <div class="top__block-wrapper"><a class="top__block top__block-0 top__block--legendary" href="#">
-                      <div class="top__block-photo">
-                        <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                      </div>
-                      <div class="top__block-content">
-                        <div>
-                          <div class="top__block-num"><span>1.</span></div>
-                        </div>
-                        <div>
-                          <div class="top__block-header">
-                            <div>
-                              <h4>Skull Ranger</h4>
-                            </div>
-                            <div>
-                              <div class="top__block-badge"><span class="comments__btn-like" title=""><i class="icon-font icon-like"></i><span>525</span></span><span class="comments__btn-dislike" title=""><i class="icon-font icon-dislike"></i><span>211</span></span></div>
-                            </div>
-                          </div>
-                          <div class="top__block-desc">
-                            <div class="cm-skin__wrapper cm-skin__wrapper--full">
-                              <div>
-                                <div class="combos__block combos__block-0 combos__block--legendary">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                              <div>
-                                <div class="combos__block combos__block-0 combos__block--legendary">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                              <div>
-                                <div class="combos__block combos__block-0 combos__block--legendary">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                              <div>
-                                <div class="combos__block combos__block--empty">
-                                  <div class="combos__block-top">
-                                    <p>+3</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div></a><a class="top__block top__block-1 top__block--epic" href="#">
-                      <div class="top__block-photo">
-                        <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                      </div>
-                      <div class="top__block-content">
-                        <div>
-                          <div class="top__block-num"><span>2.</span></div>
-                        </div>
-                        <div>
-                          <div class="top__block-header">
-                            <div>
-                              <h4>Dark Bag</h4>
-                            </div>
-                            <div>
-                              <div class="top__block-badge"><span class="comments__btn-like" title=""><i class="icon-font icon-like"></i><span>525</span></span><span class="comments__btn-dislike" title=""><i class="icon-font icon-dislike"></i><span>211</span></span></div>
-                            </div>
-                          </div>
-                          <div class="top__block-desc">
-                            <div class="cm-skin__wrapper cm-skin__wrapper--full">
-                              <div>
-                                <div class="combos__block combos__block-1 combos__block--epic">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                              <div>
-                                <div class="combos__block combos__block-1 combos__block--epic">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                              <div>
-                                <div class="combos__block combos__block-1 combos__block--epic">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div></a><a class="top__block top__block-2 top__block--rare" href="#">
-                      <div class="top__block-photo">
-                        <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                      </div>
-                      <div class="top__block-content">
-                        <div>
-                          <div class="top__block-num"><span>3.</span></div>
-                        </div>
-                        <div>
-                          <div class="top__block-header">
-                            <div>
-                              <h4>Dark Bomber</h4>
-                            </div>
-                            <div>
-                              <div class="top__block-badge"><span class="comments__btn-like" title=""><i class="icon-font icon-like"></i><span>525</span></span><span class="comments__btn-dislike" title=""><i class="icon-font icon-dislike"></i><span>211</span></span></div>
-                            </div>
-                          </div>
-                          <div class="top__block-desc">
-                            <div class="cm-skin__wrapper cm-skin__wrapper--full">
-                              <div>
-                                <div class="combos__block combos__block-2 combos__block--rare">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                              <div>
-                                <div class="combos__block combos__block-2 combos__block--rare">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div></a><a class="top__block top__block-3 top__block--uncommon" href="#">
-                      <div class="top__block-photo">
-                        <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                      </div>
-                      <div class="top__block-content">
-                        <div>
-                          <div class="top__block-num"><span>4.</span></div>
-                        </div>
-                        <div>
-                          <div class="top__block-header">
-                            <div>
-                              <h4>Thunder Crash</h4>
-                            </div>
-                            <div>
-                              <div class="top__block-badge"><span class="comments__btn-like" title=""><i class="icon-font icon-like"></i><span>525</span></span><span class="comments__btn-dislike" title=""><i class="icon-font icon-dislike"></i><span>211</span></span></div>
-                            </div>
-                          </div>
-                          <div class="top__block-desc">
-                            <div class="cm-skin__wrapper cm-skin__wrapper--full">
-                              <div>
-                                <div class="combos__block combos__block-3 combos__block--uncommon">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                              <div>
-                                <div class="combos__block combos__block-3 combos__block--uncommon">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div></a><a class="top__block top__block-4 top__block--default" href="#">
-                      <div class="top__block-photo">
-                        <div><img src="./img/img-avatar-ts.png" srcset="./img/img-avatar-ts@2x.png 2x" alt="" title=""></div>
-                      </div>
-                      <div class="top__block-content">
-                        <div>
-                          <div class="top__block-num"><span>5.</span></div>
-                        </div>
-                        <div>
-                          <div class="top__block-header">
-                            <div>
-                              <h4>Dark Glyph</h4>
-                            </div>
-                            <div>
-                              <div class="top__block-badge"><span class="comments__btn-like" title=""><i class="icon-font icon-like"></i><span>525</span></span><span class="comments__btn-dislike" title=""><i class="icon-font icon-dislike"></i><span>211</span></span></div>
-                            </div>
-                          </div>
-                          <div class="top__block-desc">
-                            <div class="cm-skin__wrapper cm-skin__wrapper--full">
-                              <div>
-                                <div class="combos__block combos__block-4 combos__block--default">
-                                  <div class="combos__block-top">
-                                    <div class="combos__block-badge"><i class="icon-png outfit"></i></div><img src="./img/img-combos-0.png" srcset="./img/img-combos-0@2x.png 2x" alt="" title=""/>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div></a>
-                  </div>
-                </div>
-              </section>
-              <!-- SECTION top combos :: END-->
-              <!-- SECTION royal :: START-->
-              <section class="royal sidebar" id="royal">
-                <div class="royal__figure sidebar__figure"><img src="./img/img-royale-figure-0.svg" alt="" title=""><img src="./img/img-royale-figure-1.svg" alt="" title=""><img src="./img/img-royale-figure-2.svg" alt="" title=""></div>
-                <div class="royal__wrapper sidebar__wrapper">
-                  <div class="royal__header">
-                    <div>
-                      <div><i class="icon-font icon-megaphone"></i>
-                        <h3>Battle Royale News</h3>
-                      </div>
-                    </div>
-                    <div><span>21 hours Ago</span></div>
-                  </div>
-                  <div class="royal__body">
-                    <div class="royal__block-wrapper">
-                      <div class="royal__block royal__block-0">
-                        <div class="royal__block-left">
-                          <div class="royal__block-img"><img src="./img/img-royal-0.png" srcset="./img/img-royal-0@2x.png 2x" alt="" title=""></div>
-                        </div>
-                        <div class="royal__block-right">
-                          <h4>Quad Launcher</h4>
-                          <p>Lorem ipsum dolor sit amet, cetur adipiscing elit.</p>
-                        </div>
-                      </div>
-                      <div class="royal__block royal__block-1">
-                        <div class="royal__block-left">
-                          <div class="royal__block-img"><img src="./img/img-royal-1.png" srcset="./img/img-royal-1@2x.png 2x" alt="" title=""></div>
-                        </div>
-                        <div class="royal__block-right">
-                          <h4>Bone Chilling</h4>
-                          <p>Lorem ipsum dolor sit amet, cetur adipiscing elit.</p>
-                        </div>
-                      </div>
-                      <div class="royal__block royal__block-2">
-                        <div class="royal__block-left">
-                          <div class="royal__block-img"><img src="./img/img-royal-2.png" srcset="./img/img-royal-2@2x.png 2x" alt="" title=""></div>
-                        </div>
-                        <div class="royal__block-right">
-                          <h4>Disco Domination LTM</h4>
-                          <p>Lorem ipsum dolor sit amet, cetur adipiscing elit.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="royal__footer"><a class="c-btn c-btn--bg" href="#" title="">All News <i class='icon-font icon-arr-dcc'></i></a></div>
-                </div>
-              </section>
-              <!-- SECTION royal :: END-->
-              <!-- SECTION categories :: START-->
-              <section class="categories sidebar" id="categories">
-                <div class="categories__figure sidebar__figure"><img src="./img/img-categories-figure-0.svg" alt="" title=""><img src="./img/img-categories-figure-1.svg" alt="" title=""><img src="./img/img-categories-figure-2.svg" alt="" title=""></div>
-                <div class="categories__title">
-                  <p>Categories</p>
-                </div>
-                <div class="categories__wrapper sidebar__wrapper">
-                  <div class="categories__block-wrapper">
-                    <div class="categories__block categories__block-0">
-                      <div class="categories__block-left"><a class="categories__block-name" href="#">Backpacks</a></div>
-                      <div class="categories__block-right">
-                        <p class="categories__block-num">111</p>
-                      </div>
-                    </div>
-                    <div class="categories__block categories__block-1">
-                      <div class="categories__block-left"><a class="categories__block-name" href="#">Consumables</a></div>
-                      <div class="categories__block-right">
-                        <p class="categories__block-num">7</p>
-                      </div>
-                    </div>
-                    <div class="categories__block categories__block-2">
-                      <div class="categories__block-left"><a class="categories__block-name" href="#">Emotes</a></div>
-                      <div class="categories__block-right">
-                        <p class="categories__block-num">93</p>
-                      </div>
-                    </div>
-                    <div class="categories__block categories__block-3">
-                      <div class="categories__block-left"><a class="categories__block-name" href="#">Gliders</a></div>
-                      <div class="categories__block-right">
-                        <p class="categories__block-num">83</p>
-                      </div>
-                    </div>
-                    <div class="categories__block categories__block-4">
-                      <div class="categories__block-left"><a class="categories__block-name" href="#">Guides</a></div>
-                      <div class="categories__block-right">
-                        <p class="categories__block-num">4</p>
-                      </div>
-                    </div>
-                    <div class="categories__block categories__block-5">
-                      <div class="categories__block-left"><a class="categories__block-name" href="#">Outfits</a></div>
-                      <div class="categories__block-right">
-                        <p class="categories__block-num">209</p>
-                      </div>
-                    </div>
-                    <div class="categories__block categories__block-6">
-                      <div class="categories__block-left"><a class="categories__block-name" href="#">Pickaxes</a></div>
-                      <div class="categories__block-right">
-                        <p class="categories__block-num">93</p>
-                      </div>
-                    </div>
-                    <div class="categories__block categories__block-7">
-                      <div class="categories__block-left"><a class="categories__block-name" href="#">Skydiving Trails</a></div>
-                      <div class="categories__block-right">
-                        <p class="categories__block-num">11</p>
-                      </div>
-                    </div>
-                    <div class="categories__block categories__block-8">
-                      <div class="categories__block-left"><a class="categories__block-name" href="#">Sprays</a></div>
-                      <div class="categories__block-right">
-                        <p class="categories__block-num">26</p>
-                      </div>
-                    </div>
-                    <div class="categories__block categories__block-9">
-                      <div class="categories__block-left"><a class="categories__block-name" href="#">Umbrellas</a></div>
-                      <div class="categories__block-right">
-                        <p class="categories__block-num">5</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <!-- SECTION categories :: END-->
+              <!--include components/common/_search-->
+              <!--include components/common/_sectionBanner-->
+              <!--include components/common/_latest-->
+              <!--include components/common/_sectionBanner-->
+              <!--include components/common/_top-->
+              <!--include components/common/_combos-->
+              <!--include components/common/_royal-->
+              <!--include components/common/_categories-->
             </div>
           </div>
         </div>
       </section>
-      <!-- SECTION reply :: START-->
-      <section class="reply" id="reply">
-        <div class="reply__bg"></div>
-        <div class="reply__figure"><img src="./img/img-replay-triangle-0.svg" alt="" title=""><img src="./img/img-replay-triangle-1.svg" alt="" title=""><img src="./img/img-replay-triangle-2.svg" alt="" title=""><img src="./img/img-replay-triangle-3.svg" alt="" title=""><img src="./img/img-replay-triangle-4.svg" alt="" title=""></div>
-        <div class="c-grid">
-          <div class="reply__wrapper reply__wrapper-0">
-            <div class="reply__title"><i class="icon-png i-comments-single"></i>
-              <h3>Leave a Reply</h3>
-            </div>
-          </div>
-          <div class="reply__wrapper reply__wrapper-1">
-            <div class="reply__wrapper-left">
-              <form class="c-form" action="" method="" autocomplete="off">
-                <div class="c-form__field c-form__field--textarea">
-                  <div class="c-form__textarea-wrapper">
-                    <textarea class="c-form__textarea" id="message" name="message" placeholder="Comment..." value="" textarea-js="textarea-js"></textarea>
-                  </div>
-                  <div class="c-form__notify">
-                  </div>
-                </div>
-                <div class="c-form__group c-form__group--two">
-                  <div class="c-form__group-col c-form__group-col-0">
-                    <div class="c-form__field c-form__field--input">
-                      <div class="c-form__input-wrapper">
-                        <input class="c-form__input" type="text" id="name" name="name" placeholder="Name" value="" input-js="input-js"/>
-                      </div>
-                      <div class="c-form__notify">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="c-form__group-col c-form__group-col-1">
-                    <div class="c-form__field c-form__field--input">
-                      <div class="c-form__input-wrapper">
-                        <input class="c-form__input" type="email" id="email" name="email" placeholder="Email" value="" input-js="input-js"/>
-                      </div>
-                      <div class="c-form__notify">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="reply__row">
-                  <div class="c-form__field c-form__field--btn">
-                    <button class="c-form__btn c-btn c-btn--bg" type="submit">Post Comment <i class="icon-font icon-arr-dcc"></i></button>
-                  </div><a class="item__btn c-btn c-btn--bg" href="#" title="">Cancel reply <i class='icon-font icon-arr-dcc'></i></a>
-                </div>
-              </form>
-            </div>
-            <div class="reply__wrapper-right">
-              <!-- SECTION section banner :: START-->
-              <section class="banner banner--section" id="banner">
-                <div class="banner__box-wrapper">
-                  <!-- del after add banner-->
-                  <div class="banner__box">
-                    <p>Ad Medium Rectangle<br>banner</p>
-                  </div>
-                </div>
-              </section>
-              <!-- SECTION section banner :: END-->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION reply :: END-->
-      <section class="section">
-        <div class="c-grid">
-          <div class="section__wrapper">
-            <div class="section__wrapper-left">
-              <!-- SECTION comments :: START-->
-              <section class="comments" id="comments">
-                <div class="c-grid c-grid-0">
-                  <div class="comments__wrapper comments__wrapper-0">
-                    <!-- header comments - count messages-->
-                    <div class="comments__header"><i class="icon-png i-comments"></i>
-                      <h3><span>38</span> Comments</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="c-grid c-grid-1">
-                  <div class="comments__wrapper comments__wrapper-1">
-                    <!-- comments body - messages-->
-                    <div class="comments__body">
-                      <div class="comments__messages comments__messages-0 comments__messages--main">
-                        <div class="comments__messages-figure"><img src="./img/img-comments-triangle-0.svg" alt="" title=""><img src="./img/img-comments-triangle-1.svg" alt="" title=""></div>
-                        <div class="comments__messages-left">
-                          <div class="comments__messages-photo"><img src="./img/img-comments-user-0.png" srcset="./img/img-comments-user-0@2x.png 2x" alt="" title=""></div>
-                        </div>
-                        <div class="comments__messages-right">
-                          <h4 class="comments__messages-name">Rand al’Thor</h4>
-                          <p class="comments__messages-time">2 months ago</p>
-                          <p class="comments__messages-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="comments__messages-bottom"><a href="#" title="">Reply</a><a href="#" title="">Edit</a></div>
-                        <div class="comments__messages-badge"><a class="comments__btn-like" href="#" title=""><i class="icon-font icon-like"></i><span>525</span></a><a class="comments__btn-dislike" href="#" title=""><i class="icon-font icon-dislike"></i><span>211</span></a></div>
-                      </div>
-                      <div class="comments__messages comments__messages-1 comments__messages--additional">
-                        <div class="comments__messages-figure"><img src="./img/img-comments-triangle-0.svg" alt="" title=""><img src="./img/img-comments-triangle-1.svg" alt="" title=""></div>
-                        <div class="comments__messages-left">
-                          <div class="comments__messages-photo"><img src="./img/img-comments-user-1.png" srcset="./img/img-comments-user-1@2x.png 2x" alt="" title=""></div>
-                        </div>
-                        <div class="comments__messages-right">
-                          <h4 class="comments__messages-name">Nynaeve al’Meara</h4>
-                          <p class="comments__messages-time">3 months ago</p>
-                          <p class="comments__messages-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="comments__messages-bottom"><a href="#" title="">Reply</a><a href="#" title="">Edit</a></div>
-                        <div class="comments__messages-badge"><a class="comments__btn-like" href="#" title=""><i class="icon-font icon-like"></i><span>525</span></a><a class="comments__btn-dislike" href="#" title=""><i class="icon-font icon-dislike"></i><span>211</span></a></div>
-                      </div>
-                      <div class="comments__messages comments__messages-2 comments__messages--additional">
-                        <div class="comments__messages-figure"><img src="./img/img-comments-triangle-0.svg" alt="" title=""><img src="./img/img-comments-triangle-1.svg" alt="" title=""></div>
-                        <div class="comments__messages-left">
-                          <div class="comments__messages-photo"><img src="./img/img-comments-user-2.png" srcset="./img/img-comments-user-2@2x.png 2x" alt="" title=""></div>
-                        </div>
-                        <div class="comments__messages-right">
-                          <h4 class="comments__messages-name">Nynaeve al’Meara</h4>
-                          <p class="comments__messages-time">4 months ago</p>
-                          <p class="comments__messages-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="comments__messages-bottom"><a href="#" title="">Reply</a><a href="#" title="">Edit</a></div>
-                        <div class="comments__messages-badge"><a class="comments__btn-like" href="#" title=""><i class="icon-font icon-like"></i><span>525</span></a><a class="comments__btn-dislike" href="#" title=""><i class="icon-font icon-dislike"></i><span>211</span></a></div>
-                      </div>
-                      <div class="comments__messages comments__messages-3 comments__messages--main">
-                        <div class="comments__messages-figure"><img src="./img/img-comments-triangle-0.svg" alt="" title=""><img src="./img/img-comments-triangle-1.svg" alt="" title=""></div>
-                        <div class="comments__messages-left">
-                          <div class="comments__messages-photo"><img src="./img/img-comments-user-3.png" srcset="./img/img-comments-user-3@2x.png 2x" alt="" title=""></div>
-                        </div>
-                        <div class="comments__messages-right">
-                          <h4 class="comments__messages-name">Moiraine Damodred</h4>
-                          <p class="comments__messages-time">5 months ago</p>
-                          <p class="comments__messages-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                        <div class="comments__messages-bottom"><a href="#" title="">Reply</a><a href="#" title="">Edit</a></div>
-                        <div class="comments__messages-badge"><a class="comments__btn-like" href="#" title=""><i class="icon-font icon-like"></i><span>525</span></a><a class="comments__btn-dislike" href="#" title=""><i class="icon-font icon-dislike"></i><span>211</span></a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="c-grid c-grid-2">
-                  <div class="comments__wrapper comments__wrapper-2">
-                    <!-- splash spinner message-->
-                    <!-- SECTION spinner :: START-->
-                    <div class="spinner-container">
-                      <div class="spinner-whirlpool"></div>
-                    </div>
-                    <!-- SECTION spinner :: END-->
-                  </div>
-                </div>
-              </section>
-              <!-- SECTION comments :: END-->
-            </div>
-            <div class="section__wrapper-right"></div>
-          </div>
-        </div>
-      </section>
+      <!--include components/common/_reply-->
+      <!--section.section
+      .c-grid
+        .section__wrapper
+          .section__wrapper-left
+            include components/common/_comments
+      
+          .section__wrapper-right
+      -->
     </div>
     <!-- FOOTER :: START-->
     <footer class="footer" id="footer">
@@ -1512,22 +421,22 @@
       <div class="combo__drop-corner"><i class="icon-font icon-plus-add"></i></div>
       <div class="combo__drop-bg"></div>
       <div class="combo__drop-content">
-        <div><a class="combos__box combos__box--legendary" combo-drop-skin-js href="#">
+        <div><a class="combos__box combos__box--legendary" combo-drop-skin-js data-combos-id="1" data-combos-path="./img" data-combos-name="img-combosbox-0" data-combos-ext="png" data-combos-mod="legendary" href="#">
             <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
+    <defs>
+      <style>
+        .cls-1 {
+          fill-opacity: 0;
+          stroke: #fff;
+          stroke-linejoin: round;
+          stroke-width: 9px;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
+  </svg>
             </div>
             <div class="combos__box-wrapper">
               <div class="combos__box-left"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="">
@@ -1539,22 +448,22 @@
                 <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
               </div>
             </div></a></div>
-        <div><a class="combos__box combos__box--epic" combo-drop-skin-js href="#">
+        <div><a class="combos__box combos__box--epic" combo-drop-skin-js data-combos-id="2" data-combos-path="./img" data-combos-name="img-combosbox-1" data-combos-ext="png" data-combos-mod="epic" href="#">
             <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
+    <defs>
+      <style>
+        .cls-1 {
+          fill-opacity: 0;
+          stroke: #fff;
+          stroke-linejoin: round;
+          stroke-width: 9px;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
+  </svg>
             </div>
             <div class="combos__box-wrapper">
               <div class="combos__box-left"><img src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="">
@@ -1566,22 +475,22 @@
                 <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
               </div>
             </div></a></div>
-        <div><a class="combos__box combos__box--rare" combo-drop-skin-js href="#">
+        <div><a class="combos__box combos__box--rare" combo-drop-skin-js data-combos-id="3" data-combos-path="./img" data-combos-name="img-combosbox-0" data-combos-ext="png" data-combos-mod="rare" href="#">
             <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
+    <defs>
+      <style>
+        .cls-1 {
+          fill-opacity: 0;
+          stroke: #fff;
+          stroke-linejoin: round;
+          stroke-width: 9px;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
+  </svg>
             </div>
             <div class="combos__box-wrapper">
               <div class="combos__box-left"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="">
@@ -1593,22 +502,22 @@
                 <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
               </div>
             </div></a></div>
-        <div><a class="combos__box combos__box--uncommon" combo-drop-skin-js href="#">
+        <div><a class="combos__box combos__box--uncommon" combo-drop-skin-js data-combos-id="4" data-combos-path="./img" data-combos-name="img-combosbox-1" data-combos-ext="png" data-combos-mod="uncommon" href="#">
             <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
+    <defs>
+      <style>
+        .cls-1 {
+          fill-opacity: 0;
+          stroke: #fff;
+          stroke-linejoin: round;
+          stroke-width: 9px;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
+  </svg>
             </div>
             <div class="combos__box-wrapper">
               <div class="combos__box-left"><img src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="">
@@ -1620,430 +529,25 @@
                 <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
               </div>
             </div></a></div>
-        <div><a class="combos__box combos__box--common" combo-drop-skin-js href="#">
+        <div><a class="combos__box combos__box--common" combo-drop-skin-js data-combos-id="5" data-combos-path="./img" data-combos-name="img-combosbox-0" data-combos-ext="png" data-combos-mod="common" href="#">
             <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
+    <defs>
+      <style>
+        .cls-1 {
+          fill-opacity: 0;
+          stroke: #fff;
+          stroke-linejoin: round;
+          stroke-width: 9px;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
+  </svg>
             </div>
             <div class="combos__box-wrapper">
               <div class="combos__box-left"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--legendary" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--epic" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--rare" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--uncommon" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--common" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--legendary" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--epic" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--rare" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--uncommon" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--common" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--legendary" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--epic" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--rare" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--uncommon" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-0.png" srcset="./img/img-combosbox-0@2x.png 2x" alt="" title="">
-                <div class="combos__box-title">
-                  <div class="combos__box-title--bg"></div>
-                  <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>
-                  <p>Skin Name Here</p>
-                </div>
-                <div class="e-skin__block-points"><img src="./img/img-skin-points-medium.png" srcset="./img/img-skin-points-medium@2x.png 2x" alt="" title=""><span>1500</span></div>
-              </div>
-            </div></a></div>
-        <div><a class="combos__box combos__box--common" combo-drop-skin-js href="#">
-            <div class="combos__box-svg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114 142">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill-opacity: 0;
-                  stroke: #fff;
-                  stroke-linejoin: round;
-                  stroke-width: 9px;
-                  fill-rule: evenodd;
-                }
-              </style>
-            </defs>
-            <path class="cls-1" d="M216.381,1028.2L320,1022l-6.217,133L215,1154.31Z" transform="translate(-210.5 -1017.5)"/>
-          </svg>
-            </div>
-            <div class="combos__box-wrapper">
-              <div class="combos__box-left"><img src="./img/img-combosbox-1.png" srcset="./img/img-combosbox-1@2x.png 2x" alt="" title="">
                 <div class="combos__box-title">
                   <div class="combos__box-title--bg"></div>
                   <div class="combos__box-title--triangle"><img src="./img/img-combostitle-triangle-0.svg" alt="" title=""><img src="./img/img-combostitle-triangle-1.svg" alt="" title=""><img src="./img/img-combostitle-triangle-2.svg" alt="" title=""><img src="./img/img-combostitle-triangle-3.svg" alt="" title=""></div>

@@ -11,7 +11,7 @@ block comboDrop
 block content
   div.body(class!= pageClassName)
 
-    include components/common/_mainBanner
+    //include components/common/_mainBanner
 
     section.section
       .c-grid
@@ -20,31 +20,32 @@ block content
 
             section#combo
 
-              include ./components/combo/_combo-item
+              //include ./components/combo/_combo-item
               include ./components/combo/_combo-custom
-              include ./components/combo/_combo-like
+              include ./components/combo/_combo-view
+              //include ./components/combo/_combo-like
 
-              .updated--medium
+              //.updated--medium
                 include ./components/common/_updated
 
-              include ./components/common/_breadcrumbs
+              //include ./components/common/_breadcrumbs
 
-              include ./components/beginners/_beginners-comments
+              //include ./components/beginners/_beginners-comments
 
           .section__wrapper-right(section-right-js)
 
-            include components/common/_search
-            include components/common/_sectionBanner
-            include components/common/_latest
-            include components/common/_sectionBanner
-            include components/common/_top
-            include components/common/_combos
-            include components/common/_royal
-            include components/common/_categories
+            //include components/common/_search
+            //include components/common/_sectionBanner
+            //include components/common/_latest
+            //include components/common/_sectionBanner
+            //include components/common/_top
+            //include components/common/_combos
+            //include components/common/_royal
+            //include components/common/_categories
 
-    include components/common/_reply
+    //include components/common/_reply
 
-    section.section
+    //section.section
       .c-grid
         .section__wrapper
           .section__wrapper-left
