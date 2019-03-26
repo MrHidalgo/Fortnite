@@ -24,16 +24,16 @@ section#combo-preview.skin.skin--like.combo__like.combo__view
                     i.icon-font.icon-i-combos
                     h1!= "Skin name"
 
-                  div
-                    .combos__box-like
-                      .combos__box-like--bg
-
-                      a.comments__btn-like(href="#" class="" title="")
-                        i.icon-font.icon-like
-                        span!= "525"
-                      a.comments__btn-dislike(href="#" class="" title="")
-                        i.icon-font.icon-dislike
-                        span!= "211"
+                  //div
+                    //.combos__box-like
+                    //  .combos__box-like--bg
+                    //
+                    //  a.comments__btn-like(href="#" class="" title="")
+                    //    i.icon-font.icon-like
+                    //    span!= "525"
+                    //  a.comments__btn-dislike(href="#" class="" title="")
+                    //    i.icon-font.icon-dislike
+                    //    span!= "211"
 
               .combos__box-wrapper
                 .combos__box-left
@@ -56,10 +56,10 @@ section#combo-preview.skin.skin--like.combo__like.combo__view
 
                   each val, idx in [1,2,3,4,5]
                     div
-                      a.combos__block.combos__block--common(href="#" data-id!= idx class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
+                      a.combos__block.combos__block--common(style="display:none;" href="#" data-id!= idx class!= "combos__block-" + idx + ' combos__block--' + combosBlock[idx].classMod)
                         .combos__block-top
-                          .combos__block-badge
-                            i.icon-png
+                          //.combos__block-badge
+                          //  i.icon-png
 
                           .combos__block-top--img
                             img(src="" srcset="" alt="" title="")

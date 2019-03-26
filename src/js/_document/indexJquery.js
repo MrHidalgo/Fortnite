@@ -406,6 +406,7 @@ $(document).ready((ev) => {
           $('[combo-viewAdditional-skin-js] .combos__block[data-id="' + _elID + '"] .combos__block-top--img').html(_elImg);
 
           _comboAdditionalSkin
+            .show()
             .removeClass('combos__block--common')
             .addClass($(_el).attr('class').substring($(_el).attr('class').indexOf('combos__block--')));
 
@@ -413,6 +414,7 @@ $(document).ready((ev) => {
           $('[combo-viewAdditional-skin-js] .combos__block[data-id="' + _elID + '"] .combos__block-top--img').html(_elImg);
 
           _comboAdditionalSkin
+            .hide()
             .removeClass(_comboAdditionalSkin.attr('class').substring(_comboAdditionalSkin.attr('class').indexOf('combos__block--')))
             .addClass('combos__block--common');
         }

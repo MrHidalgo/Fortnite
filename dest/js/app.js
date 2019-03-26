@@ -678,11 +678,11 @@ $(document).ready(function (ev) {
           if ($(_el).hasClass('is-skin') && _comboAdditionalSkin.data('id') === _elID) {
             $('[combo-viewAdditional-skin-js] .combos__block[data-id="' + _elID + '"] .combos__block-top--img').html(_elImg);
 
-            _comboAdditionalSkin.removeClass('combos__block--common').addClass($(_el).attr('class').substring($(_el).attr('class').indexOf('combos__block--')));
+            _comboAdditionalSkin.show().removeClass('combos__block--common').addClass($(_el).attr('class').substring($(_el).attr('class').indexOf('combos__block--')));
           } else {
             $('[combo-viewAdditional-skin-js] .combos__block[data-id="' + _elID + '"] .combos__block-top--img').html(_elImg);
 
-            _comboAdditionalSkin.removeClass(_comboAdditionalSkin.attr('class').substring(_comboAdditionalSkin.attr('class').indexOf('combos__block--'))).addClass('combos__block--common');
+            _comboAdditionalSkin.hide().removeClass(_comboAdditionalSkin.attr('class').substring(_comboAdditionalSkin.attr('class').indexOf('combos__block--'))).addClass('combos__block--common');
           }
         }
       } catch (err) {
