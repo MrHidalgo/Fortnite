@@ -824,9 +824,10 @@ $(document).ready(function (ev) {
         }
       }
 
-      html2canvas(document.querySelector("#combo-preview")).then(function (canvas) {
-        console.log(canvas);
-        saveAs(canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream"), 'combo-custom.png');
+      html2canvas(document.querySelector("#combo-preview"), {
+        backgroundColor: null
+      }).then(function (canvas) {
+        saveAs(canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"), 'combo-custom.png');
       });
     });
 
